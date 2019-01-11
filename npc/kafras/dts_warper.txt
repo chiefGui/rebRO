@@ -678,30 +678,31 @@ function	script	F_VoteKafra	{
 	end;
 }
 
-yuno,162,191,4	script	Kafra Voting Staff#yuno	4_F_KAFRA9,{
-	callfunc "F_VoteKafra",9;
-}
-prontera,164,125,4	script	Kafra Voting Staff#prt	4_F_KAFRA2,{
-	callfunc "F_VoteKafra",2;
-}
-moc_ruins,97,133,4	script	Kafra Voting Staff#moc	4_F_KAFRA2,{
-	callfunc "F_VoteKafra",2;
-}
-geffen,122,37,4	script	Kafra Voting Staff#gef	4_F_KAFRA2,{
-	callfunc "F_VoteKafra",2;
-}
-payon,158,182,4	script	Kafra Voting Staff#pay	4_F_KAFRA2,{
-	callfunc "F_VoteKafra",2;
-}
-alberta,119,70,4	script	Kafra Voting Staff#alb	4_F_KAFRA2,{
-	callfunc "F_VoteKafra",2;
-}
-aldebaran,145,102,4	script	Kafra Voting Staff#alde	4_F_KAFRA2,{
-	callfunc "F_VoteKafra",2;
-}
-lighthalzen,163,60,4	script	Kafra Voting Staff#lght	4_F_KAFRA9,{
-	callfunc "F_VoteKafra",9;
-}
+// NOT_OT
+// yuno,162,191,4	script	Kafra Voting Staff#yuno	4_F_KAFRA9,{
+// 	callfunc "F_VoteKafra",9;
+// }
+// prontera,164,125,4	script	Kafra Voting Staff#prt	4_F_KAFRA2,{
+// 	callfunc "F_VoteKafra",2;
+// }
+// moc_ruins,97,133,4	script	Kafra Voting Staff#moc	4_F_KAFRA2,{
+// 	callfunc "F_VoteKafra",2;
+// }
+// geffen,122,37,4	script	Kafra Voting Staff#gef	4_F_KAFRA2,{
+// 	callfunc "F_VoteKafra",2;
+// }
+// payon,158,182,4	script	Kafra Voting Staff#pay	4_F_KAFRA2,{
+// 	callfunc "F_VoteKafra",2;
+// }
+// alberta,119,70,4	script	Kafra Voting Staff#alb	4_F_KAFRA2,{
+// 	callfunc "F_VoteKafra",2;
+// }
+// aldebaran,145,102,4	script	Kafra Voting Staff#alde	4_F_KAFRA2,{
+// 	callfunc "F_VoteKafra",2;
+// }
+// lighthalzen,163,60,4	script	Kafra Voting Staff#lght	4_F_KAFRA9,{
+// 	callfunc "F_VoteKafra",9;
+// }
 
 -	script	Cool Event Staff::VotingStaffCCE	4_M_ZONDAMAN,{
 	callfunc "F_ClearGarbage";				//Clear outdated, unused variables
@@ -1095,14 +1096,15 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	4_F_KAFRA9,{
 	end;
 }
 
-yuno,153,191,6	duplicate(VotingStaffCCE)	Cool Event Staff#yuno	4_M_ZONDAMAN
-prontera,147,125,6	duplicate(VotingStaffCCE)	Cool Event Staff#prt	4_M_ZONDAMAN
-moc_ruins,104,133,6	duplicate(VotingStaffCCE)	Cool Event Staff#moc	4_M_ZONDAMAN
-geffen,117,37,6	duplicate(VotingStaffCCE)	Cool Event Staff#gef	4_M_ZONDAMAN
-payon,153,182,6	duplicate(VotingStaffCCE)	Cool Event Staff#pay	4_M_ZONDAMAN
-alberta,114,70,6	duplicate(VotingStaffCCE)	Cool Event Staff#alb	4_M_ZONDAMAN
-aldebaran,138,102,6	duplicate(VotingStaffCCE)	Cool Event Staff#alde	4_M_ZONDAMAN
-lighthalzen,154,60,6	duplicate(VotingStaffCCE)	Cool Event Staff#lhz	4_M_ZONDAMAN
+// NOT_OT
+// yuno,153,191,6	duplicate(VotingStaffCCE)	Cool Event Staff#yuno	4_M_ZONDAMAN
+// prontera,147,125,6	duplicate(VotingStaffCCE)	Cool Event Staff#prt	4_M_ZONDAMAN
+// moc_ruins,104,133,6	duplicate(VotingStaffCCE)	Cool Event Staff#moc	4_M_ZONDAMAN
+// geffen,117,37,6	duplicate(VotingStaffCCE)	Cool Event Staff#gef	4_M_ZONDAMAN
+// payon,153,182,6	duplicate(VotingStaffCCE)	Cool Event Staff#pay	4_M_ZONDAMAN
+// alberta,114,70,6	duplicate(VotingStaffCCE)	Cool Event Staff#alb	4_M_ZONDAMAN
+// aldebaran,138,102,6	duplicate(VotingStaffCCE)	Cool Event Staff#alde	4_M_ZONDAMAN
+// lighthalzen,154,60,6	duplicate(VotingStaffCCE)	Cool Event Staff#lhz	4_M_ZONDAMAN
 
 yuno,103,225,0	script	Scrutiny Association#5	FAKE_NPC,{
 OnInit:

@@ -264,14 +264,15 @@ OnInit:
 	sellitem Booby_Trap;
 }
 
-payon,159,96,4	trader	Tool Dealer#pay3	4_M_ORIENT01,{
-OnInit:
-	sellitem Arrow;
-	sellitem Red_Potion;
-	sellitem Center_Potion;
-	sellitem Wing_Of_Fly;
-	sellitem Wing_Of_Butterfly;
-}
+// NPC_NOT_OT
+// payon,159,96,4	trader	Tool Dealer#pay3	4_M_ORIENT01,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Red_Potion;
+// 	sellitem Center_Potion;
+// 	sellitem Wing_Of_Fly;
+// 	sellitem Wing_Of_Butterfly;
+// }
 
 payon,177,131,4	trader	Pet Groomer#pay	4_F_TELEPORTER,{
 OnInit:

@@ -1,0 +1,15 @@
+payon,79,124,4	trader	Vendedor de Utilidades#pay3	4_M_ORIENT01,{
+	OnInit:
+		sellitem Arrow;
+		sellitem Spectacles;
+		sellitem Red_Potion;
+		sellitem Orange_Potion;
+		sellitem Yellow_Potion;
+		sellitem White_Potion;
+		sellitem Green_Potion;
+		sellitem Center_Potion;
+		sellitem Awakening_Potion;
+		sellitem Wing_Of_Fly;
+		sellitem Wing_Of_Butterfly;
+		sellitem Booby_Trap;
+	}

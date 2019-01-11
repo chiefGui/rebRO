@@ -166,127 +166,128 @@ moc_ruins,118,99,5	script	Roberto	4_M_ORIENT01,{
 	close;
 }
 
-payon,103,63,3	script	Jason	4_M_ORIENT01,3,3,{
-	if (BaseClass == Job_Archer) {
-		if (getskilllv("AC_CHARGEARROW") == 1) {
-			mes "[Jason]";
-			mes "Eh, we meet again.";
-			mes "Ehhhh so weird.";
-			mes "Whenever I see someone again";
-			mes "I start eh-ing a lot.";
-			mes "Ehhh... anyways nice to see you again.";
-			mes "Ehhhh... don't come any more ehh...";
-			close;
-		}
-		else if (JobLevel >= 35 || (BaseJob == Job_Hunter || BaseJob == Job_Bard || BaseJob == Job_Dancer)) {
-			mes "[Jason]";
-			mes "Darn... my wound isn't healing.";
-			mes "Bleh.. I was too careless... ";
-			mes "to become like this.. err...";
-			mes "But still, hurting me like this";
-			mes "giving me so many injuries...";
-			next;
-			mes "What should I do about Roberto.";
-			mes "Mmmm... Ah!";
-			mes "You? How long have you been there?";
-			mes "Mmm... very high level.";
-			mes "Someone like you would definitely be";
-			mes "able to know how to use Arrow Repel.";
-			next;
-			switch (select("What is that?", "Teach me.")) {
-			case 1:
-				mes "[Jason]";
-				mes "...you're kidding, right?";
-				mes "Oh my, you don't even know";
-				mes "Arrow Repel at that level?";
-				mes "You're a strange person.";
-				next;
-				mes "[Jason]";
-				mes "(Jason was in the lala land.)";
-				next;
-				mes "[Jason]";
-				mes "Well, ok. I'll teach you what";
-				mes "Arrow Repel is.";
-				next;
-				mes "[Jason]";
-				mes "Arrow Repel is a skill that allows you to";
-				mes "push the opponent away as soon as you attack.";
-				mes "You can only use it when you aim exactly";
-				mes "at the target. But unlike magic, ";
-				mes "it doesn't de-spell.";
-				next;
-				mes "[Jason]";
-				mes "It is very useful for an archer";
-				mes "that is weak in close ranges.";
-				mes "If you would like to learn,";
-				mes "come find me again.";
-				mes "There are some necessary materials.";
-				next;
-				mes "[Jason]";
-				mes "First, because you must modify a bow";
-				mes "bring a crossbow you do not use.";
-				mes "10 Tentacles, 10 Bill of Birds,";
-				mes "3 Yoyo Tails.. these are very elastic.";
-				mes "Also, 2 Emeralds. And last but not least...";
-				mes "36 bottles of Banana Juice that I love!";
-				next;
-				mes "[Jason]";
-				mes "......Ehem!";
-				mes "If you bring all of these,";
-				mes "I shall teach you Arrow Repel.";
-				mes "Then, see you again.";
-				mes "(I'm going to be mad if you don't bring the Banana Juice.)";
-				close;
-			case 2:
-				if ((countitem(Azure_Jewel) > 1) && (countitem(Yoyo_Tail) > 2) && (countitem(Tentacle) > 9) && (countitem(Bill_Of_Birds) > 9) && (countitem(Banana_Juice) > 35)) {
-					mes "[Jason]";
-					mes "Ok! Perfect!";
-					mes "I shall teach you the nationally";
-					mes "renowned skill, Arrow Repel!";
-					next;
-					delitem Azure_Jewel,2;
-					delitem Yoyo_Tail,3;
-					delitem Tentacle,10;
-					delitem Bill_Of_Birds,10;
-					delitem Banana_Juice,36;
-					skill "AC_CHARGEARROW",1,0;
-					mes "[Jason]";
-					mes "Oh, works better than I expected!";
-					mes "Won't be needing to modify the bow!";
-					mes "You can take this back~";
-					mes "And enjoy using your newly inherited";
-					mes "skill in fields and dungeons!";
-					mes "He~heh~!";
-					close;
-				}
-				mes "[Jason]";
-				mes "Mmm... too bad.";
-				mes "You are missing some things.";
-				mes "Once again, you need 2 Emeralds,";
-				mes "3 Yoyo Tails, 10 Tentacles,";
-				mes "10 Bill of Birds, and last but";
-				mes "not least 36 bottles of Banana juice!";
-				next;
-				mes "[Jason]";
-				mes "Make sure you have all of them and come again!";
-				close;
-			}
-		}
-		mes "[Jason]";
-		mes "Ooh... you are an archer.";
-		mes "If you try a little more";
-		mes "you will have a great";
-		mes "reputation as an archer!";
-		mes "Exert yourself!";
-		close;
-	}
-	mes "[?]";
-	mes "What does life need from";
-	mes "a lonely lad like me?";
-	close;
+// NPC_NOT_OT
+// payon,103,63,3	script	Jason	4_M_ORIENT01,3,3,{
+// 	if (BaseClass == Job_Archer) {
+// 		if (getskilllv("AC_CHARGEARROW") == 1) {
+// 			mes "[Jason]";
+// 			mes "Eh, we meet again.";
+// 			mes "Ehhhh so weird.";
+// 			mes "Whenever I see someone again";
+// 			mes "I start eh-ing a lot.";
+// 			mes "Ehhh... anyways nice to see you again.";
+// 			mes "Ehhhh... don't come any more ehh...";
+// 			close;
+// 		}
+// 		else if (JobLevel >= 35 || (BaseJob == Job_Hunter || BaseJob == Job_Bard || BaseJob == Job_Dancer)) {
+// 			mes "[Jason]";
+// 			mes "Darn... my wound isn't healing.";
+// 			mes "Bleh.. I was too careless... ";
+// 			mes "to become like this.. err...";
+// 			mes "But still, hurting me like this";
+// 			mes "giving me so many injuries...";
+// 			next;
+// 			mes "What should I do about Roberto.";
+// 			mes "Mmmm... Ah!";
+// 			mes "You? How long have you been there?";
+// 			mes "Mmm... very high level.";
+// 			mes "Someone like you would definitely be";
+// 			mes "able to know how to use Arrow Repel.";
+// 			next;
+// 			switch (select("What is that?", "Teach me.")) {
+// 			case 1:
+// 				mes "[Jason]";
+// 				mes "...you're kidding, right?";
+// 				mes "Oh my, you don't even know";
+// 				mes "Arrow Repel at that level?";
+// 				mes "You're a strange person.";
+// 				next;
+// 				mes "[Jason]";
+// 				mes "(Jason was in the lala land.)";
+// 				next;
+// 				mes "[Jason]";
+// 				mes "Well, ok. I'll teach you what";
+// 				mes "Arrow Repel is.";
+// 				next;
+// 				mes "[Jason]";
+// 				mes "Arrow Repel is a skill that allows you to";
+// 				mes "push the opponent away as soon as you attack.";
+// 				mes "You can only use it when you aim exactly";
+// 				mes "at the target. But unlike magic, ";
+// 				mes "it doesn't de-spell.";
+// 				next;
+// 				mes "[Jason]";
+// 				mes "It is very useful for an archer";
+// 				mes "that is weak in close ranges.";
+// 				mes "If you would like to learn,";
+// 				mes "come find me again.";
+// 				mes "There are some necessary materials.";
+// 				next;
+// 				mes "[Jason]";
+// 				mes "First, because you must modify a bow";
+// 				mes "bring a crossbow you do not use.";
+// 				mes "10 Tentacles, 10 Bill of Birds,";
+// 				mes "3 Yoyo Tails.. these are very elastic.";
+// 				mes "Also, 2 Emeralds. And last but not least...";
+// 				mes "36 bottles of Banana Juice that I love!";
+// 				next;
+// 				mes "[Jason]";
+// 				mes "......Ehem!";
+// 				mes "If you bring all of these,";
+// 				mes "I shall teach you Arrow Repel.";
+// 				mes "Then, see you again.";
+// 				mes "(I'm going to be mad if you don't bring the Banana Juice.)";
+// 				close;
+// 			case 2:
+// 				if ((countitem(Azure_Jewel) > 1) && (countitem(Yoyo_Tail) > 2) && (countitem(Tentacle) > 9) && (countitem(Bill_Of_Birds) > 9) && (countitem(Banana_Juice) > 35)) {
+// 					mes "[Jason]";
+// 					mes "Ok! Perfect!";
+// 					mes "I shall teach you the nationally";
+// 					mes "renowned skill, Arrow Repel!";
+// 					next;
+// 					delitem Azure_Jewel,2;
+// 					delitem Yoyo_Tail,3;
+// 					delitem Tentacle,10;
+// 					delitem Bill_Of_Birds,10;
+// 					delitem Banana_Juice,36;
+// 					skill "AC_CHARGEARROW",1,0;
+// 					mes "[Jason]";
+// 					mes "Oh, works better than I expected!";
+// 					mes "Won't be needing to modify the bow!";
+// 					mes "You can take this back~";
+// 					mes "And enjoy using your newly inherited";
+// 					mes "skill in fields and dungeons!";
+// 					mes "He~heh~!";
+// 					close;
+// 				}
+// 				mes "[Jason]";
+// 				mes "Mmm... too bad.";
+// 				mes "You are missing some things.";
+// 				mes "Once again, you need 2 Emeralds,";
+// 				mes "3 Yoyo Tails, 10 Tentacles,";
+// 				mes "10 Bill of Birds, and last but";
+// 				mes "not least 36 bottles of Banana juice!";
+// 				next;
+// 				mes "[Jason]";
+// 				mes "Make sure you have all of them and come again!";
+// 				close;
+// 			}
+// 		}
+// 		mes "[Jason]";
+// 		mes "Ooh... you are an archer.";
+// 		mes "If you try a little more";
+// 		mes "you will have a great";
+// 		mes "reputation as an archer!";
+// 		mes "Exert yourself!";
+// 		close;
+// 	}
+// 	mes "[?]";
+// 	mes "What does life need from";
+// 	mes "a lonely lad like me?";
+// 	close;
 
-OnTouch:
-	mes "[???]";
-	mes "Errrrrrr...";
-	close;
-}
+// OnTouch:
+// 	mes "[???]";
+// 	mes "Errrrrrr...";
+// 	close;
+// }

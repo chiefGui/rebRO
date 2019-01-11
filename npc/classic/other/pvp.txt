@@ -1,0 +1,2 @@
+payon_in01,175,103,3	duplicate(pvpe)	Narrador do PvP#pe5	4_M_02
+payon_in01,175,106,3	duplicate(gkut)	Porteiro do PvP#4	83

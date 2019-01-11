@@ -1,0 +1,129 @@
+payon,30,94,5	script	Jason	88,{
+	if (BaseClass == Job_Archer) {
+		if (getskilllv("AC_CHARGEARROW") == 1) {
+			mes "[Jason]";
+			mes "Hmm, nos encontramo\s de novo.";
+			mes "Hmmmm tão estranho.";
+			mes "Sempre que re-encontro alguém";
+			mes "Eu começo a dizer muitos 'Hmm's.";
+			mes "Hmmm... então, bom te ver de novo.";
+			mes "Hmmmm... não venha aqui de novo hmm...";
+			close;
+		}
+		else if (JobLevel >= 35 || (BaseJob == Job_Hunter || BaseJob == Job_Bard || BaseJob == Job_Dancer)) {
+			mes "[Jason]";
+			mes "Droga... minha ferida não";
+			mes "está curando. Argh...";
+			mes "Eu fui muito descuidado... ";
+			mes "se tornar isto.. err...";
+			mes "Mas ainda assim, machucando...";
+			mes "abrindo tantas feridas...";
+			next;
+			mes "Eu que devo fazer sobre o Roberto.";
+			mes "Hmmm... Ah!";
+			mes "Você? Há quanto tempo está aí?";
+			mes "Hmm... Nível bem alto.";
+			mes "Alguém como você seria muito bem";
+			mes "capaz de aprender a habilidade";
+			mes "Disparo Violento.";
+			next;
+			switch (select("O que é isso?:Ensine-me.")) {
+			case 1:
+				mes "[Jason]";
+				mes "...você está brincando, certo?";
+				mes "Não acredito, você não conhece";
+				mes "Disparo Violento nesse nível?";
+				mes "Você é estranh"+((Sex)?"o":"a")+".";
+				next;
+				mes "[Jason]";
+				mes "Hmm, ok. Vou te ensinar o";
+				mes "que Disparo Violento é.";
+				next;
+				mes "[Jason]";
+				mes "Disparo Violento é uma habilidade";
+				mes "que permite empurrar um oponente";
+				mes "enquanto você ataca. Você só vai";
+				mes "conseguir isso quando mirar bem";
+				mes "no alvo. Mas diferente de magias";
+				mes "não é possível cortar o cast.";
+				next;
+				mes "[Jason]";
+				mes "É muito útil para arqueiros";
+				mes "que são fracos em curtas";
+				mes "distâncias. Se você quiser";
+				mes "aprender a habilidade. Me";
+				mes "procure novamente.";
+				mes "Existem alguns materiais";
+				mes "necessários.";
+				next;
+				mes "[Jason]";
+				mes "Primeiro, já que é necessário";
+				mes "modificar um Arco, traga um que";
+				mes "você não use. Precisarei de:";
+				mes "10 Tentáculos, 10 Bicos de Ave,";
+				mes "3 Caudas de Yoyo.. bem elásticas.";
+				mes "Também, 2 Esmeraldas. E por último";
+				mes "36 Sucos de Banana que eu adoro!";
+				next;
+				mes "[Jason]";
+				mes "......Ehem!";
+				mes "Se me trouxer estes itens,";
+				mes "Eu irei te ensinar a habilidade";
+				mes "Disparo Violento. Então, até mais.";
+				mes "(Ficarei irritado se não trouxer o Suco de Banana!)";
+				close;
+			case 2:
+				if ((countitem(721) > 1) && (countitem(942) > 2) && (countitem(962) > 9) && (countitem(925) > 9) && (countitem(532) > 35)) {
+					mes "[Jason]";
+					mes "Ok! Perfeito!";
+					mes "Te ensinarei a renomada";
+					mes "habilidade, Disparo Violento!";
+					next;
+					delitem 721,2; //Azure_Jewel
+					delitem 942,3; //Yoyo_Tail
+					delitem 962,10; //Tentacle
+					delitem 925,10; //Bill_Of_Birds
+					delitem 532,36; //Banana_Juice
+					skill "AC_CHARGEARROW",1,0;
+					mes "[Jason]";
+					mes "Oh, funciona melhor do que eu";
+					mes "esperava. Não será preciso";
+					mes "modificar o arco. Pode ficar";
+					mes "com ele. Aproveite sua nova";
+					mes "habilidade em cavernas e campos!";
+					mes "Hehe~";
+					close;
+				}
+				mes "[Jason]";
+				mes "Hmm... que pena.";
+				mes "Estão faltando algumas coisas.";
+				mes "De novo, preciso de 2 Esmeraldas,";
+				mes "3 Caudas de Yoyo, 10 Tentáculos,";
+				mes "10 Bicos de Ave, e por último";
+				mes "36 Sucos de Banana!";
+				next;
+				mes "[Jason]";
+				mes "Certifique-se que você tem";
+				mes "todos os itens e volte aqui.";
+				close;
+			}
+		}
+		mes "[Jason]";
+		mes "Ooh... você é um arqueiro.";
+		mes "Se você treinar um pouco";
+		mes "mais você terá uma ótima";
+		mes "reputação como arqueiro!";
+		mes "Esforce-se!";
+		close;
+	}
+	mes "[?]";
+	mes "O que o mundo precisa";
+	mes "de um rapaz solitário";
+	mes "como eu?";
+	close;
+
+OnTouch:
+	mes "[???]";
+	mes "Errrrrrr...";
+	close;
+}

@@ -1,0 +1,4 @@
+payon_in01,132,62,5	script Ahee#Ahee	1_M_INNKEEPER,{
+	callfunc "F_InnMaid","[Employee Ahee]","Payon Inn","payon_in01",136,61;
+	warp "payon_in01",132,11; end;
+}

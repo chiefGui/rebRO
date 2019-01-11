@@ -42,7 +42,6 @@
 //== Prontera ==============================================
 //- West Side Inn -
 prt_in,244,135,2	script	Inn Employee#Sammy	1_M_INNKEEPER,{
-
 	callfunc "F_InnMaid","[Employee Sammy]","Nenkaras","prt_in",238,130;
 	warp "prt_in",247,104; end;
 }
@@ -68,12 +67,11 @@ geffen_in,70,64,5	script	Inn Employee#Cena	1_M_INNKEEPER,{
 	warp "geffen_in",31,31; end;
 }
 
-//== Payon =================================================
-payon_in01,132,62,5	script	Inn Employee#Ahee	1_M_INNKEEPER,{
-
-	callfunc "F_InnMaid","[Employee Ahee]","Payon Inn","payon_in01",136,61;
-	warp "payon_in01",132,11; end;
-}
+//== Payon (NPC_NOT_OT) NPC_OT_REMOVED - LOCATION NOT FOUND =================================================
+// payon_in01,132,62,5	script	Inn Employee#Ahee	1_M_INNKEEPER,{
+// 	callfunc "F_InnMaid","[Employee Ahee]","Payon Inn","payon_in01",136,61;
+// 	warp "payon_in01",132,11; end;
+// }
 
 //== Morroc ================================================
 //- North East -

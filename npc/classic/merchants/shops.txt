@@ -13,3 +13,20 @@ payon,79,124,4	trader	Vendedor de Utilidades#pay3	4_M_ORIENT01,{
 		sellitem Wing_Of_Butterfly;
 		sellitem Booby_Trap;
 	}
+
+//Morroc
+morocc_in,141,67,1	shop	Loja de Armas#moc1	58,1750:-1,1751:-1,1701:-1,1601:-1,1201:-1,1204:-1,1207:-1,1210:-1,1213:-1,1216:-1,1219:-1,1222:-1,1250:-1,1252:-1,1254:-1
+morocc_in,141,60,1	shop	Loja de Armaduras#moc2	58,2101:-1,2103:-1,2401:-1,2403:-1,2405:-1,2501:-1,2503:-1,2218:-1,2301:-1,2303:-1,2305:-1,2321:-1,2328:-1,2332:-1,2307:-1,2309:-1,2335:-1
+morocc_mem,35,69,1	shop	Comerciante#moc3	89,2609:-1,1516:-1,1522:-1
+morocc_mem,139,92,1	shop	Comerciante#moc4	99,513:-1,513:-1,513:-1,513:-1,513:-1,513:-1
+morocc_mem,145,44,1	shop	Joalheiro#mc5	99,730:-1,2613:-1
+morocc_mem,147,102,5	shop	Loja de Utilidades#moc6	93,1750:-1,611:-1,501:-1,502:-1,503:-1,504:-1,506:-1,525:-1,601:-1,602:-1,1065:-1,645:-1,656:-1,657:-1
+morocc_mem,151,243,1	shop	Loja de Utilidades#moc7	99,1750:-1,611:-1,501:-1,502:-1,503:-1,504:-1,506:-1,525:-1,601:-1,602:-1,2242:-1,645:-1,656:-1,657:-1
+morocc_mem,157,72,6	shop	Açougueiro#moc8	49,517:-1
+morocc_mem,166,51,1	shop	Joalheira#moc9	102,721:-1,722:-1,723:-1,726:-1,728:-1,729:-1
+morocc_mem,170,101,3	shop	Loja de Utilidades#moc10	85,909:-1,528:-1,919:-1,925:-1
+morocc_mem,206,250,1	shop	Loja de Utilidades#moc11	85,909:-1,528:-1,919:-1,925:-1
+morocc_mem,244,134,1	shop	Comerciante#moc12	93,2612:-1
+morocc_mem,259,193,1	shop	Comerciante#moc13	99,747:-1
+morocc_mem,268,193,1	shop	Comerciante#moc14	93,748:-1
+morocc_mem,269,167,4	shop	Treinador#moc15	125,537:-1,643:-1,10013:-1,10014:-1

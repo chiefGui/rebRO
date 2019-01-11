@@ -1,0 +1,83 @@
+morocc_in,140,102,4	script	Estudante#mer	86,{
+	if ((job_merchant_q == 4) || (job_merchant_q == 3)) {
+		mes "[Estudante]";
+		mes "Você veio da";
+		mes "Guilda dos Mercadores?";
+		mes "Sim! Você veio ao";
+		mes "lugar certo.";
+		next;
+		mes "[Estudante]";
+		if (countitem(1081) == 1 || countitem(1082) == 1 || countitem(1091) == 1) {
+			mes "Certo~";
+			mes "Por favor, coloque";
+			mes "o pacote aqui";
+			mes "para mim.";
+		}
+		else {
+			mes "Mas...";
+			mes "Aonde está o";
+			mes "pacote que eu pedi?";
+			mes "Este me é estranho...";
+			close;
+		}
+		next;
+		mes "[Estudante]";
+		mes "Me deixe checar o número de série do pacote para que eu possa lhe dar o recibo, tudo bem?";
+		next;
+		mes "[Estudante]";
+		if (job_merchant_q2 == 5 && countitem(1081) != 0) {
+			mes "3012685...";
+			mes "Está certo.";
+			mes "Aqui está o seu";
+			mes "recibo.";
+			delitem 1081,1; //Merchant_Box_1
+			getitem 1077,1; //Merchant_Voucher_5
+		}
+		else if (job_merchant_q2 == 6 && countitem(1082) != 0) {
+			mes "3487372...";
+			mes "Está certo.";
+			mes "Aqui está o seu";
+			mes "recibo.";
+			delitem 1082,1; //Merchant_Box_2
+			getitem 1078,1; //Merchant_Voucher_6
+		}
+		else {
+			mes "Me desculper, mas...";
+			if (job_merchant_q2 == 5)
+				mes "Eu não acho que esse é o pacote que eu pedi. O número de série deveria ser 3012685. Entende?";
+			else if (job_merchant_q2 == 6)
+				mes "Eu não acho que esse é o pacote que eu pedi. O número de série deveria ser 3487372. Entende?";
+			else
+				mes "Eu não acho que esse é o pacote que eu pedi. O número de série deveria ser 3012685 ou 3487372. Bem, um desses dois...";
+			close;
+		}
+		if (job_merchant_q == 4)
+			set job_merchant_q,6;
+		else if (job_merchant_q == 3)
+			set job_merchant_q,5;
+		next;
+		mes "[Estudante]";
+		mes "Muito obrigado!";
+		mes "Até mais ver!";
+		close;
+	}
+	else if (job_merchant_q == 6 || job_merchant_q == 5 && job_merchant_q2 == 6 || job_merchant_q2 == 5) {
+		mes "[Estudante]";
+		mes "Oh...";
+		mes "Você irá";
+		mes "voltar? Tudo bem.";
+		mes "Tenha cuidado!";
+		close;
+	}
+	else {
+		mes "[Estudante]";
+		mes "Mr. Java Dullihan é o primeiro e o melhor produtor de tinta em todo continente de Rune-Midgard.";
+		next;
+		mes "[Estudante]";
+		mes "Eeeee eu me orgulho de dizer que eu sou estudante dele! Algum dia, Eu estarei pronto para fazer lindas tintas também!";
+		next;
+		mes "[Estudante]";
+		mes "Claro, eu estou aprendendo o básico agora, mas algum dia...";
+		close;
+	}
+}

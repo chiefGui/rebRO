@@ -169,33 +169,33 @@ geffen,203,123,2	script	Kafra Employee::geffen2	4_F_KAFRA4,{
 }
 
 //== Morroc ================================================
-morocc,156,97,4	script	Kafra Employee::kaf_morocc	4_F_KAFRA5,{
-	cutin "kafra_05",2;
-	callfunc "F_KafSet";
-	mes "[Kafra Employee]";
-	mes "The Kafra Corporation";
-	mes "is always working to provide";
-	mes "you with convenient services.";
-	mes "How may I be of assistance?";
-	callfunc "F_Kafra",5,0,0,60,930;
-	savepoint "morocc",156,46;
-	callfunc "F_KafEnd",0,1,"in the city of Morroc";
-}
+// morocc,156,97,4	script	Kafra Employee::kaf_morocc	4_F_KAFRA5,{
+// 	cutin "kafra_05",2;
+// 	callfunc "F_KafSet";
+// 	mes "[Kafra Employee]";
+// 	mes "The Kafra Corporation";
+// 	mes "is always working to provide";
+// 	mes "you with convenient services.";
+// 	mes "How may I be of assistance?";
+// 	callfunc "F_Kafra",5,0,0,60,930;
+// 	savepoint "'morocc'",156,46;
+// 	callfunc "F_KafEnd",0,1,"in the city of Morroc";
+// }
 
-morocc,160,258,4	script	Kafra::kaf_morocc2	4_F_KAFRA4,{
-	cutin "kafra_04",2;
-	callfunc "F_KafSet";
-	mes "[Kafra Employee]";
-	mes "Welcome!";
-	mes "The Kafra Corporation";
-	mes "will always support the";
-	mes "adventurers of Rune-Midgard";
-	mes "with its excellent service. So";
-	mes "what can I do for you today?";
-	callfunc "F_Kafra",5,0,0,60,930;
-	savepoint "morocc",157,272;
-	callfunc "F_KafEnd",0,1,"in the city of Morroc";
-}
+// morocc,160,258,4	script	Kafra::kaf_morocc2	4_F_KAFRA4,{
+// 	cutin "kafra_04",2;
+// 	callfunc "F_KafSet";
+// 	mes "[Kafra Employee]";
+// 	mes "Welcome!";
+// 	mes "The Kafra Corporation";
+// 	mes "will always support the";
+// 	mes "adventurers of Rune-Midgard";
+// 	mes "with its excellent service. So";
+// 	mes "what can I do for you today?";
+// 	callfunc "F_Kafra",5,0,0,60,930;
+// 	savepoint "morocc",157,272;
+// 	callfunc "F_KafEnd",0,1,"in the city of Morroc";
+// }
 
 //== Payon =================================================
 //payon,181,104,4	script	Kafra Employee::kaf_payon	4_F_KAFRA5,{

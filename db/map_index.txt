@@ -10,7 +10,6 @@
 // Note that map index 0 is special and reserved for "error" status.
 
 alb_ship 1
-morocc_mem
 alb2trea
 alberta
 alberta_in
@@ -145,6 +144,7 @@ moc_ruins
 monk_in
 morocc
 morocc_in
+morocc_mem
 new_1-1
 new_1-2
 new_1-3

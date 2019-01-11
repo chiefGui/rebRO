@@ -1,0 +1,108 @@
+morocc_in,142,100,4	script	William	4_M_ORIENT02,{
+	mes "[William]";
+	mes "Bem vindo à oficina de placas ^3355FFMacMillan^000000.";
+	next;
+	mes "[William]";
+	mes "Minha família, o Clã MacMillan, tem produzido sinais de trânsito profissionais por mais de 250 anos. Hoje em dia nós estamos agendando ofertas especiais para o nosso ornamento único, a ^3355FFPlaca de PARE^000000.";
+	next;
+	switch(select("Posso encomendar uma?", "Nah...")) {
+	case 1:
+		mes "[William]";
+		mes "Este ornamento único, a ^3355FFPlaca de PARE^000000, é um sinal de trânsito que fica na rua, e é duas vezes mais valioso como um ornamento para a cabeça! Para este fim, nós damos a garantia de 100 anos!";
+		next;
+		mes "[William]";
+		mes "Para produzir a ^3355FFPlaca de PARE^000000, nós precisamos de ^3355FF91100 Zeny^000000, ^3355FF50 Troncos^000000 e ^3355FF1 Tintura Preta^000000.";
+		next;
+		if ((countitem(Wooden_Block) > 49) && (countitem(Black_Dyestuffs) > 0) && (Zeny > 91099)) {
+			delitem Wooden_Block,50;
+			delitem Black_Dyestuffs,1;
+			Zeny -= 91100;
+			mes "[William]";
+			mes "Aí está você~!";
+			mes "Esta ^3355FFPlaca de PARE^000000 foi feita";
+			mes "especialmente só para você!";
+			mes "Obrigado por parar por aqui!";
+			mes "... Entendeu a piada?";
+			getitem Stop_Post,1; // Stop_Post
+			close;
+		}
+		else {
+			mes "[William]";
+			mes "Então...";
+			mes "Quando você me trouxer o material necessário, passe por aqui que lhe daremos a placa.";
+			close;
+		}
+	case 2:
+		mes "[William]";
+		mes "De qualquer maneira, obrigado por ter vindo na 'Oficina MacMillan', mas considere comprar alguma coisa da próxima vez, ta ok?";
+		close;
+	}
+}
+
+// Binoculars Quest
+morocc_in,76,163,4	script	Alquimista	64,{
+	mes "[Marius]";
+	mes "Opa, novo cliente!!";
+	mes "Espera, eu sei o que você vai falar... Você quer os óculos mágicos de mim, ceeeeerto?";
+	next;
+	switch(select("Do que você está falando?", "Fabricar", "Ignorar")) {
+	case 1:
+		mes "[Marius]";
+		mes "Hmm~!";
+		mes "Bem, os nomes oficiais deles são ^3355FFBinóculos^000000! Um dispositivo ótico que funciona como um par de óculos de campo, projetados para ampliar a visão simultânea nos dois olhos!!!";
+		next;
+		mes "[Marius]";
+		mes "Eles são feitos de dois telescópios pequenos, que juntos se transformam neste único dispositivo de foco. Você pode mexer nas lentes para ter visão estereoscópia.";
+		next;
+		mes "[Marius]";
+		mes "E então?";
+		mes "Não é que esse dispositivo é uma belezinha?";
+		mes "Muhahahahahaha!";
+		mes ". . . . .";
+		next;
+		mes "[Marius]";
+		mes "Hm? Você não acredita";
+		mes "no que eu estou dizendo?";
+		mes "Oh idiota, vamos lá! O negócio é real!!";
+		next;
+		mes "[Marius]";
+		mes "Se te interessar,";
+		mes "estes são os materiais que eu preciso:";
+		mes "1 ^3355FFQuatro Olhos^000000! 100 ^3355FFAços^000000!";
+		mes "e ^3355FF50000 Zeny^000000!";
+		close;
+	case 2:
+		if ((countitem(Spinning_Eyes) > 0) && (countitem(Steel) > 99) && (Zeny > 49999)) {
+			mes "[Marius]";
+			mes "Perfeito, perfeito!";
+			mes "Agora a minha obra-prima estará completa!";
+			mes "Muhahahaha !";
+			next;
+			delitem Spinning_Eyes,1;
+			delitem Steel,100;
+			Zeny -= 50000;
+			mes "[Marius]";
+			mes "Aqui vai...!";
+			mes "Binóculos !";
+			getitem Binoculars,1; // Binoculars
+			next;
+			mes "[Marius]";
+			mes "Mas não se esqueça...";
+			mes "Não fique bisbilhotando em algum qeu você não deveria ver. Bem, pelo menos tente não fazer.";
+			close;
+		}
+		else {
+			mes "[Marius]";
+			mes "Argggghhhhhhh!!";
+			mes "Você não trouxe todos os itens necessários!!!!!!";
+			mes "Como você ousa me fazer perder tempo?!?!?!?";
+			mes "Mallll, bem mallll !!";
+			close;
+		}
+	case 3:
+		mes "[Marius]";
+		mes "Hey você~!";
+		mes "Agora você está de frente com Marius, o Alquimista dos Alquimistas. Me ignorando, é? Vou chutar sua bunda!";
+		close;
+	}
+}

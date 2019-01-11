@@ -1276,52 +1276,52 @@ OnInit:
 	sellitem Banana;
 }
 
-morocc_in,141,67,0	trader	Weapon Dealer#moc1	1_M_MERCHANT,{
-OnInit:
-	sellitem Arrow;
-	sellitem Silver_Arrow;
-	sellitem Bow;
-	sellitem Rod;
-	sellitem Knife;
-	sellitem Cutter;
-	sellitem Main_Gauche;
-	sellitem Dirk;
-	sellitem Dagger;
-	sellitem Stiletto;
-	sellitem Gladius;
-	sellitem Damascus;
-	sellitem Jur;
-	sellitem Katar;
-	sellitem Jamadhar;
-}
+// morocc_in,141,67,0	trader	Weapon Dealer#moc1	1_M_MERCHANT,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Silver_Arrow;
+// 	sellitem Bow;
+// 	sellitem Rod;
+// 	sellitem Knife;
+// 	sellitem Cutter;
+// 	sellitem Main_Gauche;
+// 	sellitem Dirk;
+// 	sellitem Dagger;
+// 	sellitem Stiletto;
+// 	sellitem Gladius;
+// 	sellitem Damascus;
+// 	sellitem Jur;
+// 	sellitem Katar;
+// 	sellitem Jamadhar;
+// }
 
-morocc_in,141,60,0	trader	Armor Dealer#moc	1_M_MERCHANT,{
-OnInit:
-	sellitem Guard;
-	sellitem Buckler;
-	sellitem Sandals;
-	sellitem Shoes;
-	sellitem Boots;
-	sellitem Hood;
-	sellitem Muffler;
-	sellitem Flu_Mask;
-	sellitem Cotton_Shirt;
-	sellitem Leather_Jacket;
-	sellitem Adventure_Suit;
-	sellitem Silk_Robe;
-	sellitem Wooden_Mail;
-	sellitem Silver_Robe;
-	sellitem Mantle;
-	sellitem Coat;
-	sellitem Thief_Clothes;
-	sellitem Novice_Armlet;
-}
+// morocc_in,141,60,0	trader	Armor Dealer#moc	1_M_MERCHANT,{
+// OnInit:
+// 	sellitem Guard;
+// 	sellitem Buckler;
+// 	sellitem Sandals;
+// 	sellitem Shoes;
+// 	sellitem Boots;
+// 	sellitem Hood;
+// 	sellitem Muffler;
+// 	sellitem Flu_Mask;
+// 	sellitem Cotton_Shirt;
+// 	sellitem Leather_Jacket;
+// 	sellitem Adventure_Suit;
+// 	sellitem Silk_Robe;
+// 	sellitem Wooden_Mail;
+// 	sellitem Silver_Robe;
+// 	sellitem Mantle;
+// 	sellitem Coat;
+// 	sellitem Thief_Clothes;
+// 	sellitem Novice_Armlet;
+// }
 
-morocc_in,132,57,0	trader	Weapon Dealer#moc2	4W_M_03,{
-OnInit:
-	sellitem Town_Sword;
-	sellitem Cinquedea;
-}
+// morocc_in,132,57,0	trader	Weapon Dealer#moc2	4W_M_03,{
+// OnInit:
+// 	sellitem Town_Sword;
+// 	sellitem Cinquedea;
+// }
 
 //== Moscovia ==============================================
 mosk_in,21,254,5	trader	Tool Dealer#mosk	4_M_RUSMAN2,{

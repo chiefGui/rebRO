@@ -3533,7 +3533,7 @@ fi
 if test "${enable_packetver+set}" = set; then :
   enableval=$enable_packetver; enable_packetver="$enableval"
 else
-  enable_packetver=""
+  enable_packetver="20140613"
 
 fi
 

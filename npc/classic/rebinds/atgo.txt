@@ -1,0 +1,107 @@
+-	script	gobind	-1,{
+// Script-Based @go Alternative by jTynne
+// Version: 2.0 - January 2013
+// Feel free to edit this script or simply use it as a base.
+// Please give credit if you re-release this script with your own modifications.
+// Want to show your thanks via Paypal? Shoot me a buck or two : decadenthearts06@gmail.com - Thanks!
+
+OnInit:
+	unbindatcmd "go";
+	bindatcmd("go","gobind::OnAtcommand",0,10);
+	end;
+	
+
+OnAtcommand:
+set @warp$,.@atcmd_parameters$[0];
+set @warp,@warp$;
+
+if(@warp$ == "list") { dispbottom "Para usar: @go #"; 
+dispbottom "0=Prontera         1=Morroc        2=Geffen      3=Payon      4=Alberta";
+dispbottom "5=Izlude           6=Al De Baran   7=Lutie       8=Comodo     9=Yuno";
+// dispbottom "10=Amatsu          11=Gonryun      12=Umbala     13=Niflheim  14=Louyang";
+dispbottom "15=Novice Grounds  16=Prison";
+// dispbottom "17=Jawaii     18=Ayothaya  19=Einbroch";
+// dispbottom "20=Lighthalzen     21=Einbech      22=Hugel      23=Rachel    24=Veins";
+// dispbottom "25=Moscovia        26=Midgard Camp 27=Manuk      28=Splendide 29=Brasilis";
+// dispbottom "30=El Dicastes     31=Mora         32=Dewata     33=Malangdo  34=Port Malaya";
+// dispbottom "35=Eclage          36=Gladia       37=Serenglade 38=Excolo    39=Sakura Town";
+// dispbottom "40=Eden Village    41=Helheim      42=Paros Lighthouse 43=Paradise Group HQ  44=Morroc Ruins";
+// dispbottom "45=Old Morroc      46=Old Payon    47=Autumn Prontera      48=Winter Prontera";
+// dispbottom "49=Prontera Job Building           50=Verus                51=jTynne's Grotto";
+// dispbottom "52=Deathmas Prontera               53=Muspelheim";
+// dispbottom "Note: Non-VIP users have a 3 second delay when using this command and cannot access beyond @go 5.";
+end;
+}
+
+// VIP Stuff
+// if(getgroupid() < 1) { 
+// 	if(@warp > 5) { dispbottom "[Server]: Non-VIP members may only use @go 0-5. To use the full list, please upgrade to VIP status."; end;}
+//	progressbar "green",3; }
+
+// map name,x,y,level requirement, group id minimum requirement
+if(@warp$ == "0" || @warp$ == "pr" || @warp$ == "pro" || @warp$ == "pron" || @warp$ == "pront" || @warp$ == "prontera") { callsub	Process,"prontera",156,191,0,0; }
+if(@warp$ == "1" || @warp$ == "moc" || @warp$ == "mor" || @warp$ == "moro" || @warp$ == "moroc" || @warp$ == "morocc") { callsub	Process,"morocc",156,93,0,0; }
+if(@warp$ == "2" || @warp$ == "gef" || @warp$ == "geffen") { callsub	Process,"geffen",119,59,0,0; }
+if(@warp$ == "4" || @warp$ == "al" || @warp$ == "alb" || @warp$ == "alberta") { callsub	Process,"alberta",192,147,0,0; }
+if(@warp$ == "5" || @warp$ == "iz" || @warp$ == "izl" || @warp$ == "izlude") { callsub	Process,"izlude",128,114,0,0; }
+if(@warp$ == "6" || @warp$ == "ald" || @warp$ == "alde" || @warp$ == "aldebaran") { callsub	Process,"aldebaran",140,131,0,0; }
+if(@warp$ == "7" || @warp$ == "xmas" || @warp$ == "lutie") { callsub	Process,"xmas",147,134,0,0; }
+if(@warp$ == "8" || @warp$ == "co" || @warp$ == "com" || @warp$ == "comodo") { callsub	Process,"comodo",209,143,0,0; }
+if(@warp$ == "9" || @warp$ == "ju" || @warp$ == "yu" || @warp$ == "juno" || @warp$ == "yuno") { callsub	Process,"yuno",157,51,0,0; }
+if(@warp$ == "15" || @warp$ == "nov" || @warp$ == "ng") { callsub	Process,"new_1-1",53,111,0,10; }	// Novice Grounds : GM Group 10 or higher only.
+if(@warp$ == "16" || @warp$ == "jail" || @warp$ == "prison") { callsub	Process,"sec_pri",23,61,0,10;}		// Prison: GM Group 10 or higher only.
+
+// NOT OLD TIMES
+// if(@warp$ == "3" || @warp$ == "pay" || @warp$ == "payo" || @warp$ == "payon") { callsub	Process,"payon",177,101,0,0; }
+// if(@warp$ == "10" || @warp$ == "ama" || @warp$ == "amat" || @warp$ == "amatsu") { callsub	Process,"amatsu",198,84,0,0; }
+// if(@warp$ == "11" || @warp$ == "gon" || @warp$ == "gonr" || @warp$ == "gonryun") { callsub	Process,"gonryun",160,120,0,0; }
+// if(@warp$ == "12" || @warp$ == "um" || @warp$ == "umb" || @warp$ == "umbala") { callsub	Process,"umbala",89,157,0,0; }
+// if(@warp$ == "13" || @warp$ == "nif" || @warp$ == "nifl" || @warp$ == "niflh" || @warp$ == "niflheim") { callsub	Process,"niflheim",21,153,0,0; }
+// if(@warp$ == "14" || @warp$ == "lou" || @warp$ == "ly" || @warp$ == "louyang") { callsub	Process,"louyang",217,40,0,0; }
+// if(@warp$ == "17" || @warp$ == "jaw" || @warp$ == "jawa" || @warp$ == "jawaii") { callsub	Process,"jawaii",249,127,0,0; }
+// if(@warp$ == "18" || @warp$ == "ayo" || @warp$ == "aya" || @warp$ == "ayothoya" || @warp$ == "ayathoya" || @warp$ == "ayothaya") { callsub	Process,"ayothaya",151,117,0,0; }
+// if(@warp$ == "19" || @warp$ == "ein" || @warp$ == "ein1" || @warp$ == "einbr" || @warp$ == "einbro" || @warp$ == "einbroch") { callsub	Process,"einbroch",64,200,0,0; }
+// if(@warp$ == "20" || @warp$ == "lhz" || @warp$ == "light" || @warp$ == "lighthalzen") { callsub	Process,"lighthalzen",158,92,0,0; }
+// if(@warp$ == "21" || @warp$ == "einbe" || @warp$ == "ein2" || @warp$ == "einbech") { callsub	Process,"einbech",70,95,0,0; }
+// if(@warp$ == "22" || @warp$ == "hu" || @warp$ == "hug" || @warp$ == "hugel") { callsub	Process,"hugel",96,145,0,0; }
+// if(@warp$ == "23" || @warp$ == "ra" || @warp$ == "rach" || @warp$ == "rachel") { callsub	Process,"rachel",130,110,0,0; }
+// if(@warp$ == "24" || @warp$ == "ve" || @warp$ == "vei" || @warp$ == "vein" || @warp$ == "veins") { callsub	Process,"veins",216,123,0,0; }
+// if(@warp$ == "25" || @warp$ == "mosc" || @warp$ == "mosk" || @warp$ == "mosco" || @warp$ == "moscov" || @warp$ == "moscovia") { callsub	Process,"moscovia",223,184,0,0; }
+// if(@warp$ == "26" || @warp$ == "camp" || @warp$ == "mid" || @warp$ == "midgard") { callsub	Process,"mid_camp",180,240,0,0; }
+// if(@warp$ == "27" || @warp$ == "man" || @warp$ == "manuk") { callsub	Process,"manuk",282,138,0,0; }
+// if(@warp$ == "28" || @warp$ == "spl" || @warp$ == "splen" || @warp$ == "splend" || @warp$ == "splendide") { callsub	Process,"splendide",211,179,0,0; }
+// if(@warp$ == "29" || @warp$ == "br" || @warp$ == "bra" || @warp$ == "bras" || @warp$ == "brasi" || @warp$ == "brasil" || @warp$ == "brasilis") { callsub	Process,"brasilis",182,239,0,0; }
+// if(@warp$ == "30" || @warp$ == "el" || @warp$ == "el dic" || @warp$ == "dic" || @warp$ == "dicas" || @warp$ == "dicast" || @warp$ == "el dicastes" || @warp$ == "dicastes") { callsub	Process,"dicastes01",198,187,0,0; }
+// if(@warp$ == "31" || @warp$ == "mor" || @warp$ == "mora") { callsub	Process,"mora",44,151,0,0; }
+// if(@warp$ == "32" || @warp$ == "dew" || @warp$ == "dewa" || @warp$ == "dewata") { callsub	Process,"dewata",200,180,0,0; }
+// if(@warp$ == "33" || @warp$ == "mal" || @warp$ == "malang" || @warp$ == "malangdo") { callsub	Process,"malangdo",140,114,0,0; }
+// if(@warp$ == "34" || @warp$ == "port" || @warp$ == "port malaya" || @warp$ == "malay" || @warp$ == "malaya") { callsub	Process,"malaya",242,211,0,0; }
+// if(@warp$ == "35" || @warp$ == "ecl" || @warp$ == "ecla" || @warp$ == "eclag" || @warp$ == "eclage") { callsub	Process,"eclage",110,39,0,0; }
+// Custom @go locations below. Also edit them in or out of the master list found towards the top of this script file.
+
+// OLD TIMES PAYON
+if(@warp$ == "3" || @warp$ == "pay" || @warp$ == "payo" || @warp$ == "payon") { callsub	Process,"payon",89,120,0,0; }
+
+else {
+//  || @warp$ == ""
+dispbottom "Para usar @go, entre um n�mero igual ou superior a 0. Para uma lista completa de teleportes, use '@go list'.";
+end;
+}
+Process:
+set @group,getarg(4);
+set @mapname$,getarg(0);
+set @x,getarg(1);
+set @y,getarg(2);
+if(@group > 0) { if(getgroupid() < @group) { dispbottom "[Server] : Este mapa n�o pode ser acessado por restri��o em permiss�o."; end;} }
+	specialeffect2 543;
+	sleep2 1;
+warp @mapname$,@x,@y;
+end;
+
+
+
+
+
+end;
+
+}

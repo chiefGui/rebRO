@@ -1415,26 +1415,26 @@ OnInit:
 	sellitem Mementos;
 }
 
-//== Payon =================================================
-payon_in01,15,119,0	trader	Weapon Dealer#pay	1_F_ORIENT_03,{
-OnInit:
-	sellitem Arrow;
-	sellitem Silver_Arrow;
-	sellitem Sword;
-	sellitem Falchion;
-	sellitem Blade;
-	sellitem Knife;
-	sellitem Cutter;
-	sellitem Main_Gauche;
-	sellitem Rod;
-	sellitem Bow;
-	sellitem Composite_Bow;
-	sellitem Great_Bow;
-	sellitem CrossBow;
-	sellitem Arbalest;
-	sellitem Kakkung;
-	sellitem Hunter_Bow;
-}
+//== PAYON_NEW =================================================
+// payon_in01,15,119,0	trader	Weapon Dealer#pay	1_F_ORIENT_03,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Silver_Arrow;
+// 	sellitem Sword;
+// 	sellitem Falchion;
+// 	sellitem Blade;
+// 	sellitem Knife;
+// 	sellitem Cutter;
+// 	sellitem Main_Gauche;
+// 	sellitem Rod;
+// 	sellitem Bow;
+// 	sellitem Composite_Bow;
+// 	sellitem Great_Bow;
+// 	sellitem CrossBow;
+// 	sellitem Arbalest;
+// 	sellitem Kakkung;
+// 	sellitem Hunter_Bow;
+// }
 
 payon_in01,5,129,7	trader	Weapon Dealer#pay2	4_F_KID2,{
 OnInit:
@@ -1442,28 +1442,71 @@ OnInit:
 	sellitem Cinquedea;
 }
 
-payon_in01,7,119,2	trader	Armor Dealer#pay	1_F_ORIENT_02,{
-OnInit:
-	sellitem Sandals;
-	sellitem Shoes;
-	sellitem Boots;
-	sellitem Hood;
-	sellitem Muffler;
-	sellitem Manteau;
-	sellitem Ribbon;
-	sellitem Bandana;
-	sellitem Eye_Bandage;
-	sellitem Cotton_Shirt;
-	sellitem Leather_Jacket;
-	sellitem Adventure_Suit;
-	sellitem Silk_Robe;
-	sellitem Wooden_Mail;
-	sellitem Silver_Robe;
-	sellitem Mantle;
-	sellitem Coat;
-	sellitem Tights;
-	sellitem Novice_Armlet;
-}
+// payon_in01,7,119,2	trader	Armor Dealer#pay	1_F_ORIENT_02,{
+// OnInit:
+// 	sellitem Sandals;
+// 	sellitem Shoes;
+// 	sellitem Boots;
+// 	sellitem Hood;
+// 	sellitem Muffler;
+// 	sellitem Manteau;
+// 	sellitem Ribbon;
+// 	sellitem Bandana;
+// 	sellitem Eye_Bandage;
+// 	sellitem Cotton_Shirt;
+// 	sellitem Leather_Jacket;
+// 	sellitem Adventure_Suit;
+// 	sellitem Silk_Robe;
+// 	sellitem Wooden_Mail;
+// 	sellitem Silver_Robe;
+// 	sellitem Mantle;
+// 	sellitem Coat;
+// 	sellitem Tights;
+// 	sellitem Novice_Armlet;
+// }
+
+//== PAYON_OLD =============================================
+payon_in01,126,52,4	trader	Vendedora de Armas#pay	1_F_ORIENT_03,{
+	OnInit:
+		sellitem Arrow;
+		sellitem Silver_Arrow;
+		sellitem Sword;
+		sellitem Falchion;
+		sellitem Blade;
+		sellitem Knife;
+		sellitem Cutter;
+		sellitem Main_Gauche;
+		sellitem Rod;
+		sellitem Bow;
+		sellitem Composite_Bow;
+		sellitem Great_Bow;
+		sellitem CrossBow;
+		sellitem Arbalest;
+		sellitem Kakkung;
+		sellitem Hunter_Bow;
+	}
+
+	payon_in01,134,52,4	trader	Vendedora de Armaduras#pay	1_F_ORIENT_02,{
+		OnInit:
+			sellitem Sandals;
+			sellitem Shoes;
+			sellitem Boots;
+			sellitem Hood;
+			sellitem Muffler;
+			sellitem Manteau;
+			sellitem Ribbon;
+			sellitem Bandana;
+			sellitem Eye_Bandage;
+			sellitem Cotton_Shirt;
+			sellitem Leather_Jacket;
+			sellitem Adventure_Suit;
+			sellitem Silk_Robe;
+			sellitem Wooden_Mail;
+			sellitem Silver_Robe;
+			sellitem Mantle;
+			sellitem Coat;
+			sellitem Tights;
+		}
 
 //== Prontera ==============================================
 prontera,73,134,0	trader	Vendor from Milk Ranch#p	4_F_01,{

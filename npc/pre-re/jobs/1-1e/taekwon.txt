@@ -31,4 +31,4 @@
 //= 1.0.1
 //=========================================================================
 
-payon,157,141,5	duplicate(TKJobChange)	Phoenix#TKJobChangePRE	4_M_MONK
+// payon,157,141,5	duplicate(TKJobChange)	Phoenix#TKJobChangePRE	4_M_MONK

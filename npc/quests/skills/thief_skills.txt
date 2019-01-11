@@ -39,7 +39,7 @@
 //= 1.8
 //=========================================================================
 
-moc_prydb1,154,128,4	script	Alcouskou	2_M_THIEFMASTER,{
+moc_prydb1,154,128,4 script	Alcouskou	2_M_THIEFMASTER,{
 	if (BaseClass == Job_Thief) {
 		mes "[Alcouskou]";
 		mes "As you live life you will encounter";
@@ -454,71 +454,72 @@ moc_prydb1,154,128,4	script	Alcouskou	2_M_THIEFMASTER,{
 	close;
 }
 
-payon,91,77,3	script	Bag Seller	4W_M_03,{
-	mes "[RuRumuni]";
-	mes "I am a humble merchant here";
-	mes "in Payon. I buy the leather";
-	mes "hides of animals brought in by";
-	mes "the hunters and make leather";
-	mes "pouches to sell. I grew up";
-	mes "around leather working and am quite good at it.";
-	next;
-	switch (skill_thief_1) {
-	case 0:
-		mes "[RuRumuni]";
-		mes "There is a thief guild in the";
-		mes "area of Morroc. I know one there";
-		mes "that sends me thieves in need";
-		mes "of items I make such as a";
-		mes "^3355FF' Leather Bag of Infinity '^000000.";
-		mes "They visit my store often.";
-		close;
-	case 1:
-		if ((countitem(Cactus_Needle) > 0) && (countitem(Earthworm_Peeling) > 0) && (countitem(Spiderweb) > 0)) {
-			mes "[RuRumuni]";
-			mes "Ahhh... You have come for a leather bag.";
-			mes "Very good, very good.";
-			mes "I will make you the leather bag";
-			mes "right away if you wait just a bit.";
-			mes "TuTak TuTak Shyuku Shyuku Shyuku";
-			mes "- - - - -";
-			next;
-			mes "[RuRumuni]";
-			mes "Okay, here it is all done.";
-			mes "Take this leather bag";
-			mes "to the Thief guild's Alcouskou";
-			mes "If you take him this, he will";
-			mes "teach you the skill that you ";
-			mes "wish to learn.";
-			delitem Cactus_Needle,1;
-			delitem Earthworm_Peeling,1;
-			delitem Spiderweb,1;
-			skill_thief_1 = 2;
-			getitem Leather_Bag_Of_Infinity,1;
-			close;
-		}
-		mes "[RuRumuni]";
-		mes "Find Alcouskou of the thief guild";
-		mes "to place and order for a leather bag of infinity.";
-		mes "You should know that the leather bag of infinity";
-		mes "takes much time and skill to make.";
-		mes "In order to make such an item, you";
-		mes "must provide me with the materials.";
-		next;
-		mes "The items needed as materials are";
-		mes "these items. ..";
-		mes "^3355FF' Earthworm Peeling '^000000";
-		mes "^3355FF' Cobweb '^000000";
-		mes "^3355FF' Cactus Needle '^000000";
-		mes "I need one of each.";
-		close;
-	case 2:
-		mes "[RuRumuni]";
-		mes "Here is your leather bag of infinity.";
-		mes "Take this to the Thief guilds";
-		mes "Alcouskou and let him know ";
-		mes "that you are now ready to learn";
-		mes "the skill.";
-		close;
-	}
-}
+// PAYON_NEW
+//payon,91,77,3	script	Bag Seller	4W_M_03,{
+//mes "[RuRumuni]";
+//mes "I am a humble merchant here";
+//mes "in Payon. I buy the leather";
+//mes "hides of animals brought in by";
+//mes "the hunters and make leather";
+//mes "pouches to sell. I grew up";
+//mes "around leather working and am quite good at it.";
+//next;
+//switch (skill_thief_1) {
+//case 0:
+////mes "[RuRumuni]";
+////mes "There is a thief guild in the";
+////mes "area of Morroc. I know one there";
+////mes "that sends me thieves in need";
+////mes "of items I make such as a";
+////mes "^3355FF' Leather Bag of Infinity '^000000.";
+////mes "They visit my store often.";
+////close;
+//case 1:
+////if ((countitem(Cactus_Needle) > 0) && (countitem(Earthworm_Peeling) > 0) && (countitem(Spiderweb) > 0)) {
+//////mes "[RuRumuni]";
+//////mes "Ahhh... You have come for a leather bag.";
+//////mes "Very good, very good.";
+//////mes "I will make you the leather bag";
+//////mes "right away if you wait just a bit.";
+//////mes "TuTak TuTak Shyuku Shyuku Shyuku";
+//////mes "- - - - -";
+//////next;
+//////mes "[RuRumuni]";
+//////mes "Okay, here it is all done.";
+//////mes "Take this leather bag";
+//////mes "to the Thief guild's Alcouskou";
+//////mes "If you take him this, he will";
+//////mes "teach you the skill that you ";
+//////mes "wish to learn.";
+//////delitem Cactus_Needle,1;
+//////delitem Earthworm_Peeling,1;
+//////delitem Spiderweb,1;
+//////skill_thief_1 = 2;
+//////getitem Leather_Bag_Of_Infinity,1;
+//////close;
+////}
+////mes "[RuRumuni]";
+////mes "Find Alcouskou of the thief guild";
+////mes "to place and order for a leather bag of infinity.";
+////mes "You should know that the leather bag of infinity";
+////mes "takes much time and skill to make.";
+////mes "In order to make such an item, you";
+////mes "must provide me with the materials.";
+////next;
+////mes "The items needed as materials are";
+////mes "these items. ..";
+////mes "^3355FF' Earthworm Peeling '^000000";
+////mes "^3355FF' Cobweb '^000000";
+////mes "^3355FF' Cactus Needle '^000000";
+////mes "I need one of each.";
+////close;
+//case 2:
+////mes "[RuRumuni]";
+////mes "Here is your leather bag of infinity.";
+////mes "Take this to the Thief guilds";
+////mes "Alcouskou and let him know ";
+////mes "that you are now ready to learn";
+////mes "the skill.";
+////close;
+//}
+//}

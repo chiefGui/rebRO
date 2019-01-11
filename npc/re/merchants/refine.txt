@@ -400,9 +400,9 @@ function	script	refinenew	{
 	mes "or "+getitemname(.@i[0])+".";
 	close;
 }
-prt_in,85,71,5	duplicate(Austri#ref)	Austri#prt	4_M_DWARF
-payon_in01,14,125,5	duplicate(Austri#ref)	Austri#pay	4_M_DWARF
-morocc_in,60,38,5	duplicate(Austri#ref)	Austri#moc	4_M_DWARF
+//prt_in,85,71,5	duplicate(Austri#ref)	Austri#prt	4_M_DWARF
+//payon_in01,14,125,5	duplicate(Austri#ref)	Austri#pay	4_M_DWARF
+//morocc_in,60,38,5	duplicate(Austri#ref)	Austri#moc	4_M_DWARF
 
 //== Malangdo Refiner ======================================
 malangdo,224,172,6	script	Clink#mal_normal	4_CAT_SAILOR1,{

@@ -10,6 +10,7 @@
 // Note that map index 0 is special and reserved for "error" status.
 
 alb_ship 1
+morocc_mem
 alb2trea
 alberta
 alberta_in

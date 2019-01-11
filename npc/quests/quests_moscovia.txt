@@ -36,9 +36,9 @@
 //================= File Encoding =========================================
 //= CP-949 (EUC-KR compatible). Do NOT read/save it as UTF-8.
 //= -If the encoding is correct, the next three lines have the same length-
-//= ============ ¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä ============
+//= ============ ï¿½Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡Ä¡ï¿½ ============
 //= ============ ============================================= ============
-//= ============ ¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á ============
+//= ============ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ============
 //================= Description ===========================================
 //= Quests for Moscovia.
 //= The Moving Island, Help Mikhail, Acorn Exchange, Banish Winter, Shafka
@@ -11346,7 +11346,7 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 				mes "One! Two! Three!!";
 				next;
 				if (.@rucard_game01 == 1) {
-					cutin "Æ÷¸µÄ«µå",4; // Poring Card
+					cutin "ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",4; // Poring Card
 					emotion e_gasp;
 					emotion e_ic,1;
 					next;
@@ -11359,9 +11359,9 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 					next;
 				} else {
 					if (.@rucard_game01 == 2)
-						cutin "¿£Á©¸µÄ«µå",4; // Angeling Card
+						cutin "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",4; // Angeling Card
 					else
-						cutin "°í½ºÆ®¸µÄ«µå",4; // Ghostring Card
+						cutin "ï¿½ï¿½Æ®ï¿½ï¿½Ä«ï¿½ï¿½",4; // Ghostring Card
 					emotion e_gasp;
 					emotion e_omg,1;
 					next;
@@ -11382,7 +11382,7 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 				mes "One! Two! Three!!";
 				next;
 				if (.@rucard_game01 == 2) {
-					cutin "°í½ºÆ®¸µÄ«µå",4; // Angeling Card
+					cutin "ï¿½ï¿½Æ®ï¿½ï¿½Ä«ï¿½ï¿½",4; // Angeling Card
 					emotion e_gasp;
 					emotion e_ic,1;
 					next;
@@ -11395,9 +11395,9 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 					next;
 				} else {
 					if (.@rucard_game01 == 1)
-						cutin "Æ÷¸µÄ«µå",4; // Poring Card
+						cutin "ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",4; // Poring Card
 					else
-						cutin "°í½ºÆ®¸µÄ«µå",4; // Ghostring Card
+						cutin "ï¿½ï¿½Æ®ï¿½ï¿½Ä«ï¿½ï¿½",4; // Ghostring Card
 					emotion e_gasp;
 					emotion e_omg,1;
 					next;
@@ -11418,7 +11418,7 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 				mes "One! Two! Three!!";
 				next;
 				if (.@rucard_game01 == 3) {
-					cutin "°í½ºÆ®¸µÄ«µå",4; // Ghostring Card
+					cutin "ï¿½ï¿½Æ®ï¿½ï¿½Ä«ï¿½ï¿½",4; // Ghostring Card
 					emotion e_gasp;
 					emotion e_ic,1;
 					next;
@@ -11431,9 +11431,9 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 					next;
 				} else {
 					if (.@rucard_game01 == 1)
-						cutin "Æ÷¸µÄ«µå",4; // Poring Card
+						cutin "ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",4; // Poring Card
 					else
-						cutin "°í½ºÆ®¸µÄ«µå",4; // Angeling Card
+						cutin "ï¿½ï¿½Æ®ï¿½ï¿½Ä«ï¿½ï¿½",4; // Angeling Card
 					emotion e_gasp;
 					emotion e_omg,1;
 					next;
@@ -11527,62 +11527,63 @@ OnMyMobDead:
 	end;
 }
 
-payon,65,119,0	script	Broom Grandma#rus44	1_F_ORIENT_04,{
-	if (rhea_rus_main < 36) {
-		mes "[Broom Grandma]";
-		mes "A broom from Payon is the best!";
-		next;
-		mes "[Broom Grandma]";
-		mes "It is so good that even ghosts want only a Payon broom.";
-		close;
-	} else if (rhea_rus_main == 36) {
-		mes "[Broom Grandma]";
-		mes "A broom from Payon is best!";
-		next;
-		mes "[Broom Grandma]";
-		mes "It is so good that even ghosts want only a Payon broom.";
-		next;
-		mes "["+ strcharinfo(PC_NAME) +"]";
-		mes "I want to buy a broom.";
-		next;
-		mes "[Broom Grandma]";
-		mes "Oh, you are a guest. Yes, you need a broom?";
-		next;
-		mes "[Broom Grandma]";
-		mes "But, I have no broom. Ghosts stole all my newly made brooms. I was pleased because they were nice even for ghosts. But...";
-		next;
-		mes "[Broom Grandma]";
-		mes "My son went to their place to get back the brooms, but he failed since the ghosts tricked him.";
-		next;
-		mes "[Broom Grandma]";
-		mes "Ah.. What should I do...";
-		rhea_rus_main = 37;
-		close;
-	} else if (rhea_rus_main > 36 && rhea_rus_main < 41) {
-		mes "[Broom Grandma]";
-		mes "There are ghosts inside the dungeon of Payon. There is a tree there where the ghosts is hiding.";
-		next;
-		mes "[Broom Grandma]";
-		mes "My son went to their place to get back the brooms, but he failed since the ghosts tricked him.";
-		next;
-		mes "[Broom Grandma]";
-		mes "Ah.. What should I do...";
-		close;
-	} else if (rhea_rus_main == 46) {
-		mes "[Broom Grandma]";
-		mes "Ah, you have taken them back. You are a great adventurer.";
-		next;
-		mes "[Broom Grandma]";
-		mes "You can have that broom. I believe it is its destiny.";
-		close;
-	}
-	mes "[Broom Grandma]";
-	mes "A broom from Payon is the best!";
-	next;
-	mes "[Broom Grandma]";
-	mes "It is so good that even ghosts want only a Payon broom.";
-	close;
-}
+// PAYON_NEW
+// payon,65,119,0	script	Broom Grandma#rus44	1_F_ORIENT_04,{
+// if (rhea_rus_main < 36) {
+// // mes "[Broom Grandma]";
+// // mes "A broom from Payon is the best!";
+// // next;
+// // mes "[Broom Grandma]";
+// // mes "It is so good that even ghosts want only a Payon broom.";
+// // close;
+// } else if (rhea_rus_main == 36) {
+// // mes "[Broom Grandma]";
+// // mes "A broom from Payon is best!";
+// // next;
+// // mes "[Broom Grandma]";
+// // mes "It is so good that even ghosts want only a Payon broom.";
+// // next;
+// // mes "["+ strcharinfo(PC_NAME) +"]";
+// // mes "I want to buy a broom.";
+// // next;
+// // mes "[Broom Grandma]";
+// // mes "Oh, you are a guest. Yes, you need a broom?";
+// // next;
+// // mes "[Broom Grandma]";
+// // mes "But, I have no broom. Ghosts stole all my newly made brooms. I was pleased because they were nice even for ghosts. But...";
+// // next;
+// // mes "[Broom Grandma]";
+// // mes "My son went to their place to get back the brooms, but he failed since the ghosts tricked him.";
+// // next;
+// // mes "[Broom Grandma]";
+// // mes "Ah.. What should I do...";
+// // rhea_rus_main = 37;
+// // close;
+// } else if (rhea_rus_main > 36 && rhea_rus_main < 41) {
+// // mes "[Broom Grandma]";
+// // mes "There are ghosts inside the dungeon of Payon. There is a tree there where the ghosts is hiding.";
+// // next;
+// // mes "[Broom Grandma]";
+// // mes "My son went to their place to get back the brooms, but he failed since the ghosts tricked him.";
+// // next;
+// // mes "[Broom Grandma]";
+// // mes "Ah.. What should I do...";
+// // close;
+// } else if (rhea_rus_main == 46) {
+// // mes "[Broom Grandma]";
+// // mes "Ah, you have taken them back. You are a great adventurer.";
+// // next;
+// // mes "[Broom Grandma]";
+// // mes "You can have that broom. I believe it is its destiny.";
+// // close;
+// }
+// mes "[Broom Grandma]";
+// mes "A broom from Payon is the best!";
+// next;
+// mes "[Broom Grandma]";
+// mes "It is so good that even ghosts want only a Payon broom.";
+// close;
+// }
 
 pay_dun04,163,186,0	script	Ghost Tree#rus45	HIDDEN_NPC,{
 	if (rhea_rus_main == 37) {

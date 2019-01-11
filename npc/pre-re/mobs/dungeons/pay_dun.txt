@@ -34,13 +34,13 @@
 //= 1.3
 //=========================================================================
 
-//== pay_dun00 - Payon Cave F1 =============================
-pay_dun00,0,0,0,0	monster	Familiar	1005,15,0,0,0
-pay_dun00,0,0,0,0	monster	Zombie	1015,20,0,0,0
-pay_dun00,0,0,0,0	monster	Skeleton	1076,35,0,0,0
-pay_dun00,0,0,0,0	monster	Poporing	1031,15,0,0,0
-pay_dun00,0,0,0,0	monster	Red Plant	1078,15,180000,90000,1
-pay_dun00,140,140,5,5	monster	Black Mushroom	1084,3,360000,180000,1
+//== pay_dun00 - Payon Cave F1 (NOT OT) =============================
+// pay_dun00,0,0,0,0	monster	Familiar	1005,15,0,0,0
+// pay_dun00,0,0,0,0	monster	Zombie  1015,20,0,0,0
+// pay_dun00,0,0,0,0	monster	Skeleton	1076,35,0,0,0
+// pay_dun00,0,0,0,0	monster	Poporing	1031,15,0,0,0
+// pay_dun00,0,0,0,0	monster	Red Plant	1078,15,180000,90000,1
+// pay_dun00,140,140,5,5	monster	Black Mushroom	1084,3,360000,180000,1
 
 //== pay_dun01 - Payon Cave F2 =============================
 pay_dun01,0,0,0,0	monster	Drainliar	1111,5,0,0,0

@@ -1,0 +1,7 @@
+//== pay_dun00 - Payon Cave F1 [CAVE_OLD_TIMES] ====================
+pay_dun00,0,0,0,0	monster	Familiar	1005,15,0,0,0
+pay_dun00,0,0,0,0	monster	Zumbi	1015,20,0,0,0
+pay_dun00,0,0,0,0	monster	Esporo	1014,20,0,0,0
+pay_dun00,0,0,0,0	monster	Jibóia	1025,20,0,0,0
+pay_dun00,0,0,0,0	monster	Planta Vermelha	1078,15,180000,90000,1
+pay_dun00,140,140,5,5	monster	Cogumelo Negro	1084,3,360000,180000,1

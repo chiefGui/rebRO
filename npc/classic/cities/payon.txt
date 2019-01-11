@@ -1,432 +1,859 @@
-morocc_in,112,122,2	script	Pesquisador#mor	61,{
-	mes "[Pesquisador]";
-	mes "Eu devotei minha vida em estudo de Pir√¢mides. Embora eu n√£o tenha encontrado qualquer coisa significativa ainda, eu acredito plenamente que encontrarei o t√∫mulo do rei antigo, Os√≠ris!";
+//= otRag ??
+pay_arche,77,131,8	script	Guilhermino	59,{
+	mes "[Guilhermino]";
+	mes "Payon! Mas que cidade maravilhosa!";
+	mes "Arcos ÌncrÌveis! Arqueiro habilidosos!";
+	mes "Ei, vocÍ! Conhece a fama da nossa cidade?";
 	next;
-	mes "[Pesquisador]";
-	mes "Est√° dentro da maior pir√¢mide de Morroc, que o Grandioso Rei da hist√≥ria dorme em um sono eterno. Isso √©... se minha mem√≥ria estiver correta......";
-	close;
-}
+	menu "Claro que sim!",L0,"Que fama?",L1,"......",L2;
 
-morocc,44,180,8	script	Rapaz#mor	89,{
-	mes "[B√™bado]";
-	mes "Hehe.. Hehe... *√≠c*!! Oh, ol√° estranho! Como vai, hein? Foi bem de viagem?!";
-	mes "Prazer em te conhecer... 'X√¥ te contar uma coisa... eu ouvi l√° no bar enquanto tomava a minha caipirinha...";
-	next;
-	mes "[B√™bado]";
-	mes "Dizem... Dize!... Que tem uma adaga por a√≠ que d√° uma sorte tremenda pra quem usar... √â s√≥ ficar com ela que sua vida vai s√™ uma ma-ga-vi-lha! √ìtima!";
-	mes "Hihihi... O melhor Gatuno dessa cidade nunca foi apanhado por qu√™?!";
-	mes "H√Å! porque ele tinha essa adaga...";
-	mes "Geheheh.";
-	next;
-	mes "[B√™bado]";
-	mes "Aaah... Eu s√≥ queria relar nela, quem sabe eu ficava sortudo tamb√©m... Mas cum√© que EU vou encontrar uma coisa dessas?!";
-	mes "Olha, √© at√© capaz de voc√™ achar ela por a√≠. Olha l√°, hein?! Se achar v√™ se me d√° um toque a√≠ que eu compro de voc√™, viu? Te pago um trago at√©, colega!";
-	mes "**Ic!**";
-	close;
-}
-
-morocc,68,260,8	script	Rapaz#mor2	99,{
-	mes "[Rapaz]";
-	mes "N√≥s chamamos os pr√©dios tri√¢ngulares a oeste da cidade de pir√¢mides. Ningu√©m sabe de verdade h√° quanto tempo eles est√£o l√°. Meu av√¥ diz que antes dele nascer ele j√° eram velhos! √â at√© bem poss√≠vel que sejam obras dos velhos deuses...";
-	next;
-	mes "[Rapaz]";
-	mes "Por qu√™? E pra qu√™?... Se s√£o realmente obras dos deuses, algum prop√≥sito devem ter, n√£o √©? mesmo que sejam caprichos ruins...";
-	mes "Ah, n√£o sei... O que importa √©: se voc√™ viver bastante, fique longe das pir√¢mides! As criaturas de l√° n√£o s√£o nada amig√°veis e odeiam intrusos...";
-	next;
-	mes "[Rapaz]";
-	mes "Por isso, pense bem antes de procurar aventura por l√°...";
-	mes "√â melhor ser um covarde vivo do que um her√≥i morto, ouviu?";
-	close;
-}
-
-morocc,76,75,4	script	Sanjie#mor	47,{
-	mes "[Sanjie]";
-	mes "Se voc√™ sair desta cidade pela sa√≠da do Norte e andar para o leste por uns tr√™s mapas...";
-	mes "Voc√™ encontrar√° a entrada para um dos mais assustadores lugares das redondezas...";
-	mes "... o Formigueiro Infernal!";
-	mes "Imagine um formigueiro gigante infestado de insetos e formigas vorazes...";
-	mes "Um buraco infernal aberto no meio do deserto, cercado pelo ossos de criaturas gigantescas que morreram ali...";
-	next;
-	menu "'Me fala sobre o tal Formigueiro Infernal.'",M_Anthell,"Me fale sobre as formigas.",M_Ants,"Formigas... B√°!",M_End;
-	
-	M_Anthell:
-		mes "[Sanjie]";
-		mes "Imagine dois andares subterr√¢neos...";
-		mes "...cheio de buracos no ch√£o, soltando enxofre e l√≠quidos gosmentos...";
-		mes "E... √© claro, sem falar das criaturas nojentas que vivem l√°...";
-		mes "Olha... se voc√™ quer mesmo ir pra l√°, voc√™ j√° sabe o caminho...";
-		mes "Se voc√™ se perder, lembre de procurar uma ponte que leva √†s florestas de Payon...";
+	L0:
+		mes "[Guilhermino]";
+		mes "R·! Ent„o vocÍ È um dos meus!";
+		mes "Arqueiro de Payon! Cuidado com a gente, cara!";
+		mes "NÛs nunca erramos um alvo! Podemos acertar um fio de cabelo com nossas flechas! E temos estilo!";
 		next;
-		mes "[Sanjie]";
-		mes "Se voc√™ chegar neste mapa apenas siga para norte.";
-		mes "O Formigueiro Infernal vai esta bem ali.";
-		mes "Mas por favor, tenha cuidado.";
+		menu "VocÍ gosta mesmo aqui, hein?",L00,"Haha...",L01;
+
+		L00:
+			mes "[Guilhermino]";
+			mes "SIM! Eu amo esta cidade! … por isso que eu sei tudo sobre ela!";
+			mes "Se vocÍ tiver qualquer pergunta pra me fazer, v· em frente, pergunte!!";
+			next;
+			menu "O pessoal daqui usa umas roupas bem estranhas.",L00a,"Que construÁ„o estranha È aquela no meio da cidade?",L00b,"Quem È aquele cara bebendo no bar l· da cidade?",L00c," Agente se fala depois.",L00d;
+
+			L00a:
+				mes "[Guilhermino]";
+				mes "Sim, È verdade!";
+				mes "VocÍ deve saber que atÈ algum tempo atr·s, Payon era completamente isolada do resto do reino de Midgard. Por isso as pessoas daqui criaram um cultura prÛpria, diferente das de outras cidades.";
+				mes "Por isso essas roupas estranhas, elas s„o um costume local! Ali·s se quiser experimentar, v· em frente, s„o muito confort·veis!";
+				close;
+			L00b:
+				mes "[Guilhermino]";
+				mes "… o pal·cio de Payon. Estrangeiros n„o s„o muito bem-vindos por l·. Eu mesmo nunca entrei l·.";
+				mes "Dizem que a Realeza local, seus amigos e empregados moram l· dentro.";
+				mes "Eu gostaria de visitar o pal·cio algum dia. Parece um lugar muito misterioso e interessante.";
+				close;
+			L00c:
+				mes "[Guilhermino]";
+				mes "Ah! O BÍbado? Ele È famoso na cidade! N„o lhe pague bebidas pra n„o jogar seu dinheiro fora!";
+				close;
+			L00d:
+				mes "[Guilhermino]";
+				mes "Ok! Te vejo por aÌ! AtÈ mais!";
+				close;
+		L01:
+			close;
+	L1:
+		mes "[Guilhermino]";
+		mes "N„o È possÌvel que vocÍ n„o saiba nada dos Arqueiro de Payon!";
+		mes "Quando vocÍ aprender alguma coisa sobre Payon, venha falar comigo.Eu adoro falar sobre essa cidade.";
+		mes "Payon È o m·ximo!";
 		close;
-	M_Ants:
-		mes "[Sanjie]";
-		mes "As formigas...";
-		mes "Bem, elas n√£o s√£o o tipo de formigas que infestam piquiniques, eu garanto...";
-		mes "Essas s√£o do tamanho da sua perna e adoram devorar n√£o s√≥ comida mas tudo o que v√™em pela frente...";
-		mes "Inclusive os itens que caem no ch√£o.";
-		mes "Cuidado porque existe mais de um tipo destas formigas...";
-		mes "E algumas s√£o ainda mais fortes e famintas.";
-		mes "O nome de cada uma delas, por ordem de for√ßa (e perigo) √©: Andr√©, Pierre e Deniro.";
-		next;
-		mes "[Sanjie]";
-		mes "Como diferenciar? F√°cil. Os Andr√©s s√£o esbranqui√ßados, da cor do marfim...";
-		mes "Os Pierres s√£o amarelo-esverdeados.";
-		mes "Deniros s√£o vermelhos sangue.";
-		mes "As formigas trabalhadoras chamam-se Vitatas.";
-		mes "Estas s√£o totalmente diferentes...";
-		mes "T√™m uma cauda gorda que solta l√≠quidos venenosos para n√≥s humanos, e s√£o de um preto azulado.";
-		next;
-		mes "[Sanjie]";
-		mes "Prestando aten√ß√£o nos nomes vai ficar f√°cil lutar contra elas...";
-		mes "Contanto que voc√™ lembre de duas coisas: respeite seu n√≠vel de for√ßa ao lutar contra elas, e cuidado com os ataques em grupo. Se uma formiga ver outra da mesma ra√ßa ser atacada, ela vai correndo ajudar...";
-		next;
-		mes "[Sanjie]";
-		mes "Ah! E como eu disse antes... Elas comem tudo que v√™m pela frente, assim como os Porings. Muita gente se enfurece e j√° vai atacando pra recuperar os itens...";
-		mes "Cuidado, hein?";
-		close;
-	M_End:
-		mes "[Sanjie]";
-		mes "No Formigueiro infernal existem tamb√©m outras criaturas al√©m das formigas.";
-		mes "Cuidado com os an√µes chamados Giearth.";
-		mes "Eles s√£o seres m√≠sticos da terra, como elfos...";
-		mes "Mas s√£o bastante protetores dos t√∫neis subter√¢neos de l√°.";
-		next;
-		mes "[Sanjie]";
-		mes "Quero dizer, formigas podem ser perigosas...";
-		mes "Mas nenhuma √© t√£o forte quanto um destes an√µes.";
-		mes "Eles usam picaretas afiadas que machucam bastante.";
-		mes "N√£o os provoque, √© s√≥ o que eu digo...";
+	L2:
+		mes "[Guilhermino]";
+		mes "Que foi? Gato comeu sua lÌngua?";
+		mes "Ei, n„o precisa ter vergonha de mim! Eu sou o Guilhermino, todo o mundo me conhece por aqui!";
 		close;
 }
 
-morocc,79,111,2	script	Poring-Man√≠aca#mor	700,{
-	mes "[Mayin]";
-	mes "Sabe que nesses campos do Reino de Midgard...";
-	mes "Tem tantos...";
-	mes "BICHOS FOFINHOS!";
-	mes "Como aqueles Champignons de lingu√≠nha de fora quando eles s√£o nocauteados";
-	mes "T√£o bunitinho!";
-	next;
-	mes "[Mayin]";
-	mes "Os Pickys, os passarinhos do deserto, tamb√©m s√£o uma gra√ßa!";
-	mes "Eles tem aqueles chap√©uzinhos de casca como se eles tivessem acabado de sair de dentro do ovo!";
-	mes "T√£o bonitinhos...";
-	mes "√â claro que nenhum bichinho √© t√£o fofo quanto os Porings...";
-	mes "Eles s√£o t√£o ador√°veis! Eu queria um pra mim... hihi.";
-	next;
-	menu "O qu√™ √© um Angeling?",M_Angel,"O que √© um Ghostring?",M_Ghost,"Cansei de bichos fofos.",M_Quit;
-	
-	M_Angel:
-		mes "[Mayin]";
-		mes "Ultimamente tem se falado de Porings raros que apareceram em √°reas pr√≥ximas √† capital do reino, Prontera.";
-		mes "Eles s√£o os Angelings!";
-		mes "E Ghostrings!";
+payon_in01,69,90,4	script	Chefe da Guarda#pay01	105,2,2,{
+	OnTouch:
+		mes "[Chefe da Guarda]";
+		mes "O que traz aqui?";
 		next;
-		mes "[Mayin]";
-		mes "Um Angeling √©..";
-		mes "...um Poring anjinho!";
-		mes "N√£o √© uma gra√ßa?";
-		mes "Eles gostam de saltitar pelos campos de Prontera e dizem que tem em Lutie tamb√©m.";
-		mes "S√≥ que... bem, √© muuuito dif√≠cil ver um...";
+		mes "[Chefe da Guarda]";
+		mes "Seu lugar n„o È aqui. Sugiro que comporte-se com respeito dentro do pal·cio.";
 		next;
-		mes "[Mayin]";
-		mes "Al√©m de tudo, porque eles s√£o muito fortes e do elemento Sagrado, s√£o imunes √† maior parte das magias comuns...";
-		mes "Apenas magias neutras ou do elemento Sombra fazem efeito neles.";
-		mes "O mesmo vale para os ataques f√≠sicos.";
-		next;
-		mes "[Mayin]";
-		mes "Hehe. E a√≠, eu sei ou n√£o sei TUDO sobre Porings?";
-		mes "Claro que sei! Eu sou uma Poring-Man√≠aca!";
+		mes "[Chefe da Guarda]";
+		mes "VocÍ ser· desarmado agora em nome da seguranÁa deste lugar. Por favor, coopere.";
+		unequip 0;
 		close;
-
-	M_Ghost:
-		mes "[Mayin]";
-		mes "Dois tipos de Porings raros vivem l√° por perto de Prontera... e s√£o muito legais!";
-		mes "Tem o Angeling...";
-		mes "E... o Ghostring!";
+}
+payon,93,162,4	script	Guarda#pay02	105,2,2,{
+	OnTouch:
+		mes "[Guarda]";
+		mes "Este È o Pal·cio de Payon.";
+		mes "Mesmo sendo este um lugar aberto ‡ visitas do p˙blico, exigimos que os visitantes sejam respeitosos e n„o causem transtornos.";
 		next;
-		mes "[Mayin]";
-		mes "Os Ghostrings s√£o Porings fantasmas muito malvados...";
-		mes "Que, muito raramente, aparecem no campo de Porings (o lugar mais legal da Terra!) que fica ali perto de Prontera..";
-		mes "L√° √© t√£o lindo... s√≥ tem Porings pulando por todos os lados!";
-		next;
-		mes "[Mayin]";
-		mes "Diferente dos Angelings, eles n√£o recebem dano de magias ou ataque f√≠sicos neutros.";
-		mes "Isso porque eles s√£o criaturas da Escurid√£o... Assustador hein?";
-		mes "Por isso tente ataques e magias elementais contra ele, garanto que vai dar certo!";
-		next;
-		mes "[Mayin]";
-		mes "Hehe !! Eu sei de tudo mesmo...";
-		mes "Porque! De Porings! EU! Sei!";
-		mes "Tu-do!";
-		mes "Eu sou uma Poring-Man√≠aca";
-		close;
-
-	M_Quit:
-		mes "[Mayin]";
-		mes "Hunf.. Voc√™ vai me ignorar, √©?!";
-		mes "Euzinha!?";
-		mes "Eu sou a maior Poring-Man√≠aca de Midgard!!!";
-		mes "Voc√™ gosta de Porings, n√©?";
-		mes "Eu gosto mais ainda!";
-		mes "Hihi! Nisso eu sou demais!";
-		mes "Hihihi!";
+		mes "[Guarda]";
+		mes "Portanto È necess·rio que vocÍ, ao entrar no pal·cio, desarme-se de seus equipamentos. Obrigado por sua cooperaÁ„o";
+		unequip 0;
 		close;
 }
 
-morocc,123,58,4	script	Mercen√°rio#mor	118,{
-	mes "[Mercen√°rio]";
-	mes ".... Um perito √† disposic√£o ao combate da m√£o que lustra fora inimigos rapidamente e quietamente....";
+payon_in01,95,179,5	script	Vikram, o Arqueiro	88,{
+	mes "[Vikram, o Arqueiro]";
+	mes "Cara, vou te dizer. Eu tenho um amigo que sÛ sabe falar besteira.";
+	mes "Quer dizer, ele È um expert em Arqueiro e tudo mais, mas eu me encho do falatÛrio dele...";
+	mes "AtÈ nosso Chefe j· se encheu dele, o cara È mesmo um mala!";
 	next;
-	mes "[Mercen√°rio]";
-	mes "Isso √©  ^ff00ffAssassin^000000!!";
-M_Menu:
-	next;
-	menu "Hmm??",M_0,"Onde posso encontrar o cl√£ dos Mercen√°rios ?",M_1,"Fim da conversa",M_End;
-	
-	M_0:
-		mes "[Mercen√°rio]";
-		mes "Mercen√°rio √© um grupo secreto de matadores de elite.  Os povos dizem que os Mercen√°rios s√£o treinados altamente em eliminar  seus alvos sem deixar vestijos.";
-		next;
-		mes "[Mercen√°rio]";
-		mes "H√° 3 meses que eu sai do repouso √† busca do cl√£ dos Mercen√°rios .... Apenas onde s√£o ??!!!";
-		goto M_Menu;
-	M_1:
-		mes "[Mercen√°rio]";
-		mes "Os povos dizem que se voc√™ for 2 mapas no leste de Morroc, a seguir 2 mapas para o sul, voc√™ poder√°  encontrar o Cl√£ dos Mercen√°rios .";
-		next;
-		mes "[Mercen√°rio]";
-		mes "Se voc√™ √© um grande Mercen√°rio, o emblema do mestre do cl√£, voc√™ estar√° apto para se tornar um Algoz.";
-		mes "Os Algozes s√£o a maior honra dada ao melhor dos melhores Mercen√°rios!";
-		next;
-		mes "[Mercen√°rio]";
-		mes "Para dizer-lhe a verdade entretanto...  Eu  penso se o clan existe realmente ...";
-		next;
-		mes "[Mercen√°rio]";
-		mes "Eu tenho procurarado por eles a  3 meses e at√© agora nada.  Parece quase imposs√≠vel para me tornar um Mercen√°rio agora......";
-		goto M_Menu;
-	M_End:
+	menu "H„... quem È esse cara?",M0,"Que Chefe È esse?",M1,"Como assim 'fala besteira'?",M2;
+
+	M0:
+		mes "[Vikram, o Arqueiro]";
+		mes "Ah, claro, que besteira a minha. … um sujeito que mora no andar superior desse bar, ele tem a mesma roupa que eu.";
+		mes "Ele ensina Arqueiro novatos os conceitos b·sicos da nossa classe.";
+		mes "Bem... Se tiver interesse, v· falar com ele.";
 		close;
-
-}
-
-morocc,150,50,8	script	Lapidador#mor	99,{
-	mes "[Lapidador]";
-	mes "O diamante √© a rainha das j√≥ias.  Ningu√©m pode negar sua apar√™ncia bonita.  Isso  porque custou  muito para comprar ...";
-	next;
-	mes "[Lapidador]";
-	mes "Muitos fatores aumentam seu valor, com o fator  mais importante que √© o tamanho .";
-	next;
-	mes "[Lapidador]";
-	mes "Um diamante da qualidade elevada deve ser perfeito e n√£o lascado ou rachado de qualquer maneira .";
-	close;
-}
-
-morocc,180,155,4	script	Tio Dimitri#mor	49,{
-	mes "[Tio Dimitri]";
-	mes "A temperatura do avarage no deserto de Morroc √© muitas vezes mais alta do que l√° no reino de Rune-Midgard .";
-	next;
-	mes "[Tio Dimitri]";
-	mes "Tenha cuidado de onde voc√™ escolhe se sentar para baixo e descanso.  Escolha o ponto errado e seu bumbum pode travar no fogo !!";
-M_Menu:
-	next;
-	menu "Sobre a areia do deserto ",M_1,"Sobre o rem√©dio para a fadiga ",M_2,"End conversation",M_End;
-	
-	M_1:
-		mes "[Tio Dimitri]";
-		mes ". . . . . Bem";
+	M1:
+		mes "[Vikram, o Arqueiro]";
+		mes "O Chefe da Cidade vive no Pal·cio de Payon, l· no centro. Ele È o lÌder espiritual daqui.";
+		mes "Ele costumava a caÁar pela floresta com seu arco lend·rio, a Gakkung.";
+		mes "Eu me lembro de vÍ-lo em aÁ„o quando era crianÁa. Nunca vi flechas disparadas com tamanha rapidez.";
+		mes "Ele pode parecer apenas um velho agora... Mas est· nos seus olhos...";
+		mes "S„o olhos capazes de mirar um p·ssaro em movimento... Realmente, ele foi o melhor Arqueiro desta cidade.";
 		next;
-		mes "[Tio Dimitri]";
-		mes "SUP√ïE-se  estar QUENTE!!!  Mas n√£o √© realmente realmente t√£o quente .....";
+		mes "[Vikram, o Arqueiro]";
+		mes "Eu admiro como o herÛi que ele È e sempre ser·.";
+		close;
+	M2:
+		mes "[Vikram, o Arqueiro]";
+		mes "Fala besteira, oras! Sabe daquelas pessoas que n„o param de falar e acham que sabem tudo?";
+		mes "Ele È uma delas. Tem vezes que, eu admito, mesmo sendo amigo dele d· vontade de mandar ele calar a boca.";
+		mes "Ele È famoso na cidade por falar tanto. Cara, ele pode ser muito irritante ‡s vezes... Achando que sabe tudo e bancando o genial...";
+		mes "Mas certamente, pelo menos em matÈria de falaÁ„o, ele È o n˙mero um.";
 		next;
-		mes "[Tio Dimitri]";
-		mes "Por alguma raz√£o impar a areia no deserto de Morroc n√£o conduz tanto calor quanto a areia em outros desertos .";
-		mes "Em vez de estar quente scorching, a areia fica apenas morna.... assim que √© aprovado para que voc√™ sente e tenha um bom descan√ßo";
+		mes "[Vikram, o Arqueiro]";
+		mes "Payon È uma cidade muito quieta, ent„o gente como ele n„o È muito comum por aqui.";
+		mes "A maioria das pessoas por aqui fala pouco, sabe? NinguÈm acha que falar resolve nada. Somos pessoas de aÁ„o.";
+		mes "Pelo jeito, vocÍ deve ter amigos assim, n„o È? Eu acho que a verdadeira bravura est· nas aÁıes, concorda?";
+		mes "Pessoas de poucas palavras...";
 		next;
-		mes "[Tio Dimitri]";
-		mes "Assim todos podem parar para recuperar o seu hp e o SP sem medo de travar no fogo .";
-		goto M_Menu;
-	M_2:
-		mes "[Tio Dimitri]";
-		mes "Aaaaahhh!!!!";
-		next;
-		mes "[Tio Dimitri]";
-		mes "Nada bate a fadiga do deserto melhor que um par de po√ß√µes! O ^ff0000Red^000000 s√£o especiais e populares por causa de seu custo baixo e peso leve .";
-		next;
-		mes "[Tio Dimitri]";
-		mes "Recuperam somente um pouco de Hp, mas combinado com um mergulho em um oasis do deserto, um par  ^ff0000Reds^000000 s√£o tudo que vc nescessita.";
-		goto M_Menu;
-	M_End:
-		mes "[Tio Dimitri]";
-		mes "Voc√™ soube que  pode come√ßar pegando  ^0000bb'Milk'^000000 do ovo de um Peco Peco'? Eu quero saber como s√£o esse trabalhos ......?";
+		mes "[Vikram, o Arqueiro]";
+		mes "Enfim, meu amigo Markiv? Como eu disse, ele mora no segundo andar da estalagem, È sÛ subir as escadas no outro quarto.";
+		mes "Acho que ele deve estar por l·, agora. Por que vocÍ n„o vai visit·-lo pra ver do que eu estou falando? O cara È um chato.";
 		close;
 }
 
-morocc,208,85,7	script	Comerciante Joe#mor	83,{
-	mes "[Comerciante Joe]";
-	mes "Eu ganho a vida como comerciante viajo constantemente entre Morroc e Prontera .";
-	mes "Eu n√£o posso mesmo contar quantas vezes eu fui atrav√©s do deserto quente, seco .";
-	next;
-	mes "[Comerciante Joe]";
-	mes "Um dia, quando eu estava no deserto, eu fiquei com muita sede.";
-	mes "Eu estava desesperado assim eu decidi tentar  extrair √°gua de um cacto quando .......";
-	next;
-	mes "[Comerciante Joe]";
-	mes "Derrepente!!! O cacto GRITOU ALTO e come√ßou a DISPARAR suas AGULHAS em mim !!";
-	emotion 23;
-	next;
-	mes "[Comerciante Joe]";
-	mes "Foi a pior experi√™ncia de toda minha VIDA .";
-	next;
-	mes "[Comerciante Joe]";
-	mes "Mais tarde percebi n√£o era um cacto normal que me atacou mas era  ^00cc00Muka^000000, um monstro cactu.";
-	next;
-	mes "[Comerciante Joe]";
-	mes "Tenha cuidado a pr√≥xima vez que voc√™ for para para o deserto .  Voc√™ n√£o quer fazer o mesmo erro que eu fiz. (~Sigh~)";
-	close;
-}
+payon_in01,95,181,1	script	BÍbado	120,{
+	mes "[BÍbado]";
+	if(Class == Job_Archer) mes "Ei, um Arqueiro... Anda matando muito monstro?! Haha... VocÍ n„o deve nem matar uma barata... Qu·qu·qu·!";
+	if(Class != Job_Archer) mes "Ei!... Ei! Sabe nu quiqueeu tava pensando? Se um desses Arqueiros idiotas consegue mirar depois de beber uma cachaÁa!? Qu·qu·qu·!";
+	mes "Ei... H„... VocÍ pode me pagar uma rodada?";	
+		next;
+		menu "SÛ se vocÍ n„o beber demais.",M0," N„o obrigado, amig„o.",M1,"Nem pensar, cara!",M2;
 
-morocc,234,273,3	script	Armani#mor	54,{
-	mes "[Armani]";
-	mes "Eu VI!! Eu VI!!!";
-	emotion 5;
-	next;
-	mes "[Armani]";
-	mes "Eu vi o raro  ^ff0000Mosca Drag√£o^000000 ao norte da aqui! Era incr√≠vel !!";
-	next;
-	menu "o QUE... Mosca Drag√£o?!",M_0,"Mas como?",M_1;
-	
-	M_0:
-		mes "[Armani]";
-		mes "√â o terror do deserto voa e √© muito mais forte do que aquelas moscas ordin√°rias .";
-		mes "√â uma vista rara , e para qualquer um forte o bastante e afortunado bastante para derrot√°-lo .... ";
+	M0:
+		set Zeny,zeny-100;
+		mes "[BÍbado]";
+		mes "Opa! valeu, amig„o! O Pessoal daqui j· n„o È mais legal assim comigo ...sniff... Esses arqueirinhos aÌ, tudo m„o de vaca, sacumÈ?!";
+		mes "Qu·qu·qu·! ...Olha, eu n„o era assim na minha Època, n„o!";
+		mes "Ra-paz! Eu era o terros das menininhas! Tem uma vovÛ daqui da cidade que era uma gatona, meu irm„o! Eu e ela, Û! A gente era assim, assim! Qu·qu·qu·!";
+		mes "Ela ainda acha que È novinha e tudo mais... Fica passando produto de pele e num sei que l· na cara, sabe? Essa gente que n„o sabe envelhecer com dignidade!";
 		next;
-		mes "[Armani]";
-		mes "A mosca drag√£o pode mesmo deixar cair um artigo RARO  chamado  ^0000ddgrampos^000000!";
-		mes "Os grampos s√£o os artigos que voc√™ pode unir √†s armas, a armadura, e a cada tipo de acess√≥rio .";
-		next;
-		mes "[Armani]";
-		mes "Grampos s√£o ^ffaa00entalhados^000000 e conseq√ºentemente voc√™ pode introduzir cart√µes neles .  Isso que os faz assim valiosos .";
-		mes "Parece que todos est√£o ansiosos para um grampo estes dias .";
-		next;
-		mes "[Armani]";
-		mes "Diga me.... porque VOC√ä n√£o desafia a mosca drag√£o ?";
-		emotion 20;
+		mes "[BÍbado]";
+		mes "Glug, Glug... Rapaz! Essa bebida t· ”tchima! Valeu, culega! Brigad„o, hein? Qu·qu·qu·!";
 		close;
-	M_1:
-		mes "[Armani]";
-		mes "ASSIM QUE !!??";
-		emotion 23;
-		next;
-		mes "[Armani]";
-		mes "Voc√™ desafiou a mosca drag√£o ??  Bleh!  Pode ser uma mosca, mas eu garanto que ESTA MOSCA √© mais do que voc√™ pode segurar !";
-		emotion 32;
-		next;
-		mes "[Armani]";
-		mes "Nenhuma mat√©ria.  Se voc√™ FOR afortunado bastante para lutar contra ela , voc√™ ver√° rapidamente o que eu estou falando.  Apesar de tudo.!!!!";
-		next;
-		mes "[Armani]";
-		mes "^ff0000moscadrag√£o^000000.  Se lembre desse nome ok!!";
+	M1:
+		mes "[BÍbado]";
+		mes "B¡! Essa mulecada n„o tem respeito pelos mais velhos!";
+		mes "Ent„o t·, cara! N„o vou ficar implorando tambÈm, t· legal?!...";
+		mes "(Droga).";
+		close;
+	M2:
+		mes "[BÍbado]";
+		mes "Hmmm, Tchudo bem, ent„o. Eu n„o queria mesmo...";
 		close;
 }
 
-morocc,277,213,4	script	Tio Phlanette#mor	48,{
-	mes "[Tio Phlanette]";
-	mes "Morroc √© uma regi√£o altamente seca cercada pelo deserto.  N√£o h√° um lugar t√£o quente ou seco quanto Morroc em qualquer lugar em Rune-Midgard .";
-M_Menu:
+payon_in01,104,182,2	script	GarÁonete	90,{
+	mes "[MoÁa do bar]";
+	mes "As pessoas por aqui est„o sempre indo e vindo. Tornam-se Arqueiro, saem pelo mundo... E eu continuo aqui nesse barzinho sem graÁa...";
+	mes "N„o consigo deixar de me sentir solit·ria... ou mesmo deprimida ‡s vezes.";
+ 	next;
+	mes "[MoÁa do bar]";
+	mes "Todo santo dia, fazendo a mesma sopa de macarr„o nojenta... E o cheiro disso n„o sai, fica impregnado no cabelo, nas roupas.";
+	mes "Entre isso e todo o serviÁo de limpeza e arrumaÁ„o que eu tenho que fazer, pode apostar que eu j· estou farta desse trabalho...";
 	next;
-	menu "hist√≥ria do deserto",M_0,"finalizar conversa",M_End;
-	
-	M_0:
-		mes "[Tio Phlanette]";
-		mes "Deixe-me dizer-lhe um pouco sobre o deserto .....";
+	mes "[MoÁa do bar]";
+	mes "Onde, meu Deus? Onde est· um homem bonit„o e rico pra me levar embora desse lugar?";
+	mes "(pisca um olho)";
+	next;
+	mes "[MoÁa do bar]";
+	mes "Minha avÛ, que È uma cartomante, me disse que eu me daria muito bem na vida, que eu ia ter uma sorte incrÌvel!";
+	mes "Mas olhe pra mim, qual È o problema comigo afinal? Viver essa vidinha medÌocre n„o vai me levar a lugar nenhum...";
+	mes "Ah droga... Que pessoa mas sem graÁa que eu sou.";
+	next;
+	mes "[MoÁa do bar]";
+	mes "Mas, me desculpe, eu n„o devia ficar te incomodando com isso. N„o vai resolver nada ficar reclamando.";
+	mes "Acho que eu sÛ precisava desabafar um pouco, n„o È?";
+	next;
+	mes "[MoÁa do bar]";
+	mes "Mas ent„o, o que eu posso fazer por vocÍ?";
+	menu "VocÍ j· ouviu falar de zumbis?",L0,"Eu gostaria que sua vÛ lesse minha sorte.",L1,"Queo uma cerveja!",LEnd;
+
+	L0:
+		mes "[MoÁa do bar]";
+		mes "Bem, Zumbis s„o os mortos-vivos, criaturas Malditas que n„o fizeram a passagem para o outro mundo. Ouvi dizer que existem alguns aqui em Payon, na parte norte da Vila.";
+		mes "Ao que parece, que eles temem ataques Sagrados como magias dos Padres e flechas de prata. Portanto È bom lembrar disso se vocÍ tiver de enfrentar mortos-vivos.";
 		next;
-		mes "[Tio Phlanette]";
-		mes "Voc√™ v√™ que o deserto √© um lugar que √© descampado no qual n√£o existe vegeta√ß√£o    devido a falta de chuvas e uma elevada taxa de evapora√ß√£o .";
-		mes "mesmo assim h√°  plantas que parecem prosperar no deserto.  E onde h√° plantas, l√° est√° animais .";
+		mes "[MoÁa do bar]";
+		mes "Uma lenda diz que o lÌder da aldeia matou seus prÛprios filhos com flechas de prata apÛs terem se transforados em zumbis. Assim ele salvou suas almas e deixou que descansassem em paz.";
+		mes "… uma histÛria forte eu sei... Mas È justo que os mortos-vivos possam descnsar afinal... Mesmo que seja dessa maneira.";
 		next;
-		mes "[Tio Phlanette]";
-		mes "Assim mesmo com  altas temperaturas, e √°gua limitada, as criaturas vivas encontram ainda uma maneira de sobreviver no deserto ."; 
+		mes "[MoÁa do bar]";
+		mes "As nossas tradiÁıes sempre rezaram pelo respeito aos mortos... A falta de cuidado que tivemos por nossos cerimoniais mortu·rios no passado causou tudo isso...";
 		next;
-		mes "[Tio Phlanette]";
-		mes "Infelizmente, por raz√µes desconhecidas, algumas das plantas e dos animais no deserto se tornaram monstros perigosos .";
-		mes "O ^00cc00'Mukas'^000000 √© um desses monstros.  Eram originalmente cactus normais.";
-		goto M_Menu;
-	M_End:
-		mes "[Tio Phlanette]";
-		mes "Areia AQUI!  Areia L√Å!  Areia EM TODA PARTE !!!!";
-		emotion 0;
+		mes "[MoÁa do bar]";
+		mes "Os Zumbis pagam o preÁo pela negligÍncia que tivemos com nossas tradiÁıes, fadados a caminhar nessa semi-morte... … muito triste...";
+		goto qMes;
+	L1:
+		mes "[MoÁa do bar]";
+		mes "Ah! A vovÛ È mesmo uma pessoa extraordin·ria! Ela ia gostar de te conhecer. Infelizmente, ela n„o tem andado muito por aqui...";
 		next;
-		mes "[Tio Phlanette]";
-		mes "(~Sigh~) Eu sou DOENTE e estou cansado desta areia e desse deserto ...";
+		mes "[MoÁa do bar]";
+		mes "Antes ela ficava por aqui e lia a sorte dos visitantes e clientes. SÛ que depois que o chefe da cidade reconheceu o talento dela pra previsıes ela fica no pal·cio no centro da cidade.";
+		mes "Se quiser, procure ela por l·.";
+		goto qMes;
+	L2:
+		mes "[MoÁa do bar]";
+		mes "Hehehehe. Me desculpe mas n„o temos mais cerveja, e ultimamente est· difÌcil fazer bebidas alcÛolicas por aqui.";
+		mes "Estamos com escassez de ingredientes deviado aos monstros agressivos em volta da cidade.";
 		next;
-		mes "[Tio Phlanette]";
-		mes "Morroc......!! Eu te odeio!!!!!!";
-		emotion 32;
-		close;
+		mes "[MoÁa do bar]";
+		mes "Ent„o passe aqui um outro dia e quem sabe estaremos melhor estabelecidos.";
+		next;
+		mes "[MoÁa do bar]";
+		mes "Desculpe pelo incoveniente.";
+		goto qMes;
+
+		qMes:
+			next;
+			mes "[MoÁa do bar]";
+			mes "Tenha um bom dia.";
+			mes "... Aah... Eu preciso mudar de vida...";
+			close;
 }
 
-morocc,289,230,3	script	Cidad√£o#mor	92,{
-	mes "[Cidad√£o]";
-	mes "Encontrar-se com um homem morto √© basicamente ";
-	mes "imposs√≠vel.";
-	mes "mesmo se voc√™ se encontrou com um ,";
-	mes "n√£o teria a mem√≥ria cheia de sua vida .";
-	next;
-	mes "[Cidad√£o]";
-	mes "Mas se voc√™ trouxe uma coisa que ele ";
-	mes "usou-se manter-se em sua vida ,";
-	mes "seria poss√≠vel recuperar sua mem√≥ria da vida .";
-	mes "√© claro, n√≥s podemos confirmar essa teoria";
-	mes "quando n√≥s nos encontramos com um equipe morta .";
-	close;
-}
-
-moc_fild16,199,212,4	script	Hashisid#mor	48,{
-	mes "[Hashisid]";
-	mes "Para Mercen√°rios, √© importante n√£o olhar um alvo no olho.  Se um alvo for esperto,  pode   dizer o que voc√™ √© .";
-	next;
-	menu "Sobre Mercen√°rios",M_0,"Fim da conversa",M_End;
-	
-	M_0:
-		mes "[Hashisid]";
-		mes "Deixe-me dizer-lhe um pequeno bocado sobre Mercen√°rios.";
-		next;
-		mes "[Hashisid]";
-		mes "O Mercen√°rio √© empregado para infiltrar, recolher a intelig√™ncia, e para cometer mesmo o assassinato sem ser visto ou ouvido.";
-		mes "destreza e a velocidade s√£o vitais aos Mercen√°rios.  Os Mercen√°rios vivem nas sombras e nunca recebem elogios nem felicita√ß√µes.";
-		next;
-		mes "[Hashisid]";
-		mes "√â seu trabalho ir despercebido.  Embora um Mercen√°rio possa parecer um indiv√≠duo cruel e sem cora√ß√£o....";
-		mes "Um assassino nunca far√° mal a um inocente.  A finalidade principal do assassino √© procurar e destruir for√ßas mal√≠gnas!";
-		close;
-	M_End:
-		close;
-}
-
-moc_fild16,195,281,4	script	Guardi√£o Mercen√°rio#1::SinGuard	707,{
-	mes "[Guardi√£o Mercen√°rio]";
-	if(BaseJob == Job_Assassin)
-		mes "Bem vindo.";
+payon_in01,129,140,4	script	Guarda#pay03	105,{
+	mes "[Guarda]";
+	if (BaseLevel <= 30)
+	{
+		mes "Eieieiei! VocÍ n„o pode entrar!";
+		mes "J· pra fora";
+	}
 	else
 	{
-		set .@temp, rand(1, 4);
-		if(.@temp == 1) mes "........";
-		if(.@temp == 2) mes "Hmmm..........";
-		if(.@temp == 3) mes "Hmmm... voc√™ n√£o devia estar aqui.....";
-		if(.@temp == 4) mes "Voc√™ est√° ultrapassando terras proibidas.......";
+		mes "Desculpe, mas sua entrada n„o È permitida.";
+		mes "Por favor, v· embora.";
 	}
 	close;
 }
 
-moc_fild16,204,281,4	duplicate(SinGuard)	Guardi√£o Mercen√°rio#2	707
-moc_fild16,207,281,4	duplicate(SinGuard)	Guardi√£o Mercen√°rio#3	707
-moc_fild16,216,281,4	duplicate(SinGuard)	Guardi√£o Mercen√°rio#4	707
-moc_fild16,200,231,4	duplicate(SinGuard)	Guardi√£o Mercen√°rio#5	707
-moc_fild16,211,231,4	duplicate(SinGuard)	Guardi√£o Mercen√°rio#6	707
-moc_fild16,200,257,4	duplicate(SinGuard)	Guardi√£o Mercen√°rio#7	707
-moc_fild16,211,257,4	duplicate(SinGuard)	Guardi√£o Mercen√°rio#8	707
+payon_in01,136,147,2	script	Chefe	120,1,1,{
+	OnTouch:
+	if(baselevel>30) goto OkLvl;
+	mes "[Guarda]";
+	mes "Eieieiei! Mostre seu respeito ao Chefe!";
+	close;
+
+
+		OkLvl:
+			mes "[Guarda]";
+			mes " Ei! Eu disse...";
+			next;
+			mes "[Chefe]";
+			mes "Tudo bem, n„o precisa fazer alarde guarda. Faz muito tempo desde que eu n„o converso com um desses jovens. Est· tudo bem.";
+			next;
+			menu "Por favor, conte-me sobre Payon.",Payon,"De onde vÍm estes guardas?",Guards,"Por favor, conte-me sobre a caverna.",Cave,"Gostaria de saber mais sobre os Arqueiro.",Archer,"Gostaria de saber mais sobre os "+callfunc("otclassname",11,"P","M")+".",Hunter;
+		
+			Payon:
+				mes "[Chefe]";
+				mes "Payon È a cidade dos Arqueiro, e pela bravura e determinaÁ„o de nosso povo, somos auto-suficientes e independentes de outras cidades.";
+				mes "Embora nossos ancestrais n„o levassem o interc‚mbio cultural com outras cidades t„o a sÈrio, e nem aproveitassem os benefÌcios que isso poderia trazer, eles aprenderam a viver em independÍncia econÙmica.";
+				mes "A forÁa de nosso povo nos ensionou a viver com uma relaÁ„o direta com a natureza, tirando dela apenas o necess·rio para viver e criar nossos filhos.";
+				mes "NÛs somos um povo de homens e mulheres que aprenderam a caÁar por necessidade. Os Arqueiro s„o a forÁa dessa cidade, pois s„o a personificaÁ„o dessa luta e vontade de sobreviver.";
+				next;
+				mes "[Chefe]";
+				mes "Eu ouÁo jovens como vocÍ dizer que temem os campos ao redor da aldeia, ou as cavernas, por causa dos monstros que habitam esses lugares.";
+				mes "Para nÛs, combater essas criaturas È parte de nossas vidas e o que nos faz um povo unido e forte.";
+				mes "Penso que o nosso papel no reino de Midgard seja passar estes ensinamentos aos outros povos daqui. Ajudar a treinar fileiras de lutadores contra as criaturas que ameaÁam nossa existÍncia.";
+				mes "Nosso espÌrito de perseveranÁa È algo que todos os homens deveriam entender e compartilhar.";
+				next;
+				goto Cansa;
+			Guard:
+				mes "[Chefe]";
+				mes "Nos meus tempos de juventude, Prontera comeÁou a mandar para c· diferentes oficiais e funcion·rios do reino de forma a estreitar as relaÁıes entre nÛs e o resto de Midgard";
+				mes "Tropas reais, moÁas da companhia Kafra, Guardas e oficiais... De inÌcio houve controvÈrsias e desentedimentos devido aos costumes diferentes e ‡s exigÍncias da metrÛpole.";
+				mes "No entando, È ineg·vel que esse relacionamento ajudou muito no comÈrcio com outras cidades e estimulou um grande crescimento em Payon. A vila tornou-se uma cidade de verdade.";
+				next;
+				mes "[Chefe]";
+				mes "E agora vemos jovens vindos de fora encontrar seu lar aqui em Payon e abraÁar nossos costumes e tradiÁıes... Nunca imaginei que isso pudesse acontecer. Hehe...";
+				mes "… algo que me deixa muito feliz...";
+				mes "Que pessoas de fora possam amar nossa pequena cidade assim como nÛs.";
+				next;
+				goto Cansa;
+			Cave:
+				mes "[Chefe]";
+				mes "A caverna ao Norte foi um dos lugares onde passei minha juventude. Eu passava semanas l· dentro, treinando e treinando, disposto a me fortalecer e me tornar um grande herÛi.";
+				mes "Era um lugar mais ameaÁador antigamente, na verdade. As criaturas eram mais ferozes e atacavam sem descanso.";
+				mes "Os monstros hoje s„o... diferentes daqueles de antigamente.";
+				next;
+				mes "[Chefe]";
+				mes "VocÍ j· ouviu? Lamentos de rancor saindo de dentro da caverna... dos mortos em batalha... pessoas que entraram l· pra proteger a cidade e n„o saÌram.";
+				next;
+				mes "[Chefe]";
+				mes "Os mortos-vivos ainda fazem vÌtimas l· dentro... Mesmo crianÁas como vocÍ... ah... Estou velho demais para suportar essa dor... Velho demais...";
+				next;
+				mes "[Chefe]";
+				mes "Eu jurei que faria de tudo para deter os mortos... Tudo...";
+				next;
+				goto Cansa;
+			Archer:
+				mes "[Chefe]";
+				mes "Das florestas em torno da cidade, podemos extrair bastante madeira.";
+				mes "Evidentemente, È um benefÌcio natural ‡ nossa classe de Arqueiro, tanto na fabricaÁ„o de armas quanto no treinamento deles.";
+				next;
+				mes "[Chefe]";
+				mes "A floresta ajuda o Arqueiro a se esconder e se camuflar, e a atacar o alvo sem ser visto e sem se aproximar dele.";
+				mes "Os Arqueiro s„o fortes em Destreza, de forma a atacar seus inimigos incautos de uma longa dist‚ncia e com forÁa total.";
+				next;
+				mes "[Chefe]";
+				mes "AÈm disso, existe um benefÌcio de caÁar estes monstros da floresta... a maioria deles costuma deixar cair flechas quando mortos, que usamos contra eles prÛprios. Quando jovem, isso me salvou muitas vezes!";
+				mes "Hahahahaha!";
+				next;
+				goto Cansa;
+			Hunter:
+				mes "[Chefe]";
+				mes "Com a abertura de Payon, para as outras culturas, nosso estilo de batalha sofreu algumas mudanÁas.";
+				mes "Certas tecnologias, como explosivos e outros mecanismos, foram introduzidas e adaptadas pelos mais jovens ‡s tÈcnicas de arco e flecha tradicionais, tornando-as mais letais e estratÈgicas.";
+				next;
+				mes "[Chefe]";
+				mes "Armadilhas e outras habilidades, como o treinamento de falcıes de ataque, facilitavam muito a caÁa dos monstros. Por isso, o antigo Chefe determinou a criaÁ„o de uma nova classe para quem as utilizasse: os "+callfunc("otclassname",11,"P","M")+".";
+				mes "Por serem habilidades difÌceis de serem aprendidas e tambÈm perigosas, espera-se que os jovens alcancem um certo n;ivel de habilidade antes de tornarem-se "+callfunc("otclassname",11,"P","M")+".";
+				next;
+				mes "[Chefe]";
+				mes "A classe dos "+callfunc("otclassname",11,"P","M")+" È a nata de nossos guerreiros e exigimos muito dos que desejam tornar-se um deles.";
+				next;
+				goto Cansa;
+			Cansa:
+				mes "[Chefe]";
+				mes "Me desculpe... Estou cansado... … melhor que eu descanse um pouco.";
+				mes "Desejo o melhor para vocÍ.";
+				close;
+}
+
+payon_in01,164,165,2	script	Lucien	98,{
+	mes "[Lucien]";
+	mes "Prazer em conhecÍ-lo, eu me chamo Lucien e sou o Organizador de Pesquisas de Monstros de Midgard.";
+	mes "VocÍ gostaria de alguma informaÁ„o?";
+	next;
+	menu "Sobre Payon.",L0,"Sobre Monstros Malditos.",L1,"Sobre Pesquisas de Monstros.",L2;
+
+	L0:
+		mes "[Lucien]";
+		mes "Payon se encontra circundada por florestas, fazendo com que se torne isolada do mundo exterior.";
+		mes "Isso pode dificultar muito a chegada da ajuda externa, no caso de um ataque a cidade.";
+		next;
+		mes "[Lucien]";
+		mes "Mas a cidade tem uma prÛpria ameaÁa interna, que È a sua ao norte.";
+		mes "Nesta caverna existem v·rios tipos de monstros, todos muito interessantes para nÛs pesquisadores.";
+		close;
+	L1:
+		mes "[Lucien]";
+		mes "Os monstros do tipo Maldito s„o extremamente interessantes.";
+		mes "A maior parte dos que se encontram nesta cidade j· foram algum dia habitantes da mesma.";
+		mes "De alguma maneira tr·gica, eles perderam suas vidas, e n„o conseguem encontrar o caminho para o AlÈm.";
+		next;
+		mes "[Lucien]";
+		mes "Exatamente por terem sido pessoas vivas eles despertam tanto interesse em nosso Rei.";
+		mes "N„o È incrÌvel que ele tenha um cuidado atÈ mesmo com os s˙ditos mortos?";
+		mes "Mas esse È o nosso Rei, sempre preocupado com o seu povo.";
+		next;
+		mes "[Lucien]";
+		mes "… claro que estamos tentando descobrir como 'eliminar' estes mortos-vivos.";
+		mes "E poe 'eliminar' eu quero dizer, ajud·-los e encontrar o caminho para o AlÈm.";
+		next;
+		mes "[Lucien]";
+		mes "Eu espero algum dia descobrir como...";
+		close;
+	L2:
+		mes "[Lucien]";
+		mes "A OrganizaÁ„o de Pesquisa de Monstros foi formada para descobrir um meio de nÛs livrarmos deles.";
+		mes "Mentes brilhantes de todo o reino foram reunidas para este fim.";
+		next;
+		mes "[Lucien]";
+		mes "N„o È t„o f·cil quanto parece, apesar de dedicarmos nossas vidas aos estudos, ainda n„o achamos uma soluÁ„o.";
+		next;
+		mes "[Lucien]";
+		mes "Mas nunca nÛs damos por vencidos, pessoas demais j· morreram por  causa desses monstros.";
+		mes "N„o podemos permitir que isso continue!";
+		next;
+		mes "[Lucien";
+		mes "Oh, desculpe se levantei a minha voz...";
+		mes "Este assunto me emociona muito, me deixo levar facilmente.";
+		mes "Todos nÛs precisamos fazer algo pelo bem de nosso mundo.";
+		close;
+}
+
+payon_in01,174,113,2	script	Marxhansen	86,{
+	if(MARIANNE==1) goto FJL0;
+	mes "[Marxhansen, o Mercador]";
+	mes "bem-vindo.";
+	next;
+	menu "Conversar.",L0,"Cancelar.",L1;
+		
+	L0:
+		mes "[Marxhansen, o Mercador]";
+		mes "Quando os humanos ainda eram nÙmades, eles dependiam das frutas que achavam.";
+		mes "E com o tempo eles aprenderam a fazer sucos com elas, para mante-las por mais tempo.";
+		next;
+		mes "[Marxhansen, o Mercador]";
+		mes "Agora, temos garndes hortas, e podemos ter todas as frutas que gostarÌamos.";
+		mes "Mas os sucos continuam a ser muito importantes, por conterem apenas o que È bom da fruta.";
+		mes "Nos sucos, vocÍ pode aproveitar um sabor muito mais concentrado.";
+		close;
+	L1:
+		mes "[Marxhansen, o Mercador]";
+		mes "VocÍ veio atÈ aqui por nada?";
+		close;
+
+	FJL0:
+		mes "[Marxhansen, o Mercador]";
+		mes "Bem vindo ‡ minha loja. VocÍ veio aqui preparar suco de frutas?";
+		next;
+		menu "Sim.",FJL00,"Por favor, diga-me os requerimentos.",FJL01,"N„o, eu n„o.",FJL02;
+		
+		FJL00:
+			mes "[Marxhansen, o Mercador]";
+			mes "Qual tipo de suco de fruta deseja preparar?";
+			next;
+			menu "Suco de MaÁ„",L00,"Suco de Banana",L01,"Suco de Cenoura",L02,"Suco de Uva",L03,"Nenhum, obrigado.",LEnd;
+
+			L00:
+				set @fruit,512;
+				set @juice,531;
+				goto L00z;
+			L01:
+				set @fruit,513;
+				set @juice,532;
+				goto L00z;
+			L02:
+				set @fruit,515;
+				set @juice,534;
+				goto L00z;
+			L03:
+				set @fruit,514;
+				set @juice,533;
+				goto L00z;
+
+			L00z:
+				if((countitem(@fruit)>0) || (countitem(713)>0) || (Zeny>2)) goto L000z;
+					if (@fruit == 512) goto noL00;
+					if (@fruit == 513) goto noL01;
+					if (@fruit == 514) goto noL03;
+					if (@fruit == 515) goto noL02;
+					close;
+
+							noL00:
+								mes "[Marxhansen, o Mercador]";
+								mes "Ahh, como pÛde?! VocÍ n„o tem todos os itens necess·rios...";
+								mes "Para fazer um Suco de MaÁ„ vocÍ precisa de 1 MaÁ„ e 1 Garrafa Vazia!";
+								mes "N„o esqueÁa dos meus 3 zeny, o preÁo para um copo de Suco de MaÁ„.";
+								mes "Quando vocÍ tiver os ingredientes necess·rios, irei atende-lo melhor.";
+								close;
+							noL01:
+								mes "[Marxhansen, o Mercador]";
+								mes "Ahh, como pÛde?! VocÍ n„o tem todos os itens necess·rios...";
+								mes "Para fazer um Suco de Banana vocÍ precisa de 1 Banana e 1 Garrafa Vazia!";
+								mes "N„o esqueÁa dos meus 3 zeny, o preÁo para um copo de Suco de Banana.";
+								mes "Quando vocÍ tiver os ingredientes necess·rios, irei atende-lo melhor.";
+								close;
+							noL02:
+								mes "[Marxhansen, o Mercador]";
+								mes "Ahh, como pÛde?! VocÍ n„o tem todos os itens necess·rios...";
+								mes "Para fazer um Suco de Cenoura vocÍ precisa de 1 Cenoura e 1 Garrafa Vazia!";
+								mes "N„o esqueÁa dos meus 3 zeny, o preÁo para um copo de Suco de Cenoura.";
+								mes "Quando vocÍ tiver os ingredientes necess·rios, irei atende-lo melhor.";
+								close;
+							noL03:
+								mes "[Marxhansen, o Mercador]";
+								mes "Ahh, como pÛde?! VocÍ n„o tem todos os itens necess·rios...";
+								mes "Para fazer um Suco de Uva vocÍ precisa de 1 Uva e 1 Garrafa Vazia!";
+								mes "N„o esqueÁa dos meus 3 zeny, o preÁo para um copo de Suco de Uva.";
+								mes "Quando vocÍ tiver os ingredientes necess·rios, irei atende-lo melhor.";
+								close;
+				L000z:
+				mes "[Marxhansen, o Mercador]";
+				mes "Quantos? VocÍ precisa...";
+				next;
+				menu "Hmm, deixe-me colocar a quantidade",Lget,"Argh, esqueÁa!",L00c;
+				Lget:
+					digit @input;
+					if(@input > 0) goto Linp;
+					mes "[Marxhansen, o Mercador]";
+					mes "Deal canceled.";
+					close;
+
+					Linp:
+						if((countitem(@fruit)<@input) || (countitem(713)<@input) || (Zeny<3*@input)) goto Ltomuch;
+						delitem @fruit,@input;
+						delitem 713,@input;
+						set Zeny,zeny-3*@input;
+						getitem @juice,@input;
+						goto GotMsg;
+						
+
+						Ltomuch:
+							mes "[Marxhansen, o Mercador]";
+							mes "VocÍ n„o tem as garrafas necess·rias ou as frutas para fazer o suco.";
+							close;
+						GotMsg:
+							mes "[Marxhansen, o Mercador]";
+							mes "Prontinho, hehehe.";
+							mes "Tome isto!";
+							close;
+				L00c:
+					close;
+			LEnd:
+				mes "[Marxhansen, o Mercador]";
+				mes "Ohh! Mas porque isso rapaz?";
+				mes "Sucos s„o Ûtimos! Fazem um bem danado.";
+				mes "Mas n„o vou obrig·-lo a tomar, vejo vocÍ quando tiver juÌzo...";
+				close;
+		FJL01:
+			mes "[Marxhansen, o Mercador]";
+			mes "Quando os humanos ainda eram nÙmades, eles dependiam das frutas que achavam.";
+			mes "E com o tempo eles aprenderam a fazer sucos com elas, para mante-las por mais tempo.";
+			next;
+			mes "[Marxhansen, o Mercador]";
+			mes "Agora, temos garndes hortas, e podemos ter todas as frutas que gostarÌamos.";
+			mes "Mas os sucos continuam a ser muito importantes, por conterem apenas o que È bom da fruta.";
+			mes "Nos sucos, vocÍ pode aproveitar um sabor muito mais concentrado.";
+			next;
+			mes "# InformaÁıes para fazer um Suco de Fruta #";
+			mes "Suco de MaÁ„ - MaÁ„ x 1, Garrafa Vazia x 1, 3 zeny.";
+			mes "Suco de Banana - Banana x 1, Garrafa Vazia x 1, 3 zeny.";
+			mes "Suco de Cenoura - Cenoura x 1, Garrafa Vazia x 1, 3 zeny.";
+			mes "Suco de Uva - Uva x 1, Garrafa Vazia x 1, 3 zeny.";
+			close;
+		FJL02:
+			close;
+}
+
+payon_in01,176,176,2	script	Markiv, o Arqueiro	88,{
+	mes "[Markiv, o Arqueiro]";
+	mes "Um Arqueiro deve sempre praticar, praticar e praticar! … a ˙nica maneira de se tornar um campe„o!";
+	mes "VocÍ È novo por aqui? Ol·!";
+	next;
+	mes "[Markiv, o Arqueiro]";
+	mes "Eu sou Markiv, o Arqueiro. Pode me chamar sÛ de Markiv.";
+	mes "Eu sei que È uma pergunta meio nada a ver, mas vocÍ È preguiÁoso?";
+	next;
+	menu "Claro que n„o.",L0,"Acho que sim.",L1;
+
+	L0:
+		mes "[Markiv, o Arqueiro]";
+		mes "Hmm... N„o? Ent„o vocÍ nasceu para ser um Arqueiro.";
+		mes "NÛs Arqueiros n„o devemos nunca ser preguiÁosos e deixar de praticar.";
+		mes "Por isso, costumamos n„o gostar de gente que n„o se esforÁa na vida.";
+		next;
+		mes "[Markiv, o Arqueiro]";
+		mes "Como nÛs treinamos? Bem, por aqui n„o ficamos praticando com bonecos ou outras frescuras. N„o senhor!";
+		mes "'Treinar' aqui em Payon significa lutar! Batalhas reais! Arco e flecha na m„o e m„os ‡ obra!";
+		mes "… assim que È aqui, cara!";
+		next;
+		menu "VocÍ deve precisar de um bom arco pra isso.",L00,"Bem, eu n„o sou muito de praticar...",L01;
+
+		L00:
+			mes "[Markiv, o Arqueiro]";
+			mes "Claro que sim! O arco È a essÍncia de nossa classe, oras!";
+			mes "Os arcos de Payon s„o os melhores do reino! Leves e esguios, feitos das melhores madeiras desta floresta!";
+			mes "Evidentemente, a qualidade da madeira determina a qualidade do arco. Essa belezinha aqui È feita de mandeira de castanheira, feita pra durar por anos a fio, sem perder a forÁa ou a tens„o da corda.";
+			mes "AlÈm disso È decorado em Èbano, dando aquele estilo que faz a diferenÁa!";
+			next;
+			mes "[Markiv, o Arqueiro]";
+			mes "A floresta de Payon È famosa pela qualidade de suas madeiras. Mesmo agora que algumas ·rvores transformaram-se em monstros horrÌveis...";
+			mes "...¡rvores que costumavam ser t„o bela e imponentes...";
+			mes "... Mesmo agora, nesta forma amaldiÁoada, elas ainda nos d„o madeira de Ûtima qualidade! Dos itens que caem delas, podemos fazer Ûtimos arcos!";
+			next;
+			menu "Ent„o as coisas v„o bem por aqui, heim?",L000,"",L001;
+
+			L000:
+				mes "[Markiv, o Arqueiro]";
+				mes "N„o exatamente, porque n„o È sÛ nas florestas que existem monstros. Ou vocÍ n„o sabe que dentro da cidade temos monstros tambÈm?";
+				mes "Indo para o Norte, vocÍ encontrar· uma caverna. Dentro dela, existem monstros assustadores que aparecem do ch„o, sem avisos! Zumbis e todo o tipo de criaturas AmaldiÁoadas!";
+				mes "Estamos aqui em nome da vila e de nosso Chefe, protegendo nosso territÛrio destes demÙnios.";
+				next;
+				menu "Ca-caverna?!",L000a,"Chefe?",L000b,"Cara, eu odeio esta cidade...",L000c;
+
+				L000a:
+					mes "[Markiv, o Arqueiro]";
+					mes "Indo para o Norte atÈ o prÛximo mapa vocÍ ver· a caverna de que falei.";
+					mes "L· dentro existem monstros de todo o tipo, Morcegos, Zumbis e atÈ Esqueletos Arqueiro!";
+					mes "Se ninguÈm os enfrentar e deix·-los ‡ solta, eles logo invadir„o a cidade. Por isso freq¸entemente, aventureiros v„o ‡ caverna 'controlar' o n˙mero de monstros.";
+					mes "Hehehe.";
+					next;
+					mes "[Markiv, o Arqueiro]";
+					mes "Ainda assim, eles se reproduzem sem para, como que saÌdos do ch„o!";
+					mes "Parece uma pedra de tempo e talvez seja, mas precisamos impedir que nossa cidade seja prejudicada.";
+					mes "Bom, j· chega, vamos parar de falar besteira. AtÈ eu n„o aguento mais falar!";
+					mes "AtÈ mais, tenho mais o que fazer.";
+					close;
+
+				L000b:
+					mes "[Markiv, o Arqueiro]";
+					mes "O Chefe da Cidade? Ah, ele È um cara extraordin·rio. Bem, È verdade que ele me enche o saco por eu 'falar demais' e n„o sei mais o quÍ, mas...";
+					mes "Ele sempre leva em conta o bem-estar de nosso povo, muito embora hoje ele raramente saia de seu pal·cio.";
+					mes "… reconfortante saber que um grande homem como ele zela por nosso bem-estar.";
+					next;
+					mes "[Markiv, o Arqueiro]";
+					mes "Heheheh. Eu vou me encrencar se ele souber que eu disse isso a um estranho...";
+					mes "Como agora eu j· falei, tanto faz n„o È mesmo?!";
+					mes "Hmmm... Eu e minha boca grande...";
+					mes "Bem, atÈ mais, cara!";
+					close;
+				
+				L000c:
+					close;
+
+			L001:
+				mes "[Markiv, o Arqueiro]";
+				mes "Hmmm... N„o? VocÍ deveria, viu?";
+				mes "NÛs, Arqueiro, temos orgulho de sempre praticar e praticar.";
+				mes "Por isso, n„o gostamos de gente que n„o se esforÁa.";
+				next;
+				mes "[Markiv, o Arqueiro]";
+				mes "Aposto que vocÍ j· se cansou de me ouvir repetir isso, nÈ?";
+				mes "Confie em mim, praticar È tudo!";
+				mes "… a vida de um Arqueiro!";
+				close;
+		L01:
+			mes "[Markiv, o Arqueiro]";
+			mes "Hmmm... ‡s vezes È bom descansar um pouco, eu acho.";
+			mes "Se divertir È sempre bom, n„o È mesmo?";
+			next;
+			menu "Como assim, 'È bom descancar'?",L010,"Mas e o treinamento?",L011,"...Ah, a gente se vÍ por aÌ...",L012;
+
+			L010:
+				mes "[Markiv, o Arqueiro]";
+				mes "Ei, peraÌ! … bom se vocÍ n„o deixar de praticar, entendeu? Nosso Chefe te diria a mesma coisa, ele passava semanas matando monstros sem parar... Afinal, sem treino vocÍ vai acabar virando um cara como o BÍbado l· embaixo!. Hahaha!";
+				next;
+				menu "Chefe?",L010a,"BÍbado?",L010b,"N„o tem graÁa.",L010c;
+			
+				L010a:
+					mes "[Markiv, o Arqueiro]";
+					mes "O Chefe da Cidade? Ah, ele È um cara extraordin·rio. Bem, È verdade que ele me enche o saco por eu 'falar demais' e n„o sei mais o quÍ, mas...";
+					mes "Ele sempre leva em conta o bem-estar de nosso povo, muito embora hoje ele raramente saia de seu pal·cio.";
+					mes "… reconfortante saber que um grande homem como ele zela por nosso bem-estar.";
+					next;
+					mes "[Markiv, o Arqueiro]";
+					mes "Heheheh. Eu vou me encrencar se ele souber que eu disse isso a um estranho...";
+					mes "Como agora eu j· falei, tanto faz n„o È mesmo?!";
+					mes "Hmmm... Eu e minha boca grande...";
+					mes "Bem, atÈ mais, cara!";
+					close;
+				L010b:
+					mes "[Markiv, o Arqueiro]";
+					mes "VocÍ sabe, aquele cara no bar alÌ embaixo. Quando eu tenho uma grana sobrando eu compro algo pra ele beber, embora eu me preocupe com o problema de bebida dele.";
+					mes "Afinal, ele È um dos meus vizinhos da aldeia, n„o gostaria de vÍ-lo morrer de cirrose, certo?";
+					mes "Hmm... Isso me lembra uma cervejinha...";
+					mes "Acho que vou descer atÈ o bar! AtÈ mais, cara!";
+					close;
+				L010c:
+					mes "[Markiv, o Arqueiro]";
+					mes "Ah, vocÍ n„o tem mesmo senso de humor.";
+					close;
+
+			L011:
+				mes "[Markiv, o Arqueiro]";
+				mes "Treinar È o que È mais importante na vida, cara!";
+				mes "NÛs, Arqueiro, temos orgulho de sempre praticar e praticar.";
+				mes "Por isso nao gostamos de pessoas que n„o se esforÁam.";
+				next;
+				mes "[Markiv, o Arqueiro]";
+				mes "… impressionante que atÈ um cara folgado como eu possa se motivar e ser um Arqueiro!";
+				mes "A vida È demais mesmo, n„o È?";
+				mes "Ent„o aproveite-a ao m·ximo, cara!";			
+				close;
+			
+			L012:
+				close;
+	L1:
+		close;
+}
+
+payon,29,116,6	script	Um Jovem	88,{
+	mes "[Um Jovem]";
+	mes "Eu ainda lembro da histÛria que meu avÙ, que os Deuses o tenham.";
+	mes "Ele dizia que existe um amuleto com o poder de dar vida nova aos mortos";
+	mes "Se È verdade ou n„o, isso eu n„o posso lhe dizer. Mas eu gostaria de saber o que aconteceria se eu o usasse para tirar meu avÙ do mundo dos mortos...";
+	close;
+}
+
+payon,163,139,8	script	Mocinha	90,{
+	mes "[Mocinha]";
+	emotion 0;
+	mes "A muito tempo atr·s, quando essa cidade foi fundada, foi muito dificil de se estabelecer aqui.";
+	mes "Por isso nossos ancestrais n„o tinham recursos para enterrar os mortos de acordo com os rituais sagrados ou fazer-lhes oferendas na morte."; 
+	mes "As pessoas jogavam os corpos de seus familiares na caverna que atualmente fica perto da vila.";
+	mes "N„o sei se foi o desrespeito aos mortos e aos rituais sagrados ou alguma maldiÁ„o daquelas cavernas, mas hoje estes mortos que n„o acharam seu caminho para Nifl-heim continuam caminhando l· dentro...";
+	next;
+	mes "[Mocinha]";
+	mes "Zumbis comedores de carne humana...";
+	mes "Assustador, n„o È?";
+	close;
+}
+
+payon,163,142,5	script	Mulher#pay01	66,{
+	mes "[M„e do Jo„o]";
+	mes "Ai meu Deus... N„o dÍ ouvidos a ela, ok? Essa aÌ È fofoqueira de m„o cheia, viu?";
+	mes "E por favor, n„o pense que todo mundo na vila È que nem ela, t·?";
+	mes "Quer dizer, seria uma pÈssima impress„o da nossa cidade achar que todo mundo È tonto e acredita em cartomantes, nÈ?";
+	mes "mas olha sÛ pra vocÍ, acho que nunca te vi por aqui antes, hein?";
+	next;
+	mes "[M„e do Jo„o]";
+	mes "Oh, mas vocÍ tem ou n„o os ombros mais largos que eu j· vi, rapaz?";
+	mes "Hohoho! Quer sair comigo?";
+	mes "Aposto que vocÍ me deixaria te pagar um belo jantar, hein?";
+	next;
+	menu "Que Cartomantes?",L0,"...H„...Tchau.",L1;
+
+	L0:
+		mes "[M„e do Jo„o]";
+		mes "Cartomantes, uÈ? Nunca ouviu falar?";
+		mes "Tem uma Ìncrivel no pal·cio da cidade, sabe?";
+		mes "Quanto mais vocÍ pagar pra ela, mais precisa vai ser a previs„o";
+		next;
+		mes "[M„e do Jo„o]";
+		mes "Olha, ela me disse que eu ia encontrar um rapag„o lindo de fora da cidade, sabe?... Que tal, hein?";
+		mes "Hohohohoho!";
+		close;
+	L1:
+		mes "[M„e do Jo„o]";
+		mes "Hmmm. Porque vocÍ n„o fica mais um pouco e joga conversa fora comigo, hein?";
+		close;
+}
+
+
+payon,166,140,3	script	Mulher#pay02	66,{
+	mes "[Mulher]";
+	mes "Bem-vindo ‡ Payon. acho que deve ter sido difÌcil cruzar a floresta para chegar aqui, hein? Como foi sua viagem?";
+	mes "O n˙mero de visitantes diminui a cada ano, por cauda dos monstros que andam pelas florestas. A cidade vai ficando cada vez mais queta e vazia com o tempo.";
+	mes "Logo n„o tem muito o que fazer por aqui, a gente acaba passando o dia jogando conversa fora. Hehehe.";
+	next;
+	mes "[Mulher]";
+	mes "Mas pra falar a verdade, esse negÛcio dos monstros n„o È brincadeira...";
+	if(sex==1) mes "MoÁo, vocÍ parece forte como um Roqueiro! Quantos monstros vocÍ j· matou?";
+	if(sex==0) mes "Senhorita, vocÍ È linda e parece ter muita garra! Quantos monstros vocÍ ja matou?";	
+	mes "Quer uma dica de um bom lugar para caÁar?";
+	next;
+	menu "N„o sei, parece perigoso.",L0,"Acho que È bom eu me preparar melhor.",L1,"Dona, que bela roupa essa sua!",L2;
+
+	L0:
+		mes "[Mulher]";
+		mes "Ah, seu covard„o! … sÛ uma caverna idiota cheia de monstros comuns!";
+		mes "… t„o segura que atÈ construÌmos uma vila em volta! Hohohoho!";
+		close;
+	L1:
+		mes "[Mulher]";
+		mes "N„o ouviu o que eu disse? N„o precisa se preocupar em levar coisas, tem uma loja de ferramentas por ali, d· pra comprar de tudo l·";
+		mes "Na verdade, o dono È meu marido...";
+		mes "Ent„o compre bastante que eu agradeÁo! Hohohoho!";
+		close;
+	L2:
+		mes "[Mulher]";
+		mes "Hohohoho! VocÍ reparou? … a ˙ltima moda em Prontera, viu?";
+		mes "As mulheres dessa cidade n„o sabem NADA de moda! Meu marido gastou os olhos da cara nessa roupa, mas È claro que eu n„o ia me contentar com qualquer trapo, nÈ?";
+		mes "Hohohoho...";
+		close;
+}
+
+payon_in01,69,90,4	script	Guarda do Chefe#pay	708,{}
+payon_in01,69,91,4	script	Guarda do Chefe#pay2	139,3,2,{
+	mes "[Guarda do Chefe]";
+	mes "O que tr·s";
+	mes "vocÍ aqui?";
+	next;
+	mes "[Guarda do Chefe]";
+	mes "Eu posso ver que vocÍ n„o È daqui de Payon. Eu sÛ quero lhe lembrar para que se comporte. Lembre-se, vocÍ È um convidado aqui.";
+	next;
+	nude;
+//	setbase Class;
+	mes "[Guarda do Chefe]";
+	mes "Para que se proteja esse local p˙blico, eu vou retirar os seus equipamentos. Obrigado pela sua cooperaÁ„o.";
+	close;
+}
+
+payon_in01,136,147,4	script	Chefe#pay	120,1,1,{
+	end;
+	OnTouch:
+	if(BaseLevel > 30) goto T_LEVEL;
+	mes "[Guarda]";
+	mes "Ei...";
+	mes "Ei...!";
+	mes "Mostre seu respeito";
+	mes "ao nosso chefe!";
+	close;
+T_LEVEL:
+	mes "[Chefe]";
+	next;
+	menu "Por favor me fale sobre Payon.",L_Menu1,"De onde os guardas vieram?",L_Menu2,"Por favor me conte sobre a caverna.",L_Menu3,"Eu estava imaginando o que um arqueiro faz.",L_Menu4,"Eu estava imaginando o que um caÁador faz.",L_Menu5;
+L_Menu1:
+	mes "[Chefe]";
+	mes "Payon È uma cidade de soldados, que s„o auto-suficientes.";
+	mes "Embora nossos antepassados n„o tivessem tido os benefÌcios culturais dos fazendeiros ou cidad„os, eles souberam como sobreviver sem ajuda.";
+	mes "O poder de aÁ„o dos jovens os motivou a sobreviver as forÁas da natureza. NÛs, pessoas de Payon, incluindo as mulheres, aprendemos a caÁar e a nos proteger do perigo.";
+	next;
+	mes "[Chefe]";
+	mes "J· ouvi falar de jovens fracos que temem os campos ou os calabouÁos cheios de monstros. Mas, para nÛs, lutar contra monstros, faz parte das nossas vidas.";
+	mes "… por isso que Sua Majestade Tristram III espera que ensinemmos aos jovens como lugar bravamente e de forma eficiente contra criaturas do mal.";
+	close;
+L_Menu2:
+	mes "[Chefe]";
+	mes "Prontera nos enviou servos civis para Payon quando eu era jovem.";
+	mes "Tropas reais, damas Kafra, servidores... no inÌcio, discutÌamos muito, por causa dos costumes diferentes.";
+	mes "Contudo, n„o posso negar que eles ajudaram um pouco a ativar os negÛcios com outros paÌses.";
+	next;
+	mes "[Chefe]";
+	mes "Agora, jovens de fora de Payon se dizem cidad„os de Payon... Eu nunca conseguiria imagina isso quando era jovem. Hh huh...";
+	mes "Fico muito satisfeito em vÍ-los. mesmo vindo de outros lugares, eles amam Payon.";
+	close;
+L_Menu3:
+	mes "[Chefe]";
+	mes "A caverna no norte È o lugar aonde eu costumava ir ‡s vezes.";
+	mes "Era mais perigoso naquela Època que hoje, ciatura malignas que eu nunca tinha visto desovavam sem limite.";
+	mes "Os monstros de hoje s„o...diferentes daqueles com os quais lut·vamos.";
+	next;
+	mes "[Chefe]";
+	mes "VocÍ j· teve a oportunidade de ver? Alguns que sobreviveram saem da caverna... isso foi causado pelos mortos que nunca voltaram depois de entrarem na caverna pra proteger a vila.";
+	next;
+	mes "[Chefe]";
+	mes "Aqueles zumbis fazem outra vÌtima...ah...Eu estou muito velho para aguentar tamanha dor...Estou muito velho...";
+	next;
+	mes "[Chefe]";
+	mes "Eu poderia fazer qualquer coisa para parar os mortos.....Eu faria qualquer coisa....";
+	close;
+L_Menu4:
+	mes "[Chefe]";
+	mes "NÛs juntamos madeira suficiente da enorme floresta que fica ao redor de Payon.";
+	mes "Ent„o, nada mais natural que termos os melhores Arqueiros. VocÍ pode achar que os Arqueiros da Floresta welcomes est„o praticando, mas eles est„o do lado oposto de vocÍ.";
+	next;
+	mes "[Chefe]";
+	mes "A floresta o ajuda a se esconder, bloqueando inimigos que possam se aproximar para atacar.";
+	mes "Arqueiros s„o destrosos para atacar inimigos simples a longa dist‚ncia.";
+	next;
+	mes "[Chefe]";
+	mes "AlÈm disso...h· um mÈrito esperado em se estar dentro da floresta. Quando eu era jovem, eu acabei ficando sem flechas enquanto lutava contra monstros na floresta, mas flechas deixadas pelos monstros me salvaram deles. Muhahahaha!";
+	close;
+L_Menu5:
+	mes "[Chefe]";
+	mes "Como culturas estrangeiras foram introduzidas em Payon, nosso estilo de combate acabou mudando.";
+	mes "Compostos explosivos especiais e tecnologia afetaram enormemente a vida das pessoas. Parece que n„o estavam satisfeitas em ter apenas arcos e flechas para lutar.";
+	next;
+	mes "[Chefe]";
+	mes "Habilidades de criar armadilhas, que permitem caÁar monstros mais facilmente foram inventadas, ent„o o Chefe anterior os deu o nome de caÁadores.";
+	mes "Embora tenha feito muito sucesso no inÌcio, fazer armadilhas È uma habilidade perigosa, normalmente nao aprovamos que nossos jovens se tornem caÁadores.";
+	next;
+	mes "[Chefe]";
+	mes "Pessoas que tenham muita responsabilidade em si, podem desafiar a classe.";
+	close;
+	next;
+}
+
+payon,82,129,0	script	Quadro de Mensagem#pay	111,{
+	mes "^993333- Quadro de Mensagem -^000000";
+	mes "Seja bem-vindo, e aproveite a sua estada na linda cidade de Payon.";
+	close;
+}

@@ -33,7 +33,11 @@
 //= 1.3
 //=========================================================================
 
-payon,173,238,5	script	Jade#pay	4_M_SAGE_A,{
+// PAYON_NEW
+//payon,173,238,5	script	Jade#pay	4_M_SAGE_A,{
+
+// PAYON_OLD
+payon,99,137,5	script	Jade#pay	4_M_SAGE_A,{
 	if (checkweight(Knife,1) == 0) {
 		mes "^3355FFWait a second! Right now, you're carrying too many items with you. Please come back after putting some of your things into Kafra Storage.^000000";
 		close;

@@ -1509,152 +1509,152 @@ payon_in01,126,52,4	trader	Vendedora de Armas#pay	1_F_ORIENT_03,{
 		}
 
 //== Prontera ==============================================
-prontera,73,134,0	trader	Vendor from Milk Ranch#p	4_F_01,{
-OnInit:
-	sellitem Milk;
-}
+// prontera,73,134,0	trader	Vendor from Milk Ranch#p	4_F_01,{
+// OnInit:
+// 	sellitem Milk;
+// }
 
-prontera,104,49,0	trader	Fruit Gardener#prt	8_F,{
-OnInit:
-	sellitem Apple;
-	sellitem Banana;
-}
+// prontera,104,49,0	trader	Fruit Gardener#prt	8_F,{
+// OnInit:
+// 	sellitem Apple;
+// 	sellitem Banana;
+// }
 
-prontera,64,125,0	trader	Butcher#prt	4_M_BARBER,{
-OnInit:
-	sellitem Meat;
-	sellitem Monsters_Feed;
-}
+// prontera,64,125,0	trader	Butcher#prt	4_M_BARBER,{
+// OnInit:
+// 	sellitem Meat;
+// 	sellitem Monsters_Feed;
+// }
 
-prontera,58,182,0	trader	Flower Girl#prt	4W_KID,{
-OnInit:
-	sellitem Flower;
-	sellitem Bunch_Of_Flowers;
-}
+// prontera,58,182,0	trader	Flower Girl#prt	4W_KID,{
+// OnInit:
+// 	sellitem Flower;
+// 	sellitem Bunch_Of_Flowers;
+// }
 
-prontera,113,42,0	trader	Flower Lady#prt	4_F_01,{
-OnInit:
-	sellitem Flower;
-	sellitem Bunch_Of_Flowers;
-}
+// prontera,113,42,0	trader	Flower Lady#prt	4_F_01,{
+// OnInit:
+// 	sellitem Flower;
+// 	sellitem Bunch_Of_Flowers;
+// }
 
-prontera,105,87,0	trader	Gift Merchant#prt	4_F_02,{
-OnInit:
-	sellitem Red_Frame;
-	sellitem Blue_Porcelain;
-	sellitem White_Platter;
-	sellitem Black_Ladle;
-	sellitem Glass_Bead;
-}
+// prontera,105,87,0	trader	Gift Merchant#prt	4_F_02,{
+// OnInit:
+// 	sellitem Red_Frame;
+// 	sellitem Blue_Porcelain;
+// 	sellitem White_Platter;
+// 	sellitem Black_Ladle;
+// 	sellitem Glass_Bead;
+// }
 
-prontera,248,153,0	trader	Doll Supplier#prt	4_M_03,{
-OnInit:
-	sellitem Stuffed_Doll;
-	sellitem Poring_Doll;
-	sellitem Chonchon_Doll;
-}
+// prontera,248,153,0	trader	Doll Supplier#prt	4_M_03,{
+// OnInit:
+// 	sellitem Stuffed_Doll;
+// 	sellitem Poring_Doll;
+// 	sellitem Chonchon_Doll;
+// }
 
-prontera,48,58,0	trader	Vegetable Gardener#prt	4_F_02,{
-OnInit:
-	sellitem Carrot;
-	sellitem Sweet_Potato;
-	sellitem Pumpkin;
-}
+// prontera,48,58,0	trader	Vegetable Gardener#prt	4_F_02,{
+// OnInit:
+// 	sellitem Carrot;
+// 	sellitem Sweet_Potato;
+// 	sellitem Pumpkin;
+// }
 
-prt_church,108,124,4	trader	Nun#prt	1_F_PRIEST,{
-OnInit:
-	sellitem Rosary;
-	sellitem Biretta;
-	sellitem Blue_Coif;
-	sellitem Scapulare;
-	sellitem Saint_Robe;
-	sellitem Club;
-	sellitem Mace;
-	sellitem Smasher;
-	sellitem Flail;
-	sellitem Morning_Star;
-	sellitem Chain;
-}
+// prt_church,108,124,4	trader	Nun#prt	1_F_PRIEST,{
+// OnInit:
+// 	sellitem Rosary;
+// 	sellitem Biretta;
+// 	sellitem Blue_Coif;
+// 	sellitem Scapulare;
+// 	sellitem Saint_Robe;
+// 	sellitem Club;
+// 	sellitem Mace;
+// 	sellitem Smasher;
+// 	sellitem Flail;
+// 	sellitem Morning_Star;
+// 	sellitem Chain;
+// }
 
-prt_in,211,169,0	trader	Wedding Shop Dealer#prt	1_F_LIBRARYGIRL,{
-OnInit:
-	sellitem Bunch_Of_Flowers;
-	sellitem Wedding_Bouquet;
-	sellitem Wedding_Dress;
-	sellitem Wedding_Veil;
-	sellitem Tuxedo;
-}
+// prt_in,211,169,0	trader	Wedding Shop Dealer#prt	1_F_LIBRARYGIRL,{
+// OnInit:
+// 	sellitem Bunch_Of_Flowers;
+// 	sellitem Wedding_Bouquet;
+// 	sellitem Wedding_Dress;
+// 	sellitem Wedding_Veil;
+// 	sellitem Tuxedo;
+// }
 
-prt_in,172,130,0	trader	Weapon Dealer#prt	1_M_JOBGUIDER,{
-OnInit:
-	sellitem Arrow;
-	sellitem Silver_Arrow;
-	sellitem Bow;
-	sellitem Knife;
-	sellitem Cutter;
-	sellitem Main_Gauche;
-	sellitem Rod;
-	sellitem Sword;
-	sellitem Falchion;
-	sellitem Blade;
-	sellitem Lapier;
-	sellitem Scimiter;
-	sellitem Ring_Pommel_Saber;
-	sellitem Tsurugi;
-	sellitem Haedonggum;
-	sellitem Saber;
-	sellitem Flamberge;
-	sellitem Katana;
-	sellitem Axe;
-}
+// prt_in,172,130,0	trader	Weapon Dealer#prt	1_M_JOBGUIDER,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Silver_Arrow;
+// 	sellitem Bow;
+// 	sellitem Knife;
+// 	sellitem Cutter;
+// 	sellitem Main_Gauche;
+// 	sellitem Rod;
+// 	sellitem Sword;
+// 	sellitem Falchion;
+// 	sellitem Blade;
+// 	sellitem Lapier;
+// 	sellitem Scimiter;
+// 	sellitem Ring_Pommel_Saber;
+// 	sellitem Tsurugi;
+// 	sellitem Haedonggum;
+// 	sellitem Saber;
+// 	sellitem Flamberge;
+// 	sellitem Katana;
+// 	sellitem Axe;
+// }
 
-prt_in,172,132,0	trader	Armor Dealer#prt	1_M_02,{
-OnInit:
-	sellitem Guard;
-	sellitem Buckler;
-	sellitem Sandals;
-	sellitem Shoes;
-	sellitem Hood;
-	sellitem Muffler;
-	sellitem Hat;
-	sellitem Cap;
-	sellitem Cotton_Shirt;
-	sellitem Leather_Jacket;
-	sellitem Adventure_Suit;
-	sellitem Wooden_Mail;
-	sellitem Mantle;
-	sellitem Coat;
-	sellitem Padded_Armor;
-	sellitem Chain_Mail;
-	sellitem Novice_Armlet;
-	sellitem Belt;
-}
+// prt_in,172,132,0	trader	Armor Dealer#prt	1_M_02,{
+// OnInit:
+// 	sellitem Guard;
+// 	sellitem Buckler;
+// 	sellitem Sandals;
+// 	sellitem Shoes;
+// 	sellitem Hood;
+// 	sellitem Muffler;
+// 	sellitem Hat;
+// 	sellitem Cap;
+// 	sellitem Cotton_Shirt;
+// 	sellitem Leather_Jacket;
+// 	sellitem Adventure_Suit;
+// 	sellitem Wooden_Mail;
+// 	sellitem Mantle;
+// 	sellitem Coat;
+// 	sellitem Padded_Armor;
+// 	sellitem Chain_Mail;
+// 	sellitem Novice_Armlet;
+// 	sellitem Belt;
+// }
 
-prt_in,171,140,0	trader	Weapon Dealer#prt2	1_M_01,{
-OnInit:
-	sellitem Javelin;
-	sellitem Spear;
-	sellitem Pike;
-	sellitem Guisarme;
-	sellitem Glaive;
-	sellitem Partizan;
-	sellitem Trident;
-	sellitem Halberd;
-	sellitem Lance;
-}
+// prt_in,171,140,0	trader	Weapon Dealer#prt2	1_M_01,{
+// OnInit:
+// 	sellitem Javelin;
+// 	sellitem Spear;
+// 	sellitem Pike;
+// 	sellitem Guisarme;
+// 	sellitem Glaive;
+// 	sellitem Partizan;
+// 	sellitem Trident;
+// 	sellitem Halberd;
+// 	sellitem Lance;
+// }
 
-prt_in,165,140,4	trader	Weapon Dealer#prt3	1_F_01,{
-OnInit:
-	sellitem Town_Sword;
-	sellitem Cinquedea;
-}
+// prt_in,165,140,4	trader	Weapon Dealer#prt3	1_F_01,{
+// OnInit:
+// 	sellitem Town_Sword;
+// 	sellitem Cinquedea;
+// }
 
-prt_monk,135,263,5	trader	Weapon Dealer#prt4	4_F_JOB_BLACKSMITH,{
-OnInit:
-	sellitem Waghnakh;
-	sellitem Knuckle_Duster;
-	sellitem Hora;
-}
+// prt_monk,135,263,5	trader	Weapon Dealer#prt4	4_F_JOB_BLACKSMITH,{
+// OnInit:
+// 	sellitem Waghnakh;
+// 	sellitem Knuckle_Duster;
+// 	sellitem Hora;
+// }
 
 //== Rachel ================================================
 ra_in01,175,364,3	trader	Armor Dealer#ra	4_F_SHABBY,{

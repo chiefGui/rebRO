@@ -1,3 +1,68 @@
+// Prontera
+prontera,158,213,1	script	Quadro#Prt1	HIDDEN_NPC,{
+	mes "^993300- Quadro de direções -^000000";
+	mes "Castelo de Prontera para o Norte";
+	mes "Aldebaran para o Norte";
+	mes "Geffen para o Noroeste";
+	mes "Campos de Prontera para o Leste";
+	mes "Campos de Prontera para o Sul";
+	mes "Alberta para o Sudeste";
+	mes "Morroc para o Sudoeste";
+	mes "Comodo para o Sudoeste";
+	mes "Campos de Prontera para o Oeste";
+	close;
+}
+
+prontera,156,197,1	script	Avisos de Prontera#Prt2	HIDDEN_NPC,{
+	mes "^993300- Avisos de Prontera -^000000";
+	mes "Procura-se: Duas Presilhas";
+	mes "Por favor, entre em contato...";
+	mes "-O nome está um pouco apagado -";
+	mes "Vende-se: Espada bastarda usada";
+	mes "Aceito qualquer oferta!";
+	mes "Entrar em contato com Abramulious";
+	mes "Procura-se ajuda: Compra ou vende Peco Peco usado?";
+	mes "Contado com Grasisium em Morroc agora!";
+	close;
+}
+
+prontera,278,212,1	script	Quadro#Prt3	HIDDEN_NPC,{
+	mes "^993300- Comunicado -^000000";
+	mes "Por favor, manter Prontera limpa.";
+	close;
+}
+/*
+prontera,150,326,1	script	Quadro#Prt4	HIDDEN_NPC,{
+	mes "^993300- Comunicado -^000000";
+	mes "Cidadões de Prontera são bem vindos ao castelo de Prontera.";
+	close;
+}
+*/
+prontera,31,212,1	script	Comunicado#Prt5	HIDDEN_NPC,{
+	mes "^993300- Comunicado -^000000";
+	mes "~PROCURADO~";
+	mes "iROGM01";
+	mes "MORTO ou VIVO";
+	mes "*Assasino e ladrão de Glast Heim*";
+	mes "~RECOMPENSA~";
+	mes "50,000 Zeny ";
+	mes "Contato: iROGM02";
+	close;
+}
+
+prontera,165,305,1	script	Comunicado#Prt6	HIDDEN_NPC,{
+	mes "^993300- Comunicado -^000000";
+	mes "Nós esperamos que você tenha uma ótima estadia em Prontera.";
+	close;
+}
+
+prontera,145,304,1	script	Quadro#Prt7	HIDDEN_NPC,{
+	mes "^993300- Quadro de avisos -^000000";
+	mes "Nota:";
+	mes "Eu perdi meu carrinho de mão no Mt. Mjolnir, se alguem encontrar, por favor, me diga. Toda minha vida está nesse carrinho!";
+	close;
+}
+
 // Aldebaran
 aldebaran,181,172,1	script	Aviso#Alde1	HIDDEN_NPC,{
 	mes "^993300- Quadro de avisos -^000000";

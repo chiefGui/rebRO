@@ -740,46 +740,46 @@ OnInit:
 }
 
 //== Izlude ================================================
-izlude_in,60,127,4	trader	Weapon Dealer#iz	1_F_MARIA,{
-OnInit:
-	sellitem Arrow;
-	sellitem Silver_Arrow;
-	sellitem Bow;
-	sellitem Rod;
-	sellitem Knife;
-	sellitem Cutter;
-	sellitem Main_Gauche;
-	sellitem Sword;
-	sellitem Falchion;
-	sellitem Blade;
-	sellitem Katana;
-	sellitem Slayer;
-	sellitem Bastard_Sword;
-	sellitem Two_Hand_Sword;
-	sellitem Broad_Sword;
-	sellitem Axe;
-}
+// izlude_in,60,127,4	trader	Weapon Dealer#iz	1_F_MARIA,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Silver_Arrow;
+// 	sellitem Bow;
+// 	sellitem Rod;
+// 	sellitem Knife;
+// 	sellitem Cutter;
+// 	sellitem Main_Gauche;
+// 	sellitem Sword;
+// 	sellitem Falchion;
+// 	sellitem Blade;
+// 	sellitem Katana;
+// 	sellitem Slayer;
+// 	sellitem Bastard_Sword;
+// 	sellitem Two_Hand_Sword;
+// 	sellitem Broad_Sword;
+// 	sellitem Axe;
+// }
 
-izlude_in,70,127,4	trader	Armor Dealer#iz	1_M_SIZ,{
-OnInit:
-	sellitem Buckler;
-	sellitem Shield;
-	sellitem Shoes;
-	sellitem Boots;
-	sellitem Muffler;
-	sellitem Manteau;
-	sellitem Cap;
-	sellitem Helm;
-	sellitem Leather_Jacket;
-	sellitem Adventure_Suit;
-	sellitem Wooden_Mail;
-	sellitem Mantle;
-	sellitem Coat;
-	sellitem Padded_Armor;
-	sellitem Chain_Mail;
-	sellitem Plate_Armor;
-	sellitem Novice_Armlet;
-}
+// izlude_in,70,127,4	trader	Armor Dealer#iz	1_M_SIZ,{
+// OnInit:
+// 	sellitem Buckler;
+// 	sellitem Shield;
+// 	sellitem Shoes;
+// 	sellitem Boots;
+// 	sellitem Muffler;
+// 	sellitem Manteau;
+// 	sellitem Cap;
+// 	sellitem Helm;
+// 	sellitem Leather_Jacket;
+// 	sellitem Adventure_Suit;
+// 	sellitem Wooden_Mail;
+// 	sellitem Mantle;
+// 	sellitem Coat;
+// 	sellitem Padded_Armor;
+// 	sellitem Chain_Mail;
+// 	sellitem Plate_Armor;
+// 	sellitem Novice_Armlet;
+// }
 
 //== Jawaii ================================================
 jawaii,186,174,3	trader	Ice Cream Guy#ja	4_M_03,{

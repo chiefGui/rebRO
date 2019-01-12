@@ -82,3 +82,87 @@ geffen_in,26,178,4	trader	Vendedora de Armaduras#gef	1_F_01,{
 		sellitem Silk_Robe;
 		sellitem Silver_Robe;
 	}
+
+// Izlude
+izlude_in,60,127,4	trader	Vendedora de Armas#iz	1_F_MARIA,{
+	OnInit:
+		sellitem Arrow;
+		sellitem Silver_Arrow;
+		sellitem Bow;
+		sellitem Rod;
+		sellitem Knife;
+		sellitem Cutter;
+		sellitem Main_Gauche;
+		sellitem Sword;
+		sellitem Falchion;
+		sellitem Blade;
+		sellitem Katana;
+		sellitem Slayer;
+		sellitem Bastard_Sword;
+		sellitem Two_Hand_Sword;
+		sellitem Broad_Sword;
+		sellitem Axe;
+	}
+	
+izlude_in,70,127,4	trader	Vendedor de Armaduras#iz	1_M_SIZ,{
+	OnInit:
+		sellitem Buckler;
+		sellitem Shield;
+		sellitem Shoes;
+		sellitem Boots;
+		sellitem Muffler;
+		sellitem Manteau;
+		sellitem Cap;
+		sellitem Helm;
+		sellitem Leather_Jacket;
+		sellitem Adventure_Suit;
+		sellitem Wooden_Mail;
+		sellitem Mantle;
+		sellitem Coat;
+		sellitem Padded_Armor;
+		sellitem Chain_Mail;
+		sellitem Plate_Armor;
+	}
+
+izlude_in,115,61,0	trader	Vendedor de Utilidades#iz	1_M_01,{
+	OnInit:
+		sellitem Spectacles;
+		sellitem Red_Potion;
+		sellitem Orange_Potion;
+		sellitem Yellow_Potion;
+		sellitem Green_Potion;
+		sellitem Center_Potion;
+		sellitem Awakening_Potion;
+		sellitem Wing_Of_Fly;
+		sellitem Wing_Of_Butterfly;
+		sellitem Booby_Trap;
+		sellitem Arrow;
+	}
+
+//== Izlude ================================================
+izlude,105,99,0	trader	Açougueiro#iz	1_M_JOBGUIDER,{
+	OnInit:
+		sellitem Meat;
+	}
+
+izlude,94,98,4	trader	Coletora de Frutas#iz	1_M_INNKEEPER,{
+OnInit:
+	sellitem Apple;
+	sellitem Banana;
+	sellitem Carrot;
+	sellitem Sweet_Potato;
+}
+
+izlude,105,92,7	trader	Vendedora de Leite#i	4_F_01,{
+OnInit:
+	sellitem Milk;
+}
+
+izlude,164,138,4	trader	Loja para Pets#iz	4_F_TELEPORTER,{
+OnInit:
+	sellitem Pet_Food;
+	sellitem Pet_Incubator;
+	sellitem Backpack;
+	sellitem Rocker_Glasses;
+	sellitem Vital_Flower_;
+}

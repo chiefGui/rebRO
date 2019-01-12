@@ -139,7 +139,6 @@ izlude_in,115,61,0	trader	Vendedor de Utilidades#iz	1_M_01,{
 		sellitem Arrow;
 	}
 
-//== Izlude ================================================
 izlude,105,99,0	trader	Açougueiro#iz	1_M_JOBGUIDER,{
 	OnInit:
 		sellitem Meat;
@@ -401,3 +400,187 @@ OnInit:
 	sellitem Knuckle_Duster;
 	sellitem Hora;
 }
+
+// Yuno
+yuno,218,97,5	trader	Vendedor de Utilidades#yuno	4_M_02,{
+	OnInit:
+		sellitem Arrow;
+		sellitem Spectacles;
+		sellitem Red_Potion;
+		sellitem Orange_Potion;
+		sellitem Yellow_Potion;
+		sellitem White_Potion;
+		sellitem Green_Potion;
+		sellitem Center_Potion;
+		sellitem Awakening_Potion;
+		sellitem Wing_Of_Fly;
+		sellitem Wing_Of_Butterfly;
+	}
+
+yuno,226,107,5	trader	Vendedor de Utilidades#yuno1	4_M_01,{
+OnInit:
+	sellitem Scell;
+	sellitem Garlet;
+	sellitem Zargon;
+}
+
+yuno,197,114,4	trader	Pets#yuno	4_F_TELEPORTER,{
+OnInit:
+	sellitem Pet_Food;
+	sellitem Pet_Incubator;
+	sellitem Backpack;
+	sellitem Rocker_Glasses;
+	sellitem Vital_Flower;
+}
+
+yuno,205,103,4	trader	Mr. King's Shop#yuno	4_M_TELEPORTER,{
+OnInit:
+	sellitem Novice_Breast;
+	sellitem Full_Plate_Armor;
+	sellitem Grave;
+	sellitem Turban;
+	sellitem Gemmed_Sallet;
+	sellitem Repeting_CrossBow;
+}
+
+yuno,163,187,5	trader	Vendedora Mágica#yuno	4_F_01,{
+OnInit:
+	sellitem Blue_Gemstone;
+	sellitem Rod;
+	sellitem Wand;
+	sellitem Staff;
+	sellitem Arc_Wand;
+	sellitem Circlet;
+	sellitem Silk_Robe;
+	sellitem Silver_Robe;
+}
+
+yuno_in01,25,34,5	trader	Vendedor de Utilidades#yuno2	4_M_01,{
+OnInit:
+	sellitem Arrow;
+	sellitem Spectacles;
+	sellitem Red_Potion;
+	sellitem Orange_Potion;
+	sellitem Yellow_Potion;
+	sellitem White_Potion;
+	sellitem Green_Potion;
+	sellitem Center_Potion;
+	sellitem Awakening_Potion;
+	sellitem Wing_Of_Fly;
+	sellitem Wing_Of_Butterfly;
+}
+
+yuno_in01,103,35,2	trader	Vendedor de Armas#yuno	1_M_03,{
+OnInit:
+	sellitem Arrow;
+	sellitem Silver_Arrow;
+	sellitem Sword;
+	sellitem Bow;
+	sellitem Knife;
+	sellitem Cutter;
+	sellitem Main_Gauche;
+	sellitem Dirk;
+	sellitem Dagger;
+	sellitem Stiletto;
+	sellitem Rod;
+	sellitem Wand;
+	sellitem Staff;
+	sellitem Arc_Wand;
+}
+
+yuno_in01,112,26,4	trader	Vendedora de Armaduras#yuno	4W_F_01,{
+OnInit:
+	sellitem Guard;
+	sellitem Mirror_Shield;
+	sellitem Sandals;
+	sellitem Hood;
+	sellitem Gemmed_Sallet;
+	sellitem Cotton_Shirt;
+	sellitem Leather_Jacket;
+	sellitem Adventure_Suit;
+	sellitem Silk_Robe;
+	sellitem Silver_Robe;
+}
+
+
+//== Alberta ===============================================
+alberta_in,165,96,0	trader	Colecionadora de Itrens#alb	1_F_MERCHANT_02,{
+	OnInit:
+		sellitem Scell;
+		sellitem Monsters_Feed;
+	}
+
+alberta_in,180,15,0	trader	Vendedora de Armaduras#alb	4W_F_01,{
+OnInit:
+	sellitem Guard;
+	sellitem Buckler;
+	sellitem Sandals;
+	sellitem Shoes;
+	sellitem Boots;
+	sellitem Hood;
+	sellitem Muffler;
+	sellitem Manteau;
+	sellitem Glasses;
+	sellitem Sunglasses;
+	sellitem Divers_Goggles;
+	sellitem Cap;
+	sellitem Cotton_Shirt;
+	sellitem Leather_Jacket;
+	sellitem Adventure_Suit;
+	sellitem Silk_Robe;
+	sellitem Wooden_Mail;
+	sellitem Silver_Robe;
+	sellitem Mantle;
+	sellitem Coat;
+	sellitem Padded_Armor;
+	sellitem Chain_Mail;
+}
+
+alberta_in,188,21,0	trader	Vendedor de Armas#alb	1_M_03,{
+	OnInit:
+		sellitem Arrow;
+		sellitem Silver_Arrow;
+		sellitem Sword;
+		sellitem Falchion;
+		sellitem Blade;
+		sellitem Knife;
+		sellitem Cutter;
+		sellitem Main_Gauche;
+		sellitem Rod;
+		sellitem Bow;
+		sellitem Axe;
+		sellitem Battle_Axe;
+		sellitem Hammer;
+		sellitem Buster;
+		sellitem Two_Handed_Axe;
+	}
+
+alberta_in,182,97,0	trader	Vendedora de Utilidades#alb	1_F_MERCHANT_01,{
+	OnInit:
+		sellitem Arrow;
+		sellitem Spectacles;
+		sellitem Red_Potion;
+		sellitem Orange_Potion;
+		sellitem Yellow_Potion;
+		sellitem White_Potion;
+		sellitem Green_Potion;
+		sellitem Center_Potion;
+		sellitem Awakening_Potion;
+		sellitem Wing_Of_Fly;
+		sellitem Wing_Of_Butterfly;
+		sellitem Spinning_Eyes;
+	}
+
+alb2trea,87,65,5	trader	Vendedor de Utilidades#alb	4_M_01,{
+	OnInit:
+		sellitem Arrow;
+		sellitem Silver_Arrow;
+		sellitem Fire_Arrow;
+		sellitem Red_Potion;
+		sellitem Orange_Potion;
+		sellitem Yellow_Potion;
+		sellitem White_Potion;
+		sellitem Green_Potion;
+		sellitem Center_Potion;
+		sellitem Awakening_Potion;
+	}

@@ -144,3 +144,35 @@ geffen,183,61,1	script	Quadro#Gef6	HIDDEN_NPC,{
 	mes "Bem vindo.";
 	close;
 }
+
+// Alberta
+//============================================================
+alberta,35,241,1	script	Avisos#Alb1	HIDDEN_NPC,{
+	mes "^993300- Quadro de avisos -^000000";
+	mes "Bem vindo para Alberta, paraiso dos Mercadores.";
+	close;
+}
+
+alberta,37,39,1	script	Avisos#Alb2	HIDDEN_NPC,{
+	mes "^993300- Quadro de avisos -^000000";
+	mes "Bem vindo.";
+	close;
+}
+
+alberta,99,151,1	script	Quadro#Alb3	HIDDEN_NPC,{
+	mes "^993300- Quadro de avisos -^000000";
+	mes "Ferramentas completas para carrinho de mão!";
+	mes "Você precisa de ferramentas? Nós temos!";
+	mes "Venha, nós nunca fechamos!";
+	close;
+}
+
+alberta,196,152,1	script	Quadro#Alb4	HIDDEN_NPC,{
+	mes "^993300- Quadro de avisos -^000000";
+	mes "Atracabem e envio de cargas. Para informações relativas";
+	mes "ao envio e recebimento, por favor...";
+	mes "- Você não pode ler o resto -";
+	close;
+}
+
+alberta,149,54,1	duplicate(Avisos#Alb2)	Quadro#Alb5	HIDDEN_NPC

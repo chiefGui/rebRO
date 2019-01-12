@@ -49,64 +49,64 @@
 //= 3.9
 //=========================================================================
 
-//== Alberta ===============================================
-alberta_in,165,96,0	trader	Item Collector#alb	1_F_MERCHANT_02,{
-OnInit:
-	sellitem Scell;
-	sellitem Monsters_Feed;
-}
+// //== Alberta ===============================================
+// alberta_in,165,96,0	trader	Item Collector#alb	1_F_MERCHANT_02,{
+// OnInit:
+// 	sellitem Scell;
+// 	sellitem Monsters_Feed;
+// }
 
-alberta_in,180,15,0	trader	Armor Dealer#alb	4W_F_01,{
-OnInit:
-	sellitem Guard;
-	sellitem Buckler;
-	sellitem Sandals;
-	sellitem Shoes;
-	sellitem Boots;
-	sellitem Hood;
-	sellitem Muffler;
-	sellitem Manteau;
-	sellitem Glasses;
-	sellitem Sunglasses;
-	sellitem Divers_Goggles;
-	sellitem Cap;
-	sellitem Cotton_Shirt;
-	sellitem Leather_Jacket;
-	sellitem Adventure_Suit;
-	sellitem Silk_Robe;
-	sellitem Wooden_Mail;
-	sellitem Silver_Robe;
-	sellitem Mantle;
-	sellitem Coat;
-	sellitem Padded_Armor;
-	sellitem Chain_Mail;
-	sellitem Novice_Armlet;
-}
+// alberta_in,180,15,0	trader	Armor Dealer#alb	4W_F_01,{
+// OnInit:
+// 	sellitem Guard;
+// 	sellitem Buckler;
+// 	sellitem Sandals;
+// 	sellitem Shoes;
+// 	sellitem Boots;
+// 	sellitem Hood;
+// 	sellitem Muffler;
+// 	sellitem Manteau;
+// 	sellitem Glasses;
+// 	sellitem Sunglasses;
+// 	sellitem Divers_Goggles;
+// 	sellitem Cap;
+// 	sellitem Cotton_Shirt;
+// 	sellitem Leather_Jacket;
+// 	sellitem Adventure_Suit;
+// 	sellitem Silk_Robe;
+// 	sellitem Wooden_Mail;
+// 	sellitem Silver_Robe;
+// 	sellitem Mantle;
+// 	sellitem Coat;
+// 	sellitem Padded_Armor;
+// 	sellitem Chain_Mail;
+// 	sellitem Novice_Armlet;
+// }
 
-alberta_in,188,21,0	trader	Weapon Dealer#alb	1_M_03,{
-OnInit:
-	sellitem Arrow;
-	sellitem Silver_Arrow;
-	sellitem Sword;
-	sellitem Falchion;
-	sellitem Blade;
-	sellitem Knife;
-	sellitem Cutter;
-	sellitem Main_Gauche;
-	sellitem Rod;
-	sellitem Bow;
-	sellitem Axe;
-	sellitem Battle_Axe;
-	sellitem Hammer;
-	sellitem Buster;
-	sellitem Two_Handed_Axe;
-}
+// alberta_in,188,21,0	trader	Weapon Dealer#alb	1_M_03,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Silver_Arrow;
+// 	sellitem Sword;
+// 	sellitem Falchion;
+// 	sellitem Blade;
+// 	sellitem Knife;
+// 	sellitem Cutter;
+// 	sellitem Main_Gauche;
+// 	sellitem Rod;
+// 	sellitem Bow;
+// 	sellitem Axe;
+// 	sellitem Battle_Axe;
+// 	sellitem Hammer;
+// 	sellitem Buster;
+// 	sellitem Two_Handed_Axe;
+// }
 
-alberta_in,175,97,4	trader	Weapon Dealer#alb2	4_KID01,{
-OnInit:
-	sellitem Town_Sword;
-	sellitem Cinquedea;
-}
+// alberta_in,175,97,4	trader	Weapon Dealer#alb2	4_KID01,{
+// OnInit:
+// 	sellitem Town_Sword;
+// 	sellitem Cinquedea;
+// }
 
 //== Aldebaran =============================================
 // aldeba_in,20,60,0	trader	Armor Dealer#alde	4W_F_01,{
@@ -794,126 +794,126 @@ OnInit:
 }
 
 //== Juno ==================================================
-yuno,218,97,5	trader	Tool Dealer#yuno	4_M_02,{
-OnInit:
-	sellitem Arrow;
-	sellitem Spectacles;
-	sellitem Red_Potion;
-	sellitem Orange_Potion;
-	sellitem Yellow_Potion;
-	sellitem White_Potion;
-	sellitem Green_Potion;
-	sellitem Center_Potion;
-	sellitem Awakening_Potion;
-	sellitem Wing_Of_Fly;
-	sellitem Wing_Of_Butterfly;
-}
+// yuno,218,97,5	trader	Tool Dealer#yuno	4_M_02,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Spectacles;
+// 	sellitem Red_Potion;
+// 	sellitem Orange_Potion;
+// 	sellitem Yellow_Potion;
+// 	sellitem White_Potion;
+// 	sellitem Green_Potion;
+// 	sellitem Center_Potion;
+// 	sellitem Awakening_Potion;
+// 	sellitem Wing_Of_Fly;
+// 	sellitem Wing_Of_Butterfly;
+// }
 
-yuno,226,107,5	trader	Tool Dealer#yuno1	4_M_01,{
-OnInit:
-	sellitem Scell;
-	sellitem Garlet;
-	sellitem Zargon;
-}
+// yuno,226,107,5	trader	Tool Dealer#yuno1	4_M_01,{
+// OnInit:
+// 	sellitem Scell;
+// 	sellitem Garlet;
+// 	sellitem Zargon;
+// }
 
-yuno,197,114,4	trader	Pet Groomer#yuno	4_F_TELEPORTER,{
-OnInit:
-	sellitem Pet_Food;
-	sellitem Pet_Incubator;
-	sellitem Backpack;
-	sellitem Rocker_Glasses;
-	sellitem Bun_;
-	sellitem Mojji;
-	sellitem Flame_Gemstone;
-	sellitem Vital_Flower_;
-	sellitem Vital_Flower;
-	sellitem Bun_;
-	sellitem Damp_Darkness;
-	sellitem Small_Snow_Flower;
-	sellitem Fresh_Plant;
-	sellitem Big_Cell;
-	sellitem Apple_Pudding;
-	sellitem Mystic_Stone;
-	sellitem Flavored_Alcohol;
-	sellitem Grilled_Rice_Cake;
-	sellitem Fish_With_Blue_Back;
-	sellitem Pumpkin_Pie_;
-}
+// yuno,197,114,4	trader	Pet Groomer#yuno	4_F_TELEPORTER,{
+// OnInit:
+// 	sellitem Pet_Food;
+// 	sellitem Pet_Incubator;
+// 	sellitem Backpack;
+// 	sellitem Rocker_Glasses;
+// 	sellitem Bun_;
+// 	sellitem Mojji;
+// 	sellitem Flame_Gemstone;
+// 	sellitem Vital_Flower_;
+// 	sellitem Vital_Flower;
+// 	sellitem Bun_;
+// 	sellitem Damp_Darkness;
+// 	sellitem Small_Snow_Flower;
+// 	sellitem Fresh_Plant;
+// 	sellitem Big_Cell;
+// 	sellitem Apple_Pudding;
+// 	sellitem Mystic_Stone;
+// 	sellitem Flavored_Alcohol;
+// 	sellitem Grilled_Rice_Cake;
+// 	sellitem Fish_With_Blue_Back;
+// 	sellitem Pumpkin_Pie_;
+// }
 
-yuno,205,103,4	trader	Mr. King's Shop#yuno	4_M_TELEPORTER,{
-OnInit:
-	sellitem Novice_Breast;
-	sellitem Full_Plate_Armor;
-	sellitem Grave;
-	sellitem Turban;
-	sellitem Gemmed_Sallet;
-	sellitem Repeting_CrossBow;
-}
+// yuno,205,103,4	trader	Mr. King's Shop#yuno	4_M_TELEPORTER,{
+// OnInit:
+// 	sellitem Novice_Breast;
+// 	sellitem Full_Plate_Armor;
+// 	sellitem Grave;
+// 	sellitem Turban;
+// 	sellitem Gemmed_Sallet;
+// 	sellitem Repeting_CrossBow;
+// }
 
-yuno,163,187,5	trader	Magical Item Seller#yuno	4_F_01,{
-OnInit:
-	sellitem Blue_Gemstone;
-	sellitem Rod;
-	sellitem Wand;
-	sellitem Staff;
-	sellitem Arc_Wand;
-	sellitem Circlet;
-	sellitem Silk_Robe;
-	sellitem Silver_Robe;
-}
+// yuno,163,187,5	trader	Magical Item Seller#yuno	4_F_01,{
+// OnInit:
+// 	sellitem Blue_Gemstone;
+// 	sellitem Rod;
+// 	sellitem Wand;
+// 	sellitem Staff;
+// 	sellitem Arc_Wand;
+// 	sellitem Circlet;
+// 	sellitem Silk_Robe;
+// 	sellitem Silver_Robe;
+// }
 
-yuno_in01,25,34,5	trader	Tool Dealer#yuno2	4_M_01,{
-OnInit:
-	sellitem Arrow;
-	sellitem Spectacles;
-	sellitem Red_Potion;
-	sellitem Orange_Potion;
-	sellitem Yellow_Potion;
-	sellitem White_Potion;
-	sellitem Green_Potion;
-	sellitem Center_Potion;
-	sellitem Awakening_Potion;
-	sellitem Wing_Of_Fly;
-	sellitem Wing_Of_Butterfly;
-}
+// yuno_in01,25,34,5	trader	Tool Dealer#yuno2	4_M_01,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Spectacles;
+// 	sellitem Red_Potion;
+// 	sellitem Orange_Potion;
+// 	sellitem Yellow_Potion;
+// 	sellitem White_Potion;
+// 	sellitem Green_Potion;
+// 	sellitem Center_Potion;
+// 	sellitem Awakening_Potion;
+// 	sellitem Wing_Of_Fly;
+// 	sellitem Wing_Of_Butterfly;
+// }
 
-yuno_in01,103,35,2	trader	Weapon Dealer#yuno	1_M_03,{
-OnInit:
-	sellitem Arrow;
-	sellitem Silver_Arrow;
-	sellitem Sword;
-	sellitem Bow;
-	sellitem Knife;
-	sellitem Cutter;
-	sellitem Main_Gauche;
-	sellitem Dirk;
-	sellitem Dagger;
-	sellitem Stiletto;
-	sellitem Rod;
-	sellitem Wand;
-	sellitem Staff;
-	sellitem Arc_Wand;
-}
+// yuno_in01,103,35,2	trader	Weapon Dealer#yuno	1_M_03,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Silver_Arrow;
+// 	sellitem Sword;
+// 	sellitem Bow;
+// 	sellitem Knife;
+// 	sellitem Cutter;
+// 	sellitem Main_Gauche;
+// 	sellitem Dirk;
+// 	sellitem Dagger;
+// 	sellitem Stiletto;
+// 	sellitem Rod;
+// 	sellitem Wand;
+// 	sellitem Staff;
+// 	sellitem Arc_Wand;
+// }
 
-yuno_in01,112,26,4	trader	Armor Dealer#yuno	4W_F_01,{
-OnInit:
-	sellitem Novice_Armlet;
-	sellitem Guard;
-	sellitem Mirror_Shield;
-	sellitem Sandals;
-	sellitem Hood;
-	sellitem Gemmed_Sallet;
-	sellitem Cotton_Shirt;
-	sellitem Leather_Jacket;
-	sellitem Adventure_Suit;
-	sellitem Silk_Robe;
-	sellitem Silver_Robe;
-}
+// yuno_in01,112,26,4	trader	Armor Dealer#yuno	4W_F_01,{
+// OnInit:
+// 	sellitem Novice_Armlet;
+// 	sellitem Guard;
+// 	sellitem Mirror_Shield;
+// 	sellitem Sandals;
+// 	sellitem Hood;
+// 	sellitem Gemmed_Sallet;
+// 	sellitem Cotton_Shirt;
+// 	sellitem Leather_Jacket;
+// 	sellitem Adventure_Suit;
+// 	sellitem Silk_Robe;
+// 	sellitem Silver_Robe;
+// }
 
-yuno_in03,176,22,3	trader	Scroll Merchant#yuno03	4_M_ORIENT02,{
-OnInit:
-	sellitem Scroll; //Temp shop in Yuno that sells Blank Scrolls
-}
+// yuno_in03,176,22,3	trader	Scroll Merchant#yuno03	4_M_ORIENT02,{
+// OnInit:
+// 	sellitem Scroll; //Temp shop in Yuno that sells Blank Scrolls
+// }
 
 //== Lighthalzen ===========================================
 lighthalzen,69,75,5	trader	Fruit Gardener#lhz	8_F,{

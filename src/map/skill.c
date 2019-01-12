@@ -1447,9 +1447,10 @@ static int skill_additional_effect(struct block_list *src, struct block_list *bl
 			//sc_start(src,bl,SC_STUN,3*skill_lv,skill_lv,skill->get_time2(skill_id,skill_lv));
 			//break;
 
-		case WZ_VERMILION:
-			sc_start(src,bl,SC_BLIND,4*skill_lv,skill_lv,skill->get_time2(skill_id,skill_lv));
-			break;
+		// Remove Blind chance (SKILL_NOT_OT)
+		// case WZ_VERMILION:
+		// 	sc_start(src,bl,SC_BLIND,4*skill_lv,skill_lv,skill->get_time2(skill_id,skill_lv));
+		// 	break;
 
 		case HT_FREEZINGTRAP:
 		case MA_FREEZINGTRAP:

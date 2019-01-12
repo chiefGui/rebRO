@@ -14,6 +14,10 @@ morocc_mem.gnd#morocc_mem.gnd#
 morocc_mem.gat#morocc_mem.gat#
 morocc_mem.rsw#morocc_mem.rsw#
 
+moc_fild06.gnd#moc_fild06.gnd#
+moc_fild06.gat#moc_fild06.gat#
+moc_fild06.rsw#moc_fild06.rsw#
+
 moc_fild10.gnd#moc_fild10.gnd#
 moc_fild10.gat#moc_fild10.gat#
 moc_fild10.rsw#moc_fild10.rsw#

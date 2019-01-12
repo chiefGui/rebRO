@@ -130,7 +130,7 @@ treasure02,0,0,0,0	monster	Andarilho	1208,1,600000,300000,1
 treasure02,0,0,0,0	monster	Penomena	1216,22,300000,120000,1
 treasure02,0,0,0,0	monster	Kukre	1070,20,0,0,1
 treasure02,0,0,0,0	monster	Esqueleto Pirata	1071,5,0,0,1
-treasure02,0,0,0,0	monster	MÃ­mico	1191,3,0,0,1
+treasure02,0,0,0,0	monster	Mímico	1191,3,0,0,1
 treasure02,95,57,0,0	monster	Hidra	1068,1,300000,100000,1
 treasure02,96,57,0,0	monster	Hidra	1068,1,300000,100000,1
 treasure02,101,57,0,0	monster	Hidra	1068,1,300000,100000,1
@@ -155,8 +155,8 @@ treasure02,102,143,0,0	monster	Hidra	1068,1,300000,100000,1
 treasure02,103,143,0,0	monster	Hidra	1068,1,300000,100000,1
 treasure02,101,150,15,10	monster	Sussurro	1179,2,200000,100000,1
 treasure02,101,151,8,8	boss_monster	Drake	1112,1,7200000,600000,1
-treasure02,101,151,10,10	monster	MÃ­mico	1191,3,500000,200000,1
-treasure02,101,151,10,10	monster	MÃ­mico	1191,2,100000,100000,1
+treasure02,101,151,10,10	monster	Mímico	1191,3,500000,200000,1
+treasure02,101,151,10,10	monster	Mímico	1191,2,100000,100000,1
 treasure02,101,151,10,10	monster	Penomena	1216,4,100000,100000,1
 treasure02,101,126,2,2	monster	Penomena	1216,1,1200000,600000,1
 treasure02,101,135,2,2	monster	Penomena	1216,1,60000,200000,1

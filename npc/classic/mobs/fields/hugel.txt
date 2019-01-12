@@ -43,7 +43,7 @@ hu_fild01,0,0,0,0	monster	Plasma	1695,5,900000,300000,0
 hu_fild01,0,0,0,0	monster	Plasma	1696,5,900000,300000,0
 hu_fild01,0,0,0,0	monster	Plasma	1694,5,900000,300000,0
 hu_fild01,0,0,0,0	monster	Plasma	1693,5,900000,300000,0
-hu_fild01,0,0,0,0	monster	Planta Carn√≠vora	1368,30,300000,0,0
+hu_fild01,0,0,0,0	monster	Planta CarnÌvora	1368,30,300000,0,0
 hu_fild01,0,0,0,0	monster	Pungus	1378,30,1200000,600000,0
 
 //== hu_fild02 - Hugel Field ===============================
@@ -51,7 +51,7 @@ hu_fild02,0,0,0,0	monster	Anopheles	1627,30,0,0,0
 hu_fild02,0,0,0,0	monster	Novus	1715,20,0,0,0
 hu_fild02,0,0,0,0	monster	Novus	1718,40,0,0,0
 hu_fild02,0,0,0,0	monster	Breeze	1692,10,0,0,0
-hu_fild02,0,0,0,0	monster	Planta Carn√≠vora	1368,10,600000,120000,0
+hu_fild02,0,0,0,0	monster	Planta CarnÌvora	1368,10,600000,120000,0
 hu_fild02,0,0,0,0	monster	Grove	1687,20,600000,120000,0
 hu_fild02,85,85,53,47	monster	Pungus	1378,3,300000,120000,0
 hu_fild02,85,85,37,47	monster	Novus	1715,1,300000,120000,0
@@ -61,7 +61,7 @@ hu_fild02,85,85,37,47	monster	Novus	1718,1,300000,120000,0
 hu_fild03,0,0,0,0	monster	Grove	1687,70,0,0,0
 hu_fild03,0,0,0,0	monster	Novus	1715,30,0,0,0
 hu_fild03,0,0,0,0	monster	Poporing	1031,20,0,0,0
-hu_fild03,0,0,0,0	monster	Besouro-Ladr√£o	1051,10,0,0,0
+hu_fild03,0,0,0,0	monster	Besouro-Ladr„o	1051,10,0,0,0
 hu_fild03,40,157,3,3	monster	Cogumelo Vermelho	1085,2,300000,0,0
 hu_fild03,219,211,7,5	monster	Cogumelo Vermelho	1085,3,300000,0,0
 hu_fild03,285,230,5,4	monster	Cogumelo Vermelho	1085,2,300000,0,0
@@ -93,27 +93,27 @@ hu_fild05,112,272,62,82	monster	Grove	1687,15,0,0,0
 hu_fild05,112,272,62,82	monster	Novus	1715,2,0,0,0
 hu_fild05,112,272,62,82	monster	Novus	1718,2,0,0,0
 hu_fild05,112,272,62,82	monster	Anopheles	1627,10,0,0,0
-hu_fild05,112,272,62,82	monster	Drag√£o Mutante	1262,1,24000000,1800000,0
+hu_fild05,112,272,62,82	monster	Drag„o Mutante	1262,1,24000000,1800000,0
 hu_fild05,276,302,93,60	monster	Grove	1687,15,0,0,0
 hu_fild05,276,302,93,60	monster	Novus	1715,2,0,0,0
 hu_fild05,276,302,93,60	monster	Novus	1718,1,0,0,0
 hu_fild05,276,302,93,60	monster	Anopheles	1627,10,0,0,0
-hu_fild05,276,302,93,60	monster	Drag√£o Mutante	1262,1,24000000,1800000,0
+hu_fild05,276,302,93,60	monster	Drag„o Mutante	1262,1,24000000,1800000,0
 hu_fild05,286,144,82,90	monster	Grove	1687,15,0,0,0
 hu_fild05,286,144,82,90	monster	Novus	1715,2,0,0,0
 hu_fild05,286,144,82,90	monster	Novus	1718,2,0,0,0
 hu_fild05,286,144,82,90	monster	Anopheles	1627,10,0,0,0
-hu_fild05,286,144,82,90	monster	Drag√£o Mutante	1262,1,24000000,1800000,0
+hu_fild05,286,144,82,90	monster	Drag„o Mutante	1262,1,24000000,1800000,0
 hu_fild05,118,106,80,70	monster	Grove	1687,15,0,0,0
 hu_fild05,118,106,80,70	monster	Novus	1715,2,0,0,0
 hu_fild05,118,106,80,70	monster	Novus	1718,1,0,0,0
 hu_fild05,118,106,80,70	monster	Anopheles	1627,10,0,0,0
-hu_fild05,118,106,80,70	monster	Drag√£o Mutante	1262,1,24000000,1800000,0
+hu_fild05,118,106,80,70	monster	Drag„o Mutante	1262,1,24000000,1800000,0
 hu_fild05,0,0,0,0	monster	Anopheles	1627,10,0,0,0
-hu_fild05,0,0,0,0	monster	Ovo de Drag√£o	1721,1,7200000,1800000,0
-hu_fild05,196,196,5,5	monster	Ovo de Drag√£o	1721,1,7200000,1800000,0
-hu_fild05,340,50,10,10	monster	Ovo de Drag√£o	1721,1,7200000,1800000,0
-hu_fild05,320,325,5,5	monster	Ovo de Drag√£o	1721,1,7200000,1800000,0
+hu_fild05,0,0,0,0	monster	Ovo de Drag„o	1721,1,7200000,1800000,0
+hu_fild05,196,196,5,5	monster	Ovo de Drag„o	1721,1,7200000,1800000,0
+hu_fild05,340,50,10,10	monster	Ovo de Drag„o	1721,1,7200000,1800000,0
+hu_fild05,320,325,5,5	monster	Ovo de Drag„o	1721,1,7200000,1800000,0
 
 //== hu_fild06 - Hugel Field ===============================
 hu_fild06,0,0,0,0	monster	Holden	1628,50,0,0,0
@@ -134,7 +134,7 @@ hu_fild07,0,0,0,0	monster	Novus	1715,10,0,0,0
 hu_fild07,0,0,0,0	monster	Novus	1718,10,0,0,0
 hu_fild07,0,0,0,0	monster	Anopheles	1627,30,0,0,0
 hu_fild07,0,0,0,0	monster	Grove	1687,10,0,0,0
-hu_fild07,0,0,0,0	monster	Planta Carn√≠vora	1368,20,0,0,0
+hu_fild07,0,0,0,0	monster	Planta CarnÌvora	1368,20,0,0,0
 hu_fild07,0,0,0,0	monster	Pungus	1378,10,0,0,0
 hu_fild07,0,0,0,0	monster	Planta Amarela	1081,20,0,0,0
 

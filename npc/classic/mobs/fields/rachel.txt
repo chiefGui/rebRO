@@ -37,7 +37,7 @@
 
 //== ra_fild01 - Audhumbla Grassland =======================
 ra_fild01,0,0,0,0	monster	Muscipular	1780,60,0,0,1
-ra_fild01,173,170,106,80	monster	Planta CarnÃ­vora	1368,30,300000,120000,1
+ra_fild01,173,170,106,80	monster	Planta Carnívora	1368,30,300000,120000,1
 ra_fild01,0,0,0,0	monster	Drosera	1781,20,0,0,1
 ra_fild01,0,0,0,0	monster	Galion	1783,5,0,0,0
 ra_fild01,0,0,0,0	monster	Grifo	1259,3,3600000,0,1
@@ -65,7 +65,7 @@ ra_fild04,0,0,0,0	boss_monster	Atroce	1785,1,18000000,600000,1
 //== ra_fild05 - Audhumbla Grassland =======================
 ra_fild05,0,0,0,0	monster	Vento da Colina	1680,70,0,0,0
 ra_fild05,0,0,0,0	monster	Drosera	1781,20,0,0,0
-ra_fild05,170,200,106,115	monster	Planta CarnÃ­vora	1368,10,0,0,1
+ra_fild05,170,200,106,115	monster	Planta Carnívora	1368,10,0,0,1
 
 //== ra_fild06 - Portus Luna ===============================
 ra_fild06,0,0,0,0	monster	Vento da Colina	1680,50,0,0,0

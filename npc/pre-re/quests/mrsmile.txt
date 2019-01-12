@@ -32,4 +32,4 @@
 //= 1.0
 //=========================================================================
 
-izlude,129,118,4	duplicate(SmileHelper)	Smile Assistance#iz	4_F_03
+izlude,129,118,4	duplicate(SmileHelper)	Dona Risadinha#iz	4_F_03

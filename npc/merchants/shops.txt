@@ -564,63 +564,63 @@ OnInit:
 }
 
 //== Geffen ================================================
-geffen_in,26,178,4	trader	Armor Dealer#gef	1_F_01,{
-OnInit:
-	sellitem Novice_Armlet;
-	sellitem Guard;
-	sellitem Mirror_Shield;
-	sellitem Sandals;
-	sellitem Hood;
-	sellitem Gemmed_Sallet;
-	sellitem Cotton_Shirt;
-	sellitem Leather_Jacket;
-	sellitem Adventure_Suit;
-	sellitem Silk_Robe;
-	sellitem Silver_Robe;
-}
+// geffen_in,26,178,4	trader	Armor Dealer#gef	1_F_01,{
+// OnInit:
+// 	sellitem Novice_Armlet;
+// 	sellitem Guard;
+// 	sellitem Mirror_Shield;
+// 	sellitem Sandals;
+// 	sellitem Hood;
+// 	sellitem Gemmed_Sallet;
+// 	sellitem Cotton_Shirt;
+// 	sellitem Leather_Jacket;
+// 	sellitem Adventure_Suit;
+// 	sellitem Silk_Robe;
+// 	sellitem Silver_Robe;
+// }
 
-geffen_in,30,178,4	trader	Weapon Dealer#gef2	1_M_01,{
-OnInit:
-	sellitem Arrow;
-	sellitem Silver_Arrow;
-	sellitem Sword;
-	sellitem Bow;
-	sellitem Knife;
-	sellitem Cutter;
-	sellitem Main_Gauche;
-	sellitem Dirk;
-	sellitem Dagger;
-	sellitem Stiletto;
-	sellitem Rod;
-	sellitem Wand;
-	sellitem Staff;
-	sellitem Arc_Wand;
-}
+// geffen_in,30,178,4	trader	Weapon Dealer#gef2	1_M_01,{
+// OnInit:
+// 	sellitem Arrow;
+// 	sellitem Silver_Arrow;
+// 	sellitem Sword;
+// 	sellitem Bow;
+// 	sellitem Knife;
+// 	sellitem Cutter;
+// 	sellitem Main_Gauche;
+// 	sellitem Dirk;
+// 	sellitem Dagger;
+// 	sellitem Stiletto;
+// 	sellitem Rod;
+// 	sellitem Wand;
+// 	sellitem Staff;
+// 	sellitem Arc_Wand;
+// }
 
-geffen_in,22,171,7	trader	Weapon Dealer#gef	4_M_02,{
-OnInit:
-	sellitem Town_Sword;
-	sellitem Cinquedea;
-}
+// geffen_in,22,171,7	trader	Weapon Dealer#gef	4_M_02,{
+// OnInit:
+// 	sellitem Town_Sword;
+// 	sellitem Cinquedea;
+// }
 
-geffen_in,74,144,0	trader	Trader#gef	1_F_01,{
-OnInit:
-	sellitem Scell;
-	sellitem Garlet;
-	sellitem Zargon;
-}
+// geffen_in,74,144,0	trader	Trader#gef	1_F_01,{
+// OnInit:
+// 	sellitem Scell;
+// 	sellitem Garlet;
+// 	sellitem Zargon;
+// }
 
-geffen_in,77,173,0	trader	Magical Item Seller#gef	1_M_WIZARD,{
-OnInit:
-	sellitem Blue_Gemstone;
-	sellitem Rod;
-	sellitem Wand;
-	sellitem Staff;
-	sellitem Arc_Wand;
-	sellitem Circlet;
-	sellitem Silk_Robe;
-	sellitem Silver_Robe;
-}
+// geffen_in,77,173,0	trader	Magical Item Seller#gef	1_M_WIZARD,{
+// OnInit:
+// 	sellitem Blue_Gemstone;
+// 	sellitem Rod;
+// 	sellitem Wand;
+// 	sellitem Staff;
+// 	sellitem Arc_Wand;
+// 	sellitem Circlet;
+// 	sellitem Silk_Robe;
+// 	sellitem Silver_Robe;
+// }
 
 //== Kunlun ================================================
 gonryun,147,84,5	trader	Tool Dealer#gon	4_M_TWOLDMAN,{

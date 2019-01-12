@@ -30,3 +30,55 @@ morocc_mem,244,134,1	shop	Comerciante#moc12	93,2612:-1
 morocc_mem,259,193,1	shop	Comerciante#moc13	99,747:-1
 morocc_mem,268,193,1	shop	Comerciante#moc14	93,748:-1
 morocc_mem,269,167,4	shop	Treinador#moc15	125,537:-1,643:-1,10013:-1,10014:-1
+
+// Geffen
+geffen_in,26,178,4	trader	Vendedora de Armaduras#gef	1_F_01,{
+	OnInit:
+		sellitem Guard;
+		sellitem Mirror_Shield;
+		sellitem Sandals;
+		sellitem Hood;
+		sellitem Gemmed_Sallet;
+		sellitem Cotton_Shirt;
+		sellitem Leather_Jacket;
+		sellitem Adventure_Suit;
+		sellitem Silk_Robe;
+		sellitem Silver_Robe;
+	}
+	
+	geffen_in,30,178,4	trader	Vendedor de Armas#gef2	1_M_01,{
+	OnInit:
+		sellitem Arrow;
+		sellitem Silver_Arrow;
+		sellitem Sword;
+		sellitem Bow;
+		sellitem Knife;
+		sellitem Cutter;
+		sellitem Main_Gauche;
+		sellitem Dirk;
+		sellitem Dagger;
+		sellitem Stiletto;
+		sellitem Rod;
+		sellitem Wand;
+		sellitem Staff;
+		sellitem Arc_Wand;
+	}
+	
+	geffen_in,74,144,0	trader	Vendedor#gef	1_F_01,{
+	OnInit:
+		sellitem Scell;
+		sellitem Garlet;
+		sellitem Zargon;
+	}
+	
+	geffen_in,77,173,0	trader	Vendedor Mágico#gef	1_M_WIZARD,{
+	OnInit:
+		sellitem Blue_Gemstone;
+		sellitem Rod;
+		sellitem Wand;
+		sellitem Staff;
+		sellitem Arc_Wand;
+		sellitem Circlet;
+		sellitem Silk_Robe;
+		sellitem Silver_Robe;
+	}

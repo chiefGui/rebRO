@@ -556,7 +556,7 @@ function	script	F_KafSet	{
 	} else if (strnpcinfo(NPC_MAP) == "izlude") {
 		setarray @wrpD$, "Comodo, Geffen, Payon, Prontera";
 		setarray @wrpP, 2000, 1800, 1700, 900;
-	} else if (strnpcinfo(NPC_MAP) == "morocc") {
+	} else if (strnpcinfo(NPC_MAP) == "morocc_mem") {
 		setarray @wrpD$, "Prontera", "Payon", "Alberta", "Comodo", "Geffen";
 		setarray @wrpP, 1800, 1800, 2200, 2000, 2200;
 		setarray @viewpX, 156, 163, 28, 292;

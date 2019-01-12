@@ -1,10 +1,5 @@
-// payon,90,322,4	duplicate(InsideFlagsPA1)	Palácio do Sol#11	GUILD_FLAG
-// payon,166,177,3	duplicate(InsideFlagsPA1)	Palácio do Sol#12	GUILD_FLAG
-// payon,97,322,4	duplicate(InsideFlagsPA2)	Sacred Altar#11	GUILD_FLAG
-// payon,166,173,3	duplicate(InsideFlagsPA2)	Sacred Altar#12	GUILD_FLAG
-// payon,113,322,4	duplicate(InsideFlagsPA3)	Palácio da Sombra#11	GUILD_FLAG
-// payon,166,169,3	duplicate(InsideFlagsPA3)	Palácio da Sombra#12	GUILD_FLAG
-// payon,118,322,4	duplicate(InsideFlagsPA4)	Palácio Escarlate#11	GUILD_FLAG
-// payon,166,165,3	duplicate(InsideFlagsPA4)	Palácio Escarlate#12	GUILD_FLAG
-// payon,123,322,4	duplicate(InsideFlagsPA5)	Palácio da Colina#11	GUILD_FLAG
-// payon,166,161,3	duplicate(InsideFlagsPA5)	Palácio da Colina#12	GUILD_FLAG,{}
+payon,102,117,4	duplicate(InsideFlagsPA1)	Palácio do Sol#12	GUILD_FLAG
+payon,105,117,4	duplicate(InsideFlagsPA2)	Lago Sagrado#12	GUILD_FLAG
+payon,108,117,4	duplicate(InsideFlagsPA3)	Palácio da Sombra#12	GUILD_FLAG
+payon,111,117,4	duplicate(InsideFlagsPA4)	Palácio Escarlate#12	GUILD_FLAG
+payon,114,117,4	duplicate(InsideFlagsPA5)	Palácio da Colina#12	GUILD_FLAG,{}

@@ -1155,57 +1155,57 @@ OnInit:
 }
 
 //== Lutie =================================================
-xmas_in,40,38,5	trader	Tool Dealer#xmas	4_M_01,{
-OnInit:
-	sellitem Red_Potion;
-	sellitem Orange_Potion;
-	sellitem Yellow_Potion;
-	sellitem White_Potion;
-	sellitem Green_Potion;
-	sellitem Center_Potion;
-	sellitem Awakening_Potion;
-	sellitem Wing_Of_Fly;
-	sellitem Wing_Of_Butterfly;
-	sellitem Spectacles;
-	sellitem Leaf_Of_Yggdrasil;
-}
+// xmas_in,40,38,5	trader	Tool Dealer#xmas	4_M_01,{
+// OnInit:
+// 	sellitem Red_Potion;
+// 	sellitem Orange_Potion;
+// 	sellitem Yellow_Potion;
+// 	sellitem White_Potion;
+// 	sellitem Green_Potion;
+// 	sellitem Center_Potion;
+// 	sellitem Awakening_Potion;
+// 	sellitem Wing_Of_Fly;
+// 	sellitem Wing_Of_Butterfly;
+// 	sellitem Spectacles;
+// 	sellitem Leaf_Of_Yggdrasil;
+// }
 
-xmas_in,168,104,4	trader	Armor Dealer#xmas	4W_F_01,{
-OnInit:
-	sellitem Helm;
-	sellitem Buckler;
-	sellitem Shield;
-	sellitem Mantle;
-	sellitem Coat;
-	sellitem Padded_Armor;
-	sellitem Chain_Mail;
-	sellitem Plate_Armor;
-	sellitem Manteau;
-	sellitem Boots;
-}
+// xmas_in,168,104,4	trader	Armor Dealer#xmas	4W_F_01,{
+// OnInit:
+// 	sellitem Helm;
+// 	sellitem Buckler;
+// 	sellitem Shield;
+// 	sellitem Mantle;
+// 	sellitem Coat;
+// 	sellitem Padded_Armor;
+// 	sellitem Chain_Mail;
+// 	sellitem Plate_Armor;
+// 	sellitem Manteau;
+// 	sellitem Boots;
+// }
 
-xmas_in,169,34,2	trader	Gift Seller#xmas	4_F_GON,{
-OnInit:
-	sellitem Flower_Ring;
-	sellitem Bunch_Of_Flowers;
-	sellitem Witherless_Rose;
-	sellitem White_Platter;
-	sellitem Glass_Bead;
-	sellitem Stuffed_Doll;
-	sellitem Diamond_Ring;
-}
+// xmas_in,169,34,2	trader	Gift Seller#xmas	4_F_GON,{
+// OnInit:
+// 	sellitem Flower_Ring;
+// 	sellitem Bunch_Of_Flowers;
+// 	sellitem Witherless_Rose;
+// 	sellitem White_Platter;
+// 	sellitem Glass_Bead;
+// 	sellitem Stuffed_Doll;
+// 	sellitem Diamond_Ring;
+// }
 
-xmas_in,174,98,2	trader	Weapon Dealer#xmas	1_M_03,{
-OnInit:
-	sellitem Knife;
-	sellitem Cutter;
-	sellitem Main_Gauche;
-	sellitem Dirk;
-	sellitem Dagger;
-	sellitem Stiletto;
-	sellitem Gladius;
-	sellitem Damascus;
-}
+// xmas_in,174,98,2	trader	Weapon Dealer#xmas	1_M_03,{
+// OnInit:
+// 	sellitem Knife;
+// 	sellitem Cutter;
+// 	sellitem Main_Gauche;
+// 	sellitem Dirk;
+// 	sellitem Dagger;
+// 	sellitem Stiletto;
+// 	sellitem Gladius;
+// 	sellitem Damascus;
+// }
 
 //== Morroc - Post Ep. 12.1 ================================
 in_moc_16,22,20,7	trader	Sepulchral Merchant#moc	4_M_MASKMAN,{

@@ -15519,10 +15519,14 @@ static struct skill_condition skill_get_requirement(struct map_session_data *sd,
 			if(sc && sc->data[SC_SOULLINK] && sc->data[SC_SOULLINK]->val2 == SL_MONK)
 				req.sp -= req.sp*25/100; //FIXME: Need real data. this is a custom value.
 			break;
-		case MO_BODYRELOCATION:
-			if( sc && sc->data[SC_EXPLOSIONSPIRITS] )
-				req.spiritball = 0;
-			break;
+		// Make Body Relocation consume
+		// Spirit Ball even with Explosion Spirits active.
+		// This is an old times features, meaning
+		// having it is NOT OT. (SKILL_NOT_OT)
+		// case MO_BODYRELOCATION:
+		// 	if( sc && sc->data[SC_EXPLOSIONSPIRITS] )
+		// 		req.spiritball = 0;
+		// 	break;
 		case MO_EXTREMITYFIST:
 			if( sc )
 			{

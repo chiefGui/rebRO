@@ -1988,7 +1988,8 @@ static int battle_calc_skillratio(int attack_type, struct block_list *src, struc
 				}
 				case KN_BOWLINGBASH:
 				case MS_BOWLINGBASH:
-					skillratio+= 40 * skill_lv;
+					// Previously, 40. But OT required 20. (Half of the effectiveness)
+					skillratio+= 20 * skill_lv;
 					break;
 				case AS_GRIMTOOTH:
 					skillratio += 20 * skill_lv;

@@ -107,8 +107,8 @@ payg_cas04,232,181,4	duplicate(InsideFlagsPA4)	Sacred Altar#9	GUILD_FLAG
 payg_cas04,239,181,4	duplicate(InsideFlagsPA4)	Sacred Altar#10	GUILD_FLAG
 
 //== Guild Flag (Town) =====================================
-payon,118,322,4	duplicate(InsideFlagsPA4)	Sacred Altar#11	GUILD_FLAG
-payon,166,165,3	duplicate(InsideFlagsPA4)	Sacred Altar#12	GUILD_FLAG
+// payon,118,322,4	duplicate(InsideFlagsPA4)	Sacred Altar#11	GUILD_FLAG
+// payon,166,165,3	duplicate(InsideFlagsPA4)	Sacred Altar#12	GUILD_FLAG
 
 //== Kafra Employee ========================================
 payg_cas04,40,235,1	duplicate(guildkafra)	Kafra Staff#payg_cas04	4_F_KAFRA1

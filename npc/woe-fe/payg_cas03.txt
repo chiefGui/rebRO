@@ -106,8 +106,8 @@ payg_cas03,34,31,4	duplicate(InsideFlagsPA3)	Holy Shadow#9	GUILD_FLAG
 payg_cas03,43,31,4	duplicate(InsideFlagsPA3)	Holy Shadow#10	GUILD_FLAG
 
 //== Guild Flag (Town) =====================================
-payon,113,322,4	duplicate(InsideFlagsPA3)	Holy Shadow#11	GUILD_FLAG
-payon,166,169,3	duplicate(InsideFlagsPA3)	Holy Shadow#12	GUILD_FLAG
+// payon,113,322,4	duplicate(InsideFlagsPA3)	Holy Shadow#11	GUILD_FLAG
+// payon,166,169,3	duplicate(InsideFlagsPA3)	Holy Shadow#12	GUILD_FLAG
 
 //== Kafra Employee ========================================
 payg_cas03,9,263,5	duplicate(guildkafra)	Kafra Staff#payg_cas03	4_F_KAFRA1

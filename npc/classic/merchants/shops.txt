@@ -166,3 +166,46 @@ OnInit:
 	sellitem Rocker_Glasses;
 	sellitem Vital_Flower_;
 }
+
+//== Aldebaran NPC_OT =============================================
+aldeba_in,20,60,0	trader	Vendedora de Armaduras#alde	4W_F_01,{
+OnInit:
+	sellitem Helm;
+	sellitem Buckler;
+	sellitem Shield;
+	sellitem Mantle;
+	sellitem Coat;
+	sellitem Padded_Armor;
+	sellitem Chain_Mail;
+	sellitem Plate_Armor;
+	sellitem Manteau;
+	sellitem Boots;
+	sellitem Belt;
+}
+
+aldeba_in,28,54,0	trader	Vendedor de Armas#alde	1_M_03,{
+OnInit:
+	sellitem Knife;
+	sellitem Cutter;
+	sellitem Main_Gauche;
+	sellitem Dirk;
+	sellitem Dagger;
+	sellitem Stiletto;
+	sellitem Gladius;
+	sellitem Damascus;
+}
+
+aldeba_in,94,56,5	trader	Vendedor de Utilidades#alde	4_M_01,{
+OnInit:
+	sellitem Red_Potion;
+	sellitem Orange_Potion;
+	sellitem Yellow_Potion;
+	sellitem White_Potion;
+	sellitem Green_Potion;
+	sellitem Center_Potion;
+	sellitem Awakening_Potion;
+	sellitem Wing_Of_Fly;
+	sellitem Wing_Of_Butterfly;
+	sellitem Spectacles;
+	sellitem Leaf_Of_Yggdrasil;
+}

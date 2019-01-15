@@ -313,6 +313,23 @@ OnInit:
 	sellitem Pumpkin;
 }
 
+prt_in,126,76,0	trader	Vendedora de Utilidades#prt1	1_M_INNKEEPER,{
+	OnInit:
+		sellitem Spectacles;
+		sellitem Arrow;
+		sellitem Red_Potion;
+		sellitem Orange_Potion;
+		sellitem Yellow_Potion;
+		sellitem White_Potion;
+		sellitem Green_Potion;
+		sellitem Center_Potion;
+		sellitem Awakening_Potion;
+		sellitem Wing_Of_Fly;
+		sellitem Wing_Of_Butterfly;
+		sellitem Booby_Trap;
+		sellitem One_Eyed_Glass;
+	}
+
 prt_church,108,124,4	trader	Freira#prt	1_F_PRIEST,{
 OnInit:
 	sellitem Rosary;
@@ -399,7 +416,7 @@ OnInit:
 	sellitem Waghnakh;
 	sellitem Knuckle_Duster;
 	sellitem Hora;
-}
+}2
 
 // Yuno
 yuno,218,97,5	trader	Vendedor de Utilidades#yuno	4_M_02,{

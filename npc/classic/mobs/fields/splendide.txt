@@ -47,4 +47,4 @@ spl_fild02,0,0,0,0	monster	Vespa Vagalume	1994,15,0,0,0
 spl_fild03,0,0,0,0	monster	Vespa Vagalume	1994,35,0,0,0
 spl_fild03,0,0,0,0	monster	Cornus	1992,25,0,0,0
 spl_fild03,0,0,0,0	monster	Naga	1993,20,0,0,0
-spl_fild03,0,0,0,0	monster	LeÃ£o de Vinhas	1991,1,3600000,0,0
+spl_fild03,0,0,0,0	monster	Leão de Vinhas	1991,1,3600000,0,0

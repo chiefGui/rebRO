@@ -35,7 +35,7 @@
 //== nyd_dun01 - Yggdrasil Root Dungeon ====================
 nyd_dun01,0,0,0,0	monster	Draco	2013,40,0,0,0
 nyd_dun01,0,0,0,0	monster	Ovo de Draco	2014,10,0,0,0
-nyd_dun01,0,0,0,0	monster	Elemental da √Ågua	2016,20,0,0,0
+nyd_dun01,0,0,0,0	monster	Elemental da ¡gua	2016,20,0,0,0
 nyd_dun01,0,0,0,0	monster	Pinguicula Sombria	2015,10,0,0,0
 nyd_dun01,0,0,0,0	monster	Rata	2017,2,900000,0,0
 nyd_dun01,0,0,0,0	monster	Duneyrr	2018,2,900000,0,0

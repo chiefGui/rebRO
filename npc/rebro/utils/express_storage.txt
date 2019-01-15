@@ -1,0 +1,45 @@
+function	script	F_OpenExpressStorage	{
+	mes callfunc("P_Purple", "[Armazém Expresso]");
+	mes "Você tem certeza que deseja consumir este Armazém Expresso?";
+	mes "\n";
+	mes callfunc("P_Orange", "Esta é uma ação irreversível e não estornável.");
+	switch(prompt("Sim", "Não")) {
+		case 1:
+			openstorage;
+			close;
+			break;
+		case 2:
+			getitem 33335, 1;
+			break;
+		case 255:
+			getitem 33335, 1;
+			end;
+			break;
+	}
+
+	close;
+}
+
+function	script	F_OpenExpressStorageBox	{
+	mes callfunc("P_Purple", "[Caixa de Armazéns Expressos]");
+	mes "Você tem certeza que deseja abrir esta caixa?";
+	mes "\n";
+	mes callfunc("P_Orange", "Esta é uma ação irreversível e não estornável.");
+	switch(prompt("Sim", "Não")) {
+		case 1:
+			next;
+			mes callfunc("P_Purple", "[Caixa de Armazéns Expressos]");
+			mes "Feito!";
+			getitem 33335, 10;
+			break;
+		case 2:
+			getitem 33336, 1;
+			break;
+		case 255:
+			getitem 33336, 1;
+			end;
+			break;
+	}
+
+	close;
+}

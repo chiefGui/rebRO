@@ -416,7 +416,7 @@ OnInit:
 	sellitem Waghnakh;
 	sellitem Knuckle_Duster;
 	sellitem Hora;
-}2
+}
 
 // Yuno
 yuno,218,97,5	trader	Vendedor de Utilidades#yuno	4_M_02,{

@@ -1,0 +1,71 @@
+function	script	F_PremiumPassport	{
+	mes callfunc("F_PremiumName", getarg(0));
+	mes "Você tem certeza que deseja adicionar " + callfunc("P_Green", getarg(1) + " dias") + " Premium à sua conta?";
+	mes "\n";
+	mes callfunc("P_Orange", "Esta é uma ação irreversível e não estornável.");
+	switch(prompt("Tenho certeza!:Nah, vou pensar melhor...")) {
+		case 1:
+			next;
+			mes callfunc("F_PremiumName", "Passaporte Premium");
+			mes "Certo! " + callfunc("P_Green", getarg(1) + " dias") + "^000000 adicionados!";
+			mes "Aproveite! ^_^~";
+			callfunc("F_AddDaysPremium", getarg(1));
+			specialeffect EF_PURPLEBODY;
+			specialeffect EF_DETECT3;
+			break;
+		case 2:
+			next;
+			mes callfunc("F_PremiumName", "Passaporte Premium");
+			mes "Okay! Te devolvemos o passaporte.";
+			mes "Se você mudar de ideia, basta utilizar o Passaporte novamente!";
+			getitem getarg(2), 1;
+			close;
+		case 255:
+			getitem getarg(2), 1;
+			end;
+			break;
+	}
+	close;
+}
+
+function	script	F_GetPremiumExpiresAt	{
+	query_sql("SELECT `premium_expires_at` FROM `login` WHERE `account_id` = '" + getcharid(3) + "'", .@expiresAt$);
+
+	return .@expiresAt$;
+}
+
+function	script	F_GetPremiumDaysLeft	{
+	query_sql("SELECT DATEDIFF(`premium_expires_at`, NOW()) FROM `login` WHERE `account_id` = '" + getcharid(3) + "'", .@daysLeft$);
+
+	return .@daysLeft$;
+}
+
+function	script	F_GetPremiumEndDateInHumanLanguage	{
+	query_sql("SELECT DATE_FORMAT(`premium_expires_at`, '%d de %M de %Y') AS `date` FROM `login` WHERE `account_id` = '" + getcharid(3) + "';", .@endDateInHumanLanguage$);
+
+	return .@endDateInHumanLanguage$;
+}
+
+function	script	F_IsPremium	{
+	set .@expiresAt$, callfunc("F_GetPremiumExpiresAt");
+
+	// If premium expires at is greater than current date,
+	// then the user is premium.
+	return .@expiresAt$ > gettimestr("%Y-%m-%d", 21);
+}
+
+function	script	F_PremiumName	{
+	return "^C6AF15[" + getarg(0) + "]^000000";
+}
+
+function	script	F_AddDaysPremium	{
+	set .@expiresAt, callfunc("F_GetPremiumExpiresAt");
+
+	if (!.@expiresAt) {
+		query_sql("UPDATE `login` SET `premium_expires_at` = '" + gettimestr("%Y-%m-%d", 21) + "' WHERE `account_id` = '" + getcharid(3) + "'");
+	}
+
+	query_sql("UPDATE `login` SET `premium_expires_at` = ADDDATE(`premium_expires_at`, '" + getarg(0) + "'), `group_id` = '1' WHERE `account_id` = '" + getcharid(3) + "'");
+
+	return;
+}

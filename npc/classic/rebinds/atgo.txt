@@ -12,6 +12,9 @@ OnInit:
 	
 
 OnAtcommand:
+if (getgroupid() < 60) {
+	return;
+}
 set @warp$,.@atcmd_parameters$[0];
 set @warp,@warp$;
 

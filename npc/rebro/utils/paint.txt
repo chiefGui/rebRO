@@ -1,0 +1,23 @@
+function	script	P_Green	{
+	return "^16A36B" + getarg(0) + "^000000";
+}
+
+function	script	P_Blue	{
+	return "^2c65c1" + getarg(0) + "^000000";
+}
+
+function	script	P_Orange	{
+	return "^c6431b" + getarg(0) + "^000000";
+}
+
+function	script	P_Purple	{
+	return "^7823c6" + getarg(0) + "^000000";
+}
+
+function	script	P_LightGray	{
+	return "^999999" + getarg(0) + "^000000";
+}
+
+function	script	P_Red	{
+	return "^ff2828" + getarg(0) + "^000000";
+}

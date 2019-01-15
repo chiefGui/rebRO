@@ -1,0 +1,210 @@
+-	script	Correspondente Premium::VIPGate	4_M_4THPRIN1,{
+	mes callfunc("F_PremiumName", "Correspondente Premium");
+	mes "Olá, ^15AAD3" + strcharinfo(0) + "^000000!";
+
+	if (Sex == 1) {
+		mes "Seja bem-vindo ao rebRO!";
+	}
+
+	if (Sex == 0) {
+		mes "Seja bem-vinda ao rebRO!";
+	}
+
+	next;
+
+	set .isPremium, callfunc("F_IsPremium");
+
+	if (.isPremium == 1) {
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Parece que você já é um jogador Premium!";
+		mes "\n";
+		mes "Como posso te ajudar?";
+		menu "Tempo restante", M_PremiumTimeLeft, "NPCs parceiros", M_Partners, "Comandos Premium", M_Commands, "Por ora, nada", M_Exit;
+	}
+
+	mes callfunc("F_PremiumName", "Correspondente Premium");
+	mes "Pelo visto, você ainda não é um jogador Premium.";
+	mes "\n";
+	mes "Como posso te ajudar?";
+	next;
+	menu "Como me tornar Premium?",M_BecomingPremium,"Sobre os NPCs parceiros",M_Partners,"Sobre os comandos Premium",M_Commands,"Por ora, nada",M_Exit;
+
+	M_PremiumTimeLeft:
+		set .@endDateInHumanLanguage$, callfunc("F_GetPremiumEndDateInHumanLanguage");
+		set .@daysLeft$, callfunc("F_GetPremiumDaysLeft");
+
+		next;
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "O seu título Premium vai até " + callfunc("P_Blue", .@endDateInHumanLanguage$) + ", isso significa que restam " + callfunc("P_Blue", .@daysLeft$ + " dias") + ".";
+
+		next;
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Algo mais?";
+		menu "Sobre os NPCs parceiros",M_Partners,"Sobre os comandos Premium",M_Commands,"Por ora, nada",M_Exit;
+
+		close;
+
+	M_BecomingPremium:
+		next;
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Fico feliz em saber que você quer juntar-se aos Premiums!";
+		mes "\n";
+		mes "Pois bem, existem dois modos:";
+		mes "\n";
+		mes "1) Comprando um " + callfunc("P_Green", "Passaporte Premium") + " com o " + callfunc("F_PremiumName", "Representante Premium") + ", que está aqui do meu lado.";
+		mes "\n";
+		mes "2) Comprando um " + callfunc("P_Green", "Passaporte Premium") + " com outro jogador.";
+		next;
+
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Às vezes você pode conseguir um passaporte através de algum evento ou promoção, mas quando isso acontecer, fica tranquilo que vamos te avisar.";
+		next;
+
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Algo mais?";
+		menu "Sobre os NPCs parceiros",M_Partners,"Sobre os comandos Premium",M_Commands,"Por ora, nada",M_Exit;
+
+	M_Partners:
+		next;
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Bom, os jogadores Premium contam com vários NPCs parceiros, e alguns até mesmo exclusivos!";
+		mes "\n";
+		mes "Sobre qual você gostaria de saber mais?";
+		switch(select("Mestra das Classes", "Estilista", "Anunciante", "Banqueiros", "Curandeiros", "Ah, deixa pra lá!")) {
+			case 1:
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "A " + callfunc("P_Blue", "Mestra das Classes") + ", Dandara, é uma estudiosa arcana, especializada nas classes de Rune-Midgard.";
+				mes "\n";
+				mes "Você pode encontrá-la em " + callfunc("P_Orange", "Izlude") + ", aonde atualmente faz as suas pesquisas.";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Para os jogadores Premium, ela não cobra absolutamente nada pelos serviços, enquanto que para os demais, ela possui uma taxa dependendo da classe.";
+				next;
+				goto M_NPC_More;
+			case 2:
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Ah, o " + callfunc("P_Blue", "Viktor") + "! Ele é, sem dúvidas, o aventureiro mais estiloso do continente!";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Como em um passe de mágica, ele pode mudar o estilo ou a cor do seu cabelo, e também a cor das suas vestimentas! Bem cool, hein?";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Nós, da Corporação Premium, fechamos um acordo com ele e no momento os seus serviços só serão destinados à jogadores Premium, sem absolutamente qualquer taxa!";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Caso você queria dar um trato no visual, dá uma passadinha em " + callfunc("P_Orange", "Comodo") + ". Parece que é lá que ele quer se apostentar.";
+				next;
+				goto M_NPC_More;
+			case 3:
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "A " + callfunc("P_Blue", "Mirana") + ", mais conhecida como " + callfunc("P_Blue", "A Anunciante") + " é uma ex-engenheira de Rune-Midgard que hoje se especializa em sinais radiofrequência.";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "O seu principal serviço são as famosas " + callfunc("P_Blue", "Mensageis Globais") + ", que alcançam todos os aventureiros de Rune-Migard.";
+				mes "\n";
+				mes "Procurando um clã? Vendendo algum equipamento? Comprando alguma carta? Com certeza uma Mensagem Global tem o alcance que você precisa!";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Infelizmente (ou não, depende do ponto de vista, rs) a Corporação Premium não conseguiu fechar um acordo de fidelidade com ela. Portanto, todos os jogadores têm acesso aos seus serviços.";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Agora a parte boa é que os jogadores Premium recebem um descontão! Quer saber mais? Dá uma passadinha em  " + callfunc("P_Orange", "Morroc") + " e troque uma ideia com ela!";
+				next;
+				goto M_NPC_More;
+			case 4:
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "A-há! Apesar dos bancos terem a má fama de serem injustos e cobrarem taxas abusivas, nós, da Corporação Premium, temos o orgulho em anunciar que conseguimos não só fidelidade, como isenção total de taxas e juros!";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Em outras palavras, jogadores Premium têm acesso exclusivo aos " + callfunc("P_Blue", "Banqueiros") + ", sem qualquer pagamento ou pegadinhas!";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Atualmente, temos quatro banqueiros espalhados por Rune-Midgard. Você pode encontrá-los em:";
+				mes "\n";
+				mes "- " + callfunc("P_Orange", "Alberta");
+				mes "- " + callfunc("P_Orange", "Aldebaran");
+				mes "- " + callfunc("P_Orange", "Prontera");
+				mes "- " + callfunc("P_Orange", "Morroc");
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Para esclarecer, a função de um " + callfunc("P_Blue", "Banqueiro") + " é transferir, com segurança, dinheiro entre personagens de uma mesma conta.";
+				next;
+				goto M_NPC_More;
+				break;
+			case 5:
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Às vezes, nem sempre temos um Noviço, Sacerdote ou Monge para nos curar. Portanto, para a sua conveniência, a Corporação Premium contratou uma equipe justamente só para isso!";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes callfunc("P_Orange", "Presentes em todas as cidades de Rune-Midgard") + ", os Curandeiros irão curar seu HP e SP completamente, sem qualquer custo.";
+				mes "\n";
+				mes "Nós estamos sempre preocupados com o seu bem-estar!";
+				next;
+				goto M_NPC_More;
+				break;
+			case 6:
+				goto M_Exit;
+		}
+		close;
+	
+	M_Commands:
+		next;
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Os jogadores Premium contam com uma gama ainda maior de comandos especiais para facilitarem suas vidas. Vejamos...";
+		next;
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "- " + callfunc("P_Purple", "@duel <nick_do_jogador>") + ": Abre duelo contra outro jogador.";
+		mes "\n";
+		mes "- " + callfunc("P_Purple", "@autotrade/@at") + ": Abre o autotrade, se você for um mercador ou alguma de suas evoluções.";
+		mes "\n";
+		mes "- " + callfunc("P_Purple", "@changegm") + ": Permite você trocar o líder do clã.";
+		mes "\n";
+		mes "- " + callfunc("P_Purple", "@showexp") + ": Exibe a experiência obtida ao matar um monstro.";
+		mes "\n";
+		mes "- " + callfunc("P_Purple", "@noask") + ": Bloqueia automaticamente solicitações de negociação e convites.";
+		mes "\n";
+		mes "- " + callfunc("P_Purple", "@exp") + ": Exibe a experiência de Base e Classe no chat.";
+		next;
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Se por algum acaso estes comandos não funcionarem assim que você utilizar algum Passaporte Premium, por favor, relogue e tente novamente.";
+		next;
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Algo mais?";
+		if (.isPremium == 1) {
+			menu "Tempo restante Premium",M_Commands,"Sobre os NPCs parceiros",M_Partners,"Por ora, nada",M_Exit;
+
+			return;	
+		}
+
+		menu "Como me tornar Premium?",M_BecomingPremium,"Sobre os NPCs parceiros",M_Partners,"Por ora, nada",M_Exit;
+
+	M_NPC_More:
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Algo mais?";
+		if (.isPremium == 1) {
+			menu "E os outros parceiros?",M_Partners,"Tempo restante Premium",M_PremiumTimeLeft,"Sobre os comandos Premium",M_Commands,"Por ora, nada",M_Exit;
+
+			return;	
+		}
+
+		menu "E os outros parceiros?",M_Partners,"Como me tornar Premium?",M_BecomingPremium,"Sobre os comandos Premium",M_Commands,"Por ora, nada",M_Exit;
+
+	M_Exit:
+		next;
+		mes callfunc("F_PremiumName", "Correspondente Premium");
+		mes "Belezura, rökeiro! A gente se vê por aí!";
+		emotion e_scissors, 0;
+		close;
+
+	// if (callfunc("F_IsPremium") == true) {
+	// 	mes "Parece que você já é um jogador Premium!";
+	// 	return;
+	// }
+}
+
+prontera,136,182,5	duplicate(VIPGate)	Correspondente Premium	4_M_4THPRIN1

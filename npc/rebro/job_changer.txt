@@ -1,0 +1,80 @@
+izlude,102,117,6	script	Mestra das Classes	4_F_RACHOLD,{
+	set .NPCName$, callfunc("P_Blue", "[Dandara, a Mestra das Classes]");
+	set .isPremium, callfunc("F_IsPremium");
+	set .nonPremiumCost, 20000;
+	set .@nonPremiumCostName$, "20,000";
+
+	mes .NPCName$;
+	if (Sex == 1) {
+		mes "Oi meu querido, como vai?";
+	} else {
+		mes "Oi minha querida, como vai?";
+	}
+
+	next;
+
+	mes .NPCName$;
+	mes "Sou a Dandara, a principal pesquisadora de classes e profissões de Rune-Midgard!";
+	mes "Em que posso lhe ajudar?";
+	switch(select("Quero mudar minha profissão!", callfunc("P_LightGray", "Estou só de passagem..."))) {
+		case 1:
+			next;
+			mes .NPCName$;
+			mes "Perfeito! Finalmente mais alguém para eu colocar minhas pesquisas em prática.";
+			next;
+
+			if (.isPremium == 1) {
+				mes .NPCName$;
+				mes "Vejo que você é um jogador Premium, o que significa que a Corporação Premium vai subsidiar o custo da sua troca de classe.";
+				mes "Ou seja, consigo investir na minha pesquisa e você não tem que arcar com nenhum custo! Ha-ha!";
+				goto M_ChooseJob;
+				break;
+			}
+
+			mes .NPCName$;
+			mes "Como você não é Premium, vou precisar de ajuda para custear os meus gastos com a sua troca de profissão.";
+			next;
+
+			mes .NPCName$;
+			mes "Para isso, sou obrigada a te cobrar " + callfunc("P_Red", .@nonPremiumCostName$ + " Zenys") + ". Pode ser?";
+			menu callfunc("P_Green", "Claro!"), M_CheckZeny, callfunc("P_LightGray", "Preciso pensar melhor..."), M_Farewell;
+			break;
+		case 2:
+			goto M_Farewell;
+	}
+
+	M_CheckZeny:
+		next;
+		if (Zeny < .nonPremiumCost) {
+			mes .NPCName$;
+			mes "Infelizmente eu não posso te ajudar. Parece que você não tem a quantidade de Zeny necessária.";
+			mes "\n";
+			mes "Por favor, volte outra hora.";
+			close;
+			return;
+		}
+		goto M_ChooseJob;
+
+	M_ChooseJob:
+		mes .NPCName$;
+		if (Class == Job_Novice) {
+			if (JobLevel < 10) {
+				mes "Eu adoraria te ajudar, mas por uma exigência do Conselho de Prontera, apenas Aprendizes com nível de classe 10 podem mudar de profissão.";
+				mes "\n";
+				mes "Volte quando estiver pronto!";
+				close;
+			}
+
+			close;
+		}
+		close;
+
+
+	M_Farewell:
+		next;
+		mes .NPCName$;
+		mes "Que hoje seja melhor do que ontem!";
+		close;
+
+	close;
+}

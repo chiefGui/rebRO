@@ -1,4 +1,4 @@
-﻿//================= Hercules Script =======================================
+//================= Hercules Script =======================================
 //=       _   _                     _
 //=      | | | |                   | |
 //=      | |_| | ___ _ __ ___ _   _| | ___  ___
@@ -37,13 +37,13 @@
 //=========================================================================
 
 //== ayo_dun01 - Ancient Shrine Maze =======================
-ayo_dun01,0,0,0,0	monster	Gato de Folha	1586,65,0,0,0
-ayo_dun01,0,0,0,0	monster	Sussurro	1179,10,0,0,0
+ayo_dun01,0,0,0,0	monster	Gato Folha	1586,65,0,0,0
+ayo_dun01,0,0,0,0	monster	Carni�al	1036,30,0,0,0
+ayo_dun01,0,0,0,0	monster	Sussuro	1179,10,0,0,0
 ayo_dun01,0,0,0,0	monster	Kraben	1587,5,0,0,0
-ayo_dun01,0,0,0,0	monster	Carniçal	1036,30,0,0,0
 
 //== ayo_dun02 - Inside Ancient Shrine =====================
-ayo_dun02,0,0,0,0	monster	Tamruan	1584,100,0,0,0
-ayo_dun02,0,0,0,0	monster	Sussurro	1179,20,0,0,0
+ayo_dun02,0,0,0,0	monster	Tamruan	1584,70,0,0,0
+ayo_dun02,0,0,0,0	monster	Sussuro	1179,20,0,0,0
 ayo_dun02,0,0,0,0	monster	Kraben	1587,20,0,0,0
-//ayo_dun02,150,90,15,30	boss_monster	Lady Tanee	1688,1,25200000,600000,0
+ayo_dun02,150,245,0,0	monster	Senhora Tany	1688,1,7200000,3600000,1

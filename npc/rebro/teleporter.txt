@@ -12,7 +12,7 @@
 	if (!.isPremium) {
 		next;
 		mes .NPCName$;
-		mes "Como você não é Premium, vou lhe cobrar " + callfunc("P_Red", .nonPremiumCostMessage) + " por teleporte. Tudo bem?";
+		mes "Como você não é Premium, vou lhe cobrar " + callfunc("P_Red", .nonPremiumCostMessage$) + " por teleporte. Tudo bem?";
 		switch(select("Sim. Pode me teleportar.", callfunc("P_LightGray", "Deixa pra lá..."))) {
 			case 1:
 				goto M_Teleport;

@@ -1,110 +1,110 @@
 prt_church,16,41,4	script	Padre Thomas	60,{
 
-	show "[Padre Thomas]";
+	mes "[Padre Thomas]";
 	if (BaseJob == Job_Acolyte) goto L_Start;	
 	if (BaseJob == Job_Novice){
-		show "Que Deus te abençoe, meu filho. Está é a Igreja de Prontera. O que você desejar?";
+		mes "Que Deus te abenï¿½oe, meu filho. Estï¿½ ï¿½ a Igreja de Prontera. O que vocï¿½ desejar?";
 		next;
-		menu "Eu quero me tornar um Noviço.",-, "Eu quero me tornar um ^5533FFSacerdote^000000.",M_0b, "Eu só estou de passagem.",M_0End;
+		menu "Eu quero me tornar um Noviï¿½o.",-, "Eu quero me tornar um ^5533FFSacerdote^000000.",M_0b, "Eu sï¿½ estou de passagem.",M_0End;
 	
-			show "[Padre Thomas]";
-			show "Haha.. então você quer se tornar um Noviço, neh? Para isso, você precisa ir para a sala oposta à esta.";
+			mes "[Padre Thomas]";
+			mes "Haha.. entï¿½o vocï¿½ quer se tornar um Noviï¿½o, neh? Para isso, vocï¿½ precisa ir para a sala oposta ï¿½ esta.";
 			close;
 		M_0b:
-			show "[Padre Thomas]";
-			show "Haha...antes de você ser um Sacerdote você precisa ser primeiro um Noviço. Para isso, você precisa ir para a sala oposta à esta.";
+			mes "[Padre Thomas]";
+			mes "Haha...antes de vocï¿½ ser um Sacerdote vocï¿½ precisa ser primeiro um Noviï¿½o. Para isso, vocï¿½ precisa ir para a sala oposta ï¿½ esta.";
 			close;
 		M_0End:
-			show "[Padre Thomas]";
-			show "Por favor, sinta-se à vontade para descançar, a igreja é um santuário para todos aqueles que querem escapar do mundo.";
+			mes "[Padre Thomas]";
+			mes "Por favor, sinta-se ï¿½ vontade para descanï¿½ar, a igreja ï¿½ um santuï¿½rio para todos aqueles que querem escapar do mundo.";
 			next;
-			show "[Padre Thomas]";
-			show "Que Deus esteja com você e com os seus desejos e orações.";
+			mes "[Padre Thomas]";
+			mes "Que Deus esteja com vocï¿½ e com os seus desejos e oraï¿½ï¿½es.";
 			close;
 	}
 	if (BaseJob == Job_Priest){
-		show "Que Deus te abençoe, meu filho. Você está aqui de novo por que você ouviu a voz de Deus.";
+		mes "Que Deus te abenï¿½oe, meu filho. Vocï¿½ estï¿½ aqui de novo por que vocï¿½ ouviu a voz de Deus.";
 		next;
-		show "[Padre Thomas]";
-		show "eu naum sei se os filhos e filhas de Deus estão seguindo o caminho da luz ou o caminho das trevas... eu só posso rezar pelo melhor.";
+		mes "[Padre Thomas]";
+		mes "eu naum sei se os filhos e filhas de Deus estï¿½o seguindo o caminho da luz ou o caminho das trevas... eu sï¿½ posso rezar pelo melhor.";
 		next;
-		show "[Padre Thomas]";
-		show "Então. por que você está aqui?";
+		mes "[Padre Thomas]";
+		mes "Entï¿½o. por que vocï¿½ estï¿½ aqui?";
 		next;
-		menu "Só passei por aqui para ver você.",-, "Eu estou aqui para ajudar os Noviços.",M_1b, "A vida está dificiu... Eu estava pensando se você podia ajudar.",M_1End;
+		menu "Sï¿½ passei por aqui para ver vocï¿½.",-, "Eu estou aqui para ajudar os Noviï¿½os.",M_1b, "A vida estï¿½ dificiu... Eu estava pensando se vocï¿½ podia ajudar.",M_1End;
 	
-			show "[Padre Thomas]";
-			show "Oh! Bem, eu estou bem. Obrigado. Por favor, mande minhas estimas a todos os outros Frades, e Sacerdotes.";
+			mes "[Padre Thomas]";
+			mes "Oh! Bem, eu estou bem. Obrigado. Por favor, mande minhas estimas a todos os outros Frades, e Sacerdotes.";
 			next;
-			show "[Padre Thomas]";
-			show "Nós, aqueles que vivemos no caminho divino, estamos aqui por uma razãO.... para obedecer os designios de Deus.";
-			show "Se você veio aqui com a intenção de ajudar alguem, por favor lembre-se de faze-lo da melhor forma possível...";
+			mes "[Padre Thomas]";
+			mes "Nï¿½s, aqueles que vivemos no caminho divino, estamos aqui por uma razï¿½O.... para obedecer os designios de Deus.";
+			mes "Se vocï¿½ veio aqui com a intenï¿½ï¿½o de ajudar alguem, por favor lembre-se de faze-lo da melhor forma possï¿½vel...";
 			close;
 		M_1b:
-			show "[Padre Thomas]";
-			show "Oh!... está é uma grande idéia! Como você é um Sacerdote, você não pode esquecer que você deve ajudar os Noviços quando eles precisarem de ajuda.";
+			mes "[Padre Thomas]";
+			mes "Oh!... estï¿½ ï¿½ uma grande idï¿½ia! Como vocï¿½ ï¿½ um Sacerdote, vocï¿½ nï¿½o pode esquecer que vocï¿½ deve ajudar os Noviï¿½os quando eles precisarem de ajuda.";
 			emotion e_ic;
 			next;
-			show "[Padre Thomas]";
-			show "Mesmo assim, você precisa lembrar de não fazer tudu por eles. É importante que eles ganhem suas próprias experiências atravez de treino.";
+			mes "[Padre Thomas]";
+			mes "Mesmo assim, vocï¿½ precisa lembrar de nï¿½o fazer tudu por eles. ï¿½ importante que eles ganhem suas prï¿½prias experiï¿½ncias atravez de treino.";
 			next;
-			show "[Padre Thomas]";
-			show "Para poder ajudar você eu precisarei de um ^5533FFROSÁRIO^000000.";
-			show "Aqui terão 3 provas que o Noviço precisa enfrentar, somente em 2 deles você poderá ajuda-los.";
+			mes "[Padre Thomas]";
+			mes "Para poder ajudar vocï¿½ eu precisarei de um ^5533FFROSï¿½RIO^000000.";
+			mes "Aqui terï¿½o 3 provas que o Noviï¿½o precisa enfrentar, somente em 2 deles vocï¿½ poderï¿½ ajuda-los.";
 			next;
-			show "[Padre Thomas]";
-			show "Você está preparado para ajudar?";
+			mes "[Padre Thomas]";
+			mes "Vocï¿½ estï¿½ preparado para ajudar?";
 			next;
-			menu "Sim, Eu vou ajudar-los com todas as minhas forças.",-, "Eu voltarei depois.",sM_1End;
+			menu "Sim, Eu vou ajudar-los com todas as minhas forï¿½as.",-, "Eu voltarei depois.",sM_1End;
 
-				show "[Padre Thomas]";
+				mes "[Padre Thomas]";
 				if (countitem(2608) < 1){
-					show "Huumm... Ao que me parece você não tem um ^5533FFROSÁRIO^000000 com você.";
+					mes "Huumm... Ao que me parece vocï¿½ nï¿½o tem um ^5533FFROSï¿½RIO^000000 com vocï¿½.";
 					next;
-					show "[Padre Thomas]";
-					show "Se você quizer ajudar os Noviços, você primeiro precisa ter ^5533FFROSÁRIO^000000.";
-					show "Por favor, volte aqui quando você tiver um, sim.";
+					mes "[Padre Thomas]";
+					mes "Se vocï¿½ quizer ajudar os Noviï¿½os, vocï¿½ primeiro precisa ter ^5533FFROSï¿½RIO^000000.";
+					mes "Por favor, volte aqui quando vocï¿½ tiver um, sim.";
 					close;
 				}
-				show "Muito bem então. Eu mandarei você a um Noviço em alguns momentos.";
+				mes "Muito bem entï¿½o. Eu mandarei vocï¿½ a um Noviï¿½o em alguns momentos.";
 				next;
-				show "[Padre Thomas]";
-				show "Eu espero que você tambêm veja isso como uma oportunidade de encina-lo a ser um bom Sacerdote.";
+				mes "[Padre Thomas]";
+				mes "Eu espero que vocï¿½ tambï¿½m veja isso como uma oportunidade de encina-lo a ser um bom Sacerdote.";
 				next;
 				if((getareausers("job_prist", 8, 34, 39,109)) == 1) warp "job_prist", 24, 44;
 				if((getareausers("job_prist", 160, 14, 175, 178)) == 1) warp "job_prist", 98, 40;
 				if((getareausers("job_prist", 90, 34, 105,105)) == 1) warp "job_prist", 168, 17;
-				show "[Father Thomas]";
-				show "Huumm........ Espere um minuto..... Deixe eu checar a minha lista.... Não tem nimguem fazendo o teste agora, ou já tem um Sacerdote ajudando.";
-				show "Neste caso, por favor volte aqui e fale comigo em outra oportunidade.";
+				mes "[Father Thomas]";
+				mes "Huumm........ Espere um minuto..... Deixe eu checar a minha lista.... Nï¿½o tem nimguem fazendo o teste agora, ou jï¿½ tem um Sacerdote ajudando.";
+				mes "Neste caso, por favor volte aqui e fale comigo em outra oportunidade.";
 				close;
 			sM_1End:
-				show "[Padre Thomas]";
-				show "Oh! Sim. E lembre-se de trazer um ^5533FFFROSÁRIO^000000 quando você voltar.";
+				mes "[Padre Thomas]";
+				mes "Oh! Sim. E lembre-se de trazer um ^5533FFFROSï¿½RIO^000000 quando vocï¿½ voltar.";
 				close;
 
 		M_1End:
-			show "[Padre Thomas]";
-			show "Continue com o seu bom trabalho. Eu pedirei para Deus ser misericordioso com a sua dor.";
+			mes "[Padre Thomas]";
+			mes "Continue com o seu bom trabalho. Eu pedirei para Deus ser misericordioso com a sua dor.";
 			next;
-			show "[Padre Thomas]";
-			show "Deus, uma de nossas crianças está sofrendo. Por favor, use seus poderes para curas as feridas de seu corpo.....";
+			mes "[Padre Thomas]";
+			mes "Deus, uma de nossas crianï¿½as estï¿½ sofrendo. Por favor, use seus poderes para curas as feridas de seu corpo.....";
 			next;
-			show "[Padre Thomas]";
-			show "Por favor, olhe por todos nós, para que sob qualquer condição nós possamos pensar claramente e manter a nossa fé.";
+			mes "[Padre Thomas]";
+			mes "Por favor, olhe por todos nï¿½s, para que sob qualquer condiï¿½ï¿½o nï¿½s possamos pensar claramente e manter a nossa fï¿½.";
 			percentheal 100,100;
 			next;
-			show "[Padre Thomas]";
-			show "Você deve estar se sentindo melhor agora. Por favor, continue no caminho da verdade e que Deus te abençoe.";
+			mes "[Padre Thomas]";
+			mes "Vocï¿½ deve estar se sentindo melhor agora. Por favor, continue no caminho da verdade e que Deus te abenï¿½oe.";
 			close;	
 	}
-	show "Que Deus te abençoe, meu filho.";
+	mes "Que Deus te abenï¿½oe, meu filho.";
 	next;
-	show "[Padre Thomas]";
-	show "Por favor, sinta-se à vontade para descançar, a igreja é o lugar mais seguro deste mundo.";
+	mes "[Padre Thomas]";
+	mes "Por favor, sinta-se ï¿½ vontade para descanï¿½ar, a igreja ï¿½ o lugar mais seguro deste mundo.";
 	next;
-	show "[Padre Thomas]";
-	show "Eu espero que Deus te abençoe.";
+	mes "[Padre Thomas]";
+	mes "Eu espero que Deus te abenï¿½oe.";
 	close;
 
 L_Start:
@@ -112,87 +112,87 @@ L_Start:
 	if (PRIEST_Q == 2) goto L_Test2;
 	if (PRIEST_Q == 3) goto L_Test3;
 	if (PRIEST_Q == 4) goto L_Change;
-	show "Deus te abençoe, criança. O que o traz aqui?";
+	mes "Deus te abenï¿½oe, crianï¿½a. O que o traz aqui?";
 	next;
-	menu "Quero me tornar um Sacerdote.",M_2a, "Diga-me sobre os Sacerdotes.",M_2b, "Só queria saber o que você estava fazendo.",M_2End;
+	menu "Quero me tornar um Sacerdote.",M_2a, "Diga-me sobre os Sacerdotes.",M_2b, "Sï¿½ queria saber o que vocï¿½ estava fazendo.",M_2End;
 
 	M_2a:
-		show "[Padre Thomas]";
-		show "Oh... então você quer se tornar um Sacerdote? Deus lhe abençoe por sua determinação.";
+		mes "[Padre Thomas]";
+		mes "Oh... entï¿½o vocï¿½ quer se tornar um Sacerdote? Deus lhe abenï¿½oe por sua determinaï¿½ï¿½o.";
 		next;
-		show "[Padre Thomas]";
-		show "Eu sou o Padre Thomas. Eu sou responsável por proteger Prontera do espíritos malígnos que infestam Rune Midgard.";
+		mes "[Padre Thomas]";
+		mes "Eu sou o Padre Thomas. Eu sou responsï¿½vel por proteger Prontera do espï¿½ritos malï¿½gnos que infestam Rune Midgard.";
 		next;
-		show "[Padre Thomas]";
-		show "Por favor, preencha esse formulário para eu poder avaliar suas qualificações para se tornar um Sacerdote.";
+		mes "[Padre Thomas]";
+		mes "Por favor, preencha esse formulï¿½rio para eu poder avaliar suas qualificaï¿½ï¿½es para se tornar um Sacerdote.";
 		next;
-		show "(você preencheu o formulário e o devolveu)";
+		mes "(vocï¿½ preencheu o formulï¿½rio e o devolveu)";
 		next;
-		show "[Padre Thomas]";
+		mes "[Padre Thomas]";
 		if (JobLevel < 40) goto sL_LowLvl;
 		if (JobLevel == 50) goto sL_HighLvl;
-		show "Ah, muito bom " + strcharinfo(0) + ". Deixe-me lhe contar agora sobre as tarefas que você terá que completar para se tornar um Sacerdote.";
+		mes "Ah, muito bom " + strcharinfo(0) + ". Deixe-me lhe contar agora sobre as tarefas que vocï¿½ terï¿½ que completar para se tornar um Sacerdote.";
 		next;
-		show "[Padre Thomas]";
-		show "A primeira tarefa será encontrar e falar com 3 Clérigos muito sábios. Eles estão em muitas partes de Rune Midgard.";
+		mes "[Padre Thomas]";
+		mes "A primeira tarefa serï¿½ encontrar e falar com 3 Clï¿½rigos muito sï¿½bios. Eles estï¿½o em muitas partes de Rune Midgard.";
 		next;
-		show "[Padre Thomas]";
-		show "A segunda tarefa consiste em 3 missões. Na primeira missão você deve enfrentar um morto-vivo.";
-		show "A segunda missão vai testar sua capacidade de resistir a tentação e evitar a corrupção. A terceira missão você deve descobrir sozinho.";
+		mes "[Padre Thomas]";
+		mes "A segunda tarefa consiste em 3 missï¿½es. Na primeira missï¿½o vocï¿½ deve enfrentar um morto-vivo.";
+		mes "A segunda missï¿½o vai testar sua capacidade de resistir a tentaï¿½ï¿½o e evitar a corrupï¿½ï¿½o. A terceira missï¿½o vocï¿½ deve descobrir sozinho.";
 		next;
-		show "[Padre Thomas]";
-		show "Após terminar as 2 tarefas, haverá um teste final com a Irmã Cecile. Passe e você poderá se tornar um Sacerdote.";
+		mes "[Padre Thomas]";
+		mes "Apï¿½s terminar as 2 tarefas, haverï¿½ um teste final com a Irmï¿½ Cecile. Passe e vocï¿½ poderï¿½ se tornar um Sacerdote.";
 		next;
-		show "[Padre Thomas]";
+		mes "[Padre Thomas]";
 		set JBLVL, 40;
 		goto L_Test1;
 
 		sL_LowLvl:
-			show "Sinto muito, mas você ainda não pode se tornar um Sacerdote. Você precisa ter no minimo nível 40 de classe.";
+			mes "Sinto muito, mas vocï¿½ ainda nï¿½o pode se tornar um Sacerdote. Vocï¿½ precisa ter no minimo nï¿½vel 40 de classe.";
 			next;
-			show "[Padre Thomas]";
-			show "Por favor, fortaleça sua fé em Deus cometendo mais atos bons.";
-			show "Espero que o tempo esteja certo, você voltará... Eu lhe esperarei aqui.";
+			mes "[Padre Thomas]";
+			mes "Por favor, fortaleï¿½a sua fï¿½ em Deus cometendo mais atos bons.";
+			mes "Espero que o tempo esteja certo, vocï¿½ voltarï¿½... Eu lhe esperarei aqui.";
 			close;
 
 		sL_HighLvl:
-			show "Nossa, você já está no nivel 50 de classe. Estou impressionado com sua dedicação e trabalho duro!";
+			mes "Nossa, vocï¿½ jï¿½ estï¿½ no nivel 50 de classe. Estou impressionado com sua dedicaï¿½ï¿½o e trabalho duro!";
 			emotion e_gasp;
 			next;
-			show "[Padre Thomas]";
-			show "Por causa disso lhe permitirei pular a primeira tarefa. Que tal ja começar na segunda tarefa?";
+			mes "[Padre Thomas]";
+			mes "Por causa disso lhe permitirei pular a primeira tarefa. Que tal ja comeï¿½ar na segunda tarefa?";
 			next;
-			show "[Padre Thomas]";
-			show "Eu acredito que com o seu poder, você pode passar por essa tarefa facilmente...";
-			show "Mas se você trabalhar com um Sacerdote, eu acho que você aprenderá mais e se sairá muito melhor.";
+			mes "[Padre Thomas]";
+			mes "Eu acredito que com o seu poder, vocï¿½ pode passar por essa tarefa facilmente...";
+			mes "Mas se vocï¿½ trabalhar com um Sacerdote, eu acho que vocï¿½ aprenderï¿½ mais e se sairï¿½ muito melhor.";
 			next;
-			show "[Padre Thomas]";
+			mes "[Padre Thomas]";
 			set PRIEST_Q, 2;
 			set JBLVL, 50;
 			goto L_Test2;
 	M_2b:
-		show "[Padre Thomas]";
-		show "Sacerdotes também são seguidores de Deus. Eles são altamente treinados e muito mais poderosos que Noviços.";
+		mes "[Padre Thomas]";
+		mes "Sacerdotes tambï¿½m sï¿½o seguidores de Deus. Eles sï¿½o altamente treinados e muito mais poderosos que Noviï¿½os.";
 		next;
-		show "[Padre Thomas]";
-		show "Para se tornar um Sacerdote, você deve ter no mínimo nível 40 de classe. Você então terá que passar por uma série de testes para provar ser digno.";
+		mes "[Padre Thomas]";
+		mes "Para se tornar um Sacerdote, vocï¿½ deve ter no mï¿½nimo nï¿½vel 40 de classe. Vocï¿½ entï¿½o terï¿½ que passar por uma sï¿½rie de testes para provar ser digno.";
 		next;
-		show "[Padre Thomas]";
-		show "Se você se tornar um Sacerdote, você se tornará muito importante para todas as outras classes.";
+		mes "[Padre Thomas]";
+		mes "Se vocï¿½ se tornar um Sacerdote, vocï¿½ se tornarï¿½ muito importante para todas as outras classes.";
 		next;
-		show "[Padre Thomas]";
-		show "Você NUNCA deve ajudar uma pessoa por dinheiro ou benefício próprio. Ser Sacerdote é ser caridoso.";
+		mes "[Padre Thomas]";
+		mes "Vocï¿½ NUNCA deve ajudar uma pessoa por dinheiro ou benefï¿½cio prï¿½prio. Ser Sacerdote ï¿½ ser caridoso.";
 		next;
-		show "[Padre Thomas]";
-		show "Nós Sacerdotes temos apenas um objetivo, que é ajudar aos outros...";
+		mes "[Padre Thomas]";
+		mes "Nï¿½s Sacerdotes temos apenas um objetivo, que ï¿½ ajudar aos outros...";
 		close;
 	M_2End:
-		show "[Padre Thomas]";
-		show "Ah então é isso?... Bem, estou atoa, e você?";
-		show "Por favor não esqueça seus deveres como Noviço, e tome cuidado para não sair do caminho da salvação.";
+		mes "[Padre Thomas]";
+		mes "Ah entï¿½o ï¿½ isso?... Bem, estou atoa, e vocï¿½?";
+		mes "Por favor nï¿½o esqueï¿½a seus deveres como Noviï¿½o, e tome cuidado para nï¿½o sair do caminho da salvaï¿½ï¿½o.";
 		next;
-		show "[Padre Thomas]";
-		show "Espero sua visita logo, e por favor me diga como os outros Noviços estão. Que Deus esteja do seu lado...";
+		mes "[Padre Thomas]";
+		mes "Espero sua visita logo, e por favor me diga como os outros Noviï¿½os estï¿½o. Que Deus esteja do seu lado...";
 		close;
 
 
@@ -202,83 +202,83 @@ L_Test1:
 	if (PRIEST_Q2 == 2) goto L_NotDone1b;
 	if (PRIEST_Q2 == 3) goto L_NotDone1c;
 	if (PRIEST_Q2 == 4) goto L_Done1;
-	show "Certo, deixe-me dizer o que você deve fazer na primeira tarefa.";
+	mes "Certo, deixe-me dizer o que vocï¿½ deve fazer na primeira tarefa.";
 	next;
-	show "[Padre Thomas]";
-	show "Primeiro você deve encontrar o ^5533FFIrmão Simão^000000, ele está localizado 1 mapa a Norte e 2 mapas a Leste de Prontera, próximo à St. Capitolina Abbey.";
+	mes "[Padre Thomas]";
+	mes "Primeiro vocï¿½ deve encontrar o ^5533FFIrmï¿½o Simï¿½o^000000, ele estï¿½ localizado 1 mapa a Norte e 2 mapas a Leste de Prontera, prï¿½ximo ï¿½ St. Capitolina Abbey.";
 	next;
-	show "[Padre Thomas]";
-	show "Depois você terá que encontrar a ^5533FFIrmã Matilda^000000. Ela está localizada 1 mapa a Norte de Morroc.";
+	mes "[Padre Thomas]";
+	mes "Depois vocï¿½ terï¿½ que encontrar a ^5533FFIrmï¿½ Matilda^000000. Ela estï¿½ localizada 1 mapa a Norte de Morroc.";
 	next;
-	show "[Padre Thomas]";
-	show "Por último e não menos importante, você terá que encontrar o ^5533FFIrmão Bartolomeu^000000.";
-	show "Eu ouvi dizer que o Irmão Bartolomeu geralmente é visto numa pequena ilha 2 mapas a Oeste e 1 mapa a Norte de Prontera.";
+	mes "[Padre Thomas]";
+	mes "Por ï¿½ltimo e nï¿½o menos importante, vocï¿½ terï¿½ que encontrar o ^5533FFIrmï¿½o Bartolomeu^000000.";
+	mes "Eu ouvi dizer que o Irmï¿½o Bartolomeu geralmente ï¿½ visto numa pequena ilha 2 mapas a Oeste e 1 mapa a Norte de Prontera.";
 	next;
-	show "[Padre Thomas]";
-	show "Por favor, tome cuidado na sua jornada. Se tiver alguma dúvida pode falar comigo novamente.";
-	show "Lembre-se de falar comigo novamente quando terminar a primeira tarefa.";
+	mes "[Padre Thomas]";
+	mes "Por favor, tome cuidado na sua jornada. Se tiver alguma dï¿½vida pode falar comigo novamente.";
+	mes "Lembre-se de falar comigo novamente quando terminar a primeira tarefa.";
 	next;
-	show "[Padre Thomas]";
-	show "Que Deus esteja contigo...";
+	mes "[Padre Thomas]";
+	mes "Que Deus esteja contigo...";
 	set PRIEST_Q, 1;
 	set PRIEST_Q2, 1;
 	close;
 
 	L_NotDone1a:
-		show "O que? Por que você ainda está aqui? Esqueceu a primeira tarefa?";
+		mes "O que? Por que vocï¿½ ainda estï¿½ aqui? Esqueceu a primeira tarefa?";
 		next;
-		menu "Sim, pode me dizer a primeira tarefa novamente?",sM_3a, "Não! Como eu poderia esquecer.",sM_3End;
+		menu "Sim, pode me dizer a primeira tarefa novamente?",sM_3a, "Nï¿½o! Como eu poderia esquecer.",sM_3End;
 
 		sM_3a:
-			show "[Padre Thomas]";
-			show "Hmm... se você está tendo problemas com essa tarefa, creio que terá ainda mais problemas com as outras....";
+			mes "[Padre Thomas]";
+			mes "Hmm... se vocï¿½ estï¿½ tendo problemas com essa tarefa, creio que terï¿½ ainda mais problemas com as outras....";
 			next;
-			show "[Padre Thomas]";
-			show "Por favor, visite o ^5533FFIrmão Simão^000000. Ele está localizado 1 mapa a Norte ae 2 mapas Leste de Prontera, próximo à St. Capitolina Abbey.";
+			mes "[Padre Thomas]";
+			mes "Por favor, visite o ^5533FFIrmï¿½o Simï¿½o^000000. Ele estï¿½ localizado 1 mapa a Norte ae 2 mapas Leste de Prontera, prï¿½ximo ï¿½ St. Capitolina Abbey.";
 			close;
 
 		sM_3End:
-			show "[Padre Thomas]";
-			show "Ah, e se tiver alguma duvida, fale com a irmã Cecile próximo a entrada.";
+			mes "[Padre Thomas]";
+			mes "Ah, e se tiver alguma duvida, fale com a irmï¿½ Cecile prï¿½ximo a entrada.";
 			next;
-			show "[Padre Thomas]";
-			show "Por favor, ande logo, e tenha cuidado na sua jornada. Que o Senhor olhe e sorria para você....";
+			mes "[Padre Thomas]";
+			mes "Por favor, ande logo, e tenha cuidado na sua jornada. Que o Senhor olhe e sorria para vocï¿½....";
 			close;
 	L_NotDone1b:
-		show "Hmmm??";
+		mes "Hmmm??";
 		emotion e_what;
 		next;
-		show "[Padre Thomas]";
-		show "Você já foi ver a ^5533FFIrmã Matilda^000000? Ela pode ser encontrada perto de Morroc no Deserto de Sograt.";
-		show "Mesmo Morroc sendo distante, eu sei que você conseguirá encontrá-la.";
+		mes "[Padre Thomas]";
+		mes "Vocï¿½ jï¿½ foi ver a ^5533FFIrmï¿½ Matilda^000000? Ela pode ser encontrada perto de Morroc no Deserto de Sograt.";
+		mes "Mesmo Morroc sendo distante, eu sei que vocï¿½ conseguirï¿½ encontrï¿½-la.";
 		close;
 		
 	L_NotDone1c:
-		show "Já encontrou a Irmã Matilda em Morroc? Neste caso, agora você deve encontrar o ^5533FFIrmão Bartolomeu^000000.";
-		show "Ele está numa pequena ilha 2 mapas a Oeste e 1 mapa a Norte de Prontera.. Você deve ir e falar com ele!.";
+		mes "Jï¿½ encontrou a Irmï¿½ Matilda em Morroc? Neste caso, agora vocï¿½ deve encontrar o ^5533FFIrmï¿½o Bartolomeu^000000.";
+		mes "Ele estï¿½ numa pequena ilha 2 mapas a Oeste e 1 mapa a Norte de Prontera.. Vocï¿½ deve ir e falar com ele!.";
 		close;
 		
 	L_Done1:
-		show "Então você falou com todos os Clérigos? Bom trabalho, você completou a primeira tarefa.";
+		mes "Entï¿½o vocï¿½ falou com todos os Clï¿½rigos? Bom trabalho, vocï¿½ completou a primeira tarefa.";
 		next;
-		show "[Padre Thomas]";
-		show "Agora vamos começar a segunda tarefa. Esteja preparado para encarar um grande terror.. Se você quiser, você pode pedir para um Sacerdote te acompanhar nessa tarefa.";
+		mes "[Padre Thomas]";
+		mes "Agora vamos comeï¿½ar a segunda tarefa. Esteja preparado para encarar um grande terror.. Se vocï¿½ quiser, vocï¿½ pode pedir para um Sacerdote te acompanhar nessa tarefa.";
 		set PRIEST_Q, 2;
 		set PRIEST_Q2, 0;
 		next;
-		show "[Padre Thomas]";
+		mes "[Padre Thomas]";
 
 L_Test2:
 	if(PRIEST_Q2 == 1) goto L_ReTest2;
 	if(PRIEST_Q2 == 2) goto L_Done2;
-	show "Então, está pronto para começar a segunda tarefa?";
+	mes "Entï¿½o, estï¿½ pronto para comeï¿½ar a segunda tarefa?";
 	M_Menu:
 	next;
-	menu "Sim, vamos começar.",M_4a, "Deixe-me me preparar, voltarei mais tarde.",M_4End;
+	menu "Sim, vamos comeï¿½ar.",M_4a, "Deixe-me me preparar, voltarei mais tarde.",M_4End;
                                              	            
 	M_4a:
-		show "[Padre Thomas]";
-		show "Muito bem. Vou enviá-lo ao ^5544FFPadre Peter^000000. Fale com ele sobre a segunda tarefa.";
+		mes "[Padre Thomas]";
+		mes "Muito bem. Vou enviï¿½-lo ao ^5544FFPadre Peter^000000. Fale com ele sobre a segunda tarefa.";
 		next;
 		set PRIEST_Q2, 1;
 		warp "job_prist", 24, 180;
@@ -286,58 +286,58 @@ L_Test2:
 		end;
 		
 	M_4End:
-		show "[Padre Thomas]";
-		show "Certo, prepare-se e volte. Acredito que você conseguirá passar pelas buscas sem muita dificuldade.";
+		mes "[Padre Thomas]";
+		mes "Certo, prepare-se e volte. Acredito que vocï¿½ conseguirï¿½ passar pelas buscas sem muita dificuldade.";
 		close;
 
 	L_ReTest2:
-		show "Você parece muito cansado... mas adivinhe, você ficará ainda mais cansado quando se tornar um Sacerdote.";
-		show "Por favor, não desista. Quer tentar fazer a tarefa novamente?";
+		mes "Vocï¿½ parece muito cansado... mas adivinhe, vocï¿½ ficarï¿½ ainda mais cansado quando se tornar um Sacerdote.";
+		mes "Por favor, nï¿½o desista. Quer tentar fazer a tarefa novamente?";
 		goto M_Menu;
 		
 	L_Done2:
-		show "Bom trabalho. Você conseguiu passar por todas as buscas e terminou a segunda tarefa.";
-		show "Se você passar pela ultima tarefa, Eu acredito que você se tornará um dos melhores Sacerdotes de todos os tempos!";
+		mes "Bom trabalho. Vocï¿½ conseguiu passar por todas as buscas e terminou a segunda tarefa.";
+		mes "Se vocï¿½ passar pela ultima tarefa, Eu acredito que vocï¿½ se tornarï¿½ um dos melhores Sacerdotes de todos os tempos!";
 		next;
-		show "[Padre Thomas]";
-		show "Agora, para o teste final, vá falar com a ^5533FFIrmã Cecile^000000. Assim que passar, venha falar comigo.";
+		mes "[Padre Thomas]";
+		mes "Agora, para o teste final, vï¿½ falar com a ^5533FFIrmï¿½ Cecile^000000. Assim que passar, venha falar comigo.";
 		next;
-		show "[Padre Thomas]";
-		show "Eu estarei esperando aqui. Boa sorte criança.";
+		mes "[Padre Thomas]";
+		mes "Eu estarei esperando aqui. Boa sorte crianï¿½a.";
 		set PRIEST_Q, 3;
 		set PRIEST_Q2, 0;
 		close;
 
 L_Test3:
-	show "Vá falar com a ^5533FFIrmã Cecile^000000 e complete o último teste.";
+	mes "Vï¿½ falar com a ^5533FFIrmï¿½ Cecile^000000 e complete o ï¿½ltimo teste.";
 	next;
-	show "[Padre Thomas]";
-	show "Boa sorte. Estarei aqui esperando as boas novas..";
+	mes "[Padre Thomas]";
+	mes "Boa sorte. Estarei aqui esperando as boas novas..";
 	close;
 
 
 L_Change:
-	if (SkillPoint > 0) show "Espere. Você deve usar todos os seus pontos de classe antes de virar Sacerdote.";
+	if (SkillPoint > 0) mes "Espere. Vocï¿½ deve usar todos os seus pontos de classe antes de virar Sacerdote.";
 	if (SkillPoint > 0) close;
-	show "Parabéns! Você completou todos os testes. Agora posso torná-lo um Sacerdote.";
+	mes "Parabï¿½ns! Vocï¿½ completou todos os testes. Agora posso tornï¿½-lo um Sacerdote.";
 	emotion e_no1;
 	next;
-	show "[Padre Thomas]";
-	show "Deus, por favor ofereça a "+strcharinfo(0)+" a força e coragem de lutar contra o mal e ajudar a humanidade.";
+	mes "[Padre Thomas]";
+	mes "Deus, por favor ofereï¿½a a "+strcharinfo(0)+" a forï¿½a e coragem de lutar contra o mal e ajudar a humanidade.";
 	next;
 	callfunc "Job_Change",Job_Priest;
-	show "[Padre Thomas]";
-	show "Agora você é um Sacerdote. Como Sacerdote, você pode agora ajudar um monte de gente em nome de Deus.";
+	mes "[Padre Thomas]";
+	mes "Agora vocï¿½ ï¿½ um Sacerdote. Como Sacerdote, vocï¿½ pode agora ajudar um monte de gente em nome de Deus.";
 	next;
 	if (JBLVL != 50) additem 1550, 1;
 	if (JBLVL == 50) additem 1551, 1;
 	callfunc "F_ClearJobVar";		// clears all job variables for the current player
-	show "[Padre Thomas]";
-	show "Aqui, pegue esse livro como recompensa por ter passado por todos os testes. Este livro o ajudará a entender mais sobre Deus.";
+	mes "[Padre Thomas]";
+	mes "Aqui, pegue esse livro como recompensa por ter passado por todos os testes. Este livro o ajudarï¿½ a entender mais sobre Deus.";
 	next;
-	show "[Padre Thomas]";
-	show "Espero que você possa servir como exemplo para vários Noviços em toda Rune Midgard.";
-	show "Por favor, seja um bom Sacerdote e ajude a melhorar esse mundo!";
+	mes "[Padre Thomas]";
+	mes "Espero que vocï¿½ possa servir como exemplo para vï¿½rios Noviï¿½os em toda Rune Midgard.";
+	mes "Por favor, seja um bom Sacerdote e ajude a melhorar esse mundo!";
 	close;
 }
 
@@ -349,37 +349,37 @@ L_Change:
 function	script	F_FatherRub	{
 	if(PRIEST_Q == 1 && PRIEST_Q2==1) goto L_Test;
 	if(PRIEST_Q==1 && PRIEST_Q2 > 1) goto L_Done;
-	show "É bom vê-lo novamente. Espero que tudo esteja bem? Continue no seu caminho de ajudar aos outros e servir a Deus, e rezemos pela salvação da humanidade.";
+	mes "ï¿½ bom vï¿½-lo novamente. Espero que tudo esteja bem? Continue no seu caminho de ajudar aos outros e servir a Deus, e rezemos pela salvaï¿½ï¿½o da humanidade.";
 	close;
 
 L_Test:
-	show "Opa... e ae?";
+	mes "Opa... e ae?";
 	next;
-	show "[Irmão Simão]";
-	show "Oque é isso? Você está aqui por que quer servir a Deus com uma capacidade ainda maior?";
+	mes "[Irmï¿½o Simï¿½o]";
+	mes "Oque ï¿½ isso? Vocï¿½ estï¿½ aqui por que quer servir a Deus com uma capacidade ainda maior?";
 	emotion e_what;
 	next;
-	menu "Sim, Eu acredito que o Sacerdócio seja o caminho correto.",-, "Não, na verdade não.... só vim falar oi.",M_No;
+	menu "Sim, Eu acredito que o Sacerdï¿½cio seja o caminho correto.",-, "Nï¿½o, na verdade nï¿½o.... sï¿½ vim falar oi.",M_No;
 
-		show "[Irmão Simão]";
-		show "Haha! Muito bom. Nós precisamos de mais pessoas como você para lutar contra o mal que persegue esse mundo.";
+		mes "[Irmï¿½o Simï¿½o]";
+		mes "Haha! Muito bom. Nï¿½s precisamos de mais pessoas como vocï¿½ para lutar contra o mal que persegue esse mundo.";
 		emotion e_no1;
 		next;
-		show "[Irmão Simão]";
-		show "Devido ao seu bom coração, eu lhe darei minha benção criança. Por favor, encontre a ^5533FFIrmã Matilda^000000 agora.";
+		mes "[Irmï¿½o Simï¿½o]";
+		mes "Devido ao seu bom coraï¿½ï¿½o, eu lhe darei minha benï¿½ï¿½o crianï¿½a. Por favor, encontre a ^5533FFIrmï¿½ Matilda^000000 agora.";
 		next;
-		show "[Irmão Simão]";
-		show "Você pode encontrá-la no mapa a norte de Morroc. Tenha uma boa viagem e boa sorte ao se tornar um Sacerdote.";
+		mes "[Irmï¿½o Simï¿½o]";
+		mes "Vocï¿½ pode encontrï¿½-la no mapa a norte de Morroc. Tenha uma boa viagem e boa sorte ao se tornar um Sacerdote.";
 		set PRIEST_Q2, 2;
 		close;
 	M_No:
-		show "[Irmão Simão]";
-		show "Oh... bem... Ola para você também. De qualquer maneira é bom ver um servo de Deus como você. Estou um pouco ocupado agora, então se você não se importa.....";
+		mes "[Irmï¿½o Simï¿½o]";
+		mes "Oh... bem... Ola para vocï¿½ tambï¿½m. De qualquer maneira ï¿½ bom ver um servo de Deus como vocï¿½. Estou um pouco ocupado agora, entï¿½o se vocï¿½ nï¿½o se importa.....";
 		emotion e_swt;
 		close;
 
 L_Done:
-	show "Encontre a ^5533FFIrmã Matilda^000000 agora. Boa sorte no seu caminho de se tornar um Sacerdote.";
+	mes "Encontre a ^5533FFIrmï¿½ Matilda^000000 agora. Boa sorte no seu caminho de se tornar um Sacerdote.";
 	close;
 }
 
@@ -388,23 +388,23 @@ function	script	F_MotherMart	{
 
 	if(PRIEST_Q==1 && PRIEST_Q2==2) goto L_Test;
 	if(PRIEST_Q==1 && PRIEST_Q2 > 2) goto L_Done;
-	show "Oh... Já tem um tempo desde que te vi pela última vez. Nossa, como você cresceu. É bom saber que os servos de Deus continuam se aperfeiçoando.";
-	show "Eu te desejo muito sucesso criança, e sempre se lembre de ter Fé.";
+	mes "Oh... Jï¿½ tem um tempo desde que te vi pela ï¿½ltima vez. Nossa, como vocï¿½ cresceu. ï¿½ bom saber que os servos de Deus continuam se aperfeiï¿½oando.";
+	mes "Eu te desejo muito sucesso crianï¿½a, e sempre se lembre de ter Fï¿½.";
 	close;
 
 L_Test:
-	show "Ah, você ta aqui para o teste de Sacerdote né? Devo dizer, você fez um ótimo trabalho vindo até aqui.";
+	mes "Ah, vocï¿½ ta aqui para o teste de Sacerdote nï¿½? Devo dizer, vocï¿½ fez um ï¿½timo trabalho vindo atï¿½ aqui.";
 	next;
-	show "[Irmã Matilda]";
-	show "Isso mostra que você tem fé de verdade! É um prazer para mim te deixar continuar no seu caminho.";
+	mes "[Irmï¿½ Matilda]";
+	mes "Isso mostra que vocï¿½ tem fï¿½ de verdade! ï¿½ um prazer para mim te deixar continuar no seu caminho.";
 	next;
-	show "[Irmã Matilda]";
-	show "Agora você deve encontrar o ^5533FFIrmão Bartolomeu^000000. Ele está a 1 mapa a Norte e 2 a Leste de Prontera. Tenho certeza que você será um bom Sacerdote!";
+	mes "[Irmï¿½ Matilda]";
+	mes "Agora vocï¿½ deve encontrar o ^5533FFIrmï¿½o Bartolomeu^000000. Ele estï¿½ a 1 mapa a Norte e 2 a Leste de Prontera. Tenho certeza que vocï¿½ serï¿½ um bom Sacerdote!";
 	set PRIEST_Q2, 3;
 	close;
 
 L_Done:
-	show "Para completar sua tarefa, você deve encontrar o ^5533FFIrmão Bartolomeu^000000. Tenha cuidado e lembre-se de rezar.";
+	mes "Para completar sua tarefa, vocï¿½ deve encontrar o ^5533FFIrmï¿½o Bartolomeu^000000. Tenha cuidado e lembre-se de rezar.";
 	close;
 }
 
@@ -413,20 +413,20 @@ function	script	F_FatherYos	{
 
 	if(PRIEST_Q==1 && PRIEST_Q2==3) goto L_Test;
 	if(PRIEST_Q==1 && PRIEST_Q2==4) goto L_Done;
-	show "Só porque você é um servo de Deus não significa que você vir aqui e me incomodar. Saia, por favor...";
+	mes "Sï¿½ porque vocï¿½ ï¿½ um servo de Deus nï¿½o significa que vocï¿½ vir aqui e me incomodar. Saia, por favor...";
 	close;
 
 L_Test:
-	show "Hmm...? Precisa de alguma coisa? Oh, o teste de Sacerdote..... você tem certeza de que é isso que você quer?";
+	mes "Hmm...? Precisa de alguma coisa? Oh, o teste de Sacerdote..... vocï¿½ tem certeza de que ï¿½ isso que vocï¿½ quer?";
 	emotion e_what;
 	next;
-	show "[Irmão Bartolomeu]";
-	show "Pois bem. Permitirei que você passe. Volte para a Igreja e converse com o Padre Thomas. Seu dever aqui foi cumprido";
+	mes "[Irmï¿½o Bartolomeu]";
+	mes "Pois bem. Permitirei que vocï¿½ passe. Volte para a Igreja e converse com o Padre Thomas. Seu dever aqui foi cumprido";
 	set PRIEST_Q2, 4;
 	close;
 
 L_Done:
-	show "Ugh? O que você está esperando...? Eu disse para você voltar a Igreja.... Estou muito ocupado....";
+	mes "Ugh? O que vocï¿½ estï¿½ esperando...? Eu disse para vocï¿½ voltar a Igreja.... Estou muito ocupado....";
 	emotion e_what;
 	close;
 }
@@ -438,75 +438,75 @@ L_Done:
 job_prist,24,186,4	script	Padre Peter	110,{
 
 L_Start:
-	show "[Padre Peter]";
-	show "Deus te abençoe!! Bem vindo!";
-	show "Primeiramente, gostaria de parabeniza-lo por passar no primeiro teste.";
+	mes "[Padre Peter]";
+	mes "Deus te abenï¿½oe!! Bem vindo!";
+	mes "Primeiramente, gostaria de parabeniza-lo por passar no primeiro teste.";
 	next;
-	show "[Padre Peter]";
-	show "Meu nome é Peter.";
-	show "Wow, você viu o Thomas?";
+	mes "[Padre Peter]";
+	mes "Meu nome ï¿½ Peter.";
+	mes "Wow, vocï¿½ viu o Thomas?";
 	next;
-	show "[Padre Peter]";
-	show "Oh, então ele já é um Padre? hahah...";
-	show "Acho que posso chama-lo de Padre Thomas!";
+	mes "[Padre Peter]";
+	mes "Oh, entï¿½o ele jï¿½ ï¿½ um Padre? hahah...";
+	mes "Acho que posso chama-lo de Padre Thomas!";
 	next;
-	show "[Padre Peter]";
-	show "Então.. você sabe porque está aqui? No seu próximo teste, você terá que superar uma série de caminhos que envolvem os poderes malignos.";
-	show "Você entende o que eu quero dizer?";
+	mes "[Padre Peter]";
+	mes "Entï¿½o.. vocï¿½ sabe porque estï¿½ aqui? No seu prï¿½ximo teste, vocï¿½ terï¿½ que superar uma sï¿½rie de caminhos que envolvem os poderes malignos.";
+	mes "Vocï¿½ entende o que eu quero dizer?";
 	next;
-	menu "Sim, eu entendo.",-, "Não, eu não entendo..?",M_1b;
+	menu "Sim, eu entendo.",-, "Nï¿½o, eu nï¿½o entendo..?",M_1b;
 
-		show "[Padre Peter]";
-		show "Wow, você é esperto, mas eu acho melhor você escutar o que eu tenho a dizer.";
-		show "heheh!";
+		mes "[Padre Peter]";
+		mes "Wow, vocï¿½ ï¿½ esperto, mas eu acho melhor vocï¿½ escutar o que eu tenho a dizer.";
+		mes "heheh!";
 		goto L_Cont;
 	M_1b:
-		show "[Padre Peter]";
-		show "Oh, então é isso, explicarei tudinho a você.";
-		show "Depois que você escutar o que eu tenho a dizer, acho que você entenderá.";
+		mes "[Padre Peter]";
+		mes "Oh, entï¿½o ï¿½ isso, explicarei tudinho a vocï¿½.";
+		mes "Depois que vocï¿½ escutar o que eu tenho a dizer, acho que vocï¿½ entenderï¿½.";
 
 	L_Cont:
 	next;
-	show "[Padre Peter]";
-	show "Como superar o Mal? é basicamento destruindo-o.";
-	show "O que é o Mal? É basicamente demônios, fantasmas e etc...";
+	mes "[Padre Peter]";
+	mes "Como superar o Mal? ï¿½ basicamento destruindo-o.";
+	mes "O que ï¿½ o Mal? ï¿½ basicamente demï¿½nios, fantasmas e etc...";
 	next;
-	show "[Padre Peter]";
-	show "Existe muita maldade nesse mundo.";
-	show "O Mal geralmente importuna as pessoas que acreditam em Deus.";
+	mes "[Padre Peter]";
+	mes "Existe muita maldade nesse mundo.";
+	mes "O Mal geralmente importuna as pessoas que acreditam em Deus.";
 	next;
-	show "[Padre Peter]";
-	show "Nós Sacerdotes,somos supostos a livra-los de todo o mal!";
-	show "Este é o único caminho para trazer paz no mundo!";
+	mes "[Padre Peter]";
+	mes "Nï¿½s Sacerdotes,somos supostos a livra-los de todo o mal!";
+	mes "Este ï¿½ o ï¿½nico caminho para trazer paz no mundo!";
 	next;
-	show "[Padre Peter]";
-	show "Se você for bem dedicado, então essas experimentações não devem ser um grande desafio.";
-	show "Mesmo assim, Se você quiser, pode perguntar para algum Sacerdote se ele pode te ajudar nesse teste.";
+	mes "[Padre Peter]";
+	mes "Se vocï¿½ for bem dedicado, entï¿½o essas experimentaï¿½ï¿½es nï¿½o devem ser um grande desafio.";
+	mes "Mesmo assim, Se vocï¿½ quiser, pode perguntar para algum Sacerdote se ele pode te ajudar nesse teste.";
 	next;
-	show "[Padre Peter]";
-	show "Bem, podemos começar?";
+	mes "[Padre Peter]";
+	mes "Bem, podemos comeï¿½ar?";
 	M_Menu:
 	next;
 	menu "Sim.",M_2a, "Espere um pouco.",M_2b, "Eu quero voltar para a cidade.",M_2c;
 
 	M_2a:
-		show "[Padre Peter]";
-		show "Certo, então entre na sala de espera.";
+		mes "[Padre Peter]";
+		mes "Certo, entï¿½o entre na sala de espera.";
 		close;
 
 	M_2b:
-		show "[Padre Peter]";
-		show "Oh você precisa se preparar?";
-		show "Sem problemas, você pode começar quando estiver pronto.";
+		mes "[Padre Peter]";
+		mes "Oh vocï¿½ precisa se preparar?";
+		mes "Sem problemas, vocï¿½ pode comeï¿½ar quando estiver pronto.";
 		close;
 	M_2c:
-		show "[Padre Peter]";
-		show "O que? Você quer voltar? Mas você acabou de chegar?";
-		show ".....";
+		mes "[Padre Peter]";
+		mes "O que? Vocï¿½ quer voltar? Mas vocï¿½ acabou de chegar?";
+		mes ".....";
 		next;
-		show "[Padre Peter]";
-		show "Talvez por ser sua primeira vez, esteja com um pouco de medo.";
-		show "Você pode voltar quando estiver mais confiante.";
+		mes "[Padre Peter]";
+		mes "Talvez por ser sua primeira vez, esteja com um pouco de medo.";
+		mes "Vocï¿½ pode voltar quando estiver mais confiante.";
 		next;
 		warp "prt_church", 16, 37;
 		close;
@@ -551,12 +551,12 @@ OnMobDead:
 	if($@mob > 0) end;
 
 	enablenpc "prst1_1";
-	areaannounce "job_prist",8,34,39,109,"[Padre Peter]: Bom trabalho minha criança. Entre no portal para começar o próximo teste.",8;
+	areaannounce "job_prist",8,34,39,109,"[Padre Peter]: Bom trabalho minha crianï¿½a. Entre no portal para comeï¿½ar o prï¿½ximo teste.",8;
 	initnpctimer "prst1_1";		//starts a 30 sec timer.  this will warp the player even if they don't enter the warp to keep the test going
 	end;
 
 OnTimer500:
-	areaannounce "job_prist",8,34,39,109,"[Padre Peter]: Para poder passar nesse teste, você terá que matar todos os monstros que aparecerem.",8;
+	areaannounce "job_prist",8,34,39,109,"[Padre Peter]: Para poder passar nesse teste, vocï¿½ terï¿½ que matar todos os monstros que aparecerem.",8;
 	end;
 OnTimer2500:
 	stopnpctimer;
@@ -641,7 +641,7 @@ OnStart:
 	enablenpc "Dark_Trig";
 	enablenpc "Senhor das Trevas";
 	enablenpc "Bapho_Trig";
-	enablenpc "Bafomé";
+	enablenpc "Bafomï¿½";
 	set $@PrstRm, 2;
 	set $PRIEST_Q3, 0;
 	initnpctimer;
@@ -652,13 +652,13 @@ OnCheck:
 	if($PRIEST_Q3 < 4) end;
 
 	enablenpc "prst2_1";
-	areaannounce "job_prist", 160, 14, 175, 178, "[Padre Peter]: Excelente! Você esteve ótimo! Entre no portal e vá para a próxima sala.",8;
+	areaannounce "job_prist", 160, 14, 175, 178, "[Padre Peter]: Excelente! Vocï¿½ esteve ï¿½timo! Entre no portal e vï¿½ para a prï¿½xima sala.",8;
 	initnpctimer "prst2_1";		//starts a 30 sec timer. this will warp the player even if they don't enter the warp to keep the test going
 	end;
 
 OnTimer500:
 	stopnpctimer;
-	areaannounce "job_prist", 160, 14, 175, 178, "[Padre Peter]: Esse teste irá testar sua força e crença em Deus!",8;
+	areaannounce "job_prist", 160, 14, 175, 178, "[Padre Peter]: Esse teste irï¿½ testar sua forï¿½a e crenï¿½a em Deus!",8;
 	end;
 
 }
@@ -671,69 +671,69 @@ OnStart:
 	if(BaseJob == Job_Acolyte) goto L_Aco;
 
 L_Priest:
-	show "[Deviruchi]";
-	show "Hey, O que um Sacerdote como você faz num lugar desses? Volte para a cidade. Você está desperdiçando o seu tempo aqui?";
+	mes "[Deviruchi]";
+	mes "Hey, O que um Sacerdote como vocï¿½ faz num lugar desses? Volte para a cidade. Vocï¿½ estï¿½ desperdiï¿½ando o seu tempo aqui?";
 	next;
-	show "[Deviruchi]";
-	show "Me sinto feliz hoje, então irei poupa-lo, Agora vá. Na próxima vez que você aparecer aqui. Eu vou te derrubar.";
+	mes "[Deviruchi]";
+	mes "Me sinto feliz hoje, entï¿½o irei poupa-lo, Agora vï¿½. Na prï¿½xima vez que vocï¿½ aparecer aqui. Eu vou te derrubar.";
 	close;
 
 L_Aco:
-	show "[Deviruchi]";
-	show "Hey, você não é um Noviço? Não vejo um faz anos. Parece que você está tentado tornar-se um Sacerdote...";
+	mes "[Deviruchi]";
+	mes "Hey, vocï¿½ nï¿½o ï¿½ um Noviï¿½o? Nï¿½o vejo um faz anos. Parece que vocï¿½ estï¿½ tentado tornar-se um Sacerdote...";
 	next;
-	show "[Deviruchi]";
-	show "Eu posso te contar o quão triste é ser um seguidor de Deus. Eu acho que é por isso que você está aqui.";
+	mes "[Deviruchi]";
+	mes "Eu posso te contar o quï¿½o triste ï¿½ ser um seguidor de Deus. Eu acho que ï¿½ por isso que vocï¿½ estï¿½ aqui.";
 	next;
-	show "[Deviruchi]";
-	show "O seu percurso será dificil. Não existe uns trabalhos melhores para se fazer?";
+	mes "[Deviruchi]";
+	mes "O seu percurso serï¿½ dificil. Nï¿½o existe uns trabalhos melhores para se fazer?";
 	next;
-	show "[Deviruchi]";
-	show "Não importa se você está na cidade, numa caverna, todas as pessoas sempre vão pedir a sua ajuda. Não é engraçado que eles nunca te ajudaram?";
+	mes "[Deviruchi]";
+	mes "Nï¿½o importa se vocï¿½ estï¿½ na cidade, numa caverna, todas as pessoas sempre vï¿½o pedir a sua ajuda. Nï¿½o ï¿½ engraï¿½ado que eles nunca te ajudaram?";
 	next;
-	show "[Deviruchi]";
-	show "Vou te dar um conselho, você deve desistir agora. O teste será dificil, e o trajeto que você vai andar é complicado.";
+	mes "[Deviruchi]";
+	mes "Vou te dar um conselho, vocï¿½ deve desistir agora. O teste serï¿½ dificil, e o trajeto que vocï¿½ vai andar ï¿½ complicado.";
 	next;
-	menu "É... você tem razão.",-, "SAI FORA Demônio!.",M_1a;
+	menu "ï¿½... vocï¿½ tem razï¿½o.",-, "SAI FORA Demï¿½nio!.",M_1a;
 
-		show "[Deviruchi]";
-		show "Essa é uma boa escolha, você não precisa voltar a este lugar denovo! Já que você decidiu desistir, lhe darei um presente.";
+		mes "[Deviruchi]";
+		mes "Essa ï¿½ uma boa escolha, vocï¿½ nï¿½o precisa voltar a este lugar denovo! Jï¿½ que vocï¿½ decidiu desistir, lhe darei um presente.";
 		next;
-		show "[Deviruchi]";
-		show "Deixarei você conhecer meus amigos...DE GRAÇA HAHAHAHAH!";
+		mes "[Deviruchi]";
+		mes "Deixarei vocï¿½ conhecer meus amigos...DE GRAï¿½A HAHAHAHAH!";
 		next;
 		warp "c_tower2", 168, 33;
 		end;
 	M_1a:
-		show "[Deviruchi]";
-		show "Oh.. Estou morrendo de medo..hahaha. Não seja assim, escute o que eu tenho a dizer.";
+		mes "[Deviruchi]";
+		mes "Oh.. Estou morrendo de medo..hahaha. Nï¿½o seja assim, escute o que eu tenho a dizer.";
 		next;
-		show "[Deviruchi]";
-		show "Se você desistir agora, te darei um lindo presente. Este presente é tão dificil de encontrar.";
+		mes "[Deviruchi]";
+		mes "Se vocï¿½ desistir agora, te darei um lindo presente. Este presente ï¿½ tï¿½o dificil de encontrar.";
 		next;
-		cutin "¹Ì½ºÆ®·¹½ºÄ«µå.bmp",4;
-		show "[Deviruchi]";
-		show "Você acha que pode encontrar uma carta igual a essa? Decida-se, não se arrependa depois...";
+		cutin "ï¿½Ì½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½.bmp",4;
+		mes "[Deviruchi]";
+		mes "Vocï¿½ acha que pode encontrar uma carta igual a essa? Decida-se, nï¿½o se arrependa depois...";
 		next;
-		menu "Eu aceito a carta.",-, "SAI FORA demônio!!",sM_1a;
+		menu "Eu aceito a carta.",-, "SAI FORA demï¿½nio!!",sM_1a;
 
-			show "[Deviruchi]";
-			show "Hahaha. Todos os humanos são assim, boa escolha! Certo, aqui está a carta!";
+			mes "[Deviruchi]";
+			mes "Hahaha. Todos os humanos sï¿½o assim, boa escolha! Certo, aqui estï¿½ a carta!";
 			next;
-			cutin "¹Ì½ºÆ®·¹½ºÄ«µå.bmp",255;
-			show "[Deviruchi]";
-			show "Bem, eu não posso te dar esta carta. Vá procurar por VOCÊ MESMO!";
+			cutin "ï¿½Ì½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½.bmp",255;
+			mes "[Deviruchi]";
+			mes "Bem, eu nï¿½o posso te dar esta carta. Vï¿½ procurar por VOCï¿½ MESMO!";
 			next;
 			warp "mjolnir_05", 200, 200;
 			end;
 		sM_1a:
-			cutin "¹Ì½ºÆ®·¹½ºÄ«µå.bmp",255;
-			show "[Deviruchi]";
-			show "Wow, você é um Noviço bem resistente, se você continuar a negar melhor ter cuidado.";
-			show "Estarei de olho, veremos se você vai ser um bom Sacerdote ou não.";
+			cutin "ï¿½Ì½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½.bmp",255;
+			mes "[Deviruchi]";
+			mes "Wow, vocï¿½ ï¿½ um Noviï¿½o bem resistente, se vocï¿½ continuar a negar melhor ter cuidado.";
+			mes "Estarei de olho, veremos se vocï¿½ vai ser um bom Sacerdote ou nï¿½o.";
 			next;
-			show "[Deviruchi]";
-			show "Um dia, você se lamentará dessa escolha e voltará para mim!";
+			mes "[Deviruchi]";
+			mes "Um dia, vocï¿½ se lamentarï¿½ dessa escolha e voltarï¿½ para mim!";
 			disablenpc "Devi_Trig";	//disables the trigger npc so you don't accidentally activate it again
 			disablenpc "Deviruchi";
 			donpcevent "PrstTest2_2::OnCheck";
@@ -747,67 +747,67 @@ OnStart:
 	if(BaseJob == Job_Acolyte) goto L_Aco;
 
 L_Priest:
-	show "[Doppelganger]";
-	show "Qual a vantagem de estar aqui?.";
-	show "Você está entediado? Você já é um Sacerdote porque está aqui?.";
+	mes "[Doppelganger]";
+	mes "Qual a vantagem de estar aqui?.";
+	mes "Vocï¿½ estï¿½ entediado? Vocï¿½ jï¿½ ï¿½ um Sacerdote porque estï¿½ aqui?.";
 	next;
-	show "[Doppelganger]";
-	show "Você não precisa ajudar esses Noviços, vá para casa.";
-	show "Única coisa que você está fazendo é gastante o seu tempo, vá embora.";
+	mes "[Doppelganger]";
+	mes "Vocï¿½ nï¿½o precisa ajudar esses Noviï¿½os, vï¿½ para casa.";
+	mes "ï¿½nica coisa que vocï¿½ estï¿½ fazendo ï¿½ gastante o seu tempo, vï¿½ embora.";
 	close;
 L_Aco:
-	show "[Doppelganger]";
-	show "Hey, Noviço espere, escute o que eu tenho para dizer.";
+	mes "[Doppelganger]";
+	mes "Hey, Noviï¿½o espere, escute o que eu tenho para dizer.";
 	next;
-	show "[Doppelganger]";
-	show "Você está aqui porque quer ser um Sacerdote, né?";
-	show "Eu não acho que você possa ser um Sacerdote.";
+	mes "[Doppelganger]";
+	mes "Vocï¿½ estï¿½ aqui porque quer ser um Sacerdote, nï¿½?";
+	mes "Eu nï¿½o acho que vocï¿½ possa ser um Sacerdote.";
 	next;
-	show "[Doppelganger]";
-	show "Se você quiser, posso usar meus poderes e fazer você voltar a ser Aprendiz.";
-	show "Voltando a ser Aprendiz, poderá escolher uma nova classe.";
+	mes "[Doppelganger]";
+	mes "Se vocï¿½ quiser, posso usar meus poderes e fazer vocï¿½ voltar a ser Aprendiz.";
+	mes "Voltando a ser Aprendiz, poderï¿½ escolher uma nova classe.";
 	next;
-	show "[Doppelganger]";
-	show "Bem, a classe que você escolher dependerá do seu nível hehe.";
-	show "Não é uma boa idéia? Se você quiser eu posso te ajudar agora mesmo.";
+	mes "[Doppelganger]";
+	mes "Bem, a classe que vocï¿½ escolher dependerï¿½ do seu nï¿½vel hehe.";
+	mes "Nï¿½o ï¿½ uma boa idï¿½ia? Se vocï¿½ quiser eu posso te ajudar agora mesmo.";
 	next;
-	menu "Espero que você possa me ajudar!",-, "SAI FORA demônio!",M_1b;
+	menu "Espero que vocï¿½ possa me ajudar!",-, "SAI FORA demï¿½nio!",M_1b;
 
-		show "[Doppelganger]";
-		show "Sim.. Foi uma boa escolha.";
-		show "Deixe-me transforma-lo em Aprendiz.";
+		mes "[Doppelganger]";
+		mes "Sim.. Foi uma boa escolha.";
+		mes "Deixe-me transforma-lo em Aprendiz.";
 		next;
-		show "[Doppelganger]";
-		show "Você sabe que demora um pouco para ressucitar quando você MORRE!!";
+		mes "[Doppelganger]";
+		mes "Vocï¿½ sabe que demora um pouco para ressucitar quando vocï¿½ MORRE!!";
 		next;
 		warp "gef_dun02", 210, 177;
 		end;
 	M_1b:
-		show "[Doppelganger]";
-		show "Eu acho que você não está entendendo o que eu quero dizer.";
-		show "Essa é uma das melhores coisas que podem acontecer com você.";
+		mes "[Doppelganger]";
+		mes "Eu acho que vocï¿½ nï¿½o estï¿½ entendendo o que eu quero dizer.";
+		mes "Essa ï¿½ uma das melhores coisas que podem acontecer com vocï¿½.";
 		next;
-		show "[Doppelganger]";
-		show "Basta me dizer que você não quer ser um Sacerdote.";
-		show "Se você fizer isso, vou poder te transformar em qualquer classe, por exemplo, quer ser um Espadachim como eu?";
+		mes "[Doppelganger]";
+		mes "Basta me dizer que vocï¿½ nï¿½o quer ser um Sacerdote.";
+		mes "Se vocï¿½ fizer isso, vou poder te transformar em qualquer classe, por exemplo, quer ser um Espadachim como eu?";
 		next;
-		menu "Eu não quero ser um Sacerdote!",-, "SAI FORA demônio!",sM_1b;
+		menu "Eu nï¿½o quero ser um Sacerdote!",-, "SAI FORA demï¿½nio!",sM_1b;
 
-			show "[Doppelganger]";
-			show "Muito bom, você não precisa mais voltar aqui.";
-			show "certo, deixe-me transforma-lo em Aprendiz...";
+			mes "[Doppelganger]";
+			mes "Muito bom, vocï¿½ nï¿½o precisa mais voltar aqui.";
+			mes "certo, deixe-me transforma-lo em Aprendiz...";
 			next;
-			show "[Doppelganger]";
-			show "Você sabe que demora um pouco para ressucitar quando você MORRE!!??!!";
+			mes "[Doppelganger]";
+			mes "Vocï¿½ sabe que demora um pouco para ressucitar quando vocï¿½ MORRE!!??!!";
 			next;
 			warp "gef_dun02", 210, 177;
 			end;
 		sM_1b:
-			show "[Doppelganger]";
-			show "Tudo bem, te pouparei por hoje.";
+			mes "[Doppelganger]";
+			mes "Tudo bem, te pouparei por hoje.";
 			next;
-			show "[Doppelganger]";
-			show "Se agente se encontrar novamente, Farei com que sua morte seja dolorosa.";
+			mes "[Doppelganger]";
+			mes "Se agente se encontrar novamente, Farei com que sua morte seja dolorosa.";
 			disablenpc "Doppel_Trig";
 			disablenpc "Doppel";
 			donpcevent "PrstTest2_2::OnCheck";
@@ -821,54 +821,54 @@ OnStart:
 	if(BaseJob == Job_Acolyte) goto L_Aco;
 
 L_Priest:
-	show "[Senhor das Trevas]";
-	show "Sinta raiva e ódio!!";
-	show "Sinta como é ser traido pelos amigos!";
+	mes "[Senhor das Trevas]";
+	mes "Sinta raiva e ï¿½dio!!";
+	mes "Sinta como ï¿½ ser traido pelos amigos!";
 	next;
-	show "[Senhor das Trevas]";
-	show "Fique aqui, e treine conosco, quando tiver forte o suficiente, então você pode voltar!";
-	show "Fique conosco e aprenda o poder da Maldição!";
+	mes "[Senhor das Trevas]";
+	mes "Fique aqui, e treine conosco, quando tiver forte o suficiente, entï¿½o vocï¿½ pode voltar!";
+	mes "Fique conosco e aprenda o poder da Maldiï¿½ï¿½o!";
 	close;
 L_Aco:
-	show "[Senhor das Trevas]";
-	show "Humano, pare agora mesmo!.";
-	show "Quem te deu permissão para andar por aqui!";
+	mes "[Senhor das Trevas]";
+	mes "Humano, pare agora mesmo!.";
+	mes "Quem te deu permissï¿½o para andar por aqui!";
 	next;
-	show "[Senhor das Trevas]";
-	show "Se você quiser ser um Sacerdote, você não pode passar por aqui.";
-	show "Vá, antes que eu te mate.";
+	mes "[Senhor das Trevas]";
+	mes "Se vocï¿½ quiser ser um Sacerdote, vocï¿½ nï¿½o pode passar por aqui.";
+	mes "Vï¿½, antes que eu te mate.";
 	next;
-	show "[Senhor das Trevas]";
-	show "Vocês conseguem ser mais irritantes do que as próprias formigas, saia e pare de me encher!";
+	mes "[Senhor das Trevas]";
+	mes "Vocï¿½s conseguem ser mais irritantes do que as prï¿½prias formigas, saia e pare de me encher!";
 	next;
-	menu "Desculpe-me, por favor me perdoe.",-, "SAI FORA demônio!.",M_1c;
+	menu "Desculpe-me, por favor me perdoe.",-, "SAI FORA demï¿½nio!.",M_1c;
 
-		show "[Senhor das Trevas]";
-		show "Não volte nunca mais!";
+		mes "[Senhor das Trevas]";
+		mes "Nï¿½o volte nunca mais!";
 		next;
 		warp "gl_church", 145, 170;
 		end;
 	M_1c:
-		show "[Senhor das Trevas]";
-		show "Não tente bancar o valentão.";
-		show "Eu posso te cortar em pedaços com meu dedo mindinho.";
+		mes "[Senhor das Trevas]";
+		mes "Nï¿½o tente bancar o valentï¿½o.";
+		mes "Eu posso te cortar em pedaï¿½os com meu dedo mindinho.";
 		next;
-		show "[Senhor das Trevas]";
-		show "Antes que eu use meus poderes sombrios em você, saia!";
+		mes "[Senhor das Trevas]";
+		mes "Antes que eu use meus poderes sombrios em vocï¿½, saia!";
 		next;
-		menu "Por favor, piedade.",-, "SAI FORA demônio!",sM_1c;
+		menu "Por favor, piedade.",-, "SAI FORA demï¿½nio!",sM_1c;
 
-			show "[Senhor das Trevas]";
-			show "Não apareça mais!";
+			mes "[Senhor das Trevas]";
+			mes "Nï¿½o apareï¿½a mais!";
 			next;
 			warp "gl_church", 145, 170;
 			end;
 		sM_1c:
-			show "[Senhor das Trevas]";
-			show "Então você decidiu ficar? Seu humano imundo, matar você sujará minhas mãoss.";
+			mes "[Senhor das Trevas]";
+			mes "Entï¿½o vocï¿½ decidiu ficar? Seu humano imundo, matar vocï¿½ sujarï¿½ minhas mï¿½oss.";
 			next;
-			show "[Senhor das Trevas]";
-			show "Se nos encontrarmos novamente, eu vou te matar.";
+			mes "[Senhor das Trevas]";
+			mes "Se nos encontrarmos novamente, eu vou te matar.";
 			disablenpc "Dark_Trig";
 			disablenpc "Senhor das Trevas";
 			donpcevent "PrstTest2_2::OnCheck";
@@ -876,62 +876,62 @@ L_Aco:
 }
 
 // Baphomet -----------------------------------------------------------------------------
-job_prist,168,150,4	script	Bafomé	736,{
+job_prist,168,150,4	script	Bafomï¿½	736,{
 
 OnStart:
 	if(BaseJob == Job_Acolyte) goto L_Aco;
 
 L_Priest:
-	show "[Bafomé]";
-	show "Sacerdotes irritantes...";
+	mes "[Bafomï¿½]";
+	mes "Sacerdotes irritantes...";
 	next;
-	show "[Bafomé]";
-	show "Não tenho nada para conversar com você, saia.";
+	mes "[Bafomï¿½]";
+	mes "Nï¿½o tenho nada para conversar com vocï¿½, saia.";
 	close;
 L_Aco:
-	show "[Bafomé]";
-	show "Hey, humano.";
+	mes "[Bafomï¿½]";
+	mes "Hey, humano.";
 	next;
-	show "[Bafomé]";
-	show "Está interessado num acordo?";
+	mes "[Bafomï¿½]";
+	mes "Estï¿½ interessado num acordo?";
 	next;
-	show "[Bafomé]";
-	show "Posso fazer você ser a pessoa mais rica e famosa nesse mundo.";
-	show "Dinheiro ilimitado e armas que nenhum humano pode ter...";
+	mes "[Bafomï¿½]";
+	mes "Posso fazer vocï¿½ ser a pessoa mais rica e famosa nesse mundo.";
+	mes "Dinheiro ilimitado e armas que nenhum humano pode ter...";
 	next;
-	show "[Bafomé]";
-	show "Também, se você quiser, pode me chamar sempre que precisar.";
-	show "Se você fizer isso, todo mundo terá medo de você hahahaha.";
+	mes "[Bafomï¿½]";
+	mes "Tambï¿½m, se vocï¿½ quiser, pode me chamar sempre que precisar.";
+	mes "Se vocï¿½ fizer isso, todo mundo terï¿½ medo de vocï¿½ hahahaha.";
 	next;
-	show "[Bafomé]";
-	show "Acho que você deveria desistir de ser um Sacerdote e aceitar o meu acordo.";
-	show "Se aceitar meu acordo, o mundo será seu.";
+	mes "[Bafomï¿½]";
+	mes "Acho que vocï¿½ deveria desistir de ser um Sacerdote e aceitar o meu acordo.";
+	mes "Se aceitar meu acordo, o mundo serï¿½ seu.";
 	next;
-	menu"Desisto de ser um Sacerdote.",-, "SAI FORA demônio!",M_1d;
+	menu"Desisto de ser um Sacerdote.",-, "SAI FORA demï¿½nio!",M_1d;
 
-		show "[Bafomé]";
-		show "Certo, vamos assinar o contrato...";
-		show "você não se esquecerá disso...";
+		mes "[Bafomï¿½]";
+		mes "Certo, vamos assinar o contrato...";
+		mes "vocï¿½ nï¿½o se esquecerï¿½ disso...";
 		next;	
-		show "[Bafomé]";
-		show "Você vai procurar saber, onde eu moro.";
-		show "Chegando lá, volte e assine o contrato.";
+		mes "[Bafomï¿½]";
+		mes "Vocï¿½ vai procurar saber, onde eu moro.";
+		mes "Chegando lï¿½, volte e assine o contrato.";
 		next;
 		warp "glast_01", 200, 203;
 		end;
 	M_1d:
-		show "[Bafomé]";
-		show "Tudo bem, vou embora.";
-		show "Mas, você não vai sair assim facilmente.";
+		mes "[Bafomï¿½]";
+		mes "Tudo bem, vou embora.";
+		mes "Mas, vocï¿½ nï¿½o vai sair assim facilmente.";
 		next;
-		show "[Bafomé]";
-		show "Eu já lancei materiais malignos em você...";
-		show "Quero ver quanto tempo você vai durar.";
+		mes "[Bafomï¿½]";
+		mes "Eu jï¿½ lancei materiais malignos em vocï¿½...";
+		mes "Quero ver quanto tempo vocï¿½ vai durar.";
 		next;
-		show "[Bafomé]";
-		show "Está certo, agora vá.";
+		mes "[Bafomï¿½]";
+		mes "Estï¿½ certo, agora vï¿½.";
 		disablenpc "Bapho_Trig";
-		disablenpc "Bafomé";
+		disablenpc "Bafomï¿½";
 		donpcevent "PrstTest2_2::OnCheck";
 		close;
 }
@@ -1023,7 +1023,7 @@ job_prist,98,105,0	script	prst3_1	45,2,2,{
 
 OnTimer500:
 	stopnpctimer;
-	areaannounce "job_prist",  90, 34, 105,105, "[Padre Peter]: Esse é o último teste que você precisa enfrentar, minha criança. Tenha fé, eu sei que você é capaz!",8;
+	areaannounce "job_prist",  90, 34, 105,105, "[Padre Peter]: Esse ï¿½ o ï¿½ltimo teste que vocï¿½ precisa enfrentar, minha crianï¿½a. Tenha fï¿½, eu sei que vocï¿½ ï¿½ capaz!",8;
 	end;
 }
 
@@ -1034,50 +1034,50 @@ OnTimer500:
 job_prist,1,1,0	script	TimerPrst	-1,{
 
 OnTimer3000:
-	areaannounce "job_prist",8,34,39,109,"[Padre Peter]: Você terá 5 minutos para passar pelos 3 testes.",8;
+	areaannounce "job_prist",8,34,39,109,"[Padre Peter]: Vocï¿½ terï¿½ 5 minutos para passar pelos 3 testes.",8;
 	end;
 OnTimer33000:
 	donpcevent "Padre Peter::OnStart";
 	end;
 OnTimer63000:
-	set $@PrstTime$, "Você tem mais 4 minutos!";
+	set $@PrstTime$, "Vocï¿½ tem mais 4 minutos!";
 	donpcevent "Padre Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer93000:
 	donpcevent "Padre Peter::OnStart";
 	end;
 OnTimer123000:
-	set $@PrstTime$, "Você tem mais 3 minutos!";
+	set $@PrstTime$, "Vocï¿½ tem mais 3 minutos!";
 	donpcevent "Padre Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer153000:
 	donpcevent "Padre Peter::OnStart";
 	end;
 OnTimer183000:
-	set $@PrstTime$, "Você tem mais 2 minutos!";
+	set $@PrstTime$, "Vocï¿½ tem mais 2 minutos!";
 	donpcevent "Padre Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer213000:
 	donpcevent "Padre Peter::OnStart";
 	end;
 OnTimer243000:
-	set $@PrstTime$, "Você tem mais 1 minuto!";
+	set $@PrstTime$, "Vocï¿½ tem mais 1 minuto!";
 	donpcevent "Padre Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer273000:
-	set $@PrstTime$, "Você tem mais 30 segundos!";
+	set $@PrstTime$, "Vocï¿½ tem mais 30 segundos!";
 	donpcevent "Padre Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer293000:
-	set $@PrstTime$, "Você tem mais 10 segundos!";
+	set $@PrstTime$, "Vocï¿½ tem mais 10 segundos!";
 	goto AnnouncePrst;
 	end;
 OnTimer2970000:
-	set $@PrstTime$, "Você tem mais 5 segundos.";
+	set $@PrstTime$, "Vocï¿½ tem mais 5 segundos.";
 	goto AnnouncePrst;
 	end;
 OnTimer302000:
-	set $@PrstTime$, "O tempo acabou. Você falhou no teste.";
+	set $@PrstTime$, "O tempo acabou. Vocï¿½ falhou no teste.";
 	goto AnnouncePrst;
 OnTimer306000:
 	stopnpctimer;
@@ -1100,55 +1100,55 @@ AnnouncePrst:
 //**********************************************************************************************************************************************************************************\\
 //================================================= Sister Cecile: Test 3 =====================================================\\
 //**********************************************************************************************************************************************************************************\\
-prt_church,27,24,4	script	Irmã Cecile	79,{
-	show "[Irmã Cecile]";
+prt_church,27,24,4	script	Irmï¿½ Cecile	79,{
+	mes "[Irmï¿½ Cecile]";
 	if(BaseJob == Job_Priest) goto L_Prst;
 	if(BaseJob == Job_Acolyte) goto L_Aco;
 	if(BaseJob == Job_Novice) goto L_Nov;
 
 L_Other:
-	show "Essa é a Igreja de Prontera, em que posso ajudar?";
+	mes "Essa ï¿½ a Igreja de Prontera, em que posso ajudar?";
 	next;
-	menu "Por favor, fale-me sobre os Sacerdotes.",-, "Eu estava só andando por perto.",M_End0;
+	menu "Por favor, fale-me sobre os Sacerdotes.",-, "Eu estava sï¿½ andando por perto.",M_End0;
 
-		show "[Irmã Cecile]";
-		show "Sacerdotes são servos de Deus. Eles tem poderes especiais que podem ajudar quem estiver com dificuldades.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Sacerdotes sï¿½o servos de Deus. Eles tem poderes especiais que podem ajudar quem estiver com dificuldades.";
 		next;
-		show "[Irmã Cecile]";
-		show "Por serem seguidores de Deus, eles não podem usar espadas e nenhum outro tipo de armas.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Por serem seguidores de Deus, eles nï¿½o podem usar espadas e nenhum outro tipo de armas.";
 		next;
-		show "[Irmã Cecile]";
-		show "Claro, se você quiser saber mais sobre Sacerdotes, é melhor perguntar a um pessoalmente.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Claro, se vocï¿½ quiser saber mais sobre Sacerdotes, ï¿½ melhor perguntar a um pessoalmente.";
 		next;
-		show "[Irmã Cecile]";
-		show "Por favor, fique o tempo que desejar. A igreja é um santuário para todos aqueles que a procuram.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Por favor, fique o tempo que desejar. A igreja ï¿½ um santuï¿½rio para todos aqueles que a procuram.";
 		close;
 	M_End0:
-		show "[Irmã Cecile]";
-		show "Por favor relaxe, ficar andando por aí deve ser cansativo.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Por favor relaxe, ficar andando por aï¿½ deve ser cansativo.";
 		close;
 
 L_Nov:
-	show "Que Deus te abençoe, minha criança. A Igreja de Prontera lhe da as boas vindas.";
+	mes "Que Deus te abenï¿½oe, minha crianï¿½a. A Igreja de Prontera lhe da as boas vindas.";
 	next;
-	show "[Irmã Cecile]";
-	show "Você já escolheu a sua Classe? Não quer ser um ajudante de Deus?";
-	show "Sendo um Noviço e ajudando as pessoas você estará mais perto de Deus.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Vocï¿½ jï¿½ escolheu a sua Classe? Nï¿½o quer ser um ajudante de Deus?";
+	mes "Sendo um Noviï¿½o e ajudando as pessoas vocï¿½ estarï¿½ mais perto de Deus.";
 	next;
-	show "[Irmã Cecile]";
-	show "Se você quiser ser um Noviço, converse com o ^5533FFPadre Areusis^000000 na sala próxima ao corredor.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Se vocï¿½ quiser ser um Noviï¿½o, converse com o ^5533FFPadre Areusis^000000 na sala prï¿½xima ao corredor.";
 	next;
-	show "[Irmã Cecile]";
-	show "Quando tiver alcançado nível 40 de classe como Noviço, você poderá se tornar um Sacerdote.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Quando tiver alcanï¿½ado nï¿½vel 40 de classe como Noviï¿½o, vocï¿½ poderï¿½ se tornar um Sacerdote.";
 	next;
-	show "[Irmã Cecile]";
-	show "Desde que você seja um Noviço, pense cuidadosamente sobre qual Classe você quer ser.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Desde que vocï¿½ seja um Noviï¿½o, pense cuidadosamente sobre qual Classe vocï¿½ quer ser.";
 	close;
 
 L_Prst:
-	if(sex == 1) show "Que Deus te abençoe, Irmão Sacerdote.";
-	if(sex == 0) show "Que Deus te abençoe, Irmã Sacerdotisa.";
-	show "Eu desejo a todos o melhor. Fortaleça a sua Fé e lembre-se que Deus ama a todos, e deve ser assim.";
+	if(sex == 1) mes "Que Deus te abenï¿½oe, Irmï¿½o Sacerdote.";
+	if(sex == 0) mes "Que Deus te abenï¿½oe, Irmï¿½ Sacerdotisa.";
+	mes "Eu desejo a todos o melhor. Fortaleï¿½a a sua Fï¿½ e lembre-se que Deus ama a todos, e deve ser assim.";
 	close;
 
 L_Aco:
@@ -1156,241 +1156,241 @@ L_Aco:
 	if(PRIEST_Q == 2) goto L_Test2;
 	if(PRIEST_Q == 3) goto L_Start;
 	if(PRIEST_Q == 4) goto L_Done;
-	if(sex == 1) show "Que Deus te abençoe, Irmão.";
-	if(sex == 0) show "Que Deus te abençoe, Irmã.";
-	show "Por que você está aqui?";
+	if(sex == 1) mes "Que Deus te abenï¿½oe, Irmï¿½o.";
+	if(sex == 0) mes "Que Deus te abenï¿½oe, Irmï¿½.";
+	mes "Por que vocï¿½ estï¿½ aqui?";
 	next;
 	menu "Eu quero ser um Sacerdote.",-, "Eu estava apenas olhando.",M_End1;
 
-		show "[Irmã Cecile]";
-		show "Oh, então você quer ser um Sacerdote?";
-		show "Um monte de Noviços querem ser Sacerdotes.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Oh, entï¿½o vocï¿½ quer ser um Sacerdote?";
+		mes "Um monte de Noviï¿½os querem ser Sacerdotes.";
 		next;
-		show "[Irmã Cecile]";
-		show "Meu nome é Irmã Cecile, Eu sou responsável por ajudar os Noviços a serem Sacerdotes.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Meu nome ï¿½ Irmï¿½ Cecile, Eu sou responsï¿½vel por ajudar os Noviï¿½os a serem Sacerdotes.";
 		next;
-		show "[Irmã Cecile]";
-		show "Porque eu nasci e moro aqui, tenho visto muitas pessoas transformando-se em Sacerdotes por todos esses anos.";
-		show "Por isso eu gosto de ajudar as pessoas que vem aui para serem Sacerdotes.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Porque eu nasci e moro aqui, tenho visto muitas pessoas transformando-se em Sacerdotes por todos esses anos.";
+		mes "Por isso eu gosto de ajudar as pessoas que vem aui para serem Sacerdotes.";
 		next;
-		show "[Irmã Cecile]";
-		show "Para se tornar um Sacerdote, você terá que completar 3 testes. Se você quiser mudar sua Classe agora, você deve falar com o Padre Thomas,";
+		mes "[Irmï¿½ Cecile]";
+		mes "Para se tornar um Sacerdote, vocï¿½ terï¿½ que completar 3 testes. Se vocï¿½ quiser mudar sua Classe agora, vocï¿½ deve falar com o Padre Thomas,";
 		next;
-		show "[Irmã Cecile]";
-		show "Se você encontrar algum problema durante os testes, venha falar comigo e talvez eu possa te ajudar.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Se vocï¿½ encontrar algum problema durante os testes, venha falar comigo e talvez eu possa te ajudar.";
 		close;
 	M_End1:
-		show "[Irmã Cecile]";
-		show "Por favor relaxe e descanse. A Igreja deve ser sua casa.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Por favor relaxe e descanse. A Igreja deve ser sua casa.";
 		close;
 
 L_Start:
 	if(PRIEST_Q2 == 1) goto L_ReTest;
-	show "Bom trabalho, você completou o segundo teste com sucesso...!";
-	show "Você agora está bem perto de se tornar um Sacerdote.";
+	mes "Bom trabalho, vocï¿½ completou o segundo teste com sucesso...!";
+	mes "Vocï¿½ agora estï¿½ bem perto de se tornar um Sacerdote.";
 	next;
-	show "[Irmã Cecile]";
-	if(sex==1) show "Se você quiser ser um Sacerdote, a última etapa será responder as minhas perguntas honestamente.";
-	if(sex==0) show "Se você quiser ser uma Sacerdotisa, a última etapa será responder as minhas perguntas honestamente.";
-	show "Por favor, seja sincero e responda as minhas perguntas.";
+	mes "[Irmï¿½ Cecile]";
+	if(sex==1) mes "Se vocï¿½ quiser ser um Sacerdote, a ï¿½ltima etapa serï¿½ responder as minhas perguntas honestamente.";
+	if(sex==0) mes "Se vocï¿½ quiser ser uma Sacerdotisa, a ï¿½ltima etapa serï¿½ responder as minhas perguntas honestamente.";
+	mes "Por favor, seja sincero e responda as minhas perguntas.";
 	next;
-	show "[Irmã Cecile]";
-	show "Certo, deixe-me fazer algumas perguntas.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Certo, deixe-me fazer algumas perguntas.";
 	set PRIEST_Q2, 1;
 	next;
 L_Test3:
-	show "[Irmã Cecile]";
-	show "A parir de hoje, você deseja servir a Deus por toda a eternidade?";
+	mes "[Irmï¿½ Cecile]";
+	mes "A parir de hoje, vocï¿½ deseja servir a Deus por toda a eternidade?";
 	next;
-	menu "Sim.",M_2a, "Não.",-;
+	menu "Sim.",M_2a, "Nï¿½o.",-;
 
-		show "[Irmã Cecile]";
-		show "Porque.. Porque você disse isso?...";
-		show "Não acho que você seja a pessoa apropriada para ser um Sacerdote...";
+		mes "[Irmï¿½ Cecile]";
+		mes "Porque.. Porque vocï¿½ disse isso?...";
+		mes "Nï¿½o acho que vocï¿½ seja a pessoa apropriada para ser um Sacerdote...";
 		next;
-		show "[Irmã Cecile]";
-		show "Por favor, volte quando você estiver pronto para ser um Sacerdote.";
-		show "Você não pode ser um Sacerdote no momento.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Por favor, volte quando vocï¿½ estiver pronto para ser um Sacerdote.";
+		mes "Vocï¿½ nï¿½o pode ser um Sacerdote no momento.";
 		close;
 
 	M_2a:
 
-	show "[Irmã Cecile]";
-	show "Você usará os poderes de Deus para benefício próprio?";
+	mes "[Irmï¿½ Cecile]";
+	mes "Vocï¿½ usarï¿½ os poderes de Deus para benefï¿½cio prï¿½prio?";
 	next;
-	menu "Sim",-, "Não.",M_2b;
+	menu "Sim",-, "Nï¿½o.",M_2b;
 
-		show "[Irmã Cecile]";
-		show "Não, isso não funciona, se você usar os poderes de Deus da maneira que achar melhor, estará agindo como um ladrão.";
-		show "Como você pode ser um bom Sacerdote pensando dessa maneira?";
+		mes "[Irmï¿½ Cecile]";
+		mes "Nï¿½o, isso nï¿½o funciona, se vocï¿½ usar os poderes de Deus da maneira que achar melhor, estarï¿½ agindo como um ladrï¿½o.";
+		mes "Como vocï¿½ pode ser um bom Sacerdote pensando dessa maneira?";
 		next;
-		show "[Irmã Cecile]";
-		show "Por favor, volte quando recuperar o juízo.";
-		show "Esses pensamentos que corrompem as pessoas.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Por favor, volte quando recuperar o juï¿½zo.";
+		mes "Esses pensamentos que corrompem as pessoas.";
 		close;
 
 	M_2b:
 
 
-	show "[Irmã Cecile]";
-	show "Você ajudará as outras pessoas que estiverem lutando?";
+	mes "[Irmï¿½ Cecile]";
+	mes "Vocï¿½ ajudarï¿½ as outras pessoas que estiverem lutando?";
 	next;
-	menu "Sim.",M_2c, "Não.",-;
+	menu "Sim.",M_2c, "Nï¿½o.",-;
 
-		show "[Irmã Cecile]";
-		show "Isso é errado, quando alguem precisa de ajuda, nós devemos fazer o nosso melhor para ajuda-las.";
-		show "Não importa quem seja, nossa função é ajudar qualquer um.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Isso ï¿½ errado, quando alguem precisa de ajuda, nï¿½s devemos fazer o nosso melhor para ajuda-las.";
+		mes "Nï¿½o importa quem seja, nossa funï¿½ï¿½o ï¿½ ajudar qualquer um.";
 		next;
-		show "[Irmã Cecile]";
-		show "Ande um pouco.";
-		show "e talvez você aprenda alguma coisa.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Ande um pouco.";
+		mes "e talvez vocï¿½ aprenda alguma coisa.";
 		close;
 	M_2c:
 
-	show "[Irmã Cecile]";
-	show "Você se sacrificará pelas outras pessoas?";
+	mes "[Irmï¿½ Cecile]";
+	mes "Vocï¿½ se sacrificarï¿½ pelas outras pessoas?";
 	next;
-	menu "Sim.",M_2d, "Não.",-;
+	menu "Sim.",M_2d, "Nï¿½o.",-;
 
-		show "[Irmã Cecile]";
-		show "Não, isso não é o que Deus pensa.";
-		show "Se nós podemos nos sacrificar para poder ajudar o mundo, então nós devemos fazer isso.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Nï¿½o, isso nï¿½o ï¿½ o que Deus pensa.";
+		mes "Se nï¿½s podemos nos sacrificar para poder ajudar o mundo, entï¿½o nï¿½s devemos fazer isso.";
 		next;
-		show "[Irmã Cecile]";
-		show "Ande um pouco e pense a respeito.";
-		show "Sacrifício é fácil de se falar, mas difícil de se fazer.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Ande um pouco e pense a respeito.";
+		mes "Sacrifï¿½cio ï¿½ fï¿½cil de se falar, mas difï¿½cil de se fazer.";
 		close;
 	M_2d:
 
-	show "[Irmã Cecile]";
-	show "Você tratará mal com as pessoas?";
+	mes "[Irmï¿½ Cecile]";
+	mes "Vocï¿½ tratarï¿½ mal com as pessoas?";
 	next;
-	menu "Sim.",-, "Não.",M_2e;
+	menu "Sim.",-, "Nï¿½o.",M_2e;
 
-		show "[Irmã Cecile]";
-		show "Isso não está certo, Sacerdotes foram feitos para ajudar as pessoas.";
-		show "Se você tratar mal as pessoas, você não merece ser um Sacerdote.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Isso nï¿½o estï¿½ certo, Sacerdotes foram feitos para ajudar as pessoas.";
+		mes "Se vocï¿½ tratar mal as pessoas, vocï¿½ nï¿½o merece ser um Sacerdote.";
 		next;
-		show "[Irmã Cecile]";
-		show "mesmo sendo o melhor servo de Deus.";
-		show "Você não tem o direito de maltratar as pessoas.";
+		mes "[Irmï¿½ Cecile]";
+		mes "mesmo sendo o melhor servo de Deus.";
+		mes "Vocï¿½ nï¿½o tem o direito de maltratar as pessoas.";
 		close;
 
 	M_2e:
 
-	show "[Irmã Cecile]";
-	show "Você levará algum tipo de demônio para ajudar as pessoas nas batalhas?";
+	mes "[Irmï¿½ Cecile]";
+	mes "Vocï¿½ levarï¿½ algum tipo de demï¿½nio para ajudar as pessoas nas batalhas?";
 	next;
-	menu "Sim.",-, "Não.",M_2f;
+	menu "Sim.",-, "Nï¿½o.",M_2f;
 
-		show "[Irmã Cecile]";
-		show "Você não pode fazer isso.";
-		show "Não importa se o demônio for bom ou ruim, Sacerdotes nunca devem falar com os demônios.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Vocï¿½ nï¿½o pode fazer isso.";
+		mes "Nï¿½o importa se o demï¿½nio for bom ou ruim, Sacerdotes nunca devem falar com os demï¿½nios.";
 		next;
-		show "[Irmã Cecile]";
-		show "Mesmo achando estar fazendo um boa escolha, mas na verdade é uma péssima escolha.";
-		show "Por favor, pense a respeito.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Mesmo achando estar fazendo um boa escolha, mas na verdade ï¿½ uma pï¿½ssima escolha.";
+		mes "Por favor, pense a respeito.";
 		close;
 
 	M_2f:
 
-	show "[Irmã Cecile]";
-	show "Se Deus quiser que você viva ou morra, você o escutará?";
+	mes "[Irmï¿½ Cecile]";
+	mes "Se Deus quiser que vocï¿½ viva ou morra, vocï¿½ o escutarï¿½?";
 	next;
-	menu "Sim.",M_2g, "Não.",-;
+	menu "Sim.",M_2g, "Nï¿½o.",-;
 
-		show "[Irmã Cecile]";
-		show "Se você gosta disso, você não será um Sacerdote.";
-		show "Se Deus quiser q você morra, você terá que escuta-lo.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Se vocï¿½ gosta disso, vocï¿½ nï¿½o serï¿½ um Sacerdote.";
+		mes "Se Deus quiser q vocï¿½ morra, vocï¿½ terï¿½ que escuta-lo.";
 		next;
-		show "[Irmã Cecile]";
-		show "E os Sacerdotes tem a habilidade de Ressucitar as pessoas.";
-		show "Por favor, saia e pense o que a morte é para você.";
+		mes "[Irmï¿½ Cecile]";
+		mes "E os Sacerdotes tem a habilidade de Ressucitar as pessoas.";
+		mes "Por favor, saia e pense o que a morte ï¿½ para vocï¿½.";
 		close;
 	M_2g:
 
-	show "[Irmã Cecile]";
-	show "Estou contente com o que você disse.";
-	show "Por favor, me prometa que você nunca vai se esquecer do que você disse hoje.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Estou contente com o que vocï¿½ disse.";
+	mes "Por favor, me prometa que vocï¿½ nunca vai se esquecer do que vocï¿½ disse hoje.";
 	next;
-	menu "Eu prometo.",-, "Não.",M_2No;
+	menu "Eu prometo.",-, "Nï¿½o.",M_2No;
 
-		show "[Irmã Cecile]";
-		show "Agora, você passou em todos os testes.";
-		show "Por favor vá conversar com o Padre Thomas para ser um Sacerdote.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Agora, vocï¿½ passou em todos os testes.";
+		mes "Por favor vï¿½ conversar com o Padre Thomas para ser um Sacerdote.";
 		next;
-		show "[Irmã Cecile]";
-		show "Por favor lembre-se de tudo que você disse hoje.";
-		show "Que Deus te abençoe...";
+		mes "[Irmï¿½ Cecile]";
+		mes "Por favor lembre-se de tudo que vocï¿½ disse hoje.";
+		mes "Que Deus te abenï¿½oe...";
 		set PRIEST_Q, 4;
 		set PRIEST_Q2, 0;
 		close;
 
 	M_2No:
-		show "[Irmã Cecile]";
-		show "..............";
+		mes "[Irmï¿½ Cecile]";
+		mes "..............";
 		next;
-		show "[Irmã Cecile]";
-		show "Também não é assim, você ainda deseja ser um Sacerdote ou não.";
-		show "Você não pode ser um Sacerdote no momento.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Tambï¿½m nï¿½o ï¿½ assim, vocï¿½ ainda deseja ser um Sacerdote ou nï¿½o.";
+		mes "Vocï¿½ nï¿½o pode ser um Sacerdote no momento.";
 		next;
-		show "[Irmã Cecile]";
-		show "Acho que você deveria voltar para o teste de disciplina...";
-		show "Quando estiver pronto, volte.";
+		mes "[Irmï¿½ Cecile]";
+		mes "Acho que vocï¿½ deveria voltar para o teste de disciplina...";
+		mes "Quando estiver pronto, volte.";
 		next;
-		show "[Irmã Cecile]";
-		show "Que Deus te abençoe...";
+		mes "[Irmï¿½ Cecile]";
+		mes "Que Deus te abenï¿½oe...";
 		close;
 
 L_ReTest:
-	show ".............";
+	mes ".............";
 	next;
-	show "[Irmã Cecile]";
-	show "...Oh você voltou.";
-	show "Espero que você possa ser honesto dessa vez.";
+	mes "[Irmï¿½ Cecile]";
+	mes "...Oh vocï¿½ voltou.";
+	mes "Espero que vocï¿½ possa ser honesto dessa vez.";
 	next;
-	show "[Irmã Cecile]";
-	show "Espero poder sentir sua sinceridade...";
-	show "Por favor, responda honestamente.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Espero poder sentir sua sinceridade...";
+	mes "Por favor, responda honestamente.";
 	next;
-	show "[Irmã Cecile]";
-	show "Certo, vamos começar.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Certo, vamos comeï¿½ar.";
 	next;
 	goto L_Test3;
 
 L_Test1:
-	show "Oh, então você começou o teste de auto disciplina, bom trabalho.";
+	mes "Oh, entï¿½o vocï¿½ comeï¿½ou o teste de auto disciplina, bom trabalho.";
 	close;
 
 L_Test2:
 	if(PRIEST_Q2 == 1) goto L_Test2a;
-	show "Você ainda não começou o segundo teste?.";
-	show "Bem, eu não posso te dar qualquer tipo de detalhe a respeito desse teste.";
+	mes "Vocï¿½ ainda nï¿½o comeï¿½ou o segundo teste?.";
+	mes "Bem, eu nï¿½o posso te dar qualquer tipo de detalhe a respeito desse teste.";
 	next;
-	show "[Irmã Cecile]";
-	show "Só posso dizer para você estar bem preparado e não se seduzir com nada...";
-	show "Você precisa acreditar em você mesmo para completar esse teste.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Sï¿½ posso dizer para vocï¿½ estar bem preparado e nï¿½o se seduzir com nada...";
+	mes "Vocï¿½ precisa acreditar em vocï¿½ mesmo para completar esse teste.";
 	next;
-	show "[Irmã Cecile]";
-	show "Se quiser detalhes mais especificos vá falar com o Sacerdote no campo de treinamento.";
-	show "Padre Thomas é uma pessoa bem gentil, ele irá te ajudar.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Se quiser detalhes mais especificos vï¿½ falar com o Sacerdote no campo de treinamento.";
+	mes "Padre Thomas ï¿½ uma pessoa bem gentil, ele irï¿½ te ajudar.";
 	close;
 
 L_Test2a:
-	show "O treinamento é difícil, mas não desista.";
-	show "Você precisa enfrentar qualquer desafio para se tornar um Sacerdote.";
+	mes "O treinamento ï¿½ difï¿½cil, mas nï¿½o desista.";
+	mes "Vocï¿½ precisa enfrentar qualquer desafio para se tornar um Sacerdote.";
 	next;
-	show "[Irmã Cecile]";
-	show "Se você conhece algum Sacerdote experiente, você pode perguntar se ele pode te ajudar no seu treinamento.";
-	show "Eles será capazes de ajuda-lo a passar na primeira parte do segundo teste.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Se vocï¿½ conhece algum Sacerdote experiente, vocï¿½ pode perguntar se ele pode te ajudar no seu treinamento.";
+	mes "Eles serï¿½ capazes de ajuda-lo a passar na primeira parte do segundo teste.";
 	next;
-	show "[Irmã Cecile]";
-	show "Que Deus te abençoe...";
-	show "Quando completar o segundo teste, volte para cá.";
+	mes "[Irmï¿½ Cecile]";
+	mes "Que Deus te abenï¿½oe...";
+	mes "Quando completar o segundo teste, volte para cï¿½.";
 	close;
 
 L_Done:
-	show "Parabéns por terminar os testes. Por favor, vá até o Padre Thomas para poder ser um Sacerdote.";
+	mes "Parabï¿½ns por terminar os testes. Por favor, vï¿½ atï¿½ o Padre Thomas para poder ser um Sacerdote.";
 	close;
 }
 

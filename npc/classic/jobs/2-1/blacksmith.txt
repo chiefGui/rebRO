@@ -8,30 +8,30 @@ function	script	Bla_check_	{
 	if (callfunc("Is_Magic_Class")) goto L_Wiz;
 	if (callfunc("Is_Bow_Class")) goto L_Arc;
 	if (BaseJob == 10) goto L_Black;
-	show "Só "+callfunc("otclassname",5,"P","M")+" podem se tornar "+callfunc("otclassname",10,"P","M")+".";
+	mes "Sï¿½ "+callfunc("otclassname",5,"P","M")+" podem se tornar "+callfunc("otclassname",10,"P","M")+".";
 	close;
 
 L_Nov:
-	if(sex==0) show "...Olá senhorita! Se você deseja se tornar uma "+callfunc("otclassname",10,"S","F")+", deve ser uma "+callfunc("otclassname",5,"S","F")+" primeiro";
-	if(sex==1) show "Hmmm, vejo no seu olhar a vontade de ser um "+callfunc("otclassname",10,"S","M")+"! Desculpe, mas só "+callfunc("otclassname",5,"P","M")+" podem se tornar "+callfunc("otclassname",10,"P","M")+"!.";
+	if(sex==0) mes "...Olï¿½ senhorita! Se vocï¿½ deseja se tornar uma "+callfunc("otclassname",10,"S","F")+", deve ser uma "+callfunc("otclassname",5,"S","F")+" primeiro";
+	if(sex==1) mes "Hmmm, vejo no seu olhar a vontade de ser um "+callfunc("otclassname",10,"S","M")+"! Desculpe, mas sï¿½ "+callfunc("otclassname",5,"P","M")+" podem se tornar "+callfunc("otclassname",10,"P","M")+"!.";
 	close;
 L_Sword:	
-	show "Eae! Veio forjar uma espada? Desculpe, mas estou muito ocupado, peça a outra pessoa.";
+	mes "Eae! Veio forjar uma espada? Desculpe, mas estou muito ocupado, peï¿½a a outra pessoa.";
 	close;
 L_Arc:
-	show "Hmmm, desculpa, mas nós não estamos empregando qualquer um para "+callfunc("otclassname",5,"S","M")+".";
+	mes "Hmmm, desculpa, mas nï¿½s nï¿½o estamos empregando qualquer um para "+callfunc("otclassname",5,"S","M")+".";
 	close;	
 L_Wiz:
-	show "Interessado no teste? Nossa guilda não pode passar testes para "+callfunc("otclassname",2,"P","M")+" e outros.";
+	mes "Interessado no teste? Nossa guilda nï¿½o pode passar testes para "+callfunc("otclassname",2,"P","M")+" e outros.";
 	close;
 L_Aco:
-	show "Oh! Um religioso, Abençoe meu trabalho com os novatos por favor..! ";
+	mes "Oh! Um religioso, Abenï¿½oe meu trabalho com os novatos por favor..! ";
 	close;
 L_Thief:	
-	show "Cara, nós não forjamos facas, estou ocupado, até...";
+	mes "Cara, nï¿½s nï¿½o forjamos facas, estou ocupado, atï¿½...";
 	close;
 L_Black:
-	show "Oi, eu sentia o meu martelo enferrujando com todo esse trabalho de escritório, mas tudo bem...";
+	mes "Oi, eu sentia o meu martelo enferrujando com todo esse trabalho de escritï¿½rio, mas tudo bem...";
 	close;
 
 }
@@ -39,145 +39,145 @@ L_Black:
 geffen_in,110,169,4	script	Ferreiro Altiregen	731,{
 	//callfunc "F_BlockHigh",29,"Merchant High",34,"White Smith","Ferreiro Altiregen";
 	if (BaseJob == 5) goto L_Merc;
-	show "[Ferreiro Altiregen]";
-	show "Bem vindo! Nós somos os mestres do metal, "+callfunc("otclassname",10,"P","M")+"!";
-	show "Nossas habilidades em criar armas, de um jeito, é como uma forma de arte!.";
+	mes "[Ferreiro Altiregen]";
+	mes "Bem vindo! Nï¿½s somos os mestres do metal, "+callfunc("otclassname",10,"P","M")+"!";
+	mes "Nossas habilidades em criar armas, de um jeito, ï¿½ como uma forma de arte!.";
 	next;
-	show "[Ferreiro Altiregen]";
-	show "Essas armas, heh, podem ser vendindas por um bom preço.";
+	mes "[Ferreiro Altiregen]";
+	mes "Essas armas, heh, podem ser vendindas por um bom preï¿½o.";
 	next;
-	show "[Ferreiro Altiregen]";
+	mes "[Ferreiro Altiregen]";
 	callfunc "Bla_check_";
 
 L_Merc:
-	show "[Ferreiro Altiregen]";
+	mes "[Ferreiro Altiregen]";
 	if (BSMITH_Q == 1) goto L_Test1;
 	if (BSMITH_Q == 2 || BSMITH_Q == 3) goto L_Test2and3;
 	if (BSMITH_Q == 4) goto L_Test4;
 	if (BSMITH_Q == 5) goto L_Change;
-	show "Olá companheiro "+callfunc("otclassname",5,"S","M")+"! Você está aqui para fazer o teste?";
-	show "Escreve seu nome e seu Job Level em um pedaço de papel.";
+	mes "Olï¿½ companheiro "+callfunc("otclassname",5,"S","M")+"! Vocï¿½ estï¿½ aqui para fazer o teste?";
+	mes "Escreve seu nome e seu Job Level em um pedaï¿½o de papel.";
 	next;
-	menu "Fazer o teste",M_App,"O que é requerido?",M_Req,"Agora não...",M_NtNow;
+	menu "Fazer o teste",M_App,"O que ï¿½ requerido?",M_Req,"Agora nï¿½o...",M_NtNow;
 
 	M_App:
 		if(JobLevel < 40) goto sL_Lowlvl;
 		if(JobLevel == 50) goto sL_HighLvl;
-		show "[Ferreiro Altiregen]";
-		show "Hmmm...";
-		show "Seu Job Level é satisfatório.";
+		mes "[Ferreiro Altiregen]";
+		mes "Hmmm...";
+		mes "Seu Job Level ï¿½ satisfatï¿½rio.";
 		next;
-		show "[Ferreiro Altiregen]";
-		show "Bom, mas nós não aceitamos qualquer um.";
-		show "Nós precisaremos testar suas habilidades de "+callfunc("otclassname",5,"S","M")+" e sua determinação.";
+		mes "[Ferreiro Altiregen]";
+		mes "Bom, mas nï¿½s nï¿½o aceitamos qualquer um.";
+		mes "Nï¿½s precisaremos testar suas habilidades de "+callfunc("otclassname",5,"S","M")+" e sua determinaï¿½ï¿½o.";
 		next;
-		show "[Ferreiro Altiregen]";
-		show "Rustle Rustle";
+		mes "[Ferreiro Altiregen]";
+		mes "Rustle Rustle";
 		next;
-		show "[Ferreiro Altiregen]";
-		show "Hmmm, O homem da guilda ^5533FFGeshupenschte em Alberta^000000, diz ele, que está precisando de ajuda.";
-		show "Vá ajudá-lo, esse é o primeiro teste.";
+		mes "[Ferreiro Altiregen]";
+		mes "Hmmm, O homem da guilda ^5533FFGeshupenschte em Alberta^000000, diz ele, que estï¿½ precisando de ajuda.";
+		mes "Vï¿½ ajudï¿½-lo, esse ï¿½ o primeiro teste.";
 		next;
-		show "[Ferreiro Altiregen]";
-		show "Tenha uma boa viagem!";
+		mes "[Ferreiro Altiregen]";
+		mes "Tenha uma boa viagem!";
 		set BSMITH_Q,1;
 		set JBLVL, 40;
 		close;
 
 		sL_Lowlvl:
-			show "[Ferreiro Altiregen]";
-			show "Você precisa de mais treino como um "+callfunc("otclassname",5,"S","M")+".  Nós só aceitamos Job Level 40+";
-			show "Tão quanto que quero aceitar você, nós temos regras.  Desculpe, mas volte depois.";
+			mes "[Ferreiro Altiregen]";
+			mes "Vocï¿½ precisa de mais treino como um "+callfunc("otclassname",5,"S","M")+".  Nï¿½s sï¿½ aceitamos Job Level 40+";
+			mes "Tï¿½o quanto que quero aceitar vocï¿½, nï¿½s temos regras.  Desculpe, mas volte depois.";
 			close;
 		sL_HighLvl:
-			show "[Ferreiro Altiregen]";
-			show "Uau! Estou impressionado! Pelo jeito você treinou muito lá.  Você sabe o que eles dizem, com muito trabalho, se consegue grandes recompensas.";
+			mes "[Ferreiro Altiregen]";
+			mes "Uau! Estou impressionado! Pelo jeito vocï¿½ treinou muito lï¿½.  Vocï¿½ sabe o que eles dizem, com muito trabalho, se consegue grandes recompensas.";
 			emotion 1;
 			next;
-			show "[Ferreiro Altiregen]";
-			show "Bom, Primeiras coisas..... O homem da guilda ^5533FFGeshupenschte em Alberta^000000, diz ele que precisa um pouco de ajuda.";
-			show "Vá ajudá-lo, esse é o primeiro teste.";
+			mes "[Ferreiro Altiregen]";
+			mes "Bom, Primeiras coisas..... O homem da guilda ^5533FFGeshupenschte em Alberta^000000, diz ele que precisa um pouco de ajuda.";
+			mes "Vï¿½ ajudï¿½-lo, esse ï¿½ o primeiro teste.";
 			next;
-			show "[Ferreiro Altiregen]";
-			show "Tenha uma boa viagem!";
+			mes "[Ferreiro Altiregen]";
+			mes "Tenha uma boa viagem!";
 			set BSMITH_Q,1;
 			set JBLVL, 50;
 			close;
 	M_Req:
-		show "[Ferreiro Altiregen]";
-		show "O que é requerido?";
-		show "Primeiramente, ter Nível de Classe no mínimo 40.";
-		show "E passar nos testes.";
-		show "É isso. O teste é um pouco complicado, mas dá para passar.";
-		show "O teste envolve em entregamento de items e sendo cuidadoso com items especiais de certas regiões e então é só depois o teste sobre o conhecimento dos "+callfunc("otclassname",10,"S","M")+"s.";
+		mes "[Ferreiro Altiregen]";
+		mes "O que ï¿½ requerido?";
+		mes "Primeiramente, ter Nï¿½vel de Classe no mï¿½nimo 40.";
+		mes "E passar nos testes.";
+		mes "ï¿½ isso. O teste ï¿½ um pouco complicado, mas dï¿½ para passar.";
+		mes "O teste envolve em entregamento de items e sendo cuidadoso com items especiais de certas regiï¿½es e entï¿½o ï¿½ sï¿½ depois o teste sobre o conhecimento dos "+callfunc("otclassname",10,"S","M")+"s.";
 		close;
 	M_NtNow:
-		show "[Ferreiro Altiregen]";
-		show "Ok, te vejo depois.";
+		mes "[Ferreiro Altiregen]";
+		mes "Ok, te vejo depois.";
 		close;
 
 
 L_Test1:
-	show "Você não saiu ainda? Eu te fale para ir ver Geshupenschte em Alberta. Te vejo depois então.";
+	mes "Vocï¿½ nï¿½o saiu ainda? Eu te fale para ir ver Geshupenschte em Alberta. Te vejo depois entï¿½o.";
 	emotion 1;
 	close;
 
 L_Test2and3:
-	show "Como era o trabalho que Geshupenschte lhe deu? Ele pode ser duro algumas vezes.";
+	mes "Como era o trabalho que Geshupenschte lhe deu? Ele pode ser duro algumas vezes.";
 	close;
 L_Test4:
 	if (BSMITH_Q2 == 1) goto L_NotDone;
-	show "Parabéns! Você passou nos testes de Geshupenschte!";
+	mes "Parabï¿½ns! Vocï¿½ passou nos testes de Geshupenschte!";
 	next;
-	show "[Ferreiro Altiregen]";
-	show "Hmm? Heh, tem mais 1 teste ainda você sabe.";
-	show "O homem da guilda do último teste está la em Morroc, Vá para lá agora.";
+	mes "[Ferreiro Altiregen]";
+	mes "Hmm? Heh, tem mais 1 teste ainda vocï¿½ sabe.";
+	mes "O homem da guilda do ï¿½ltimo teste estï¿½ la em Morroc, Vï¿½ para lï¿½ agora.";
 	next;
-	menu "Crueldade, mas eu irei.",-,"......Eu não quero viajar T_T",M_dontgo;
+	menu "Crueldade, mas eu irei.",-,"......Eu nï¿½o quero viajar T_T",M_dontgo;
 
 		set BSMITH_Q2, 1;
-		show "[Ferreiro Altiregen]";
-		show "Eu sei que é longe, mas não está em meu poder.  De qualquer jeito, você conhece a região bem, certo?";
-		show "Eu espero que você conheça, porque a guilda dos "+callfunc("otclassname",10,"S","M")+"s não gosta de ser rebaixada por completos idiotas!";
+		mes "[Ferreiro Altiregen]";
+		mes "Eu sei que ï¿½ longe, mas nï¿½o estï¿½ em meu poder.  De qualquer jeito, vocï¿½ conhece a regiï¿½o bem, certo?";
+		mes "Eu espero que vocï¿½ conheï¿½a, porque a guilda dos "+callfunc("otclassname",10,"S","M")+"s nï¿½o gosta de ser rebaixada por completos idiotas!";
 		next;
-		show "[Ferreiro Altiregen]";
-		show "Se uma coisa dessas acontecesse, eu posso ver a guilda caindo agora, T_T";
-		show "Bom..... Vá para Morroc para procurá-la!";
+		mes "[Ferreiro Altiregen]";
+		mes "Se uma coisa dessas acontecesse, eu posso ver a guilda caindo agora, T_T";
+		mes "Bom..... Vï¿½ para Morroc para procurï¿½-la!";
 		close;
 	M_dontgo:
-		show "[Ferreiro Altiregen]";
-		show "O que!? Você está desistindo!?!.........";
+		mes "[Ferreiro Altiregen]";
+		mes "O que!? Vocï¿½ estï¿½ desistindo!?!.........";
 		emotion 1;
 		next;
-		show "[Ferreiro Altiregen]";
-		show "COMO VOCÊ PODE INSULTAR NOSSA GUILDA DESSE JEITO!";
-		show "Saia agora! NEM SONHE em se tornar um "+callfunc("otclassname",10,"S","M")+"!";
+		mes "[Ferreiro Altiregen]";
+		mes "COMO VOCï¿½ PODE INSULTAR NOSSA GUILDA DESSE JEITO!";
+		mes "Saia agora! NEM SONHE em se tornar um "+callfunc("otclassname",10,"S","M")+"!";
 		emotion 23;
 		next;
-		show "[Ferreiro Altiregen]";
-		show "Você não pode aguentar NADA não é!? Como você planeja em se tornar um "+callfunc("otclassname",10,"S","M")+" se você nem pode completar esses simples testes!?";
+		mes "[Ferreiro Altiregen]";
+		mes "Vocï¿½ nï¿½o pode aguentar NADA nï¿½o ï¿½!? Como vocï¿½ planeja em se tornar um "+callfunc("otclassname",10,"S","M")+" se vocï¿½ nem pode completar esses simples testes!?";
 		emotion 6;
 		close;
 
 	L_NotDone:
-		show "Hmmm? Você não disse que estava indo para Morroc?";
-		show "Desculpe, mas será passado o teste lá.";
+		mes "Hmmm? Vocï¿½ nï¿½o disse que estava indo para Morroc?";
+		mes "Desculpe, mas serï¿½ passado o teste lï¿½.";
 		close;
 
 L_Change:
 	if(countitem(1005) < 1) goto L_NoHam;
-	if(SkillPoint > 0) show "Você precisa usar todos os seus pontos de habilidade antes que eu possa fazer de você um "+callfunc("otclassname",10,"S","M")+".";
+	if(SkillPoint > 0) mes "Vocï¿½ precisa usar todos os seus pontos de habilidade antes que eu possa fazer de vocï¿½ um "+callfunc("otclassname",10,"S","M")+".";
 	if(SkillPoint > 0) close;
-	show "Nossa, eu posso ver o fogo em seus olhos! Você passou!!";
-	show "E eu lhe garantirei o poder para trabalhar com metais!";
+	mes "Nossa, eu posso ver o fogo em seus olhos! Vocï¿½ passou!!";
+	mes "E eu lhe garantirei o poder para trabalhar com metais!";
 	next;
 	delitem 1005,1;
 	callfunc "Job_Change",Job_Blacksmith;
-	show "[Ferreiro Altiregen]";
-	show "Não se esqueça! Nós somos artistas que colocamos beleza nos metais! Você que não esqueça disso!";
+	mes "[Ferreiro Altiregen]";
+	mes "Nï¿½o se esqueï¿½a! Nï¿½s somos artistas que colocamos beleza nos metais! Vocï¿½ que nï¿½o esqueï¿½a disso!";
 	next;
-	show "[Ferreiro Altiregen]";
-	show "Aqui está um presente! Parabéns por ter passado!";
+	mes "[Ferreiro Altiregen]";
+	mes "Aqui estï¿½ um presente! Parabï¿½ns por ter passado!";
 	if(JBLVL != 50) additem 999,5;
 	if(JBLVL == 50) additem 999,10;
 	callfunc "F_ClearJobVar";		// clears all job variables for the current player
@@ -185,23 +185,23 @@ L_Change:
 	close;
 
 	L_NoHam:
-		show "Você esqueceu alguma coisa? Você precisa me mostrar o ^5533FFMartelo de "+callfunc("otclassname",10,"S","M")+"^000000 para provar que você passou em todos os testes.";
+		mes "Vocï¿½ esqueceu alguma coisa? Vocï¿½ precisa me mostrar o ^5533FFMartelo de "+callfunc("otclassname",10,"S","M")+"^000000 para provar que vocï¿½ passou em todos os testes.";
 		next;
-		show "[Ferreiro Altiregen]";
-		show "Você TEM ele..... Não é???";
+		mes "[Ferreiro Altiregen]";
+		mes "Vocï¿½ TEM ele..... Nï¿½o ï¿½???";
 		next;
-		menu "Oh essa coisa... deixe-me só pegar do banco...",-, "Pra falar a verdade eu vendi ele por pots..... agora o que?",sM_What;
+		menu "Oh essa coisa... deixe-me sï¿½ pegar do banco...",-, "Pra falar a verdade eu vendi ele por pots..... agora o que?",sM_What;
 
-			show "[Ferreiro Altiregen]";
-			show "....... grrrrrrr.......";
+			mes "[Ferreiro Altiregen]";
+			mes "....... grrrrrrr.......";
 			emotion 7;
 			close;
 		sM_What:
-			show "[Ferreiro Altiregen]";
-			show ".......... Eu te falo o seguinte.............";
+			mes "[Ferreiro Altiregen]";
+			mes ".......... Eu te falo o seguinte.............";
 			next;
-			show "[Ferreiro Altiregen]";
-			show "VOCÊ COMEÇARÁ TUDO DENOVO!!!!";
+			mes "[Ferreiro Altiregen]";
+			mes "VOCï¿½ COMEï¿½ARï¿½ TUDO DENOVO!!!!";
 			set BSMITH_Q, 0;
 			set BSMITH_Q2, 0;
 			emotion 32;
@@ -213,55 +213,55 @@ L_Change:
 alberta_in,174,22,4	script	Geshupenschte	63,{
 
 	if(BaseJob==5) goto L_merchant;
-	show "[Geshupenschte]";
-	show "Olá senhor! Eu sou o "+callfunc("otclassname",10,"S","M")+". Geshupenschte! Prazer em te conhecer!";
+	mes "[Geshupenschte]";
+	mes "Olï¿½ senhor! Eu sou o "+callfunc("otclassname",10,"S","M")+". Geshupenschte! Prazer em te conhecer!";
 	next;
-	show "[Geshupenschte]";
-	show ""+callfunc("otclassname",10,"S","M")+" é uma ótima profissão!! Você não acha? Hahahahahahah!";
+	mes "[Geshupenschte]";
+	mes ""+callfunc("otclassname",10,"S","M")+" ï¿½ uma ï¿½tima profissï¿½o!! Vocï¿½ nï¿½o acha? Hahahahahahah!";
 	emotion 18;
 	close;
 
 L_merchant:
-	show "[Geshupenschte]";
+	mes "[Geshupenschte]";
 	if (BSMITH_Q == 1) goto L_Test1;
 	if (BSMITH_Q == 2) goto L_Test2;
 	if (BSMITH_Q == 3) goto L_Test3;
 	if (BSMITH_Q == 4) goto L_Done;
 	if (BSMITH_Q == 5) goto L_GoChange;
-	show "Hoho!! Um "+callfunc("otclassname",5,"S","M")+"! Excelente! Eu estava precisando de um pouco de ajuda!!";
+	mes "Hoho!! Um "+callfunc("otclassname",5,"S","M")+"! Excelente! Eu estava precisando de um pouco de ajuda!!";
 	next;
-	show "[Geshupenschte]";
-	show "É claro.... Eu não iria querer perturbar alguém que está ocupado.  Vá no seu jeito se precisar!....";
+	mes "[Geshupenschte]";
+	mes "ï¿½ claro.... Eu nï¿½o iria querer perturbar alguï¿½m que estï¿½ ocupado.  Vï¿½ no seu jeito se precisar!....";
 	next;
-	show "[Geshupenschte]";
-	show "~Dum dee dum dee dum~.....Eu sou o melhor.... Eu sou um "+callfunc("otclassname",10,"S","M")+"....(cantando)";
+	mes "[Geshupenschte]";
+	mes "~Dum dee dum dee dum~.....Eu sou o melhor.... Eu sou um "+callfunc("otclassname",10,"S","M")+"....(cantando)";
 	next;
-	show "[Geshupenschte]";
-	show "O que? Por que você ainda está aqui?";
+	mes "[Geshupenschte]";
+	mes "O que? Por que vocï¿½ ainda estï¿½ aqui?";
 	emotion 1;
 	close;
 
 // Test 1-----------------------------------------------------------------
 L_Test1:
 	if (BSMITH_Q2 == 1) goto L_ReTest1;
-	show "Você é o cara mandado pela guilda, certo?";
-	show "Nossa, o povo nos trás tantos items >_> Nós não temos pessoas suficientes para entregar todos.";
+	mes "Vocï¿½ ï¿½ o cara mandado pela guilda, certo?";
+	mes "Nossa, o povo nos trï¿½s tantos items >_> Nï¿½s nï¿½o temos pessoas suficientes para entregar todos.";
 	next;
-	show "[Geshupenschte]";
-	show "Bom, você É o cara mandado pela guilda, certo?";
-	show "Ah bem, eu espero >_>";
+	mes "[Geshupenschte]";
+	mes "Bom, vocï¿½ ï¿½ o cara mandado pela guilda, certo?";
+	mes "Ah bem, eu espero >_>";
 	next;
-	show "[Geshupenschte]";
-	show "Vê, essa criança a alguns dias atrás,";
-	show "Ele gastou TANTO do nosso dinheiro.";
-	show "Só porque eu mandei ele numa semi-complicada errante >_>";
-	show "Agora, deixe-me te fazer algumas perguntas!";
+	mes "[Geshupenschte]";
+	mes "Vï¿½, essa crianï¿½a a alguns dias atrï¿½s,";
+	mes "Ele gastou TANTO do nosso dinheiro.";
+	mes "Sï¿½ porque eu mandei ele numa semi-complicada errante >_>";
+	mes "Agora, deixe-me te fazer algumas perguntas!";
 	next;
 	menu "Ok",M_Rdy,"Espere, deixe me ir me preparar",-;
 
-		show "[Geshupenschte]";
-		show "Ok, retorne depois que você estiver pronto.";
-		show "Estarei esperando aqui.";
+		mes "[Geshupenschte]";
+		mes "Ok, retorne depois que vocï¿½ estiver pronto.";
+		mes "Estarei esperando aqui.";
 		close;
 	M_Rdy:
 		set @score, 0;
@@ -269,33 +269,33 @@ L_Test1:
 		if (@temp == 1) goto L_setq2;
 
 	L_setq1:
-		show "[Geshupenschte]";
-		show "1. Qual cidade e item local não combinam?";
+		mes "[Geshupenschte]";
+		mes "1. Qual cidade e item local nï¿½o combinam?";
 		next;
-		menu "Morroc - Traje de Ladrão",q1,"Alberta - Martelo de 2 Mãos",q1,"Comodo - Poção da Fúria Selvagem",q1,"Alberta - Maça Espada",-;
+		menu "Morroc - Traje de Ladrï¿½o",q1,"Alberta - Martelo de 2 Mï¿½os",q1,"Comodo - Poï¿½ï¿½o da Fï¿½ria Selvagem",q1,"Alberta - Maï¿½a Espada",-;
 
 			set @score,@score+10;
 		q1:
 
-		show "[Geshupenschte]";
-		show "2. O que a técnica Martelo-Extremo faz?";
+		mes "[Geshupenschte]";
+		mes "2. O que a tï¿½cnica Martelo-Extremo faz?";
 		next;
 		menu "Atordoa",-,"Cega",q2,"Envenena",q2,"Faz Dormir",q2;
 
 			set @score,@score+10;
 		q2:
 
-		show "[Geshupenschte]";
-		show "3. Em que o "+callfunc("otclassname",5,"S","M")+" não é bom?";
+		mes "[Geshupenschte]";
+		mes "3. Em que o "+callfunc("otclassname",5,"S","M")+" nï¿½o ï¿½ bom?";
 		next;
-		menu "Abrir mercados",q3,"Comprar items",q3,"Vender caro",q3,"Correr rápido",-;
+		menu "Abrir mercados",q3,"Comprar items",q3,"Vender caro",q3,"Correr rï¿½pido",-;
 
 			set @score,@score+10;
 
 		q3:
 
-		show "[Geshupenschte]";
-		show "4. Aonde você compra Gemas Azuis?";
+		mes "[Geshupenschte]";
+		mes "4. Aonde vocï¿½ compra Gemas Azuis?";
 		next;
 		menu "Alberta",q4,"Morroc",q4,"Geffen",-,"Prontera",q4;
 
@@ -303,8 +303,8 @@ L_Test1:
 
 		q4:
 
-		show "[Geshupenschte]";
-		show "5. Aonde é a Loja de Ferramentas de Geffen da cidade?";
+		mes "[Geshupenschte]";
+		mes "5. Aonde ï¿½ a Loja de Ferramentas de Geffen da cidade?";
 		next;
 		menu "8 o'clock",-,"11 o'clock",q5,"6 o'clock",q5,"5 o'clock",q5;
 
@@ -312,17 +312,17 @@ L_Test1:
 
 		q5:
 
-		show "[Geshupenschte]";
-		show "6. Que armas não podem ser usadas por "+callfunc("otclassname",5,"S","M")+"es?";
+		mes "[Geshupenschte]";
+		mes "6. Que armas nï¿½o podem ser usadas por "+callfunc("otclassname",5,"S","M")+"es?";
 		next;
-		menu "Stiletto",q6,"Demolidor",q6,"Mangual Pesado",q6,"Bíblia",-;
+		menu "Stiletto",q6,"Demolidor",q6,"Mangual Pesado",q6,"Bï¿½blia",-;
 
 			set @score,@score+10;
 
 		q6:
 
-		show "[Geshupenschte]";
-		show "7. Qual item tem a maior defesa?";
+		mes "[Geshupenschte]";
+		mes "7. Qual item tem a maior defesa?";
 		next;
 		menu "Roupa de Baixo",q7,"Casaco de Pele",-,"Armadura de Madeira",q7,"Manto de Seda",q7;
 
@@ -330,24 +330,24 @@ L_Test1:
 
 		q7:
 
-		show "[Geshupenschte]";
-		show "8. Quantas vezes você pode refinar uma arma de lvl 3 seguramente?";
+		mes "[Geshupenschte]";
+		mes "8. Quantas vezes vocï¿½ pode refinar uma arma de lvl 3 seguramente?";
 		next;
 		menu "+3 ",q8,"+4 ",q8,"+5 ",-,"+6 ",q8;
 
 			set @score,@score+10;
 		q8:
 
-		show "[Geshupenschte]";
-		show "9. O que você pode fazer com Troncos?";
+		mes "[Geshupenschte]";
+		mes "9. O que vocï¿½ pode fazer com Troncos?";
 		next;
-		menu "Chapéu Chinês",-,"Faiza de Fantasma",q9,"Chifres Majestosos",q9,"Chifre de Alce",q9;
+		menu "Chapï¿½u Chinï¿½s",-,"Faiza de Fantasma",q9,"Chifres Majestosos",q9,"Chifre de Alce",q9;
 
 			set @score,@score+10;
 		q9:
 
-		show "[Geshupenschte]";
-		show "10. O que é mais importante para os "+callfunc("otclassname",5,"S","M")+"es!?";
+		mes "[Geshupenschte]";
+		mes "10. O que ï¿½ mais importante para os "+callfunc("otclassname",5,"S","M")+"es!?";
 		next;
 		menu "Ajuda",-,"Honra",-,"Dinheiro",-,"Honestidade",-;
 
@@ -357,80 +357,80 @@ L_Test1:
 		goto L_result;
 
 	L_setq2:
-		show "[Geshupenschte]";
-		show "1. Qual cidade e item local não combinam?";
+		mes "[Geshupenschte]";
+		mes "1. Qual cidade e item local nï¿½o combinam?";
 		next;
-		menu "Aldebaran - Folha de Yggdrasil",q10,"Alberta - Marreta",q10,"Comodo - Poção da Fúria Selvagem",q10,"Aldebaran - Marreta",-;
+		menu "Aldebaran - Folha de Yggdrasil",q10,"Alberta - Marreta",q10,"Comodo - Poï¿½ï¿½o da Fï¿½ria Selvagem",q10,"Aldebaran - Marreta",-;
 
 			set @score,@score+10;
 		q10:
 
-		show "[Geshupenschte]";
-		show "2. Por quanto se vende um Jellopy?";
+		mes "[Geshupenschte]";
+		mes "2. Por quanto se vende um Jellopy?";
 		next;
 		menu "1z",q11,"2z",q11,"3z",-,"4z",q11;
 
 			set @score,@score+10;
 		q11:
 
-		show "[Geshupenschte]";
-		show "3. O que é necessário para fazer um mercado?";
+		mes "[Geshupenschte]";
+		mes "3. O que ï¿½ necessï¿½rio para fazer um mercado?";
 		next;
 		menu "Precisa ter um cart",-,"Item para vender",q12,"Ter uma arma equipada",q12,"Usar armadura",q12;
 
 			set @score,@score+10;
 		q12:
 
-		show "[Geshupenschte]";
-		show "4. Aonde fica a Guilda dos "+callfunc("otclassname",5,"S","M")+"es?";
+		mes "[Geshupenschte]";
+		mes "4. Aonde fica a Guilda dos "+callfunc("otclassname",5,"S","M")+"es?";
 		next;
 		menu "Alberta",-,"Morroc",q13,"Geffen",q13,"Prontera",q13;
 
 			set @score,@score+10;
 		q13:
 
-		show "[Geshupenschte]";
-		show "5. Aonde é a Loja de Armas de Morroc vindo do centro?";
+		mes "[Geshupenschte]";
+		mes "5. Aonde ï¿½ a Loja de Armas de Morroc vindo do centro?";
 		next;
 		menu "7 o'clock",q14,"11 o'clock",q14,"6 o'clock",q14,"5 o'clock",-;
 
 			set @score,@score+10;
 		q14:
 
-		show "[Geshupenschte]";
-		show "6. O que um "+callfunc("otclassname",5,"S","M")+" não pode usar?";
+		mes "[Geshupenschte]";
+		mes "6. O que um "+callfunc("otclassname",5,"S","M")+" nï¿½o pode usar?";
 		next;
-		menu "Main Gauche",q15,"Claymore",-,"Mangual Pesado",q15,"Martelo de 2 Mãos",q15;
+		menu "Main Gauche",q15,"Claymore",-,"Mangual Pesado",q15,"Martelo de 2 Mï¿½os",q15;
 
 			set @score,@score+10;
 		q15:
 
-		show "[Geshupenschte]";
-		show "7. Qual item tem a maior defesa?";
+		mes "[Geshupenschte]";
+		mes "7. Qual item tem a maior defesa?";
 		next;
 		menu "Roupa de Baixo",q16,"Casaco de Pele",-,"Armadura de Madeira",q16,"Manto de Seda",q16;
 
 			set @score,@score+10;
 		q16:
 
-		show "[Geshupenschte]";
-		show "8. Quantas vezes você pode refinar uma arma de lvl 4 seguramente?";
+		mes "[Geshupenschte]";
+		mes "8. Quantas vezes vocï¿½ pode refinar uma arma de lvl 4 seguramente?";
 		next;
 		menu "+3 ",q17,"+4",-,"+5",q17,"+6",q17;
 
 			set @score,@score+10;
 		q17:
 
-		show "[Geshupenschte]";
-		show "9. Qual monstro não dropa Minério de Ferro?";
+		mes "[Geshupenschte]";
+		mes "9. Qual monstro nï¿½o dropa Minï¿½rio de Ferro?";
 		next;
-		menu "Chonchon",q18,"Chonchon de Aço",q18,"Zerom",q18,"Anolian",-;
+		menu "Chonchon",q18,"Chonchon de Aï¿½o",q18,"Zerom",q18,"Anolian",-;
 
 			set @score,@score+10;
 		q18:
 
-		show "[Geshupenschte]";
-		show "10. O que é mais importante para os "+callfunc("otclassname",5,"S","M")+"es?!";
+		mes "[Geshupenschte]";
+		mes "10. O que ï¿½ mais importante para os "+callfunc("otclassname",5,"S","M")+"es?!";
 		next;
 		menu "Honestidade",-,"Ajuda",-,"Dinheiro",-,"Postura",-;
 
@@ -440,55 +440,55 @@ L_Test1:
 		goto L_result;
 
 L_result:
-	show "[Geshupenschte]";
-	show "Bom!";
+	mes "[Geshupenschte]";
+	mes "Bom!";
 	next;
-	show "[Geshupenschte]";
-	show "Vamos ver....sua pontuação é ^5533FF"+@score+".^000000";
+	mes "[Geshupenschte]";
+	mes "Vamos ver....sua pontuaï¿½ï¿½o ï¿½ ^5533FF"+@score+".^000000";
 	if (@score == 100) goto L_perfect;
-	show ".............";
+	mes ".............";
 	next;
-	show "[Geshupenschte]";
-	show "Desculpe amigo, Eu não quero lhe dar a Classe.";
-	show "Você precisa de um pouco mais de conhecimento. Vá estudar mais um pouco";
+	mes "[Geshupenschte]";
+	mes "Desculpe amigo, Eu nï¿½o quero lhe dar a Classe.";
+	mes "Vocï¿½ precisa de um pouco mais de conhecimento. Vï¿½ estudar mais um pouco";
 	set BSMITH_Q2, 1;
 	close;
 
 	L_perfect:
 		set BSMITH_Q,2;
 		set BSMITH_Q2, 0;
-		show "Perfeito!";
+		mes "Perfeito!";
 		next;
-		show "[Geshupenschte]";
-		show "Então você definitivamente pode fazer o errante!";
-		show "Você está preparado?";
+		mes "[Geshupenschte]";
+		mes "Entï¿½o vocï¿½ definitivamente pode fazer o errante!";
+		mes "Vocï¿½ estï¿½ preparado?";
 		close;
 L_result2:
-	show "[Geshupenschte]";
-	show "´Ótimo!";
+	mes "[Geshupenschte]";
+	mes "ï¿½ï¿½timo!";
 	next;
-	show "[Geshupenschte]";
-	show "Vamos ver....sua pontuação é ^5533FF"+@score+".^000000";
+	mes "[Geshupenschte]";
+	mes "Vamos ver....sua pontuaï¿½ï¿½o ï¿½ ^5533FF"+@score+".^000000";
 	if (@score > 80) goto L_pass;
-	show ".............";
+	mes ".............";
 	next;
-	show "[Geshupenschte]";
-	show "Você falhou denovo!";
-	show "Se você continuar falhando, eu não posso te dar a Classe. Vá estudar mais.";
+	mes "[Geshupenschte]";
+	mes "Vocï¿½ falhou denovo!";
+	mes "Se vocï¿½ continuar falhando, eu nï¿½o posso te dar a Classe. Vï¿½ estudar mais.";
 	set BSMITH_Q2, 1;
 	close;
 
 	L_pass:
 		set BSMITH_Q,2;
 		set BSMITH_Q2, 0;
-		show "Você passou!";
+		mes "Vocï¿½ passou!";
 		next;
-		show "[Geshupenschte]";
-		show "Eu irei deixar você ter a Classe";
-		show "Você está preparado?";
+		mes "[Geshupenschte]";
+		mes "Eu irei deixar vocï¿½ ter a Classe";
+		mes "Vocï¿½ estï¿½ preparado?";
 		close;
 L_ReTest1:
-	show "Ah, vejo que você estudou mais.  Não erre nenhuma pergunta! Aqui está!";
+	mes "Ah, vejo que vocï¿½ estudou mais.  Nï¿½o erre nenhuma pergunta! Aqui estï¿½!";
 	next;
 	goto M_Rdy;
 
@@ -496,15 +496,15 @@ L_ReTest1:
 // Test 2-----------------------------------------------------------------
 L_Test2:
 	if(BSMITH_Q2 > 0) goto L_CheckTest2;
-	show "Vamos ver... ordens....";
+	mes "Vamos ver... ordens....";
 	next;
-	show "[Geshupenschte]";
-	show "Ah, aqui está!";
-	show "Aqui está a grande encomenda.";
-	show "Hmmm";
+	mes "[Geshupenschte]";
+	mes "Ah, aqui estï¿½!";
+	mes "Aqui estï¿½ a grande encomenda.";
+	mes "Hmmm";
 	next;
-	show "[Geshupenschte]";
-	show "Eu preciso que você me arranje....";
+	mes "[Geshupenschte]";
+	mes "Eu preciso que vocï¿½ me arranje....";
 	next;
 	set BSMITH_Q2,rand(1,5);
 	if (BSMITH_Q2 == 2) goto R_item2;
@@ -513,100 +513,100 @@ L_Test2:
 	if (BSMITH_Q2 == 5) goto R_item5;
 
 	R_item1:
-		show "[Geshupenschte]";
-		show "^5533FF2 Aço";
-		show "1 Bandagem Estragada";
-		show "2 Gema Azul^000000";
-		show "e ^5533FF1 Vara Mestra^000000 da loja.";
+		mes "[Geshupenschte]";
+		mes "^5533FF2 Aï¿½o";
+		mes "1 Bandagem Estragada";
+		mes "2 Gema Azul^000000";
+		mes "e ^5533FF1 Vara Mestra^000000 da loja.";
 		next;
-		show "[Geshupenschte]";
-		show "Ei, nós não vamos fazer você trazer esses porque nós sómos duros! É um teste!";
+		mes "[Geshupenschte]";
+		mes "Ei, nï¿½s nï¿½o vamos fazer vocï¿½ trazer esses porque nï¿½s sï¿½mos duros! ï¿½ um teste!";
 		next;
-		show "[Geshupenschte]";
-		show "^5533FF2 Aço";
-		show "1 Bandagem Estragada";
-		show "2 Gema Azul^000000";
-		show "e ^5533FF1 Vara Mestra^000000 da loja.";
+		mes "[Geshupenschte]";
+		mes "^5533FF2 Aï¿½o";
+		mes "1 Bandagem Estragada";
+		mes "2 Gema Azul^000000";
+		mes "e ^5533FF1 Vara Mestra^000000 da loja.";
 		next;
 		goto L_finalword;
 	R_item2:
-		show "[Geshupenschte]";
-		show "^5533FF2 Poeira Estelar";
-		show "2 Osso";
-		show "1 Zargônio^000000";
-		show "e ^5533FF1 Gladius^000000 das lojas.";
+		mes "[Geshupenschte]";
+		mes "^5533FF2 Poeira Estelar";
+		mes "2 Osso";
+		mes "1 Zargï¿½nio^000000";
+		mes "e ^5533FF1 Gladius^000000 das lojas.";
 		next;
-		show "[Geshupenschte]";
-		show "Ei! Nós não estamos sendo duros, isso é um teste!";
+		mes "[Geshupenschte]";
+		mes "Ei! Nï¿½s nï¿½o estamos sendo duros, isso ï¿½ um teste!";
 		next;
-		show "[Geshupenschte]";
-		show "Eu listarei eles denovo";
-		show "^5533FF2 Poeira Estelar";
-		show "2 Osso";
-		show "1 Zargônio^000000";
-		show "e ^5533FF1 Gladius^000000 das lojas.";
+		mes "[Geshupenschte]";
+		mes "Eu listarei eles denovo";
+		mes "^5533FF2 Poeira Estelar";
+		mes "2 Osso";
+		mes "1 Zargï¿½nio^000000";
+		mes "e ^5533FF1 Gladius^000000 das lojas.";
 		next;
 		goto L_finalword;
 	R_item3:
-		show "[Geshupenschte]";
-		show "^5533FF2 Carvão";
-		show "2 Casca";
-		show "2 Sangue Escarlate^000000";
-		show "e ^5533FF1 Tsurugi^000000 das lojas.";
+		mes "[Geshupenschte]";
+		mes "^5533FF2 Carvï¿½o";
+		mes "2 Casca";
+		mes "2 Sangue Escarlate^000000";
+		mes "e ^5533FF1 Tsurugi^000000 das lojas.";
 		next;
-		show "[Geshupenschte]";
-		show "Ei, nós não vamos fazer você trazer esses porque nós sómos duros! É um teste!";
+		mes "[Geshupenschte]";
+		mes "Ei, nï¿½s nï¿½o vamos fazer vocï¿½ trazer esses porque nï¿½s sï¿½mos duros! ï¿½ um teste!";
 		next;
-		show "[Geshupenschte]";
-		show "Eu listarei eles denovo";
-		show "^5533FF2 Carvão";
-		show "2 Casca^000000";
-		show "2 Sangue Escarlate";
-		show "e ^5533FF1 Tsurugi^000000 das lojas.";
+		mes "[Geshupenschte]";
+		mes "Eu listarei eles denovo";
+		mes "^5533FF2 Carvï¿½o";
+		mes "2 Casca^000000";
+		mes "2 Sangue Escarlate";
+		mes "e ^5533FF1 Tsurugi^000000 das lojas.";
 		next;
 		goto L_finalword;
 	R_item4:
-		show "[Geshupenschte]";
-		show "^5533FF8 Minério de Ferro";
-		show "1 Tronco";
-		show "2 Gema Azul^000000";
-		show "e um ^5533FFArbaleste^000000 das lojas.";
+		mes "[Geshupenschte]";
+		mes "^5533FF8 Minï¿½rio de Ferro";
+		mes "1 Tronco";
+		mes "2 Gema Azul^000000";
+		mes "e um ^5533FFArbaleste^000000 das lojas.";
 		next;
-		show "[Geshupenschte]";
-		show "E! Nós não estamos sendo duros!";
+		mes "[Geshupenschte]";
+		mes "E! Nï¿½s nï¿½o estamos sendo duros!";
 		next;
-		show "[Geshupenschte]";
-		show "Eu listarei eles denovo.";
-		show "^5533FF8 Minério de Ferro";
-		show "1 Tronco";
-		show "2 Gema Azul^000000";
-		show "e um ^5533FFArbaleste^000000 das lojas.";
+		mes "[Geshupenschte]";
+		mes "Eu listarei eles denovo.";
+		mes "^5533FF8 Minï¿½rio de Ferro";
+		mes "1 Tronco";
+		mes "2 Gema Azul^000000";
+		mes "e um ^5533FFArbaleste^000000 das lojas.";
 		next;
 		goto L_finalword;
 	R_item5:
-		show "[Geshupenschte]";
-		show "^5533FF8 Minério de Ferro";
-		show "20 Erva Verde";
-		show "2 Couro de Animal^000000";
-		show "e ^5533FF1 Maça de Guerra^000000 das lojas.";
+		mes "[Geshupenschte]";
+		mes "^5533FF8 Minï¿½rio de Ferro";
+		mes "20 Erva Verde";
+		mes "2 Couro de Animal^000000";
+		mes "e ^5533FF1 Maï¿½a de Guerra^000000 das lojas.";
 		next;
-		show "[Geshupenschte]";
-		show "Ei, nós não vamos fazer você trazer esses porque nós sómos duros! É um teste!";
+		mes "[Geshupenschte]";
+		mes "Ei, nï¿½s nï¿½o vamos fazer vocï¿½ trazer esses porque nï¿½s sï¿½mos duros! ï¿½ um teste!";
 		next;
-		show "[Geshupenschte]";
-		show "Eu listarei eles denovo.";
-		show "^5533FF8 Minério de Ferro";
-		show "20 Erva Verde";
-		show "2 Couro de Animal^000000";
-		show "e ^5533FF1 Maça de Fuerra^000000 das lojas.";
+		mes "[Geshupenschte]";
+		mes "Eu listarei eles denovo.";
+		mes "^5533FF8 Minï¿½rio de Ferro";
+		mes "20 Erva Verde";
+		mes "2 Couro de Animal^000000";
+		mes "e ^5533FF1 Maï¿½a de Fuerra^000000 das lojas.";
 		next;
 	L_finalword:
-		show "[Geshupenschte]";
-		show "Boa sorte!";
+		mes "[Geshupenschte]";
+		mes "Boa sorte!";
 		close;
 
 L_CheckTest2:
-	show "Hmm? Você trouxe todos os itens?";
+	mes "Hmm? Vocï¿½ trouxe todos os itens?";
 	next;
 	if (BSMITH_Q2 == 2) goto L_2b;
 	if (BSMITH_Q2 == 3) goto L_2c;
@@ -615,199 +615,199 @@ L_CheckTest2:
 
 	L_2a:
 		if(countitem(999) < 2 || countitem(930) < 1 || countitem(717) < 2 || countitem(1610) < 1) goto sL_NtEnuf1;
-		show "[Geshupenschte]";
-		show "Eu não pedi 3 Aços?";
+		mes "[Geshupenschte]";
+		mes "Eu nï¿½o pedi 3 Aï¿½os?";
 		next;
-		show "[Geshupenschte]";
-		show "Ah é! Eu pedi 2.";
-		show "Me dê um segundo.";
+		mes "[Geshupenschte]";
+		mes "Ah ï¿½! Eu pedi 2.";
+		mes "Me dï¿½ um segundo.";
 		delitem 999,2;
 		delitem 930,1;
 		delitem 717,2;
 		delitem 1610,1;
 		callsub sF_Make;
-		show "Entregue isso ao Baisulist de Geffen e traga devolta o recibo.";
+		mes "Entregue isso ao Baisulist de Geffen e traga devolta o recibo.";
 		additem 1610,1;
 		next;
-		show "[Geshupenschte]";
-		show "O QUE!? Nada parece diferente?";
-		show "Olhe atenciosamente aonde minha mão está.";
-		show "É O SUPER Vara Mestra Geshupenschte MK II!!!!! XDDDDD";
+		mes "[Geshupenschte]";
+		mes "O QUE!? Nada parece diferente?";
+		mes "Olhe atenciosamente aonde minha mï¿½o estï¿½.";
+		mes "ï¿½ O SUPER Vara Mestra Geshupenschte MK II!!!!! XDDDDD";
 		next;
-		show "[Geshupenschte]";
-		show "Sinta a diferença! Almost no inertia!";
+		mes "[Geshupenschte]";
+		mes "Sinta a diferenï¿½a! Almost no inertia!";
 		next;
-		show "[Geshupenschte]";
-		show "Agora vá entregar ao Baisulitst!";
+		mes "[Geshupenschte]";
+		mes "Agora vï¿½ entregar ao Baisulitst!";
 		close;
 
 		sL_NtEnuf1:
-			show "[Geshupenschte]";
-			show "Você não trouxe todos os items!";
+			mes "[Geshupenschte]";
+			mes "Vocï¿½ nï¿½o trouxe todos os items!";
 			next;
 			goto R_item1;
 	L_2b:
 		if(countitem(1001) < 2 || countitem(932) < 1 || countitem(912) < 1 || countitem(1219) < 1) goto sL_NtEnuf2;
-		show "[Geshupenschte]";
-		show "Eu não pedi 3 Poeira Estelar?";
+		mes "[Geshupenschte]";
+		mes "Eu nï¿½o pedi 3 Poeira Estelar?";
 		next;
-		show "[Geshupenschte]";
-		show "Ah sim, 2, isso mesmo.";
-		show "Ok, me de um segundo.";
+		mes "[Geshupenschte]";
+		mes "Ah sim, 2, isso mesmo.";
+		mes "Ok, me de um segundo.";
 		delitem 1001,2;
 		delitem 932,1;
 		delitem 912,1;
 		delitem 1219,1;
 		callsub sF_Make;
-		show "Agora, leve isso ao Wickebine de Morroc";
+		mes "Agora, leve isso ao Wickebine de Morroc";
 		additem 1219,1;
 		next;
-		show "[Geshupenschte]";
-		show "O QUE!? ISSO NÃO PARECE DIFERENTE!?";
-		show "Olha atenciosamente a lâmina!";
-		show "VOCÊ NÃO PODE VER AS MARCAS BONITAS?!";
-		show "ULTRA GLADIUS Geshupenschte Mk II!!";
+		mes "[Geshupenschte]";
+		mes "O QUE!? ISSO Nï¿½O PARECE DIFERENTE!?";
+		mes "Olha atenciosamente a lï¿½mina!";
+		mes "VOCï¿½ Nï¿½O PODE VER AS MARCAS BONITAS?!";
+		mes "ULTRA GLADIUS Geshupenschte Mk II!!";
 		next;
-		show "[Geshupenschte]";
-		show "Ela não é linda ^_^?";
+		mes "[Geshupenschte]";
+		mes "Ela nï¿½o ï¿½ linda ^_^?";
 		next;
-		show "[Geshupenschte]";
-		show "Bom, vá para Morroc e de isso para o  Wickebine e traga o recibo devolta.";
+		mes "[Geshupenschte]";
+		mes "Bom, vï¿½ para Morroc e de isso para o  Wickebine e traga o recibo devolta.";
 		close;
 		next;
 
 		sL_NtEnuf2:
-			show "[Geshupenschte]";
-			show "Você não trouxe todos os items!";
+			mes "[Geshupenschte]";
+			mes "Vocï¿½ nï¿½o trouxe todos os items!";
 			next;
 			goto R_item2;
 	L_2c:
 		if(countitem(1003) < 2 || countitem(935) < 2 || countitem(990) < 1 || countitem(1119) < 1) goto sL_NtEnuf3;
-		show "[Geshupenschte]";
-		show "Eu não pedi 3 carvões??";
+		mes "[Geshupenschte]";
+		mes "Eu nï¿½o pedi 3 carvï¿½es??";
 		next;
-		show "[Geshupenschte]";
-		show "Está certo, 2 carvões";
-		show "Ok, só um segundo.";
+		mes "[Geshupenschte]";
+		mes "Estï¿½ certo, 2 carvï¿½es";
+		mes "Ok, sï¿½ um segundo.";
 		delitem 1003,2;
 		delitem 935,2;
 		delitem 990,1;
 		delitem 1119,1;
 		callsub sF_Make;
-		show "Dê isso ao Gromgast de Izlude e traga devolta o recibo.";
+		mes "Dï¿½ isso ao Gromgast de Izlude e traga devolta o recibo.";
 		additem 1119,1;
 		next;
-		show "[Geshupenschte]";
-		show "O QUE!? NADA PARECE DIFERENTE!?";
-		show "Olhe atenciosamente a lâmina!";
-		show "Olhe as marcas bonitas!";
-		show "ULTRA Geshupenschte TSURUGI Mk II!!!";
+		mes "[Geshupenschte]";
+		mes "O QUE!? NADA PARECE DIFERENTE!?";
+		mes "Olhe atenciosamente a lï¿½mina!";
+		mes "Olhe as marcas bonitas!";
+		mes "ULTRA Geshupenschte TSURUGI Mk II!!!";
 		next;
-		show "[Geshupenschte]";
-		show "Ela não é linda ^_^?";
+		mes "[Geshupenschte]";
+		mes "Ela nï¿½o ï¿½ linda ^_^?";
 		next;
-		show "[Geshupenschte]";
-		show "De qualquer jeito, Gromgast de Izlude! Vá!";
+		mes "[Geshupenschte]";
+		mes "De qualquer jeito, Gromgast de Izlude! Vï¿½!";
 		close;
 
 		sL_NtEnuf3:
-			show "[Geshupenschte]";
-			show "Você não trouxe todos os items!";
+			mes "[Geshupenschte]";
+			mes "Vocï¿½ nï¿½o trouxe todos os items!";
 			next;
 			goto R_item3;
 
 	L_2d:
 		if(countitem(1002) < 8 || countitem(1019) < 1 || countitem(717) < 2 || countitem(1713) < 1) goto sL_NtEnuf4;
-		show "[Geshupenschte]";
-		show "Eu não pedi 30 minérios de ferro?";
+		mes "[Geshupenschte]";
+		mes "Eu nï¿½o pedi 30 minï¿½rios de ferro?";
 		next;
-		show "[Geshupenschte]";
-		show "Espere, 8 está certo >_>";
-		show "Hmmm, espere um segundo então.";
+		mes "[Geshupenschte]";
+		mes "Espere, 8 estï¿½ certo >_>";
+		mes "Hmmm, espere um segundo entï¿½o.";
 		delitem 1002,8;
 		delitem 1019,1;
 		delitem 717,2;
 		delitem 1713,1;
 		callsub sF_Make;
-		show "Entregue isso ao Tilpitz de Payon";
+		mes "Entregue isso ao Tilpitz de Payon";
 		additem 1713,1;
 		next;
-		show "[Geshupenschte]";
-		show "O QUE!? NADA PARECE DIFERENTE!?";
-		show "OLHE OS SULCOS AONDE AS FLECHAS VÃO!!";
-		show "OLHA COMO ESTA ORIGINAL!!!!!";
-		show "MESTRE ARQUEIRO Geshupenschte ARBALESTE Mk II!!!";
+		mes "[Geshupenschte]";
+		mes "O QUE!? NADA PARECE DIFERENTE!?";
+		mes "OLHE OS SULCOS AONDE AS FLECHAS Vï¿½O!!";
+		mes "OLHA COMO ESTA ORIGINAL!!!!!";
+		mes "MESTRE ARQUEIRO Geshupenschte ARBALESTE Mk II!!!";
 		next;
-		show "[Geshupenschte]";
-		show "Olha o tanto que foi construido bem o arco!";
+		mes "[Geshupenschte]";
+		mes "Olha o tanto que foi construido bem o arco!";
 		next;
-		show "[Geshupenschte]";
-		show "Bom, Tilpitz em Payon, E traga o envelope.";
+		mes "[Geshupenschte]";
+		mes "Bom, Tilpitz em Payon, E traga o envelope.";
 		close;
 
 		sL_NtEnuf4:
-			show "[Geshupenschte]";
-			show "Você não trouxe todos os items!";
+			mes "[Geshupenschte]";
+			mes "Vocï¿½ nï¿½o trouxe todos os items!";
 			next;
 			goto R_item4;
 
 	L_2e:
 		if(countitem(1002) < 8 || countitem(511) < 20 || countitem(919) < 2 || countitem(1513) < 1) goto sL_NtEnuf5;
-		show "[Geshupenschte]";
-		show "Ok, espere um segundo!";
+		mes "[Geshupenschte]";
+		mes "Ok, espere um segundo!";
 		delitem 1002,8;
 		delitem 511,20;
 		delitem 919,2;
 		delitem 1513,1;
 		callsub sF_Make;
-		show "Entregue isso ao Bismarck em Comodo e traga-me devolta o recibo.";
+		mes "Entregue isso ao Bismarck em Comodo e traga-me devolta o recibo.";
 		additem 1513,1;
 		next;
-		show "[Geshupenschte]";
-		show "O QUE!? NADA PARECE DIFERENTE!?";
-		show "Olhe atenciosamente nos pontos das pontas!!";
-		show "As ervas verde antídoto pra veneno foi misturado nelas!";
-		show "ANTI VENENO Geshupenschte MAÇA DE GUERRA MK II!!!!!";
+		mes "[Geshupenschte]";
+		mes "O QUE!? NADA PARECE DIFERENTE!?";
+		mes "Olhe atenciosamente nos pontos das pontas!!";
+		mes "As ervas verde antï¿½doto pra veneno foi misturado nelas!";
+		mes "ANTI VENENO Geshupenschte MAï¿½A DE GUERRA MK II!!!!!";
 		next;
-		show "[Geshupenschte]";
-		show "Você não entende!? Quando você está envenenado, você se alto cura com ela!";
-		show "A ferida.....provavelmente vai ficar maior! Mas o veneno sairá!";
+		mes "[Geshupenschte]";
+		mes "Vocï¿½ nï¿½o entende!? Quando vocï¿½ estï¿½ envenenado, vocï¿½ se alto cura com ela!";
+		mes "A ferida.....provavelmente vai ficar maior! Mas o veneno sairï¿½!";
 		next;
-		show "[Geshupenschte]";
-		show "Bom, entregue isso ao Bismarck de Comodo!";
+		mes "[Geshupenschte]";
+		mes "Bom, entregue isso ao Bismarck de Comodo!";
 		close;
 
 		sL_NtEnuf5:
-			show "[Geshupenschte]";
-			show "Você não trouxe todos os items!";
+			mes "[Geshupenschte]";
+			mes "Vocï¿½ nï¿½o trouxe todos os items!";
 			next;
 			goto R_item5;
 
 	sF_Make:
 		set BSMITH_Q, 3;
 		next;
-		show "[Geshupenschte]";
-		show "Grunhido.......";
+		mes "[Geshupenschte]";
+		mes "Grunhido.......";
 		next;
-		show "~clank~clonk~clank~";
+		mes "~clank~clonk~clank~";
 		next;
-		show "[Geshupenschte]";
-		show "Ergh......";
+		mes "[Geshupenschte]";
+		mes "Ergh......";
 		next;
-		show "~bonk~bang~bonk~";
+		mes "~bonk~bang~bonk~";
 		next;
-		show "[Geshupenschte]";
-		show "Hmmm. Aqui está!";
+		mes "[Geshupenschte]";
+		mes "Hmmm. Aqui estï¿½!";
 		return;
 
 
 // Test 3-----------------------------------------------------------------
 L_Test3:
 	if (BSMITH_Q3 == 1) goto L_CheckTest3;
-	show "Vá entregar!";
-	show "........você não esqueceu.......certo?";
+	mes "Vï¿½ entregar!";
+	mes "........vocï¿½ nï¿½o esqueceu.......certo?";
 	next;
-	show "[Geshupenschte]";
+	mes "[Geshupenschte]";
 	if (BSMITH_Q2 == 2) goto L_3b;
 	if (BSMITH_Q2 == 3) goto L_3c;
 	if (BSMITH_Q2 == 4) goto L_3d;
@@ -815,49 +815,49 @@ L_Test3:
 
 	L_3a:
 		if (countitem(1610) < 1) goto L_LostItem;
-		show "Baisulitst deve estar as 11 horas de Geffen ";
+		mes "Baisulitst deve estar as 11 horas de Geffen ";
 		close;
 	L_3b:
 		if (countitem(1210) < 1) goto L_LostItem;
-		show "Entregue isso ao Wickebine perto do negociador de Maça Espada em Morroc.";
+		mes "Entregue isso ao Wickebine perto do negociador de Maï¿½a Espada em Morroc.";
 		close;
 	L_3c:
 		if (countitem(1119) < 1) goto L_LostItem;
-		show "Gromgast sairá às 11 horas de Izlude.";
+		mes "Gromgast sairï¿½ ï¿½s 11 horas de Izlude.";
 		close;
 	L_3d:
 		if (countitem(1713) < 1) goto L_LostItem;
-		show "Tilpitz sairá às 5 horas de Payon";
+		mes "Tilpitz sairï¿½ ï¿½s 5 horas de Payon";
 		close;
 	L_3e:
 		if (countitem(1513) < 1) goto L_LostItem;
-		show "Bismarck é ultimamente às 12 horas na área de Comodo.";
+		mes "Bismarck ï¿½ ultimamente ï¿½s 12 horas na ï¿½rea de Comodo.";
 		close;
 
 	L_LostItem:
-		show "O QUE!!! VOCÊ PERDEU O ITEM QUE EU LHE DEI PARA ENTREGAR!!!!";
+		mes "O QUE!!! VOCï¿½ PERDEU O ITEM QUE EU LHE DEI PARA ENTREGAR!!!!";
 		emotion 23;
 		next;
-		show "[Geshupenschte]";
-		show "........... bom então.... Eu acho que você precisará.....";
+		mes "[Geshupenschte]";
+		mes "........... bom entï¿½o.... Eu acho que vocï¿½ precisarï¿½.....";
 		next;
-		show "[Geshupenschte]";
-		show "COMEÇAR TUDO DENOVO!! Agora saia do meu alcançe!!";
+		mes "[Geshupenschte]";
+		mes "COMEï¿½AR TUDO DENOVO!! Agora saia do meu alcanï¿½e!!";
 		set BSMITH_Q, 0;
 		set BSMITH_Q2, 0;
 		emotion 7;
 		close;
 
 L_CheckTest3:
-	show "Você entregou?";
-	show "Vamos ver o recipiente então!";
+	mes "Vocï¿½ entregou?";
+	mes "Vamos ver o recipiente entï¿½o!";
 	next;
-	menu "Aqui está",-,"Espere um segundo.",M_Wait;
+	menu "Aqui estï¿½",-,"Espere um segundo.",M_Wait;
 
 		if(countitem(1073) < 1) goto sL_noreceipt;
-		show "[Geshupenschte]";
-		show "Ótimo! Muito bom! Você é definitivamente um "+callfunc("otclassname",5,"S","M")+" honesto! Vá ver o Altigeren devolta em Geffen!";
-		show "Eu sei que você passará no teste definitivamente!!!";
+		mes "[Geshupenschte]";
+		mes "ï¿½timo! Muito bom! Vocï¿½ ï¿½ definitivamente um "+callfunc("otclassname",5,"S","M")+" honesto! Vï¿½ ver o Altigeren devolta em Geffen!";
+		mes "Eu sei que vocï¿½ passarï¿½ no teste definitivamente!!!";
 		set BSMITH_Q, 4;
 		set BSMITH_Q2, 0;
 		set BSMITH_Q3, 0;
@@ -865,33 +865,33 @@ L_CheckTest3:
 		close;
 
 		sL_noreceipt:
-			show "[Geshupenschte]";
-			show "........Você não sabe aonde você deixou o recibo.........";
+			mes "[Geshupenschte]";
+			mes "........Vocï¿½ nï¿½o sabe aonde vocï¿½ deixou o recibo.........";
 			next;
-			show "[Geshupenschte]";
-			show "O QUE É ISSO?! VOCÊ PERDEU!? Você VENDEU ou alguma coisa!?";
+			mes "[Geshupenschte]";
+			mes "O QUE ï¿½ ISSO?! VOCï¿½ PERDEU!? Vocï¿½ VENDEU ou alguma coisa!?";
 			emotion 23;
 			next;
-			show "[Geshupenschte]";
-			show "O recibo é a alma dos "+callfunc("otclassname",5,"S","M")+"es! A linha da vida dos "+callfunc("otclassname",10,"S","M")+"s!";
-			show "Adivinha? Você irá..... COMEÇAR TUDO DENOVO!!";
+			mes "[Geshupenschte]";
+			mes "O recibo ï¿½ a alma dos "+callfunc("otclassname",5,"S","M")+"es! A linha da vida dos "+callfunc("otclassname",10,"S","M")+"s!";
+			mes "Adivinha? Vocï¿½ irï¿½..... COMEï¿½AR TUDO DENOVO!!";
 			set BSMITH_Q, 0;
 			set BSMITH_Q2, 0;
 			set BSMITH_Q3, 0;
 			emotion 32;
 			close;
 	M_Wait:
-		show "[Geshupenschte]";
-		show "Bom, me avise se você achar o recibo. EU ESPERO que você tenha um.";
+		mes "[Geshupenschte]";
+		mes "Bom, me avise se vocï¿½ achar o recibo. EU ESPERO que vocï¿½ tenha um.";
 		close;
 
 L_Done:
-	show "Obrigado por ter trabalhado pra mim! Agora vá ver Altiregen!";
+	mes "Obrigado por ter trabalhado pra mim! Agora vï¿½ ver Altiregen!";
 	close;
 
 L_GoChange:
-	show "Agora não deve ter nada que você queira.........";
-	show "Talvez você esteja pensando de Morroc ou Geffen?";
+	mes "Agora nï¿½o deve ter nada que vocï¿½ queira.........";
+	mes "Talvez vocï¿½ esteja pensando de Morroc ou Geffen?";
 	close;
 }
 
@@ -901,14 +901,14 @@ L_GoChange:
 geffen,46,164,4	script	Baisulitst	69,{
 	if (BSMITH_Q==3) goto L_Start;
 
-	show "[Baisulitst]";
-	show "Agora que eu pensei sobre isso, faz um tempo desde que eu estive em Alberta.  Eu estou um pouco com raiva com o serviço que eu tenho feito, especialmente as últimas entregas......";
+	mes "[Baisulitst]";
+	mes "Agora que eu pensei sobre isso, faz um tempo desde que eu estive em Alberta.  Eu estou um pouco com raiva com o serviï¿½o que eu tenho feito, especialmente as ï¿½ltimas entregas......";
 	next;
-	show "[Baisulitst]";
-	show "Eu encomendei alguma coisa da Guilda dos "+callfunc("otclassname",10,"S","M")+"s de Geffen mas a encomenda foi transferida para um "+callfunc("otclassname",10,"S","M")+" em Alberta.....";
+	mes "[Baisulitst]";
+	mes "Eu encomendei alguma coisa da Guilda dos "+callfunc("otclassname",10,"S","M")+"s de Geffen mas a encomenda foi transferida para um "+callfunc("otclassname",10,"S","M")+" em Alberta.....";
 	next;
-	show "[Baisulitst]";
-	show "Hmmm....., Eu queria que eu recebesse minha encomenda especial ^5555FFVara Mestral^000000.....";
+	mes "[Baisulitst]";
+	mes "Hmmm....., Eu queria que eu recebesse minha encomenda especial ^5555FFVara Mestral^000000.....";
 	emotion 20;
 	close;
 
@@ -916,42 +916,42 @@ L_Start:
 	if(BSMITH_Q2 != 1) goto L_Wrong;
 	if(countitem(1073) == 1) goto L_Done;
 	if(countitem(1610) < 1) goto L_NoItem;
-	show "[Baisulitst]";
-	show "Uau! Está finalmente aqui?!";
-	show "Muito obrigado! Eu estava esperando para sempre!";
+	mes "[Baisulitst]";
+	mes "Uau! Estï¿½ finalmente aqui?!";
+	mes "Muito obrigado! Eu estava esperando para sempre!";
 	delitem 1610,1;
 	set BSMITH_Q3, 1;
 	next;
-	show "[Baisulitst]";
-	show "Eu encomendei isso da Guilda dos "+callfunc("otclassname",10,"S","M")+"s de Geffen, Mas eles entregaram ao "+callfunc("otclassname",10,"S","M")+" de Alberta!";
+	mes "[Baisulitst]";
+	mes "Eu encomendei isso da Guilda dos "+callfunc("otclassname",10,"S","M")+"s de Geffen, Mas eles entregaram ao "+callfunc("otclassname",10,"S","M")+" de Alberta!";
 	next;
-	show "[Baisulitst]";
-	show "Obrigado por ter vindo de tão longe!";
-	show "Também, esteja certo de dar um tapinha no Geshupenschte por mim! Como pôde ter sido tão atrasado >_>";
+	mes "[Baisulitst]";
+	mes "Obrigado por ter vindo de tï¿½o longe!";
+	mes "Tambï¿½m, esteja certo de dar um tapinha no Geshupenschte por mim! Como pï¿½de ter sido tï¿½o atrasado >_>";
 	next;
-	show "[Baisulitst]";
-	show "Aqui está o recibo!";
+	mes "[Baisulitst]";
+	mes "Aqui estï¿½ o recibo!";
 	next;
-	show "~Scribble, Scribble~ Rip ~";
+	mes "~Scribble, Scribble~ Rip ~";
 	next;
 	additem 1073,1;
-	show "[Baisulitst]";
-	show "Aqui está! Até logo! Obrigado pela entrega!";
+	mes "[Baisulitst]";
+	mes "Aqui estï¿½! Atï¿½ logo! Obrigado pela entrega!";
 	close;
 
 	L_NoItem:
-		show "[Baisulitst]";
-		show "..... Hmm?.... O que é isso?..... Você está aqui para me entregar algo mas você não tem o item atual??";
+		mes "[Baisulitst]";
+		mes "..... Hmm?.... O que ï¿½ isso?..... Vocï¿½ estï¿½ aqui para me entregar algo mas vocï¿½ nï¿½o tem o item atual??";
 		emotion 32;
 		close;
 	L_Wrong:
-		show "[Baisulitst]";
-		show "..... Hmm?.... O que é isso?..... Isso não é o que eu encomendei.....";
+		mes "[Baisulitst]";
+		mes "..... Hmm?.... O que ï¿½ isso?..... Isso nï¿½o ï¿½ o que eu encomendei.....";
 		emotion 32;
 		close;
 	L_Done:
-		show "[Baisulitst]";
-		show "Obrigado novamente pela entrega.  Eu simplismente apreciei muito isso!";
+		mes "[Baisulitst]";
+		mes "Obrigado novamente pela entrega.  Eu simplismente apreciei muito isso!";
 		close;
 }
 
@@ -959,58 +959,58 @@ L_Start:
 omorocc,27,112,4	script	Wickebine	725,{
 	if (BSMITH_Q == 3) goto L_Start;
 
-	show "[Wickebine]";
-	show "..........";
-	show ".....Quando minha encomenda estará aqui?";
+	mes "[Wickebine]";
+	mes "..........";
+	mes ".....Quando minha encomenda estarï¿½ aqui?";
 	emotion 20;
 	next;
-	show "[Wickebine]";
-	show "A Guilda dos "+callfunc("otclassname",10,"S","M")+"s de Geffen e Geshupenschte estão os dois EXTREMAMENTE ATRASADOS!";
+	mes "[Wickebine]";
+	mes "A Guilda dos "+callfunc("otclassname",10,"S","M")+"s de Geffen e Geshupenschte estï¿½o os dois EXTREMAMENTE ATRASADOS!";
 	emotion 32;
 	next;
-	show "[Wickebine]";
-	show "Isso é muito irritante......";
+	mes "[Wickebine]";
+	mes "Isso ï¿½ muito irritante......";
 	close;
 L_Start:
 	if(BSMITH_Q2 != 2) goto L_Wrong;
 	if(countitem(1073) == 1) goto L_Done;
 	if(countitem(1219) < 1) goto L_NoItem;
-	show "[Wickebine]";
-	show "Está aqui finalmente!?!";
-	show "Me dê isso!!!!";
+	mes "[Wickebine]";
+	mes "Estï¿½ aqui finalmente!?!";
+	mes "Me dï¿½ isso!!!!";
 	delitem 1219,1;
 	set BSMITH_Q3, 1;
 	next;
-	show "[Wickebine]";
-	show "Diga a Guilda dos "+callfunc("otclassname",10,"S","M")+"s de Geffen";
-	show "e seu professor Geshupenschte!";
+	mes "[Wickebine]";
+	mes "Diga a Guilda dos "+callfunc("otclassname",10,"S","M")+"s de Geffen";
+	mes "e seu professor Geshupenschte!";
 	next;
-	show "[Wickebine]";
-	show "Você está ATRASADO";
-	show "E eu estava ESPERANDO.";
+	mes "[Wickebine]";
+	mes "Vocï¿½ estï¿½ ATRASADO";
+	mes "E eu estava ESPERANDO.";
 	next;
-	show "[Wickebine]";
-	show "Mas o item parece ser de uma ótima qualidade.";
+	mes "[Wickebine]";
+	mes "Mas o item parece ser de uma ï¿½tima qualidade.";
 	next;
-	show "(escrevendo alguma coisa)";
+	mes "(escrevendo alguma coisa)";
 	next;
 	additem 1073,1;
-	show "[Wickebine]";
-	show "Aqui está o recibo e muito obrigado pela entrega.";
+	mes "[Wickebine]";
+	mes "Aqui estï¿½ o recibo e muito obrigado pela entrega.";
 
 	L_NoItem:
-		show "[Wickebine]";
-		show "Ung! Você andou todo esse caminho para me entregar meu item e você o perdeu??!!";
+		mes "[Wickebine]";
+		mes "Ung! Vocï¿½ andou todo esse caminho para me entregar meu item e vocï¿½ o perdeu??!!";
 		emotion 6;
 		close;
 	L_Wrong:
-		show "[Wickebine]";
-		show "Eu acho que você esteve designado a entregar isso em outro lugar.....";
+		mes "[Wickebine]";
+		mes "Eu acho que vocï¿½ esteve designado a entregar isso em outro lugar.....";
 		emotion 4;
 		close;
 	L_Done:
-		show "[Wickebine]";
-		show "Muito obrigado";
+		mes "[Wickebine]";
+		mes "Muito obrigado";
 		close;
 }
 
@@ -1018,58 +1018,58 @@ L_Start:
 izlude,69,181,4	script	Gromgast	734,{
 	if (BSMITH_Q == 3) goto L_Start;
 
-	show "[Gromgast]";
-	show "..........";
-	show ".....Quando essa espada chegará >_>";
+	mes "[Gromgast]";
+	mes "..........";
+	mes ".....Quando essa espada chegarï¿½ >_>";
 	next;
-	show "[Gromgast]";
-	show "Eu preciso de minha espada para treinar!";
-	show "Nãooo.....Eu não posso ficar irritado!";
+	mes "[Gromgast]";
+	mes "Eu preciso de minha espada para treinar!";
+	mes "Nï¿½ooo.....Eu nï¿½o posso ficar irritado!";
 	next;
-	show "[Gromgast]";
-	show "Nãoooooo T_T......";
+	mes "[Gromgast]";
+	mes "Nï¿½oooooo T_T......";
 	close;
 
 L_Start:
 	if(BSMITH_Q2 != 3) goto L_Wrong;
 	if(countitem(1073) == 1) goto L_Done;
 	if(countitem(1119) < 1) goto L_NoItem;
-	show "[Gromgast]";
-	show "Ahhh, está finalmente aqui";
-	show "Deixe me ver isso.";
+	mes "[Gromgast]";
+	mes "Ahhh, estï¿½ finalmente aqui";
+	mes "Deixe me ver isso.";
 	delitem 1119,1;
 	set BSMITH_Q3, 1;
 	next;
-	show "[Gromgast]";
-	show "Legal.....";
-	show "Está bem melhor do que eu esperava.";
+	mes "[Gromgast]";
+	mes "Legal.....";
+	mes "Estï¿½ bem melhor do que eu esperava.";
 	next;
-	show "[Gromgast]";
-	show "Eu acho que a espada é exatamente como eu pensei!!";
-	show "Eu amei ela!";
+	mes "[Gromgast]";
+	mes "Eu acho que a espada ï¿½ exatamente como eu pensei!!";
+	mes "Eu amei ela!";
 	next;
-	show "[Gromgast]";
-	show "Aqui está.";
+	mes "[Gromgast]";
+	mes "Aqui estï¿½.";
 	next;
-	show "~scribble~rip~";
+	mes "~scribble~rip~";
 	next;
 	additem 1073,1;
-	show "[Gromgast]";
-	show "Aqui está o recibo! Muito obrigado.";
+	mes "[Gromgast]";
+	mes "Aqui estï¿½ o recibo! Muito obrigado.";
 	close;
 
 	L_NoItem:
-		show "[Gromgast]";
-		show "Hmm... Eu não entendo.... aonde está o item que eu encomendei???....";
+		mes "[Gromgast]";
+		mes "Hmm... Eu nï¿½o entendo.... aonde estï¿½ o item que eu encomendei???....";
 		emotion 20;
 		close;
 	L_Wrong:
-		show "[Gromgast]";
-		show "Desculpe, mas você achou a pessoa errada.";
+		mes "[Gromgast]";
+		mes "Desculpe, mas vocï¿½ achou a pessoa errada.";
 		close;
 	L_Done:
-		show "[Gromgast]";
-		show "Obrigado pela entrega!";
+		mes "[Gromgast]";
+		mes "Obrigado pela entrega!";
 		close;
 }
 
@@ -1077,62 +1077,62 @@ L_Start:
 opayon,151,41,4	script	Tilpitz	59,{
 	if (BSMITH_Q == 3) goto L_Start;
 
-	show "[Tilpitz]";
-	show "Quando esse arco chegará..........";
-	show "Quanto tempo faz que eu encomendei essa porcaria >_>";
+	mes "[Tilpitz]";
+	mes "Quando esse arco chegarï¿½..........";
+	mes "Quanto tempo faz que eu encomendei essa porcaria >_>";
 	next;
-	show "[Tilpitz]";
-	show "Não tem ninguém que aceite 'ele'.........";
-	show "mas, QUANDO CHEGARÁ >_>";
+	mes "[Tilpitz]";
+	mes "Nï¿½o tem ninguï¿½m que aceite 'ele'.........";
+	mes "mas, QUANDO CHEGARï¿½ >_>";
 	next;
-	show "[Tilpitz]";
-	show " T_T ";
+	mes "[Tilpitz]";
+	mes " T_T ";
 	close;
 L_Start:
 	if(BSMITH_Q2 != 4) goto L_Wrong;
 	if(countitem(1073) == 1) goto L_Done;
 	if(countitem(1713) < 1) goto L_NoItem;
-	show "[Tilpitz]";
-	show ".......Ahhh! Está finalmente aqui!!!";
-	show "Deixe-me ver!";
+	mes "[Tilpitz]";
+	mes ".......Ahhh! Estï¿½ finalmente aqui!!!";
+	mes "Deixe-me ver!";
 	delitem 1713,1;
 	set BSMITH_Q3, 1;
 	next;
-	show "[Tilpitz]";
-	show "Uau....";
-	show "Nada mal......Nada mal mesmo!!";
+	mes "[Tilpitz]";
+	mes "Uau....";
+	mes "Nada mal......Nada mal mesmo!!";
 	next;
-	show "[Tilpitz]";
-	show "Olha essa curva!! É linda!!";
-	show "Ah, eu amo isso";
+	mes "[Tilpitz]";
+	mes "Olha essa curva!! ï¿½ linda!!";
+	mes "Ah, eu amo isso";
 	next;
-	show "[Tilpitz]";
-	show "Muito obrigado!!!";
+	mes "[Tilpitz]";
+	mes "Muito obrigado!!!";
 	next;
-	show "scribble scribble rip";
+	mes "scribble scribble rip";
 	next;
 	additem 1073,1;
-	show "[Tilpitz]";
-	show "Aqui está o recibo! Muito obrigado denovo!!!!!";
+	mes "[Tilpitz]";
+	mes "Aqui estï¿½ o recibo! Muito obrigado denovo!!!!!";
 	close;
 
 	L_NoItem:
-		show "[Tilpitz]";
-		show "Aaah! A entrega está aqui? O que?..... Você não tem nada???.....";
+		mes "[Tilpitz]";
+		mes "Aaah! A entrega estï¿½ aqui? O que?..... Vocï¿½ nï¿½o tem nada???.....";
 		emotion 1;
 		next;
-		show "[Tilpitz]";
-		show "Não faça brincadeiras más com as pessoas!";
+		mes "[Tilpitz]";
+		mes "Nï¿½o faï¿½a brincadeiras mï¿½s com as pessoas!";
 		emotion 7;
 		close;
 	L_Wrong:
-		show "[Tilpitz]";
-		show "O que é isso? Você tem a entrega.... para outra pessoa..... Então por que a entrega não está com a pessoa???........";
+		mes "[Tilpitz]";
+		mes "O que ï¿½ isso? Vocï¿½ tem a entrega.... para outra pessoa..... Entï¿½o por que a entrega nï¿½o estï¿½ com a pessoa???........";
 		emotion 4;
 		close;
 	L_Done:
-		show "[Tilpitz]";
-		show "Quanto mais eu olho isso, mais bonito isso fica!!! ";
+		mes "[Tilpitz]";
+		mes "Quanto mais eu olho isso, mais bonito isso fica!!! ";
 		close;
 }
 
@@ -1140,62 +1140,62 @@ L_Start:
 comodo,158,342,4	script	Bismarck	118,{
 	if (BSMITH_Q == 3) goto L_Start;
 
-	show "[Bismarck]";
-	show "......Ugh?...";
-	show ".....Quando essa entregá virá......";
+	mes "[Bismarck]";
+	mes "......Ugh?...";
+	mes ".....Quando essa entregï¿½ virï¿½......";
 	next;
-	show "[Bismarck]";
-	show "....o.....v...veneno...... >_>....";
-	show "Ack.....";
+	mes "[Bismarck]";
+	mes "....o.....v...veneno...... >_>....";
+	mes "Ack.....";
 	next;
-	show "[Bismarck]";
-	show "....Parece que... Eu estou....ferrado.";
+	mes "[Bismarck]";
+	mes "....Parece que... Eu estou....ferrado.";
 	close;
 
 L_Start:
 	if(BSMITH_Q2 != 5) goto L_Wrong;
 	if(countitem(1073) == 1) goto L_Done;
 	if(countitem(1513) < 1) goto L_NoItem;
-	show "[Bismarck]";
-	show "Ugh.........finalmente...........";
-	show "Vamos vamos..........me dê isso~";
+	mes "[Bismarck]";
+	mes "Ugh.........finalmente...........";
+	mes "Vamos vamos..........me dï¿½ isso~";
 	delitem 1513,1;
 	set BSMITH_Q3, 1;
 	next;
-	show "[Bismarck]";
-	show "Ugh....";
-	show "A erva verde está nele........certo?";
+	mes "[Bismarck]";
+	mes "Ugh....";
+	mes "A erva verde estï¿½ nele........certo?";
 	next;
-	show "[Bismarck]";
-	show "Eu........não posso mover.........me ajude";
-	show "....grunt.....";
+	mes "[Bismarck]";
+	mes "Eu........nï¿½o posso mover.........me ajude";
+	mes "....grunt.....";
 	next;
-	show "- STAB! -";
+	mes "- STAB! -";
 	next;
-	show "[Bismarck]";
-	show "UIAAAAAAAAAAAAAAA!!!";
+	mes "[Bismarck]";
+	mes "UIAAAAAAAAAAAAAAA!!!";
 	next;
-	show "[Bismarck]";
-	show "bom, ele funciona direitinho..";
+	mes "[Bismarck]";
+	mes "bom, ele funciona direitinho..";
 	next;
 	additem 1073,1;
-	show "[Bismarck]";
-	show "Hmmm.... Aqui está o recibo..... obrigado pela entrega! Eu acho que viverei mais......";
+	mes "[Bismarck]";
+	mes "Hmmm.... Aqui estï¿½ o recibo..... obrigado pela entrega! Eu acho que viverei mais......";
 	close;
 
 	L_NoItem:
-		show "[Bismarck]";
-		show "VOCÊ ESTÁ TENTANDO BRINCAR COMIGO!!?? Como.... ~cough~... pode....~ung~.... você....~ack~.....";
+		mes "[Bismarck]";
+		mes "VOCï¿½ ESTï¿½ TENTANDO BRINCAR COMIGO!!?? Como.... ~cough~... pode....~ung~.... vocï¿½....~ack~.....";
 		emotion 23;
 		close;
 	L_Wrong:
-		show "[Bismarck]";
-		show "EU PRECISO DE UM ANTIDOTO!! Não essa coisa ~ack~........";
+		mes "[Bismarck]";
+		mes "EU PRECISO DE UM ANTIDOTO!! Nï¿½o essa coisa ~ack~........";
 		emotion 23;
 		close;
 	L_Done:
-		show "[Bismarck]";
-		show "Bom, obrigado.";
+		mes "[Bismarck]";
+		mes "Bom, obrigado.";
 		close;
 }
 
@@ -1205,50 +1205,50 @@ L_Start:
 omorocc,94,133,4	script	Mitmayer	726,{
 	if (BSMITH_Q == 4) goto L_Start;
 	if (BSMITH_Q == 5) goto L_Done;
-	show "[Mitmayer]";
-	show "Bom.... o sol em Morroc é muito forte.... Eu acho que ele vai me deixar bronzeado ... Ah bom......";
+	mes "[Mitmayer]";
+	mes "Bom.... o sol em Morroc ï¿½ muito forte.... Eu acho que ele vai me deixar bronzeado ... Ah bom......";
 	emotion 19;
 	next;
-	show "[Mitmayer]";
-	show "Depois de tudo, nós "+callfunc("otclassname",10,"S","M")+"s somos preparados para enfrentar grandes temperaturas pois trabalhamos com fogo!";
+	mes "[Mitmayer]";
+	mes "Depois de tudo, nï¿½s "+callfunc("otclassname",10,"S","M")+"s somos preparados para enfrentar grandes temperaturas pois trabalhamos com fogo!";
 	next;
-	show "[Mitmayer]";
-	show "Ficando legal e bronzeado é bom..... Eu acho que dá uma imagem de saudável e atleta a você.";
+	mes "[Mitmayer]";
+	mes "Ficando legal e bronzeado ï¿½ bom..... Eu acho que dï¿½ uma imagem de saudï¿½vel e atleta a vocï¿½.";
 	close;
 L_Done:
-	show "[Mitmayer]";
-	show "Eu falei que você passou.";
+	mes "[Mitmayer]";
+	mes "Eu falei que vocï¿½ passou.";
 	next;
-	show "[Mitmayer]";
-	show "Retorne para a guilda";
+	mes "[Mitmayer]";
+	mes "Retorne para a guilda";
 	next;
-	show "[Mitmayer]";
-	show "E tambem, não perca o Materlo de "+callfunc("otclassname",10,"S","M")+"!!";
+	mes "[Mitmayer]";
+	mes "E tambem, nï¿½o perca o Materlo de "+callfunc("otclassname",10,"S","M")+"!!";
 	next;
-	show "[Mitmayer]";
-	show "Não se esqueça de usar os pontos de habilidade também!";
+	mes "[Mitmayer]";
+	mes "Nï¿½o se esqueï¿½a de usar os pontos de habilidade tambï¿½m!";
 	close;
 L_Start:
-	show "[Mitmayer]";
-	show "Bem vindo! Você quer ser um "+callfunc("otclassname",10,"S","M")+"?";
-	show "Ok, mas saiba que não é todo mundo que passa.";
+	mes "[Mitmayer]";
+	mes "Bem vindo! Vocï¿½ quer ser um "+callfunc("otclassname",10,"S","M")+"?";
+	mes "Ok, mas saiba que nï¿½o ï¿½ todo mundo que passa.";
 	next;
-	show "[Mitmayer]";
-	show "É um quiz que mostra o quanto você sabe de metal e da classe "+callfunc("otclassname",10,"S","M")+".";
-	show "Eu tenho um pouco pra te perguntar, então vamos começar.";
+	mes "[Mitmayer]";
+	mes "ï¿½ um quiz que mostra o quanto vocï¿½ sabe de metal e da classe "+callfunc("otclassname",10,"S","M")+".";
+	mes "Eu tenho um pouco pra te perguntar, entï¿½o vamos comeï¿½ar.";
 	next;
-	menu "Ok",M_Test,"Agora não",-;
+	menu "Ok",M_Test,"Agora nï¿½o",-;
 
-		show "[Mitmayer]";
-		show "Ok, Eu te verei então.";
+		mes "[Mitmayer]";
+		mes "Ok, Eu te verei entï¿½o.";
 		close;
 	M_Test:
-		show "[Mitmayer]";
-		show "Ok, vamos começar, se você falhar ai você terá poucas chances de passar no teste .";
+		mes "[Mitmayer]";
+		mes "Ok, vamos comeï¿½ar, se vocï¿½ falhar ai vocï¿½ terï¿½ poucas chances de passar no teste .";
 		next;
-		show "[Mitmayer]";
-		show "5 perguntas";
-		show "Eu não irei lhe falar o que é certo e o que é errado.";
+		mes "[Mitmayer]";
+		mes "5 perguntas";
+		mes "Eu nï¿½o irei lhe falar o que ï¿½ certo e o que ï¿½ errado.";
 		next;
 		set @score, 0;
 		set @temp, rand(3);
@@ -1256,40 +1256,40 @@ L_Start:
 		if (@temp == 2) goto R_Set3;
 
 	R_Set1:
-		show "[Mitmayer]";
-		show "1. Que skill é necessário para se pegar Disconto?";
+		mes "[Mitmayer]";
+		mes "1. Que skill ï¿½ necessï¿½rio para se pegar Disconto?";
 		next;
 		menu "Puxar Carrinho Lv 3",sM_1a,"Identificar Item",sM_1a,"Mammonita Lv 10",sM_1a,"Aumentar Capacida de Peso Lv 3",-;
 
 			set @score,@score+20;
 		sM_1a:
 
-		show "[Mittmayer]";
-		show "2. Que efeito o Martelo-Extremo tem?";
+		mes "[Mittmayer]";
+		mes "2. Que efeito o Martelo-Extremo tem?";
 		next;
-		menu "Paralizia",-,"Cegueira",sM_1b,"Confusão",sM_1b,"Veneno",sM_1b;
+		menu "Paralizia",-,"Cegueira",sM_1b,"Confusï¿½o",sM_1b,"Veneno",sM_1b;
 
 			set @score,@score+20;
 		sM_1b:
 
-		show "[Mitmayer]";
-		show "3. Quanto zeny é pego quando você usa Mammonita Lv 10?";
+		mes "[Mitmayer]";
+		mes "3. Quanto zeny ï¿½ pego quando vocï¿½ usa Mammonita Lv 10?";
 		next;
 		menu "900z",sM_1c,"1,000z",-,"2,000z",sM_1c,"1,000,000z",sM_1c;
 
 			set @score,@score+20;
 		sM_1c:
 
-		show "[Mitmayer]";
-		show "4. Quanto dinheiro é salvo com o Disconto??";
+		mes "[Mitmayer]";
+		mes "4. Quanto dinheiro ï¿½ salvo com o Disconto??";
 		next;
 		menu "21 % ",sM_1d,"22 % ",sM_1d,"23 % ",sM_1d,"24 % ",-;
 
 			set @score,@score+20;
 		sM_1d:
 
-		show "[Mitmayer]";
-		show "5. Quando você pode ganhar com o Superfaturar no máximo?";
+		mes "[Mitmayer]";
+		mes "5. Quando vocï¿½ pode ganhar com o Superfaturar no mï¿½ximo?";
 		next;
 		menu "21 % ",sM_1e,"22 % ",sM_1e,"23 % ",-,"24 % ",sM_1e;
 
@@ -1298,40 +1298,40 @@ L_Start:
 		goto L_Result;
 
 	R_Set2:
-		show "[Mittmayer]";
-		show "1. Qual monstro dropa aço?";
+		mes "[Mittmayer]";
+		mes "1. Qual monstro dropa aï¿½o?";
 		next;
-		menu "Zerom",sM_2a,"Chonchon de Aço",sM_2a,"Esqueleto Operário",-,"Requiem",sM_2a;
+		menu "Zerom",sM_2a,"Chonchon de Aï¿½o",sM_2a,"Esqueleto Operï¿½rio",-,"Requiem",sM_2a;
 
 			set @score,@score+20;
 		sM_2a:
 
-		show "[Mitmayer]";
-		show "2. O que você pode fazer com Sangue Escarlate?";
+		mes "[Mitmayer]";
+		mes "2. O que vocï¿½ pode fazer com Sangue Escarlate?";
 		next;
-		menu "Coração Flamejante",-,"Vento Bruto",sM_2b,"Natureza Grandiosa",sM_2b,"Gelo Místico",sM_2b;
+		menu "Coraï¿½ï¿½o Flamejante",-,"Vento Bruto",sM_2b,"Natureza Grandiosa",sM_2b,"Gelo Mï¿½stico",sM_2b;
 
 			set @score,@score+20;
 		sM_2b:
 
-		show "[Mitmayer]";
-		show "3. Qual minério você tem mais no banco?";
+		mes "[Mitmayer]";
+		mes "3. Qual minï¿½rio vocï¿½ tem mais no banco?";
 		next;
 		menu "WoV",sM_2c,"Sangue Escarlate",-,"Vida Verdejante",-,"Cristal Azul",-;
 
 			set @score,@score+20;
 		sM_2c:
 
-		show "[Mitmayer]";
-		show "4. Que tipo de monstro é fraco contra a propriedade Vento?";
+		mes "[Mitmayer]";
+		mes "4. Que tipo de monstro ï¿½ fraco contra a propriedade Vento?";
 		next;
-		menu "Fogo",sM_2d,"Água",-,"Terra",sM_2d,"Vento",sM_2d;
+		menu "Fogo",sM_2d,"ï¿½gua",-,"Terra",sM_2d,"Vento",sM_2d;
 
 			set @score,@score+20;
 		sM_2d:
 
-		show "[Mitmayer]";
-		show "5. Quantos ferros são necessários para fazer um aço?";
+		mes "[Mitmayer]";
+		mes "5. Quantos ferros sï¿½o necessï¿½rios para fazer um aï¿½o?";
 		next;
 		menu "5",-,"4",sM_2e,"3",sM_2e,"6",sM_2e;
 
@@ -1340,40 +1340,40 @@ L_Start:
 		goto L_Result;
 
 	R_Set3:
-		show "[Mitmayer]";
-		show "1. O que você faz quando encontra uma pessoa estressada?";
+		mes "[Mitmayer]";
+		mes "1. O que vocï¿½ faz quando encontra uma pessoa estressada?";
 		next;
 		menu "Pergunto o que precisa",-,"Converso por um tempo",-,"Ignoro",sM_3a,"Dropo um item e saio",sM_3a;
 
 			set @score,@score+20;
 		sM_3a:
 
-		show "[Mitmayer]";
-		show "2. Aonde você aprende a trocar carrinho?";
+		mes "[Mitmayer]";
+		mes "2. Aonde vocï¿½ aprende a trocar carrinho?";
 		next;
 		menu "Aldebaran",sM_3b,"Alberta",-,"Morroc",sM_3b,"Izlude",sM_3b;
 
 			set @score,@score+20;
 		sM_3b:
 
-		show "[Mitmayer]";
-		show "3. Cidade de Geffen é no centro, aonde fica a Guilda dos "+callfunc("otclassname",10,"S","M")+"s?";
+		mes "[Mitmayer]";
+		mes "3. Cidade de Geffen ï¿½ no centro, aonde fica a Guilda dos "+callfunc("otclassname",10,"S","M")+"s?";
 		next;
 		menu "11oclock",sM_3c,"5oclock",-,"7oclock",sM_3c,"12oclock",sM_3c;
 
 			set @score,@score+20;
 		sM_3c:
 
-		show "[Mitmayer]";
-		show "4. Qual cidade tem mais "+callfunc("otclassname",10,"S","M")+"s";
+		mes "[Mitmayer]";
+		mes "4. Qual cidade tem mais "+callfunc("otclassname",10,"S","M")+"s";
 		next;
 		menu "Prontera",sM_3d,"Morroc",sM_3d,"Alberta",sM_3d,"Geffen",-;
 
 			set @score,@score+20;
 		sM_3d:
 
-		show "[Mitmayer]";
-		show "5. Qual atributo afeta em forja?";
+		mes "[Mitmayer]";
+		mes "5. Qual atributo afeta em forja?";
 		next;
 		menu "STR",sM_3e,"DEX ",-,"AGI",sM_3e,"VIT",sM_3e;
 
@@ -1381,37 +1381,37 @@ L_Start:
 		sM_3e:
 
 L_Result:
-	show "[Mitmayer]";
-	show "Ótimo trabalho!";
+	mes "[Mitmayer]";
+	mes "ï¿½timo trabalho!";
 	next;
-	show "[Mitmayer]";
-	show "Vamos ver... sua contagem foi ^5533FF"+@contagem+"^000000 pontos!";
+	mes "[Mitmayer]";
+	mes "Vamos ver... sua contagem foi ^5533FF"+@contagem+"^000000 pontos!";
 	next;
-	show "[Mitmayer]";
+	mes "[Mitmayer]";
 	if (@score > 70) goto L_Pass;
 
-		show "Falhou, vá estudar mais!!";
+		mes "Falhou, vï¿½ estudar mais!!";
 		next;
-		show "[Mitmayer]";
-		show "Só não é o suficiente.....";
-		show "Por favor retorne depois de ter estudado mais.";
+		mes "[Mitmayer]";
+		mes "Sï¿½ nï¿½o ï¿½ o suficiente.....";
+		mes "Por favor retorne depois de ter estudado mais.";
 		close;
 
 	L_Pass:
-		show "Ótimo! Parabéns! Você passou!";
+		mes "ï¿½timo! Parabï¿½ns! Vocï¿½ passou!";
 		emotion 21;
 		next;
-		show "[Mitmayer]";
-		show "Você precisará voltar a Guilda.  Aqui está a prova de que você passou no teste.... o ^5533FFMartelo de "+callfunc("otclassname",10,"S","M")+"^000000.";
+		mes "[Mitmayer]";
+		mes "Vocï¿½ precisarï¿½ voltar a Guilda.  Aqui estï¿½ a prova de que vocï¿½ passou no teste.... o ^5533FFMartelo de "+callfunc("otclassname",10,"S","M")+"^000000.";
 		additem 1005,1;
 		set BSMITH_Q, 5;
 		set BSMITH_Q2, 0;
 		next;
-		show "[Mitmayer]";
-		show "NÃO PERCA ISSO!!";
+		mes "[Mitmayer]";
+		mes "Nï¿½O PERCA ISSO!!";
 		emotion 0;
 		next;
-		show "[Mitmayer]";
-		show "Bom, boa sorte!!!!";
+		mes "[Mitmayer]";
+		mes "Bom, boa sorte!!!!";
 		close;
 }

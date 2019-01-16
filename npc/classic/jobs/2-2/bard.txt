@@ -34,137 +34,137 @@ comodo,211,155,5	script	Bardo Andarilho	741,{
 	if (BaseJob == Job_Bard) goto L_CLOSE;
 	if (BaseJob == Job_Archer && Sex == 1) goto L_ARCHER;
 
-	show "[Lalo]";
-	show "É um belo dia para cantar, la la.";
+	mes "[Lalo]";
+	mes "ï¿½ um belo dia para cantar, la la.";
 	close;
 
 L_ARCHER:
-	show "[Lalo]";
-	show "Olá! Caro Arqueiro.";
-	show "De que maneira uma pessoa errante como eu pode ajudar você?";
+	mes "[Lalo]";
+	mes "Olï¿½! Caro Arqueiro.";
+	mes "De que maneira uma pessoa errante como eu pode ajudar vocï¿½?";
 	next;
-	menu "Você tem uma bela voz.",-,"Você poderia cantar pra mim, por favor?",M_1,"Não, obrigado.",M_NOTHING;
+	menu "Vocï¿½ tem uma bela voz.",-,"Vocï¿½ poderia cantar pra mim, por favor?",M_1,"Nï¿½o, obrigado.",M_NOTHING;
 
-	show "[Lalo]";
-	show "Hoho, sua voz é especialmente bela também?";
-	show "Sempre pensou a respeito de cantar?";
+	mes "[Lalo]";
+	mes "Hoho, sua voz ï¿½ especialmente bela tambï¿½m?";
+	mes "Sempre pensou a respeito de cantar?";
 	next;
-	menu "Claro que sim!",-,"Eu não poderia muito possivelmente...",M_ICANT;
+	menu "Claro que sim!",-,"Eu nï¿½o poderia muito possivelmente...",M_ICANT;
 
-	show "[Lalo]";
-	show "Haha, bela atitude. Você tem que ser";
-	show "Você tem que ser assim para se tornar um Bardo.";
-	show "Eu ajudarei você a se tornar um Bardo então.";
+	mes "[Lalo]";
+	mes "Haha, bela atitude. Vocï¿½ tem que ser";
+	mes "Vocï¿½ tem que ser assim para se tornar um Bardo.";
+	mes "Eu ajudarei vocï¿½ a se tornar um Bardo entï¿½o.";
 	next;
 	if(JobLevel >= 40) goto L_GONOW;
-	show "[Lalo]";
-	show "Mas antes disso... você precisa ter";
-	show "ao menos classe 40 para ser um Bardo.";
+	mes "[Lalo]";
+	mes "Mas antes disso... vocï¿½ precisa ter";
+	mes "ao menos classe 40 para ser um Bardo.";
 	next;
-	show "[Lalo]";
-	show "Volte logo, certo?";
+	mes "[Lalo]";
+	mes "Volte logo, certo?";
 	close;
 
 L_GONOW:
 	set JBLVL, JobLevel; // used to determine what item to get at the end
-	show "[Lalo]";
-	show "Mas antes disso... você acredita que possa trazer para mim uma Flor?";
-	show "Eu preciso cheirar a fragância de uma";
-	show "Flor para se sentir ensinando.";
+	mes "[Lalo]";
+	mes "Mas antes disso... vocï¿½ acredita que possa trazer para mim uma Flor?";
+	mes "Eu preciso cheirar a fragï¿½ncia de uma";
+	mes "Flor para se sentir ensinando.";
 	next;
-	show "[Lalo]"; 
-	show "Realmente, não importa qual é a flor, mas tente me trazer uma que eu goste.";
-	show "E não compre apenas qualquer Flor, certo?";
+	mes "[Lalo]"; 
+	mes "Realmente, nï¿½o importa qual ï¿½ a flor, mas tente me trazer uma que eu goste.";
+	mes "E nï¿½o compre apenas qualquer Flor, certo?";
 	set BARD_Q,1;
 	close;
 
 M_ICANT:
-	show "[Lalo]";
-	show "Haha, que timidez.";
-	show "Não acredite tão pouco em você mesmo.";
+	mes "[Lalo]";
+	mes "Haha, que timidez.";
+	mes "Nï¿½o acredite tï¿½o pouco em vocï¿½ mesmo.";
 	next;
-	show "[Lalo]";
-	show "Você tem talento em abundância.";
-	show "Volte novamente se você mudar seus pensamentos.";
+	mes "[Lalo]";
+	mes "Vocï¿½ tem talento em abundï¿½ncia.";
+	mes "Volte novamente se vocï¿½ mudar seus pensamentos.";
 	close;
 
 M_1:
-	show "[Lalo]";
-	show "Uma canção... vamos ver.";
-	show "Certo, eu recebi uma...";
+	mes "[Lalo]";
+	mes "Uma canï¿½ï¿½o... vamos ver.";
+	mes "Certo, eu recebi uma...";
 	next;
-	show "[Lalo]";
-	show "Eu cantarei... Tamboril da Guerra.";
-	show "*ehem... *cof... gasp... mememememe...";
-	show "1, 2, 3, 4...";
+	mes "[Lalo]";
+	mes "Eu cantarei... Tamboril da Guerra.";
+	mes "*ehem... *cof... gasp... mememememe...";
+	mes "1, 2, 3, 4...";
 	next;
-	show "[Lalo]";
-	show "O som dos cavalos galopando sobre o horizonte";
-	show "A areia que cobre o distante sol.";
-	show "Onde milhares de olhos abrem no céu da noite";
-	show "Os castelos de fogo queimarão com força.";
+	mes "[Lalo]";
+	mes "O som dos cavalos galopando sobre o horizonte";
+	mes "A areia que cobre o distante sol.";
+	mes "Onde milhares de olhos abrem no cï¿½u da noite";
+	mes "Os castelos de fogo queimarï¿½o com forï¿½a.";
 	next;
-	show "[Lalo]";
-	show "Eu posso ouvir... as batidas de meu coração.";
-	show "Eu posso sentir... o sangue correndo dentro das minhas veias.";
-	show "... e o peso da minha armadura.";
-	show "Eu posso ver... meus inimigos.";
+	mes "[Lalo]";
+	mes "Eu posso ouvir... as batidas de meu coraï¿½ï¿½o.";
+	mes "Eu posso sentir... o sangue correndo dentro das minhas veias.";
+	mes "... e o peso da minha armadura.";
+	mes "Eu posso ver... meus inimigos.";
 	next;
-	show "[Lalo]";
-	show "Altissímo, Altissímo, Altissímo...";
-	show "Dê força para os guerreiros!";
-	show "Grandioso, Grandioso, Grandioso...";
-	show "Que este dia nunca volte novamente!";
+	mes "[Lalo]";
+	mes "Altissï¿½mo, Altissï¿½mo, Altissï¿½mo...";
+	mes "Dï¿½ forï¿½a para os guerreiros!";
+	mes "Grandioso, Grandioso, Grandioso...";
+	mes "Que este dia nunca volte novamente!";
 	next;
-	show "[Lalo]";
-	show "Trema o céu e ruja tanto através da terra.";
-	show "Faça meu coração bater novamente!";
-	show "Deixe o som proclamar, e faça as muralhas tremerem.";
-	show "Este momento nunca mais voltará!";
+	mes "[Lalo]";
+	mes "Trema o cï¿½u e ruja tanto atravï¿½s da terra.";
+	mes "Faï¿½a meu coraï¿½ï¿½o bater novamente!";
+	mes "Deixe o som proclamar, e faï¿½a as muralhas tremerem.";
+	mes "Este momento nunca mais voltarï¿½!";
 	next;
-	show "[Lalo]";
-	show "Hmm.. para sempre terei uma boa canção para cantar.";
-	show "Qual sua opinião? Você não acredita que é uma bela canção?";
+	mes "[Lalo]";
+	mes "Hmm.. para sempre terei uma boa canï¿½ï¿½o para cantar.";
+	mes "Qual sua opiniï¿½o? Vocï¿½ nï¿½o acredita que ï¿½ uma bela canï¿½ï¿½o?";
 	next;
-	menu "Sim, ela é realmente bela",-,"Não, realmente...",M_NO;
+	menu "Sim, ela ï¿½ realmente bela",-,"Nï¿½o, realmente...",M_NO;
 
-	show "[Lalo]";
-	show "Obrigado! Se você se divertiu com minha canção, isso";
-	show "me faz feliz, também.";
+	mes "[Lalo]";
+	mes "Obrigado! Se vocï¿½ se divertiu com minha canï¿½ï¿½o, isso";
+	mes "me faz feliz, tambï¿½m.";
 	next;
-	show "[Lalo]";
-	show "Seria legal se mais pessoas";
-	show "a nossa volta viessem e cantassem...";
-	show "bem, está bom como está agora...";
-	show "hmmhmmm.";
+	mes "[Lalo]";
+	mes "Seria legal se mais pessoas";
+	mes "a nossa volta viessem e cantassem...";
+	mes "bem, estï¿½ bom como estï¿½ agora...";
+	mes "hmmhmmm.";
 	close;
 
 M_NO:
-	show "[Lalo]";
-	show "Hmmm... eu perdi meus sentidos eu ";
-	show "terei que tentar ser mais duro.";
-	show "De alguma forma... Obrigado por me escutar.";
+	mes "[Lalo]";
+	mes "Hmmm... eu perdi meus sentidos eu ";
+	mes "terei que tentar ser mais duro.";
+	mes "De alguma forma... Obrigado por me escutar.";
 	close;
 
 M_NOTHING:
-	show "[Lalo]";
-	show "Oh não requisitaram uma canção quando você";
-	show "correu até o Bardo não é muito dedicado.";
-	show "bem...não posso ajudar ele desde que você";
-	show "olhe como você está apressado";
-	show "de alguma forma.";
+	mes "[Lalo]";
+	mes "Oh nï¿½o requisitaram uma canï¿½ï¿½o quando vocï¿½";
+	mes "correu atï¿½ o Bardo nï¿½o ï¿½ muito dedicado.";
+	mes "bem...nï¿½o posso ajudar ele desde que vocï¿½";
+	mes "olhe como vocï¿½ estï¿½ apressado";
+	mes "de alguma forma.";
 	next;
-	show "[Lalo]";
-	show "Caçar é bom... mas você não pode";
-	show "esquecer de relaxar por um tempo.";
-	show "A juventude é curta e não pode voltar";
-	show "uma vez que passou...";
+	mes "[Lalo]";
+	mes "Caï¿½ar ï¿½ bom... mas vocï¿½ nï¿½o pode";
+	mes "esquecer de relaxar por um tempo.";
+	mes "A juventude ï¿½ curta e nï¿½o pode voltar";
+	mes "uma vez que passou...";
 	close;
 
 L_BQ1:
-	show "[Lalo]";
-	show "Bem vindo! Amigo Arqueiro.";
-	show "Você trouxe a Flor? Deixe-me ver.";
+	mes "[Lalo]";
+	mes "Bem vindo! Amigo Arqueiro.";
+	mes "Vocï¿½ trouxe a Flor? Deixe-me ver.";
 	next;
 	if(countitem(1032) >= 1) goto L_UGLYFLOWER; //Item: Maneater_Blossom,
 	if(countitem(703) >= 1) goto L_FLOWER1; //Item: Hinalle,
@@ -181,148 +181,148 @@ L_NEXT6:
 L_NEXT7:
 	if(countitem(712) < 1) goto M_NOTHAVE; //Item: Flower//Items: Flower,
 	
-	show "[Lalo]";
-	show "Eh? Esta é apenas uma Flor normal.";
-	show "Eu gostei dela... mas ela não é o bastante.";
-	show "Por favor me traga uma Flor diferente.";
+	mes "[Lalo]";
+	mes "Eh? Esta ï¿½ apenas uma Flor normal.";
+	mes "Eu gostei dela... mas ela nï¿½o ï¿½ o bastante.";
+	mes "Por favor me traga uma Flor diferente.";
 	close;
 
 L_UGLYFLOWER:
-	show "[Lalo]";
-	show "O que é isso?! Por favor, retire-se e coloque-se longe do alcance da minha vista.";
-	show "Eu realmente odeio flores comuns!!!";
-	show "ELAS SÃO TÃO FEIAS!";
+	mes "[Lalo]";
+	mes "O que ï¿½ isso?! Por favor, retire-se e coloque-se longe do alcance da minha vista.";
+	mes "Eu realmente odeio flores comuns!!!";
+	mes "ELAS Sï¿½O Tï¿½O FEIAS!";
 	emotion e_omg;
 	close;
 
 M_NOTHAVE:
-	show "[Lalo]";
-	show "Bem se adapte sozinho.";
-	show "Eu não gosto de flor em lugar algum.";
+	mes "[Lalo]";
+	mes "Bem se adapte sozinho.";
+	mes "Eu nï¿½o gosto de flor em lugar algum.";
 	close;
 
 L_FLOWER1:
-	show "[Lalo]";
-	show "Eu posso ver aquele Hinalle?";
+	mes "[Lalo]";
+	mes "Eu posso ver aquele Hinalle?";
 	next;
-	menu "Sim",-,"Não",L_NEXT2;
+	menu "Sim",-,"Nï¿½o",L_NEXT2;
 	if(countitem(703) < 1) goto M_NOTHAVE;
 	delitem 703,1;	//Items: Hinalle,
 	goto L_GOOD;
 
 L_FLOWER2:
-	show "[Lalo]";
-	show "Eu posso ver aquela Menta?";
+	mes "[Lalo]";
+	mes "Eu posso ver aquela Menta?";
 	next;
-	menu "Sim",-,"Não",L_NEXT3;
+	menu "Sim",-,"Nï¿½o",L_NEXT3;
 	if(countitem(708) < 1) goto M_NOTHAVE;
 	delitem 708,1;	//Items: Ment,
 	goto L_GOOD;
 
 L_FLOWER3:
-	show "[Lalo]";
-	show "Eu posso ver aquela Flor Cantante?";
+	mes "[Lalo]";
+	mes "Eu posso ver aquela Flor Cantante?";
 	next;
-	menu "Sim",-,"Não",L_NEXT4;
+	menu "Sim",-,"Nï¿½o",L_NEXT4;
 	if(countitem(629) < 1) goto M_NOTHAVE;
 	delitem 629,1;	//Items: Singing_Flower,
 	goto L_GOOD;
 
 L_FLOWER4:
-	show "[Lalo]";
-	show "Eu posso ver aquela Flor da Ilusão?";
+	mes "[Lalo]";
+	mes "Eu posso ver aquela Flor da Ilusï¿½o?";
 	next;
-	menu "Sim",-,"Não",L_NEXT5;
+	menu "Sim",-,"Nï¿½o",L_NEXT5;
 	if(countitem(710) < 1) goto M_NOTHAVE;
 	delitem 710,1;	//Items: Illusion_Flower,
 	goto L_GOOD;
 
 L_FLOWER5:
-	show "[Lalo]";
-	show "Eu posso ver aquela Rosa Eterna?";
+	mes "[Lalo]";
+	mes "Eu posso ver aquela Rosa Eterna?";
 	next;
-	menu "Sim",-,"Não",L_NEXT6;
+	menu "Sim",-,"Nï¿½o",L_NEXT6;
 	if(countitem(748) < 1) goto M_NOTHAVE;
 	delitem 748,1;	//Items: Witherless_Rose,
 	goto L_GOOD;
 	
 L_FLOWER6:
-	show "[Lalo]";
-	show "Eu posso ver aquele Izidor?";
+	mes "[Lalo]";
+	mes "Eu posso ver aquele Izidor?";
 	next;
-	menu "Sim",-,"Não",L_NEXT7;
+	menu "Sim",-,"Nï¿½o",L_NEXT7;
 	if(countitem(709) < 1) goto M_NOTHAVE;
 	delitem 709,1;	//Items: Izidor
 
 L_GOOD:
-	show "[Lalo]";
-	show "Ela não tem cheiro, mas ela é uma";
-	show "flor com moderada e graciosa.";
-	show "As folhas podem me trazer força quando eu";
-	show "usá-las para cair.";
-	show "Eu realmente gosto dessa Flor, obrigado.";
+	mes "[Lalo]";
+	mes "Ela nï¿½o tem cheiro, mas ela ï¿½ uma";
+	mes "flor com moderada e graciosa.";
+	mes "As folhas podem me trazer forï¿½a quando eu";
+	mes "usï¿½-las para cair.";
+	mes "Eu realmente gosto dessa Flor, obrigado.";
 	next;
-	show "[Lalo]";
-	show "Como eu prometi, eu ajudarei você a se tornar um Bardo.";
-	show "Mas isso não é nada fácil meu amigo. Haha!";
+	mes "[Lalo]";
+	mes "Como eu prometi, eu ajudarei vocï¿½ a se tornar um Bardo.";
+	mes "Mas isso nï¿½o ï¿½ nada fï¿½cil meu amigo. Haha!";
 	next;
-	show "[Lalo]";
-	show "Isto é importante que você saiba";
-	show "muitas pessoas aprendem como cantar.";
-	show "Você deverá além disso manter-se no mesmo nível com todas";
-	show "as coisas existentes nos diferentes povoados...";
+	mes "[Lalo]";
+	mes "Isto ï¿½ importante que vocï¿½ saiba";
+	mes "muitas pessoas aprendem como cantar.";
+	mes "Vocï¿½ deverï¿½ alï¿½m disso manter-se no mesmo nï¿½vel com todas";
+	mes "as coisas existentes nos diferentes povoados...";
 	next;
-	show "[Lalo]";
-	show "Há um boneco de neve falante na cidade chamada Lutie.";
-	show "Vá para lá e traga de volta um presente.";
+	mes "[Lalo]";
+	mes "Hï¿½ um boneco de neve falante na cidade chamada Lutie.";
+	mes "Vï¿½ para lï¿½ e traga de volta um presente.";
 	next;
-	show "[Lalo]";
-	show "Se você se tornar amigo de Jack";
-	show "Frost, você receberá alguma coisa.";
-	show "E também fale com as pessoas da cidade";
-	show "enquanto você estiver lá...";
+	mes "[Lalo]";
+	mes "Se vocï¿½ se tornar amigo de Jack";
+	mes "Frost, vocï¿½ receberï¿½ alguma coisa.";
+	mes "E tambï¿½m fale com as pessoas da cidade";
+	mes "enquanto vocï¿½ estiver lï¿½...";
 	set BARD_Q,2;
 	close;
 L_BQ2:
 	if (xmas_npc == 11) goto L_BQ3; //this var is set in LUTIE.TXT
-	show "[Lalo]";
-	show "Eu estou esperando pelas boas novas.";
-	show "Agora vá para Lutie e faça";
-	show "amizade com Jack Frost.";
+	mes "[Lalo]";
+	mes "Eu estou esperando pelas boas novas.";
+	mes "Agora vï¿½ para Lutie e faï¿½a";
+	mes "amizade com Jack Frost.";
 	close;
 L_BQ3:
-	show "[Lalo]";
-	show "Como é a viagem? Você pode encontrar muitas pessoas?";
-	show "Você deveria ter mais importancia que um presente.";
+	mes "[Lalo]";
+	mes "Como ï¿½ a viagem? Vocï¿½ pode encontrar muitas pessoas?";
+	mes "Vocï¿½ deveria ter mais importancia que um presente.";
 	set BARD_Q,3;
 	next;
 L_SINGING:
-	show "[Lalo]";
-	show "Então, você quer tentar cantar...?";
-	show "Eu cantarei uma melodia pequena...";
-	show "e vc tenta depois.";
+	mes "[Lalo]";
+	mes "Entï¿½o, vocï¿½ quer tentar cantar...?";
+	mes "Eu cantarei uma melodia pequena...";
+	mes "e vc tenta depois.";
 	next;
-	show "[Lalo]";
-	show "Aqui vou eu.";
-	show "Ehem *limpando a garganta*";
-	show "1, 2, 3, 4";
+	mes "[Lalo]";
+	mes "Aqui vou eu.";
+	mes "Ehem *limpando a garganta*";
+	mes "1, 2, 3, 4";
 	next;
-	show "[Lalo]";
+	mes "[Lalo]";
 //this should text input
-	show "Todos os Deuses nunca envelhecem.";
-	show "A eternidade é uma linda Deusa";
-	show "paraíso,";
-	show "Maravilhosa e graciosa Deusa";
-	show "Paraíso,";
-	show "A nora de Odin e Bragis";
-	show "esposa";
-	show "As maçãs doces na sua cesta,";
-	show "Obrigado por suas maçãs doces.";
+	mes "Todos os Deuses nunca envelhecem.";
+	mes "A eternidade ï¿½ uma linda Deusa";
+	mes "paraï¿½so,";
+	mes "Maravilhosa e graciosa Deusa";
+	mes "Paraï¿½so,";
+	mes "A nora de Odin e Bragis";
+	mes "esposa";
+	mes "As maï¿½ï¿½s doces na sua cesta,";
+	mes "Obrigado por suas maï¿½ï¿½s doces.";
 	
 	set @score,0;
 	next;
-	show "[Lalo]";
-	show "Agora você tenta...";
+	mes "[Lalo]";
+	mes "Agora vocï¿½ tenta...";
 	next;
 	
 	menu "Todos os Deuses nunca envelhecem.",-,"Todos os Deuses nunca envelhecem?",M_S2,"Todos os Deuses nunca envelhecem,",M_S2,"Os Deuses nunca envelhecem?",M_S2;
@@ -330,12 +330,12 @@ L_SINGING:
 	set @score,@score+10;
 
 M_S2:
-	menu "A eternidade é uma linda Deusa,",M_S3,"A eternidade é uma linda Deusa.",M_S3,"O nunca é uma linda Deusa.",M_S3,"A eternidade é uma linda Deusa",-;
+	menu "A eternidade ï¿½ uma linda Deusa,",M_S3,"A eternidade ï¿½ uma linda Deusa.",M_S3,"O nunca ï¿½ uma linda Deusa.",M_S3,"A eternidade ï¿½ uma linda Deusa",-;
 	
 	set @score,@score+10;
 
 M_S3:	
-	menu "Odins,",M_S4,"Odin.",M_S4,"Odin,",M_S4,"paraíso,",-;
+	menu "Odins,",M_S4,"Odin.",M_S4,"Odin,",M_S4,"paraï¿½so,",-;
 	
 	set @score,@score+10;
 M_S4:
@@ -343,7 +343,7 @@ M_S4:
 	
 	set @score,@score+10;
 M_S5:
-	menu "Paraíso.",M_S6,"Odins,",M_S6,"Paraíso,",-,"Paraísos,",M_S6;
+	menu "Paraï¿½so.",M_S6,"Odins,",M_S6,"Paraï¿½so,",-,"Paraï¿½sos,",M_S6;
 	
 	set @score,@score+10;
 M_S6:
@@ -355,34 +355,34 @@ M_S7:
 	
 	set @score,@score+10;
 M_S8:
-	menu "A maçã doce na sua cesta,",M_S9,"A maçã doce na sua cesta",M_S9,"As maçãs doces na sua cesta,",-;
+	menu "A maï¿½ï¿½ doce na sua cesta,",M_S9,"A maï¿½ï¿½ doce na sua cesta",M_S9,"As maï¿½ï¿½s doces na sua cesta,",-;
 	
 	set @score,@score+10;
 M_S9:
-	menu "Obrigado por sua maçã doce!",M_S10,"Obrigado por suas maçãs doces.",-,"Obrigado por suas maçãs doces!",M_S10;
+	menu "Obrigado por sua maï¿½ï¿½ doce!",M_S10,"Obrigado por suas maï¿½ï¿½s doces.",-,"Obrigado por suas maï¿½ï¿½s doces!",M_S10;
 	
 	set @score,@score+10;
 M_S10:
 	next;
 	if(@score >= 90) goto L_GOODWORK;
-	show "[Lalo]";
-	show "Oy, você pegou a letra da múscica de uma maneira errada!";
-	show "Você não pode cantar adiante...?";
+	mes "[Lalo]";
+	mes "Oy, vocï¿½ pegou a letra da mï¿½scica de uma maneira errada!";
+	mes "Vocï¿½ nï¿½o pode cantar adiante...?";
 	next;
-	show "[Lalo]";
-	show "Sua pronunciação é muito suja.";
-	show "Faça uma apresentação melhor da próxima vez.";
+	mes "[Lalo]";
+	mes "Sua pronunciaï¿½ï¿½o ï¿½ muito suja.";
+	mes "Faï¿½a uma apresentaï¿½ï¿½o melhor da prï¿½xima vez.";
 	close;
 	
 L_GOODWORK:
 	set BARD_Q,4;
-	show "[Lalo]";
-	show "Maravilhoso! Finalmente uma tentativa!";
-	show "Você pode se tornar um grande Bardo.";
+	mes "[Lalo]";
+	mes "Maravilhoso! Finalmente uma tentativa!";
+	mes "Vocï¿½ pode se tornar um grande Bardo.";
 	next;
-	show "[Lalo]";
-	show "Você quer mudar de classe agora?";
-	show "Ou você vai querer um presente?";
+	mes "[Lalo]";
+	mes "Vocï¿½ quer mudar de classe agora?";
+	mes "Ou vocï¿½ vai querer um presente?";
 	next;
 	menu "Apenas mude minha classe.",-,"Eu ficarei agradecido com um presente.",M_PRESENTPLZ;
 	
@@ -390,20 +390,20 @@ L_GOODWORK:
 	goto L_CHANGE;
 
 M_PRESENTPLZ:
-	show "[Lalo]";
-	show "Hmmm...muito bem, traga-me alguns troncos.";
-	show "Não precisa se preocupar com o tipo, enquanto";
-	show "eles forem ^FF000060 do mesmo tipo^000000...";
+	mes "[Lalo]";
+	mes "Hmmm...muito bem, traga-me alguns troncos.";
+	mes "Nï¿½o precisa se preocupar com o tipo, enquanto";
+	mes "eles forem ^FF000060 do mesmo tipo^000000...";
 	next;
-	show "[Lalo]";
-	show "Eu lhe darei um presente";
-	show "traga eles e tenha uma boa viagem.";
+	mes "[Lalo]";
+	mes "Eu lhe darei um presente";
+	mes "traga eles e tenha uma boa viagem.";
 	close;
 
 L_SKILLSLEFT:
-	show "[Lalo]";
-	show "Hmmm... você parace ter algum ponto de habilidade sobrando.";
-	show "Use todos eles e depois volte aqui novamente.";
+	mes "[Lalo]";
+	mes "Hmmm... vocï¿½ parace ter algum ponto de habilidade sobrando.";
+	mes "Use todos eles e depois volte aqui novamente.";
 	close;
 
 L_BQ4:
@@ -416,14 +416,14 @@ L_BQ4:
 
 	if (@gift!=0) goto L_CHANGE;
 
-	show "[Lalo]";
-	show "Mmm? Parece que você não preparou todos os troncos ainda?";
-	show "Você quer mudar de classe assim mesmo?";	
+	mes "[Lalo]";
+	mes "Mmm? Parece que vocï¿½ nï¿½o preparou todos os troncos ainda?";
+	mes "Vocï¿½ quer mudar de classe assim mesmo?";	
 	next;
-	menu "Sim",L_CHANGE,"Espere, ainda não",-;
+	menu "Sim",L_CHANGE,"Espere, ainda nï¿½o",-;
 
-	show "[Lalo]";
-	show "Certo esperarei você aqui.";
+	mes "[Lalo]";
+	mes "Certo esperarei vocï¿½ aqui.";
 	close;
 
 L_CHANGE:
@@ -431,15 +431,15 @@ L_CHANGE:
 	callfunc "Job_Change",Job_Bard;
 	callfunc "F_ClearJobVar";
 
-	show "[Lalo]";
+	mes "[Lalo]";
 	if (@gift==0) goto L_NOGIFT;
 
-	show "Bom trabalho. Eu farei em você";
-	show "uma mudança de classe com este brinde.";
-	show "Espere apenas um momento.";
+	mes "Bom trabalho. Eu farei em vocï¿½";
+	mes "uma mudanï¿½a de classe com este brinde.";
+	mes "Espere apenas um momento.";
 	next;
-	show "Lixa Lixa Martela Martela";
-	show "Range Range Arranha Arranha";
+	mes "Lixa Lixa Martela Martela";
+	mes "Range Range Arranha Arranha";
 	next;
 
 	switch(@gift){
@@ -465,14 +465,14 @@ L_CHANGE:
 	}
 
 	emotion e_grat;
-	show "[Lalo]";
-	show "Aqui está, um brinde. Isto é";
-	show "para você usar quando cantar.";
+	mes "[Lalo]";
+	mes "Aqui estï¿½, um brinde. Isto ï¿½";
+	mes "para vocï¿½ usar quando cantar.";
 L_NOGIFT:
-	show "Espero que cante canções felizes.";
+	mes "Espero que cante canï¿½ï¿½es felizes.";
 	next;
 L_CLOSE:
-	show "[Lalo]";
-	show "Vejo você mais tarde!";
+	mes "[Lalo]";
+	mes "Vejo vocï¿½ mais tarde!";
 	close;
 }

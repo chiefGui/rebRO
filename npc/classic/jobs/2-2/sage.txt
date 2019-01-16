@@ -1,132 +1,132 @@
-yuno_in02,38,61,4	script	Funcionário Acadêmico	743,{
+yuno_in02,38,61,4	script	Funcionï¿½rio Acadï¿½mico	743,{
 	if(BaseJob == Job_Sage) goto L_Menu3_3;
 	if(BaseJob != Job_Mage) goto L_Menu2_1;
 	if(SAGE_Q == 11) goto L_Menu3_1;
 	if(SAGE_Q >= 3) goto L_Menu2_2;
-	show "[Keiron]";
-	show "Todos que apreciam a bela arte da magia sao bem-vindos aqui.";
-	show "Como posso te ajudar?";
+	mes "[Keiron]";
+	mes "Todos que apreciam a bela arte da magia sao bem-vindos aqui.";
+	mes "Como posso te ajudar?";
 	next;
-	menu "Mudar minha classe para Sábio",L_Menu1_1,"Sobre a classe Sábio",-,"To apenas dando uma olhada por aqui...",L_Menu1_2;
-		show "[Keiron]";
-		show "Entao voce está interessado em ser um Sábio?";
-		show "Bem, eu não posso te transformar num imediatamente...";
+	menu "Mudar minha classe para Sï¿½bio",L_Menu1_1,"Sobre a classe Sï¿½bio",-,"To apenas dando uma olhada por aqui...",L_Menu1_2;
+		mes "[Keiron]";
+		mes "Entao voce estï¿½ interessado em ser um Sï¿½bio?";
+		mes "Bem, eu nï¿½o posso te transformar num imediatamente...";
 		next;
-		show "[Keiron]";
-		show "Para se tornar um Sábio, voce irá precisar preencher um formulário para inscriçao na Academia de Magia Shubaichul e fazer alguns testes.";
+		mes "[Keiron]";
+		mes "Para se tornar um Sï¿½bio, voce irï¿½ precisar preencher um formulï¿½rio para inscriï¿½ao na Academia de Magia Shubaichul e fazer alguns testes.";
 		next;
-		show "[Keiron]";
-		show "Assim que voce tiver preenchido, voce precisará completar o trabalho de sala e entao escrever uma tese e defende-la.";
+		mes "[Keiron]";
+		mes "Assim que voce tiver preenchido, voce precisarï¿½ completar o trabalho de sala e entao escrever uma tese e defende-la.";
 		next;
-		show "[Keiron]";
-		show "Se voce completar todos os requisitos voce ganhará a licensa para se tornar um Sábio.";
+		mes "[Keiron]";
+		mes "Se voce completar todos os requisitos voce ganharï¿½ a licensa para se tornar um Sï¿½bio.";
 		next;
-		show "[Keiron]";
-		show "Se voce deseja preencher o forumlário, procure por Mathias na Academia de Magia Shubaichul.";
-		show "Diga que eu te enviei.";
+		mes "[Keiron]";
+		mes "Se voce deseja preencher o forumlï¿½rio, procure por Mathias na Academia de Magia Shubaichul.";
+		mes "Diga que eu te enviei.";
 		close;
 L_Menu1_1:
-	show "[Keiron]";
-	show "Um Sábio?";
-	show "Bem...";
-	show "Para mudar o seu jeito de viver, voce precisa mudar o seu jeito de pensar.";
+	mes "[Keiron]";
+	mes "Um Sï¿½bio?";
+	mes "Bem...";
+	mes "Para mudar o seu jeito de viver, voce precisa mudar o seu jeito de pensar.";
 	next;
-	show "[Keiron]";
-	show "Sábios contribuem continuamente com pesquisas para melhorar o  'conhecimento' de nosso Reino.";
-	show "Eles tambem ajudam a sociedade a resolver os piores problemas.";
-	show "Só por que voce usa uma roupa de Sábio, nao quer dizer que voce seja um.";
+	mes "[Keiron]";
+	mes "Sï¿½bios contribuem continuamente com pesquisas para melhorar o  'conhecimento' de nosso Reino.";
+	mes "Eles tambem ajudam a sociedade a resolver os piores problemas.";
+	mes "Sï¿½ por que voce usa uma roupa de Sï¿½bio, nao quer dizer que voce seja um.";
 	next;
-	show "[Keiron]";
-	show "Para se tornar um Sábio , preencha o formulário da Academia de Magia Shubaichul.";
-	show "Os responsáveis pela sua admissão irão te passar os requisitos.";
+	mes "[Keiron]";
+	mes "Para se tornar um Sï¿½bio , preencha o formulï¿½rio da Academia de Magia Shubaichul.";
+	mes "Os responsï¿½veis pela sua admissï¿½o irï¿½o te passar os requisitos.";
 	close;
 L_Menu1_2:
-	show "[Keiron]";
-	show "Excelente! Se voce tem algum tempo livre, por que nao procura por algum volume em nossa biblioteca?";
-	show "Nossa biblioteca é um verdadeiro mundo de conhecimentos.";
+	mes "[Keiron]";
+	mes "Excelente! Se voce tem algum tempo livre, por que nao procura por algum volume em nossa biblioteca?";
+	mes "Nossa biblioteca ï¿½ um verdadeiro mundo de conhecimentos.";
 	next;
-	show "[Keiron]";
-	show "É claro que tem muita coisa que nao pode se aprender por livros, mas isso é um bom começo!";
+	mes "[Keiron]";
+	mes "ï¿½ claro que tem muita coisa que nao pode se aprender por livros, mas isso ï¿½ um bom comeï¿½o!";
 	close;
 L_Menu2_1:
-	show "[Keiron]";
-	show "Nós Sábios fazemos várias pesquisas sobre nosso mundo,";
-	show "mas para maximizar nosso conhecimento,";
-	show "nós organizamos grupos de pesquisas.";
+	mes "[Keiron]";
+	mes "Nï¿½s Sï¿½bios fazemos vï¿½rias pesquisas sobre nosso mundo,";
+	mes "mas para maximizar nosso conhecimento,";
+	mes "nï¿½s organizamos grupos de pesquisas.";
 	next;
-	show "[Keiron]";
-	show "Voce deve falar com nossos Sábios e compartilhar quaisquer pesquisas que voce já tenha realizado.";
+	mes "[Keiron]";
+	mes "Voce deve falar com nossos Sï¿½bios e compartilhar quaisquer pesquisas que voce jï¿½ tenha realizado.";
 	close;
 L_Menu2_2:
-	show "[Keiron]";
-	show "Tornar-se um Sábio nao é fácil";
-	show "Você precisa se dedicar muito para dominar as artes da magia.";
+	mes "[Keiron]";
+	mes "Tornar-se um Sï¿½bio nao ï¿½ fï¿½cil";
+	mes "Vocï¿½ precisa se dedicar muito para dominar as artes da magia.";
 	next;
-	show "[Keiron]";
-	show "Voce precisa estar sempre voltado para sua tese.";
-	show "Boa sorte!";
+	mes "[Keiron]";
+	mes "Voce precisa estar sempre voltado para sua tese.";
+	mes "Boa sorte!";
 	close;
 L_Menu3_1:
 	if(countitem(1550) >= 1) goto L_Menu3_2;
-	show "[Keiron]";
-	show "Onde está sua tese?";
-	show "Estou ansioso para analisa-la.";
+	mes "[Keiron]";
+	mes "Onde estï¿½ sua tese?";
+	mes "Estou ansioso para analisa-la.";
 	next;
-	show "[Keiron]";
-	show "Voce esqueceu dela?";
-	show "Nesse caso, traga-me sem mais demora...";
+	mes "[Keiron]";
+	mes "Voce esqueceu dela?";
+	mes "Nesse caso, traga-me sem mais demora...";
 	close;
 L_Menu3_2:
-	show "[Keiron]";
-	show "Me parece que voce trouxe sua tese... vamos dar uma olhada...";
+	mes "[Keiron]";
+	mes "Me parece que voce trouxe sua tese... vamos dar uma olhada...";
 	next;
-	show "[Keiron]";
-	show "Hmmm...";
+	mes "[Keiron]";
+	mes "Hmmm...";
 	next;
-	show "[Keiron]";
-	show "Sim...";
+	mes "[Keiron]";
+	mes "Sim...";
 	next;
-	show "[Keiron]";
-	show "Interessante..";
+	mes "[Keiron]";
+	mes "Interessante..";
 	next;
-	show "[Keiron]";
-	show "Não tem muito estilo coesivo, mas seu desenvolvimento em pesquisa foi muito bom. Eu aprovo sua tese!";
+	mes "[Keiron]";
+	mes "Nï¿½o tem muito estilo coesivo, mas seu desenvolvimento em pesquisa foi muito bom. Eu aprovo sua tese!";
 	next;
 	if(SkillPoint == 0) goto LCHANGE;
-	show "[Keiron]";
-	show "Bem, voce está totalmente preparado para mudar de classe, exceto por uma coisa...";
-	show "Voce precisa usar todos seus pontos de habilidade.";
-	show "Por favor faça isso e volte aqui...";
+	mes "[Keiron]";
+	mes "Bem, voce estï¿½ totalmente preparado para mudar de classe, exceto por uma coisa...";
+	mes "Voce precisa usar todos seus pontos de habilidade.";
+	mes "Por favor faï¿½a isso e volte aqui...";
 	close;
 
 	LCHANGE:
 	callfunc "Job_Change",Job_Sage;
 	callfunc "F_ClearJobVar";
-	show "[Keiron]";
-	show "Parabéns!";
-	show "Voce é um Sábio agora!";
-	show "Nunca deixe sua paixão pela pesquisa ser abandonada.";
+	mes "[Keiron]";
+	mes "Parabï¿½ns!";
+	mes "Voce ï¿½ um Sï¿½bio agora!";
+	mes "Nunca deixe sua paixï¿½o pela pesquisa ser abandonada.";
 	next;
-	show "[Keiron]";
-	show "Matenha sua tese à mostra, uma vez que ela possa ser útil para todos...";
+	mes "[Keiron]";
+	mes "Matenha sua tese ï¿½ mostra, uma vez que ela possa ser ï¿½til para todos...";
 	next;
-	show "[Keiron]";
-	show "Algum dia voce mesmo será um poço de conhecimentos!";
+	mes "[Keiron]";
+	mes "Algum dia voce mesmo serï¿½ um poï¿½o de conhecimentos!";
 	close;
 L_Menu3_3:
-	show "[Keiron]";
-	show "Hmmm?  O que foi?";
-	show "Só por que voce é um Sábio, não significa que voce deve abandonar seus estudos.";
+	mes "[Keiron]";
+	mes "Hmmm?  O que foi?";
+	mes "Sï¿½ por que voce ï¿½ um Sï¿½bio, nï¿½o significa que voce deve abandonar seus estudos.";
 	next;
-	show "[Keiron]";
-	show "Para manter nossa fama de Pesquisadores do Reino, nós nunca devemos perder a chance de descobrir o desconhecido!";
+	mes "[Keiron]";
+	mes "Para manter nossa fama de Pesquisadores do Reino, nï¿½s nunca devemos perder a chance de descobrir o desconhecido!";
 	close;
 }
 
 //===============================
 //Biotech Lab
 //===============================
-yuno_in03,244,31,3	script	Professor de Física	120,{
+yuno_in03,244,31,3	script	Professor de Fï¿½sica	120,{
 	if(BaseJob == Job_Sage) goto L_Menu3_2;
 	if(BaseJob != Job_Mage) goto L_Menu1_1;
 	if(SAGE_Q == 11) goto L_Menu3_1;
@@ -135,229 +135,229 @@ yuno_in03,244,31,3	script	Professor de Física	120,{
 	if(SAGE_Q2 == 10) goto L_Menu2_5;
 	if(SAGE_Q2 == 11) goto L_ThesisStart1;
 	if(SAGE_Q == 9) goto L_Menu1_2;
-	show "[Ebeshi]";
-	show "O que?";
+	mes "[Ebeshi]";
+	mes "O que?";
 	next;
-	show "[Ebeshi]";
-	show "Voce veio estudar sob meus cuidados?";
+	mes "[Ebeshi]";
+	mes "Voce veio estudar sob meus cuidados?";
 	next;
-	show "[Ebeshi]";
-	show "Voce precisa se inscrever primeiro...";
-	show "Heheheheh...";
+	mes "[Ebeshi]";
+	mes "Voce precisa se inscrever primeiro...";
+	mes "Heheheheh...";
 	close;
 L_Menu1_1:
-	show "[Ebeshi]";
-	show "Eh???????????????????????????????";
+	mes "[Ebeshi]";
+	mes "Eh???????????????????????????????";
 	next;
-	show "[Ebeshi]";
-	show "Não acredito que alguem feito voce possa aprender algo de mim.";
+	mes "[Ebeshi]";
+	mes "Nï¿½o acredito que alguem feito voce possa aprender algo de mim.";
 	next;
-	show "[Ebeshi]";
-	show "Desapontado?";
-	show "Hehehehe....";
+	mes "[Ebeshi]";
+	mes "Desapontado?";
+	mes "Hehehehe....";
 	close;
 L_Menu1_2:
 	set SAGE_Q2,8;
-	show "[Ebeshi]";
-	show "Estou feliz em conhecer um bom estudante feito voce!";
+	mes "[Ebeshi]";
+	mes "Estou feliz em conhecer um bom estudante feito voce!";
 	next;
-	show "[Ebeshi]";
-	show "Voce nao está feliz em ser meu aluno?";
-	show "Hehehehe....";
+	mes "[Ebeshi]";
+	mes "Voce nao estï¿½ feliz em ser meu aluno?";
+	mes "Hehehehe....";
 	next;
-	show "[Ebeshi]";
-	show "Desculpe-me por isso... mas voce pode me trazer algumas coisas antes de começar nossas aulas?";
+	mes "[Ebeshi]";
+	mes "Desculpe-me por isso... mas voce pode me trazer algumas coisas antes de comeï¿½ar nossas aulas?";
 	next;
-	show "[Ebeshi]";
-	show "Eu preciso ^3051FD30 Pedras^000000 como parte de nosso material de estudo.";
-	show "Voce consegue pega-las ?";
+	mes "[Ebeshi]";
+	mes "Eu preciso ^3051FD30 Pedras^000000 como parte de nosso material de estudo.";
+	mes "Voce consegue pega-las ?";
 	next;
-	show "[Ebeshi]";
-	show "Se voce deseja arrumar as pedras rapidamente,";
-	show "voce deveria procurar por um Gatuno para ajudar voce! Obrigado por sua ajuda.";
+	mes "[Ebeshi]";
+	mes "Se voce deseja arrumar as pedras rapidamente,";
+	mes "voce deveria procurar por um Gatuno para ajudar voce! Obrigado por sua ajuda.";
 	close;
 L_Menu2_1:
 	if(countitem(7049) >= 30) goto L_Menu2_2;
-		show "[Ebeshi]";
-		show "Ei, o que voce está fazendo?";
-		show "Voce está tentando sair fora?";
-		show "Vamos, mantenha-se firme em seu objetivo.";
+		mes "[Ebeshi]";
+		mes "Ei, o que voce estï¿½ fazendo?";
+		mes "Voce estï¿½ tentando sair fora?";
+		mes "Vamos, mantenha-se firme em seu objetivo.";
 		next;
-		show "[Ebeshi]";
-		show "Eu preciso de ^3051FD30x Stone^000000 para continuar...";
-		show "Com tantas pedras por ai... não deveria ser fácil de encontrá-las?";
-		show "Não devem ser fácil encontrá-las?";
+		mes "[Ebeshi]";
+		mes "Eu preciso de ^3051FD30x Stone^000000 para continuar...";
+		mes "Com tantas pedras por ai... nï¿½o deveria ser fï¿½cil de encontrï¿½-las?";
+		mes "Nï¿½o devem ser fï¿½cil encontrï¿½-las?";
 		close;
 	L_Menu2_2:
-		show "[Ebeshi]";
-		show "Isso!  Você possui todas as pedras de que eu necessito.";
-		show "Agora, assista isso!";
+		mes "[Ebeshi]";
+		mes "Isso!  Vocï¿½ possui todas as pedras de que eu necessito.";
+		mes "Agora, assista isso!";
 		next;
-		show "[Ebeshi]";
-		show "Abracadabra!!";
+		mes "[Ebeshi]";
+		mes "Abracadabra!!";
 		next;
-		show "[Ebeshi]";
-		show "Abracadabra!!";
+		mes "[Ebeshi]";
+		mes "Abracadabra!!";
 		next;
-		show "[Ebeshi]";
-		show "Abracadabra!!";
+		mes "[Ebeshi]";
+		mes "Abracadabra!!";
 		next;
 		delitem 7049,30;
 		set SAGE_Q2,9;
-		show "[Ebeshi]";
-		show "Você viu isso?";
-		show "Eu criei três pedras elementais!";
+		mes "[Ebeshi]";
+		mes "Vocï¿½ viu isso?";
+		mes "Eu criei trï¿½s pedras elementais!";
 		next;
-		show "[Ebeshi]";
-		show "Muito massa, você não acha?";
-		show "Você pode ficar com elas!";
+		mes "[Ebeshi]";
+		mes "Muito massa, vocï¿½ nï¿½o acha?";
+		mes "Vocï¿½ pode ficar com elas!";
 		next;
 		additem 991,1;
 		additem 993,1;
 		additem 992,1;
-		show "[Ebeshi]";
-		show "Agora para sua próxima lição, você precisa sintetizar unst tipos de flechas diferentes com estas pedras.";
+		mes "[Ebeshi]";
+		mes "Agora para sua prï¿½xima liï¿½ï¿½o, vocï¿½ precisa sintetizar unst tipos de flechas diferentes com estas pedras.";
 		next;
-		show "[Ebeshi]";
-		show "Especificamente...";
-		show "^3051FD50 Flechas de Cristal^000000";
-		show "^3051FD50 Flechas de Pedra^000000";
-		show "^3051FD50 Flechas de Vento^000000";
+		mes "[Ebeshi]";
+		mes "Especificamente...";
+		mes "^3051FD50 Flechas de Cristal^000000";
+		mes "^3051FD50 Flechas de Pedra^000000";
+		mes "^3051FD50 Flechas de Vento^000000";
 		next;
-		show "[Ebeshi]";
-		show "Um amigo arqueiro pode te ajudar a fazer as flechas.";
-		show "Vá lá e tente!";
+		mes "[Ebeshi]";
+		mes "Um amigo arqueiro pode te ajudar a fazer as flechas.";
+		mes "Vï¿½ lï¿½ e tente!";
 		close;
 	L_Menu2_3:
 		if((countitem(1754) >= 50) && (countitem(1756) >= 50) && (countitem(1755) >= 50)) goto L_Menu2_4;
-		show "[Ebeshi]";
-		show "Hmmm?";
-		show "O que você fez com as pedras que eu te dei?";
-		show "Eu espero que você não as tenha vendido...";
+		mes "[Ebeshi]";
+		mes "Hmmm?";
+		mes "O que vocï¿½ fez com as pedras que eu te dei?";
+		mes "Eu espero que vocï¿½ nï¿½o as tenha vendido...";
 		next;
-		show "[Ebeshi]";
-		show "Você precisa delas para fazer";
-		show "^3051FD50 Flechas de Cristal^000000";
-		show "^3051FD50 Flechas de Pedra^000000";
-		show "^3051FD50 Flechas de Vento^000000";
-		show "Um amigo arqueiro pode te ajudar a fazer as flechas.";
+		mes "[Ebeshi]";
+		mes "Vocï¿½ precisa delas para fazer";
+		mes "^3051FD50 Flechas de Cristal^000000";
+		mes "^3051FD50 Flechas de Pedra^000000";
+		mes "^3051FD50 Flechas de Vento^000000";
+		mes "Um amigo arqueiro pode te ajudar a fazer as flechas.";
 		close;
 	L_Menu2_4:
-		show "[Ebeshi]";
-		show "Você fez as flechas! Bom trabalho.";
-		show "Agora, para continuar com as lições...";
+		mes "[Ebeshi]";
+		mes "Vocï¿½ fez as flechas! Bom trabalho.";
+		mes "Agora, para continuar com as liï¿½ï¿½es...";
 		next;
-		show "[Ebeshi]";
-		show "Esta lição cobre o capitulo das afinidades dos elementos em seu livro.";
+		mes "[Ebeshi]";
+		mes "Esta liï¿½ï¿½o cobre o capitulo das afinidades dos elementos em seu livro.";
 		next;
-		show "[Ebeshi]";
-		show "A primeira afinidade é realmente fácil.";
-		show "Mágica de água é muito eficiente contra fogo.";
-		show "É fácil de lembrar.";
-		show "tudo que que você precisa se lembrar é da água sendo jogada no fogo.";
+		mes "[Ebeshi]";
+		mes "A primeira afinidade ï¿½ realmente fï¿½cil.";
+		mes "Mï¿½gica de ï¿½gua ï¿½ muito eficiente contra fogo.";
+		mes "ï¿½ fï¿½cil de lembrar.";
+		mes "tudo que que vocï¿½ precisa se lembrar ï¿½ da ï¿½gua sendo jogada no fogo.";
 		next;
-		show "[Ebeshi]";
-		show "Magia do vento irá matar monstros a base de água.";
-		show "Observe o que acontece quando um lago é atingido por um raio.";
+		mes "[Ebeshi]";
+		mes "Magia do vento irï¿½ matar monstros a base de ï¿½gua.";
+		mes "Observe o que acontece quando um lago ï¿½ atingido por um raio.";
 		next;
-		show "[Ebeshi]";
-		show "Magia da terra vai esmagar monstros a base de vento fácilmente.";
-		show "Você não constrói uma casa sobre uma forte fundação para não sofrer com o vento?";
+		mes "[Ebeshi]";
+		mes "Magia da terra vai esmagar monstros a base de vento fï¿½cilmente.";
+		mes "Vocï¿½ nï¿½o constrï¿½i uma casa sobre uma forte fundaï¿½ï¿½o para nï¿½o sofrer com o vento?";
 		next;
-		show "[Ebeshi]";
-		show "Magia do fogo queima a terra sem piedade.";
-		show "Uma arvore não se queimará num incêndio?";
-		show "O mesmo com monstros do elemento terra.";
+		mes "[Ebeshi]";
+		mes "Magia do fogo queima a terra sem piedade.";
+		mes "Uma arvore nï¿½o se queimarï¿½ num incï¿½ndio?";
+		mes "O mesmo com monstros do elemento terra.";
 		next;
-		show "[Ebeshi]";
-		show "Você entendeu?";
-		show "Aqui está um dever de casa para a próxima vez...";
+		mes "[Ebeshi]";
+		mes "Vocï¿½ entendeu?";
+		mes "Aqui estï¿½ um dever de casa para a prï¿½xima vez...";
 		next;
 		delitem 1754,50;
 		delitem 1756,50;
 		delitem 1755,50;
 		set SAGE_Q2,10;
-		show "[Ebeshi]";
-		show "Da próxima vez me traga ^3051FD1 Água Benta^000000.";
-		show "Nós precisaremos para a lição.";
-		show "Será fácil de conseguir se você tiver contados na igreja.";
+		mes "[Ebeshi]";
+		mes "Da prï¿½xima vez me traga ^3051FD1 ï¿½gua Benta^000000.";
+		mes "Nï¿½s precisaremos para a liï¿½ï¿½o.";
+		mes "Serï¿½ fï¿½cil de conseguir se vocï¿½ tiver contados na igreja.";
 		close;
 	L_Menu2_5:
 		if(countitem(523) >= 1) goto L_Menu2_6;
-		show "[Ebeshi]";
-		show "Ooops!";
-		show "Você se esqueceu do item que eu tinha te pedido?";
+		mes "[Ebeshi]";
+		mes "Ooops!";
+		mes "Vocï¿½ se esqueceu do item que eu tinha te pedido?";
 		next;
-		show "[Ebeshi]";
-		show "Eu preciso de ^3051FD1 Água Benta^000000 para a lição.";
-		show "Peça a um noviço para te ajudar a fazer.";
-		show "Hehehehe...";
+		mes "[Ebeshi]";
+		mes "Eu preciso de ^3051FD1 ï¿½gua Benta^000000 para a liï¿½ï¿½o.";
+		mes "Peï¿½a a um noviï¿½o para te ajudar a fazer.";
+		mes "Hehehehe...";
 		close;
 	L_Menu2_6:
-		show "[Ebeshi]";
-		show "Beleza, você está com a Água Benta.";
-		show "Vamos continuar com a lição!";
+		mes "[Ebeshi]";
+		mes "Beleza, vocï¿½ estï¿½ com a ï¿½gua Benta.";
+		mes "Vamos continuar com a liï¿½ï¿½o!";
 		next;
-		show "[Ebeshi]";
-		show "Por favor faça bons apontamentos sobre esta parte.";
-		show "Pois ela estará no teste.";
+		mes "[Ebeshi]";
+		mes "Por favor faï¿½a bons apontamentos sobre esta parte.";
+		mes "Pois ela estarï¿½ no teste.";
 		next;
-		show "[Ebeshi]";
-		show "Magia da água é uma droga contra vento!";
-		show "Um relâmpago ligaria se ele estivesse congelado?";
-		show "Heheheheh....";
+		mes "[Ebeshi]";
+		mes "Magia da ï¿½gua ï¿½ uma droga contra vento!";
+		mes "Um relï¿½mpago ligaria se ele estivesse congelado?";
+		mes "Heheheheh....";
 		next;
-		show "[Ebeshi]";
-		show "Magia do vento é totalmente inútil contra terra.";
-		show "Uma árvore sofrerá dano permanente se bater um vento forte nela?";
+		mes "[Ebeshi]";
+		mes "Magia do vento ï¿½ totalmente inï¿½til contra terra.";
+		mes "Uma ï¿½rvore sofrerï¿½ dano permanente se bater um vento forte nela?";
 		next;
-		show "[Ebeshi]";
-		show "Magia da terra é ineficiente contra fogo.";
-		show "se você colocar umas folhas no fogo, ele apaga?";
-		show "Não, é exatamente o oposto que acontece.";
+		mes "[Ebeshi]";
+		mes "Magia da terra ï¿½ ineficiente contra fogo.";
+		mes "se vocï¿½ colocar umas folhas no fogo, ele apaga?";
+		mes "Nï¿½o, ï¿½ exatamente o oposto que acontece.";
 		next;
-		show "[Ebeshi]";
-		show "Fogo não vai fazer muito contra água.";
-		show "Se você aquecer água, ela não fica mais perigosa?";
+		mes "[Ebeshi]";
+		mes "Fogo nï¿½o vai fazer muito contra ï¿½gua.";
+		mes "Se vocï¿½ aquecer ï¿½gua, ela nï¿½o fica mais perigosa?";
 		next;
-		show "[Ebeshi]";
-		show "essa foi uma aula muito informativa!";
-		show "Você não acha?";
+		mes "[Ebeshi]";
+		mes "essa foi uma aula muito informativa!";
+		mes "Vocï¿½ nï¿½o acha?";
 		next;
 		delitem 523,1;
 		set SAGE_Q2,11;
-		show "[Ebeshi]";
-		show "Agora você tem conhecimento suficiente para preparar uma tese que possa ser defendida.";
-		show "Hehehehehe!";
+		mes "[Ebeshi]";
+		mes "Agora vocï¿½ tem conhecimento suficiente para preparar uma tese que possa ser defendida.";
+		mes "Hehehehehe!";
 		next;
-		show "[Ebeshi]";
-		show "Para montar a tese você precisa de:";
-		show "^3051FD1 Plumas de Ave^000000 como seu instrumento de escrita.";
-		show "^3051FD1 Couro de Animal^000000 para as páginas.";
-		show "^3051FD1 Tronco^000000 para unir as páginas.";
-		show "^3051FD1 Tinta de Polvo^000000 para ser sua tinta.";
-		show "^3051FD1 Garrafa Vazia^000000 para guardar sua tinta.";
+		mes "[Ebeshi]";
+		mes "Para montar a tese vocï¿½ precisa de:";
+		mes "^3051FD1 Plumas de Ave^000000 como seu instrumento de escrita.";
+		mes "^3051FD1 Couro de Animal^000000 para as pï¿½ginas.";
+		mes "^3051FD1 Tronco^000000 para unir as pï¿½ginas.";
+		mes "^3051FD1 Tinta de Polvo^000000 para ser sua tinta.";
+		mes "^3051FD1 Garrafa Vazia^000000 para guardar sua tinta.";
 		next;
-		show "[Ebeshi]";
-		show "Venha me ver quando você tiver todos os itens.";
+		mes "[Ebeshi]";
+		mes "Venha me ver quando vocï¿½ tiver todos os itens.";
 		close;
 	L_ThesisStart1:
 		if((countitem(916) >= 1) && (countitem(919) >= 1) && (countitem(1019) >= 1) && (countitem(1024) >= 1) && (countitem(713) >= 1)) goto L_ThesisStart2;
-		show "[Ebeshi]";
-		show "Hmmm?";
-		show "Você não pode se esquecer de coisas importantes como estas!";
+		mes "[Ebeshi]";
+		mes "Hmmm?";
+		mes "Vocï¿½ nï¿½o pode se esquecer de coisas importantes como estas!";
 		next;
-		show "[Ebeshi]";
-		show "Você precisa destes itens para começar sua tese:";
-		show "^3051FD1 Plumas de Ave^000000 como seu instrumento de escrita.";
-		show "^3051FD1 Couro de Animal^000000 para as páginas.";
-		show "^3051FD1 Tronco^000000 para unir as páginas.";
-		show "^3051FD1 Tinta de Polvo^000000 para ser sua tinta.";
-		show "^3051FD1 Garrafa Vazia^000000 para guardar sua tinta.";
+		mes "[Ebeshi]";
+		mes "Vocï¿½ precisa destes itens para comeï¿½ar sua tese:";
+		mes "^3051FD1 Plumas de Ave^000000 como seu instrumento de escrita.";
+		mes "^3051FD1 Couro de Animal^000000 para as pï¿½ginas.";
+		mes "^3051FD1 Tronco^000000 para unir as pï¿½ginas.";
+		mes "^3051FD1 Tinta de Polvo^000000 para ser sua tinta.";
+		mes "^3051FD1 Garrafa Vazia^000000 para guardar sua tinta.";
 		next;
-		show "[Ebeshi]";
-		show "Você tem alguns amigos que possam te ajudar a coletar os materiais?";
-		show "Isso fará com que a tarefa se torne muito mais simples!";
+		mes "[Ebeshi]";
+		mes "Vocï¿½ tem alguns amigos que possam te ajudar a coletar os materiais?";
+		mes "Isso farï¿½ com que a tarefa se torne muito mais simples!";
 		close;
 	L_ThesisStart2:
 		delitem 916,1;
@@ -365,171 +365,171 @@ L_Menu2_1:
 		delitem 1019,1;
 		delitem 1024,1;
 		delitem 713,1;
-		show "[Ebeshi]";
-		show "Beleza...";
-		show "Você mesmo precisa escrever isto.";
-		show "eu sou simplesmente o seu orientador na pesquisa!";
-		show "Hehehehe...";
+		mes "[Ebeshi]";
+		mes "Beleza...";
+		mes "Vocï¿½ mesmo precisa escrever isto.";
+		mes "eu sou simplesmente o seu orientador na pesquisa!";
+		mes "Hehehehe...";
 		next;
-		show "......";
+		mes "......";
 		next;
-		show "......";
+		mes "......";
 		next;
-		show "......";
+		mes "......";
 		next;
-		show "Magia elemental é dividida em quatro tipos...";
-			menu "...chamadas fogo, vento, água e terra.",L_ThesisMenu1_1,"...nomeadas fogo, vento, água e terra",L_ThesisMenu1_2,"que se opõem: Fogo, Vento, Água e Terra",L_ThesisMenu1_3;
+		mes "Magia elemental ï¿½ dividida em quatro tipos...";
+			menu "...chamadas fogo, vento, ï¿½gua e terra.",L_ThesisMenu1_1,"...nomeadas fogo, vento, ï¿½gua e terra",L_ThesisMenu1_2,"que se opï¿½em: Fogo, Vento, ï¿½gua e Terra",L_ThesisMenu1_3;
 		L_ThesisMenu1_1:
-			show "...chamadas Fogo, Vento, Água e Terra";
+			mes "...chamadas Fogo, Vento, ï¿½gua e Terra";
 			goto L_Thesis2;
 		L_ThesisMenu1_2:
-			show "...nomeadas Fogo, Vento, Água e Terra";
+			mes "...nomeadas Fogo, Vento, ï¿½gua e Terra";
 			goto L_Thesis2;
 		L_ThesisMenu1_3:
-			show "...que se opõem: Fogo, Vento, Água e Terra";
+			mes "...que se opï¿½em: Fogo, Vento, ï¿½gua e Terra";
 			goto L_Thesis2;
 		L_Thesis2:
-			show "cada atributo possui certas propriedades.";
-			menu "Vento conquista água...",L_ThesisMenu2_1,"Água abafa o fogo...",L_ThesisMenu2_2,"Fogo queima a terra...",L_ThesisMenu2_3;
+			mes "cada atributo possui certas propriedades.";
+			menu "Vento conquista ï¿½gua...",L_ThesisMenu2_1,"ï¿½gua abafa o fogo...",L_ThesisMenu2_2,"Fogo queima a terra...",L_ThesisMenu2_3;
 		L_ThesisMenu2_1:
-			show "Vento conquista a água e Terra ataca o vento";
+			mes "Vento conquista a ï¿½gua e Terra ataca o vento";
 			goto L_Thesis3;
 		L_ThesisMenu2_2:
-			show "Água abafa o fogo, enquanto o vento acerta a água";
+			mes "ï¿½gua abafa o fogo, enquanto o vento acerta a ï¿½gua";
 			goto L_Thesis3;
 		L_ThesisMenu2_3:
-			show "Fogo queima a terra, e água abafa o fogo.";
+			mes "Fogo queima a terra, e ï¿½gua abafa o fogo.";
 			goto L_Thesis3;
 		L_Thesis3:
-			menu "Mas fraquezas também existem",L_ThesisMenu3_1,"Você também pode customizar o elemento de sua arma",L_ThesisMenu3_2,"Affinidade aos elementais varia de acordo com o tipo de monstro,",L_ThesisMenu3_3;
+			menu "Mas fraquezas tambï¿½m existem",L_ThesisMenu3_1,"Vocï¿½ tambï¿½m pode customizar o elemento de sua arma",L_ThesisMenu3_2,"Affinidade aos elementais varia de acordo com o tipo de monstro,",L_ThesisMenu3_3;
 		L_ThesisMenu3_1:
-			show "Mas fraquezas também existem";
+			mes "Mas fraquezas tambï¿½m existem";
 			goto L_Thesis4;
 		L_ThesisMenu3_2:
-			show "Você também pode customizar o elemento de sua arma";
+			mes "Vocï¿½ tambï¿½m pode customizar o elemento de sua arma";
 			goto L_Thesis4;
 		L_ThesisMenu3_3:
-			show "Affinidade aos elementais varia de acordo com o tipo de monstro,";
+			mes "Affinidade aos elementais varia de acordo com o tipo de monstro,";
 			goto L_Thesis4;
 		L_Thesis4:
-			menu "Você precisa ser prudente quando estiver enfrentando monstros...",L_ThesisMenu4_1,"Portanto você deve customizar sua arma de acordo com a situação",L_ThesisMenu4_2,"Poções vermelhas tem um sabor de morango delicioso",L_ThesisMenu4_3;
+			menu "Vocï¿½ precisa ser prudente quando estiver enfrentando monstros...",L_ThesisMenu4_1,"Portanto vocï¿½ deve customizar sua arma de acordo com a situaï¿½ï¿½o",L_ThesisMenu4_2,"Poï¿½ï¿½es vermelhas tem um sabor de morango delicioso",L_ThesisMenu4_3;
 		L_ThesisMenu4_1:
-			show "Você precisa ser prudente quando estiver enfrentando monstros que você não saiba a sua afinidade ao certo.";
+			mes "Vocï¿½ precisa ser prudente quando estiver enfrentando monstros que vocï¿½ nï¿½o saiba a sua afinidade ao certo.";
 			goto L_Thesis5;
 		L_ThesisMenu4_2:
-			show "Você deveria personalizar sua arma diante da ocasião.";
+			mes "Vocï¿½ deveria personalizar sua arma diante da ocasiï¿½o.";
 			goto L_Thesis5;
 		L_ThesisMenu4_3:
-			show "Poções vermelhas tem um sabor de morango delicioso";
+			mes "Poï¿½ï¿½es vermelhas tem um sabor de morango delicioso";
 			goto L_Thesis5;
 		L_Thesis5:
 			next;
-			menu "Eimi em prontera é gostosa",L_ThesisMenu5_1,"Eu me pergunto como poções vermelhas são feitas",L_ThesisMenu5_2,"A complexidade das magias excede a capacidade humana em aprender",L_ThesisMenu5_3;
+			menu "Eimi em prontera ï¿½ gostosa",L_ThesisMenu5_1,"Eu me pergunto como poï¿½ï¿½es vermelhas sï¿½o feitas",L_ThesisMenu5_2,"A complexidade das magias excede a capacidade humana em aprender",L_ThesisMenu5_3;
 		L_ThesisMenu5_1:
-			show "Eimi em prontera é gostosa";
+			mes "Eimi em prontera ï¿½ gostosa";
 			goto L_Thesis6;
 		L_ThesisMenu5_2:
-			show "Eu me pergunto como poções vermelhas são feitas";
+			mes "Eu me pergunto como poï¿½ï¿½es vermelhas sï¿½o feitas";
 			goto L_Thesis6;
 		L_ThesisMenu5_3:
-			show "A complexidade das magias excede a capacidade humana em aprender";
+			mes "A complexidade das magias excede a capacidade humana em aprender";
 			goto L_Thesis6;
 		L_Thesis6:
-			menu "As mulheres de Morroc também são gostosas",L_ThesisMenu6_1,"Talvez seja uma receita secreta",L_ThesisMenu6_2,"É perigoso depender tanto da magia...",L_ThesisMenu6_3;
+			menu "As mulheres de Morroc tambï¿½m sï¿½o gostosas",L_ThesisMenu6_1,"Talvez seja uma receita secreta",L_ThesisMenu6_2,"ï¿½ perigoso depender tanto da magia...",L_ThesisMenu6_3;
 		L_ThesisMenu6_1:
-			show "As mulheres de Morroc também são gostosas";
+			mes "As mulheres de Morroc tambï¿½m sï¿½o gostosas";
 			goto L_Thesis7;
 		L_ThesisMenu6_2:
-			show "Talvez seja uma receita secreta";
+			mes "Talvez seja uma receita secreta";
 			goto L_Thesis7;
 		L_ThesisMenu6_3:
-			show "É perigoso depender tanto da magia...";
+			mes "ï¿½ perigoso depender tanto da magia...";
 			goto L_Thesis7;
 		L_Thesis7:
-			menu "Eu queria ter orelhinhas de coelho",L_ThesisMenu7_1,"Aquele gosto da poção branca...",L_ThesisMenu7_2,"...se você quiser ficar seguro. Poder...",L_ThesisMenu7_3;
+			menu "Eu queria ter orelhinhas de coelho",L_ThesisMenu7_1,"Aquele gosto da poï¿½ï¿½o branca...",L_ThesisMenu7_2,"...se vocï¿½ quiser ficar seguro. Poder...",L_ThesisMenu7_3;
 		L_ThesisMenu7_1:
-			show "Eu queria ter orelhinhas de coelho";
+			mes "Eu queria ter orelhinhas de coelho";
 			goto L_Thesis8;
 		L_ThesisMenu7_2:
-			show "Aquele gosto da poção branca...";
+			mes "Aquele gosto da poï¿½ï¿½o branca...";
 			goto L_Thesis8;
 		L_ThesisMenu7_3:
-			show "...se você quiser ficar seguro. Poder...";
+			mes "...se vocï¿½ quiser ficar seguro. Poder...";
 			goto L_Thesis8;
 		L_Thesis8:
-			menu "Isso me faria feliz",L_ThesisMenu8_1,"...é dificil de imaginar",L_ThesisMenu8_2,"No interesse de uma batalha mais segura...",L_ThesisMenu8_3;
+			menu "Isso me faria feliz",L_ThesisMenu8_1,"...ï¿½ dificil de imaginar",L_ThesisMenu8_2,"No interesse de uma batalha mais segura...",L_ThesisMenu8_3;
 		L_ThesisMenu8_1:
-			show "Isso me faria feliz";
+			mes "Isso me faria feliz";
 			goto L_Thesis9;
 		L_ThesisMenu8_2:
-			show "...é dificil de imaginar";
+			mes "...ï¿½ dificil de imaginar";
 			goto L_Thesis9;
 		L_ThesisMenu8_3:
-			show "No interesse de uma batalha mais segura...";
+			mes "No interesse de uma batalha mais segura...";
 			goto L_Thesis9;
 		L_Thesis9:
-			menu "Orelhinhas de coelho dão um bom acessório para noviços",L_ThesisMenu9_1,"Me faz querer saber se...",L_ThesisMenu9_2,"...você deve trazer amigos junto",L_ThesisMenu9_3;
+			menu "Orelhinhas de coelho dï¿½o um bom acessï¿½rio para noviï¿½os",L_ThesisMenu9_1,"Me faz querer saber se...",L_ThesisMenu9_2,"...vocï¿½ deve trazer amigos junto",L_ThesisMenu9_3;
 		L_ThesisMenu9_1:
-			show "Orelhinhas de coelho dão um bom acessório para noviços";
+			mes "Orelhinhas de coelho dï¿½o um bom acessï¿½rio para noviï¿½os";
 			goto L_Thesis10;
 		L_ThesisMenu9_2:
-			show "Me faz querer saber se...";
+			mes "Me faz querer saber se...";
 			goto L_Thesis10;
 		L_ThesisMenu9_3:
-			show "...você deve trazer amigos junto";
+			mes "...vocï¿½ deve trazer amigos junto";
 			goto L_Thesis10;
 		L_Thesis10:
-			menu "Eu queria saber se um cavaleiro também a usaria",L_ThesisMenu10_1,"...as pessoas podem bebê-la quando não estiverem machucadas",L_ThesisMenu10_2,"É a coisa responsável a se fazer",L_ThesisMenu10_3;
+			menu "Eu queria saber se um cavaleiro tambï¿½m a usaria",L_ThesisMenu10_1,"...as pessoas podem bebï¿½-la quando nï¿½o estiverem machucadas",L_ThesisMenu10_2,"ï¿½ a coisa responsï¿½vel a se fazer",L_ThesisMenu10_3;
 		L_ThesisMenu10_1:
-			show "Eu queria saber se um cavaleiro também a usaria";
+			mes "Eu queria saber se um cavaleiro tambï¿½m a usaria";
 			next;
 			goto L_ThesisEnd;
 		L_ThesisMenu10_2:
-			show "...as pessoas podem bebê-la quando não estiverem machucadas";
+			mes "...as pessoas podem bebï¿½-la quando nï¿½o estiverem machucadas";
 			next;
 			goto L_ThesisEnd;
 		L_ThesisMenu10_3:
-			show "É a coisa responsável a se fazer";
+			mes "ï¿½ a coisa responsï¿½vel a se fazer";
 			next;
 			goto L_ThesisEnd;
 	L_ThesisEnd:
-		show "......";
+		mes "......";
 		next;
-		show "......";
+		mes "......";
 		next;
-		show "......";
+		mes "......";
 		next;
 		set SAGE_Q,11;
 		additem 1550,1;
-		show "[Ebeshi]";
-		show "Beleza!";
-		show "Você terminou! Parece muito bom!";
+		mes "[Ebeshi]";
+		mes "Beleza!";
+		mes "Vocï¿½ terminou! Parece muito bom!";
 		next;
-		show "[Ebeshi]";
-		show "Você deve levar isto para o Funcionário Acadêmico!";
-		show "Ele decidirá se você será graduado ou não.";
-		show "Hehehehehe....";
+		mes "[Ebeshi]";
+		mes "Vocï¿½ deve levar isto para o Funcionï¿½rio Acadï¿½mico!";
+		mes "Ele decidirï¿½ se vocï¿½ serï¿½ graduado ou nï¿½o.";
+		mes "Hehehehehe....";
 		close;
 L_Menu3_1:
-	show "[Ebeshi]";
-	show "E ai? você se esqueceu de alguma coisa?!";
+	mes "[Ebeshi]";
+	mes "E ai? vocï¿½ se esqueceu de alguma coisa?!";
 	next;
-	show "[Ebeshi]";
-	show "Você deveria ver o Funcionário Acadêmico e apresentar a sua tese para que você se forme!";
+	mes "[Ebeshi]";
+	mes "Vocï¿½ deveria ver o Funcionï¿½rio Acadï¿½mico e apresentar a sua tese para que vocï¿½ se forme!";
 	close;
 L_Menu3_2:
-	show "[Ebeshi]";
-	show "Boa Tarde!";
-	show "É bom encontrar outros Sábios e trocar informações.";
-	show "Heheheheh!!";
+	mes "[Ebeshi]";
+	mes "Boa Tarde!";
+	mes "ï¿½ bom encontrar outros Sï¿½bios e trocar informaï¿½ï¿½es.";
+	mes "Heheheheh!!";
 	next;
-	show "[Ebeshi]";
-	show "Mesmo que compania seja boa algumas vezes, Eu preciso continuar a minha pesquisa!";
+	mes "[Ebeshi]";
+	mes "Mesmo que compania seja boa algumas vezes, Eu preciso continuar a minha pesquisa!";
 	next;
-	show "[Ebeshi]";
-	show "Você quer continuar seus estudos aqui?";
-	show "Por favor fique avontade para conversar com os outros professores e ler a literatura aqui.";
-	show "Hehehehe!";
+	mes "[Ebeshi]";
+	mes "Vocï¿½ quer continuar seus estudos aqui?";
+	mes "Por favor fique avontade para conversar com os outros professores e ler a literatura aqui.";
+	mes "Hehehehe!";
 	close;
 }
 
@@ -545,204 +545,204 @@ yuno_in03,32,102,0	script	Professor de Biologia	755,{
 	if((SAGE_Q2 >= 4) && (SAGE_Q2 <= 6)) goto L_Menu4_1;
 	if(SAGE_Q2 == 7) goto L_Menu5_1;
 	if(SAGE_Q == 8) goto L_Menu2_1;
-	show "[Lucias]";
-	show "eu estou com dor de cabeça...";
-	show "Eu tenho muitas coisas na cabeça ao mesmo tempo!";
+	mes "[Lucias]";
+	mes "eu estou com dor de cabeï¿½a...";
+	mes "Eu tenho muitas coisas na cabeï¿½a ao mesmo tempo!";
 	next;
-	show "[Lucias]";
-	show "Mas claro, eu ensirarei biologia a outras pessoas mesmo com dor de cabeça!";
+	mes "[Lucias]";
+	mes "Mas claro, eu ensirarei biologia a outras pessoas mesmo com dor de cabeï¿½a!";
 	close;
 L_Menu1_1:
-	show "[Lucias]";
-	show "Hmmm?  você só esta bisbilhotanto?";
+	mes "[Lucias]";
+	mes "Hmmm?  vocï¿½ sï¿½ esta bisbilhotanto?";
 	next;
-	show "[Lucias]";
-	show "Tudo bem, mas por favor não toque em nada.";
-	show "Nós guardamos bioagentes perigosos aqui!";
+	mes "[Lucias]";
+	mes "Tudo bem, mas por favor nï¿½o toque em nada.";
+	mes "Nï¿½s guardamos bioagentes perigosos aqui!";
 	next;
-	show "[Lucias]";
-	show "Se você tiver informação sobre monstros raros nós te pagaremos bem.";
+	mes "[Lucias]";
+	mes "Se vocï¿½ tiver informaï¿½ï¿½o sobre monstros raros nï¿½s te pagaremos bem.";
 	close;
 L_Menu2_1:
-	show "[Lucias]";
-	show "Oh, você fez o teste?";
-	show "Eu sou Lucias, um pesquisador proeminente nas ciências biologicas.";
+	mes "[Lucias]";
+	mes "Oh, vocï¿½ fez o teste?";
+	mes "Eu sou Lucias, um pesquisador proeminente nas ciï¿½ncias biologicas.";
 	next;
-	show "[Lucias]";
-	show "Qual o seu nome jovem?";
+	mes "[Lucias]";
+	mes "Qual o seu nome jovem?";
 	next;
 	menu "Eu sou" + strcharinfo(0) + "!",-;
-	show "[Lucias]";
-	show "Este é um bom nome.";
-	show "Agora, deixe-me explicar os objetivos de nossa pesquisa.";
+	mes "[Lucias]";
+	mes "Este ï¿½ um bom nome.";
+	mes "Agora, deixe-me explicar os objetivos de nossa pesquisa.";
 	next;
-	show "[Lucias]";
-	show "Minha área de especialidade são os monstros.";
-	show "Eu tenho certeza que a esta altura você já encontrou e matou muitos monstros.";
-	show "Estou certo?";
+	mes "[Lucias]";
+	mes "Minha ï¿½rea de especialidade sï¿½o os monstros.";
+	mes "Eu tenho certeza que a esta altura vocï¿½ jï¿½ encontrou e matou muitos monstros.";
+	mes "Estou certo?";
 	next;
-		menu "Você está certo",-,"Bem, na verdade não...",L_Menu2_2;
-		show "[Lucias]";
-		show "Sério?";
-		show "eu espero que sua base de conhecimento seja diversa.";
-		show "Minha aula não é muito fácil.";
+		menu "Vocï¿½ estï¿½ certo",-,"Bem, na verdade nï¿½o...",L_Menu2_2;
+		mes "[Lucias]";
+		mes "Sï¿½rio?";
+		mes "eu espero que sua base de conhecimento seja diversa.";
+		mes "Minha aula nï¿½o ï¿½ muito fï¿½cil.";
 		next;
 		goto L_Menu2_3;
 	L_Menu2_2:
 //==================================
 //If you respond negatively
-		show "[Lucias]";
-		show "Você pode estar em disvantagem.";
-		show "Meu curso pressupõe que você já tenha muito conhecimento prévio.";
-		show "Minha aula não foi feita para ser fácil...";
+		mes "[Lucias]";
+		mes "Vocï¿½ pode estar em disvantagem.";
+		mes "Meu curso pressupï¿½e que vocï¿½ jï¿½ tenha muito conhecimento prï¿½vio.";
+		mes "Minha aula nï¿½o foi feita para ser fï¿½cil...";
 		next;
 //==================================
 L_Menu2_3:
-	show "[Lucias]";
-	show "Então, devemos começar?";
-	show "Você aprenderá muito nesta aula se ficar atento.";
+	mes "[Lucias]";
+	mes "Entï¿½o, devemos comeï¿½ar?";
+	mes "Vocï¿½ aprenderï¿½ muito nesta aula se ficar atento.";
 	next;
 		set @sagerand,0;
 		set @sagerand,rand(3);
-		show "[Lucias]";
-		show "Primeiro você precisa coletar";
+		mes "[Lucias]";
+		mes "Primeiro vocï¿½ precisa coletar";
 		if(@sagerand == 1) goto L_Menu2_4;
 		if(@sagerand == 2) goto L_Menu2_5;
 		set SAGE_Q2,1;
-		show "^3051FD5 Tendões^000000";
-		show "^3051FD5 Garras de Crustáceos^000000";
-		show "^3051FD5 Escamas Aquáticas^000000";
+		mes "^3051FD5 Tendï¿½es^000000";
+		mes "^3051FD5 Garras de Crustï¿½ceos^000000";
+		mes "^3051FD5 Escamas Aquï¿½ticas^000000";
 		next;
 		goto L_Menu2_6;
 	L_Menu2_4:
 		set SAGE_Q2,2;
 //==================================
-//mes?¢?ñ?û
-		show "^3051FD5 Carnes de Ostra^000000";
-		show "^3051FD5 Garras de Crustáceos^000000";
-		show "^3051FD5 Coraçãos de Sereia^000000";
+//mes?ï¿½?ï¿½?ï¿½
+		mes "^3051FD5 Carnes de Ostra^000000";
+		mes "^3051FD5 Garras de Crustï¿½ceos^000000";
+		mes "^3051FD5 Coraï¿½ï¿½os de Sereia^000000";
 		next;
 		goto L_Menu2_6;
 	L_Menu2_5:
 		set SAGE_Q2,3;
-		show "^3051FD5 Células Únicas^000000";
-		show "^3051FD5 Tentáculos^000000";
-		show "^3051FD5 Caudas de Peixe^000000";
+		mes "^3051FD5 Cï¿½lulas ï¿½nicas^000000";
+		mes "^3051FD5 Tentï¿½culos^000000";
+		mes "^3051FD5 Caudas de Peixe^000000";
 //==================================
 		next;
 	L_Menu2_6:
-		show "[Lucias]";
-		show "Nós continuaremos quando você tiver coletado os itens.";
+		mes "[Lucias]";
+		mes "Nï¿½s continuaremos quando vocï¿½ tiver coletado os itens.";
 		close;
 L_Menu3_1:
 	if((countitem(1050) >= 5) && (countitem(960) >= 5) && (countitem(963) >= 5) && (SAGE_Q2 == 1)) goto L_Menu3_4;
 	if((countitem(966) >= 5) && (countitem(960) >= 5) && (countitem(950) >= 5) && (SAGE_Q2 == 2)) goto L_Menu3_4;
 	if((countitem(1052) >= 5) && (countitem(962) >= 5) && (countitem(1023) >= 5) && (SAGE_Q2 == 3)) goto L_Menu3_4;
-	show "[Lucias]";
-	show "Você não tem os itens necessários.";
-	show "Deixe me repetir o que você precisa procurar:";
+	mes "[Lucias]";
+	mes "Vocï¿½ nï¿½o tem os itens necessï¿½rios.";
+	mes "Deixe me repetir o que vocï¿½ precisa procurar:";
 	next;
-		show "[Lucias]";
+		mes "[Lucias]";
 		if(SAGE_Q2 == 2) goto L_Menu3_2;
 		if(SAGE_Q2 == 3) goto L_Menu3_3;
-		show "^3051FD5 Tendões^000000";
-		show "^3051FD5 Garras de Crustáceos^000000";
-		show "^3051FD5 Escamas Aquáticas^000000";
+		mes "^3051FD5 Tendï¿½es^000000";
+		mes "^3051FD5 Garras de Crustï¿½ceos^000000";
+		mes "^3051FD5 Escamas Aquï¿½ticas^000000";
 		close;
 	L_Menu3_2:
-		show "^3051FD5 Carnes de Ostra^000000";
-		show "^3051FD5 Garras de Crustáceos^000000";
-		show "^3051FD5 Coraçãos de Sereia^000000";
+		mes "^3051FD5 Carnes de Ostra^000000";
+		mes "^3051FD5 Garras de Crustï¿½ceos^000000";
+		mes "^3051FD5 Coraï¿½ï¿½os de Sereia^000000";
 		close;
 	L_Menu3_3:
-		show "^3051FD5 Células Únicas^000000";
-		show "^3051FD5 Tentáculos^000000";
-		show "^3051FD5 Caudas de Peixe^000000";
+		mes "^3051FD5 Cï¿½lulas ï¿½nicas^000000";
+		mes "^3051FD5 Tentï¿½culos^000000";
+		mes "^3051FD5 Caudas de Peixe^000000";
 		close;
 L_Menu3_4:
-	show "[Lucias]";
-	show "Bem, você tem os itens mas eu não tenho certeza se você os coletou ou os comprou.";
+	mes "[Lucias]";
+	mes "Bem, vocï¿½ tem os itens mas eu nï¿½o tenho certeza se vocï¿½ os coletou ou os comprou.";
 	next;
-	show "[Lucias]";
-	show "Existe uma similaridade nos monstros que soltam estes itens.";
-	show "Você sabe qual é?";
+	mes "[Lucias]";
+	mes "Existe uma similaridade nos monstros que soltam estes itens.";
+	mes "Vocï¿½ sabe qual ï¿½?";
 	next;
-		menu "Affinidade da água",L_Menu3_5,"Eles são peixes e crustáceos",L_Menu3_6,"Eles são bem ativos",-,"Eles são monstros",-;
+		menu "Affinidade da ï¿½gua",L_Menu3_5,"Eles sï¿½o peixes e crustï¿½ceos",L_Menu3_6,"Eles sï¿½o bem ativos",-,"Eles sï¿½o monstros",-;
 //==================================
-		show "[Lucias]";
-		show "...Eu estou desapontado com você.";
-		show "A resposta correta é que todos os monstros tem a afinidade da água.";
-		show "Monstros que vivem em uma área aquática desenvolvem adaptações para tal ambiente.";
+		mes "[Lucias]";
+		mes "...Eu estou desapontado com vocï¿½.";
+		mes "A resposta correta ï¿½ que todos os monstros tem a afinidade da ï¿½gua.";
+		mes "Monstros que vivem em uma ï¿½rea aquï¿½tica desenvolvem adaptaï¿½ï¿½es para tal ambiente.";
 //==================================
 		next;
 		goto L_Menu3_6;
 	L_Menu3_5:
-		show "[Lucias]";
-		show "Correto!";
-		show "A maioria dos monstros aquaticos tem afinidade da água pois estão adaptados para o seu meio.";
-		show "Peixes e crustáceos evoluiram em uma maneira lógica.";
+		mes "[Lucias]";
+		mes "Correto!";
+		mes "A maioria dos monstros aquaticos tem afinidade da ï¿½gua pois estï¿½o adaptados para o seu meio.";
+		mes "Peixes e crustï¿½ceos evoluiram em uma maneira lï¿½gica.";
 		next;
 	L_Menu3_6:
-		show "[Lucias]";
-		show "Nem todo peixe e crustáceo tem afinidade da água, mas esta não é a regra geral.";
-		show "Agora, qual tipo de magia você acha que seria mais eficiente contra eles?";
+		mes "[Lucias]";
+		mes "Nem todo peixe e crustï¿½ceo tem afinidade da ï¿½gua, mas esta nï¿½o ï¿½ a regra geral.";
+		mes "Agora, qual tipo de magia vocï¿½ acha que seria mais eficiente contra eles?";
 		next;
-		menu "Relâmpago",L_Menu3_7,"Lanças de Fogo",-,"Tempestade de Raios",L_Menu3_8,"Dilúvio",-;
+		menu "Relï¿½mpago",L_Menu3_7,"Lanï¿½as de Fogo",-,"Tempestade de Raios",L_Menu3_8,"Dilï¿½vio",-;
 //==================================
-//mes?¢?ñ?û
-		show "[Lucias]";
-		show "Está errado.";
-		show "Você deve usar magias como Relâmpago ou Tempestade de Raios.";
-		show "Dê uma olhada na matriz de elementais novamente.";
+//mes?ï¿½?ï¿½?ï¿½
+		mes "[Lucias]";
+		mes "Estï¿½ errado.";
+		mes "Vocï¿½ deve usar magias como Relï¿½mpago ou Tempestade de Raios.";
+		mes "Dï¿½ uma olhada na matriz de elementais novamente.";
 		next;
 //==================================
 		goto L_Menu3_9;
 	L_Menu3_7:
-		show "[Lucias]";
-		show "Ótimo, esta certo!";
-		show "Usando Relâmpago é uma maneira fácil de se vencer.";
+		mes "[Lucias]";
+		mes "ï¿½timo, esta certo!";
+		mes "Usando Relï¿½mpago ï¿½ uma maneira fï¿½cil de se vencer.";
 		next;
-		show "[Lucias]";
-		show "Você precisa ser cuidadoso com monstros tipo Penomena e aster pois os seus atributos são diferentes.";
+		mes "[Lucias]";
+		mes "Vocï¿½ precisa ser cuidadoso com monstros tipo Penomena e aster pois os seus atributos sï¿½o diferentes.";
 		next;
 		goto L_Menu3_9;
 	L_Menu3_8:
-		show "[Lucias]";
-		show "Ótimo, esta certo!";
-		show "Esando Tempestade de Raios é jeito fácil de se vencer";
+		mes "[Lucias]";
+		mes "ï¿½timo, esta certo!";
+		mes "Esando Tempestade de Raios ï¿½ jeito fï¿½cil de se vencer";
 		next;
-		show "[Lucias]";
-		show "Você precisa ser cuidadoso com monstros tipo Penomena e aster pois os seus atributos são diferentes.";
+		mes "[Lucias]";
+		mes "Vocï¿½ precisa ser cuidadoso com monstros tipo Penomena e aster pois os seus atributos sï¿½o diferentes.";
 		next;
 	L_Menu3_9:
-		show "[Lucias]";
-		show "Agora, vamos nos dedicar a mostros insetóides.";
+		mes "[Lucias]";
+		mes "Agora, vamos nos dedicar a mostros insetï¿½ides.";
 		next;
 		set @sagerand,rand(3);
-		show "[Lucias]";
-		show "Agora, você precisa coletar";
+		mes "[Lucias]";
+		mes "Agora, vocï¿½ precisa coletar";
 		if(@sagerand == 1) goto L_Menu3_10;
 		if(@sagerand == 2) goto L_Menu3_11;
 		set SAGE_Q2,4;
-		show "^3051FD5 Teias de Aranha^000000";
-		show "^3051FD5 Cascas^000000";
-		show "^3051FD5 Antenas de Inseto^000000";
+		mes "^3051FD5 Teias de Aranha^000000";
+		mes "^3051FD5 Cascas^000000";
+		mes "^3051FD5 Antenas de Inseto^000000";
 		next;
 		goto L_Menu2_6;
 	L_Menu3_10:
 		set SAGE_Q2,5;
 //==================================
-//mes?¢?ñ?û
-		show "^3051FD5 Pós de Traça^000000";
-		show "^3051FD5 Cascos de Caramujo^000000";
-		show "^3051FD5 Chifres^000000";
+//mes?ï¿½?ï¿½?ï¿½
+		mes "^3051FD5 Pï¿½s de Traï¿½a^000000";
+		mes "^3051FD5 Cascos de Caramujo^000000";
+		mes "^3051FD5 Chifres^000000";
 		next;
 		goto L_Menu2_6;
 	L_Menu3_11:
 		set SAGE_Q2,6;
-		show "^3051FD5 Foices de Louva-a-Deus^000000";
-		show "^3051FD5 Peles de Verme^000000";
-		show "^3051FD5 Cascos Arco-Íris^000000";
+		mes "^3051FD5 Foices de Louva-a-Deus^000000";
+		mes "^3051FD5 Peles de Verme^000000";
+		mes "^3051FD5 Cascos Arco-ï¿½ris^000000";
 //==================================
 		next;
 		goto L_Menu2_6;
@@ -750,83 +750,83 @@ L_Menu4_1:
 	if((countitem(1025) >= 5) && (countitem(935) >= 5) && (countitem(928) >= 5) && (SAGE_Q2 == 4)) goto L_Menu4_4;
 	if((countitem(1057) >= 5) && (countitem(946) >= 5) && (countitem(947) >= 5) && (SAGE_Q2 == 5)) goto L_Menu4_4;
 	if((countitem(1031) >= 5) && (countitem(955) >= 5) && (countitem(1013) >= 5) && (SAGE_Q2 == 6)) goto L_Menu4_4;
-	show "[Lucias]";
-	show "Você se esqueceu do que deveria trazer?";
-	show "Ouça com atenção desta vez! Você precisa trazer:";
+	mes "[Lucias]";
+	mes "Vocï¿½ se esqueceu do que deveria trazer?";
+	mes "Ouï¿½a com atenï¿½ï¿½o desta vez! Vocï¿½ precisa trazer:";
 	next;
-		show "[Lucias]";
+		mes "[Lucias]";
 		if(SAGE_Q2 == 5) goto L_Menu4_2;
 		if(SAGE_Q2 == 6) goto L_Menu4_3;
-		show "^3051FD5 Teias de Aranha^000000";
-		show "^3051FD5 Cascas^000000";
-		show "^3051FD5 Antenas de Inseto^000000";
+		mes "^3051FD5 Teias de Aranha^000000";
+		mes "^3051FD5 Cascas^000000";
+		mes "^3051FD5 Antenas de Inseto^000000";
 		close;
 	L_Menu4_2:
-		show "^3051FD5 Pós de Traça^000000";
-		show "^3051FD5 Cascos de Caramujo^000000";
-		show "^3051FD5 Chifres^000000";
+		mes "^3051FD5 Pï¿½s de Traï¿½a^000000";
+		mes "^3051FD5 Cascos de Caramujo^000000";
+		mes "^3051FD5 Chifres^000000";
 		close;
 	L_Menu4_3:
-		show "^3051FD5 Foices de Louva-a-Deus^000000";
-		show "^3051FD5 Peles de Verme^000000";
-		show "^3051FD5 Cascos Arco-Íris^000000";
+		mes "^3051FD5 Foices de Louva-a-Deus^000000";
+		mes "^3051FD5 Peles de Verme^000000";
+		mes "^3051FD5 Cascos Arco-ï¿½ris^000000";
 		close;
 L_Menu4_4:
 	set SAGE_Q2,7;
-	show "[Lucias]";
-	show "Excelente. Você se saiu bem.";
-	show "Eu espero que você tenha sido atencioso ao observar os arredores de onde você coletou os itens. ";
+	mes "[Lucias]";
+	mes "Excelente. Vocï¿½ se saiu bem.";
+	mes "Eu espero que vocï¿½ tenha sido atencioso ao observar os arredores de onde vocï¿½ coletou os itens. ";
 	next;
-	show "[Lucias]";
-	show "Com insetos, você precisa considerar com cuidado qual magia usar, já que insetos possuem afinidades com várias coisas.";
+	mes "[Lucias]";
+	mes "Com insetos, vocï¿½ precisa considerar com cuidado qual magia usar, jï¿½ que insetos possuem afinidades com vï¿½rias coisas.";
 	next;
-	show "[Lucias]";
-	show "você também tem que estar atento para o fato de o esconderijo dos gatunos e furtividade de mercenários não funcionam com certos tipos de insetos.";
+	mes "[Lucias]";
+	mes "vocï¿½ tambï¿½m tem que estar atento para o fato de o esconderijo dos gatunos e furtividade de mercenï¿½rios nï¿½o funcionam com certos tipos de insetos.";
 	next;
-	show "[Lucias]";
-	show "Insetos também pode agir em grupos.";
-	show "Geralmente insetos chefes terão um número considerável de subordinados.";
+	mes "[Lucias]";
+	mes "Insetos tambï¿½m pode agir em grupos.";
+	mes "Geralmente insetos chefes terï¿½o um nï¿½mero considerï¿½vel de subordinados.";
 	next;
-	show "[Lucias]";
-	show "A senhora das formigas Maya...";
-	show "A mandante das abelhas Abelha-Rainha...";
+	mes "[Lucias]";
+	mes "A senhora das formigas Maya...";
+	mes "A mandante das abelhas Abelha-Rainha...";
 	next;
-	show "[Lucias]";
-	show "Se você enfrentar um monstro chefe sozinho, é melhor estar preparado para morrer.";
-	show "Você tem que levar um grupo de amigos para enfrentar tais criaturas.";
+	mes "[Lucias]";
+	mes "Se vocï¿½ enfrentar um monstro chefe sozinho, ï¿½ melhor estar preparado para morrer.";
+	mes "Vocï¿½ tem que levar um grupo de amigos para enfrentar tais criaturas.";
 	next;
-	show "[Lucias]";
-	show "Bem, você ja estudou bastante.";
-	show "Agora você precisa escrever uma tese.";
-	show "Você precisa de alguns materiais antes de começar a escrever.";
-	show "Aqui estão:";
+	mes "[Lucias]";
+	mes "Bem, vocï¿½ ja estudou bastante.";
+	mes "Agora vocï¿½ precisa escrever uma tese.";
+	mes "Vocï¿½ precisa de alguns materiais antes de comeï¿½ar a escrever.";
+	mes "Aqui estï¿½o:";
 	next;
-	show "[Lucias]";
-	show "^3051FD1 Plumas de Ave^000000 para ser o seu instrumento de escrita.";
-	show "^3051FD1 Couro de Animal^000000 para as páginas.";
-	show "^3051FD1 Tronco^000000 para unir as páginas.";
-	show "^3051FD1 Tinta de Polvo^000000 para sua tinta.";
-	show "^3051FD1 Garrafa Vazia^000000 para guardar a tinta.";
+	mes "[Lucias]";
+	mes "^3051FD1 Plumas de Ave^000000 para ser o seu instrumento de escrita.";
+	mes "^3051FD1 Couro de Animal^000000 para as pï¿½ginas.";
+	mes "^3051FD1 Tronco^000000 para unir as pï¿½ginas.";
+	mes "^3051FD1 Tinta de Polvo^000000 para sua tinta.";
+	mes "^3051FD1 Garrafa Vazia^000000 para guardar a tinta.";
 	next;
-	show "[Lucias]";
-	show "Nós podemos começar quando você retornar.";
+	mes "[Lucias]";
+	mes "Nï¿½s podemos comeï¿½ar quando vocï¿½ retornar.";
 	close;
 L_Menu5_1:
 	if((countitem(916) >= 1) && (countitem(919) >= 1) && (countitem(1019) >= 1) && (countitem(1024) >= 1) && (countitem(713) >= 1) && (SAGE_Q2 == 7)) goto L_Menu5_2;
-	show "[Lucias]";
-	show "Você precisa coletar os itens primeiro.";
-	show "eles são:";
+	mes "[Lucias]";
+	mes "Vocï¿½ precisa coletar os itens primeiro.";
+	mes "eles sï¿½o:";
 	next;
-	show "[Lucias]";
-	show "^3051FD1 Plumas de Ave^000000 para ser o seu instrumento de escrita.";
-	show "^3051FD1 Couro de Animal^000000 para as páginas.";
-	show "^3051FD1 Tronco^000000 para unir as páginas.";
-	show "^3051FD1 Tinta de Polvo^000000 para sua tinta.";
-	show "^3051FD1 Garrafa Vazia^000000 para guardar a tinta.";
+	mes "[Lucias]";
+	mes "^3051FD1 Plumas de Ave^000000 para ser o seu instrumento de escrita.";
+	mes "^3051FD1 Couro de Animal^000000 para as pï¿½ginas.";
+	mes "^3051FD1 Tronco^000000 para unir as pï¿½ginas.";
+	mes "^3051FD1 Tinta de Polvo^000000 para sua tinta.";
+	mes "^3051FD1 Garrafa Vazia^000000 para guardar a tinta.";
 	next;
-	show "[Lucias]";
-	show "Você foi bem até agora.";
-	show "Só mais um pouco e você se formará.";
+	mes "[Lucias]";
+	mes "Vocï¿½ foi bem atï¿½ agora.";
+	mes "Sï¿½ mais um pouco e vocï¿½ se formarï¿½.";
 	close;
 L_Menu5_2:
 	delitem 916,1;
@@ -834,70 +834,70 @@ L_Menu5_2:
 	delitem 1019,1;
 	delitem 1024,1;
 	delitem 713,1;
-	show "[Lucias]";
-	show "Parece que você já tem tudo.";
+	mes "[Lucias]";
+	mes "Parece que vocï¿½ jï¿½ tem tudo.";
 	next;
-	show "[Lucias]";
-	show "Agora, você mesmo precisa escrever.";
-	show "Eu só estarei assumindo um papel de aconselhar.";
+	mes "[Lucias]";
+	mes "Agora, vocï¿½ mesmo precisa escrever.";
+	mes "Eu sï¿½ estarei assumindo um papel de aconselhar.";
 	next;
-	show "[Lucias]";
-	show "Você está pronto para começar?";
-	show "Vejamos se você adquiriu conhecimento suficiente para escrever uma tese coerente.";
+	mes "[Lucias]";
+	mes "Vocï¿½ estï¿½ pronto para comeï¿½ar?";
+	mes "Vejamos se vocï¿½ adquiriu conhecimento suficiente para escrever uma tese coerente.";
 	next;
-	show "......";
+	mes "......";
 	next;
-	show "......";
+	mes "......";
 	next;
-	show "......";
+	mes "......";
 	next;
 	menu "Monstros aparecem com tipos diferentes",-;
-	show "Monstros aparecem com tipos diferentes";
+	mes "Monstros aparecem com tipos diferentes";
 	menu "Eles tem afinidades elementais diferentes",-;
-	show "Eles tem afinidades elementais diferentes";
-	menu "Se você souber o elemento do monstro antecipadamente...",-;
-	show "Se você souber o elemento do monstro antecipadamente...";
-	menu "...você pode melhorar a sua experiência de batalha",-;
-	show "...você pode melhorar a sua experiência de batalha";
-	menu "Você deve ser especialmente cuidadoso com...",-;
-	show "Você deve ser especialmente cuidadoso com...";
+	mes "Eles tem afinidades elementais diferentes";
+	menu "Se vocï¿½ souber o elemento do monstro antecipadamente...",-;
+	mes "Se vocï¿½ souber o elemento do monstro antecipadamente...";
+	menu "...vocï¿½ pode melhorar a sua experiï¿½ncia de batalha",-;
+	mes "...vocï¿½ pode melhorar a sua experiï¿½ncia de batalha";
+	menu "Vocï¿½ deve ser especialmente cuidadoso com...",-;
+	mes "Vocï¿½ deve ser especialmente cuidadoso com...";
 	menu "...monstros com afinidade holy e darkness.",-;
-	show "...monstros com afinidade holy e darkness.";
+	mes "...monstros com afinidade holy e darkness.";
 	next;
-	show "......";
+	mes "......";
 	next;
-	show "......";
+	mes "......";
 	next;
-	show "......";
+	mes "......";
 	next;
 	set SAGE_Q,11;
 	additem 1550,1;
-	show "[Lucias]";
-	show "Isto esta muito bom!";
-	show "Estou orgulhoso de você!";
+	mes "[Lucias]";
+	mes "Isto esta muito bom!";
+	mes "Estou orgulhoso de vocï¿½!";
 	next;
-	show "[Lucias]";
-	show "Mostre isso ao Funcionário Acadêmico que você certamente se formará.";
-	show "Boa sorte.";
+	mes "[Lucias]";
+	mes "Mostre isso ao Funcionï¿½rio Acadï¿½mico que vocï¿½ certamente se formarï¿½.";
+	mes "Boa sorte.";
 	close;
 L_Menu5_3:
-	show "[Lucias]";
-	show "Hmmm? Qual o problema?";
-	show "Você precisa mostrar sua tese para o Funcionário Acadêmico.";
+	mes "[Lucias]";
+	mes "Hmmm? Qual o problema?";
+	mes "Vocï¿½ precisa mostrar sua tese para o Funcionï¿½rio Acadï¿½mico.";
 	close;
 L_Menu5_4:
-	show "[Lucias]";
-	show "Você esta confuso com alguma coisa?";
-	show "Eu estou muito ocupado, portanto você precisa marcar uma hora com uma semana te antecedência.";
+	mes "[Lucias]";
+	mes "Vocï¿½ esta confuso com alguma coisa?";
+	mes "Eu estou muito ocupado, portanto vocï¿½ precisa marcar uma hora com uma semana te antecedï¿½ncia.";
 	next;
-	show "[Lucias]";
-	show "Hahaha...Quando você for um Sábio por algum tempo, você estará dizendo a mesma coisa.";
+	mes "[Lucias]";
+	mes "Hahaha...Quando vocï¿½ for um Sï¿½bio por algum tempo, vocï¿½ estarï¿½ dizendo a mesma coisa.";
 	next;
-	show "[Lucias]";
-	show "Também, se você tiver algum tempo livre.";
-	show "você deve ir até a dungeon e deitar no chão.";
-	show "Olhe para o teto e estude-o.";
-	show "Você pode acabar aprendendo alguma coisa.";
+	mes "[Lucias]";
+	mes "Tambï¿½m, se vocï¿½ tiver algum tempo livre.";
+	mes "vocï¿½ deve ir atï¿½ a dungeon e deitar no chï¿½o.";
+	mes "Olhe para o teto e estude-o.";
+	mes "Vocï¿½ pode acabar aprendendo alguma coisa.";
 	close;
 }
 
@@ -905,7 +905,7 @@ L_Menu5_4:
 //Academy Interior
 //=================================
 
-yuno_in03,154,35,4	script	Equipe Acadêmica	742,{
+yuno_in03,154,35,4	script	Equipe Acadï¿½mica	742,{
 
 	if(BaseJob == Job_Sage) goto L_Menu6_4;
 	if(BaseJob != Job_Mage) goto L_Menu1_1;
@@ -913,115 +913,115 @@ yuno_in03,154,35,4	script	Equipe Acadêmica	742,{
 	if(SAGE_Q >= 4) goto L_Menu6_2;
 	if(SAGE_Q == 3) goto L_Menu6_1;
 	if(SAGE_Q == 2) goto L_Menu5_1;
-	show "[Mathias]";
-	show "Olá.";
-	show "Esta é a Academia de Magia Shubaichul?";
-	show "Você parece ser um mago.";
-	show "Posso te ajudar?";
+	mes "[Mathias]";
+	mes "Olï¿½.";
+	mes "Esta ï¿½ a Academia de Magia Shubaichul?";
+	mes "Vocï¿½ parece ser um mago.";
+	mes "Posso te ajudar?";
 	next;
-	menu "informação sobre troca de classe para Sábio",-,"Eu quero me inscrever na academia",L_Menu3_1,"Esqueça",L_Menu2;
-		show "[Mathias]";
-		show "Você quer trocar de classe para Sábio?";
-		show "Eu não posso mudar sua classe aqui.";
+	menu "informaï¿½ï¿½o sobre troca de classe para Sï¿½bio",-,"Eu quero me inscrever na academia",L_Menu3_1,"Esqueï¿½a",L_Menu2;
+		mes "[Mathias]";
+		mes "Vocï¿½ quer trocar de classe para Sï¿½bio?";
+		mes "Eu nï¿½o posso mudar sua classe aqui.";
 		next;
-		show "[Mathias]";
-		show "Você deve completar um programa completo de trabalhos e pesquisas.";
+		mes "[Mathias]";
+		mes "Vocï¿½ deve completar um programa completo de trabalhos e pesquisas.";
 		next;
-		show "[Mathias]";
-		show "uma vez formado pela academia";
-		show "você pode mudar de classe.";
-		show "Para prosseguir você precisa pagar a taxa de tutela e fazer o teste.";
+		mes "[Mathias]";
+		mes "uma vez formado pela academia";
+		mes "vocï¿½ pode mudar de classe.";
+		mes "Para prosseguir vocï¿½ precisa pagar a taxa de tutela e fazer o teste.";
 		next;
-		show "[Mathias]";
-		show "Somente os que possuem um ^3051FDGrimório Antigo^000000 e um ^3051FDColar da Sabedoria^000000 podem ter a taxa de tutoria suspensa.";
+		mes "[Mathias]";
+		mes "Somente os que possuem um ^3051FDGrimï¿½rio Antigo^000000 e um ^3051FDColar da Sabedoria^000000 podem ter a taxa de tutoria suspensa.";
 		next;
-		show "[Mathias]";
-		show "Quando você tiver pago a taxa, você primeiro fará o teste. ";
-		show "Se você obtiver uma nota alta o bastante para ser incluso em nosso programa, você será colocado para pesquisar de acordo com sua colocação.";
-		show "Finalmente, você deverá preparar e defender uma tese.";
+		mes "[Mathias]";
+		mes "Quando vocï¿½ tiver pago a taxa, vocï¿½ primeiro farï¿½ o teste. ";
+		mes "Se vocï¿½ obtiver uma nota alta o bastante para ser incluso em nosso programa, vocï¿½ serï¿½ colocado para pesquisar de acordo com sua colocaï¿½ï¿½o.";
+		mes "Finalmente, vocï¿½ deverï¿½ preparar e defender uma tese.";
 		next;
-		show "[Mathias]";
-		show "O Funcionário Acadêmico decide se a tese se encaixa ou não no padrão para a sua graduação.";
-		show "Se ele a aprovar, você poderá começar sua carreira como Sábio formalmente.";
+		mes "[Mathias]";
+		mes "O Funcionï¿½rio Acadï¿½mico decide se a tese se encaixa ou nï¿½o no padrï¿½o para a sua graduaï¿½ï¿½o.";
+		mes "Se ele a aprovar, vocï¿½ poderï¿½ comeï¿½ar sua carreira como Sï¿½bio formalmente.";
 		next;
-		show "[Mathias]";
-		show "Se você estiver interessado, você só precisa submeter um requerimento e começar.";
-		show "Tenha um bom dia.";
+		mes "[Mathias]";
+		mes "Se vocï¿½ estiver interessado, vocï¿½ sï¿½ precisa submeter um requerimento e comeï¿½ar.";
+		mes "Tenha um bom dia.";
 		close;
 L_Menu2:
-	show "[Mathias]";
-	show "Oh?";
-	show "Você está hesitante?";
-	show "Então te vejo mais tarde.";
+	mes "[Mathias]";
+	mes "Oh?";
+	mes "Vocï¿½ estï¿½ hesitante?";
+	mes "Entï¿½o te vejo mais tarde.";
 	close;
 L_Menu1_1:
-	show "[Mathias]";
-	show "Bem vindo.";
-	show "Esta é Academia de Magia Shubaichul.";
+	mes "[Mathias]";
+	mes "Bem vindo.";
+	mes "Esta ï¿½ Academia de Magia Shubaichul.";
 	next;
-	show "[Mathias]";
-	show "Nós fazemos pesquisas em magias e monstros aqui.";
-	show "Nós também treinamos Sábios inexperientes.";
+	mes "[Mathias]";
+	mes "Nï¿½s fazemos pesquisas em magias e monstros aqui.";
+	mes "Nï¿½s tambï¿½m treinamos Sï¿½bios inexperientes.";
 	next;
-	show "[Mathias]";
-	show "Qualquer Magician que tem nivel de classe maior ou igual a 40 pode se inscrever na academia.";
-	show "Uma vez que você tenha completado nosso processo prescrito para acquisição de grau, você poderá se tornar um Sábio.";
+	mes "[Mathias]";
+	mes "Qualquer Magician que tem nivel de classe maior ou igual a 40 pode se inscrever na academia.";
+	mes "Uma vez que vocï¿½ tenha completado nosso processo prescrito para acquisiï¿½ï¿½o de grau, vocï¿½ poderï¿½ se tornar um Sï¿½bio.";
 	next;
-	show "[Mathias]";
-	show "Adeus.";
+	mes "[Mathias]";
+	mes "Adeus.";
 	close;
 L_Menu3_1:
-	show "[Mathias]";
-	show "Você quer se inscrever? Maravilha!";
+	mes "[Mathias]";
+	mes "Vocï¿½ quer se inscrever? Maravilha!";
 	next;
-	show "[Mathias]";
-	show "Para que você entre na academia,";
-	show "você precisa ser um Magician de nivel de classe 40 ou maior.";
-	show "Você também precisará pagar a taxa de tutela para cobrir as aulas e materiais.";
+	mes "[Mathias]";
+	mes "Para que vocï¿½ entre na academia,";
+	mes "vocï¿½ precisa ser um Magician de nivel de classe 40 ou maior.";
+	mes "Vocï¿½ tambï¿½m precisarï¿½ pagar a taxa de tutela para cobrir as aulas e materiais.";
 	next;
-	show "[Mathias]";
-	show "A tutoria é 70,000 zeny.";
-	show "Se você possuir um ^3051FDGrimório Antigo^000000 ou um ^3051FDColar da Sabedoria^000000,a taxa não será cobrada.";
+	mes "[Mathias]";
+	mes "A tutoria ï¿½ 70,000 zeny.";
+	mes "Se vocï¿½ possuir um ^3051FDGrimï¿½rio Antigo^000000 ou um ^3051FDColar da Sabedoria^000000,a taxa nï¿½o serï¿½ cobrada.";
 	next;
-	show "[Mathias]";
-	show "Então você gostaria de se inscrever?";
+	mes "[Mathias]";
+	mes "Entï¿½o vocï¿½ gostaria de se inscrever?";
 	next;
-	menu "Sim, eu gostaria",L_Menu5_5,"A taxa é muito cara!",-,"Eu volto mais tarde",L_Menu3_2;
-		show "[Mathias]";
-		show "Bom...nós precisamos da taxa para cobrir as instruções e os materiais...";
+	menu "Sim, eu gostaria",L_Menu5_5,"A taxa ï¿½ muito cara!",-,"Eu volto mais tarde",L_Menu3_2;
+		mes "[Mathias]";
+		mes "Bom...nï¿½s precisamos da taxa para cobrir as instruï¿½ï¿½es e os materiais...";
 		next;
-		menu "Não existe outra maneira?",-,"Eu vou tentar mais tarde",L_Menu3_2;
+		menu "Nï¿½o existe outra maneira?",-,"Eu vou tentar mais tarde",L_Menu3_2;
 		set SAGE_Q,2;
-		show "[Mathias]";
-		show "Bom... talvez exista. Eu posso reduzir a taxa para 30,000 zeny se você puder nos trazer alguns materiais que nosso departamento de pesquisa precisa.";
+		mes "[Mathias]";
+		mes "Bom... talvez exista. Eu posso reduzir a taxa para 30,000 zeny se vocï¿½ puder nos trazer alguns materiais que nosso departamento de pesquisa precisa.";
 		next;
-		show "[Mathias]";
-		show "Nós precisamos especificamente de:";
-		show "^3051FD50 Plumas de Ave^000000";
-		show "^3051FD50 Felpas^000000";
-		show "^3051FD50 Trevos^000000";
-		show "^3051FD50 Plumas^000000";
+		mes "[Mathias]";
+		mes "Nï¿½s precisamos especificamente de:";
+		mes "^3051FD50 Plumas de Ave^000000";
+		mes "^3051FD50 Felpas^000000";
+		mes "^3051FD50 Trevos^000000";
+		mes "^3051FD50 Plumas^000000";
 		next;
-		show "[Mathias]";
-		show "Se você conseguir tudo isto. eu descontarei a taxa até 30,000 zeny.";
-		show "Por favor faça o melhor para coletá-los.";
+		mes "[Mathias]";
+		mes "Se vocï¿½ conseguir tudo isto. eu descontarei a taxa atï¿½ 30,000 zeny.";
+		mes "Por favor faï¿½a o melhor para coletï¿½-los.";
 		next;
-		show "[Mathias]";
-		show "Claro, você também pode conseguir os 70,000 zeny ao invés de coletar os itens se você quiser.";
+		mes "[Mathias]";
+		mes "Claro, vocï¿½ tambï¿½m pode conseguir os 70,000 zeny ao invï¿½s de coletar os itens se vocï¿½ quiser.";
 		next;
-		show "[Mathias]";
-		show "Por favor faça o melhor para coletá-los.";
-		show "Até mais tarde.";
+		mes "[Mathias]";
+		mes "Por favor faï¿½a o melhor para coletï¿½-los.";
+		mes "Atï¿½ mais tarde.";
 		close;
 	L_Menu3_2:
-		show "[Mathias]";
-		show "Ok, beleza.";
-		show "Não se apresse.";
-		show "Obrigado por ter passado.";
+		mes "[Mathias]";
+		mes "Ok, beleza.";
+		mes "Nï¿½o se apresse.";
+		mes "Obrigado por ter passado.";
 		close;
 L_Menu5_1:
-	show "[Mathias]";
-	show "Então, você gostaria de se inscrever?";
+	mes "[Mathias]";
+	mes "Entï¿½o, vocï¿½ gostaria de se inscrever?";
 	next;
 	if(JobLevel < 40) goto L_Menu5_9;
 	if(countitem(1006) > 0) goto L_Menu5_4;
@@ -1029,21 +1029,21 @@ L_Menu5_1:
 	if(Zeny < 70000) goto L_Menu5_2;
 		set Zeny,Zeny-70000;
 		set SAGE_Q,3;
-		show "[Mathias]";
-		show "Ve jo que você possui 70000 Zeny.";
-		show "Eu o aceitarei para a tutoria. Você agora está inscrito na escola.";
+		mes "[Mathias]";
+		mes "Ve jo que vocï¿½ possui 70000 Zeny.";
+		mes "Eu o aceitarei para a tutoria. Vocï¿½ agora estï¿½ inscrito na escola.";
 		next;
 	L_Menu5_5:
 		if(JobLevel < 40) goto L_Menu5_9;
-		show "[Mathias]";
-		show "Nós precisamos de sua assinatura neste formulário para prosseguir.";
-		show "Por favor assine no X";
+		mes "[Mathias]";
+		mes "Nï¿½s precisamos de sua assinatura neste formulï¿½rio para prosseguir.";
+		mes "Por favor assine no X";
 		next;
 		menu "" + strcharinfo(0) + "",-;
-		show "[Mathias]";
-		show "Beleza, então você é o";
-		show "" + strcharinfo(0) + ".";
-		show "Este é um belo nome.";
+		mes "[Mathias]";
+		mes "Beleza, entï¿½o vocï¿½ ï¿½ o";
+		mes "" + strcharinfo(0) + ".";
+		mes "Este ï¿½ um belo nome.";
 		next;
 			if(JobLevel == 50) goto L_JobMax;
 			if(SAGE_Q == 3) goto L_Menu5_6;
@@ -1053,51 +1053,51 @@ L_Menu5_1:
 			set Zeny,Zeny-70000;
 			set SAGE_Q,3;
 
-			show "[Mathias]";
-			show "Ve jo que você possui 70000 Zeny.";
-			show "Eu o aceitarei para a tutoria. ";
-			show " Você agora está inscrito na escola.";
+			mes "[Mathias]";
+			mes "Ve jo que vocï¿½ possui 70000 Zeny.";
+			mes "Eu o aceitarei para a tutoria. ";
+			mes " Vocï¿½ agora estï¿½ inscrito na escola.";
 			next;
 
 		L_Menu5_6:
-			show "[Mathias]";
-			show "Você primeiro precisa fazer um teste com o professor Kreitos.";
+			mes "[Mathias]";
+			mes "Vocï¿½ primeiro precisa fazer um teste com o professor Kreitos.";
 			next;
-			show "[Mathias]";
-			show "Professor Kreitos está na biblioteca da academia.";
-			show "É no lado mais distante a esquerda do prédio.";
+			mes "[Mathias]";
+			mes "Professor Kreitos estï¿½ na biblioteca da academia.";
+			mes "ï¿½ no lado mais distante a esquerda do prï¿½dio.";
 			next;
-			show "[Mathias]";
-			show "Boa sorte no teste.";
+			mes "[Mathias]";
+			mes "Boa sorte no teste.";
 			close;
 		L_JobMax:
 			set SAGE_Q,3;
-			show "[Mathias]";
-			show "Você treinou até o nivel máximo de classe para Magicians!";
-			show "Neste caso eu te darei uma bolsa integral!";
+			mes "[Mathias]";
+			mes "Vocï¿½ treinou atï¿½ o nivel mï¿½ximo de classe para Magicians!";
+			mes "Neste caso eu te darei uma bolsa integral!";
 			next;
-			show "[Mathias]";
-			show "Agora tudo o que você precisa fazer é o teste.";
+			mes "[Mathias]";
+			mes "Agora tudo o que vocï¿½ precisa fazer ï¿½ o teste.";
 			next;
-			show "[Mathias]";
-			show "Vá ver o professor Kreitos na biblioteca, no lado esquerdo mais distante do prédio.";
+			mes "[Mathias]";
+			mes "Vï¿½ ver o professor Kreitos na biblioteca, no lado esquerdo mais distante do prï¿½dio.";
 			close;
 	L_Menu5_2:
 		if(SAGE_Q != 2) goto L_Menu5_8;
 		if((countitem(916) >= 50) && (countitem(914) >= 50) && (countitem(949) >= 50) && (countitem(705) >= 50)) goto L_Menu5_3;
-		show "[Mathias]";
-		show "Parece que você ainda não possui os materiais.";
+		mes "[Mathias]";
+		mes "Parece que vocï¿½ ainda nï¿½o possui os materiais.";
 		next;
-		show "[Mathias]";
-		show "Você precisa trazer:";
-		show "^3051FD50 Plumas de Ave^000000";
-		show "^3051FD50 Felpas^000000";
-		show "^3051FD50 Trevos^000000";
-		show "^3051FD50 Plumas^000000";
+		mes "[Mathias]";
+		mes "Vocï¿½ precisa trazer:";
+		mes "^3051FD50 Plumas de Ave^000000";
+		mes "^3051FD50 Felpas^000000";
+		mes "^3051FD50 Trevos^000000";
+		mes "^3051FD50 Plumas^000000";
 		next;
-		show "[Mathias]";
-		show "se você conseguir tudo isso, eu irei descontar sua taxa para 30,000 zeny";
-		show "Por favor faça o melhor para coletar os itens.";
+		mes "[Mathias]";
+		mes "se vocï¿½ conseguir tudo isso, eu irei descontar sua taxa para 30,000 zeny";
+		mes "Por favor faï¿½a o melhor para coletar os itens.";
 		close;
 	L_Menu5_3:
 //==================================
@@ -1108,86 +1108,86 @@ L_Menu5_1:
 		delitem 949,50;
 		set Zeny,Zeny-30000;
 		set SAGE_Q,3;
-		show "[Mathias]";
-		show "Parece que você está com os materiais que eu pedi e os 30,000 zeny.";
-		show "Parabéns.";
-		show "você agora está inscrito na Academia.";
+		mes "[Mathias]";
+		mes "Parece que vocï¿½ estï¿½ com os materiais que eu pedi e os 30,000 zeny.";
+		mes "Parabï¿½ns.";
+		mes "vocï¿½ agora estï¿½ inscrito na Academia.";
 		set SAGE_Q,3;
 		next;
 		goto L_Menu5_5;
 	L_Menu5_4:
 		delitem 1006,1;
 		set SAGE_Q,3;
-		show "[Mathias]";
-		show "Oh, você tem um ^3051FDGrimório Antigo^000000.";
-		show "Eu vou aceitá-lo como a tutoria.";
+		mes "[Mathias]";
+		mes "Oh, vocï¿½ tem um ^3051FDGrimï¿½rio Antigo^000000.";
+		mes "Eu vou aceitï¿½-lo como a tutoria.";
 		next;
 		goto L_Menu5_5;
 	L_Menu5_4_:
 		delitem 1007,1;
 		set SAGE_Q,3;
-		show "[Mathias]";
-		show "Oh, você tem um ^3051FDColar da Sabedoria^000000.";
-		show "Eu vou aceitá-lo como a tutoria.";
+		mes "[Mathias]";
+		mes "Oh, vocï¿½ tem um ^3051FDColar da Sabedoria^000000.";
+		mes "Eu vou aceitï¿½-lo como a tutoria.";
 		next;
 		goto L_Menu5_5;
 	L_Menu5_7:
 		delitem 1006,1;
 		set SAGE_Q,3;
-		show "[Mathias]";
-		show "Oh, you have a ^3051FDGrimório Antigo^000000.";
-		show "Eu vou aceitá-lo como a tutoria.";
+		mes "[Mathias]";
+		mes "Oh, you have a ^3051FDGrimï¿½rio Antigo^000000.";
+		mes "Eu vou aceitï¿½-lo como a tutoria.";
 		next;
 		goto L_Menu5_6;
 	L_Menu5_7_:
 		delitem 1007,1;
 		set SAGE_Q,3;
-		show "[Mathias]";
-		show "Oh, você tem um ^3051FDColar da Sabedoria^000000.";
-		show "Eu vou aceitá-lo como a tutoria.";
+		mes "[Mathias]";
+		mes "Oh, vocï¿½ tem um ^3051FDColar da Sabedoria^000000.";
+		mes "Eu vou aceitï¿½-lo como a tutoria.";
 		next;
 		goto L_Menu5_6;
 	L_Menu5_8:
-		show "[Mathias]";
-		show "Parece que você não tem dineiro suficiente.";
-		show "Por favor consiga algum dinheiro e retorne.";
+		mes "[Mathias]";
+		mes "Parece que vocï¿½ nï¿½o tem dineiro suficiente.";
+		mes "Por favor consiga algum dinheiro e retorne.";
 		close;
 	L_Menu5_9:
-		show "[Mathias]";
-		show "Seu nivel de classe é muito baixo.";
-		show "Treine um pouco mais e volte.";
+		mes "[Mathias]";
+		mes "Seu nivel de classe ï¿½ muito baixo.";
+		mes "Treine um pouco mais e volte.";
 		close;
 //==================================
 L_Menu6_1:
-	show "[Mathias]";
-	show "Hmmm? Você se esqueceu do que tem que fazer agora?";
-	show "Vá até o professor Kreitos na biblioteca, no lado esquerdo do prédio.";
+	mes "[Mathias]";
+	mes "Hmmm? Vocï¿½ se esqueceu do que tem que fazer agora?";
+	mes "Vï¿½ atï¿½ o professor Kreitos na biblioteca, no lado esquerdo do prï¿½dio.";
 	close;
 L_Menu6_2:
-	show "[Mathias]";
-	show "Oh, perdoe-me. eu tenho tanto pra fazer agora que eu não posso te ajudar.";
-	show "Novamente, minhas desculpas...";
+	mes "[Mathias]";
+	mes "Oh, perdoe-me. eu tenho tanto pra fazer agora que eu nï¿½o posso te ajudar.";
+	mes "Novamente, minhas desculpas...";
 	close;
 L_Menu6_3:
-	show "[Mathias]";
-	show "Oh, você terminou sua tese?";
-	show "Você precisa ver o Funcionário Acadêmico Keiron para ele a avaliar.";
+	mes "[Mathias]";
+	mes "Oh, vocï¿½ terminou sua tese?";
+	mes "Vocï¿½ precisa ver o Funcionï¿½rio Acadï¿½mico Keiron para ele a avaliar.";
 	next;
-	show "[Mathias]";
-	show "Se ele a aprovar, você se formará!";
-	show "Boa sorte.";
+	mes "[Mathias]";
+	mes "Se ele a aprovar, vocï¿½ se formarï¿½!";
+	mes "Boa sorte.";
 	close;
 L_Menu6_4:
-	show "[Mathias]";
-	show "Bem vindo, colega.";
-	show "Como está indo sua pesquisa?";
+	mes "[Mathias]";
+	mes "Bem vindo, colega.";
+	mes "Como estï¿½ indo sua pesquisa?";
 	next;
-	show "[Mathias]";
-	show "Para ser um grande pesquisador, você precisa complementar sua pesquisa teorica com encontros reais com monstros.";
+	mes "[Mathias]";
+	mes "Para ser um grande pesquisador, vocï¿½ precisa complementar sua pesquisa teorica com encontros reais com monstros.";
 	next;
-	show "[Mathias]";
-	show "Se você conhecer outros com potencial para serem Sábio, por favor mande os aqui.";
-	show "Dê minhas condiderações a meus outros colegas também.";
+	mes "[Mathias]";
+	mes "Se vocï¿½ conhecer outros com potencial para serem Sï¿½bio, por favor mande os aqui.";
+	mes "Dï¿½ minhas condideraï¿½ï¿½es a meus outros colegas tambï¿½m.";
 	close;
 }
 
@@ -1200,180 +1200,180 @@ yuno_in03,169,180,4	script	Professor#3	755,{
 	if(SAGE_Q == 8) goto L_Menu4_1;
 	if(SAGE_Q == 9) goto L_Menu4_2;
 	if(SAGE_Q == 11) goto L_Menu4_4;
-	show "[Hermes]";
-	show "Olá, eu sou Hermes. Eu faço parte da equipe de teste de habilidade.";
-	show "Você é um candidato a Sábio?";
+	mes "[Hermes]";
+	mes "Olï¿½, eu sou Hermes. Eu faï¿½o parte da equipe de teste de habilidade.";
+	mes "Vocï¿½ ï¿½ um candidato a Sï¿½bio?";
 	next;
 	if(SAGE_Q == 3) goto L_Menu1_2;
 	if(SAGE_Q >= 3) goto L_Menu1_2;
-	show "[Hermes]";
-	show "Beleza.";
-	show "Primeiro você precisa se inscrever e fazer o teste.";
+	mes "[Hermes]";
+	mes "Beleza.";
+	mes "Primeiro vocï¿½ precisa se inscrever e fazer o teste.";
 	close;
 L_Menu1_1:
-	show "[Hermes]";
-	show "Esta é a Academia de Magia Shubaichul.";
+	mes "[Hermes]";
+	mes "Esta ï¿½ a Academia de Magia Shubaichul.";
 	next;
-	show "[Hermes]";
-	show "Existem magos que são menos magos do que pesquisadores.";
-	show "Ter um grupo apoiando este tipo de pessoa é muito importante.";
+	mes "[Hermes]";
+	mes "Existem magos que sï¿½o menos magos do que pesquisadores.";
+	mes "Ter um grupo apoiando este tipo de pessoa ï¿½ muito importante.";
 	next;
-	show "[Hermes]";
-	show "Continue apoiando seu grupo da melhor maneira possivel.";
-	show "Isto é tudo que você precisa saber.";
+	mes "[Hermes]";
+	mes "Continue apoiando seu grupo da melhor maneira possivel.";
+	mes "Isto ï¿½ tudo que vocï¿½ precisa saber.";
 	close;
 L_Menu1_2:
-	show "[Hermes]";
-	show "Você precisa fazer o teste com Kreitos antes de fazer meu teste.";
+	mes "[Hermes]";
+	mes "Vocï¿½ precisa fazer o teste com Kreitos antes de fazer meu teste.";
 	close;
 L_Menu2_1:
 	set SAGE_Q,6;
-	show "[Hermes]";
-	show "Oh, você fez e passou no teste de colocação?";
-	show "Agora você precisa fazer o teste de habilidade comigo.";
+	mes "[Hermes]";
+	mes "Oh, vocï¿½ fez e passou no teste de colocaï¿½ï¿½o?";
+	mes "Agora vocï¿½ precisa fazer o teste de habilidade comigo.";
 	next;
-	show "[Hermes]";
-	show "As regras para o teste são simples.";
-	show "Você precisa matar todos os monstros dentro da área prescrita.";
+	mes "[Hermes]";
+	mes "As regras para o teste sï¿½o simples.";
+	mes "Vocï¿½ precisa matar todos os monstros dentro da ï¿½rea prescrita.";
 	next;
-	show "[Hermes]";
-	show "Existe um velho provérbio que diz que a experiência vale mais do que mil palavras, então porque não tentar logo isso?";
+	mes "[Hermes]";
+	mes "Existe um velho provï¿½rbio que diz que a experiï¿½ncia vale mais do que mil palavras, entï¿½o porque nï¿½o tentar logo isso?";
 	next;
-	menu "Me parece uma boa idéia",-,"Eu ainda não estou pronto.",L_Menu2_2;
-		show "[Hermes]";
-		show "Bem, vamos começar.";
-		show "Faça o melhor!";
+	menu "Me parece uma boa idï¿½ia",-,"Eu ainda nï¿½o estou pronto.",L_Menu2_2;
+		mes "[Hermes]";
+		mes "Bem, vamos comeï¿½ar.";
+		mes "Faï¿½a o melhor!";
 		close2;
 		warp "job_sage",50,154;
 		end;
 	L_Menu2_2:
-		show "[Hermes]";
-		show "Okay.";
-		show "Por favor preparese logo.";
+		mes "[Hermes]";
+		mes "Okay.";
+		mes "Por favor preparese logo.";
 		close;
 L_Menu2_3:
-	show "[Hermes]";
-	show "Você está pronto para o teste de habilidade?";
-	show "Não é tão dificil.";
+	mes "[Hermes]";
+	mes "Vocï¿½ estï¿½ pronto para o teste de habilidade?";
+	mes "Nï¿½o ï¿½ tï¿½o dificil.";
 	next;
-	show "[Hermes]";
-	show "Que tal?";
+	mes "[Hermes]";
+	mes "Que tal?";
 	next;
-	menu "Boa idéia.",-,"Eu ainda não estou pronto.",L_Menu2_2;
-		show "[Hermes]";
-		show "Bem, Vamos começar.";
-		show "Faça o seu melhor.";
+	menu "Boa idï¿½ia.",-,"Eu ainda nï¿½o estou pronto.",L_Menu2_2;
+		mes "[Hermes]";
+		mes "Bem, Vamos comeï¿½ar.";
+		mes "Faï¿½a o seu melhor.";
 		close2;
 		warp "job_sage",50,154;
 		end;
 L_Menu3_1:
-	show "[Hermes]";
-	show "Bom trabalho! Você passou";
-	show "no teste de habilidade! Agora você pode prosseguir para a fase de pesquisa!";
+	mes "[Hermes]";
+	mes "Bom trabalho! Vocï¿½ passou";
+	mes "no teste de habilidade! Agora vocï¿½ pode prosseguir para a fase de pesquisa!";
 	next;
-	show "[Hermes]";
-	show "Antes de eu decidir a sua área de pesquisa, vamos dar uma olhada na sua nota do teste de colocação, e no tempo gasto no teste de habilidade.";
+	mes "[Hermes]";
+	mes "Antes de eu decidir a sua ï¿½rea de pesquisa, vamos dar uma olhada na sua nota do teste de colocaï¿½ï¿½o, e no tempo gasto no teste de habilidade.";
 	next;
-	show "[Hermes]";
-	show "Hmmm...";
-	show "Me parece bom.";
+	mes "[Hermes]";
+	mes "Hmmm...";
+	mes "Me parece bom.";
 	next;
 
 //It's not clear how the script decides
 
 	if(sagecheck >= 12) goto L_Menu3_2;
 	set SAGE_Q,8;
-	show "[Hermes]";
-	show "Me parece que pesquisa com monstros lhe seria melhor.";
+	mes "[Hermes]";
+	mes "Me parece que pesquisa com monstros lhe seria melhor.";
 	next;
-	show "[Hermes]";
-	show "Para que você tenha informação necessária para fazer uma tese coerente eu sugiro que você";
-	show "assista as aulas do curso de biologia do professor Lucias";
+	mes "[Hermes]";
+	mes "Para que vocï¿½ tenha informaï¿½ï¿½o necessï¿½ria para fazer uma tese coerente eu sugiro que vocï¿½";
+	mes "assista as aulas do curso de biologia do professor Lucias";
 	next;
 	goto L_Menu3_4;
 L_Menu3_2:
 	set SAGE_Q,9;
-	show "[Hermes]";
-	show "Parece que temos um ávido pesquisador das magias elementais aqui.";
-	show "O campo é imprescindivel para o avanço do conhecimento mágico.";
+	mes "[Hermes]";
+	mes "Parece que temos um ï¿½vido pesquisador das magias elementais aqui.";
+	mes "O campo ï¿½ imprescindivel para o avanï¿½o do conhecimento mï¿½gico.";
 	next;
-	show "[Hermes]";
-	show "Você precisa fazer o curso do professor Ebeshi no laboratório biotécnico, para se aprofundar no conhecimento das magias elementais.";
+	mes "[Hermes]";
+	mes "Vocï¿½ precisa fazer o curso do professor Ebeshi no laboratï¿½rio biotï¿½cnico, para se aprofundar no conhecimento das magias elementais.";
 	next;
 L_Menu3_4:
-	show "[Hermes]";
-	show "eu espero que as aulas prossigam bem.";
+	mes "[Hermes]";
+	mes "eu espero que as aulas prossigam bem.";
 	close;
 L_Menu4_1:
-	show "[Hermes]";
-	show "Você não estava ouvindo?";
-	show "Você precisa ver o professor Lucias para começar seu estudo em biologia de monstros.";
+	mes "[Hermes]";
+	mes "Vocï¿½ nï¿½o estava ouvindo?";
+	mes "Vocï¿½ precisa ver o professor Lucias para comeï¿½ar seu estudo em biologia de monstros.";
 	close;
 L_Menu4_2:
-	show "[Hermes]";
-	show "Você não estava ouvindo?";
-	show "você precisa ver o professor Ebeshi para iniciar seus estudos em magias elementais.";
+	mes "[Hermes]";
+	mes "Vocï¿½ nï¿½o estava ouvindo?";
+	mes "vocï¿½ precisa ver o professor Ebeshi para iniciar seus estudos em magias elementais.";
 	close;
 L_Menu4_4:
-	show "[Hermes]";
-	show "Bom trabalho em completar sua tese, agora você precisa mostrá-la para o Funcionário Acadêmico.";
-	show "É ele quem julgará se você se formará ou não.";
+	mes "[Hermes]";
+	mes "Bom trabalho em completar sua tese, agora vocï¿½ precisa mostrï¿½-la para o Funcionï¿½rio Acadï¿½mico.";
+	mes "ï¿½ ele quem julgarï¿½ se vocï¿½ se formarï¿½ ou nï¿½o.";
 	close;
 L_Menu4_5:
-	show "[Hermes]";
-	show "Como vai você?";
-	show "Seu rosto indica que você tem passado por muito estresse últimamente.";
+	mes "[Hermes]";
+	mes "Como vai vocï¿½?";
+	mes "Seu rosto indica que vocï¿½ tem passado por muito estresse ï¿½ltimamente.";
 	next;
-	show "[Hermes]";
-	show "Por mais estressante que a pesquisa de fato seja,";
-	show "ela é totalmente diferente de pesquisar somente usando conceitos abstratos.";
+	mes "[Hermes]";
+	mes "Por mais estressante que a pesquisa de fato seja,";
+	mes "ela ï¿½ totalmente diferente de pesquisar somente usando conceitos abstratos.";
 	next;
-	show "[Hermes]";
-	show "Claro, se você for para Dungeons dificeis";
-	show "não existe vergonha alguma em levar uns amigos para te ajudar.";
+	mes "[Hermes]";
+	mes "Claro, se vocï¿½ for para Dungeons dificeis";
+	mes "nï¿½o existe vergonha alguma em levar uns amigos para te ajudar.";
 	close;
 }
 
-yuno_in03,62,176,3	script	Professor de História	109,{
+yuno_in03,62,176,3	script	Professor de Histï¿½ria	109,{
 	if(BaseJob == Job_Sage) goto L_Menu2_2;
 	if(BaseJob != Job_Mage) goto L_Menu1_1;
 	if(SAGE_Q == 11) goto L_Menu2_1;
-	show "[Sapien]";
-	show "Você não parece ter certeza sobre a orientação de seus estudos,";
-	show "Talves você devesse reconsiderar...";
+	mes "[Sapien]";
+	mes "Vocï¿½ nï¿½o parece ter certeza sobre a orientaï¿½ï¿½o de seus estudos,";
+	mes "Talves vocï¿½ devesse reconsiderar...";
 	close;
 L_Menu1_1:
-	show "[Sapien]";
-	show "Sim, eu ensinho história.";
+	mes "[Sapien]";
+	mes "Sim, eu ensinho histï¿½ria.";
 	next;
-	show "[Sapien]";
-	show "Quando o presente vai sumindo da memória, ele se torna o passado.";
-	show "O conhecimento que nós conseguimos no passado é a ponte entre o presente e o futuro.";
+	mes "[Sapien]";
+	mes "Quando o presente vai sumindo da memï¿½ria, ele se torna o passado.";
+	mes "O conhecimento que nï¿½s conseguimos no passado ï¿½ a ponte entre o presente e o futuro.";
 	next;
-	show "[Sapien]";
-	show "Você deve estudar o seu próprio passado também.";
-	show "Ao entender o que aconteceu com você até agora,";
-	show "você pode traçar uma caminho para o futuro sem estar preso a problemas não resolvidos.";
+	mes "[Sapien]";
+	mes "Vocï¿½ deve estudar o seu prï¿½prio passado tambï¿½m.";
+	mes "Ao entender o que aconteceu com vocï¿½ atï¿½ agora,";
+	mes "vocï¿½ pode traï¿½ar uma caminho para o futuro sem estar preso a problemas nï¿½o resolvidos.";
 	close;
 L_Menu2_1:
-	show "[Sapien]";
-	show "O que você está fazendo?";
-	show "corra e mostre sua tese para o Funcionário Acadêmico antes que você a perca!";
+	mes "[Sapien]";
+	mes "O que vocï¿½ estï¿½ fazendo?";
+	mes "corra e mostre sua tese para o Funcionï¿½rio Acadï¿½mico antes que vocï¿½ a perca!";
 	close;
 L_Menu2_2:
-	show "[Sapien]";
-	show "Sim...?";
-	show "Ah, um ex-aluno daqui.";
-	show "Parabéns pela sua graduação.";
+	mes "[Sapien]";
+	mes "Sim...?";
+	mes "Ah, um ex-aluno daqui.";
+	mes "Parabï¿½ns pela sua graduaï¿½ï¿½o.";
 	next;
-	show "[Sapien]";
-	show "O presente só pode ser compreendido, se entendento o passado.";
-	show "Tal entendimento nos permite ter uma visão do futuro.";
+	mes "[Sapien]";
+	mes "O presente sï¿½ pode ser compreendido, se entendento o passado.";
+	mes "Tal entendimento nos permite ter uma visï¿½o do futuro.";
 	next;
-	show "[Sapien]";
-	show "Você também deve estudar o seu passado.";
-	show "Ao entender o que aconteceu com você até agora,";
-	show "você pode traçar uma caminho para o futuro sem estar preso a problemas não resolvidos.";
+	mes "[Sapien]";
+	mes "Vocï¿½ tambï¿½m deve estudar o seu passado.";
+	mes "Ao entender o que aconteceu com vocï¿½ atï¿½ agora,";
+	mes "vocï¿½ pode traï¿½ar uma caminho para o futuro sem estar preso a problemas nï¿½o resolvidos.";
 	close;
 }
 
@@ -1385,58 +1385,58 @@ yuno_in03,105,177,4	script	Professor do Teste	754,{
 	if(SAGE_Q == 3) goto L_Menu1_2;
 	if(SAGE_Q == 4) goto L_Menu2_1;
 	if(SAGE_Q == 5) goto L_Menu3_1;
-	show "[Kreitos]";
-	show "Você tem aquele olhar...";
-	show "Eu creio que você quer ser um Sábio.";
+	mes "[Kreitos]";
+	mes "Vocï¿½ tem aquele olhar...";
+	mes "Eu creio que vocï¿½ quer ser um Sï¿½bio.";
 	next;
-	show "[Kreitos]";
-	show "Você precisa se inscrever formalmente na academia, antes que eu possa te ajudar.";
+	mes "[Kreitos]";
+	mes "Vocï¿½ precisa se inscrever formalmente na academia, antes que eu possa te ajudar.";
 	close;
 L_Menu1_1:
-	show "[Kreitos]";
-	show "Oh, você não está interessado em nosso tipo de magia?";
-	show "Tudo bem...";
+	mes "[Kreitos]";
+	mes "Oh, vocï¿½ nï¿½o estï¿½ interessado em nosso tipo de magia?";
+	mes "Tudo bem...";
 	next;
-	show "[Kreitos]";
-	show "Qualquer um que ensine os outros e tenha um bom coração é de grande valor para sociedade.";
-	show "Por favor não se esqueça disso.";
+	mes "[Kreitos]";
+	mes "Qualquer um que ensine os outros e tenha um bom coraï¿½ï¿½o ï¿½ de grande valor para sociedade.";
+	mes "Por favor nï¿½o se esqueï¿½a disso.";
 	close;
 L_Menu1_2:
 	set SAGE_Q,4;
 	set sagecheck,10;
-	show "[Kreitos]";
-	show "Parece que você está inscrito na Academia de Magia Shubaichul.";
-	show "Não é isso?";
+	mes "[Kreitos]";
+	mes "Parece que vocï¿½ estï¿½ inscrito na Academia de Magia Shubaichul.";
+	mes "Nï¿½o ï¿½ isso?";
 	next;
-	show "[Kreitos]";
-	show "Então, deixe me achar a sua papelada...";
-	show "Você é" + strcharinfo(0) + ",";
-	show "certo?";
-	show "Vamos começar o teste de colocação.";
+	mes "[Kreitos]";
+	mes "Entï¿½o, deixe me achar a sua papelada...";
+	mes "Vocï¿½ ï¿½" + strcharinfo(0) + ",";
+	mes "certo?";
+	mes "Vamos comeï¿½ar o teste de colocaï¿½ï¿½o.";
 	next;
-		show "[Kreitos]";
-		show "Este teste consiste em vinte perguntas sobre o mundo.";
-		show "Se você fizer pelo menos 80 pontos, você será colocado em nosso programa.";
-		show "Cada resposta correta vale 5 pontos.";
+		mes "[Kreitos]";
+		mes "Este teste consiste em vinte perguntas sobre o mundo.";
+		mes "Se vocï¿½ fizer pelo menos 80 pontos, vocï¿½ serï¿½ colocado em nosso programa.";
+		mes "Cada resposta correta vale 5 pontos.";
 		next;
-		show "[Kreitos]";
-		show "Se você cancelar, vai ter que começar de novo, portanto tenha cuidado.";
+		mes "[Kreitos]";
+		mes "Se vocï¿½ cancelar, vai ter que comeï¿½ar de novo, portanto tenha cuidado.";
 		next;
 		goto L_Menu2_2;
 	L_Menu2_1:
-		show "[Kreitos]";
-		show "Você esta pronto para tentar de novo?";
-		show "Você estudou bastante?";
+		mes "[Kreitos]";
+		mes "Vocï¿½ esta pronto para tentar de novo?";
+		mes "Vocï¿½ estudou bastante?";
 		next;
-		show "[Kreitos]";
-		show "A nota para passar é a mesma de antes.";
-		show "Você precisa fazer 80 pontos, com cada questão valendo 5 pontos.";
+		mes "[Kreitos]";
+		mes "A nota para passar ï¿½ a mesma de antes.";
+		mes "Vocï¿½ precisa fazer 80 pontos, com cada questï¿½o valendo 5 pontos.";
 		next;
-		show "[Kreitos]";
-		show "Então vamos começar.";
-		show "Faça o seu melhor.";
-		show "E como antes, se você cancelar";
-		show "você terá que começar de novo.";
+		mes "[Kreitos]";
+		mes "Entï¿½o vamos comeï¿½ar.";
+		mes "Faï¿½a o seu melhor.";
+		mes "E como antes, se vocï¿½ cancelar";
+		mes "vocï¿½ terï¿½ que comeï¿½ar de novo.";
 		next;
 	L_Menu2_2:
 
@@ -1448,149 +1448,149 @@ L_Menu1_2:
 //==================================
 //Written Test: Route 1.
 //==================================
-			show "1. O que o joalheiro de Morroc não vende?";
+			mes "1. O que o joalheiro de Morroc nï¿½o vende?";
 			next;
-			menu "Topázio",L_Test1_1,"Granada",-,"Diamante",L_Test1_1,"Safira",L_Test1_1;
+			menu "Topï¿½zio",L_Test1_1,"Granada",-,"Diamante",L_Test1_1,"Safira",L_Test1_1;
 			set @sage_test2,@sage_test2+5;
 			goto L_Test1_1;
 		L_Test1_1:
-			show "2. Em que cidade você não compra ração para monstros?";
+			mes "2. Em que cidade vocï¿½ nï¿½o compra raï¿½ï¿½o para monstros?";
 			next;
 			menu "Prontera",L_Test1_2,"Morroc",L_Test1_2,"Aldebaran",-,"Alberta",L_Test1_2;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_2:
-			show "3. Que cidade fica mais perto do labirinto da floresta?";
+			mes "3. Que cidade fica mais perto do labirinto da floresta?";
 			next;
 			menu "Prontera",-,"Morroc",L_Test1_3,"Geffen",L_Test1_3,"Payon",L_Test1_3;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_3:
-			show "4. Qual desses monstros é de raça diferente dos outros três?";
+			mes "4. Qual desses monstros ï¿½ de raï¿½a diferente dos outros trï¿½s?";
 			next;
 			menu "Muka",L_Test1_4,"Drops",L_Test1_4,"Plankton",L_Test1_4,"Penomena",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_4:
-			show "5. Todos estes monstros exceto um tem a mesma afinidade elemental.";
-			show "Qual tem a afinidade diferente?";
+			mes "5. Todos estes monstros exceto um tem a mesma afinidade elemental.";
+			mes "Qual tem a afinidade diferente?";
 			next;
 			menu "Dokebi",L_Test1_5,"Isis",L_Test1_5,"Giearth",-,"Deviruchi",L_Test1_5;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_5:
-			show "6. Qual deles difere em tamanho aproximado dos outros?";
+			mes "6. Qual deles difere em tamanho aproximado dos outros?";
 			next;
-			menu "Besouro-Ladrão Macho",L_Test1_6,"Besouro-Chifre",L_Test1_6,"Metaller",L_Test1_6,"Argos",-;
+			menu "Besouro-Ladrï¿½o Macho",L_Test1_6,"Besouro-Chifre",L_Test1_6,"Metaller",L_Test1_6,"Argos",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_6:
-			show "7. Qual destes monstros não solta folha de Yggdrasil??";
+			mes "7. Qual destes monstros nï¿½o solta folha de Yggdrasil??";
 			next;
-			menu "Marduk",-,"Bafomé Jr.",L_Test1_7,"Angeling",L_Test1_7,"Nômade",L_Test1_7;
+			menu "Marduk",-,"Bafomï¿½ Jr.",L_Test1_7,"Angeling",L_Test1_7,"Nï¿½made",L_Test1_7;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_7:
-			show "8. Qual destas pessoas pode fazer a troca de classe para Sacerdote?";
+			mes "8. Qual destas pessoas pode fazer a troca de classe para Sacerdote?";
 			next;
-			menu "Padre Thomas",-,"Bispo José",L_Test1_8,"Windser Benedicto",L_Test1_8,"Madre Maria",L_Test1_8;
+			menu "Padre Thomas",-,"Bispo Josï¿½",L_Test1_8,"Windser Benedicto",L_Test1_8,"Madre Maria",L_Test1_8;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_8:
-			show "9. Quem não vive em Morroc?";
+			mes "9. Quem nï¿½o vive em Morroc?";
 			next;
 			menu "Muda Armani",L_Test1_9,"Aragham",L_Test1_9,"Antonio",-,"Abldul",L_Test1_9;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_9:
-			show "10. Qual das Kafra tem o cabelo azul bonito?";
+			mes "10. Qual das Kafra tem o cabelo azul bonito?";
 			next;
 			menu "Pavianne",-,"Debril",L_Test1_10,"Claris",L_Test1_10,"Tayelin",L_Test1_10;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_10:
-			show "11. Qual não é necessário para destravar a habilidade Barreira de Fogo?";
+			mes "11. Qual nï¿½o ï¿½ necessï¿½rio para destravar a habilidade Barreira de Fogo?";
 			next;
-			menu "Lanças de Fogo Nv4",L_Test1_11,"Ataque Espiritual Nv4",-,"Bolas de Fofo Nv5",L_Test1_11,"Chama Reveladora Nv1",L_Test1_11;
+			menu "Lanï¿½as de Fogo Nv4",L_Test1_11,"Ataque Espiritual Nv4",-,"Bolas de Fofo Nv5",L_Test1_11,"Chama Reveladora Nv1",L_Test1_11;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_11:
-			show "12. Quando a habilidade 'Aumentar Recuperação de SP Nv6' esta ativa, quanto de SP ahabilidade restaura a cada dez segundos??";
+			mes "12. Quando a habilidade 'Aumentar Recuperaï¿½ï¿½o de SP Nv6' esta ativa, quanto de SP ahabilidade restaura a cada dez segundos??";
 			next;
 			menu "14 sp",L_Test1_12,"16 sp",L_Test1_12,"18 sp",-,"21 sp",L_Test1_12;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_12:
-			show "13. Se você é um mago com classe nível 33, quantos pontos adicionais você receberá para inteligência?";
+			mes "13. Se vocï¿½ ï¿½ um mago com classe nï¿½vel 33, quantos pontos adicionais vocï¿½ receberï¿½ para inteligï¿½ncia?";
 			next;
 			menu "7",L_Test1_13,"6",L_Test1_13,"5",L_Test1_13,"4",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_13:
-			show "14. Se a habilidade de arqueiro 'Concentração Nv5' esta ativa,  quanto de SP ela irá consumir?";
+			mes "14. Se a habilidade de arqueiro 'Concentraï¿½ï¿½o Nv5' esta ativa,  quanto de SP ela irï¿½ consumir?";
 			next;
 			menu "45 / 140sec",-,"50 / 140sec",L_Test1_14,"45 / 150sec",L_Test1_14,"50 / 150sec",L_Test1_14;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_14:
-			show "15. Qual delas não é necessário para destravar a habilidade de ferreiro 'Amplificar Poder'?";
+			mes "15. Qual delas nï¿½o ï¿½ necessï¿½rio para destravar a habilidade de ferreiro 'Amplificar Poder'?";
 			next;
-			menu "Punho Firme",L_Test1_15,"Resistência ao Fogo",-,"Martelo de Thor",L_Test1_15,"Manejo Perfeito",L_Test1_15;
+			menu "Punho Firme",L_Test1_15,"Resistï¿½ncia ao Fogo",-,"Martelo de Thor",L_Test1_15,"Manejo Perfeito",L_Test1_15;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_15:
-			show "16. Qual é o poder de defesa e a habilidade suplementar de uma Ribbon?";
+			mes "16. Qual ï¿½ o poder de defesa e a habilidade suplementar de uma Ribbon?";
 			next;
 			menu "0 / SP +20",L_Test1_16,"0 / SP +30",L_Test1_16,"1 / SP +20",-,"1 / SP +30",L_Test1_16;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_16:
-			show "17. Qual classe não pode equipar um Manto Sagrado?";
+			mes "17. Qual classe nï¿½o pode equipar um Manto Sagrado?";
 			next;
 		//Swordsmen can't equip it either as of this writing.
-			menu "Espadachim",-,"Mercador",L_Test1_17,"Gatuno",-,"Noviço",L_Test1_17;
+			menu "Espadachim",-,"Mercador",L_Test1_17,"Gatuno",-,"Noviï¿½o",L_Test1_17;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_17:
-			show "18. Qual alinhamento de estatus não pode ser removido com uma Poção Verde?";
+			mes "18. Qual alinhamento de estatus nï¿½o pode ser removido com uma Poï¿½ï¿½o Verde?";
 			next;
-			menu "Silenciado",L_Test1_18,"Envenenado",L_Test1_18,"Atordoado",L_Test1_18,"Amaldiçoado",-;
+			menu "Silenciado",L_Test1_18,"Envenenado",L_Test1_18,"Atordoado",L_Test1_18,"Amaldiï¿½oado",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_18:
-			show "19. Qual é o nome do reino antigo do qual Geffen descende?";
+			mes "19. Qual ï¿½ o nome do reino antigo do qual Geffen descende?";
 			next;
 			menu "Gefin",L_Test1_19,"Geffenia",-,"Gefdoria",L_Test1_19,"Gefria",L_Test1_19;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_19:
-			show "20. Qual árvore é dita ter a raiz do mundo?";
+			mes "20. Qual ï¿½rvore ï¿½ dita ter a raiz do mundo?";
 			next;
-			menu "Igg Drasil",-,"Idrasil",L_Menu2_3,"Master",L_Menu2_3,"Antiga Árvore",L_Menu2_3;
+			menu "Igg Drasil",-,"Idrasil",L_Menu2_3,"Master",L_Menu2_3,"Antiga ï¿½rvore",L_Menu2_3;
 			set @sage_test2,@sage_test2+5;
 			goto L_Menu2_3;
 	//==================================
 	//Written Test: Route 2.
 	//==================================
 		L_Test2_1:
-			show "1. Qual não é vendido na loja de itens mágicos de Geffen?";
+			mes "1. Qual nï¿½o ï¿½ vendido na loja de itens mï¿½gicos de Geffen?";
 			next;
 			menu "Capote",-,"Vareta",L_Test2_2,"Tiara",L_Test2_2,"Manto Prateado",L_Test2_2;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_2:
-			show "2. Qual cidade não vende lâminas?";
+			mes "2. Qual cidade nï¿½o vende lï¿½minas?";
 			next;
 			menu "Prontera",L_Test2_3,"Izlude",L_Test2_3,"Aldebaran",-,"Payon",L_Test2_3;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_3:
-			show "3. Que cidade fica mais perto de Glast Heim?";
+			mes "3. Que cidade fica mais perto de Glast Heim?";
 			next;
 			menu "Prontera",L_Test2_4,"Geffen",-,"Morroc",L_Test2_4,"Payon",L_Test2_4;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_4:
-			show "4. Qual tipo de monstro é diferente dos outros três?";
+			mes "4. Qual tipo de monstro ï¿½ diferente dos outros trï¿½s?";
 			next;
 			menu "Estrela-do-Mar",L_Test2_5,"Cavalo-Marinho",L_Test2_5,"Marte",L_Test2_5,"Marin",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_5:
-			show "5. Qual afinidade ao elemental de um mostro difere dos outros?";
+			mes "5. Qual afinidade ao elemental de um mostro difere dos outros?";
 			next;
 			menu "Filhote de Lobo do Deserto",L_Test2_6,"Fumacento",-,"Picky",L_Test2_6,"Choco",L_Test2_6;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_6:
-			show "6. Qual dos monstros é de uma classe de tamanho diferente dos outros?";
+			mes "6. Qual dos monstros ï¿½ de uma classe de tamanho diferente dos outros?";
 			next;
-			menu "Drake",-,"Alma Penada",L_Test2_7,"Druida Malígno",L_Test2_7,"Khalitzburg",L_Test2_7;
+			menu "Drake",-,"Alma Penada",L_Test2_7,"Druida Malï¿½gno",L_Test2_7,"Khalitzburg",L_Test2_7;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_7:
-			show "7. Qual monstro não solta Fracon?";
+			mes "7. Qual monstro nï¿½o solta Fracon?";
 			next;
 			menu "Pupa",L_Test2_8,"Condor",-,"Bebe Selvagem",L_Test2_8,"Filhote de Lobo do Deserto",L_Test2_8;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_8:
-			show "8. Quem não esta envolvido com a troca de classe de Ferreiro?";
+			mes "8. Quem nï¿½o esta envolvido com a troca de classe de Ferreiro?";
 			next;
 // =========================
 // Acording To mRO Site And eAthena Blacksmith Script the following ppl looking like ppl listed here are:
@@ -1603,64 +1603,64 @@ L_Menu1_2:
 			menu "Baisulitst",L_Test2_9,"Wickebine",L_Test2_9,"Barkdale",-,"Mitmayer",L_Test2_9;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_9:
-			show "9. Quem não vive em Aldebaran?";
+			mes "9. Quem nï¿½o vive em Aldebaran?";
 			next;
 			menu "RS125",L_Test2_10,"Maasaru",-,"Munster",L_Test2_10,"Isenberg",L_Test2_10;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_10:
-			show "10.Quem é a pessoa mais jovem da organização Kafra?";
+			mes "10.Quem ï¿½ a pessoa mais jovem da organizaï¿½ï¿½o Kafra?";
 			next;
 			menu "Deflute",L_Test2_11,"Claris",L_Test2_11,"Tayelin",L_Test2_11,"Curly Sue",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_11:
-			show "11. Quando você usa a habilidade 'Escudo Mágico Nv6',quanto de SP é consumido e quantos ataques ela irá bloquear?";
+			mes "11. Quando vocï¿½ usa a habilidade 'Escudo Mï¿½gico Nv6',quanto de SP ï¿½ consumido e quantos ataques ela irï¿½ bloquear?";
 			next;
 			menu "SP 40, 6bl",L_Test2_12,"SP 35, 6bl",L_Test2_12,"SP 35, 7bl",L_Test2_12,"SP 40, 7bl",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_12:
-			show "12. Quando você usa 'Ataque Espiritual Nv6', qual é o poder de ataque relacionado com o MATK?";
+			mes "12. Quando vocï¿½ usa 'Ataque Espiritual Nv6', qual ï¿½ o poder de ataque relacionado com o MATK?";
 			next;
 			menu "1.2x MATK",L_Test2_13,"1.3x MATK",-,"1.4x MATK",L_Test2_13,"1.5x MATK",L_Test2_13;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_13:
-			show "13. Qual deles cataliza a reação para fazer o liquido #4 durante o teste de classe para Mago?";
+			mes "13. Qual deles cataliza a reaï¿½ï¿½o para fazer o liquido #4 durante o teste de classe para Mago?";
 			next;
 			menu "Gema Azul",L_Test2_14,"Gema Vermelha",L_Test2_14,"Gema Laranja",L_Test2_14,"Diamante de 1 quilate",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_14:
-			show "14. Qual é o múltipo do dano e o consumo de SP para 'Golpe Fulminante Nv6'?";
+			mes "14. Qual ï¿½ o mï¿½ltipo do dano e o consumo de SP para 'Golpe Fulminante Nv6'?";
 			next;
 			menu "250% / 8",L_Test2_15,"280% / 8",L_Test2_15,"280% / 15",-,"310% / 15",L_Test2_15;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_15:
-			show "15. Qual não é necessário para ativar a habilidade de caçador 'Armadilha Explosiva'?";
+			mes "15. Qual nï¿½o ï¿½ necessï¿½rio para ativar a habilidade de caï¿½ador 'Armadilha Explosiva'?";
 			next;
 			menu "Remove Trap",-,"Land Mine",L_Test2_16,"Ankle Snare",L_Test2_16,"Flash",L_Test2_16;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_16:
-			show "16. Qual é o poder de defesa e a habilidade suplementar de um Veil?";
+			mes "16. Qual ï¿½ o poder de defesa e a habilidade suplementar de um Veil?";
 			next;
 			menu "0 / MDEF +3",L_Test2_17,"0 / MDEF +5",-,"1 / MDEF +3",L_Test2_17,"1 / MDEF +5",L_Test2_17;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_17:
-			show "17. Qual classe não equipa um Casaco?";
+			mes "17. Qual classe nï¿½o equipa um Casaco?";
 			next;
 			menu "Espadachim",L_Test2_18,"Mago",L_Test2_18,"Gatuno",L_Test2_18,"Aprendiz",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_18:
-			show "18. Qual item não é de cor azul?";
+			mes "18. Qual item nï¿½o ï¿½ de cor azul?";
 			next;
-			menu "Álcool",L_Test2_19,"Detrimindexta",-,"Karvodailnirol",L_Test2_19,"Erva Azul",L_Test2_19;
+			menu "ï¿½lcool",L_Test2_19,"Detrimindexta",-,"Karvodailnirol",L_Test2_19,"Erva Azul",L_Test2_19;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_19:
-			show "19. Qual item o deus Odim usou para criar o mundo?";
+			mes "19. Qual item o deus Odim usou para criar o mundo?";
 			next;
 //			menu "Yomir's Heart",L_Test2_20,"Yomir's Nail",-,"Yomir's Tooth",L_Test2_20,"Yomir's Stuff",L_Test2_20;
 // All answers correct untill i know the real answer, only Stuff is wrong cause that NOT it
-			menu "Coração de Yomir",-,"Rabo de Yomir",-,"Dente de Yomir",-,"Couro de Yomir",L_Test2_20;
+			menu "Coraï¿½ï¿½o de Yomir",-,"Rabo de Yomir",-,"Dente de Yomir",-,"Couro de Yomir",L_Test2_20;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_20:
-			show "20. Qual metal pode mudar o destino do mundo?";
+			mes "20. Qual metal pode mudar o destino do mundo?";
 			next;
 			menu "Envertacon",L_Menu2_3,"Emperium",-,"Enbera",L_Menu2_3,"Fracon",L_Menu2_3;
 			set @sage_test2,@sage_test2+5;
@@ -1669,42 +1669,42 @@ L_Menu1_2:
 //Written Test: Route 3.
 //==================================
 		L_Test3_1:
-			show "1. Qual deste sitens não é vendido na loja de presentes de Prontera?";
+			mes "1. Qual deste sitens nï¿½o ï¿½ vendido na loja de presentes de Prontera?";
 			next;
 			menu "Armadura Branca",L_Test3_2,"Moldura Vermelha",L_Test3_2,"Flor",-,"Bolinha de Gude",L_Test3_2;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_2:
-			show "2. Que cidade não vende Stilettos?";
+			mes "2. Que cidade nï¿½o vende Stilettos?";
 			next;
 			menu "Prontera",-,"Morroc",L_Test3_3,"Geffen",L_Test3_3,"Lutie",L_Test3_3;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_3:
-			show "3. Que cidade é mais perto da Ilha das Tartarugas?";
+			mes "3. Que cidade ï¿½ mais perto da Ilha das Tartarugas?";
 			next;
 			menu "Aldebaran",L_Test3_4,"Alberta",-,"Comodo",L_Test3_4,"Izlude",L_Test3_4;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_4:
-			show "4. Qual dos monstros é de raça diferente dos outros três?";
+			mes "4. Qual dos monstros ï¿½ de raï¿½a diferente dos outros trï¿½s?";
 			next;
 			menu "Raggler",L_Test3_5,"Peste",L_Test3_5,"Frilldora",L_Test3_5,"Estrela-do-Mar",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_5:
-			show "5.Qual monstro tem uma afinidade elemental diferente dos outros três?";
+			mes "5.Qual monstro tem uma afinidade elemental diferente dos outros trï¿½s?";
 			next;
 			menu "Louva-a-Deua",L_Test3_6,"Metaller",-,"Rocker",L_Test3_6,"Besouro-Chifre",L_Test3_6;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_6:
-			show "6. Que monstro é de classe de tamanho diferente dos outros?";
+			mes "6. Que monstro ï¿½ de classe de tamanho diferente dos outros?";
 			next;
-			menu "Raydric",-,"Raydric Arqueiro",L_Test3_7,"Nômade",L_Test3_7,"Moldura Maldita",L_Test3_7;
+			menu "Raydric",-,"Raydric Arqueiro",L_Test3_7,"Nï¿½made",L_Test3_7,"Moldura Maldita",L_Test3_7;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_7:
-			show "7. Qual monstro não solta Álcool?";
+			mes "7. Qual monstro nï¿½o solta ï¿½lcool?";
 			next;
 			menu "Besouro-Chifre",L_Test3_8,"Plankton",L_Test3_8,"Esporo Venenoso",-,"Sapo-Cururu",L_Test3_8;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_8:
-			show "8. Quem não esta envolvido na troca de classe para Cavaleiro?";
+			mes "8. Quem nï¿½o esta envolvido na troca de classe para Cavaleiro?";
 			next;
 // =========================
 // Acording To mRO Site And eAthena Knight Script the following ppl looking like ppl listed here
@@ -1712,146 +1712,146 @@ L_Menu1_2:
 			menu "Cavaleiro Devotado",L_Test3_9,"Padre Thomas",-,"Cavaleiro das Lutas",L_Test3_9,"Cavaleiro Honroso",L_Test3_9;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_9:
-			show "9. Quem não vive em Prontera?";
+			mes "9. Quem nï¿½o vive em Prontera?";
 			next;
 			menu "Nami",L_Test3_10,"Aldefun",-,"Thomas",L_Test3_10,"Hollengrhen",L_Test3_10;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_10:
-			show "10. Qual Kafra usa óculos?";
+			mes "10. Qual Kafra usa ï¿½culos?";
 			next;
 			menu "Deflute",L_Test3_11,"Tayelin",L_Test3_11,"Leilah",-,"Debril",L_Test3_11;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_11:
-			show "11. Quanto de SP custa para usar 'Tempestade de Raios Nv7'?";
+			mes "11. Quanto de SP custa para usar 'Tempestade de Raios Nv7'?";
 			next;
 			menu "49",L_Test3_12,"59",-,"69",L_Test3_12,"74",L_Test3_12;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_12:
-			show "12. Se você tem 50% de seu SP sobrando, quanto de dano 'Proteção Arcana' bloqueia e quanta SP será consumida?";
+			mes "12. Se vocï¿½ tem 50% de seu SP sobrando, quanto de dano 'Proteï¿½ï¿½o Arcana' bloqueia e quanta SP serï¿½ consumida?";
 			next;
 			menu "24% bloqueado SP1.5% consumido",L_Test3_13,"24% bloqueado SP2% consumido",L_Test3_13,"18% bloqueado SP1.5% consumido",L_Test3_13,"18% bloqueado SP2% consumido",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_13:
-			show "13. Qual elemento não pode ser usado na forma de lanças pelo Mago?";
+			mes "13. Qual elemento nï¿½o pode ser usado na forma de lanï¿½as pelo Mago?";
 			next;
-			menu "Água",L_Test3_14,"Terra",-,"Fogo",L_Test3_14,"Vento",L_Test3_14;
+			menu "ï¿½gua",L_Test3_14,"Terra",-,"Fogo",L_Test3_14,"Vento",L_Test3_14;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_14:
-			show "14. Quando um Gatuno tem a habilidade 'Ataque Duplo Nv7', qual é a chance de ativação e o múltiplo da força de ataque?";
+			mes "14. Quando um Gatuno tem a habilidade 'Ataque Duplo Nv7', qual ï¿½ a chance de ativaï¿½ï¿½o e o mï¿½ltiplo da forï¿½a de ataque?";
 			next;
 			menu "35% / 120%",L_Test3_15,"35% / 140%",-,"40% / 120%",L_Test3_15,"40% / 140%",L_Test3_15;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_15:
-			show "15. Qual não é necessário para liberar a habilidade 'Magnus Exorcismus'?";
+			mes "15. Qual nï¿½o ï¿½ necessï¿½rio para liberar a habilidade 'Magnus Exorcismus'?";
 			next;
-			menu "Proteção Divina",-,"Curar",L_Test3_16,"Ressuscitar",L_Test3_16,"Aqua Benedicta",L_Test3_16;
+			menu "Proteï¿½ï¿½o Divina",-,"Curar",L_Test3_16,"Ressuscitar",L_Test3_16,"Aqua Benedicta",L_Test3_16;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_16:
-			show "16. Qual é o poder de defesa e a habilidade suplementar de uma Orelha de Coelho?";
+			mes "16. Qual ï¿½ o poder de defesa e a habilidade suplementar de uma Orelha de Coelho?";
 			next;
 			menu "1 / LUK +2",L_Test3_17,"1 / LUK +5",L_Test3_17,"2 / LUK +2",-,"2 / LUK +5",L_Test3_17;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_17:
-			show "17. Qual classe não equipa armodura?";
+			mes "17. Qual classe nï¿½o equipa armodura?";
 			next;
 			menu "Espadachim",L_Test3_18,"Mercador",L_Test3_18,"Gatuno",L_Test3_18,"Arqueiro",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_18:
-			show "18. Que item restaura completamente HP e SP?";
+			mes "18. Que item restaura completamente HP e SP?";
 			next;
-			menu "Geléia Real",L_Test3_19,"Semente de YggDrasil",L_Test3_19,"Fruto de YggDrasil",-,"Mastela",L_Test3_19;
+			menu "Gelï¿½ia Real",L_Test3_19,"Semente de YggDrasil",L_Test3_19,"Fruto de YggDrasil",-,"Mastela",L_Test3_19;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_19:
-			show "19. Qual o nome do rei de Rune-Midgard?";
+			mes "19. Qual o nome do rei de Rune-Midgard?";
 			next;
 			menu "Trisdan III",L_Test3_20,"Tristan III",-,"Traisda III",L_Test3_20,"Trist III",L_Test3_20;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_20:
-			show "20. A qual deus os Templários servem?";
+			mes "20. A qual deus os Templï¿½rios servem?";
 			next;
 			menu "Odin",-,"Loki",L_Menu2_3,"Tooru",L_Menu2_3,"Aragamsaree",L_Menu2_3;
 			set @sage_test2,@sage_test2+5;
 
 		L_Menu2_3:
-			show "[Kreitos]";
-			show "Você terminou?";
-			show "Certo, então eu vou corrigir o teste.";
+			mes "[Kreitos]";
+			mes "Vocï¿½ terminou?";
+			mes "Certo, entï¿½o eu vou corrigir o teste.";
 			next;
-			show "[Kreitos]";
-			show "Hmmm...";
-			show "Sim...";
+			mes "[Kreitos]";
+			mes "Hmmm...";
+			mes "Sim...";
 			next;
 			if (@sage_test2 >= 100) goto L_Menu2_5;
 			if (@sage_test2 < 80) goto L_Menu2_4;
-			show "[Kreitos]";
-			show "Tudo pronto.";
-			show "Você marcou" + @sage_test2 + "pontos.";
-			show "Me parece bom.";
-			show "Você fez o suficiente para passar.";
+			mes "[Kreitos]";
+			mes "Tudo pronto.";
+			mes "Vocï¿½ marcou" + @sage_test2 + "pontos.";
+			mes "Me parece bom.";
+			mes "Vocï¿½ fez o suficiente para passar.";
 			next;
 			goto L_Menu2_6;
 		L_Menu2_4:
 			set sagecheck,sagecheck-1;
-			show "[Kreitos]";
-			show "Tudo pronto.";
-			show "Você fez" + @sage_test2 + "pontos";
-			show "......";
-			show "Lamento mas não é o bastante.";
+			mes "[Kreitos]";
+			mes "Tudo pronto.";
+			mes "Vocï¿½ fez" + @sage_test2 + "pontos";
+			mes "......";
+			mes "Lamento mas nï¿½o ï¿½ o bastante.";
 			next;
-			show "[Kreitos]";
-			show "Nós esperamos que nossos alunos tenham o máximo de informação sobre o mundo.";
-			show "Aprenda um pouco mais e retorne.";
-			show "Você então pode fazer o teste novamente.";
+			mes "[Kreitos]";
+			mes "Nï¿½s esperamos que nossos alunos tenham o mï¿½ximo de informaï¿½ï¿½o sobre o mundo.";
+			mes "Aprenda um pouco mais e retorne.";
+			mes "Vocï¿½ entï¿½o pode fazer o teste novamente.";
 			close;
 		L_Menu2_5:
-			show "[Kreitos]";
-			show "Pronto.";
-			show "Você fez" + @sage_test2 + "pontos.";
-			show "Incrível. Você foi maravilhoso.";
-			show "Não existe dúvida de que você será um grande Sábio.";
+			mes "[Kreitos]";
+			mes "Pronto.";
+			mes "Vocï¿½ fez" + @sage_test2 + "pontos.";
+			mes "Incrï¿½vel. Vocï¿½ foi maravilhoso.";
+			mes "Nï¿½o existe dï¿½vida de que vocï¿½ serï¿½ um grande Sï¿½bio.";
 			next;
 		L_Menu2_6:
 			set SAGE_Q,5;
-			show "[Kreitos]";
-			show "Certo.";
-			show "Você completou o teste de colocação.";
-			show "Agora você precisa fazer o teste de habilidade com o professor Hermes.";
+			mes "[Kreitos]";
+			mes "Certo.";
+			mes "Vocï¿½ completou o teste de colocaï¿½ï¿½o.";
+			mes "Agora vocï¿½ precisa fazer o teste de habilidade com o professor Hermes.";
 			close;
 L_Menu3_1:
-	show "[Kreitos]";
-	show "Heh?";
-	show "Você adora tanto os testes que você quer fazer o teste de colocação de novo?";
+	mes "[Kreitos]";
+	mes "Heh?";
+	mes "Vocï¿½ adora tanto os testes que vocï¿½ quer fazer o teste de colocaï¿½ï¿½o de novo?";
 	next;
-	show "[Kreitos]";
-	show "Vá ver o professor Hermes e faça o teste de Habilidade.";
-	show "Futuros Sábios não podem ficar de bobeira.";
+	mes "[Kreitos]";
+	mes "Vï¿½ ver o professor Hermes e faï¿½a o teste de Habilidade.";
+	mes "Futuros Sï¿½bios nï¿½o podem ficar de bobeira.";
 	close;
 L_Menu3_2:
-	show "[Kreitos]";
-	show "Eu estou ocupado corrigindo as provas de outros alunos no momento.";
-	show "Se você precisa de algo, por favor me procure mais tarde.";
+	mes "[Kreitos]";
+	mes "Eu estou ocupado corrigindo as provas de outros alunos no momento.";
+	mes "Se vocï¿½ precisa de algo, por favor me procure mais tarde.";
 	close;
 L_Menu3_3:
-	show "[Kreitos]";
-	show "É muito bom você ter terminado sua tese, mas eu não as corrijo.";
+	mes "[Kreitos]";
+	mes "ï¿½ muito bom vocï¿½ ter terminado sua tese, mas eu nï¿½o as corrijo.";
 	next;
-	show "[Kreitos]";
-	show "Mostre a para o Funcionário Acadêmico Keiron.";
-	show "Ele é quem irá julgar se a qualidade do documento é suficiente para você se formar.";
+	mes "[Kreitos]";
+	mes "Mostre a para o Funcionï¿½rio Acadï¿½mico Keiron.";
+	mes "Ele ï¿½ quem irï¿½ julgar se a qualidade do documento ï¿½ suficiente para vocï¿½ se formar.";
 	close;
 L_Menu3_4:
-	show "[Kreitos]";
-	show "você já se formou?";
-	show "Você quer assistir mais aulas?";
+	mes "[Kreitos]";
+	mes "vocï¿½ jï¿½ se formou?";
+	mes "Vocï¿½ quer assistir mais aulas?";
 	next;
-	show "[Kreitos]";
-	show "Eu sei que é maravilhoso se formar, mas você tem que continuar aprendendo.";
-	show "Você pode fundir a cuca se você ficar muito bitolado e nunca sair da biblioteca para o mundo de vez em quando.";
-	show "O perigo é estasiante.";
+	mes "[Kreitos]";
+	mes "Eu sei que ï¿½ maravilhoso se formar, mas vocï¿½ tem que continuar aprendendo.";
+	mes "Vocï¿½ pode fundir a cuca se vocï¿½ ficar muito bitolado e nunca sair da biblioteca para o mundo de vez em quando.";
+	mes "O perigo ï¿½ estasiante.";
 	next;
-	show "[Kreitos]";
-	show "Não se esqueça de fazer anotações sobre suas jornadas.";
-	show "elas podem vir a calhar quando você estiver ensinando os outros sobre o que você estudou.";
+	mes "[Kreitos]";
+	mes "Nï¿½o se esqueï¿½a de fazer anotaï¿½ï¿½es sobre suas jornadas.";
+	mes "elas podem vir a calhar quando vocï¿½ estiver ensinando os outros sobre o que vocï¿½ estudou.";
 	close;
 }
 
@@ -1860,19 +1860,19 @@ L_Menu3_4:
 //==================================
 
 job_sage,50,165,4	script	Coordenador do Teste::jobsage_wroom	700,{
-	show "[Coordenador do Teste]";
-	show "Bem vindo ao teste de habilidade para Sábio.";
-	show "Por favor vá até a área de espera se você quiser fazer o teste.";
+	mes "[Coordenador do Teste]";
+	mes "Bem vindo ao teste de habilidade para Sï¿½bio.";
+	mes "Por favor vï¿½ atï¿½ a ï¿½rea de espera se vocï¿½ quiser fazer o teste.";
 	next;
-	show "[Coordenador do Teste]";
-	show "Outros estão sendo testados neste momento.";
-	show "Quando for a hora de você ser testado, nós chamaremos o seu nome.";
+	mes "[Coordenador do Teste]";
+	mes "Outros estï¿½o sendo testados neste momento.";
+	mes "Quando for a hora de vocï¿½ ser testado, nï¿½s chamaremos o seu nome.";
 	next;
-	show "[Coordenador do Teste]";
-	show "Leva mais ou menos de 5-10 minutos para testar uma pessoa.";
+	mes "[Coordenador do Teste]";
+	mes "Leva mais ou menos de 5-10 minutos para testar uma pessoa.";
 	close;
 OnInit:
-	waitingroom "Área e Espera do Teste",10,"jobsage_wroom::OnStart",1;
+	waitingroom "ï¿½rea e Espera do Teste",10,"jobsage_wroom::OnStart",1;
 	end;
 OnStart:
 	disablewaitingroomevent;
@@ -1928,13 +1928,13 @@ OnKilled:
 	L_NotWin:
 	end;
 OnTimer1000:
-	mapannounce "job_sage","Examinador: O teste começa agora.",8;
+	mapannounce "job_sage","Examinador: O teste comeï¿½a agora.",8;
 	end;
 OnTimer2500:
-	mapannounce "job_sage","Examinador: O tempo limite para esta parte do teste é de 3 minutos.",8;
+	mapannounce "job_sage","Examinador: O tempo limite para esta parte do teste ï¿½ de 3 minutos.",8;
 	end;
 OnTimer4000:
-	mapannounce "job_sage","Examinador: Você deve matar todos os monstros dentro deste periodo de tempo.",8;
+	mapannounce "job_sage","Examinador: Vocï¿½ deve matar todos os monstros dentro deste periodo de tempo.",8;
 	end;
 OnTimer30000:
 	mapannounce "job_sage","Examinador: 2 minutos e 30 segundos faltando.",8;
@@ -2018,10 +2018,10 @@ OnKilled:
 	L_NotWin:
 	end;
 OnTimer1500:
-	mapannounce "job_sage","Examinador: O limite de tempo para esta parte do teste é de 3 minutos.",8;
+	mapannounce "job_sage","Examinador: O limite de tempo para esta parte do teste ï¿½ de 3 minutos.",8;
 	end;
 OnTimer3000:
-	mapannounce "job_sage","Examinador: Você deve matar todos os monstros neste periodo de tempo.",8;
+	mapannounce "job_sage","Examinador: Vocï¿½ deve matar todos os monstros neste periodo de tempo.",8;
 	end;
 OnTimer30000:
 	mapannounce "job_sage","Examinador: 2 minutos e 30 segundos faltando.",8;
@@ -2083,7 +2083,7 @@ OnKilled:
 		if(getnpctimer(0) < 20000 ) set sagecheck,sagecheck+1;
 		if((getnpctimer(0) >= 30000 ) && (getnpctimer(0) <= 50000 )) set sagecheck,sagecheck-1;
 		if(getnpctimer(0) > 50000 ) set sagecheck,sagecheck-2;
-		mapannounce "job_sage","Examinador: Parabéns." + $@jobsage_pname$ + "Passou no teste.",8;
+		mapannounce "job_sage","Examinador: Parabï¿½ns." + $@jobsage_pname$ + "Passou no teste.",8;
 		donpcevent "jobsage_success::OnSuccess";
 	L_NotWin:
 	end;
@@ -2123,7 +2123,7 @@ OnTimer3000:
 	mapannounce "job_sage","Examinador: Por favor permita me que eu te guie para fora.",8;
 	end;
 OnTimer6000:
-	mapannounce "job_sage","Próximo candidato por favor.",8;
+	mapannounce "job_sage","Prï¿½ximo candidato por favor.",8;
 	areawarp "job_sage",100,82,131,113,"yuno_in03",163,180;
 	end;
 OnTimer7000:

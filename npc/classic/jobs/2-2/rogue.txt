@@ -1,21 +1,21 @@
 in_rogue,363,123,3	script	Markie	747,{
 
-	show "[Markie]";
+	mes "[Markie]";
 	if(BaseJob == Job_Thief) goto L_Thief;
 	if(BaseJob == Job_Rogue) goto L_Rogue;
 
 L_JobOther:
-	show "Eu não sei como você achou essse lugar, mas eu acho que é melhor você sair daqui..........";
+	mes "Eu nï¿½o sei como vocï¿½ achou essse lugar, mas eu acho que ï¿½ melhor vocï¿½ sair daqui..........";
 	close;
 
 L_Rogue:
-	show "Bom, ver você de novo, amigo. Você deve estar se divertindo como Arruaceiro hum? Heh he he....";
+	mes "Bom, ver vocï¿½ de novo, amigo. Vocï¿½ deve estar se divertindo como Arruaceiro hum? Heh he he....";
 	close;
 
 L_Thief:
 	if(JobLevel < 40){
-		show "Oh! Olá! Se você quer se tornar um Arruaceiro eu recomendo que você volte quando tiver treinado mais um pouco.";
-		show "Somente Ladrões com um ^5533FFNível de Classe no mínimo 40^000000 pode se tornar um Arruaceiro.";
+		mes "Oh! Olï¿½! Se vocï¿½ quer se tornar um Arruaceiro eu recomendo que vocï¿½ volte quando tiver treinado mais um pouco.";
+		mes "Somente Ladrï¿½es com um ^5533FFNï¿½vel de Classe no mï¿½nimo 40^000000 pode se tornar um Arruaceiro.";
 		close;
 	}
 	if(ROGUE_Q == 1) goto L_ReTest;
@@ -23,45 +23,45 @@ L_Thief:
 	if(ROGUE_Q == 3) goto L_Test3;
 	if(ROGUE_Q == 4) goto L_Test4;
 	if(ROGUE_Q == 5) goto L_Change;
-	show "Humm? O que traz você aqui? Oh! Entendi agora... Você quer se tornar Arruaceiro, não é isso?";
+	mes "Humm? O que traz vocï¿½ aqui? Oh! Entendi agora... Vocï¿½ quer se tornar Arruaceiro, nï¿½o ï¿½ isso?";
 	next;
-	show "[Markie]";
-	show "Bom, legal te encontrar aqui. Meu nome é Markie, Quem é você?";
+	mes "[Markie]";
+	mes "Bom, legal te encontrar aqui. Meu nome ï¿½ Markie, Quem ï¿½ vocï¿½?";
 	next;
-	show "[Markie]";
-	show strcharinfo(0) + "..... He he, você tem um bonito nome amigo. Bem, como você decidiu se tornar um Arruaceiro?";
+	mes "[Markie]";
+	show strcharinfo(0) + "..... He he, vocï¿½ tem um bonito nome amigo. Bem, como vocï¿½ decidiu se tornar um Arruaceiro?";
 	next;
-	show "[Markie]";
-	show "Bem, como você honesta comigo e me deu o seu nome de verdade eu acho que isso não importa.";
-	show "Mas, só para que você saiba, um Arruaceiro nunca revela seu verdadeiro nome para ninguém.";
+	mes "[Markie]";
+	mes "Bem, como vocï¿½ honesta comigo e me deu o seu nome de verdade eu acho que isso nï¿½o importa.";
+	mes "Mas, sï¿½ para que vocï¿½ saiba, um Arruaceiro nunca revela seu verdadeiro nome para ninguï¿½m.";
 	next;
-	show "[Markie]";
-	show "É a regra número 1, então, a partir de agora é melhor que você se cuide com isso.";
-	show "Bom, aqui tem um formulário pra você..... por favor, coloque todas as informações necessárias.....";
+	mes "[Markie]";
+	mes "ï¿½ a regra nï¿½mero 1, entï¿½o, a partir de agora ï¿½ melhor que vocï¿½ se cuide com isso.";
+	mes "Bom, aqui tem um formulï¿½rio pra vocï¿½..... por favor, coloque todas as informaï¿½ï¿½es necessï¿½rias.....";
 	next;
-	show "(você escreve todas as informações necessárias para completar o formulário e o devolve)";
+	mes "(vocï¿½ escreve todas as informaï¿½ï¿½es necessï¿½rias para completar o formulï¿½rio e o devolve)";
 	set JBLVL, JobLevel;			// used to determine what item to get at the end
 	next;
-	show "[Markie]";
-	show "Ok docinho.... parece bom, Eu vou aceitar o seu cadastro.";
-	show "Agora deixe me ver se você está apto para isso, deixe me fazer uma pequena entrevista?";
+	mes "[Markie]";
+	mes "Ok docinho.... parece bom, Eu vou aceitar o seu cadastro.";
+	mes "Agora deixe me ver se vocï¿½ estï¿½ apto para isso, deixe me fazer uma pequena entrevista?";
 	next;
-	show "[Markie]";
-	show "Oh, você naum preciza ficar nervoso com isso morzinho.... Eu só quero saber o quanto você sabe sobre os Arruaceiros.";
-	show "Eu faço isso com todas os candidatos. Podemos começar?";
+	mes "[Markie]";
+	mes "Oh, vocï¿½ naum preciza ficar nervoso com isso morzinho.... Eu sï¿½ quero saber o quanto vocï¿½ sabe sobre os Arruaceiros.";
+	mes "Eu faï¿½o isso com todas os candidatos. Podemos comeï¿½ar?";
 	next;
 	menu "Ok.",L_Test1, "Espere... Eu preciso de um pouco mais de tempo.",-;
 
-		show "[Markie]";
-		show "Ok docinho, não precisa ter pressa. Quando você estiver pronto basta me falar.";
+		mes "[Markie]";
+		mes "Ok docinho, nï¿½o precisa ter pressa. Quando vocï¿½ estiver pronto basta me falar.";
 		close;
 
 
 //=================================================================
 L_Test1:
 //=======
-	show "[Markie]";
-	show "Eu vou te fazer umas perguntas. Ouça bem e responda aquilo que você achar melhor, OK?";
+	mes "[Markie]";
+	mes "Eu vou te fazer umas perguntas. Ouï¿½a bem e responda aquilo que vocï¿½ achar melhor, OK?";
 	next;	
 
 	savepoint "in_rogue",370,115;
@@ -69,8 +69,8 @@ L_Test1:
 	set ROGUE_Q, 1;
 	if(rand(2)) goto L_QSet2;
 
-		show "[Markie]";
-		show "1) Quanto é adicionado à taxa de esquiva que um Gatuno recebe quando ^5533FFaprimora^000000 a habilidade ^5533FFPerícia em Esquiva^000000?";
+		mes "[Markie]";
+		mes "1) Quanto ï¿½ adicionado ï¿½ taxa de esquiva que um Gatuno recebe quando ^5533FFaprimora^000000 a habilidade ^5533FFPerï¿½cia em Esquiva^000000?";
 		next;
 		menu "20",sM1_1, "30",-, "40",sM1_1, "160",sM1_1;
 
@@ -78,17 +78,17 @@ L_Test1:
 
 		sM1_1:
 
-		show "[Markie]";
-		show "2) Escolha um monstro qu não pode detectar um personagem durante Esconderijo ou Furtividade?";
+		mes "[Markie]";
+		mes "2) Escolha um monstro qu nï¿½o pode detectar um personagem durante Esconderijo ou Furtividade?";
 		next;
-		menu "Múmia",sM1_2, "Rabo-de-Verme",-, "Argos",sM1_2, "Esqueleto Soldado",sM1_2;
+		menu "Mï¿½mia",sM1_2, "Rabo-de-Verme",-, "Argos",sM1_2, "Esqueleto Soldado",sM1_2;
 
 			set @score, @score + 10;
 
 		sM1_2:
 
-		show "[Markie]";
-		show "3) Onde se localiza a guilda dos Arruaceiros?";
+		mes "[Markie]";
+		mes "3) Onde se localiza a guilda dos Arruaceiros?";
 		next;
 		menu "Comodo",sM1_3, "Praia de Cocomo",sM1_3, "Pharos, Ilha do Farol",-, "Morroc",sM1_3;
 
@@ -96,8 +96,8 @@ L_Test1:
 
 		sM1_3:
 
-		show "[Markie]";
-		show "4) Em qual das seguintes cidades, é possível se tornar um Gatuno?";
+		mes "[Markie]";
+		mes "4) Em qual das seguintes cidades, ï¿½ possï¿½vel se tornar um Gatuno?";
 		next;
 		menu "Comodo",sM1_4, "Lutie",sM1_4, "Alberta",sM1_4, "Morroc",-;
 
@@ -105,45 +105,45 @@ L_Test1:
 
 		sM1_4:
 
-		show "[Markie]";
-		show "5) Escolha a carta que ^FF3355não^000000 afeta o ^5533FFatributo DES^000000 de um personagem...";
+		mes "[Markie]";
+		mes "5) Escolha a carta que ^FF3355nï¿½o^000000 afeta o ^5533FFatributo DES^000000 de um personagem...";
 		next;
-		menu "Carta Rocker",sM1_5, "Carta Múmia",-, "Carta Zerom",sM1_5, "Carta Drops",sM1_5;
+		menu "Carta Rocker",sM1_5, "Carta Mï¿½mia",-, "Carta Zerom",sM1_5, "Carta Drops",sM1_5;
 
 			set @score, @score + 10;
 
 		sM1_5:
 
-		show "[Markie]";
-		show "6) O que você acha legal em ser um Arruaceiro?";
+		mes "[Markie]";
+		mes "6) O que vocï¿½ acha legal em ser um Arruaceiro?";
 		next;
-		menu "Ser um vagabundo",sM1_6, "Ser um hipócrita",sM1_6, "Ser um sem vergonha",sM1_6, "Ter uma excelente força de ataque",-;
+		menu "Ser um vagabundo",sM1_6, "Ser um hipï¿½crita",sM1_6, "Ser um sem vergonha",sM1_6, "Ter uma excelente forï¿½a de ataque",-;
 
 			set @score, @score + 10;
 
 		sM1_6:
 
-		show "[Markie]";
-		show "7) Em qual nível de classe um Gatuno pode se tornar um Arruaceiro?";
+		mes "[Markie]";
+		mes "7) Em qual nï¿½vel de classe um Gatuno pode se tornar um Arruaceiro?";
 		next;
-		menu "Nível 30",sM1_7, "Nível 35",sM1_7, "Nível 40",-, "Nível 50",-;
+		menu "Nï¿½vel 30",sM1_7, "Nï¿½vel 35",sM1_7, "Nï¿½vel 40",-, "Nï¿½vel 50",-;
 
 			set @score, @score + 10;
 
 		sM1_7:
 
-		show "[Markie]";
-		show "8) Se você quiser colorir seu cabelo de uma cor diferente, onde você deve ir para fazer isto?";
+		mes "[Markie]";
+		mes "8) Se vocï¿½ quiser colorir seu cabelo de uma cor diferente, onde vocï¿½ deve ir para fazer isto?";
 		next;
-		menu 	"Construção ao Sudoeste de Morroc",sM1_8, "Construção ao Sudoeste de  Prontera",-,
-			"Construção ao Sudeste de  Morroc",sM1_8, "Construção ao Nordeste de Prontera",sM1_8;
+		menu 	"Construï¿½ï¿½o ao Sudoeste de Morroc",sM1_8, "Construï¿½ï¿½o ao Sudoeste de  Prontera",-,
+			"Construï¿½ï¿½o ao Sudeste de  Morroc",sM1_8, "Construï¿½ï¿½o ao Nordeste de Prontera",sM1_8;
 
 			set @score, @score + 10;
 
 		sM1_8:
 
-		show "[Markie]";
-		show "9) Quais cogumelos você precisa furtar para se tornar um Gatuno?";
+		mes "[Markie]";
+		mes "9) Quais cogumelos vocï¿½ precisa furtar para se tornar um Gatuno?";
 		next;
 		menu "Cogumelos Borrachentos",-, "Cogumelos vermelhos",sM1_9, "Cogumelos Venenosos",-, "Cogumelos Pegajosos",sM1_9;
 
@@ -151,10 +151,10 @@ L_Test1:
 
 		sM1_9:
 
-		show "[Markie]";
-		show "10) Quais dessas cartas são ^FF3355inúteis^000000 para um Arruaceiro?";
+		mes "[Markie]";
+		mes "10) Quais dessas cartas sï¿½o ^FF3355inï¿½teis^000000 para um Arruaceiro?";
 		next;
-		menu "Carta Sussurro",sM1_10, "Carta Salgueiro Ancião",-, "Carta Zerom",sM1_10, "Carta Matyr",sM1_10;
+		menu "Carta Sussurro",sM1_10, "Carta Salgueiro Anciï¿½o",-, "Carta Zerom",sM1_10, "Carta Matyr",sM1_10;
 
 			set @score, @score + 10;
 
@@ -163,17 +163,17 @@ L_Test1:
 
 
 	L_QSet2:
-		show "[Markie]";
-		show "1) Qual habilidade você deve aprender antes de aprender ^5533FFTúnel de Fuga^000000?";
+		mes "[Markie]";
+		mes "1) Qual habilidade vocï¿½ deve aprender antes de aprender ^5533FFTï¿½nel de Fuga^000000?";
 		next;
-		menu "Esconderijo",-, "Furto",sM2_1, "Perícia em Esquiva",sM2_1, "Golpe Fulminante",sM2_1;
+		menu "Esconderijo",-, "Furto",sM2_1, "Perï¿½cia em Esquiva",sM2_1, "Golpe Fulminante",sM2_1;
 
 			set @score, @score + 10;
 
 		sM2_1:
 
-		show "[Markie]";
-		show "2) Quanto de disconto um Arruaceiro pode conseguir com ^5533FFExtorquir^000000 a mais que a habilidade de Mercador, ^5533FFDisconto^000000?";
+		mes "[Markie]";
+		mes "2) Quanto de disconto um Arruaceiro pode conseguir com ^5533FFExtorquir^000000 a mais que a habilidade de Mercador, ^5533FFDisconto^000000?";
 		next;
 		menu "3%",sM2_2, "2%",sM2_2, "1%",-, "0%",sM2_2;
 
@@ -181,8 +181,8 @@ L_Test1:
 
 		sM2_2:
 
-		show "[Markie]";
-		show "3) Qual é a descrição correta da habilidade ^5533FFAfanar^000000?";
+		mes "[Markie]";
+		mes "3) Qual ï¿½ a descriï¿½ï¿½o correta da habilidade ^5533FFAfanar^000000?";
 		next;
 		menu "Furtar itens de jogadores",sM2_3, "Furtar itens de monstros",sM2_3, "Furtar Zeny de monstros",-, "Furtat Zeny de jogadores",sM2_3;
 
@@ -190,26 +190,26 @@ L_Test1:
 
 		sM2_3:
 
-		show "[Markie]";
-		show "4) Quantos Arruaceiros são necessários para ativar a habilidade ^5533FFMalandragem^000000?";
+		mes "[Markie]";
+		mes "4) Quantos Arruaceiros sï¿½o necessï¿½rios para ativar a habilidade ^5533FFMalandragem^000000?";
 		next;
-		menu "1 Arruacerio + 2 Mercenários",sM2_4, "2 Arruaceiros + 1 Gatuno",sM2_4, "4 Gatunos",sM2_4, "2 ou + Arruaceiros",-;
+		menu "1 Arruacerio + 2 Mercenï¿½rios",sM2_4, "2 Arruaceiros + 1 Gatuno",sM2_4, "4 Gatunos",sM2_4, "2 ou + Arruaceiros",-;
 
 			set @score, @score + 10;
 
 		sM2_4:
 
-		show "[Markie]";
-		show "5) Depois de aumentar ^5533FFRemover Capacete^000000 para o nível 5, qual outra habilidade se tornará possível aprender?";
+		mes "[Markie]";
+		mes "5) Depois de aumentar ^5533FFRemover Capacete^000000 para o nï¿½vel 5, qual outra habilidade se tornarï¿½ possï¿½vel aprender?";
 		next;
-		menu "Envenenar",sM2_5, "Strip Tease",sM2_5, "Explosão Venenosa",sM2_5, "Remover Escudo",-;
+		menu "Envenenar",sM2_5, "Strip Tease",sM2_5, "Explosï¿½o Venenosa",sM2_5, "Remover Escudo",-;
 
 			set @score, @score + 10;
 
 		sM2_5:
 
-		show "[Markie]";
-		show "6) Escolha a habilidade que deixa você mover enquanto você permanece oculto?";
+		mes "[Markie]";
+		mes "6) Escolha a habilidade que deixa vocï¿½ mover enquanto vocï¿½ permanece oculto?";
 		next;
 		menu "Esconderijo",sM2_6, "Recuar",sM2_6, "Tunel de Fuga",-, "Chutar Areia",sM2_6;
 
@@ -217,8 +217,8 @@ L_Test1:
 
 		sM2_6:
 
-		show "[Markie]";
-		show "7) Escolha a carta que aumenta a ^5533FFtaxa de precião^000000 ao seu dono?";
+		mes "[Markie]";
+		mes "7) Escolha a carta que aumenta a ^5533FFtaxa de preciï¿½o^000000 ao seu dono?";
 		next;
 		menu "Andre",sM2_7, "Familiar",sM2_7, "Mumia",-, "Marina",sM2_7;
 
@@ -226,27 +226,27 @@ L_Test1:
 
 		sM2_7:
 
-		show "[Markie]";
-		show "8) Escolha o monstro que recebe mais dano quando atacado com uma arma com Carta Vadon?";
-		show "(Carta Vadon influencia 20% mais dano em monstro do elemento fogo)";
+		mes "[Markie]";
+		mes "8) Escolha o monstro que recebe mais dano quando atacado com uma arma com Carta Vadon?";
+		mes "(Carta Vadon influencia 20% mais dano em monstro do elemento fogo)";
 		next;
-		menu 	"Vadon",sM2_8, "Deviruchi",sM2_8, "Salgueiro Ancião",-, "Bafomé",sM2_8;
+		menu 	"Vadon",sM2_8, "Deviruchi",sM2_8, "Salgueiro Anciï¿½o",-, "Bafomï¿½",sM2_8;
 
 			set @score, @score + 10;
 
 		sM2_8:
 
-		show "[Markie]";
-		show "9) Quanto de SP o ^5533FFAtaque Duplo^000000 precisa quando usado com uma adaga?";
+		mes "[Markie]";
+		mes "9) Quanto de SP o ^5533FFAtaque Duplo^000000 precisa quando usado com uma adaga?";
 		next;
-		menu "15 SP",sM2_9, "Não precisa de SP",-, "10 SP",sM2_9, "54 SP",sM2_9;
+		menu "15 SP",sM2_9, "Nï¿½o precisa de SP",-, "10 SP",sM2_9, "54 SP",sM2_9;
 
 			set @score, @score + 10;
 
 		sM2_9:
 
-		show "[Markie]";
-		show "10) Escolha a melhor adaga para ser usada no Tunel Submarino?";
+		mes "[Markie]";
+		mes "10) Escolha a melhor adaga para ser usada no Tunel Submarino?";
 		next;
 		menu "Main-Gauche Trovejante",-, "Main-Gauche Glacial",sM2_10, "Main-Gauche Terrestre",sM2_10, "Main-Gauche Flamejante",sM2_10;
 
@@ -256,81 +256,81 @@ L_Test1:
 
 
 	L_Score:
-		show "[Markie]";
-		show "Tudo bem, essas foram todas as perguntas que eu precisava saber.  Agora não foi tão ruim né?";
-		//show "I hope you don't mind, but I've been grading your answers.";
+		mes "[Markie]";
+		mes "Tudo bem, essas foram todas as perguntas que eu precisava saber.  Agora nï¿½o foi tï¿½o ruim nï¿½?";
+		//mes "I hope you don't mind, but I've been grading your answers.";
 		next;
-		show "[Markie]";
-		show "Eu gosto de dar a pontuação para as pessoas para elas saberem seus pontos.";
-		show "Parece que você conseguiu ^FF3355" + @score +"^000000/100 pontos............";
+		mes "[Markie]";
+		mes "Eu gosto de dar a pontuaï¿½ï¿½o para as pessoas para elas saberem seus pontos.";
+		mes "Parece que vocï¿½ conseguiu ^FF3355" + @score +"^000000/100 pontos............";
 		next;
-		show "[Markie]";
+		mes "[Markie]";
 
 		if(@score< 90) goto sL_Failed;
 		if(@score<100) goto sL_Passed;
 
 		sL_Perfect:
-			show "Uma prova perfeita! Eu sabia que você tinha o que era preciso para ser um Arruaceiro.....";
-			show "Mas não deixe que isso te suba a cabeça, amor, por que ainda tem muitos testes te aguardando.....";
+			mes "Uma prova perfeita! Eu sabia que vocï¿½ tinha o que era preciso para ser um Arruaceiro.....";
+			mes "Mas nï¿½o deixe que isso te suba a cabeï¿½a, amor, por que ainda tem muitos testes te aguardando.....";
 			next;
-			show "[Markie]";
+			mes "[Markie]";
 			set ROGUE_Q, 2;
 			goto L_Test2;
 
 		sL_Passed:
-			show "Bom, muito bom. Você está no trabalho certo, docinho. Mas ainda tem muitos testes pra você fazer então não fique exitado ainda.....";
+			mes "Bom, muito bom. Vocï¿½ estï¿½ no trabalho certo, docinho. Mas ainda tem muitos testes pra vocï¿½ fazer entï¿½o nï¿½o fique exitado ainda.....";
 			next;
-			show "[Markie]";
+			mes "[Markie]";
 			set ROGUE_Q, 2;
 			goto L_Test2;
 			return;
 
 		sL_Failed:
-			show "..... hum... bem. Este não é o tipo de ponto que eu estava esperando......";
-			show "O que eu posso dizer, com um ponto como esse você definitivamente não pode ser um Arruaceiro..........";
+			mes "..... hum... bem. Este nï¿½o ï¿½ o tipo de ponto que eu estava esperando......";
+			mes "O que eu posso dizer, com um ponto como esse vocï¿½ definitivamente nï¿½o pode ser um Arruaceiro..........";
 			emotion e_swt;
 			next;
-			show "[Markie]";
-			show "Por que você não volta depois de treinar um pouco, amor..... você precisa..... ";
+			mes "[Markie]";
+			mes "Por que vocï¿½ nï¿½o volta depois de treinar um pouco, amor..... vocï¿½ precisa..... ";
 			close;
 
 L_ReTest:
-	show "Você de novo? Você tem certeza que está pronto desta vez?...... Ok docinho, então relaxe....";
+	mes "Vocï¿½ de novo? Vocï¿½ tem certeza que estï¿½ pronto desta vez?...... Ok docinho, entï¿½o relaxe....";
 	next;
 	goto L_Test1;
 
 L_Test2:
-	show "Seu segundo teste lhe será aplicado pelo ^5533FFSr. Smith^000000.";
-	show "Eu tenho que avisa-lo, Sr. Smith pode ser uma pessoa rígida e dura de se lidar. Então, seja cuidadosa com as suas ações com ele.";
+	mes "Seu segundo teste lhe serï¿½ aplicado pelo ^5533FFSr. Smith^000000.";
+	mes "Eu tenho que avisa-lo, Sr. Smith pode ser uma pessoa rï¿½gida e dura de se lidar. Entï¿½o, seja cuidadosa com as suas aï¿½ï¿½es com ele.";
 	close;
 L_Test3:
-	show "Eu sei que esses caras são difícies de se achar. tenha paciência e continue procurando. Tenha ceteza que você tem todas as corretas senhas tambêm..";
+	mes "Eu sei que esses caras sï¿½o difï¿½cies de se achar. tenha paciï¿½ncia e continue procurando. Tenha ceteza que vocï¿½ tem todas as corretas senhas tambï¿½m..";
 	close;
 L_Test4:
-	show "O que você está fazendo aqui? Eu espero que você naum esteja tentando fugir do último teste, você está?.........";
+	mes "O que vocï¿½ estï¿½ fazendo aqui? Eu espero que vocï¿½ naum esteja tentando fugir do ï¿½ltimo teste, vocï¿½ estï¿½?.........";
 	emotion e_what;
 	next;
-	show "[Markie]";
-	show "Você quase acabou todos, então continue tentando. Eu sei que você consegue.";
+	mes "[Markie]";
+	mes "Vocï¿½ quase acabou todos, entï¿½o continue tentando. Eu sei que vocï¿½ consegue.";
 	close;
 
 
 //=======================================================================
 L_Change:
 //===========
-	show "Oh, você voltou e ainda está inteiro. Você aparentemente passou em todos os testes docinho.";
-	show "Você provou que está pronto para se tornar um Arruaceiro!";
+	mes "Oh, vocï¿½ voltou e ainda estï¿½ inteiro. Vocï¿½ aparentemente passou em todos os testes docinho.";
+	mes "Vocï¿½ provou que estï¿½ pronto para se tornar um Arruaceiro!";
 	emotion e_ic;
 	next;
 	if(SkillPoint != 0) goto L_SkillP;
-	show "[Markie]";
-	show "Ta-da! Meus parabêns por se tornar um Arruaceiro. Você se mostrou muito capaz e está é a sua recompensa por isso......";
+	mes "[Markie]";
+	mes "Ta-da! Meus parabï¿½ns por se tornar um Arruaceiro. Vocï¿½ se mostrou muito capaz e estï¿½ ï¿½ a sua recompensa por isso......";
 	setlook 7,0;
 	callfunc "Job_Change",Job_Rogue;
 	emotion e_grat;
 	next;
-	show "[Markie]";
-	show "Agora que você você é um Arruaceiro, você está pronto para cair no mundo e seguir viagem.";
+	mes "[Markie]";
+	mes "Agora que vocï¿½ vocï¿½ ï¿½ um Arruaceiro, vocï¿½ estï¿½ pronto para cair no mundo e seguir viagem.";
 	if(JBLVL != 50) {
 			additem 1219,1;		// 2 slott gladius
 		} else {
@@ -338,19 +338,19 @@ L_Change:
 	}
 	callfunc "F_ClearJobVar";
 	next;
-	show "[Markie]";
-	show "Só tenha em mente que esta liberdade requer responsabilidade. Trate bem as pessoas que você encontrar bem e com respeito.";
+	mes "[Markie]";
+	mes "Sï¿½ tenha em mente que esta liberdade requer responsabilidade. Trate bem as pessoas que vocï¿½ encontrar bem e com respeito.";
 	next;
-	show "[Markie]";
-	show "Divirta-se baby! Vejo você por aí!";
+	mes "[Markie]";
+	mes "Divirta-se baby! Vejo vocï¿½ por aï¿½!";
 	close;
 
 //=======================================================================
 L_SkillP:
 //===========
-	show "[Markie]";
-	show "Oh! Bem... uma coisa mor... você ainda tem pontos de habilidade para distribuir!";
-	show "Por favor, os distribua e depois volte aqui, está bem?";
+	mes "[Markie]";
+	mes "Oh! Bem... uma coisa mor... vocï¿½ ainda tem pontos de habilidade para distribuir!";
+	mes "Por favor, os distribua e depois volte aqui, estï¿½ bem?";
 	close;
 }
 
@@ -358,30 +358,30 @@ L_SkillP:
 // Mr. Smith: Tests 2 and 3
 in_rogue,376,23,3	script	Mr. Smith	57,{
 
-	show "[Mr. Smith]";
+	mes "[Mr. Smith]";
 	if(BaseJob == Job_Thief) goto L_Thief;
 	if(BaseJob == Job_Rogue) goto L_Rogue;
 
 L_OtherJob:
-	show "Suma! Estou ocupado.....";
+	mes "Suma! Estou ocupado.....";
 	close;
 L_Rogue:
-	show "Procurando por seus amigos, Arruaceiro.";
+	mes "Procurando por seus amigos, Arruaceiro.";
 	close;
 L_Thief:
 	if(ROGUE_Q == 2) goto L_Test2;
 	if(ROGUE_Q == 3) goto L_Test3;
 	if(ROGUE_Q > 3) goto L_Done;
-	show "Ok, ok.... Um... Dois.... Três.... Onde você faz os seus negócios... onde é.... Morroc... Geffen.... Comodo??.......";
+	mes "Ok, ok.... Um... Dois.... Trï¿½s.... Onde vocï¿½ faz os seus negï¿½cios... onde ï¿½.... Morroc... Geffen.... Comodo??.......";
 	next;
-	show "[Mr. Smith]";
-	show "Uhh..... isto está me dando dor de cabeça.......";
+	mes "[Mr. Smith]";
+	mes "Uhh..... isto estï¿½ me dando dor de cabeï¿½a.......";
 	next;
-	show "[Mr. Smith]";
-	show "Huh? Quem é você? Se você quer se tornar um Arruaceiro, vá e fale com ^5533FFMarkie^000000....";
+	mes "[Mr. Smith]";
+	mes "Huh? Quem ï¿½ vocï¿½? Se vocï¿½ quer se tornar um Arruaceiro, vï¿½ e fale com ^5533FFMarkie^000000....";
 	next;
-	show "[Mr. Smith]";
-	show "...... Droga! Eu esqueci o que eu estava contando!!";
+	mes "[Mr. Smith]";
+	mes "...... Droga! Eu esqueci o que eu estava contando!!";
 	emotion e_wah;
 	close;
 
@@ -389,46 +389,46 @@ L_Thief:
 L_Test2:
 //--------------
 	if(ROGUE_Q2 > 0) goto L_Check2;
-	show "Então você veio para o segundo teste.... bom.......";
+	mes "Entï¿½o vocï¿½ veio para o segundo teste.... bom.......";
 	next;
-	show "[Mr. Smith]";
-	show "Antes de começarmos, deixe me falar sobre o teste em si.";
-	show "A nossa guild está envolvidas em muitos 'negocios' e sempre nós precisamos de fundos.";
+	mes "[Mr. Smith]";
+	mes "Antes de comeï¿½armos, deixe me falar sobre o teste em si.";
+	mes "A nossa guild estï¿½ envolvidas em muitos 'negocios' e sempre nï¿½s precisamos de fundos.";
 	next;
-	show "[Mr. Smith]";
-	show "Por esse motivo, nós precisamos de ^5533FF10,000 zeny^000000 a ser pago para você fazer o teste de Arruaceiro.";
-	show "O pagamento será coletado quando você acabar esse segundo teste, então não se preocupe se você não tem isso agora.";
+	mes "[Mr. Smith]";
+	mes "Por esse motivo, nï¿½s precisamos de ^5533FF10,000 zeny^000000 a ser pago para vocï¿½ fazer o teste de Arruaceiro.";
+	mes "O pagamento serï¿½ coletado quando vocï¿½ acabar esse segundo teste, entï¿½o nï¿½o se preocupe se vocï¿½ nï¿½o tem isso agora.";
 	next;
-	show "[Mr. Smith]";
-	show "Bem, agora o teste..... Você é necessário para coletar os seguintes itens:";
+	mes "[Mr. Smith]";
+	mes "Bem, agora o teste..... Vocï¿½ ï¿½ necessï¿½rio para coletar os seguintes itens:";
 	next;
-	show "[Mr. Smith]";
+	mes "[Mr. Smith]";
 	set ROGUE_Q2, rand(1,3);
 	if(ROGUE_Q2 == 1) callsub sF2_R1;
 	if(ROGUE_Q2 == 2) callsub sF2_R2;
 	if(ROGUE_Q2 == 3) callsub sF2_R3;
 	next;
-	show "[Mr. Smith]";
-	show "Uma vez que você tenha TODOS os itens e os 10,000 zeny, venha me ver de novo, OK? Bom.";
+	mes "[Mr. Smith]";
+	mes "Uma vez que vocï¿½ tenha TODOS os itens e os 10,000 zeny, venha me ver de novo, OK? Bom.";
 	close;
 
 	sF2_R1:
-		show "^5533FF6 Ervas Azu,";
-		show "10 Ossos,";
-		show "10 Unhas Apodrecidas,";
-		show "10 Mandíbulas Horrendas^000000.";
+		mes "^5533FF6 Ervas Azu,";
+		mes "10 Ossos,";
+		mes "10 Unhas Apodrecidas,";
+		mes "10 Mandï¿½bulas Horrendas^000000.";
 		return;
 	sF2_R2:
-		show "^5533FF10 Ervas Verde,";
-		show "10 Garletas,";
-		show "10 Escamas de Cobra";
-		show "10 Cascos de Caranguejo.^000000";
+		mes "^5533FF10 Ervas Verde,";
+		mes "10 Garletas,";
+		mes "10 Escamas de Cobra";
+		mes "10 Cascos de Caranguejo.^000000";
 		return;
 	sF2_R3:
-		show "^5533FF10 Ervas Amarela,";
-		show "10 Patas de Urso,";
-		show "10 Cascas";
-		show "10 Pernas de Gafanhoto^000000.";
+		mes "^5533FF10 Ervas Amarela,";
+		mes "10 Patas de Urso,";
+		mes "10 Cascas";
+		mes "10 Pernas de Gafanhoto^000000.";
 		return;
 
 L_Check2:
@@ -463,27 +463,27 @@ L_Check2:
 		delitem 940,10;
 
 	L_Done2:
-		show "Deixe me ver.... matricula.... checando..... itens....... checando...... Tudu bem, tudu parece em ordem.  Você passou no segundo teste.";
+		mes "Deixe me ver.... matricula.... checando..... itens....... checando...... Tudu bem, tudu parece em ordem.  Vocï¿½ passou no segundo teste.";
 		next;
-		show "[Mr. Smith]";
-		show "Quando você estiver pronto para o próximo teste, me avise. OK?";
+		mes "[Mr. Smith]";
+		mes "Quando vocï¿½ estiver pronto para o prï¿½ximo teste, me avise. OK?";
 		set Zeny, Zeny - 10000;
 		set ROGUE_Q, 3;
 		set ROGUE_Q2, 0;
 		close;
 
 	L_NotEnuf:
-		show ".... Mais que Inferno!?!? Você não tem todos os itens? Então por que você voltou?? Não me diga que você já esqueceu o que era.....";
+		mes ".... Mais que Inferno!?!? Vocï¿½ nï¿½o tem todos os itens? Entï¿½o por que vocï¿½ voltou?? Nï¿½o me diga que vocï¿½ jï¿½ esqueceu o que era.....";
 		emotion e_what;
 		next;
-		show "[Mr. Smith]";
-		show "Desta vez escreva! Você precisa de ^5533FF10,000^000000 zeny e:";
+		mes "[Mr. Smith]";
+		mes "Desta vez escreva! Vocï¿½ precisa de ^5533FF10,000^000000 zeny e:";
 		if(ROGUE_Q2 == 1) callsub sF2_R1;
 		if(ROGUE_Q2 == 2) callsub sF2_R2;
 		if(ROGUE_Q2 == 3) callsub sF2_R3;
 		next;
-		show "[Mr. Smith]";
-		show "Anotou? NÃO VOLTE até você ter tudu.........";
+		mes "[Mr. Smith]";
+		mes "Anotou? Nï¿½O VOLTE atï¿½ vocï¿½ ter tudu.........";
 		emotion e_pif;
 		close;
 
@@ -492,91 +492,91 @@ L_Check2:
 L_Test3:
 //---------------
 	if(ROGUE_Q2 > 0) goto L_Check3;
-	show "Deixe me ver..... Quem eu tinha que encontrar........ hmm.........";
+	mes "Deixe me ver..... Quem eu tinha que encontrar........ hmm.........";
 	emotion e_hmm;
 	next;
-	show "[Mr. Smith]";
-	show "Ah! Lembrei! Tudu bem, no teste anterior você tinha que encontrar algum itens. Neste teste você precisa encontrar uma pessoa específica.";
+	mes "[Mr. Smith]";
+	mes "Ah! Lembrei! Tudu bem, no teste anterior vocï¿½ tinha que encontrar algum itens. Neste teste vocï¿½ precisa encontrar uma pessoa especï¿½fica.";
 	emotion e_ic;
 	next;
-	show "[Mr. Smith]";
+	mes "[Mr. Smith]";
 	set ROGUE_Q2, rand(1,3);
 	if(ROGUE_Q2 == 1) callsub sF3_R1;
 	if(ROGUE_Q2 == 2) callsub sF3_R2;
 	if(ROGUE_Q2 == 3) callsub sF3_R3;
 	next;
-	show "[Mr. Smith]";
-	show "Boa sorte para você. Tente acabar o teste o mais rapido possível. Obter coisas rapido é um dos desafios de um Arruaceiro.";
+	mes "[Mr. Smith]";
+	mes "Boa sorte para vocï¿½. Tente acabar o teste o mais rapido possï¿½vel. Obter coisas rapido ï¿½ um dos desafios de um Arruaceiro.";
 	close;
 
 	sF3_R1:
-		show "Você precisa encontrar ^5533FFAragham Junior^000000.";
+		mes "Vocï¿½ precisa encontrar ^5533FFAragham Junior^000000.";
 		next;
-		show "[Mr. Smith]";
-		show "Ele mora em uma pequena casa em algum lugar a ^5533FFSudoeste^000000 da Fortaleza de Sandarman.";
-		show "Essa área é localizada ^5533FFum mapa a leste^000000 daqui e é no ^000000banco de terra ao sudoeste^000000.";
+		mes "[Mr. Smith]";
+		mes "Ele mora em uma pequena casa em algum lugar a ^5533FFSudoeste^000000 da Fortaleza de Sandarman.";
+		mes "Essa ï¿½rea ï¿½ localizada ^5533FFum mapa a leste^000000 daqui e ï¿½ no ^000000banco de terra ao sudoeste^000000.";
 		next;
-		show "[Mr. Smith]";
-		show "Ele é uma pessoa muito boa que trabalha verdadeiramente duro, e ele é muito bom coletando dividas não pagas.";
-		show "Infelizmente, pessoas aqui estão tentando mata-lo pelo que o pai dele fez no pasado.";
+		mes "[Mr. Smith]";
+		mes "Ele ï¿½ uma pessoa muito boa que trabalha verdadeiramente duro, e ele ï¿½ muito bom coletando dividas nï¿½o pagas.";
+		mes "Infelizmente, pessoas aqui estï¿½o tentando mata-lo pelo que o pai dele fez no pasado.";
 		next;
-		show "[Mr. Smith]";
-		show "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu até que a poeira baixasse por isso ele está escondido.";
-		show "Ninguêm sabe onde ele está, somente nós que somos da Guilda";
+		mes "[Mr. Smith]";
+		mes "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu atï¿½ que a poeira baixasse por isso ele estï¿½ escondido.";
+		mes "Ninguï¿½m sabe onde ele estï¿½, somente nï¿½s que somos da Guilda";
 		next;
-		show "[Mr. Smith]";
-		show "Por isso que você precisa da senha para falar com ele.";
-		show "A senha é: '^5533FFAragham nunca recebeu itens.^000000'";
+		mes "[Mr. Smith]";
+		mes "Por isso que vocï¿½ precisa da senha para falar com ele.";
+		mes "A senha ï¿½: '^5533FFAragham nunca recebeu itens.^000000'";
 		return;
 	sF3_R2:
-		show "Você precisa encontrar ^5533FFHollgrehen Junior^000000.";
+		mes "Vocï¿½ precisa encontrar ^5533FFHollgrehen Junior^000000.";
 		next;
-		show "[Mr. Smith]";
-		show "Ele mora em uma pequena casa em algum lugar a ^5533FFSudeste^000000 da Forteleza de Sandarman.";
-		show "Essa área é localizada ^5533FFum mapa a leste^000000 daqui e ele está em ^5533FFbanco de terra à leste^000000.";
+		mes "[Mr. Smith]";
+		mes "Ele mora em uma pequena casa em algum lugar a ^5533FFSudeste^000000 da Forteleza de Sandarman.";
+		mes "Essa ï¿½rea ï¿½ localizada ^5533FFum mapa a leste^000000 daqui e ele estï¿½ em ^5533FFbanco de terra ï¿½ leste^000000.";
 		next;
-		show "[Mr. Smith]";
-		show "Ele é uma pessoa muito boa que trabalha verdadeiramente duro, e ele é muito bom coletando dividas não pagas.";
-		show "Infelizmente, pessoas aqui estão tentando matá-lo pelo que o pai dele fez no pasado.";
+		mes "[Mr. Smith]";
+		mes "Ele ï¿½ uma pessoa muito boa que trabalha verdadeiramente duro, e ele ï¿½ muito bom coletando dividas nï¿½o pagas.";
+		mes "Infelizmente, pessoas aqui estï¿½o tentando matï¿½-lo pelo que o pai dele fez no pasado.";
 		next;
-		show "[Mr. Smith]";
-		show "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu até que a poeira baixasse por isso ele está escondido.";
-		show "Ninguêm sabe onde ele está, somente nós que somos da Guilda.";
+		mes "[Mr. Smith]";
+		mes "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu atï¿½ que a poeira baixasse por isso ele estï¿½ escondido.";
+		mes "Ninguï¿½m sabe onde ele estï¿½, somente nï¿½s que somos da Guilda.";
 		next;
-		show "[Mr. Smith]";
-		show "Por isso que você precisa da senha para falar com ele.";
-		show "A senha é: '^5533FFMeu pai nunca recebeu itens.^000000'";
+		mes "[Mr. Smith]";
+		mes "Por isso que vocï¿½ precisa da senha para falar com ele.";
+		mes "A senha ï¿½: '^5533FFMeu pai nunca recebeu itens.^000000'";
 		return;
 	sF3_R3:
-		show "Você precisa ir e encontrar ^5533FFAntonio Junior.^000000.";
+		mes "Vocï¿½ precisa ir e encontrar ^5533FFAntonio Junior.^000000.";
 		next;
-		show "[Mr. Smith]";
-		show "Ele mora em uma pequena cabana em algum lugar de ^5533FFNo Leste, no fim da Praia de Comodo^000000.";
-		show "Essa área está localizada ^5533FF1 mapa ao Norte, e 1 mapa Oeste^000000 daqui.";
+		mes "[Mr. Smith]";
+		mes "Ele mora em uma pequena cabana em algum lugar de ^5533FFNo Leste, no fim da Praia de Comodo^000000.";
+		mes "Essa ï¿½rea estï¿½ localizada ^5533FF1 mapa ao Norte, e 1 mapa Oeste^000000 daqui.";
 		next;
-		show "[Mr. Smith]";
-		show "Ele é uma pessoa muito boa que trabalha verdadeiramente duro, e ele é muito bom coletando dividas não pagas.";
-		show "Infelizmente, pessoas aqui estão tentando mata-lo pelo que o pai dele fez no pasado.";
+		mes "[Mr. Smith]";
+		mes "Ele ï¿½ uma pessoa muito boa que trabalha verdadeiramente duro, e ele ï¿½ muito bom coletando dividas nï¿½o pagas.";
+		mes "Infelizmente, pessoas aqui estï¿½o tentando mata-lo pelo que o pai dele fez no pasado.";
 		next;
-		show "[Mr. Smith]";
-		show "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu até que a poeira baixasse.";
-		show "Ninguêm sabe onde ele está, somente nós que somos da Guilda.";
+		mes "[Mr. Smith]";
+		mes "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu atï¿½ que a poeira baixasse.";
+		mes "Ninguï¿½m sabe onde ele estï¿½, somente nï¿½s que somos da Guilda.";
 		next;
-		show "[Mr. Smith]";
-		show "Por isso que você precisa da senha para falar com ele.";
-		show "A senha é: '^5533FFAntonio não gosta de quebrar material refinado.^000000'";
+		mes "[Mr. Smith]";
+		mes "Por isso que vocï¿½ precisa da senha para falar com ele.";
+		mes "A senha ï¿½: '^5533FFAntonio nï¿½o gosta de quebrar material refinado.^000000'";
 		return;
 
 
 L_Check3:
-	show "O que!?! Você esqueceu onde você tinha que ir?........";
+	mes "O que!?! Vocï¿½ esqueceu onde vocï¿½ tinha que ir?........";
 	emotion e_what;
 	next;
-	show "[Mr. Smith]";
-	show "GRRRR!!! Por isso que você tem que escrever as coisas que são importantes! Jees......";
+	mes "[Mr. Smith]";
+	mes "GRRRR!!! Por isso que vocï¿½ tem que escrever as coisas que sï¿½o importantes! Jees......";
 	emotion e_an;
 	next;
-	show "[Mr. Smith]";
+	mes "[Mr. Smith]";
 	if(ROGUE_Q2 == 1) callsub sF3_R1;
 	if(ROGUE_Q2 == 2) callsub sF3_R2;
 	if(ROGUE_Q2 == 3) callsub sF3_R3;
@@ -585,22 +585,22 @@ L_Check3:
 //-------------------------------------------------------------------------------------------------
 L_Done:
 //----------------
-	show "Eu não tenho mais nada para você.........";
+	mes "Eu nï¿½o tenho mais nada para vocï¿½.........";
 	close;
 }
 
 // Hermanthorn Jr.
 in_rogue,272,136,3	script	Hermanthorn Jr.	85,{
-	show "[Hermanthorn Jr.]";
-	show "Huh? O qu.... Quem é você?! Você não é da Guilda dos Arruaceiros!! Some da minha frente!";
+	mes "[Hermanthorn Jr.]";
+	mes "Huh? O qu.... Quem ï¿½ vocï¿½?! Vocï¿½ nï¿½o ï¿½ da Guilda dos Arruaceiros!! Some da minha frente!";
 	emotion e_what;
 	next;
-	show "[Hermanthorn Jr.]";
-	show "Você é..... Entendo! Você é um deles!!! Você veio pra me matar, não é??!! Não... NÃO!! Eu não estou pronto pra morrer!";
+	mes "[Hermanthorn Jr.]";
+	mes "Vocï¿½ ï¿½..... Entendo! Vocï¿½ ï¿½ um deles!!! Vocï¿½ veio pra me matar, nï¿½o ï¿½??!! Nï¿½o... Nï¿½O!! Eu nï¿½o estou pronto pra morrer!";
 	emotion e_gasp;
 	next;
-	show "[Hermanthorn Jr.]";
-	show "Aaaaaaaaaaaaaahhhh!! vai embora! Some daqui! Do contrário eu vou MATAR VOCÊ!!!";
+	mes "[Hermanthorn Jr.]";
+	mes "Aaaaaaaaaaaaaahhhh!! vai embora! Some daqui! Do contrï¿½rio eu vou MATAR VOCï¿½!!!";
 	emotion e_wah;
 	close;
 }
@@ -617,15 +617,15 @@ cmd_fild09,335,143,0	script	Hollgrehen Junior#01	45,1,1,{
 
 // ------------------------------------------------------------------------------
 cmd_fild04,304,179,0	script	Antonio Junior#01	45,1,1,{
-	callfunc "F_RogueTest3", 3, "Antonio", "não gosta", "de quebrar", "material refinado.", 165, 104;
+	callfunc "F_RogueTest3", 3, "Antonio", "nï¿½o gosta", "de quebrar", "material refinado.", 165, 104;
 }
 
 // Function for Guildsman ===================================
 function	script	F_RogueTest3	{
 
-	show "[???]";
-	show "Quem esta ai?!!!";
-	show "Quem ousa entrar no meu território?";
+	mes "[???]";
+	mes "Quem esta ai?!!!";
+	mes "Quem ousa entrar no meu territï¿½rio?";
 	if(god_megin_2 > 0 && getarg(1) == "Aragham") goto L_Pass;
 	if(BaseJob!=Job_Thief || ROGUE_Q<3 || ROGUE_Q2==0) close;
 L_Pass:
@@ -647,13 +647,13 @@ L_Pass:
 
 	M_Menu2:
 	callsub sF_Password;
-	menu "não faz",M_2a, "não gosta",M_2b, "nunca",M_2c, "sempre",M_2d;
+	menu "nï¿½o faz",M_2a, "nï¿½o gosta",M_2b, "nunca",M_2c, "sempre",M_2d;
 
 	M_2a:
-		set @choice$[2], "não faz";
+		set @choice$[2], "nï¿½o faz";
 		goto M_Menu3;
 	M_2b:
-		set @choice$[2], "não gosta";
+		set @choice$[2], "nï¿½o gosta";
 		goto M_Menu3;
 	M_2c:
 		set @choice$[2], "nunca";
@@ -702,22 +702,22 @@ L_Check:
 	if(ROGUE_Q2 != getarg(0)) goto L_Wrong;
 L_Enter:
 //	if((@choice$[1] != getarg(1)) || (@choice$[2] != getarg(2)) || (@choice$[3] != getarg(3)) || (@choice$[4] != getarg(4))) goto L_Wrong;
-	show "~ weeerk ~";
-	show "Você ouve a porta começando a se abrir........";
+	mes "~ weeerk ~";
+	mes "Vocï¿½ ouve a porta comeï¿½ando a se abrir........";
 	next;
 	deletearray @choice$[1], 4;
 	warp "in_rogue", getarg(5), getarg(6);
 	end;
 
 	L_Wrong:
-	show "~ weeerk ~";
-	show "Você ouve a porta começando a se abrir........";
+	mes "~ weeerk ~";
+	mes "Vocï¿½ ouve a porta comeï¿½ando a se abrir........";
 	next;
 	deletearray @choice$[1], 4;
 	warp "in_rogue", getarg(5), getarg(6);
 	end;
 sF_Password:
-	show "[^5533FF" + strcharinfo(0) + "^000000]";
+	mes "[^5533FF" + strcharinfo(0) + "^000000]";
 	show @choice$[1];
 	show @choice$[2];
 	show @choice$[3];
@@ -755,33 +755,33 @@ function	script	F_RogueTest4	{
 
 	if(BaseJob != Job_Thief || ROGUE_Q2 != getarg(0)) goto L_NoThief;
 	if(ROGUE_Q == 4) goto L_Restart;
-	show "[" + getarg(1) + "]";
-	show "Olááá... Você deve ser da Guilda dos Arruaceiros. Meu nome é " + getarg(0) + "...... Eu sou o Arruaceiro do Deserto..............";
+	mes "[" + getarg(1) + "]";
+	mes "Olï¿½ï¿½ï¿½... Vocï¿½ deve ser da Guilda dos Arruaceiros. Meu nome ï¿½ " + getarg(0) + "...... Eu sou o Arruaceiro do Deserto..............";
 	next;
-	show "[" + getarg(1) + "]";
-	show "Aww a quem eu estou enganando...... Vamos cortar o papo furado.  Então você quer se tornar um Arruaceiro?";
+	mes "[" + getarg(1) + "]";
+	mes "Aww a quem eu estou enganando...... Vamos cortar o papo furado.  Entï¿½o vocï¿½ quer se tornar um Arruaceiro?";
 	emotion e_swt;
 	next;
-	show "[" + getarg(1) + "]";
-	show "Como você sabe, o mandamento dos Arruaceiros é...... ^5533FF'Escape dos fortes! Seja malísioso com os fracos!'^000000";
-	show "Está regra simples pode ser aplicada lutando com monstros tambêm.";
+	mes "[" + getarg(1) + "]";
+	mes "Como vocï¿½ sabe, o mandamento dos Arruaceiros ï¿½...... ^5533FF'Escape dos fortes! Seja malï¿½sioso com os fracos!'^000000";
+	mes "Estï¿½ regra simples pode ser aplicada lutando com monstros tambï¿½m.";
 	next;
-	show "[" + getarg(1) + "]";
-	show "A última coisa que você tem que fazer para se tornar um Arruaceiro, é andar através da pasagem subterrânia até a Guilda.";
+	mes "[" + getarg(1) + "]";
+	mes "A ï¿½ltima coisa que vocï¿½ tem que fazer para se tornar um Arruaceiro, ï¿½ andar atravï¿½s da pasagem subterrï¿½nia atï¿½ a Guilda.";
 	next;
-	show "[" + getarg(1) + "]";
-	show "Parece facil né? Bem, não é! Mas não se preocupe....";
-	show "Se você se mantiver firme ao mandamento dos Arruaceiro, se esconder , e correr muito, você ficará bem.";
+	mes "[" + getarg(1) + "]";
+	mes "Parece facil nï¿½? Bem, nï¿½o ï¿½! Mas nï¿½o se preocupe....";
+	mes "Se vocï¿½ se mantiver firme ao mandamento dos Arruaceiro, se esconder , e correr muito, vocï¿½ ficarï¿½ bem.";
 
 	M_Menu:
 	next;
-	show "[" + getarg(1) + "]";
-	show "Ok, você está pronto pra ir?";
+	mes "[" + getarg(1) + "]";
+	mes "Ok, vocï¿½ estï¿½ pronto pra ir?";
 	next;
 	menu "Como nunca estive antes.",-, "Na verdade, Estou um pouco assustado...",M_End;
 
-		show "[" + getarg(1) + "]";
-		show "Boa sorte então, você vai precizar....";
+		mes "[" + getarg(1) + "]";
+		mes "Boa sorte entï¿½o, vocï¿½ vai precizar....";
 		next;
 		set ROGUE_Q, 4;
 		killmonsterall "in_rogue";
@@ -792,41 +792,41 @@ function	script	F_RogueTest4	{
 		end;
 
 	M_End:
-		show "[" + getarg(1) + "]";
-		show ".....................";
+		mes "[" + getarg(1) + "]";
+		mes ".....................";
 		next;
-		show "[" + getarg(1) + "]";
-		show "Bem, você tem todo o tempo do mundo...... Eu acho.......";
+		mes "[" + getarg(1) + "]";
+		mes "Bem, vocï¿½ tem todo o tempo do mundo...... Eu acho.......";
 		close;
 
 L_Restart:
-	show "[" + getarg(1) + "]";
-	show "....... Parece que você foi pego.......";
+	mes "[" + getarg(1) + "]";
+	mes "....... Parece que vocï¿½ foi pego.......";
 	emotion e_swt;
 	next;
-	show "[" + getarg(1) + "]";
-	show "Se você quizer, eu te mando de volta.  Uma falha é só um dos caminhos errados do sucesso.... yada yada yada....";
+	mes "[" + getarg(1) + "]";
+	mes "Se vocï¿½ quizer, eu te mando de volta.  Uma falha ï¿½ sï¿½ um dos caminhos errados do sucesso.... yada yada yada....";
 	percentheal 100,100;
 	goto M_Menu;
 
 L_NoThief:
-	show "[" + getarg(1) +"]";
-	show "Eu não sei como você conseguiu este";
+	mes "[" + getarg(1) +"]";
+	mes "Eu nï¿½o sei como vocï¿½ conseguiu este";
 		if(ROGUE_Q2)
 	{
-		show "passe. Mas eu não posso";
-		show "fazer anda por você.";
+		mes "passe. Mas eu nï¿½o posso";
+		mes "fazer anda por vocï¿½.";
 	}
 		else
 	{
-		show "passe, mas olhando sua cara,";
-		show "Eu suponho que você não estja aqui para o";
-		show "teste de Arruaceiro.";
+		mes "passe, mas olhando sua cara,";
+		mes "Eu suponho que vocï¿½ nï¿½o estja aqui para o";
+		mes "teste de Arruaceiro.";
 	}
 	next;
-	show "[" + getarg(1) +"]";
-	show "Por favor, se apresse e saia";
-	show "deste lugar assim que você puder!";
+	mes "[" + getarg(1) +"]";
+	mes "Por favor, se apresse e saia";
+	mes "deste lugar assim que vocï¿½ puder!";
 	close;
 }
 
@@ -843,12 +843,12 @@ in_rogue,15,185,0	script	rogue_mob1	139,8,0,{
 	end;
 }
 in_rogue,15,245,0	script	rogue_mob2	139,8,0,{
-	monster "in_rogue",14,247,"Múmia",1041,1;
-	monster "in_rogue",15,247,"Múmia",1041,1;
-	monster "in_rogue",16,247,"Múmia",1041,1;
-	monster "in_rogue",14,248,"Múmia",1041,1;
-	monster "in_rogue",15,248,"Múmia",1041,1;
-	monster "in_rogue",16,248,"Múmia",1041,1;
+	monster "in_rogue",14,247,"Mï¿½mia",1041,1;
+	monster "in_rogue",15,247,"Mï¿½mia",1041,1;
+	monster "in_rogue",16,247,"Mï¿½mia",1041,1;
+	monster "in_rogue",14,248,"Mï¿½mia",1041,1;
+	monster "in_rogue",15,248,"Mï¿½mia",1041,1;
+	monster "in_rogue",16,248,"Mï¿½mia",1041,1;
 	end;
 }
 in_rogue,15,328,0	script	rogue_mob3	139,8,0,{
@@ -861,10 +861,10 @@ in_rogue,15,328,0	script	rogue_mob3	139,8,0,{
 	end;
 }
 in_rogue,35,342,0	script	rogue_mob4	139,0,8,{
-	monster "in_rogue",38,340,"Múmia",1041,1;
+	monster "in_rogue",38,340,"Mï¿½mia",1041,1;
 	monster "in_rogue",37,342,"Cavaleiro do Abismo",1219,1;
-	monster "in_rogue",39,342,"Carniçal",1036,1;
-	monster "in_rogue",38,344,"Múmia",1041,1;
+	monster "in_rogue",39,342,"Carniï¿½al",1036,1;
+	monster "in_rogue",38,344,"Mï¿½mia",1041,1;
 	end;
 }
 in_rogue,57,306,0	script	rogue_mob5	139,4,0,{
@@ -892,14 +892,14 @@ in_rogue,62,302,0	script	rogue_mob9	139,0,4,{
 in_rogue,199,218,0	script	rogue_mob10	139,0,8,{
 	monster "in_rogue",157,218,"Zumbi",1015,10;
 	monster "in_rogue",157,218,"Cavaleiro do Abismo",1219,1;
-	monster "in_rogue",157,218,"Carniçal",1036,1;
+	monster "in_rogue",157,218,"Carniï¿½al",1036,1;
 	monster "in_rogue",157,218,"Esqueleto Arqueiro",1016,1;
 	end;
 }
 in_rogue,86,187,0	script	rogue_mob11	139,0,8,{
-	monster "in_rogue",88,186,"Múmia",1041,1;
-	monster "in_rogue",88,187,"Múmia",1041,1;
-	monster "in_rogue",88,188,"Múmia",1041,1;
+	monster "in_rogue",88,186,"Mï¿½mia",1041,1;
+	monster "in_rogue",88,187,"Mï¿½mia",1041,1;
+	monster "in_rogue",88,188,"Mï¿½mia",1041,1;
 	end;
 }
 in_rogue,225,187,0	script	rogue_mob12	139,0,8,{
@@ -909,10 +909,10 @@ in_rogue,225,187,0	script	rogue_mob12	139,0,8,{
 	end;
 }
 in_rogue,252,320,0	script	rogue_mob13	139,0,8,{
-	monster "in_rogue",252,319,"Múmia",1041,1;
-	monster "in_rogue",252,321,"Múmia",1041,1;
-	monster "in_rogue",252,319,"Carniçal",1036,1;
-	monster "in_rogue",252,321,"Carniçal",1036,1;
+	monster "in_rogue",252,319,"Mï¿½mia",1041,1;
+	monster "in_rogue",252,321,"Mï¿½mia",1041,1;
+	monster "in_rogue",252,319,"Carniï¿½al",1036,1;
+	monster "in_rogue",252,321,"Carniï¿½al",1036,1;
 	monster "in_rogue",257,320,"Esqueleto Arqueiro",1016,1;
 	monster "in_rogue",248,320,"Esqueleto Arqueiro",1016,1;
 	end;

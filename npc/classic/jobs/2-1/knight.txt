@@ -2,297 +2,297 @@ prt_in,88,101,3	script	Chefe dos Cavaleiros	56,{
 
 	if (BaseJob == Job_Swordman && KNIGHT_Q > 0) goto L_Check;
 
-	show "[Chefe dos Cavaleiros]";
-	show "Bom dia. Aqui é a Cavalaria de Prontera, a casa dos famosos Cavaleiros de Prontera.";
+	mes "[Chefe dos Cavaleiros]";
+	mes "Bom dia. Aqui ï¿½ a Cavalaria de Prontera, a casa dos famosos Cavaleiros de Prontera.";
 M_Menu:
 	next;
-	menu "Eu quero ser um Cavaleiro.",M_0,"Requisitos Necessários.",M_1,"Sair.",M_End;
+	menu "Eu quero ser um Cavaleiro.",M_0,"Requisitos Necessï¿½rios.",M_1,"Sair.",M_End;
 
 	M_0:
-		show "[Chefe dos Cavaleiros]";
+		mes "[Chefe dos Cavaleiros]";
 
 		if(BaseJob != Job_Swordman){
 			if(BaseJob == Job_Knight){
-				show "...(sighs)...O que você ainda está fazendo aqui?? Não perca mais tempo!! E continue proteguendo Rune Midgard, meu jovem Cavaleiro.";
+				mes "...(sighs)...O que vocï¿½ ainda estï¿½ fazendo aqui?? Nï¿½o perca mais tempo!! E continue proteguendo Rune Midgard, meu jovem Cavaleiro.";
 				emotion e_pif;
 				close;
 			}
 			if(BaseJob == Job_Novice){
-				show "Hahahaha!! Meu jovem, você não tem ainda experiência o suficiente para erguer uma espada quanto mais para se vir aqui perguntar se você pode ser um Cavaleiro. Hahahaha!!";
+				mes "Hahahaha!! Meu jovem, vocï¿½ nï¿½o tem ainda experiï¿½ncia o suficiente para erguer uma espada quanto mais para se vir aqui perguntar se vocï¿½ pode ser um Cavaleiro. Hahahaha!!";
 				emotion e_heh;
 				next;
-				show "[Chefe dos Cavaleiros]";
-				show "Meu jovem, você primeiro deve ser tornam um Espadachim de fibra para vir se tornar um Cavaleiro. Agora, treine bastante meu pequeno novice. Que um dia você consegue!";
+				mes "[Chefe dos Cavaleiros]";
+				mes "Meu jovem, vocï¿½ primeiro deve ser tornam um Espadachim de fibra para vir se tornar um Cavaleiro. Agora, treine bastante meu pequeno novice. Que um dia vocï¿½ consegue!";
 				close;
 			}
-			show "Sinto muito, mas apenas Espadachins podem se tornar Cavaleiros.";
+			mes "Sinto muito, mas apenas Espadachins podem se tornar Cavaleiros.";
 			close;
 		}
-		show "Bem, primeiro, por favor preencha essa ficha....";
+		mes "Bem, primeiro, por favor preencha essa ficha....";
 		next;
-		show "...(Você preenche a ficha e a entrega de volta)...";
+		mes "...(Vocï¿½ preenche a ficha e a entrega de volta)...";
 		next;
-		show "[Chefe dos Cavaleiros]";
+		mes "[Chefe dos Cavaleiros]";
 		if(JobLevel < 40){
-			show "Humm...aparentemente você ainda não alcançou o nivél 40. Poderia fazer a gentileza de retornar quando isso ocorrer.  Eu estarei esperando, bem aqui.";
+			mes "Humm...aparentemente vocï¿½ ainda nï¿½o alcanï¿½ou o nivï¿½l 40. Poderia fazer a gentileza de retornar quando isso ocorrer.  Eu estarei esperando, bem aqui.";
 			close;
 		}
-		show "Impressionante. Você tem as qualidades para se tornar um Cavaleiro..., porém, precisará muito mais que isso para realmente se tornar um.";
+		mes "Impressionante. Vocï¿½ tem as qualidades para se tornar um Cavaleiro..., porï¿½m, precisarï¿½ muito mais que isso para realmente se tornar um.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Para se consagrar como um Cavaleiro, precisa ter força, coragem, determinação, e um forte desejo de ajudar os que necessitam.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Para se consagrar como um Cavaleiro, precisa ter forï¿½a, coragem, determinaï¿½ï¿½o, e um forte desejo de ajudar os que necessitam.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Você deve ter essas aptidões antes de se consagrar como um Cavaleiro.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Vocï¿½ deve ter essas aptidï¿½es antes de se consagrar como um Cavaleiro.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Os 6 Cavaleiros que você está vendo nesta sala, tem como objetivo testá-lo e preparar um teste único para os candidatos a Cavaleiro.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Os 6 Cavaleiros que vocï¿½ estï¿½ vendo nesta sala, tem como objetivo testï¿½-lo e preparar um teste ï¿½nico para os candidatos a Cavaleiro.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Você deve falar com cada um deles, e ser testado pelo mesmo. Eles vão decidir se aprovam você ou não!";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Vocï¿½ deve falar com cada um deles, e ser testado pelo mesmo. Eles vï¿½o decidir se aprovam vocï¿½ ou nï¿½o!";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Fale com o ^0000ffCavaleiro Dedicado^000000. Ele fará seu primeiro teste. Boa Sorte!! Eu vejo você em breve!";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Fale com o ^0000ffCavaleiro Dedicado^000000. Ele farï¿½ seu primeiro teste. Boa Sorte!! Eu vejo vocï¿½ em breve!";
 		set KNIGHT_Q, 1;
 		set JBLVL, 40;
 		close;
 
 	M_1:
-		show "[Chefe dos Cavaleiros]";
-		show "O primeiro requisito para se consagrar como um Cavaleiro é que o candidato seja um Espadachim.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "O primeiro requisito para se consagrar como um Cavaleiro ï¿½ que o candidato seja um Espadachim.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "O segundo, deve ter um nível de classe 40 ou mais.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "O segundo, deve ter um nï¿½vel de classe 40 ou mais.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "E o último, você deve passar nos 6 testes que irá determinar se você é ou não qualificado para se tornar um Cavaleiro.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "E o ï¿½ltimo, vocï¿½ deve passar nos 6 testes que irï¿½ determinar se vocï¿½ ï¿½ ou nï¿½o qualificado para se tornar um Cavaleiro.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Esses requisitos parecem ser difíceis, mas Cavaleiro é uma classe de elite e somente os melhores candidatos podem se juntar a ela.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Esses requisitos parecem ser difï¿½ceis, mas Cavaleiro ï¿½ uma classe de elite e somente os melhores candidatos podem se juntar a ela.";
 		goto M_Menu;
 
 	M_End:
 		close;
 
 L_Check:
-	show "[Chefe dos Cavaleiros]";
-	if (KNIGHT_Q == 1) show "Por favor, fale com o ^0000ffCavaleiro Dedicado^000000. Ela lhe dará seu primeiro teste.";
-	if (KNIGHT_Q == 2) show "Parábens em terminar seu primeiro teste. O ^0000ffCavaleiro Honroso^000000 vai supervisionar o ^ff0000segundo teste^000000.";
-	if (KNIGHT_Q == 3) show "Parábens em terminar seu segundo teste. O ^0000ffCavaleiro das Lutas^000000 vai supervisionar o ^ff0000terceiro teste^000000.";
-	if (KNIGHT_Q == 4) show "Parábens em terminar seu terceiro teste. A ^0000ffCavaleira Educada^000000 vai supervisionar o ^ff0000quarto teste^000000.";
-	if (KNIGHT_Q == 5) show "Parábens em terminar seu quarto teste. O ^0000ffCavaleiro Devotado^000000 vai supervisionar o ^ff0000quinto teste^000000.";
-	if (KNIGHT_Q == 6) show "Parábens em terminar seu quinto teste. O ^0000ffCavaleiro Modesto^000000 vai supervisionar o ^ff0000sexto teste^000000.";
+	mes "[Chefe dos Cavaleiros]";
+	if (KNIGHT_Q == 1) mes "Por favor, fale com o ^0000ffCavaleiro Dedicado^000000. Ela lhe darï¿½ seu primeiro teste.";
+	if (KNIGHT_Q == 2) mes "Parï¿½bens em terminar seu primeiro teste. O ^0000ffCavaleiro Honroso^000000 vai supervisionar o ^ff0000segundo teste^000000.";
+	if (KNIGHT_Q == 3) mes "Parï¿½bens em terminar seu segundo teste. O ^0000ffCavaleiro das Lutas^000000 vai supervisionar o ^ff0000terceiro teste^000000.";
+	if (KNIGHT_Q == 4) mes "Parï¿½bens em terminar seu terceiro teste. A ^0000ffCavaleira Educada^000000 vai supervisionar o ^ff0000quarto teste^000000.";
+	if (KNIGHT_Q == 5) mes "Parï¿½bens em terminar seu quarto teste. O ^0000ffCavaleiro Devotado^000000 vai supervisionar o ^ff0000quinto teste^000000.";
+	if (KNIGHT_Q == 6) mes "Parï¿½bens em terminar seu quinto teste. O ^0000ffCavaleiro Modesto^000000 vai supervisionar o ^ff0000sexto teste^000000.";
 	if (KNIGHT_Q == 7) goto L_MakeKnight;
 	next;
-	show "[Chefe dos Cavaleiros]";
-	show "Boa Sorte!";
+	mes "[Chefe dos Cavaleiros]";
+	mes "Boa Sorte!";
 	close;
 
 	L_MakeKnight:
 		if(SkillPoint > 0) goto sL_SKpoint;
 
-		show "Oh, ^ff0000"+strcharinfo(0)+"^000000. Vejo que passou no teste do Cavaleiro Modesto";
-		show "Deixe-lhe dizer que admiro seu esforço e sua determinação.";
+		mes "Oh, ^ff0000"+strcharinfo(0)+"^000000. Vejo que passou no teste do Cavaleiro Modesto";
+		mes "Deixe-lhe dizer que admiro seu esforï¿½o e sua determinaï¿½ï¿½o.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "O passo final para se consagrar como um Cavaleiro é receber uma recomendação de todos os seis Cavaleiros que o testaram.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "O passo final para se consagrar como um Cavaleiro ï¿½ receber uma recomendaï¿½ï¿½o de todos os seis Cavaleiros que o testaram.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Vamos começar com o Cavaleiro Dedicado. Cavaleiro Dedicado, qual sua opnião do candidato a Cavaleiro, ^ff0000"+strcharinfo(0)+"^000000.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Vamos comeï¿½ar com o Cavaleiro Dedicado. Cavaleiro Dedicado, qual sua opniï¿½o do candidato a Cavaleiro, ^ff0000"+strcharinfo(0)+"^000000.";
 		next;
-		show "[Cavaleiro Dedicado]";
-		show "Paciência é uma qualidade de todos os Cavaleiros. Por passar em meu teste, ^ff0000"+strcharinfo(0)+"^000000 mostrou grande paciência e determinação.";
+		mes "[Cavaleiro Dedicado]";
+		mes "Paciï¿½ncia ï¿½ uma qualidade de todos os Cavaleiros. Por passar em meu teste, ^ff0000"+strcharinfo(0)+"^000000 mostrou grande paciï¿½ncia e determinaï¿½ï¿½o.";
 		next;
-		show "[Cavaleiro Dedicado]";
-		show "Em minha opnião, ^ff0000"+strcharinfo(0)+"^000000 merece ser consagrado!";
+		mes "[Cavaleiro Dedicado]";
+		mes "Em minha opniï¿½o, ^ff0000"+strcharinfo(0)+"^000000 merece ser consagrado!";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Muito bem, Cavaleiro Dedicado. Cavaleiro Honroso, o que me diz?";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Muito bem, Cavaleiro Dedicado. Cavaleiro Honroso, o que me diz?";
 		next;
-		show "[Cavaleiro Honroso]";
-		show "^ff0000"+strcharinfo(0)+"^000000 respondeu meu questionário corretamente.";
-		show "Isso mostra, que ele entende os conceitos básicos de um Cavaleiro.";
+		mes "[Cavaleiro Honroso]";
+		mes "^ff0000"+strcharinfo(0)+"^000000 respondeu meu questionï¿½rio corretamente.";
+		mes "Isso mostra, que ele entende os conceitos bï¿½sicos de um Cavaleiro.";
 		next;
-		show "[Cavaleiro Honroso]";
-		show "^ff0000"+strcharinfo(0)+"^000000 ele tem minha recomendação!";
+		mes "[Cavaleiro Honroso]";
+		mes "^ff0000"+strcharinfo(0)+"^000000 ele tem minha recomendaï¿½ï¿½o!";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Obrigado, Cavaleiro Honroso. Cavaleiro das Lutas, por favor, sua opnião?";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Obrigado, Cavaleiro Honroso. Cavaleiro das Lutas, por favor, sua opniï¿½o?";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..............................";
+		mes "[Cavaleiro das Lutas]";
+		mes "..............................";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "Hmphf. Sem objeção.";
+		mes "[Cavaleiro das Lutas]";
+		mes "Hmphf. Sem objeï¿½ï¿½o.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Hahaha! Você não é de falar muito Cavaleiro das Lutas. E você Cavaleira Educada?";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Hahaha! Vocï¿½ nï¿½o ï¿½ de falar muito Cavaleiro das Lutas. E vocï¿½ Cavaleira Educada?";
 		next;
-		show "[Cavaleira Educada]";
-		show "Um Cavaleiro deve se envolver em diferentes situações durante sua jornada.";
-		show "Esse é o dever de um, tomar as decisões corretas em todo o tipo de situações.";
+		mes "[Cavaleira Educada]";
+		mes "Um Cavaleiro deve se envolver em diferentes situaï¿½ï¿½es durante sua jornada.";
+		mes "Esse ï¿½ o dever de um, tomar as decisï¿½es corretas em todo o tipo de situaï¿½ï¿½es.";
 		next;
-		show "[Cavaleira Educada]";
-		show "^ff0000"+strcharinfo(0)+"^000000 mostrou que pode tomar grandes decisões quando respondeu minhas perguntas.";
-		show "Eu, também dou minha recomendação a este candidato!";
+		mes "[Cavaleira Educada]";
+		mes "^ff0000"+strcharinfo(0)+"^000000 mostrou que pode tomar grandes decisï¿½es quando respondeu minhas perguntas.";
+		mes "Eu, tambï¿½m dou minha recomendaï¿½ï¿½o a este candidato!";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Obrigado, Cavaleira Educada. Sua opnião Cavaleiro Devotado?";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Obrigado, Cavaleira Educada. Sua opniï¿½o Cavaleiro Devotado?";
 		next;
-		show "[Cavaleiro Devotado]";
-		show "Uma rocha é uma figura imutável, sendo assim, nunca muda sua cara diante de adversidades.";
+		mes "[Cavaleiro Devotado]";
+		mes "Uma rocha ï¿½ uma figura imutï¿½vel, sendo assim, nunca muda sua cara diante de adversidades.";
 		next;
-		show "[Cavaleiro Devotado]";
-		show "Embora o vento seje forte e tente derrubá-la ou destrui-lá, uma rocha continua firme e sólida.";
+		mes "[Cavaleiro Devotado]";
+		mes "Embora o vento seje forte e tente derrubï¿½-la ou destrui-lï¿½, uma rocha continua firme e sï¿½lida.";
 		next;
-		show "[Cavaleiro Devotado]";
-		show "^ff0000"+strcharinfo(0)+"^000000 mostrou-me a força de uma rocha e calma durante meu teste.";
-		show "Eu acredito que ^ff0000"+strcharinfo(0)+"^000000 será um dos melhores entre os Knights.";
+		mes "[Cavaleiro Devotado]";
+		mes "^ff0000"+strcharinfo(0)+"^000000 mostrou-me a forï¿½a de uma rocha e calma durante meu teste.";
+		mes "Eu acredito que ^ff0000"+strcharinfo(0)+"^000000 serï¿½ um dos melhores entre os Knights.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Como sempre, Cavaleiro Devotado, uma observação profunda. Bem, agora só falta um. Cavaleiro Modesto, por favor, de sua decisão final.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Como sempre, Cavaleiro Devotado, uma observaï¿½ï¿½o profunda. Bem, agora sï¿½ falta um. Cavaleiro Modesto, por favor, de sua decisï¿½o final.";
 		next;
-		show "[Cavaleiro Modesto]";
-		show "O que eu posso dizer. ^ff0000"+strcharinfo(0)+"^000000 respondeu minhas questões com firmeza e sinceridade.";
+		mes "[Cavaleiro Modesto]";
+		mes "O que eu posso dizer. ^ff0000"+strcharinfo(0)+"^000000 respondeu minhas questï¿½es com firmeza e sinceridade.";
 		next;
-		show "[Cavaleiro Modesto]";
-		show "Embora outros pensem que a força de um Cavaleiro vive em sua espada, nós Cavaleiros sabemos que a nossa verdadeira força, vem de nossos corações.";
+		mes "[Cavaleiro Modesto]";
+		mes "Embora outros pensem que a forï¿½a de um Cavaleiro vive em sua espada, nï¿½s Cavaleiros sabemos que a nossa verdadeira forï¿½a, vem de nossos coraï¿½ï¿½es.";
 		next;
-		show "[Cavaleiro Modesto]";
-		if(sex==1) show "Depois de falar com ^ff0000"+strcharinfo(0)+"^000000, eu senti essa força nele.";
-		if(sex==0) show "Depois de falar com ^ff0000"+strcharinfo(0)+"^000000, eu senti essa força nela.";
-		show "Eu fico feliz em dar minha recomendação para ^ff0000"+strcharinfo(0)+"^000000 em se consagrar como um Cavaleiro!";
+		mes "[Cavaleiro Modesto]";
+		if(sex==1) mes "Depois de falar com ^ff0000"+strcharinfo(0)+"^000000, eu senti essa forï¿½a nele.";
+		if(sex==0) mes "Depois de falar com ^ff0000"+strcharinfo(0)+"^000000, eu senti essa forï¿½a nela.";
+		mes "Eu fico feliz em dar minha recomendaï¿½ï¿½o para ^ff0000"+strcharinfo(0)+"^000000 em se consagrar como um Cavaleiro!";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Grato, Cavaleiro Modesto, e obrigado pelo dispêndio de seu tempo. Bem, a decisão foi única.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Grato, Cavaleiro Modesto, e obrigado pelo dispï¿½ndio de seu tempo. Bem, a decisï¿½o foi ï¿½nica.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "O processo de consagração a Cavaleiro é muito rigoroso e difícil, mas percebo que sua determinação superou isso.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "O processo de consagraï¿½ï¿½o a Cavaleiro ï¿½ muito rigoroso e difï¿½cil, mas percebo que sua determinaï¿½ï¿½o superou isso.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "Você realmente merece a honra de se consagrar, daqui para frente será um dos protetores de Rune-Midgard.";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Vocï¿½ realmente merece a honra de se consagrar, daqui para frente serï¿½ um dos protetores de Rune-Midgard.";
 		next;
-		show "[Chefe dos Cavaleiros]";
-		show "^ff0000"+strcharinfo(0)+"^000000, em nome do Rei Tristam Terceiro, governante do reino de Rune-Midgard, com os poderes concedidos a mim, te consagro e lhe dou o titulo de Cavaleiro!";
+		mes "[Chefe dos Cavaleiros]";
+		mes "^ff0000"+strcharinfo(0)+"^000000, em nome do Rei Tristam Terceiro, governante do reino de Rune-Midgard, com os poderes concedidos a mim, te consagro e lhe dou o titulo de Cavaleiro!";
 		next;
 		callfunc "Job_Change",Job_Knight;
 		if(JBLVL != 50) additem 656, 3;
 		if(JBLVL == 50) additem 656, 7;
 		callfunc "F_ClearJobVar";		// clears all job variables for the current player
-		show "[Chefe dos Cavaleiros]";
-		show "Párabens!! Você agora é um Cavaleiro e protetor de Rune-Midgard! Agora vá e faça Rune-Midgard um lugar melhor para se viver!";
+		mes "[Chefe dos Cavaleiros]";
+		mes "Pï¿½rabens!! Vocï¿½ agora ï¿½ um Cavaleiro e protetor de Rune-Midgard! Agora vï¿½ e faï¿½a Rune-Midgard um lugar melhor para se viver!";
 		emotion e_no1;
 		close;
 
 		sL_SKpoint:
-			show "Por favor, gaste seus pontos de habilidades para que eu possa lhe consagrar.";
+			mes "Por favor, gaste seus pontos de habilidades para que eu possa lhe consagrar.";
 			emotion e_ic;
 			close;
 }
 
 //<-------------------------------- Sir Andrew Syloc (1st test) --------------------------------------------->\\
 prt_in,75,107,4	script	Cavaleiro Dedicado	56,{
-	show "[Cavaleiro Dedicado]";
+	mes "[Cavaleiro Dedicado]";
 	if (BaseJob == Job_Knight) goto L_Knight;
 	if (BaseJob == Job_Novice) goto L_Novice;
 	if (BaseJob == Job_Swordman && KNIGHT_Q == 1) goto L_Test;
 	if (BaseJob == Job_Swordman && KNIGHT_Q == 2) goto L_Done;
 L_Other:
-	show "Nós Cavaleiros de Prontera lutamos por paz e liberdade! Nós lutamos para um futuro próspero para todos em Rune-Midgard!";
+	mes "Nï¿½s Cavaleiros de Prontera lutamos por paz e liberdade! Nï¿½s lutamos para um futuro prï¿½spero para todos em Rune-Midgard!";
 	close;
 L_Novice:
-	show "Oh, um Aprendiz. Bem vindo, a Cavalaria de Prontera!";
+	mes "Oh, um Aprendiz. Bem vindo, a Cavalaria de Prontera!";
 	next;
-	show "[Cavaleiro Dedicado]";
-	show "Mesmo que as vezes você se sinta fraco, eu lhe asseguro que quando você escolher sua primeira classe, você se sentirá mais confiável e forte.";
+	mes "[Cavaleiro Dedicado]";
+	mes "Mesmo que as vezes vocï¿½ se sinta fraco, eu lhe asseguro que quando vocï¿½ escolher sua primeira classe, vocï¿½ se sentirï¿½ mais confiï¿½vel e forte.";
 	next;
-	show "[Cavaleiro Dedicado]";
-	show "Mas até lá, fique longe de problemas.";
+	mes "[Cavaleiro Dedicado]";
+	mes "Mas atï¿½ lï¿½, fique longe de problemas.";
 	close;
 L_Knight:
-	show "Oh, você é um de nós, como vão as coisas?";
+	mes "Oh, vocï¿½ ï¿½ um de nï¿½s, como vï¿½o as coisas?";
 	next;
-	show "[Cavaleiro Dedicado]";
-	show "É importante você estar com o equipamento certo. Isso permite que quando lutar com um monstro, mas claro, isso vai zeny.";
+	mes "[Cavaleiro Dedicado]";
+	mes "ï¿½ importante vocï¿½ estar com o equipamento certo. Isso permite que quando lutar com um monstro, mas claro, isso vai zeny.";
 	next;
-	show "[Cavaleiro Dedicado]";
-	show "Lembre-se, você é forte, pois você é um Cavaleiro.";
+	mes "[Cavaleiro Dedicado]";
+	mes "Lembre-se, vocï¿½ ï¿½ forte, pois vocï¿½ ï¿½ um Cavaleiro.";
 	close;
 
 
 L_Test:
 	if (KNIGHT_Q2 > 0) goto L_Check;
-	show "Oh, então pretende se consagrar e se juntar a Cavalaria de Prontera. Vejamos, você deve ser ^ff0000" + strcharinfo(0) + "^000000 certo?";
+	mes "Oh, entï¿½o pretende se consagrar e se juntar a Cavalaria de Prontera. Vejamos, vocï¿½ deve ser ^ff0000" + strcharinfo(0) + "^000000 certo?";
 	next;
-	show "[Cavaleiro Dedicado]";
-	show "Eu sou um dos Cavaleiros da Cavalaria de Prontera.";
+	mes "[Cavaleiro Dedicado]";
+	mes "Eu sou um dos Cavaleiros da Cavalaria de Prontera.";
 	next;
-	show "[Cavaleiro Dedicado]";
-	show "Eu irei lhe aplicar seu primeiro teste, que irá determinar se você tem realmente a vontade necessária em ser consagrado como um Cavaleiro.";
+	mes "[Cavaleiro Dedicado]";
+	mes "Eu irei lhe aplicar seu primeiro teste, que irï¿½ determinar se vocï¿½ tem realmente a vontade necessï¿½ria em ser consagrado como um Cavaleiro.";
 	next;
-	show "[Cavaleiro Dedicado]";
-	show "Esse teste é como se fosse uma caçada e irá avaliar seu conhecimentos sobre monstros e sua localizações.";
+	mes "[Cavaleiro Dedicado]";
+	mes "Esse teste ï¿½ como se fosse uma caï¿½ada e irï¿½ avaliar seu conhecimentos sobre monstros e sua localizaï¿½ï¿½es.";
 	next;
-	show "[Cavaleiro Dedicado]";
-	show "Esse tipo de informações, são vitais para as habilidades de Cavaleiro para se defender diferentes cidades Rune-Midgard.";
+	mes "[Cavaleiro Dedicado]";
+	mes "Esse tipo de informaï¿½ï¿½es, sï¿½o vitais para as habilidades de Cavaleiro para se defender diferentes cidades Rune-Midgard.";
 	next;
-	menu "Estou pronto.",M_1, "Dá um tempo.",M_End;
+	menu "Estou pronto.",M_1, "Dï¿½ um tempo.",M_End;
 
 	M_1:
-		show "[Cavaleiro Dedicado]";
+		mes "[Cavaleiro Dedicado]";
 		if (joblevel == 50) goto sL_Skip;
-		show "Para passar neste teste você deve apenas conseguir alguns itens:";
+		mes "Para passar neste teste vocï¿½ deve apenas conseguir alguns itens:";
 		set KNIGHT_Q2, rand(1,2);
 		if(KNIGHT_Q2 == 1) callsub sF_R1;
 		if(KNIGHT_Q2 == 2) callsub sF_R2;
 		next;
-		show "[Cavaleiro Dedicado]";
-		show "Quando conseguir todos esses itens, volte e me entregue.";
+		mes "[Cavaleiro Dedicado]";
+		mes "Quando conseguir todos esses itens, volte e me entregue.";
 		next;
-		show "[Cavaleiro Dedicado]";
-		show "Boa sorte, e se cuide! Eu estarei esperando seu retorno.";
+		mes "[Cavaleiro Dedicado]";
+		mes "Boa sorte, e se cuide! Eu estarei esperando seu retorno.";
 		close;
 
 		sF_R1:
-			show "^5533FF5 Bigode de Anão Ancião,";	//1040
-			show "5 Asa de Morcego Vermelho";	//7006
-			show "5 Amuleto dos Orcs";	//931
-			show "5 Pó de Traça";		//1057
-			show "5 Lingua de Réptil^000000";	//903
-			show "e ^5533FF5 Crina^000000.";		//1028
+			mes "^5533FF5 Bigode de Anï¿½o Anciï¿½o,";	//1040
+			mes "5 Asa de Morcego Vermelho";	//7006
+			mes "5 Amuleto dos Orcs";	//931
+			mes "5 Pï¿½ de Traï¿½a";		//1057
+			mes "5 Lingua de Rï¿½ptil^000000";	//903
+			mes "e ^5533FF5 Crina^000000.";		//1028
 			return;
 		sF_R2:
-			show "^5533FF5 Pata de Inseto";
-			show "5 Coração de Sereia";
-			show "5 Casco de Caramujo";
-			show "5 Carnes de Ostra";
-			show "5 Frigideira Velha^000000";
-			show "e ^5533FF5 Flor de Planta Carnivora^000000.";
+			mes "^5533FF5 Pata de Inseto";
+			mes "5 Coraï¿½ï¿½o de Sereia";
+			mes "5 Casco de Caramujo";
+			mes "5 Carnes de Ostra";
+			mes "5 Frigideira Velha^000000";
+			mes "e ^5533FF5 Flor de Planta Carnivora^000000.";
 			return;
 
 		sL_Skip:
-			show "Espere..... Oque é isso?";
+			mes "Espere..... Oque ï¿½ isso?";
 			next;
-			show "[Cavaleiro Dedicado]";
-			show "Você é um incrível Espadachim. Sim, sua força e habilidades são incriveis.";
+			mes "[Cavaleiro Dedicado]";
+			mes "Vocï¿½ ï¿½ um incrï¿½vel Espadachim. Sim, sua forï¿½a e habilidades sï¿½o incriveis.";
 			next;
-			show "[Cavaleiro Dedicado]";
-			show "Hahaha! Não há necessidade de você fazer este teste. Tente o próximo, ok.";
+			mes "[Cavaleiro Dedicado]";
+			mes "Hahaha! Nï¿½o hï¿½ necessidade de vocï¿½ fazer este teste. Tente o prï¿½ximo, ok.";
 			next;
-			show "[Cavaleiro Dedicado]";
-			show "Fale com ^5533FFCavaleiro Honroso^000000. O teste que será aplicado, irá lhe ensinar lições valorosas da vida, por isso será dificil.";
+			mes "[Cavaleiro Dedicado]";
+			mes "Fale com ^5533FFCavaleiro Honroso^000000. O teste que serï¿½ aplicado, irï¿½ lhe ensinar liï¿½ï¿½es valorosas da vida, por isso serï¿½ dificil.";
 			set KNIGHT_Q, 2;
 			set KNIGHT_Q2, 0;
 			set JBLVL, 50;
 			close;
 	
 	M_End:
-		show "[Cavaleiro Dedicado]";
-		show "Vejo que precisa de mais tempo. Volte quando estiver pronto.";
+		mes "[Cavaleiro Dedicado]";
+		mes "Vejo que precisa de mais tempo. Volte quando estiver pronto.";
 		close;
 
 L_Check:
-	show "Você voltou ^ff0000"+strcharinfo(0)+"^000000. Vejo que pegou todos os itens que eu lhe pedi?";
+	mes "Vocï¿½ voltou ^ff0000"+strcharinfo(0)+"^000000. Vejo que pegou todos os itens que eu lhe pedi?";
 	next;
 	if(KNIGHT_Q2 == 2) goto L_2;
 
@@ -316,202 +316,202 @@ L_Check:
 		delitem 1032,5;
 
 	L_Cont:
-	show "[Cavaleiro Dedicado]";
-	show "vejamos..... 5 disso.... 5 daquilo.... Muito bem! Você pegou tudo mesmo.";
+	mes "[Cavaleiro Dedicado]";
+	mes "vejamos..... 5 disso.... 5 daquilo.... Muito bem! Vocï¿½ pegou tudo mesmo.";
 	next;
-	show "[Cavaleiro Dedicado]";
-	show "Você passou em seu primeiro teste! Com tudo, não se anime muito.";
-	show "Esse foi apenas um dos muitos desafios que está por vim, antes de se consagrar como Cavaleiro.";
+	mes "[Cavaleiro Dedicado]";
+	mes "Vocï¿½ passou em seu primeiro teste! Com tudo, nï¿½o se anime muito.";
+	mes "Esse foi apenas um dos muitos desafios que estï¿½ por vim, antes de se consagrar como Cavaleiro.";
 	next;
-	show "[Cavaleiro Dedicado]";
+	mes "[Cavaleiro Dedicado]";
 
 	L_Done:
-	show "Fale com o Capitão da Cavalaria, Chefe dos Cavaleiros, e ele lhe dirá sobre o próximo teste.";
-	show "Fique concentrado e de tudo que você tem, ^0000ff"+strcharinfo(0)+"^000000. Eu sei que você vai conseguir.";
+	mes "Fale com o Capitï¿½o da Cavalaria, Chefe dos Cavaleiros, e ele lhe dirï¿½ sobre o prï¿½ximo teste.";
+	mes "Fique concentrado e de tudo que vocï¿½ tem, ^0000ff"+strcharinfo(0)+"^000000. Eu sei que vocï¿½ vai conseguir.";
 	set KNIGHT_Q, 2;
 	set KNIGHT_Q2, 0;
 	close;
 
 	L_NotDone:
-		show "[Cavaleiro Dedicado]";
-		show "O que? Você não tem nada do que eu lhe pedi?";
+		mes "[Cavaleiro Dedicado]";
+		mes "O que? Vocï¿½ nï¿½o tem nada do que eu lhe pedi?";
 		emotion e_swt;
 		next;
-		show "[Cavaleiro Dedicado]";
-		show "Isso foi oque lhe PEDI....";
+		mes "[Cavaleiro Dedicado]";
+		mes "Isso foi oque lhe PEDI....";
 		if(KNIGHT_Q2 == 1) callsub sF_R1;
 		if(KNIGHT_Q2 == 2) callsub sF_R2;
 		next;
-		show "[Cavaleiro Dedicado]";
-		show "Quando tiver esses itens, volte a falar comigo, ok.";
+		mes "[Cavaleiro Dedicado]";
+		mes "Quando tiver esses itens, volte a falar comigo, ok.";
 		close;
 }
 
 
 //<------------------------- Sir Jashow Syracuse (2nd Test) -------------------------------------------->\\
 prt_in,71,91,6	script	Cavaleiro Honroso	65,{
-	show "[Cavaleiro Honroso]";
+	mes "[Cavaleiro Honroso]";
 	if (BaseJob == Job_Knight) goto L_Knight;
 	if (BaseJob == Job_Novice) goto L_Novice;
 	if (BaseJob == Job_Swordman && KNIGHT_Q == 2) goto L_Test;
 	if (BaseJob == Job_Swordman && KNIGHT_Q == 3) goto L_Done;
 L_Other:
-	show "Atacar e defender..... Existe uma maneira de fazer ambos ao mesmo tempo?";
-	show "Com uma arma de 'Duas-mãos' você tem um grande ataque mas não uma defesa.  Será que existe uma maneira de compensar essa perda?";
+	mes "Atacar e defender..... Existe uma maneira de fazer ambos ao mesmo tempo?";
+	mes "Com uma arma de 'Duas-mï¿½os' vocï¿½ tem um grande ataque mas nï¿½o uma defesa.  Serï¿½ que existe uma maneira de compensar essa perda?";
 	next;
-	show "[Cavaleiro Honroso]";
-	show "Uma arma pode ser usada para ambos, ataque e defesa se você é um Cavaleiro...... Darn!..... Mas o que eu posso dizer??!! ";
+	mes "[Cavaleiro Honroso]";
+	mes "Uma arma pode ser usada para ambos, ataque e defesa se vocï¿½ ï¿½ um Cavaleiro...... Darn!..... Mas o que eu posso dizer??!! ";
 	close;
 L_Novice:
-	show "O que você está fazendo aqui Aprendiz?";
+	mes "O que vocï¿½ estï¿½ fazendo aqui Aprendiz?";
 	next;
-	show "[Cavaleiro Honroso]";
-	show "Você quer se tornar um Cavaleiro? Bom, mas Aprendizes não podem se consagrar como um Cavaleiro.";
+	mes "[Cavaleiro Honroso]";
+	mes "Vocï¿½ quer se tornar um Cavaleiro? Bom, mas Aprendizes nï¿½o podem se consagrar como um Cavaleiro.";
 	next;
-	show "[Cavaleiro Honroso]";
-	show "Você deve ser experiente, como um Espadachim para isso.";
+	mes "[Cavaleiro Honroso]";
+	mes "Vocï¿½ deve ser experiente, como um Espadachim para isso.";
 	close;
 L_Knight:
-	show "Hey, Como vai... a cavalaria está bem.";
+	mes "Hey, Como vai... a cavalaria estï¿½ bem.";
 	next;
-	show "[Cavaleiro Honroso]";
-	show "Nós continuamos a recrutar Cavaleiros. Eu ouvi dizer que existem, uns péssimos Cavaleiros que estão arruinando o nome da Cavalaria de Prontera...";
+	mes "[Cavaleiro Honroso]";
+	mes "Nï¿½s continuamos a recrutar Cavaleiros. Eu ouvi dizer que existem, uns pï¿½ssimos Cavaleiros que estï¿½o arruinando o nome da Cavalaria de Prontera...";
 	next;
-	show "[Cavaleiro Honroso]";
-	show "Se você encontra algum deles, dê uma boa lição neles.";
+	mes "[Cavaleiro Honroso]";
+	mes "Se vocï¿½ encontra algum deles, dï¿½ uma boa liï¿½ï¿½o neles.";
 	close;
 
 L_Test:
-	show "Oh, vejo que você passou em seu primeiro teste, ^ff0000"+strcharinfo(0)+"^000000.";
+	mes "Oh, vejo que vocï¿½ passou em seu primeiro teste, ^ff0000"+strcharinfo(0)+"^000000.";
 	next;
-	show "[Cavaleiro Honroso]";
-	show "Primeiro, deixe-me apresentar, meu nome é Cavaleiro Honroso. Eu sou um dos Cavaleiros aqui da Cavalaria de Prontera.";
+	mes "[Cavaleiro Honroso]";
+	mes "Primeiro, deixe-me apresentar, meu nome ï¿½ Cavaleiro Honroso. Eu sou um dos Cavaleiros aqui da Cavalaria de Prontera.";
 	next;
-	show "[Cavaleiro Honroso]";
-	show "Neste teste, irei avaliar seu conhecimento sobre os Cavaleiros. Você irá responder algumas perguntas que lhe farei e dar sua opnião sobre a classe que tanto deseja...";
+	mes "[Cavaleiro Honroso]";
+	mes "Neste teste, irei avaliar seu conhecimento sobre os Cavaleiros. Vocï¿½ irï¿½ responder algumas perguntas que lhe farei e dar sua opniï¿½o sobre a classe que tanto deseja...";
 	next;
-	show "[Cavaleiro Honroso]";
-	show "Não fique nervoso. Eu irei fazer perguntas simples.";
+	mes "[Cavaleiro Honroso]";
+	mes "Nï¿½o fique nervoso. Eu irei fazer perguntas simples.";
 	next;
-	menu "Vamos começar.",M_0,"Eu não estou pronto.",M_End;
+	menu "Vamos comeï¿½ar.",M_0,"Eu nï¿½o estou pronto.",M_End;
 	
 	M_0:
-		show "[Cavaleiro Honroso]";
-		show "Ótimo! Iremos começar, por favor, responda as perguntas rápidamente. Se você errar alguma você terá que começar de novo o teste.";
+		mes "[Cavaleiro Honroso]";
+		mes "ï¿½timo! Iremos comeï¿½ar, por favor, responda as perguntas rï¿½pidamente. Se vocï¿½ errar alguma vocï¿½ terï¿½ que comeï¿½ar de novo o teste.";
 		next;
 
-		show "[Cavaleiro Honroso]";
-		//show "Cavaleiros são expert em ambos, força de ataque e poder defensivo.";
-		show "Diga-me, qual dessas espadas não é uma que se pode usar com as Duas mãos?";
+		mes "[Cavaleiro Honroso]";
+		//mes "Cavaleiros sï¿½o expert em ambos, forï¿½a de ataque e poder defensivo.";
+		mes "Diga-me, qual dessas espadas nï¿½o ï¿½ uma que se pode usar com as Duas mï¿½os?";
 		next;
 		menu "Katzbalger",sM_0a,"Espada Bastarda",sM_0b,"Claymore",sM_0c,"Flamberge",sM_0d;
 
 		sM_0a:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Katzbalger é uma espada de Duas Mãos!";
-			show "Como quer se consagrar como um Cavaleiro se você nem sabe qual o tipo de arma que ele usa?";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Katzbalger ï¿½ uma espada de Duas Mï¿½os!";
+			mes "Como quer se consagrar como um Cavaleiro se vocï¿½ nem sabe qual o tipo de arma que ele usa?";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_0b:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Espada Bastarda é uma espada de Duas Mãos!";
-			show "Como quer se consagrar como um Cavaleiro se você nem sabe qual o tipo de arma que ele usa?";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Espada Bastarda ï¿½ uma espada de Duas Mï¿½os!";
+			mes "Como quer se consagrar como um Cavaleiro se vocï¿½ nem sabe qual o tipo de arma que ele usa?";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_0c:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Claymore é uma espada de Duas Mãos!";
-			show "Como quer se consagrar como um Cavaleiro se você nem sabe qual o tipo de arma que ele usa?";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Claymore ï¿½ uma espada de Duas Mï¿½os!";
+			mes "Como quer se consagrar como um Cavaleiro se vocï¿½ nem sabe qual o tipo de arma que ele usa?";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_0d:
 
-		show "[Cavaleiro Honroso]";
-		show "Muito bem, vou lhe perguntar sobre uma habilidade de Cavaleiro.";
-		show "Quais destas, NÃO é usada para atacar um oponente?";
+		mes "[Cavaleiro Honroso]";
+		mes "Muito bem, vou lhe perguntar sobre uma habilidade de Cavaleiro.";
+		mes "Quais destas, Nï¿½O ï¿½ usada para atacar um oponente?";
 		next;
-		menu "Perícia de Espada com Duas Mãos Nv 5",sM_1a,"Instinto de Sobrevivência Nv 3",sM_1b,"Vigor Nv 10",sM_1c,"Golpe Fulminante Nv 10",sM_1d;
+		menu "Perï¿½cia de Espada com Duas Mï¿½os Nv 5",sM_1a,"Instinto de Sobrevivï¿½ncia Nv 3",sM_1b,"Vigor Nv 10",sM_1c,"Golpe Fulminante Nv 10",sM_1d;
 
 		sM_1a:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Se você não saber isso, nunca será um mestre na arte da guerra!";
-			show "Se quer se tornar um Cavaleiro, você precisa conhecer suas habilidades uma a uma.";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Se vocï¿½ nï¿½o saber isso, nunca serï¿½ um mestre na arte da guerra!";
+			mes "Se quer se tornar um Cavaleiro, vocï¿½ precisa conhecer suas habilidades uma a uma.";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_1b:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Se você não saber isso, nunca será um mestre na arte da guerra";
-			show "Se quer se tornar um Cavaleiro, você precisa conhecer suas habilidades uma a uma.";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Se vocï¿½ nï¿½o saber isso, nunca serï¿½ um mestre na arte da guerra";
+			mes "Se quer se tornar um Cavaleiro, vocï¿½ precisa conhecer suas habilidades uma a uma.";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_1c:
 			goto L_Cont1;
 
 		sM_1d:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Se você não saber isso, nunca será um mestre na arte da guerra!";
-			show "Se quer se tornar um Cavaleiro, você precisa conhecer suas habilidades uma a uma.";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Se vocï¿½ nï¿½o saber isso, nunca serï¿½ um mestre na arte da guerra!";
+			mes "Se quer se tornar um Cavaleiro, vocï¿½ precisa conhecer suas habilidades uma a uma.";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		L_Cont1:
-		show "[Cavaleiro Honroso]";
-		show "Cavaleiro é uma classe diferentes das outras, como um Cavaleiro poderá usar lanças e adquirir habilidades para estes fins.";
-		show "Qual dessas habilidades com lança, NÃO usa SP?";
+		mes "[Cavaleiro Honroso]";
+		mes "Cavaleiro ï¿½ uma classe diferentes das outras, como um Cavaleiro poderï¿½ usar lanï¿½as e adquirir habilidades para estes fins.";
+		mes "Qual dessas habilidades com lanï¿½a, Nï¿½O usa SP?";
 		next;
-		menu "Perfurar",sM_2a,"Lança Bumerangue",sM_2b,"Estocada",sM_2c,"Perícia em Montaria",sM_2d;
+		menu "Perfurar",sM_2a,"Lanï¿½a Bumerangue",sM_2b,"Estocada",sM_2c,"Perï¿½cia em Montaria",sM_2d;
 
 		sM_2a:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Se não saber disso, dificilmente se tornará um mestre com lanças!";
-			show "Como não conhece isso, se não esforçar mais não será consagrado como um Cavaleiro? Isso é intolerável!";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Se nï¿½o saber disso, dificilmente se tornarï¿½ um mestre com lanï¿½as!";
+			mes "Como nï¿½o conhece isso, se nï¿½o esforï¿½ar mais nï¿½o serï¿½ consagrado como um Cavaleiro? Isso ï¿½ intolerï¿½vel!";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_2b:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Se não saber disso, dificilmente se tornará um mestre com lanças!";
-			show "Como não conhece isso, se não esforçar mais não será consagrado como um Cavaleiro? Isso é intolerável!";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Se nï¿½o saber disso, dificilmente se tornarï¿½ um mestre com lanï¿½as!";
+			mes "Como nï¿½o conhece isso, se nï¿½o esforï¿½ar mais nï¿½o serï¿½ consagrado como um Cavaleiro? Isso ï¿½ intolerï¿½vel!";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_2c:
 			goto L_Cont2;
 
 		sM_2d:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Se não saber disso, dificilmente se tornará um mestre com lanças!";
-			show "Como não conhece isso, se não esforçar mais não será consagrado como um Cavaleiro? Isso é intolerável!";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Se nï¿½o saber disso, dificilmente se tornarï¿½ um mestre com lanï¿½as!";
+			mes "Como nï¿½o conhece isso, se nï¿½o esforï¿½ar mais nï¿½o serï¿½ consagrado como um Cavaleiro? Isso ï¿½ intolerï¿½vel!";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		L_Cont2:
-		show "[Cavaleiro Honroso]";
-		show "Lanças podem possuir propriedades elementais.";
-		show "Qual desses elementos é forte contra monstros do tipo Sombras/Mortos-Vivos?";
+		mes "[Cavaleiro Honroso]";
+		mes "Lanï¿½as podem possuir propriedades elementais.";
+		mes "Qual desses elementos ï¿½ forte contra monstros do tipo Sombras/Mortos-Vivos?";
 		next;
 		menu "Sagrado",sM_3a, "Vento",sM_3b, "Veneno",sM_3c, "Terra",sM_3d;
 
@@ -519,168 +519,168 @@ L_Test:
 			goto L_Cont3;
 
 		sM_3b:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Vento NAO é forte contra mortos-vivos!";
-			show "Qualquer um sabe disso, não me faça rir!";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Vento NAO ï¿½ forte contra mortos-vivos!";
+			mes "Qualquer um sabe disso, nï¿½o me faï¿½a rir!";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_3c:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Veneno NAO é forte contra mortos-vivos!";
-			show "Qualquer um sabe disso, não me faça rir!";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Veneno NAO ï¿½ forte contra mortos-vivos!";
+			mes "Qualquer um sabe disso, nï¿½o me faï¿½a rir!";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_3d:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000. Veneno NAO é forte contra mortos-vivos!";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000. Veneno NAO ï¿½ forte contra mortos-vivos!";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		L_Cont3:
-		show "[Cavaleiro Honroso]";
-		show "Quando você se consagra como um Cavaleiro você poderá montar em um PecoPeco. Com tudo, seu ataque e velocidade diminuem bruscamente.";
-		show "Mas, se você aprender a habilidade, Pericia em Montaria, seu ataque e velocidade nao irão diminuir.";
+		mes "[Cavaleiro Honroso]";
+		mes "Quando vocï¿½ se consagra como um Cavaleiro vocï¿½ poderï¿½ montar em um PecoPeco. Com tudo, seu ataque e velocidade diminuem bruscamente.";
+		mes "Mas, se vocï¿½ aprender a habilidade, Pericia em Montaria, seu ataque e velocidade nao irï¿½o diminuir.";
 		next;
-		show "[Cavaleiro Honroso]";
-		show "Qual a porcentagem da sua velocidade de ataque que se recupera com esta habilidade no nível 3 de Perícia em Montaria?";
+		mes "[Cavaleiro Honroso]";
+		mes "Qual a porcentagem da sua velocidade de ataque que se recupera com esta habilidade no nï¿½vel 3 de Perï¿½cia em Montaria?";
 		next;
 		menu "70%",sM_4a, "80%",sM_4b, "90%",sM_4c, "100%",sM_4d;
 
 		sM_4a:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000.  Se você não sabe disso, eu recomendo que você não tente montar em um Peco";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000.  Se vocï¿½ nï¿½o sabe disso, eu recomendo que vocï¿½ nï¿½o tente montar em um Peco";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_4b:
 			goto L_Cont4;
 
 		sM_4c:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000.  Se você não sabe disso, eu recomendo que você não tente montar em um Peco";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000.  Se vocï¿½ nï¿½o sabe disso, eu recomendo que vocï¿½ nï¿½o tente montar em um Peco";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		sM_4d:
-			show "[Cavaleiro Honroso]";
-			show "^ff0000ERRADA^000000.  Se você não sabe disso, eu recomendo que você não tente montar em um Peco";
+			mes "[Cavaleiro Honroso]";
+			mes "^ff0000ERRADA^000000.  Se vocï¿½ nï¿½o sabe disso, eu recomendo que vocï¿½ nï¿½o tente montar em um Peco";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você precisa saber do básico, antes de se CONSAGRAR!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ precisa saber do bï¿½sico, antes de se CONSAGRAR!";
 			close;
 
 		L_Cont4:
-		show "[Cavaleiro Honroso]";
-		show "Bom, Vejo que conhece sobre os Cavaleiros";
-		show "Ok. Deixe-me lhe perguntar mais uma coisa.";
+		mes "[Cavaleiro Honroso]";
+		mes "Bom, Vejo que conhece sobre os Cavaleiros";
+		mes "Ok. Deixe-me lhe perguntar mais uma coisa.";
 		next;
-		show "[Cavaleiro Honroso]";
-		show "Se por ventura, encontrar um Aprendiz e ele lhe pede um conselho, o que você diz para ele?";
+		mes "[Cavaleiro Honroso]";
+		mes "Se por ventura, encontrar um Aprendiz e ele lhe pede um conselho, o que vocï¿½ diz para ele?";
 		next;
 		menu "Um bom lugar para treinar",sM_5a, "De algum dinheiro para ele",sM_5b, "De alguma arma para eles",sM_5c;
 
 		sM_5a:
-			show "[Cavaleiro Honroso]";
-			show "Sim! Uma boa resposta. Aprendizes precisam ser independente e treinar duro para seu próprio bem.";
-			show "Isso irá construir bons personagens e ajudá-lo a ficar mais forte.";
+			mes "[Cavaleiro Honroso]";
+			mes "Sim! Uma boa resposta. Aprendizes precisam ser independente e treinar duro para seu prï¿½prio bem.";
+			mes "Isso irï¿½ construir bons personagens e ajudï¿½-lo a ficar mais forte.";
 			next;
 			goto L_Cont5;
 
 		sM_5b:
-			show "[Cavaleiro Honroso]";
-			show "O QUE?? Você é Maluco? Você acha mesmo, que dinheiro é tudo? SAIA DAQUI AGORA!";
+			mes "[Cavaleiro Honroso]";
+			mes "O QUE?? Vocï¿½ ï¿½ Maluco? Vocï¿½ acha mesmo, que dinheiro ï¿½ tudo? SAIA DAQUI AGORA!";
 			close;
 
 		sM_5c:
-			show "[Cavaleiro Honroso]";
-			show "Você acredita mesmo que dar algumas armas boas para ele, irá lehe fazer o bem?";
-			show "Isso irá basicamente MATÁ-LO, e não ajudá-lo. SAIA DAQUI AGORA!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ acredita mesmo que dar algumas armas boas para ele, irï¿½ lehe fazer o bem?";
+			mes "Isso irï¿½ basicamente MATï¿½-LO, e nï¿½o ajudï¿½-lo. SAIA DAQUI AGORA!";
 			close;
 
 		L_Cont5:
-		show "[Cavaleiro Honroso]";
-		show "Se você está em um grupo, e seu grupo é atacado, Qual sua ação?";
+		mes "[Cavaleiro Honroso]";
+		mes "Se vocï¿½ estï¿½ em um grupo, e seu grupo ï¿½ atacado, Qual sua aï¿½ï¿½o?";
 		next;
 		menu "Ficar na frente e proteger os outros.",sM_6a, "Esperar que outros ataquem primeiro.",sM_6b,
-			"Ficar olhando, e esperar os itens no chão.",sM_6c;
+			"Ficar olhando, e esperar os itens no chï¿½o.",sM_6c;
 
 		sM_6a:
-			show "[Cavaleiro Honroso]";
-			show "Sim! Nós Cavaleiros somos importantes em batalhas, por causa de sua força de ataque e defesa além de suas habilidades.";
-			show "Nós fazemos o trabalho de frente, enquanto nossos aliados fazem o suporte necessário.";
+			mes "[Cavaleiro Honroso]";
+			mes "Sim! Nï¿½s Cavaleiros somos importantes em batalhas, por causa de sua forï¿½a de ataque e defesa alï¿½m de suas habilidades.";
+			mes "Nï¿½s fazemos o trabalho de frente, enquanto nossos aliados fazem o suporte necessï¿½rio.";
 			next;
 			goto L_Cont6;
 
 		sM_6b:
-			show "[Cavaleiro Honroso]";
-			show "...O QUE? Se você fizer isso, TODOS SERÃO MORTOS!!";
+			mes "[Cavaleiro Honroso]";
+			mes "...O QUE? Se vocï¿½ fizer isso, TODOS SERï¿½O MORTOS!!";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você....SAIA DAQUI AGORA! Você não sabe nada de como agir como um Cavaleiro!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½....SAIA DAQUI AGORA! Vocï¿½ nï¿½o sabe nada de como agir como um Cavaleiro!";
 			close;
 
 		sM_6c:
-			show "[Cavaleiro Honroso]";
-			show "VOCÊ ACHA QUE ITENS SÃO MAIS IMPORTANTES QUE SEU GRUPO??";
+			mes "[Cavaleiro Honroso]";
+			mes "VOCï¿½ ACHA QUE ITENS Sï¿½O MAIS IMPORTANTES QUE SEU GRUPO??";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Você....SAIA DAQUI AGORA! Você não sabe nada de como agir como um Cavaleiro!!!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½....SAIA DAQUI AGORA! Vocï¿½ nï¿½o sabe nada de como agir como um Cavaleiro!!!";
 			close;
 
 		L_Cont6:
-		show "[Cavaleiro Honroso]";
-		show "E finalmente, a última pergunta. Oq ue você acha mais importante para um Cavaleiro?";
+		mes "[Cavaleiro Honroso]";
+		mes "E finalmente, a ï¿½ltima pergunta. Oq ue vocï¿½ acha mais importante para um Cavaleiro?";
 		next;
 		menu "Honra",sM_7a, "Dinheiro",sM_7b, "A Fama",sM_7c;
 
 		sM_7a:
-			show "[Cavaleiro Honroso]";
-			show "Sim! Absolutamente correto! Um Cavaleiro preza a honra antes de tudo.";
-			show "Você tem que se lembrar sempre disso!";
+			mes "[Cavaleiro Honroso]";
+			mes "Sim! Absolutamente correto! Um Cavaleiro preza a honra antes de tudo.";
+			mes "Vocï¿½ tem que se lembrar sempre disso!";
 			next;
-			show "[Cavaleiro Honroso]";
+			mes "[Cavaleiro Honroso]";
 			goto L_Done;
 
 		sM_7b:
-			show "[Cavaleiro Honroso]";
-			show "Você realmente é muito EGOISTA!!";
+			mes "[Cavaleiro Honroso]";
+			mes "Vocï¿½ realmente ï¿½ muito EGOISTA!!";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Saia agora!! Nós não precisamos de gente como você por aqui!";
+			mes "[Cavaleiro Honroso]";
+			mes "Saia agora!! Nï¿½s nï¿½o precisamos de gente como vocï¿½ por aqui!";
 			close;
 
 		sM_7c:
-			show "[Cavaleiro Honroso]";
-			show "Então você deseja se consagrar como Cavaleiro apenas para ser FAMOSO?";
+			mes "[Cavaleiro Honroso]";
+			mes "Entï¿½o vocï¿½ deseja se consagrar como Cavaleiro apenas para ser FAMOSO?";
 			next;
-			show "[Cavaleiro Honroso]";
-			show "Saia daqui Agora!! Nós NÃO precisamos de gente como você por aqui!";
+			mes "[Cavaleiro Honroso]";
+			mes "Saia daqui Agora!! Nï¿½s Nï¿½O precisamos de gente como vocï¿½ por aqui!";
 			close;
 
 		L_Done:
-		show "Bom trabalho, você passou no segundo teste. Por favor fale com o Chefe para ele lhe falar o próximo teste.";
+		mes "Bom trabalho, vocï¿½ passou no segundo teste. Por favor fale com o Chefe para ele lhe falar o prï¿½ximo teste.";
 		next;
-		show "[Cavaleiro Honroso]";
-		show "Existe mais que força em ser um Cavaleiro. A sua honra é o que faze dele diferente dos outros, por isso é mais importante que apenas força.";
-		show "Lembrando disso não terá nenhum problema com o restante dos testes.";
+		mes "[Cavaleiro Honroso]";
+		mes "Existe mais que forï¿½a em ser um Cavaleiro. A sua honra ï¿½ o que faze dele diferente dos outros, por isso ï¿½ mais importante que apenas forï¿½a.";
+		mes "Lembrando disso nï¿½o terï¿½ nenhum problema com o restante dos testes.";
 		set KNIGHT_Q, 3;
 		close;
 
 	M_End:
-		show "[Cavaleiro Honroso]";
-		show "Vejo você uma outra hora.";
+		mes "[Cavaleiro Honroso]";
+		mes "Vejo vocï¿½ uma outra hora.";
 		close;
 
 }
@@ -689,25 +689,25 @@ L_Test:
 //<----------------------------- Sir Windsor (3rd Test) -------------------------------------------------->\\
 // Sir Windsor ---------------------------------------------------------
 prt_in,79,94,3	script	Cavaleiro das Lutas#1	733,{
-	show "[Cavaleiro das Lutas]";
+	mes "[Cavaleiro das Lutas]";
 	if(BaseJob == Job_Knight) goto L_Knight;
 	if(BaseJob == Job_Novice) goto L_Novice;
 	if(BaseJob == Job_Swordman && KNIGHT_Q == 3) goto L_Test;
 	if(BaseJob == Job_Swordman && KNIGHT_Q == 4) goto L_Done;
 L_Other:
-	show "..........";
+	mes "..........";
 	next;
-	show "[Cavaleiro das Lutas]";
-	show "O que você está olhando.....?";
+	mes "[Cavaleiro das Lutas]";
+	mes "O que vocï¿½ estï¿½ olhando.....?";
 	close;
 L_Novice:
-	show "..........";
+	mes "..........";
 	next;
-	show "[Cavaleiro das Lutas]";
-	show "Vá brincar com outra pessoa......";
+	mes "[Cavaleiro das Lutas]";
+	mes "Vï¿½ brincar com outra pessoa......";
 	close;
 L_Knight:
-	show "Não fale comigo......";
+	mes "Nï¿½o fale comigo......";
 	emotion e_dots;
 	close;
 
@@ -715,13 +715,13 @@ L_Knight:
 L_Test:
 	if(KNIGHT_Q2 == 2) goto L_Done;
 	if(KNIGHT_Q2 == 1) goto sL_ReTest;
-	show ".............";
+	mes ".............";
 	next;
-	show "[Cavaleiro das Lutas]";
-	show "... você está aqui para realizar o teste?";
+	mes "[Cavaleiro das Lutas]";
+	mes "... vocï¿½ estï¿½ aqui para realizar o teste?";
 	next;
-	show "[Cavaleiro das Lutas]";
-	show "Siga-me.....";
+	mes "[Cavaleiro das Lutas]";
+	mes "Siga-me.....";
 	next;
 	set KNIGHT_Q2,1;
 	savepoint "prt_in",77,96;
@@ -729,26 +729,26 @@ L_Test:
 	end;
 
 	sL_ReTest:
-		show ".............";
+		mes ".............";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "Hmf... sua tentativa foi patética....";
+		mes "[Cavaleiro das Lutas]";
+		mes "Hmf... sua tentativa foi patï¿½tica....";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "Vamos......";
+		mes "[Cavaleiro das Lutas]";
+		mes "Vamos......";
 		next;
 		savepoint "prt_in",77,96;
 		warp "job_knt",89,106;
 		end;
 
 L_Done:
-	show "Hmf.......";
+	mes "Hmf.......";
 	next;
-	show "[Cavaleiro das Lutas]";
-	show ".... Você passou em meu teste.";
+	mes "[Cavaleiro das Lutas]";
+	mes ".... Vocï¿½ passou em meu teste.";
 	next;
-	show "[Cavaleiro das Lutas]";
-	show ".... Vá falar com o Chefe dos Cavaleiros.";
+	mes "[Cavaleiro das Lutas]";
+	mes ".... Vï¿½ falar com o Chefe dos Cavaleiros.";
 	set KNIGHT_Q2,0;
 	set KNIGHT_Q,4;
 	close;
@@ -757,73 +757,73 @@ L_Done:
 
 // Waiting Room ---------------------------------------------------------------------------
 job_knt,89,110,4,	script	Cavaleiro das Lutas#2::SW2	733,{
-	show "[Cavaleiro das Lutas]";
-	show ".........."; 
+	mes "[Cavaleiro das Lutas]";
+	mes ".........."; 
 	next;
-	show "[Cavaleiro das Lutas]";
-	show ".....Qual o seu problema?";
+	mes "[Cavaleiro das Lutas]";
+	mes ".....Qual o seu problema?";
 	next;
 	menu "Sobre o teste?",M_0, "Eu quero matar alguns monstros!.",M_1, "Quero sair.",M_2, "Nada.",M_End;
 			
 	M_0:
-		show "[Cavaleiro das Lutas]";
-		show "..........";
+		mes "[Cavaleiro das Lutas]";
+		mes "..........";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..... Você irá lutar com monstros.";
+		mes "[Cavaleiro das Lutas]";
+		mes "..... Vocï¿½ irï¿½ lutar com monstros.";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..... Você deve matar todos os monstros da arena.";
+		mes "[Cavaleiro das Lutas]";
+		mes "..... Vocï¿½ deve matar todos os monstros da arena.";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..........";
+		mes "[Cavaleiro das Lutas]";
+		mes "..........";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..... e deve sobreviver aos 3 niveis.";
+		mes "[Cavaleiro das Lutas]";
+		mes "..... e deve sobreviver aos 3 niveis.";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..... Eu lhe darei 3 minutos para cada nível.";
+		mes "[Cavaleiro das Lutas]";
+		mes "..... Eu lhe darei 3 minutos para cada nï¿½vel.";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..........";
+		mes "[Cavaleiro das Lutas]";
+		mes "..........";
 		close;
 
 	M_1:
-		show "[Cavaleiro das Lutas]";
-		show "..........";
+		mes "[Cavaleiro das Lutas]";
+		mes "..........";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..... Entre na sala de Espera primeiro.";
+		mes "[Cavaleiro das Lutas]";
+		mes "..... Entre na sala de Espera primeiro.";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..... O teste começará em breve.";
+		mes "[Cavaleiro das Lutas]";
+		mes "..... O teste comeï¿½arï¿½ em breve.";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..........";
+		mes "[Cavaleiro das Lutas]";
+		mes "..........";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..... Em alguns casos, você terá que esperar pois alguém pode estar realizando o teste.";
+		mes "[Cavaleiro das Lutas]";
+		mes "..... Em alguns casos, vocï¿½ terï¿½ que esperar pois alguï¿½m pode estar realizando o teste.";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..... Quando chegar a sua vez, você será, automáticamente, transportado para o local do teste..";
+		mes "[Cavaleiro das Lutas]";
+		mes "..... Quando chegar a sua vez, vocï¿½ serï¿½, automï¿½ticamente, transportado para o local do teste..";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..........";
+		mes "[Cavaleiro das Lutas]";
+		mes "..........";
 		close;
 
 	M_2:
-		show "[Cavaleiro das Lutas]";
-		show "..........";
+		mes "[Cavaleiro das Lutas]";
+		mes "..........";
 		next;
-		show "[Cavaleiro das Lutas]";
-		show "..... Vá.";
+		mes "[Cavaleiro das Lutas]";
+		mes "..... Vï¿½.";
 		next;
 		warp "prt_in",80,100;
 		close;
 
 	M_End:
-		show "[Cavaleiro das Lutas]";
-		show "..........";
+		mes "[Cavaleiro das Lutas]";
+		mes "..........";
 		close;
 
 OnInit:
@@ -872,7 +872,7 @@ OnMyMobDead:
 	if($@KntMob > 0) end;
 
 	stopnpctimer "TimerKnt";
-	areaannounce "job_knt", 24, 126, 63, 165, "[Cavaleiro das Lutas]: Avance para o segundo nível....",8;
+	areaannounce "job_knt", 24, 126, 63, 165, "[Cavaleiro das Lutas]: Avance para o segundo nï¿½vel....",8;
 	set $@KntMob, 0;
 	addtimer 5000, "KntLvl2::OnStart";
 	end;
@@ -906,7 +906,7 @@ OnMyMobDead:
 	if($@KntMob > 0) end;
 
 	stopnpctimer "TimerKnt";
-	areaannounce "job_knt", 24, 32, 63, 71, "[Cavaleiro das Lutas]: Avance para o terceiro nível....",8;
+	areaannounce "job_knt", 24, 32, 63, 71, "[Cavaleiro das Lutas]: Avance para o terceiro nï¿½vel....",8;
 	set $@KntMob, 0;
 	addtimer 5000, "KntLvl3::OnStart";
 	end;
@@ -947,32 +947,32 @@ OnMyMobDead:
 job_knt,1,1,1	script	TimerKnt	-1,{
 
 OnTimer2000:
-	set $@KntTime$, "Você tem 3 minutos...";
+	set $@KntTime$, "Vocï¿½ tem 3 minutos...";
 	donpcevent "SW2::OnStart";		//checks to see if anyone is still in the room, in case of logout or KO
 	callsub AnnounceKnt;
 OnTimer32000:
 	donpcevent "SW2::OnStart";
 	end;
 OnTimer62000:
-	set $@KntTime$, "Você tem 2 minutos...";
+	set $@KntTime$, "Vocï¿½ tem 2 minutos...";
 	donpcevent "SW2::OnStart";
 	callsub AnnounceKnt;
 OnTimer92000:
 	donpcevent "SW2::OnStart";
 	end;
 OnTimer122000:
-	set $@KntTime$, "Você tem 1 minuto...";
+	set $@KntTime$, "Vocï¿½ tem 1 minuto...";
 	donpcevent "SW2::OnStart";
 	callsub AnnounceKnt;
 OnTimer152000:
-	set $@KntTime$, "Você tem 30 segundos...";
+	set $@KntTime$, "Vocï¿½ tem 30 segundos...";
 	donpcevent "SW2::OnStart";
 	callsub AnnounceKnt;
 OnTimer162000:
-	set $@KntTime$, "Você tem 10 segundos...";
+	set $@KntTime$, "Vocï¿½ tem 10 segundos...";
 	callsub AnnounceKnt;
 OnTimer182000:
-	set $@KntTime$, "Tempo esgotado! Você falhou!!";
+	set $@KntTime$, "Tempo esgotado! Vocï¿½ falhou!!";
 	donpcevent "SW2::OnStart";
 	callsub AnnounceKnt;
 OnTimer184000:
@@ -980,7 +980,7 @@ OnTimer184000:
 	if($@KntRm==1) areawarp "job_knt", 24, 126, 63, 165, "prt_in",77,96;
 	if($@KntRm==2) areawarp "job_knt", 24, 32, 63, 71, "prt_in",77,96;
 	if($@KntRm==3) areawarp "job_knt", 124, 132, 163, 171, "prt_in",77,96;
-	areaannounce "job_knt", 82, 98, 97, 113, "[Cavaleiro das Lutas]: A sala de teste está vazia agora.....",8;
+	areaannounce "job_knt", 82, 98, 97, 113, "[Cavaleiro das Lutas]: A sala de teste estï¿½ vazia agora.....",8;
 	killmonster "job_knt", "KntLvl1::OnMyMobDead";
 	killmonster "job_knt", "KntLvl2::OnMyMobDead";
 	killmonster "job_knt", "KntLvl3::OnMyMobDead";
@@ -997,91 +997,91 @@ AnnounceKnt:
 
 //<------------------------------------------------------------------------------------ Lady Amy Beatris (4th Test) ---------------------------------------------------------------------------------------------->\\
 prt_in,69,107,5	script	Cavaleira Educada	728,{
-	show "[Cavaleira Educada]";
+	mes "[Cavaleira Educada]";
 	if (BaseJob == Job_Knight) goto L_Knight;
 	if (BaseJob == Job_Novice) goto L_Novice;
 	if (BaseJob == Job_Swordman && KNIGHT_Q == 4) goto L_Test;
-	if (BaseJob == Job_Swordman && KNIGHT_Q == 5) show "Fale antes com o Chefe dos Cavaleiros, para o próximo teste.";
+	if (BaseJob == Job_Swordman && KNIGHT_Q == 5) mes "Fale antes com o Chefe dos Cavaleiros, para o prï¿½ximo teste.";
 	if (BaseJob == Job_Swordman && KNIGHT_Q == 5) close;
 L_Other:
-	show "Bem Vindo a Cavalaria de Prontera.";
+	mes "Bem Vindo a Cavalaria de Prontera.";
 	next;
-	show "[Cavaleira Educada]";
-	show "Os Cavaleiros ficam aqui relaxando das suas longas batalhas.";
+	mes "[Cavaleira Educada]";
+	mes "Os Cavaleiros ficam aqui relaxando das suas longas batalhas.";
 	close;
 L_Novice:
-	show "Uau... Um lindo Aprendiz... que fofo...";
+	mes "Uau... Um lindo Aprendiz... que fofo...";
 	emotion e_lv2;
 	next;
-	show "[Cavaleira Educada]";
-	show "Você irá se consagrar, um dia, como Cavaleiro?";
-	if(sex==0) show "Espero que você se torne um adorável Cavaleiro.";
-	if(sex==1) show "Eu aposto que se tornará uma Cavaleira de valor.";
+	mes "[Cavaleira Educada]";
+	mes "Vocï¿½ irï¿½ se consagrar, um dia, como Cavaleiro?";
+	if(sex==0) mes "Espero que vocï¿½ se torne um adorï¿½vel Cavaleiro.";
+	if(sex==1) mes "Eu aposto que se tornarï¿½ uma Cavaleira de valor.";
 	next;
-	show "[Cavaleira Educada]";
-	if(sex==0) show "Se você se tornar um Cavaleiro, volte e venha me ver. Nós, belas senhoritas Cavaleiras, adoramos companhias.";
-	if(sex==1) show "Se você se tornar uma Cavaleira, volte e venha me ver, ok? Vamos falar sobre a moda... (*piscadinha*)";
+	mes "[Cavaleira Educada]";
+	if(sex==0) mes "Se vocï¿½ se tornar um Cavaleiro, volte e venha me ver. Nï¿½s, belas senhoritas Cavaleiras, adoramos companhias.";
+	if(sex==1) mes "Se vocï¿½ se tornar uma Cavaleira, volte e venha me ver, ok? Vamos falar sobre a moda... (*piscadinha*)";
 	close;
 L_Knight:
 	if(sex==1) goto L_Male;
 	
 	L_Female:
-		show "Oh! Não é apenas o Cavaleiro que é bonito. Eu adoro sua espada, pois combina com suas botas.";
+		mes "Oh! Nï¿½o ï¿½ apenas o Cavaleiro que ï¿½ bonito. Eu adoro sua espada, pois combina com suas botas.";
 		emotion e_lv2;
 		next;
-		show "[Cavaleira Educada]";
-		show "Em todo o caso, Fico contente por ter vindo aqui para me ver. É curioso como um Cavaleiro vive por ai.";
-		show "Pelo que vejo você está fazendo um bom trabalho? Esse é o lema das Cavaleiras!";
+		mes "[Cavaleira Educada]";
+		mes "Em todo o caso, Fico contente por ter vindo aqui para me ver. ï¿½ curioso como um Cavaleiro vive por ai.";
+		mes "Pelo que vejo vocï¿½ estï¿½ fazendo um bom trabalho? Esse ï¿½ o lema das Cavaleiras!";
 		close;
 
 	L_Male:
-		show "Olá camarada. Eu adoro homens com uma armadura....";
+		mes "Olï¿½ camarada. Eu adoro homens com uma armadura....";
 		emotion e_lv;
 		next;
-		show "[Cavaleira Educada]";
-		show "Assim, você voltou para me ver, engraçado...?";
+		mes "[Cavaleira Educada]";
+		mes "Assim, vocï¿½ voltou para me ver, engraï¿½ado...?";
 		next;
-		menu "VOCÊ APOSTOU!!!",M_Yes, "... um... Bem... err...",M_No;
+		menu "VOCï¿½ APOSTOU!!!",M_Yes, "... um... Bem... err...",M_No;
 
 		M_Yes:
-			show "^FF0000(SLAPP!! SMACK!! BASH!!)^000000";
+			mes "^FF0000(SLAPP!! SMACK!! BASH!!)^000000";
 			emotion e_an;
 			percentheal -10,0;
 			next;
-			show "[Cavaleira Educada]";
-			show "Eu te desafiei!! Que tipo de mulher você acha que eu sou, hein?";
+			mes "[Cavaleira Educada]";
+			mes "Eu te desafiei!! Que tipo de mulher vocï¿½ acha que eu sou, hein?";
 			next;
-			show "[Cavaleira Educada]";
-			show "Lembre-se que um Cavaleiro é um Cavaleiro, não importando seu sexo.";
-			show "Todos devem se respeitar, e os homens devem respeitar as mulheres sempre!";
+			mes "[Cavaleira Educada]";
+			mes "Lembre-se que um Cavaleiro ï¿½ um Cavaleiro, nï¿½o importando seu sexo.";
+			mes "Todos devem se respeitar, e os homens devem respeitar as mulheres sempre!";
 			emotion e_pif;
 			close;
  
 		M_No:
-			show "[Cavaleira Educada]";
-			show "Hehehe. Desculpe, eu estava apenas brincando com você. Como você já deve ter percebido, eu NÃO sou como as outras garotas.";
+			mes "[Cavaleira Educada]";
+			mes "Hehehe. Desculpe, eu estava apenas brincando com vocï¿½. Como vocï¿½ jï¿½ deve ter percebido, eu Nï¿½O sou como as outras garotas.";
 			emotion e_heh;
 			next;
-			show "[Cavaleira Educada]";
-			show "Em todo caso, Eu fico grata por vim aqui só para me ver. Eu fico curiosa em saber como os outros Cavaleiros estão agindo pelo mundo a fora.";
-			show "Espero que você continue fazendo um bom trabalho, ok?";
+			mes "[Cavaleira Educada]";
+			mes "Em todo caso, Eu fico grata por vim aqui sï¿½ para me ver. Eu fico curiosa em saber como os outros Cavaleiros estï¿½o agindo pelo mundo a fora.";
+			mes "Espero que vocï¿½ continue fazendo um bom trabalho, ok?";
 			emotion e_no1;
 			close;
 
 
 L_Test:
-	if(KNIGHT_Q2 == 1) show "Você está pronto para o teste?";	//for when someone retakes the test
+	if(KNIGHT_Q2 == 1) mes "Vocï¿½ estï¿½ pronto para o teste?";	//for when someone retakes the test
 	if(KNIGHT_Q2 == 1) goto M_Menu;
-	show "Olá. Você é ^ff0000"+strcharinfo(0)+"^000000, certo?";
+	mes "Olï¿½. Vocï¿½ ï¿½ ^ff0000"+strcharinfo(0)+"^000000, certo?";
 	next;
-	show "[Cavaleira Educada]";
-	show "Meu nome é Cavaleira Educada, uma Cavaleira da Cavalaria de Prontera.";
+	mes "[Cavaleira Educada]";
+	mes "Meu nome ï¿½ Cavaleira Educada, uma Cavaleira da Cavalaria de Prontera.";
 	next;
-	show "[Cavaleira Educada]";
-	show "Para este teste, eu lhe farei algumas perguntas.";
+	mes "[Cavaleira Educada]";
+	mes "Para este teste, eu lhe farei algumas perguntas.";
 	next;
-	show "[Cavaleira Educada]";
-	show "Ouça com cuidado e responda corretamente.";
+	mes "[Cavaleira Educada]";
+	mes "Ouï¿½a com cuidado e responda corretamente.";
 M_Menu:
 	next;
 	menu "Ok.  Estou pronto.",M_0, "Um momento.",M_End;
@@ -1089,10 +1089,10 @@ M_Menu:
 	M_0:
 		set @score,0;
 
-		show "[Cavaleira Educada]";
-		show "Você está em Morroc e você precisa de um grupo. O que você faz?";
+		mes "[Cavaleira Educada]";
+		mes "Vocï¿½ estï¿½ em Morroc e vocï¿½ precisa de um grupo. O que vocï¿½ faz?";
 		next;
-		menu "Olho em volta",sM_0a, "Abro uma sala.",sM_0b, "Pergunto para alguém..",sM_0c;
+		menu "Olho em volta",sM_0a, "Abro uma sala.",sM_0b, "Pergunto para alguï¿½m..",sM_0c;
 
 		sM_0a:
 			goto L_Cont1;
@@ -1105,14 +1105,14 @@ M_Menu:
 			set @score, @score + 10;
 
 		L_Cont1:
-		show "[Cavaleira Educada]";
-		show "Você faz um grupo com um Caçador, um Sacerdote, um Bruxo, um Ferreiro, e um Mercenário.";
-		show "Todos decidem treinar dentro da pirâmide.";
+		mes "[Cavaleira Educada]";
+		mes "Vocï¿½ faz um grupo com um Caï¿½ador, um Sacerdote, um Bruxo, um Ferreiro, e um Mercenï¿½rio.";
+		mes "Todos decidem treinar dentro da pirï¿½mide.";
 		next;
-		show "[Cavaleira Educada]";
-		show "Seu grupo chega até o quarto andar, o que você faz agora?";
+		mes "[Cavaleira Educada]";
+		mes "Seu grupo chega atï¿½ o quarto andar, o que vocï¿½ faz agora?";
 		next;
-		menu "Escolto eles",sM_1a, "Luto sózinho",sM_1b, "Fico na frente",sM_1c;
+		menu "Escolto eles",sM_1a, "Luto sï¿½zinho",sM_1b, "Fico na frente",sM_1c;
 
 		sM_1a:
 			set @score, @score + 10;
@@ -1124,10 +1124,10 @@ M_Menu:
 			set @score, @score + 10;
 
 		L_Cont2:
-		show "[Cavaleira Educada]";
-		show "Um dos membros, vai na frente e se perde do grupo. Oque você faz?";
+		mes "[Cavaleira Educada]";
+		mes "Um dos membros, vai na frente e se perde do grupo. Oque vocï¿½ faz?";
 		next;
-		menu "Procuro por ele",sM_2a, "Continuo a Escolta",sM_2b, "Deixa prá lá!",sM_2c;
+		menu "Procuro por ele",sM_2a, "Continuo a Escolta",sM_2b, "Deixa prï¿½ lï¿½!",sM_2c;
 
 		sM_2a:
 			set @score, @score + 10;
@@ -1140,13 +1140,13 @@ M_Menu:
 		sM_2c:
 
 		L_Cont3:
-		show "[Cavaleira Educada]";
-		show "De algum modo você o reencontra. Seu grupo continua em frente, quando você encontra um outro aventureiro caído.";
+		mes "[Cavaleira Educada]";
+		mes "De algum modo vocï¿½ o reencontra. Seu grupo continua em frente, quando vocï¿½ encontra um outro aventureiro caï¿½do.";
 		next;
-		show "[Cavaleira Educada]";
-		show "Ele implora que você o ajude, o que você faz?";
+		mes "[Cavaleira Educada]";
+		mes "Ele implora que vocï¿½ o ajude, o que vocï¿½ faz?";
 		next;
-		menu "Peço para o Sacerdote ajudá-lo.",sM_3a, "Quanto ele paga por minha ajuda",sM_3b, "Ignora ele.",sM_3c;
+		menu "Peï¿½o para o Sacerdote ajudï¿½-lo.",sM_3a, "Quanto ele paga por minha ajuda",sM_3b, "Ignora ele.",sM_3c;
 
 		sM_3a:
 			set @score, @score + 10;
@@ -1156,13 +1156,13 @@ M_Menu:
 		sM_3c:
 
 		L_Cont4:
-		show "[Cavaleira Educada]";
-		show "Agora o grupo tem que ir para lugares diferentes, e se separam em pequenos grupos.";
+		mes "[Cavaleira Educada]";
+		mes "Agora o grupo tem que ir para lugares diferentes, e se separam em pequenos grupos.";
 		next;
-		show "[Cavaleira Educada]";
-		show "Durante uma batalha, um monstro dropa um item valioso e você o pega. O que você faz com ele?";
+		mes "[Cavaleira Educada]";
+		mes "Durante uma batalha, um monstro dropa um item valioso e vocï¿½ o pega. O que vocï¿½ faz com ele?";
 		next;
-		menu "Dar para a pessoa que o mereça.",sM_4a, "Saber mais sobre ele.",sM_4b, "Pergunta para os outros.",sM_4c;
+		menu "Dar para a pessoa que o mereï¿½a.",sM_4a, "Saber mais sobre ele.",sM_4b, "Pergunta para os outros.",sM_4c;
 
 		sM_4a:
 			set @score, @score + 10;
@@ -1174,14 +1174,14 @@ M_Menu:
 			set @score, @score + 10;
 
 		L_Cont5:
-		show "[Cavaleira Educada]";
-		show "Você decide voltar para Prontera e vender alguns itens que você conseguiu.";
-		show "No caminho, você encontra uma sala de chat.";
+		mes "[Cavaleira Educada]";
+		mes "Vocï¿½ decide voltar para Prontera e vender alguns itens que vocï¿½ conseguiu.";
+		mes "No caminho, vocï¿½ encontra uma sala de chat.";
 		next;
-		show "[Cavaleira Educada]";
-		show "Qual é a melhor maneira de se vender um item?";
+		mes "[Cavaleira Educada]";
+		mes "Qual ï¿½ a melhor maneira de se vender um item?";
 		next;
-		menu "Vender a um NPC.",sM_5a, "Criar um chat.",sM_5b, "Procura alguém que procure o item.",sM_5c;
+		menu "Vender a um NPC.",sM_5a, "Criar um chat.",sM_5b, "Procura alguï¿½m que procure o item.",sM_5c;
 
 		sM_5a:
 			goto L_Cont6;
@@ -1194,8 +1194,8 @@ M_Menu:
 			set @score, @score + 10;
 
 		L_Cont6:
-		show "[Cavaleira Educada]";
-		show "Alguém vem até você e lhe implora dinheiro. O que você faz?";
+		mes "[Cavaleira Educada]";
+		mes "Alguï¿½m vem atï¿½ vocï¿½ e lhe implora dinheiro. O que vocï¿½ faz?";
 		next;
 		menu "Dou dinheiro e itens.",sM_6a, "Ignoro.",sM_6b, "Informo um bom lugar para ele.",sM_6c;
 
@@ -1207,13 +1207,13 @@ M_Menu:
 			set @score, @score + 10;
 
 		L_Cont7:
-		show "[Cavaleira Educada]";
-		show "Agora, você está treinando sózinho na floresta. Você está feliz montado em seu PecoPeco.";
+		mes "[Cavaleira Educada]";
+		mes "Agora, vocï¿½ estï¿½ treinando sï¿½zinho na floresta. Vocï¿½ estï¿½ feliz montado em seu PecoPeco.";
 		next;
-		show "[Cavaleira Educada]";
-		show "No caminho encontra um aventureiro perdido. O que você faz?";
+		mes "[Cavaleira Educada]";
+		mes "No caminho encontra um aventureiro perdido. O que vocï¿½ faz?";
 		next;
-		menu "Digo ele com sair dali.",sM_7a, "Levo ele até a saida.",sM_7b, "Dou uma asa de borboleta.",sM_7c;
+		menu "Digo ele com sair dali.",sM_7a, "Levo ele atï¿½ a saida.",sM_7b, "Dou uma asa de borboleta.",sM_7c;
 
 		sM_7a:
 			set @score, @score + 10;
@@ -1225,14 +1225,14 @@ M_Menu:
 		sM_7c:
 
 		L_Cont8:
-		show "[Cavaleira Educada]";
-		show "Ainda na floresta, mas lutando com uns monstros.";
-		show "Você gasta muitos itens de cura, e agora percebe que seu HP está baixo.";
+		mes "[Cavaleira Educada]";
+		mes "Ainda na floresta, mas lutando com uns monstros.";
+		mes "Vocï¿½ gasta muitos itens de cura, e agora percebe que seu HP estï¿½ baixo.";
 		next;
-		show "[Cavaleira Educada]";
-		show "Derrepente aparece um Sacerdote! O que você faz?";
+		mes "[Cavaleira Educada]";
+		mes "Derrepente aparece um Sacerdote! O que vocï¿½ faz?";
 		next;
-		menu "Peço cura educadamente!",sM_8a, "Compro a Cura.",sM_8b, "Exijo que ele o cure.",sM_8c;
+		menu "Peï¿½o cura educadamente!",sM_8a, "Compro a Cura.",sM_8b, "Exijo que ele o cure.",sM_8c;
 
 		sM_8a:
 			goto L_Cont9;
@@ -1243,13 +1243,13 @@ M_Menu:
 		sM_8c:
 
 		L_Cont9:
-		show "[Cavaleira Educada]";
-		show "Você descansa, e decidi voltar para a cidade.";
+		mes "[Cavaleira Educada]";
+		mes "Vocï¿½ descansa, e decidi voltar para a cidade.";
 		next;
-		show "[Cavaleira Educada]";
-		show "No caminho de volta, você encontra um item raro no chão. O que você faz?";
+		mes "[Cavaleira Educada]";
+		mes "No caminho de volta, vocï¿½ encontra um item raro no chï¿½o. O que vocï¿½ faz?";
 		next;
-		menu "Pego e saio Andando.",sM_9a, "Pergunto se pertence alguém.",sM_9b, "Deixo ele ali.",sM_9c;
+		menu "Pego e saio Andando.",sM_9a, "Pergunto se pertence alguï¿½m.",sM_9b, "Deixo ele ali.",sM_9c;
 
 		sM_9a:
 			goto L_Cont10;
@@ -1262,49 +1262,49 @@ M_Menu:
 			set @score, @score + 10;
 
 		L_Cont10:
-		show "[Cavaleira Educada]";
-		show "Muito bem. Terminei minhas perguntas. Não foi tão ruim né?";
+		mes "[Cavaleira Educada]";
+		mes "Muito bem. Terminei minhas perguntas. Nï¿½o foi tï¿½o ruim nï¿½?";
 		next;
-		show "[Cavaleira Educada]";
-		show "Ok, Deixe-me calcular sua pontuação....";
+		mes "[Cavaleira Educada]";
+		mes "Ok, Deixe-me calcular sua pontuaï¿½ï¿½o....";
 		next;
-		show "[Cavaleira Educada]";
-		show "Você atingiu uma pontuação de ^ff0000"+@score+"^000000 para ^0000ff100^000000.";
+		mes "[Cavaleira Educada]";
+		mes "Vocï¿½ atingiu uma pontuaï¿½ï¿½o de ^ff0000"+@score+"^000000 para ^0000ff100^000000.";
 		next;
-		show "[Cavaleira Educada]";
+		mes "[Cavaleira Educada]";
 		if(@score == 100) goto L_100;
 		if(@score >= 80) goto L_80;
 
 		L_Failed:
-			show "Sinto muito, mas você falhou no teste. Eu espero que consiga na próxima vez.";
+			mes "Sinto muito, mas vocï¿½ falhou no teste. Eu espero que consiga na prï¿½xima vez.";
 			next;
-			show "[Cavaleira Educada]";
-			show "Quando eu lhe fizer uma pergunta, pense antes de responder.";
+			mes "[Cavaleira Educada]";
+			mes "Quando eu lhe fizer uma pergunta, pense antes de responder.";
 			set KNIGHT_Q2, 1;	//flag for re-taking the test
 			close;
 
 		L_100:
-			show "Muito bom! Você atingiu a pontuação máxima. Se continuar assim, será um dos melhores Cavaleiros daqui.";
-			show "Fale com o Chefe dos Cavaleiros para saber o próximo teste.";
+			mes "Muito bom! Vocï¿½ atingiu a pontuaï¿½ï¿½o mï¿½xima. Se continuar assim, serï¿½ um dos melhores Cavaleiros daqui.";
+			mes "Fale com o Chefe dos Cavaleiros para saber o prï¿½ximo teste.";
 			next;
-			show "[Cavaleira Educada]";
-			show "Continue assim, e passará em todos os testes sem problemas?";
+			mes "[Cavaleira Educada]";
+			mes "Continue assim, e passarï¿½ em todos os testes sem problemas?";
 			set KNIGHT_Q, 5;
 			set KNIGHT_Q2, 0;
 			close;
 		L_80:
-			show "Nada mal. Não foi o que eu esperava, mas você foi bem, vou lhe aprovar desta vez.";
-			show "Fale com o Chefe dos Cavaleiros, ele lhe indicará o próximo teste.";
+			mes "Nada mal. Nï¿½o foi o que eu esperava, mas vocï¿½ foi bem, vou lhe aprovar desta vez.";
+			mes "Fale com o Chefe dos Cavaleiros, ele lhe indicarï¿½ o prï¿½ximo teste.";
 			next;
-			show "[Cavaleira Educada]";
-			show "Boa sorte no próximo teste. Eu espero que consiga passar no próximo teste.";
+			mes "[Cavaleira Educada]";
+			mes "Boa sorte no prï¿½ximo teste. Eu espero que consiga passar no prï¿½ximo teste.";
 			set KNIGHT_Q, 5;
 			set KNIGHT_Q2, 0;
 			close;
 
 	M_End:
-		show "[Cavaleira Educada]";
-		show "Obrigada. Vejo você depois.";
+		mes "[Cavaleira Educada]";
+		mes "Obrigada. Vejo vocï¿½ depois.";
 		close;
 
 }
@@ -1312,106 +1312,106 @@ M_Menu:
 
 //<----------------------- Sir Edmund (5th Test) --------------------------------->\\
 prt_in,70,99,5	script	Cavaleiro Devotado	734,{
-	show "[Cavaleiro Devotado]";
+	mes "[Cavaleiro Devotado]";
 	if (BaseJob == Job_Knight) goto L_Knight;
 	if (BaseJob == Job_Swordman) goto L_Sword;
 	if (BaseJob == Job_Novice) goto L_Novice;
 L_Other:
-	show "Tudo no mundo existe um equilibrio.";
+	mes "Tudo no mundo existe um equilibrio.";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Vivendo sem perturbar essa harmonia, é o único caminho para se viver bem....";
+	mes "[Cavaleiro Devotado]";
+	mes "Vivendo sem perturbar essa harmonia, ï¿½ o ï¿½nico caminho para se viver bem....";
 	close;
 L_Novice:
-	show "Uma árvore com raízes fortes e profunda, nunca será balançada ou derrubada pelo vento.";
+	mes "Uma ï¿½rvore com raï¿½zes fortes e profunda, nunca serï¿½ balanï¿½ada ou derrubada pelo vento.";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Com a habilidade de fazer suas raízes fortes e bem estruturada a manterá bem quando vier a bonança...";
+	mes "[Cavaleiro Devotado]";
+	mes "Com a habilidade de fazer suas raï¿½zes fortes e bem estruturada a manterï¿½ bem quando vier a bonanï¿½a...";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Você decide qual será o seu futuro.... por isso, estruture suas raízes primeiro.";
+	mes "[Cavaleiro Devotado]";
+	mes "Vocï¿½ decide qual serï¿½ o seu futuro.... por isso, estruture suas raï¿½zes primeiro.";
 	close;
 
-	show "[Cavaleiro Devotado]";
-	show "Pessoas que tendem a ir para o lado sombrio, sempre irão ter pesadelos horríveis.";
+	mes "[Cavaleiro Devotado]";
+	mes "Pessoas que tendem a ir para o lado sombrio, sempre irï¿½o ter pesadelos horrï¿½veis.";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Se esses pesadelos o perturbar todos os dias, isso significa que seus sonhos foram destruídos no processo...";
+	mes "[Cavaleiro Devotado]";
+	mes "Se esses pesadelos o perturbar todos os dias, isso significa que seus sonhos foram destruï¿½dos no processo...";
 	close;
 
 L_Knight:
-	show "Faça do seu coração, um rio.";
+	mes "Faï¿½a do seu coraï¿½ï¿½o, um rio.";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Um rio deseja segue seu caminho, removendo qualquer obstáculo...";
+	mes "[Cavaleiro Devotado]";
+	mes "Um rio deseja segue seu caminho, removendo qualquer obstï¿½culo...";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Como um Cavaleiro você deve viver sua vida como a de um rio.";
+	mes "[Cavaleiro Devotado]";
+	mes "Como um Cavaleiro vocï¿½ deve viver sua vida como a de um rio.";
 	close;
 
 L_Sword:
 	if (KNIGHT_Q == 5) goto L_Test;
 	if (KNIGHT_Q == 6) goto L_Done;
-	show "Para aqueles que tem desejos egoístas, sempre terão sonhos egoístas.";
+	mes "Para aqueles que tem desejos egoï¿½stas, sempre terï¿½o sonhos egoï¿½stas.";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Ter esses desejos, leva a apenas um sonho. Nada....";
+	mes "[Cavaleiro Devotado]";
+	mes "Ter esses desejos, leva a apenas um sonho. Nada....";
 	close;
 L_Test:
 	if(KNIGHT_Q2 == 1) goto L_ReTest;
 	if(KNIGHT_Q2 == 2) goto L_Done;
-	show "Então irá fazer o meu teste.";
-	show "Eu espero que você passe.";
+	mes "Entï¿½o irï¿½ fazer o meu teste.";
+	mes "Eu espero que vocï¿½ passe.";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Meu nome é Cavaleiro Devotado.";
-	show "E como pode ver, também sou um dos Cavaleiros da Cavalaria de Prontera.";
+	mes "[Cavaleiro Devotado]";
+	mes "Meu nome ï¿½ Cavaleiro Devotado.";
+	mes "E como pode ver, tambï¿½m sou um dos Cavaleiros da Cavalaria de Prontera.";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Cavaleiros são pessoas que procuram paz e justiça para todos no mundo...";
-	show "Se você estiver disposto a nos ajudar nessa tarefa, seja bem vindo.";
+	mes "[Cavaleiro Devotado]";
+	mes "Cavaleiros sï¿½o pessoas que procuram paz e justiï¿½a para todos no mundo...";
+	mes "Se vocï¿½ estiver disposto a nos ajudar nessa tarefa, seja bem vindo.";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Suas ações não podem ser lentas, se você decide alguma coisa, você deve fazê-lo.";
-	show "Algumas vezes você terá que ser como a água, fraca , e outras como o vento, FORTE.";
+	mes "[Cavaleiro Devotado]";
+	mes "Suas aï¿½ï¿½es nï¿½o podem ser lentas, se vocï¿½ decide alguma coisa, vocï¿½ deve fazï¿½-lo.";
+	mes "Algumas vezes vocï¿½ terï¿½ que ser como a ï¿½gua, fraca , e outras como o vento, FORTE.";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "você não poderá matar os monstros.";
-	show "Pois precisará se concentrar em si mesmo e ficar calmo...";
+	mes "[Cavaleiro Devotado]";
+	mes "vocï¿½ nï¿½o poderï¿½ matar os monstros.";
+	mes "Pois precisarï¿½ se concentrar em si mesmo e ficar calmo...";
 	next;
-	show "[Cavaleiro Devotado]";
-	show "Okay, Vamos começar.";
+	mes "[Cavaleiro Devotado]";
+	mes "Okay, Vamos comeï¿½ar.";
 	next;
 	warp "job_knt",143,57;
 	doevent "ev_Test::OnStart";
 	end;
 
 	L_ReTest:
-		show "Dá última vez que fez o teste, você não se esforçou.";
-		show "Um Cavaleiro só usa sua arma para proteção, não para mandar monstros fracos para o inferno.";
+		mes "Dï¿½ ï¿½ltima vez que fez o teste, vocï¿½ nï¿½o se esforï¿½ou.";
+		mes "Um Cavaleiro sï¿½ usa sua arma para proteï¿½ï¿½o, nï¿½o para mandar monstros fracos para o inferno.";
 		next;
-		show "[Cavaleiro Devotado]";
-		show "Tudo nesse mundo é igual, mesmo eles não são excessão.";
-		show "Esse é o objetivo do teste, isso lhe servirá em seu treino na vida real...";
+		mes "[Cavaleiro Devotado]";
+		mes "Tudo nesse mundo ï¿½ igual, mesmo eles nï¿½o sï¿½o excessï¿½o.";
+		mes "Esse ï¿½ o objetivo do teste, isso lhe servirï¿½ em seu treino na vida real...";
 		next;
-		show "[Cavaleiro Devotado]";
-		show "Ok, tentaremos novamente.";
+		mes "[Cavaleiro Devotado]";
+		mes "Ok, tentaremos novamente.";
 		next;
 		warp "job_knt",143,57;
 		doevent "ev_Test::OnStart";
 		end;
 
 	L_Done:
-		show "Você fez muito bem, em passar nesse teste.";
+		mes "Vocï¿½ fez muito bem, em passar nesse teste.";
 		next;
-		show "[Cavaleiro Devotado]";
-		show "Lembre-se a sua verdadeira força está na paciência, entendeu.";
+		mes "[Cavaleiro Devotado]";
+		mes "Lembre-se a sua verdadeira forï¿½a estï¿½ na paciï¿½ncia, entendeu.";
 		next;
-		show "[Cavaleiro Devotado]";
-		show "Quando você entender o mundo ao seu redor, você conseguirá ultrapassar os obstáculos da vida.";
+		mes "[Cavaleiro Devotado]";
+		mes "Quando vocï¿½ entender o mundo ao seu redor, vocï¿½ conseguirï¿½ ultrapassar os obstï¿½culos da vida.";
 		next;
-		show "[Cavaleiro Devotado]";
-		show "Vá, fale com o Chefe dos Cavaleiros para ele lhe informar seu próximo desafio. Boa Sorte.";
+		mes "[Cavaleiro Devotado]";
+		mes "Vï¿½, fale com o Chefe dos Cavaleiros para ele lhe informar seu prï¿½ximo desafio. Boa Sorte.";
 		set KNIGHT_Q2,0;
 		set KNIGHT_Q,6;
 		close; 
@@ -1426,10 +1426,10 @@ OnStart:
 	monster "job_knt",145,57,"Poring",1002,1,"ev_Test::OnMyMobDead";
 	monster "job_knt",143,55,"Poring",1002,1,"ev_Test::OnMyMobDead";
 	monster "job_knt",143,59,"Poring",1002,1,"ev_Test::OnMyMobDead";
-	monster "job_knt",141,55,"Lunático",1063,1,"ev_Test::OnMyMobDead";
-	monster "job_knt",141,59,"Lunático",1063,1,"ev_Test::OnMyMobDead";
-	monster "job_knt",145,55,"Lunático",1063,1,"ev_Test::OnMyMobDead";
-	monster "job_knt",145,59,"Lunático",1063,1,"ev_Test::OnMyMobDead";
+	monster "job_knt",141,55,"Lunï¿½tico",1063,1,"ev_Test::OnMyMobDead";
+	monster "job_knt",141,59,"Lunï¿½tico",1063,1,"ev_Test::OnMyMobDead";
+	monster "job_knt",145,55,"Lunï¿½tico",1063,1,"ev_Test::OnMyMobDead";
+	monster "job_knt",145,59,"Lunï¿½tico",1063,1,"ev_Test::OnMyMobDead";
 	monster "job_knt",139,57,"Chonchon",1011,1,"ev_Test::OnMyMobDead";
 	monster "job_knt",147,57,"Chonchon",1011,1,"ev_Test::OnMyMobDead";
 	monster "job_knt",143,53,"Chonchon",1011,1,"ev_Test::OnMyMobDead";
@@ -1454,7 +1454,7 @@ OnTimerPass:
 
 OnMyMobDead:
 	set KNIGHT_Q2, 1;
-	areaannounce "job_knt", 124, 36, 163, 75, "[Cavaleiro Devotado]: Você não conhece o que é paz, você falhou no teste.",0;
+	areaannounce "job_knt", 124, 36, 163, 75, "[Cavaleiro Devotado]: Vocï¿½ nï¿½o conhece o que ï¿½ paz, vocï¿½ falhou no teste.",0;
 	deltimer "ev_Test::OnTimerPass";
 	addtimer 4000, "ev_Test::OnTimerWarp";
 	end;
@@ -1468,281 +1468,281 @@ OnTimerWarp:
 
 //<----------------------- Sir Grey (Final Test) ----------------------------------->\\
 prt_in,87,92,3	script	Cavaleiro Modesto	119,{
-	show "[Cavaleiro Modesto]";
+	mes "[Cavaleiro Modesto]";
 	if (BaseJob == Job_Knight) goto L_Knight;
 	if (BaseJob == Job_Novice) goto L_Novice;
 	if (BaseJob == Job_Swordman && KNIGHT_Q == 6) goto L_Test;
-	if (BaseJob == Job_Swordman && KNIGHT_Q == 7) show "Vá, fale com o Chefe dos Cavaleiros e ele permitirá que você se torne um grande Cavaleiro.";
+	if (BaseJob == Job_Swordman && KNIGHT_Q == 7) mes "Vï¿½, fale com o Chefe dos Cavaleiros e ele permitirï¿½ que vocï¿½ se torne um grande Cavaleiro.";
 	if (BaseJob == Job_Swordman && KNIGHT_Q == 7) close;
 L_Other:
-	show "Use o tempo que você tem, sabiamente meu jovem......";
+	mes "Use o tempo que vocï¿½ tem, sabiamente meu jovem......";
 	next;
-	show "[Cavaleiro Modesto]";
-	show "Você não gostaria de terminar sem realizar nada, não é?.";
+	mes "[Cavaleiro Modesto]";
+	mes "Vocï¿½ nï¿½o gostaria de terminar sem realizar nada, nï¿½o ï¿½?.";
 	close;
 L_Novice:
-	show "Acredite se quiser, eu já fui um Aprendiz também.";
+	mes "Acredite se quiser, eu jï¿½ fui um Aprendiz tambï¿½m.";
 	next;
-	show "[Cavaleiro Modesto]";
-	show "E sempre, eu sonhava em ser um Cavaleiro.... Eu queria ser uma pessoa forte.....";
+	mes "[Cavaleiro Modesto]";
+	mes "E sempre, eu sonhava em ser um Cavaleiro.... Eu queria ser uma pessoa forte.....";
 	next;
-	show "[Cavaleiro Modesto]";
-	show "E após todos esses anos, Eu finalmente sou o que eu sonhei. Imagina só.... Hahaha.";
+	mes "[Cavaleiro Modesto]";
+	mes "E apï¿½s todos esses anos, Eu finalmente sou o que eu sonhei. Imagina sï¿½.... Hahaha.";
 	emotion 18;
 	close;
 L_Knight:
-	show "Eu não sei como descrever uma ^00aa00Claymore^000000, mas o que sei é... que ela é uma grande arma para Cavaleiros!!";
+	mes "Eu nï¿½o sei como descrever uma ^00aa00Claymore^000000, mas o que sei ï¿½... que ela ï¿½ uma grande arma para Cavaleiros!!";
 	next;
-	show "[Cavaleiro Modesto]";
-	show "Sim! A ^00aa00'Claymore'^000000!! Todos os Cavaleiros possuem uma!";
+	mes "[Cavaleiro Modesto]";
+	mes "Sim! A ^00aa00'Claymore'^000000!! Todos os Cavaleiros possuem uma!";
 	next;
-	menu "Mais informações? ",M_Info, "Comprar uma Claymore",M_Buy, "Tchau",M_Cancel;
+	menu "Mais informaï¿½ï¿½es? ",M_Info, "Comprar uma Claymore",M_Buy, "Tchau",M_Cancel;
 
 	M_Info:
-		show "[Cavaleiro Modesto]";
-		show "A Claymore é a melhor arma de Duas mãos que um Cavaleiro pode conseguir. Essa com certeza, é uma das melhores amigas dele.";
+		mes "[Cavaleiro Modesto]";
+		mes "A Claymore ï¿½ a melhor arma de Duas mï¿½os que um Cavaleiro pode conseguir. Essa com certeza, ï¿½ uma das melhores amigas dele.";
 		next;
-		show "[Cavaleiro Modesto]";
-		show "Nossa cavalaria, fabrica essa lindas Claymore e merecemos alguma compensação por este trabalho.";
+		mes "[Cavaleiro Modesto]";
+		mes "Nossa cavalaria, fabrica essa lindas Claymore e merecemos alguma compensaï¿½ï¿½o por este trabalho.";
 		next;
-		show "[Cavaleiro Modesto]";
-		show "Por um pagamento de ^0000ff'74000 zeny'^000000 e ^0000ff'1 Aço'^000000, qualquer Cavaleiro pode ter sua própria Claymore.";
+		mes "[Cavaleiro Modesto]";
+		mes "Por um pagamento de ^0000ff'74000 zeny'^000000 e ^0000ff'1 Aï¿½o'^000000, qualquer Cavaleiro pode ter sua prï¿½pria Claymore.";
 		next;
-		show "[Cavaleiro Modesto]";
-		show "Eu estou no cargo, de venda desse item. Assim, quando quiser uma venha falar comigo, ok.";
+		mes "[Cavaleiro Modesto]";
+		mes "Eu estou no cargo, de venda desse item. Assim, quando quiser uma venha falar comigo, ok.";
 		close;
 
 	M_Buy:
 		if(countitem(999) < 1 || Zeny < 74000) goto L_NotEnough;
 
-		show "[Cavaleiro Modesto]";
-		show "Bom, Você tem o aço e também a taxa.";
+		mes "[Cavaleiro Modesto]";
+		mes "Bom, Vocï¿½ tem o aï¿½o e tambï¿½m a taxa.";
 		next;
-		show "[Cavaleiro Modesto]";
-		show "Aqui está! Uma maravilhosa arma com grande qualidade e força! Eu sei que vai usá-la bem.";
+		mes "[Cavaleiro Modesto]";
+		mes "Aqui estï¿½! Uma maravilhosa arma com grande qualidade e forï¿½a! Eu sei que vai usï¿½-la bem.";
 		delitem 999, 1;
 		set Zeny, Zeny - 74000;
 		additem 1163, 1;
 		close;
 
 		L_NotEnough:
-			show "[Cavaleiro Modesto]";
-			show "Eu sei que você quer uma Claymore mas você precisa de ^0000ff'74000 zeny'^000000 e ^0000ff'1 Aço'^000000.";
+			mes "[Cavaleiro Modesto]";
+			mes "Eu sei que vocï¿½ quer uma Claymore mas vocï¿½ precisa de ^0000ff'74000 zeny'^000000 e ^0000ff'1 Aï¿½o'^000000.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Quando conseguir isso, volte a me ver.";
+			mes "[Cavaleiro Modesto]";
+			mes "Quando conseguir isso, volte a me ver.";
 			close;
 
 	M_Cancel:
-		show "[Cavaleiro Modesto]";
-		show "Se quer ser um bom Cavaleiro, você vai precisar de uma Claymore..";
-		show "Eu gostaria de vê-lo novamente um dia desses...";
+		mes "[Cavaleiro Modesto]";
+		mes "Se quer ser um bom Cavaleiro, vocï¿½ vai precisar de uma Claymore..";
+		mes "Eu gostaria de vï¿½-lo novamente um dia desses...";
 		close;
 
 L_ReTest:
-	show "Vejo que você está de volta. Você deve ter refletido por algum tempo, não é?";
-	show "Eu espero que você consiga desta vez você consiga.";
+	mes "Vejo que vocï¿½ estï¿½ de volta. Vocï¿½ deve ter refletido por algum tempo, nï¿½o ï¿½?";
+	mes "Eu espero que vocï¿½ consiga desta vez vocï¿½ consiga.";
 	goto M_Menu;
 
 L_Test:
 	if (KNIGHT_Q2 == 1) goto L_ReTest;
-	show "Haha, assim, vejo que terminou todos os testes?";
+	mes "Haha, assim, vejo que terminou todos os testes?";
 	next;
-	show "[Cavaleiro Modesto]";
-	show "Okay, Vamos começar. Não tem qualquer diferença dos outros.";
+	mes "[Cavaleiro Modesto]";
+	mes "Okay, Vamos comeï¿½ar. Nï¿½o tem qualquer diferenï¿½a dos outros.";
 M_Menu:
 	next;
 	menu "Vamos nessa!",M_0, "Talvez mais tarde.",M_End;
 	
 	M_0:
 		set @score,0;
-		show "[Cavaleiro Modesto]";
-		show "Vou lhe fazer algumas perguntas.";
+		mes "[Cavaleiro Modesto]";
+		mes "Vou lhe fazer algumas perguntas.";
 		next;
 
-		show "[Cavaleiro Modesto]";
-		show "Primeiro, Porque você quer ser consagrado como um Cavaleiro?";
+		mes "[Cavaleiro Modesto]";
+		mes "Primeiro, Porque vocï¿½ quer ser consagrado como um Cavaleiro?";
 		next;
 		menu "Ser forte.",sM_0, "Ajudar a cidade.",sM_1, "Deixar de ser Espadachim.",sM_2;
 
 		sM_0:
-			show "[Cavaleiro Modesto]";
-			show "Para ser forte, huh.... Confesso, que realmente será forte após se consagrar como Cavaleiro, mas ser forte apenas isso....";
+			mes "[Cavaleiro Modesto]";
+			mes "Para ser forte, huh.... Confesso, que realmente serï¿½ forte apï¿½s se consagrar como Cavaleiro, mas ser forte apenas isso....";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "O que vai fazer com essa força? Usa-la para ajudar a cidade? Pessoas desamparadas? Ou algum outro motivo?";
+			mes "[Cavaleiro Modesto]";
+			mes "O que vai fazer com essa forï¿½a? Usa-la para ajudar a cidade? Pessoas desamparadas? Ou algum outro motivo?";
 			next;
 			menu "Ser rico.",sM_0a, "Me proteger.",sM_0b, "Proteger outros.",sM_0c;
 
 			sM_0a:
 				set @score, @score + 10;
-				show "[Cavaleiro Modesto]";
-				show "Dinheiro é importante, te dá uma vida confortável, mas a força de um Cavaleiro deveria ser usada para coisas mais importantes.";
+				mes "[Cavaleiro Modesto]";
+				mes "Dinheiro ï¿½ importante, te dï¿½ uma vida confortï¿½vel, mas a forï¿½a de um Cavaleiro deveria ser usada para coisas mais importantes.";
 				goto L_Cont1;
 
 			sM_0b:
-				show "[Cavaleiro Modesto]";
-				show "Essa é uma boa idéia. Primeiro deve-se saber se proteger, para poder proteger os outros.";
-				show "Eu admiro esse seu senso de auto preservação.";
+				mes "[Cavaleiro Modesto]";
+				mes "Essa ï¿½ uma boa idï¿½ia. Primeiro deve-se saber se proteger, para poder proteger os outros.";
+				mes "Eu admiro esse seu senso de auto preservaï¿½ï¿½o.";
 				goto L_Cont1;
 
 			sM_0c:
-				show "[Cavaleiro Modesto]";
-				show "Isso é uma idéia nobre. Nós Cavaleiros temos o dever de servir os mais humildes e fracos.";
+				mes "[Cavaleiro Modesto]";
+				mes "Isso ï¿½ uma idï¿½ia nobre. Nï¿½s Cavaleiros temos o dever de servir os mais humildes e fracos.";
 				goto L_Cont1;
 
 		sM_1:
-			show "[Cavaleiro Modesto]";
-			show "Hmmm. Você tem um senso forte em ajudar.";
+			mes "[Cavaleiro Modesto]";
+			mes "Hmmm. Vocï¿½ tem um senso forte em ajudar.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Com a força de um Cavaleiro, como pretende ajudar a cidade?";
+			mes "[Cavaleiro Modesto]";
+			mes "Com a forï¿½a de um Cavaleiro, como pretende ajudar a cidade?";
 			next;
 			menu "Como puder.",sM_1a, "Vou dar dinheiro.",sM_1b, "Proteger os moradores.",sM_1c;
 
 			sM_1a:
-				show "[Cavaleiro Modesto]";
-				show "Bom. Um Cavaleiro deve ajudar sempre que puder, esse é seu destino.";
+				mes "[Cavaleiro Modesto]";
+				mes "Bom. Um Cavaleiro deve ajudar sempre que puder, esse ï¿½ seu destino.";
 				goto L_Cont1;
 
 			sM_1b:
 				set @score, @score + 10;
-				show "[Cavaleiro Modesto]";
-				show "Uma cidade precisa de dinheiro para prosperar, mas apenas isso não é importante, e que uma cidade precisa.";
-				show "Como um Cavaleiro você pode providenciar proteção e seus valorosos serviços."; 
+				mes "[Cavaleiro Modesto]";
+				mes "Uma cidade precisa de dinheiro para prosperar, mas apenas isso nï¿½o ï¿½ importante, e que uma cidade precisa.";
+				mes "Como um Cavaleiro vocï¿½ pode providenciar proteï¿½ï¿½o e seus valorosos serviï¿½os."; 
 				goto L_Cont1;
 
 			sM_1c:
-				show "[Cavaleiro Modesto]";
-				show "Uma idéia nobre. As pessoas comuns da cidade não tem como se proteger, ou se equipar para batalhas ou outros imprevistos.";
-				show "Dando proteção para elas, você estará permitindo que elas vivam suas vidas em paz.";
+				mes "[Cavaleiro Modesto]";
+				mes "Uma idï¿½ia nobre. As pessoas comuns da cidade nï¿½o tem como se proteger, ou se equipar para batalhas ou outros imprevistos.";
+				mes "Dando proteï¿½ï¿½o para elas, vocï¿½ estarï¿½ permitindo que elas vivam suas vidas em paz.";
 				goto L_Cont1;
 
 		sM_2:
 			set @score, @score + 5;
-			show "[Cavaleiro Modesto]";
-			show "Hmm... isso é interessante. A maioria das pessoas admiram os Espadachins.";
+			mes "[Cavaleiro Modesto]";
+			mes "Hmm... isso ï¿½ interessante. A maioria das pessoas admiram os Espadachins.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Bem, o que exatamente você não gosta em um Espadachim?";
+			mes "[Cavaleiro Modesto]";
+			mes "Bem, o que exatamente vocï¿½ nï¿½o gosta em um Espadachim?";
 			next;
-			menu "Habilidades.",sM_2a, "Espadachins são fracos.",sM_2b, "Treinamento duro.",sM_2c;
+			menu "Habilidades.",sM_2a, "Espadachins sï¿½o fracos.",sM_2b, "Treinamento duro.",sM_2c;
 
 			sM_2a:
 				set @score, @score + 5;
-				show "[Cavaleiro Modesto]";
-				show "Uma habilidade só se torna precisa quando a pessoa sabe o que está fazendo. Diferentes habilidades são usadas em diferentes situações.";
+				mes "[Cavaleiro Modesto]";
+				mes "Uma habilidade sï¿½ se torna precisa quando a pessoa sabe o que estï¿½ fazendo. Diferentes habilidades sï¿½o usadas em diferentes situaï¿½ï¿½es.";
 				next;
-				show "[Cavaleiro Modesto]";
-				show "Se você não consegue usar com eficiência as habilidades de um Espadachim agora, como espera poder usar as habilidades de um Cavaleiro depois?";
+				mes "[Cavaleiro Modesto]";
+				mes "Se vocï¿½ nï¿½o consegue usar com eficiï¿½ncia as habilidades de um Espadachim agora, como espera poder usar as habilidades de um Cavaleiro depois?";
 				goto L_Cont1;
 
 			sM_2b:
 				set @score, @score - 5;
-				show "[Cavaleiro Modesto]";
-				show "O que? Espadachins são os mais fortes das primeiras classes. Um Cavaleiro é a evolução dessa classe.";
+				mes "[Cavaleiro Modesto]";
+				mes "O que? Espadachins sï¿½o os mais fortes das primeiras classes. Um Cavaleiro ï¿½ a evoluï¿½ï¿½o dessa classe.";
 				next;
-				show "[Cavaleiro Modesto]";
-				show "Se você é fraco como Espadachim, eu garanto a você, que será fraco quando se consagrar.";
+				mes "[Cavaleiro Modesto]";
+				mes "Se vocï¿½ ï¿½ fraco como Espadachim, eu garanto a vocï¿½, que serï¿½ fraco quando se consagrar.";
 				goto L_Cont1;
 
 			sM_2c:
 				set @score, @score + 5;
-				show "[Cavaleiro Modesto]";
-				show "Hahaha! se você acha que se consagrar como um Cavaleiro seu treino vai ser mais leve, pode esquecer amigo.";
-				show "Quando se adiciona as habilidades e a força do Cavaleiro, os desafios e o treinamento pioram.";
+				mes "[Cavaleiro Modesto]";
+				mes "Hahaha! se vocï¿½ acha que se consagrar como um Cavaleiro seu treino vai ser mais leve, pode esquecer amigo.";
+				mes "Quando se adiciona as habilidades e a forï¿½a do Cavaleiro, os desafios e o treinamento pioram.";
 				goto L_Cont1;
 
 		L_Cont1:
 		next;
-		show "[Cavaleiro Modesto]";
-		show "Deixe-lhe avisar novamente, quando se consagrar como um Cavaleiro, você NÃO poderá voltar a ser um Espadachim.";
+		mes "[Cavaleiro Modesto]";
+		mes "Deixe-lhe avisar novamente, quando se consagrar como um Cavaleiro, vocï¿½ Nï¿½O poderï¿½ voltar a ser um Espadachim.";
 		next;
-		show "[Cavaleiro Modesto]";
-		show "Por isso tenha certeza do que você quer agora, antes de se consagrar, qual a primeira coisa que vem a sua cabeça agora?";
+		mes "[Cavaleiro Modesto]";
+		mes "Por isso tenha certeza do que vocï¿½ quer agora, antes de se consagrar, qual a primeira coisa que vem a sua cabeï¿½a agora?";
 		next;
 		menu "Vou Batalhar.",sM_3, "Voltar para meus amigos.",sM_4, "Saber mais sobre Cavaleiros.",sM_5;
 
 		sM_3:
-			show "[Cavaleiro Modesto]";
-			show "Ok... assim, você entrará em uma tempestade de batalhas sem sentido.....";
+			mes "[Cavaleiro Modesto]";
+			mes "Ok... assim, vocï¿½ entrarï¿½ em uma tempestade de batalhas sem sentido.....";
 			next;
 			menu "Vou ficar mais forte assim.",sM_3a, "... Encontrar meu melhor.",sM_3b, "... Explorar outros lugares.",sM_3c;
 
 			sM_3a:
 				set @score, @score + 10;
-				show "[Cavaleiro Modesto]";
-				show "Espere um pouco tigre. Não se impolgue agora. Você primeiro tem que conhecer os conceitos básicos de um Cavaleiro, antes.";
-				show "Sem isso, você se tornará o mais fraco guerreiro.";
+				mes "[Cavaleiro Modesto]";
+				mes "Espere um pouco tigre. Nï¿½o se impolgue agora. Vocï¿½ primeiro tem que conhecer os conceitos bï¿½sicos de um Cavaleiro, antes.";
+				mes "Sem isso, vocï¿½ se tornarï¿½ o mais fraco guerreiro.";
 				goto L_Cont2;
 
 			sM_3b:
-				show "[Cavaleiro Modesto]";
-				show "Sim! Entendendo sua força e suas fraquezas é muito importante para um Cavaleiro.";
+				mes "[Cavaleiro Modesto]";
+				mes "Sim! Entendendo sua forï¿½a e suas fraquezas ï¿½ muito importante para um Cavaleiro.";
 				goto L_Cont2;
 
 			sM_3c:
-				show "[Cavaleiro Modesto]";
-				show "Como um Cavaleiro, você deseja ser hábil, para treinar em outros lugares que antes, como Espadachim não podia.";
-				show "Mas se cuide. Se ir muito depressa você irá encontrar um mundo de problemas.";
+				mes "[Cavaleiro Modesto]";
+				mes "Como um Cavaleiro, vocï¿½ deseja ser hï¿½bil, para treinar em outros lugares que antes, como Espadachim nï¿½o podia.";
+				mes "Mas se cuide. Se ir muito depressa vocï¿½ irï¿½ encontrar um mundo de problemas.";
 				goto L_Cont2;
 
 		sM_4:
-			show "[Cavaleiro Modesto]";
-			show "O que está esperando?";
+			mes "[Cavaleiro Modesto]";
+			mes "O que estï¿½ esperando?";
 			next;
 			if(Sex) menu "Um amigo.",sM_4a, "Um Vilarejo.",sM_4b, "Minha namorada.",sM_4c; else menu "Um amigo.",sM_4a, "Um Vilarejo.",sM_4b, "Meu namorado.",sM_4c;
 
 			sM_4a:
-				show "[Cavaleiro Modesto]";
-				if(Sex) show "Sim, ela ficará feliz em vê-lo. Agora, você poderá proteger seus amigos quando eles estiverem em perigo."; else show "Sim, ele ficará feliz em vê-la. Agora, você poderá proteger seus amigos quando eles estiverem em perigo.";
+				mes "[Cavaleiro Modesto]";
+				if(Sex) mes "Sim, ela ficarï¿½ feliz em vï¿½-lo. Agora, vocï¿½ poderï¿½ proteger seus amigos quando eles estiverem em perigo."; else mes "Sim, ele ficarï¿½ feliz em vï¿½-la. Agora, vocï¿½ poderï¿½ proteger seus amigos quando eles estiverem em perigo.";
 				goto L_Cont2;
 
 			sM_4b:
-				show "[Cavaleiro Modesto]";
-				show "Um vilarejo...... oh... ";
+				mes "[Cavaleiro Modesto]";
+				mes "Um vilarejo...... oh... ";
 				goto L_Cont2;
 
 			sM_4c:
-				show "[Cavaleiro Modesto]";
-				show "Oh to vendo! Você irá se consagrar como um Cavaleiro por causa dessa pessoa?";
+				mes "[Cavaleiro Modesto]";
+				mes "Oh to vendo! Vocï¿½ irï¿½ se consagrar como um Cavaleiro por causa dessa pessoa?";
 				next;
-				show "[Cavaleiro Modesto]";
-				if(sex == 1) show "Eu espero que você, agora, possa proteger ela sempre que necessitar!";
-				if(sex == 0) show "Eu espero que você, agora, possa proteger ele sempre que necessitar!";
+				mes "[Cavaleiro Modesto]";
+				if(sex == 1) mes "Eu espero que vocï¿½, agora, possa proteger ela sempre que necessitar!";
+				if(sex == 0) mes "Eu espero que vocï¿½, agora, possa proteger ele sempre que necessitar!";
 				next;
-				show "[Cavaleiro Modesto]";
-				show "Boa sorte para você e seu amor.";
+				mes "[Cavaleiro Modesto]";
+				mes "Boa sorte para vocï¿½ e seu amor.";
 				goto L_Cont2;
 
 		sM_5:
-			show "[Cavaleiro Modesto]";
-			show "O que você quer saber?";
+			mes "[Cavaleiro Modesto]";
+			mes "O que vocï¿½ quer saber?";
 			next;
 			menu "Um lugar tranquilo.",sM_5a, "Um lugar para treinar.",sM_5b, "Um lugar para ganhar dinheiro.",sM_5c;
 
 			sM_5a:
 				set @score, @score + 5;
-				show "[Cavaleiro Modesto]";
-				show "Não existe lugar no mundo completamente tranquilo. Especialmente para um Cavaleiro.";
-				show "Um Cavaleiro sempre espera uma batalha contra fortes e temerosos monstros.";
+				mes "[Cavaleiro Modesto]";
+				mes "Nï¿½o existe lugar no mundo completamente tranquilo. Especialmente para um Cavaleiro.";
+				mes "Um Cavaleiro sempre espera uma batalha contra fortes e temerosos monstros.";
 				goto L_Cont2;
 
 			sM_5b:
-				show "[Cavaleiro Modesto]";
-				show "Pergunte para os outros Cavaleiros que já andaram por Rune-Midgard. Isso seria de grande utilidade.";
+				mes "[Cavaleiro Modesto]";
+				mes "Pergunte para os outros Cavaleiros que jï¿½ andaram por Rune-Midgard. Isso seria de grande utilidade.";
 				goto L_Cont2;
 
 			sM_5c:	
 				set @score, @score + 15;
-				show "[Cavaleiro Modesto]";
-				show "As leis de um Cavaleiro não é fazer riqueza! Um Cavaleiro tem como objetivo, servir e proteger os cidadãos de Rune-Midgard.";
+				mes "[Cavaleiro Modesto]";
+				mes "As leis de um Cavaleiro nï¿½o ï¿½ fazer riqueza! Um Cavaleiro tem como objetivo, servir e proteger os cidadï¿½os de Rune-Midgard.";
 
 		L_Cont2:
 		next;
-		show "[Cavaleiro Modesto]";
-		show "Bem, é só isso. Isso termina meu teste e seu desafio final para se consagrar.";
-		show "Vou dar a minha decisão.....";
+		mes "[Cavaleiro Modesto]";
+		mes "Bem, ï¿½ sï¿½ isso. Isso termina meu teste e seu desafio final para se consagrar.";
+		mes "Vou dar a minha decisï¿½o.....";
 		next;
 
 		if (@score == 0) goto L_1;
@@ -1751,67 +1751,67 @@ M_Menu:
 
 		L_0:
 			set KNIGHT_Q2, 1;
-			show "[Cavaleiro Modesto]";
-			show "Embora não gostaria de falar isso, mas hoje.....";
+			mes "[Cavaleiro Modesto]";
+			mes "Embora nï¿½o gostaria de falar isso, mas hoje.....";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Eu acho que você não está pronto para ser um Cavaleiro.";
-			show "Eu acho melhor você continuar como um Espadachim por mais algum tempo.";
+			mes "[Cavaleiro Modesto]";
+			mes "Eu acho que vocï¿½ nï¿½o estï¿½ pronto para ser um Cavaleiro.";
+			mes "Eu acho melhor vocï¿½ continuar como um Espadachim por mais algum tempo.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Ser um Cavaleiro requer não só força, mas diciplina e valores éticos.";
-			show "Um Cavaleiro tem como objetivo proteger e ajudar os que precisam, e ele deve ser puro de mente e corpo.";
+			mes "[Cavaleiro Modesto]";
+			mes "Ser um Cavaleiro requer nï¿½o sï¿½ forï¿½a, mas diciplina e valores ï¿½ticos.";
+			mes "Um Cavaleiro tem como objetivo proteger e ajudar os que precisam, e ele deve ser puro de mente e corpo.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Suas respostas não mostraram esses valores, para ser um bom candidato a Knight.";
+			mes "[Cavaleiro Modesto]";
+			mes "Suas respostas nï¿½o mostraram esses valores, para ser um bom candidato a Knight.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Se você realmente quer se consagrar como um, eu sugiro que gaste mais seu tempo em pensar na idéia e volte para me ver.";
+			mes "[Cavaleiro Modesto]";
+			mes "Se vocï¿½ realmente quer se consagrar como um, eu sugiro que gaste mais seu tempo em pensar na idï¿½ia e volte para me ver.";
 			close;
 		
 		L_1:
 			set KNIGHT_Q, 7;
 			set KNIGHT_Q2, 0;
-			show "[Cavaleiro Modesto]";
-			show "Eu adorei a chance de fazer essas perguntas a você. Você me lembra muito, quando eu era jovem. Hehehe.";
+			mes "[Cavaleiro Modesto]";
+			mes "Eu adorei a chance de fazer essas perguntas a vocï¿½. Vocï¿½ me lembra muito, quando eu era jovem. Hehehe.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "O mais importante.... PARABÉNS!";
+			mes "[Cavaleiro Modesto]";
+			mes "O mais importante.... PARABï¿½NS!";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "você fez um excelente trabalho, e suas respostas provam que você está pronto para se tornar um Cavaleiro.";
+			mes "[Cavaleiro Modesto]";
+			mes "vocï¿½ fez um excelente trabalho, e suas respostas provam que vocï¿½ estï¿½ pronto para se tornar um Cavaleiro.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Você fez uma grande escolha! Fale com o Chefe dos Cavaleiros e permita que ele lhe dê a honra de ser um Cavaleiro de Prontera.";
+			mes "[Cavaleiro Modesto]";
+			mes "Vocï¿½ fez uma grande escolha! Fale com o Chefe dos Cavaleiros e permita que ele lhe dï¿½ a honra de ser um Cavaleiro de Prontera.";
 			close;
 
 		L_2:
 			set KNIGHT_Q, 7;
 			set KNIGHT_Q2, 0;
-			show "[Cavaleiro Modesto]";
-			show "Foi muito bom falar com você. Como um Cavaleiro, eu espero que você expanda sua mente e complete seu potencial.";
+			mes "[Cavaleiro Modesto]";
+			mes "Foi muito bom falar com vocï¿½. Como um Cavaleiro, eu espero que vocï¿½ expanda sua mente e complete seu potencial.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Isso está certo. Você passou em meu teste e agora poderá ser consagrado como um de nós. Parabéns!";
+			mes "[Cavaleiro Modesto]";
+			mes "Isso estï¿½ certo. Vocï¿½ passou em meu teste e agora poderï¿½ ser consagrado como um de nï¿½s. Parabï¿½ns!";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Agora vá falar com o Chefe dos Cavaleiros e permita que ele o consagre como um Cavaleiro de Prontera.";
+			mes "[Cavaleiro Modesto]";
+			mes "Agora vï¿½ falar com o Chefe dos Cavaleiros e permita que ele o consagre como um Cavaleiro de Prontera.";
 			close;
 
 		L_3:
 			set KNIGHT_Q, 7;
 			set KNIGHT_Q2, 0;
-			show "[Cavaleiro Modesto]";
-			show "Eu aprecio um candidato que responda todas as minhas perguntas, para ser honesto, eu estou muito preocupado com o que ouvi aqui.";
+			mes "[Cavaleiro Modesto]";
+			mes "Eu aprecio um candidato que responda todas as minhas perguntas, para ser honesto, eu estou muito preocupado com o que ouvi aqui.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Ainda, você tem alguns dos atributos que estamos procurando em um candidato a Cavaleiro.";
+			mes "[Cavaleiro Modesto]";
+			mes "Ainda, vocï¿½ tem alguns dos atributos que estamos procurando em um candidato a Cavaleiro.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Me desculpe, mas você tem que trabalhar duro, se quiser ser um bom Cavaleiro. Parabéns! Você passou no meu teste.";
+			mes "[Cavaleiro Modesto]";
+			mes "Me desculpe, mas vocï¿½ tem que trabalhar duro, se quiser ser um bom Cavaleiro. Parabï¿½ns! Vocï¿½ passou no meu teste.";
 			next;
-			show "[Cavaleiro Modesto]";
-			show "Agora vá falar com o Chefe dos Cavaleiros e permita que ele o consagre como um Cavaleiro de Prontera.";
+			mes "[Cavaleiro Modesto]";
+			mes "Agora vï¿½ falar com o Chefe dos Cavaleiros e permita que ele o consagre como um Cavaleiro de Prontera.";
 			close;
 
 	M_End:

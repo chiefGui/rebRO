@@ -1,0 +1,111 @@
+-	script	Mensageira::Messenger	4_CAT_DOWN,{
+	.NPCName$ = callfunc("P_Purple", "[Lessie, a Mensageira]");
+	.isPremium = callfunc("F_IsPremium");
+	.regularCost = 30000;
+	.regularCostMessage$ = "30,000 Zenys";
+	.announceTimeoutInSeconds = 600;
+	.announceTimeoutInMinutes = .announceTimeoutInSeconds / 60;
+
+	function	ComposeMessage;
+	function	ConfirmMessage;
+
+	if (LastTimeSent > gettimetick(2)) {
+		mes .NPCName$;
+		mes "Calma aí colega, *mrrrrr*... Sou uma só, e o meu tempo de espera é de " + .announceTimeoutInMinutes + " minutos.";
+		close;
+	}
+	
+	mes .NPCName$;
+	mes "*Meow*... Aposto que você não imaginava que eu era uma... gata... certo? *Meow*";
+
+	next;
+	mes .NPCName$;
+	mes "Okay... *meow* Ao ponto que tenho mensagens para entregar... *Meow*";
+	
+	next;
+	mes .NPCName$;
+	mes "*mrrrowww* mensagens globais para Premium é na faixa.. *wrmaaooo* para os demais, *purr*.. " + callfunc("P_Green", .regularCostMessage$) + ".";
+
+	next;
+	mes .NPCName$;
+	mes "Fechamos?";
+
+	if (.isPremium) {
+		.@firstMenu$ = "De graça, até beijo em Bathory!";
+	} else {
+		.@firstMenu$ = "Err... sim? (" + callfunc("P_Green", .regularCostMessage$) + ")";
+	}
+
+	switch(select(.@firstMenu$, callfunc("P_LightGray", "*ignorar a gata falante*"))) {
+		case 1:
+			if (!.isPremium && Zeny < .regularCost) {
+				goto M_OutOfZeny;
+			}
+
+			next;
+			mes .NPCName$;
+			mes "Digita uma mensagem objetiva porque " + callfunc("P_Blue", "só envio mensagens de " + .announceTimeoutInMinutes + " em " + .announceTimeoutInMinutes + " minutos") + "... *mrrrooon*";
+
+			ConfirmMessage(ComposeMessage());
+
+			close;
+		case 2:
+			goto M_Leave;
+	}
+
+	close;
+
+	function	ComposeMessage {
+		input .@message$;
+
+		return .@message$;
+	}
+
+	function	ConfirmMessage {
+		next;
+		mes .NPCName$;
+		mes "Confere aí sua mensagem:";
+		mes callfunc("P_Orange", "\"" + getarg(0) + "\"");
+
+		switch(select("É isso mesmo!", "Quero reescrever...", callfunc("P_LightGray", "Mudei de ideia..."))) {
+			case 1:
+				if (!.isPremium && Zeny < .regularCost) {
+					goto M_OutOfZeny;
+				}
+
+				if (!.isPremium && Zeny > .regularCost) {
+					set Zeny, Zeny - .regularCost;
+				}
+
+				announce("[" + strcharinfo(0) + "]: " + getarg(0), bc_all, 0xFFFFFF);
+				set LastTimeSent, gettimetick(2) + .announceTimeoutInSeconds;
+
+				next;
+				mes .NPCName$;
+				mes "**meoooow** valeu, humano";
+				close;
+			case 2:
+				ConfirmMessage(ComposeMessage());
+				break;
+			case 3:
+				goto M_Leave;
+		}
+	}
+
+	M_OutOfZeny:
+		next;
+		mes .NPCName$;
+		mes "Nem 30k você tem?!?!?";
+		mes "\n";
+		mes "******HISSSS*******";
+		emotion e_omg;
+		close;
+
+	M_Leave:
+		next;
+		mes .NPCName$;
+		mes "*hissssssss*";
+		close;
+}
+
+alberta,29,245,5	duplicate(Messenger)	Mensageira	4_CAT_DOWN

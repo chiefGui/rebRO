@@ -1,8 +1,33 @@
 izlude,102,117,6	script	Mestra das Classes	4_F_RACHOLD,{
+	function	Confirm_Job_Change;
+	function	Second_Job_Menu;
+
 	set .NPCName$, callfunc("P_Blue", "[Dandara, a Mestra das Classes]");
 	set .isPremium, callfunc("F_IsPremium");
-	set .nonPremiumCost, 20000;
-	set .@nonPremiumCostName$, "20,000";
+	set .isNovice, eaclass() == 0;
+
+	if (.isNovice) {
+		set .nonPremiumCost, 20000;
+		set .nonPremiumCostName$, "20,000";
+	}
+
+	if (!.isNovice) {
+		set .nonPremiumCost, 70000;
+		set .nonPremiumCostName$, "70,000";
+	}
+	
+
+	if (Sex == 0) {
+		setarray .@firstJobsNames$, "Arqueira", "Espadachim", "Gatuna", "Maga", "Mercadora", "Noviça";
+		setarray .@secondJobsNames$, "Caçadora", "Odalisca", "Cavaleira", "Templária", "Mercenária", "Arruaceira", "Bruxa", "Sábia", "Ferreira", "Alquimista", "Sacerdotisa", "Monja";
+		.heSheSuffix$ = "uma";
+	}
+
+	if (Sex == 1) {
+		setarray .@firstJobsNames$, "Arqueiro", "Espadachim", "Gatuno", "Mago", "Mercador", "Noviço";
+		setarray .@secondJobsNames$, "Caçador", "Bardo", "Cavaleiro", "Templário", "Mercenário", "Arruaceiro", "Bruxo", "Sábio", "Ferreiro", "Alquimista", "Sacerdote", "Monge";
+		.heSheSuffix$ = "um";
+	}
 
 	mes .NPCName$;
 	if (Sex == 1) {
@@ -19,7 +44,16 @@ izlude,102,117,6	script	Mestra das Classes	4_F_RACHOLD,{
 	switch(select("Quero mudar minha profissão!", callfunc("P_LightGray", "Estou só de passagem..."))) {
 		case 1:
 			next;
+
 			mes .NPCName$;
+			if (eaclass() > 6) {
+				mes "Você já está na sua evolução máxima, a segunda classe!";
+				mes "\n";
+				mes "Nos falamos no futuro, jovem...";
+				close;
+				return;
+			}
+
 			mes "Perfeito! Finalmente mais alguém para eu colocar minhas pesquisas em prática.";
 			next;
 
@@ -32,41 +66,155 @@ izlude,102,117,6	script	Mestra das Classes	4_F_RACHOLD,{
 			}
 
 			mes .NPCName$;
-			mes "Como você não é Premium, vou precisar de ajuda para custear os meus gastos com a sua troca de profissão.";
+			mes "Por você não ser Premium, preciso de ajuda para custear os meus gastos com a sua troca de profissão.";
 			next;
 
-			mes .NPCName$;
-			mes "Para isso, sou obrigada a te cobrar " + callfunc("P_Red", .@nonPremiumCostName$ + " Zenys") + ". Pode ser?";
-			menu callfunc("P_Green", "Claro!"), M_CheckZeny, callfunc("P_LightGray", "Preciso pensar melhor..."), M_Farewell;
-			break;
+			if (.isNovice) {
+				mes .NPCName$;
+				mes "Como você ainda é " + .heSheSuffix$ + " Aprendiz, vou te cobrar apenas " + callfunc("P_Red", .nonPremiumCostName$ + " Zenys") + ". Pode ser?";
+				menu callfunc("P_Green", "Me parece bom!"), M_ChooseJob, callfunc("P_LightGray", "Preciso pensar melhor..."), M_Farewell;
+				break;
+			}
+			
+			if (!.isNovice) {
+				mes .NPCName$;
+				mes "Por você não mais ser " + .heSheSuffix$ + " Aprendiz, o meu preço para a segunda classe é de " + callfunc("P_Red", .nonPremiumCostName$ + " Zenys") + ". O que acha?";
+				menu callfunc("P_Green", "Por mim tudo bem!"), M_ChooseJob, callfunc("P_LightGray", "Volto mais tarde..."), M_Farewell;
+			}
 		case 2:
 			goto M_Farewell;
 	}
 
-	M_CheckZeny:
-		next;
-		if (Zeny < .nonPremiumCost) {
-			mes .NPCName$;
-			mes "Infelizmente eu não posso te ajudar. Parece que você não tem a quantidade de Zeny necessária.";
-			mes "\n";
-			mes "Por favor, volte outra hora.";
-			close;
-			return;
-		}
-		goto M_ChooseJob;
-
 	M_ChooseJob:
+		next;
 		mes .NPCName$;
 		if (Class == Job_Novice) {
 			if (JobLevel < 10) {
 				mes "Eu adoraria te ajudar, mas por uma exigência do Conselho de Prontera, apenas Aprendizes com nível de classe 10 podem mudar de profissão.";
-				mes "\n";
-				mes "Volte quando estiver pronto!";
 				close;
+				return;
+			}
+
+			if (SkillPoint) {
+				mes "Por favor, gaste todos os seus pontos de habilidade antes de prosseguirmos com o processo.";
+				close;
+			}
+
+			mes "Ok...";
+			mes "\n";
+			mes "Ao que tudo indica, você está em forma para sua próxima classe!";
+			next;
+			
+			mes .NPCName$;
+			mes "O que você gostaria de se tornar?";
+
+			for(set .@i, 0; .@i < getarraysize(.@firstJobsNames$); set .@i, .@i + 1)
+				set .@menu$, .@menu$ + "- " + .@firstJobsNames$[.@i] + ":";
+			
+			switch(select(.@menu$, callfunc("P_LightGray", "Preciso pensar melhor..."))) {
+				case 1:
+					next;
+					Confirm_Job_Change(.@firstJobsNames$[0], 3);
+					break;
+				case 2:
+					next;
+					Confirm_Job_Change(.@firstJobsNames$[1], 1);
+					break;
+				case 3:
+					next;
+					Confirm_Job_Change(.@firstJobsNames$[2], 6);
+					break;
+				case 4:
+					next;
+					Confirm_Job_Change(.@firstJobsNames$[3], 2);
+					break;
+				case 5:
+					next;
+					Confirm_Job_Change(.@firstJobsNames$[4], 5);
+					break;
+				case 6:
+					next;
+					Confirm_Job_Change(.@firstJobsNames$[5], 4);
+					break;
 			}
 
 			close;
 		}
+
+		if (!.isNovice) {
+			if (JobLevel < 40) {
+				mes "Para à segunda classe, você precisa de um nível de classe de no mínimo 40.";
+				mes "\n";
+				mes "Por favor, volte mais tarde.";
+				close;
+			}
+
+			if (SkillPoint) {
+				mes "Apesar de você já ter nível suficiente para a próxima classe, preciso que você gaste todos os seus pontos de habilidade";
+				close;
+			}
+
+			mes "Então, finalmente, a tão aguardada segunda classe!";
+			mes "\n";
+			mes "Qual será a sua próxima empreitada?";
+
+			switch (Class) {
+				case Job_Archer:
+					set .@menu$, "- " + .@secondJobsNames$[0] + ":" + "- " + .@secondJobsNames$[1] + ":";
+					Second_Job_Menu(.@menu$, .@secondJobsNames$[0], 11, .@secondJobsNames$[1], 19);
+					break;
+				case Job_Swordman:
+					set .@menu$, "- " + .@secondJobsNames$[2] + ":" + "- " + .@secondJobsNames$[3] + ":";
+					Second_Job_Menu(.@menu$, .@secondJobsNames$[2], 7, .@secondJobsNames$[3], 14);
+					break;
+				case Job_Thief:
+					set .@menu$, "- " + .@secondJobsNames$[4] + ":" + "- " + .@secondJobsNames$[5] + ":";
+					Second_Job_Menu(.@menu$, .@secondJobsNames$[4], 12, .@secondJobsNames$[5], 17);
+					break;
+				case Job_Mage:
+					set .@menu$, "- " + .@secondJobsNames$[6] + ":" + "- " + .@secondJobsNames$[7] + ":";
+					Second_Job_Menu(.@menu$, .@secondJobsNames$[6], 9, .@secondJobsNames$[3], 16);
+					break;
+				case Job_Merchant:
+					set .@menu$, "- " + .@secondJobsNames$[8] + ":" + "- " + .@secondJobsNames$[9] + ":";
+					Second_Job_Menu(.@menu$, .@secondJobsNames$[8], 10, .@secondJobsNames$[9], 18);
+					break;
+				case Job_Acolyte:
+					set .@menu$, "- " + .@secondJobsNames$[10] + ":" + "- " + .@secondJobsNames$[11] + ":";
+					Second_Job_Menu(.@menu$, .@secondJobsNames$[10], 7, .@secondJobsNames$[3], 11);
+					break;
+			}
+			
+			switch(select(.@menu$, callfunc("P_LightGray", "Preciso pensar melhor..."))) {
+				case 1:
+					next;
+					Confirm_Job_Change(.@secondJobsNames$[0], 3);
+					break;
+				case 2:
+					next;
+					Confirm_Job_Change(.@secondJobsNames$[1], 1);
+					break;
+				case 3:
+					next;
+					Confirm_Job_Change(.@secondJobsNames$[2], 6);
+					break;
+				case 4:
+					next;
+					Confirm_Job_Change(.@secondJobsNames$[3], 2);
+					break;
+				case 5:
+					next;
+					Confirm_Job_Change(.@secondJobsNames$[4], 5);
+					break;
+				case 6:
+					next;
+					Confirm_Job_Change(.@secondJobsNames$[5], 4);
+					break;
+			}
+
+			close;
+		}
+
 		close;
 
 
@@ -75,6 +223,59 @@ izlude,102,117,6	script	Mestra das Classes	4_F_RACHOLD,{
 		mes .NPCName$;
 		mes "Que hoje seja melhor do que ontem!";
 		close;
+
+	function	Confirm_Job_Change	{
+		set .@jobName$, getarg(0);
+		set .jobId, getarg(1);
+		
+		mes .NPCName$;
+		mes "Hm... Então " + callfunc("P_Blue", .@jobName$) + " é o que você quer se tornar!";
+		mes "\n";
+		mes "A certeza é absoluta?";
+		next;
+	
+		switch(select("Absolutíssima!", callfunc("P_LightGray", "Não, deixe-me pensar um pouco mais..."))) {
+			case 1:
+				if (!.isPremium && Zeny < .nonPremiumCost) {
+					mes .NPCName$;
+					mes "Hm, espera aí... Err... me desculpe, mas não vou poder te transformar em " + callfunc("P_Blue", .@jobName$) + ".";
+					mes "\n";
+					mes "Como eu disse, " + callfunc("P_Red", .nonPremiumCostName$ + " Zenys") + " são necessários para completar a sua transformação.";
+					break;
+				}
+
+				mes .NPCName$;
+				mes "Voilà! ~";
+				mes "\n";
+				mes callfunc("P_Blue", .@jobName$) + " agora você é! Faça um bom uso das suas habilidades!";
+				jobchange .jobId;
+
+				if (!.isPremium) {
+					set Zeny, Zeny - .nonPremiumCost;
+				}
+
+				break;
+			case 2:
+				goto M_Farewell;
+		}
+	
+		close;
+	}
+
+	function	Second_Job_Menu	{
+		switch(select(getarg(0), callfunc("P_LightGray", "Preciso pensar melhor..."))) {
+			case 1:
+				next;
+				Confirm_Job_Change(getarg(1), getarg(2));
+				break;
+			case 2:
+				next;
+				Confirm_Job_Change(getarg(3), getarg(4));
+				break;
+			case 3:
+				goto M_Farewell;
+		}
+	}
 
 	close;
 }

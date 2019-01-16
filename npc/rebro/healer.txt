@@ -58,7 +58,7 @@
 }
 
 payon,79,116,5	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-prontera,168,179,3	duplicate(Healer)	Curandeira	4_F_ACOLYTE
+prontera,140,174,6	duplicate(Healer)	Curandeira	4_F_ACOLYTE
 geffen,122,62,0	duplicate(Healer)	Curandeira	4_F_ACOLYTE
 morocc_mem,158,97,4	duplicate(Healer)	Curandeira	4_F_ACOLYTE
 alberta,25,238,5	duplicate(Healer)	Curandeira	4_F_ACOLYTE

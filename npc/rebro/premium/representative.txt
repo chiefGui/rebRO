@@ -1,1 +1,1 @@
-prontera,136,179,7	cashshop	Representante Premium	4_M_2NDPRIN1,33333:8000,33334:20000,33336:4000
+prontera,132,166,7	cashshop	Representante Premium	4_M_2NDPRIN1,33333:8000,33334:20000,33336:4000

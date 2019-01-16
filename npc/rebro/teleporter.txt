@@ -1,0 +1,70 @@
+-	script	Teleportadora::Warper	4_F_AGENTKAFRA,{
+	.NPCName$ = callfunc("P_Green", "[Teleportadora]");
+	.isPremium = callfunc("F_IsPremium");
+	.nonPremiumCost = 1200;
+	.nonPremiumCostMessage$ = "1,200 Zenys";
+
+	mes .NPCName$;
+	mes "Oi, " + callfunc("P_Cyan", strcharinfo(0)) + "! Para onde você gostaria de ir?";
+
+	.@destination$ = select("Alberta", "Al De Baran", "Comodo", "Geffen", "Izlude", "Juno", "Lutie", "Morroc", "Prontera", callfunc("P_LightGray", "Nenhum lugar."));
+
+	if (!.isPremium) {
+		next;
+		mes .NPCName$;
+		mes "Como você não é Premium, vou lhe cobrar " + callfunc("P_Red", .nonPremiumCostMessage) + " por teleporte. Tudo bem?";
+		switch(select("Sim. Pode me teleportar.", callfunc("P_LightGray", "Deixa pra lá..."))) {
+			case 1:
+				goto M_Teleport;
+				break;
+			case 2:
+				goto M_Leave;
+				break;
+		}
+		return;
+	}
+
+	goto M_Teleport;
+
+	M_Teleport:
+		if (!.isPremium) {
+			if (Zeny < .nonPremiumCost) {
+				next;
+				mes .NPCName$;
+				mes "Sinto muito, mas você não tem Zeny suficiente.";
+				close;
+			}
+
+			set Zeny, Zeny - .nonPremiumCost;
+		}
+
+		switch(.@destination$) {
+			case 1: warp "alberta", 20, 233; end;
+			case 2: warp "aldebaran", 140, 131; end;
+			case 3: warp "comodo", 209, 143; end;
+			case 4: warp "geffen", 118, 40; end;
+			case 5: warp "izlude", 128, 114; end;
+			case 6: warp "yuno", 157, 176; end;
+			case 7: warp "xmas", 147, 134; end;
+			case 8: warp "morocc_mem", 156, 93; end;
+			case 9: warp "prontera", 156, 191; end;
+			case 10: goto M_Leave;
+		}
+	
+	M_Leave:
+		next;
+		mes .NPCName$;
+		mes "Okay, até logo!";
+		close;
+}
+
+payon,77,114,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+prontera,142,175,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+geffen,125,67,2	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+morocc_mem,165,87,4	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+alberta,30,229,0	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+izlude,124,99,6	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+aldebaran,135,121,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+xmas,140,133,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+comodo,179,145,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+yuno,148,185,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA

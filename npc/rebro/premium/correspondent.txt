@@ -213,4 +213,4 @@
 		close;
 }
 
-prontera,136,182,5	duplicate(VIPGate)	Correspondente Premium	4_M_4THPRIN1
+prontera,134,168,5	duplicate(VIPGate)	Correspondente Premium	4_M_4THPRIN1

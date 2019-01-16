@@ -70,7 +70,7 @@
 		mes "Bom, os jogadores Premium contam com vários NPCs parceiros, e alguns até mesmo exclusivos!";
 		mes "\n";
 		mes "Sobre qual você gostaria de saber mais?";
-		switch(select("Mestra das Classes", "Estilista", "Anunciante", "Banqueiros", "Curandeiros", "Ah, deixa pra lá!")) {
+		switch(select("Mestra das Classes", "Habilidades de Platina", "Estilista", "Anunciante", "Banqueiros", "Curandeiros", "Ah, deixa pra lá!")) {
 			case 1:
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
@@ -85,6 +85,17 @@
 			case 2:
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Se você precisar das suas Habilidades de Platina, tem uma mulher, " + callfunc("P_Blue", "Valentina") + ", em Geffen.";
+				mes "\n";
+				mes "Ela acredita que o conhecimento deve ser livre, portanto, não conseguimos trazê-la para a Corporação Premium.";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Entretanto, para jogadores Premium, ela conseguiu um desconto pelos serviços. Se você estiver precisando, encontre-a em " + callfunc("P_Orange", "Geffen") + ".";
+				next;
+				goto M_NPC_More;
+			case 3:
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
 				mes "Ah, o " + callfunc("P_Blue", "Viktor") + "! Ele é, sem dúvidas, o aventureiro mais estiloso do continente!";
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
@@ -97,7 +108,7 @@
 				mes "Caso você queria dar um trato no visual, dá uma passadinha em " + callfunc("P_Orange", "Comodo") + ". Parece que é lá que ele quer se apostentar.";
 				next;
 				goto M_NPC_More;
-			case 3:
+			case 4:
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
 				mes "A " + callfunc("P_Blue", "Mirana") + ", mais conhecida como " + callfunc("P_Blue", "A Anunciante") + " é uma ex-engenheira de Rune-Midgard que hoje se especializa em sinais radiofrequência.";
@@ -114,7 +125,7 @@
 				mes "Agora a parte boa é que os jogadores Premium recebem um descontão! Quer saber mais? Dá uma passadinha em  " + callfunc("P_Orange", "Morroc") + " e troque uma ideia com ela!";
 				next;
 				goto M_NPC_More;
-			case 4:
+			case 5:
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
 				mes "A-há! Apesar dos bancos terem a má fama de serem injustos e cobrarem taxas abusivas, nós, da Corporação Premium, temos o orgulho em anunciar que conseguimos não só fidelidade, como isenção total de taxas e juros!";
@@ -135,7 +146,7 @@
 				next;
 				goto M_NPC_More;
 				break;
-			case 5:
+			case 6:
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
 				mes "Às vezes, nem sempre temos um Noviço, Sacerdote ou Monge para nos curar. Portanto, para a sua conveniência, a Corporação Premium contratou uma equipe justamente só para isso!";
@@ -147,7 +158,7 @@
 				next;
 				goto M_NPC_More;
 				break;
-			case 6:
+			case 7:
 				goto M_Exit;
 		}
 		close;
@@ -200,11 +211,6 @@
 		mes "Belezura, rökeiro! A gente se vê por aí!";
 		emotion e_scissors, 0;
 		close;
-
-	// if (callfunc("F_IsPremium") == true) {
-	// 	mes "Parece que você já é um jogador Premium!";
-	// 	return;
-	// }
 }
 
 prontera,136,182,5	duplicate(VIPGate)	Correspondente Premium	4_M_4THPRIN1

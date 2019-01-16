@@ -1,0 +1,104 @@
+geffen,128,48,6	script	Habilidades de Platina	4_GEFFEN_09,{
+	.NPCName$ = callfunc("P_Cyan", "[Valentina]");
+
+	.premiumCost = 150000;
+	.regularCost = 300000;
+
+	.premiumCostName$ = "150,000 Zenys";
+	.regularCostName$ = "300,000 Zenys";
+
+	mes .NPCName$;
+	mes "O conhecimento deve ser livre e gratuito, você não acha?";
+
+	switch(select("Com certeza!", callfunc("P_LightGray", "*deixar ela falando sozinha*"))) {
+		case 1:
+			next;
+			mes .NPCName$;
+			mes "Quanto mais conhecimento no universo, mais evolução!";
+
+			next;
+			mes .NPCName$;
+			mes "A propósito, me chamo Valentina, e a minha especialização acadêmica é o estudo das habilidades e magias utilizadas pelos aventureiros de Rune-Midgard.";
+
+			next;
+			mes .NPCName$;
+			mes "Com o que posso lhe ajudar?";
+
+			switch(select("Você trabalha com Habiliades de Platina?", callfunc("P_LightGray", "Só estou de passagem, obrigado."))) {
+				case 1:
+					next;
+					mes .NPCName$;
+					mes "Trabalho sim, obrigado por perguntar. Se você quiser aprender sobre elas, só tenho cobrado o custo do material necessário para ensinar.";
+
+					next;
+					mes .NPCName$;
+					mes "Como tenho convênio com a Corporação Premium, o preço para aventureiros Premium é " + callfunc("P_Green", .premiumCostName$) + ".";
+					mes "\n";
+					mes "Para os demais aventureiros, " + callfunc("P_Green", .regularCostName$) + ".";
+					mes "\n";
+					mes "Lembrando: este é o custo para aprender todas as Habilidades de Platina para a sua classe.";
+
+					next;
+					mes .NPCName$;
+					mes "E aí, o que me diz? Vamos aprender algo novo hoje?";
+
+					
+					.isPremium = callfunc("F_IsPremium");
+
+					if (.isPremium) {
+						.@learnMenu$ = "Por favor, me ensine! (" + callfunc("P_Green", .premiumCostName$) + ")";
+						.@actualCost = .premiumCost;
+					} else {
+						.@learnMenu$ = "Por favor, me ensine! (" + callfunc("P_Green", .regularCostName$) + ")";
+						.@actualCost = .regularCost;
+					}
+
+					switch(select(.@learnMenu$, callfunc("P_LightGray", "O conhecimento não deveria ser gratuito?"))) {
+						case 1:
+							if (Zeny < .@actualCost) {
+								next;
+								mes .NPCName$;
+								mes "Tempo é conhecimento, aventureiro. Enquanto você não tiver Zeny suficiente, eu não consigo te ensinar.";
+								break;
+							}
+
+							switch(BaseClass) {
+								case 0: skill 143,1,0; break;
+								case 1: skill 144,1,0; skill 145,1,0; skill 146,1,0; break;
+								case 2: skill 157,1,0; break;
+								case 3: skill 147,1,0; skill 148,1,0; break;
+								case 4: skill 156,1,0; break;
+								case 5: skill 153,1,0; skill 154,1,0; skill 155,1,0; break;
+								case 6: skill 149,1,0; skill 150,1,0; skill 151,1,0; skill 152,1,0; break;
+								default: break;
+							}
+
+							set Zeny, Zeny - .@actualCost;
+
+							next;
+							mes .NPCName$;
+							mes "Prontinho! Agora você vai além -- acredite em mim.";
+							break;
+						case 2:
+							next;
+							mes .NPCName$;
+							mes "Livros, revistas, artigos científicos devem ser gratuitos... Mas assim como você, professores, mentores, instrutores e qualquer tipo de lecionador precisa comer também.";
+							emotion e_dots;
+							close;
+					}
+					break;
+
+				case 2:
+					goto M_Exit;
+			}
+
+		case 2:
+			goto M_Exit;
+	}
+
+	M_Exit:
+		next;
+		mes .NPCName$;
+		mes "Nunca pare de aprender!";
+		close;
+}

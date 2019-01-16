@@ -181,7 +181,7 @@ izlude,102,117,6	script	Mestra das Classes	4_F_RACHOLD,{
 					break;
 				case Job_Acolyte:
 					set .@menu$, "- " + .@secondJobsNames$[10] + ":" + "- " + .@secondJobsNames$[11] + ":";
-					Second_Job_Menu(.@menu$, .@secondJobsNames$[10], 7, .@secondJobsNames$[3], 11);
+					Second_Job_Menu(.@menu$, .@secondJobsNames$[10], 8, .@secondJobsNames$[3], 15);
 					break;
 			}
 			

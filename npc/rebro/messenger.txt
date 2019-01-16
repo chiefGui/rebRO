@@ -1,5 +1,5 @@
 -	script	Mensageira::Messenger	4_CAT_DOWN,{
-	.NPCName$ = callfunc("P_Purple", "[Lessie, a Mensageira]");
+	.NPCName$ = callfunc("P_Purple", "[Mirana, a Mensageira]");
 	.isPremium = callfunc("F_IsPremium");
 	.regularCost = 30000;
 	.regularCostMessage$ = "30,000 Zenys";

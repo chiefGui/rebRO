@@ -70,7 +70,7 @@
 		mes "Bom, os jogadores Premium contam com vários NPCs parceiros, e alguns até mesmo exclusivos!";
 		mes "\n";
 		mes "Sobre qual você gostaria de saber mais?";
-		switch(select("Mestra das Classes", "Habilidades de Platina", "Estilista", "Anunciante", "Banqueiros", "Curandeiras", "Ah, deixa pra lá!")) {
+		switch(select("Mestra das Classes", "Habilidades de Platina", "Estilista", "Mensageira", "Banqueiros", "Curandeiras", "Ah, deixa pra lá!")) {
 			case 1:
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
@@ -111,7 +111,7 @@
 			case 4:
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
-				mes "A " + callfunc("P_Blue", "Mirana") + ", mais conhecida como " + callfunc("P_Blue", "A Anunciante") + " é uma ex-engenheira de Rune-Midgard que hoje se especializa em sinais radiofrequência.";
+				mes "A " + callfunc("P_Blue", "Mirana") + ", mais conhecida como " + callfunc("P_Blue", "A Mensageira") + " é uma ex-engenheira de Rune-Midgard que hoje se especializa em sinais radiofrequência.";
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
 				mes "O seu principal serviço são as famosas " + callfunc("P_Blue", "Mensageis Globais") + ", que alcançam todos os aventureiros de Rune-Migard.";
@@ -119,10 +119,14 @@
 				mes "Procurando um clã? Vendendo algum equipamento? Comprando alguma carta? Com certeza uma Mensagem Global tem o alcance que você precisa!";
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
-				mes "Infelizmente (ou não, depende do ponto de vista, rs) a Corporação Premium não conseguiu fechar um acordo de fidelidade com ela. Portanto, todos os jogadores têm acesso aos seus serviços.";
+				mes "A Corporação Premium possui conveniência com ela, o que significa que jogadores Premium não pagam nada pelos seus serviços! I-ha!";
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
-				mes "Agora a parte boa é que os jogadores Premium recebem um descontão! Quer saber mais? Dá uma passadinha em  " + callfunc("P_Orange", "Morroc") + " e troque uma ideia com ela!";
+				mes "Quer saber mais? Dá uma passadinha em " + callfunc("P_Orange", "Alberta") + " e troque uma ideia com ela!";
+				next;
+				mes callfunc("F_PremiumName", "Correspondente Premium");
+				mes "Ah, e antes que eu me esqueça... Bem... Ela é meio temperamental... você entenderá.";
+				emotion e_swt;
 				next;
 				goto M_NPC_More;
 			case 5:

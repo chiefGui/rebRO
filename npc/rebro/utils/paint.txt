@@ -21,3 +21,11 @@ function	script	P_LightGray	{
 function	script	P_Red	{
 	return "^ff2828" + getarg(0) + "^000000";
 }
+
+function	script	P_Cyan	{
+	return "^1cbfd8" + getarg(0) + "^000000";
+}
+
+function	script	P_Premium	{
+	return "^C6AF15" + getarg(0) + "^000000";
+}

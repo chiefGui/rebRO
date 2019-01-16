@@ -1,0 +1,66 @@
+comodo,195,159,1	script	Estilista#custom_stylist	2_M_DYEINGER,{
+	set .NPCName$, callfunc("P_Orange", "[Viktor, o Estilista]");
+	set .isPremium, callfunc("F_IsPremium");
+
+	setarray .@styles[1],getbattleflag("max_cloth_color"),getbattleflag("max_hair_style"),getbattleflag("max_hair_color");
+	setarray .@Look[1],7,1,6;
+
+	mes .NPCName$;
+	mes "Oi, " + callfunc("P_Cyan", strcharinfo(0)) + "!";
+
+	if (!.isPremium) {
+		next;
+		
+		mes .NPCName$;
+		mes "Que você não está fashion, todo mundo sabe, mas para a sua infelicidade, meus serviços são específicos para jogadores Premium.";	
+		
+		next;
+		mes .NPCName$;
+		mes "Se você quiser dar um pouco de cores às suas roupas e cabelo, torne-se Premium. Fale com o " + callfunc("P_Premium", "Correspondente Premium") + ", em " + callfunc("P_Orange", "Prontera") + ", para mais informações.";
+		close;
+	}
+
+	if (.isPremium == 1) {
+		next;
+
+		mes .NPCName$;
+		mes "Eu sou Viktor, o Estilista, o fashionista da Corporação Premium. Que tal mudarmos um pouco o seu visual, de graça?";
+		switch(select("Finalmente! Já estava enjoado...", callfunc("P_LightGray", "Estou feliz com meu visual."))) {
+			case 1:
+				next;
+
+				mes .NPCName$;
+				mes "Diga-me, então, o que você gostaria de mudar?";
+				
+				set .@s, select("Cor da roupa", "Corte do cabelo", "Cor do cabelo");
+				set .@Revert, getlook(.@Look[.@s]);
+				set .@style, 1;
+
+				while(1) {
+					setlook .@Look[.@s], .@style;
+
+					message strcharinfo(PC_NAME), "Esse é o estilo #"+.@style+".";
+
+					set .@menu$, "Próximo -> (^0055FF"+((.@style!=.@styles[.@s])?.@style+1:1)+"^000000):Anterior <- (^0055FF"+((.@style!=1)?.@style-1:.@styles[.@s])+"^000000):Pular para...:Voltar ao original (^0055FF"+.@Revert+"^000000)";
+					
+					switch(select(.@menu$)) {
+						case 1: set .@style, ((.@style!=.@styles[.@s])?.@style+1:1); break;
+						case 2: set .@style, ((.@style!=1)?.@style-1:.@styles[.@s]); break;
+						case 3: message strcharinfo(PC_NAME),"Escolha um estilo entre 1 - "+.@styles[.@s]+".";
+							input .@style,0,.@styles[.@s];
+							if (!.@style) set .@style, rand(1,.@styles[.@s]);
+							break;
+						case 4: set .@style, .@Revert; setlook .@Look[.@s], .@Revert; break;
+					}
+				}
+
+				break;
+			
+			case 2:
+				next;
+				mes .NPCName$;
+				mes "Kkkkk... imagino...";
+				close;
+		}
+	}
+}

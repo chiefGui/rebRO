@@ -57,13 +57,13 @@
 		close;
 }
 
-payon,79,116,5	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-prontera,140,174,6	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-geffen,122,62,0	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-morocc_mem,158,97,4	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-alberta,25,238,5	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-izlude,122,96,6	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-aldebaran,136,108,5	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-xmas,146,136,5	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-comodo,185,153,5	duplicate(Healer)	Curandeira	4_F_ACOLYTE
-yuno,150,187,5	duplicate(Healer)	Curandeira	4_F_ACOLYTE
+payon,79,116,5	duplicate(Healer)	Curandeira#pay	4_F_ACOLYTE
+prontera,140,174,6	duplicate(Healer)	Curandeira#prt	4_F_ACOLYTE
+geffen,122,62,0	duplicate(Healer)	Curandeira#gef	4_F_ACOLYTE
+morocc_mem,158,97,4	duplicate(Healer)	Curandeira#mor	4_F_ACOLYTE
+alberta,25,238,5	duplicate(Healer)	Curandeira#alb	4_F_ACOLYTE
+izlude,122,96,6	duplicate(Healer)	Curandeira#izl	4_F_ACOLYTE
+aldebaran,136,108,5	duplicate(Healer)	Curandeira#ald	4_F_ACOLYTE
+xmas,146,136,5	duplicate(Healer)	Curandeira#xma	4_F_ACOLYTE
+comodo,185,153,5	duplicate(Healer)	Curandeira#com	4_F_ACOLYTE
+yuno,150,187,5	duplicate(Healer)	Curandeira#yun	4_F_ACOLYTE

@@ -58,13 +58,13 @@
 		close;
 }
 
-payon,77,114,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
-prontera,142,175,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
-geffen,125,67,2	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
-morocc_mem,165,87,4	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
-alberta,30,229,0	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
-izlude,124,99,6	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
-aldebaran,135,121,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
-xmas,140,133,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
-comodo,179,145,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
-yuno,148,185,5	duplicate(Warper)	Teleportadora	4_F_AGENTKAFRA
+payon,77,114,5	duplicate(Warper)	Teleportadora#pay	4_F_AGENTKAFRA
+prontera,142,175,5	duplicate(Warper)	Teleportadora#prt	4_F_AGENTKAFRA
+geffen,125,67,2	duplicate(Warper)	Teleportadora#gef	4_F_AGENTKAFRA
+morocc_mem,165,87,4	duplicate(Warper)	Teleportadora#mor	4_F_AGENTKAFRA
+alberta,30,229,0	duplicate(Warper)	Teleportadora#alb	4_F_AGENTKAFRA
+izlude,124,99,6	duplicate(Warper)	Teleportadora#izl	4_F_AGENTKAFRA
+aldebaran,135,121,5	duplicate(Warper)	Teleportadora#ald	4_F_AGENTKAFRA
+xmas,140,133,5	duplicate(Warper)	Teleportadora#xma	4_F_AGENTKAFRA
+comodo,179,145,5	duplicate(Warper)	Teleportadora#com	4_F_AGENTKAFRA
+yuno,148,185,5	duplicate(Warper)	Teleportadora#yun	4_F_AGENTKAFRA

@@ -5,17 +5,17 @@ in_rogue,363,123,3	script	Markie	747,{
 	if(BaseJob == Job_Rogue) goto L_Rogue;
 
 L_JobOther:
-	mes "Eu n�o sei como voc� achou essse lugar, mas eu acho que � melhor voc� sair daqui..........";
+	mes "Eu n?o sei como voc? achou essse lugar, mas eu acho que ? melhor voc? sair daqui..........";
 	close;
 
 L_Rogue:
-	mes "Bom, ver voc� de novo, amigo. Voc� deve estar se divertindo como Arruaceiro hum? Heh he he....";
+	mes "Bom, ver voc? de novo, amigo. Voc? deve estar se divertindo como Arruaceiro hum? Heh he he....";
 	close;
 
 L_Thief:
 	if(JobLevel < 40){
-		mes "Oh! Ol�! Se voc� quer se tornar um Arruaceiro eu recomendo que voc� volte quando tiver treinado mais um pouco.";
-		mes "Somente Ladr�es com um ^5533FFN�vel de Classe no m�nimo 40^000000 pode se tornar um Arruaceiro.";
+		mes "Oh! Ol?! Se voc? quer se tornar um Arruaceiro eu recomendo que voc? volte quando tiver treinado mais um pouco.";
+		mes "Somente Ladr?es com um ^5533FFN?vel de Classe no m?nimo 40^000000 pode se tornar um Arruaceiro.";
 		close;
 	}
 	if(ROGUE_Q == 1) goto L_ReTest;
@@ -23,37 +23,37 @@ L_Thief:
 	if(ROGUE_Q == 3) goto L_Test3;
 	if(ROGUE_Q == 4) goto L_Test4;
 	if(ROGUE_Q == 5) goto L_Change;
-	mes "Humm? O que traz voc� aqui? Oh! Entendi agora... Voc� quer se tornar Arruaceiro, n�o � isso?";
+	mes "Humm? O que traz voc? aqui? Oh! Entendi agora... Voc? quer se tornar Arruaceiro, n?o ? isso?";
 	next;
 	mes "[Markie]";
-	mes "Bom, legal te encontrar aqui. Meu nome � Markie, Quem � voc�?";
+	mes "Bom, legal te encontrar aqui. Meu nome ? Markie, Quem ? voc??";
 	next;
 	mes "[Markie]";
-	show strcharinfo(0) + "..... He he, voc� tem um bonito nome amigo. Bem, como voc� decidiu se tornar um Arruaceiro?";
+	mes strcharinfo(0) + "..... He he, voc? tem um bonito nome amigo. Bem, como voc? decidiu se tornar um Arruaceiro?";
 	next;
 	mes "[Markie]";
-	mes "Bem, como voc� honesta comigo e me deu o seu nome de verdade eu acho que isso n�o importa.";
-	mes "Mas, s� para que voc� saiba, um Arruaceiro nunca revela seu verdadeiro nome para ningu�m.";
+	mes "Bem, como voc? honesta comigo e me deu o seu nome de verdade eu acho que isso n?o importa.";
+	mes "Mas, s? para que voc? saiba, um Arruaceiro nunca revela seu verdadeiro nome para ningu?m.";
 	next;
 	mes "[Markie]";
-	mes "� a regra n�mero 1, ent�o, a partir de agora � melhor que voc� se cuide com isso.";
-	mes "Bom, aqui tem um formul�rio pra voc�..... por favor, coloque todas as informa��es necess�rias.....";
+	mes "? a regra n?mero 1, ent?o, a partir de agora ? melhor que voc? se cuide com isso.";
+	mes "Bom, aqui tem um formul?rio pra voc?..... por favor, coloque todas as informa??es necess?rias.....";
 	next;
-	mes "(voc� escreve todas as informa��es necess�rias para completar o formul�rio e o devolve)";
+	mes "(voc? escreve todas as informa??es necess?rias para completar o formul?rio e o devolve)";
 	set JBLVL, JobLevel;			// used to determine what item to get at the end
 	next;
 	mes "[Markie]";
 	mes "Ok docinho.... parece bom, Eu vou aceitar o seu cadastro.";
-	mes "Agora deixe me ver se voc� est� apto para isso, deixe me fazer uma pequena entrevista?";
+	mes "Agora deixe me ver se voc? est? apto para isso, deixe me fazer uma pequena entrevista?";
 	next;
 	mes "[Markie]";
-	mes "Oh, voc� naum preciza ficar nervoso com isso morzinho.... Eu s� quero saber o quanto voc� sabe sobre os Arruaceiros.";
-	mes "Eu fa�o isso com todas os candidatos. Podemos come�ar?";
+	mes "Oh, voc? naum preciza ficar nervoso com isso morzinho.... Eu s? quero saber o quanto voc? sabe sobre os Arruaceiros.";
+	mes "Eu fa?o isso com todas os candidatos. Podemos come?ar?";
 	next;
 	menu "Ok.",L_Test1, "Espere... Eu preciso de um pouco mais de tempo.",-;
 
 		mes "[Markie]";
-		mes "Ok docinho, n�o precisa ter pressa. Quando voc� estiver pronto basta me falar.";
+		mes "Ok docinho, n?o precisa ter pressa. Quando voc? estiver pronto basta me falar.";
 		close;
 
 
@@ -61,7 +61,7 @@ L_Thief:
 L_Test1:
 //=======
 	mes "[Markie]";
-	mes "Eu vou te fazer umas perguntas. Ou�a bem e responda aquilo que voc� achar melhor, OK?";
+	mes "Eu vou te fazer umas perguntas. Ou?a bem e responda aquilo que voc? achar melhor, OK?";
 	next;	
 
 	savepoint "in_rogue",370,115;
@@ -70,7 +70,7 @@ L_Test1:
 	if(rand(2)) goto L_QSet2;
 
 		mes "[Markie]";
-		mes "1) Quanto � adicionado � taxa de esquiva que um Gatuno recebe quando ^5533FFaprimora^000000 a habilidade ^5533FFPer�cia em Esquiva^000000?";
+		mes "1) Quanto ? adicionado ? taxa de esquiva que um Gatuno recebe quando ^5533FFaprimora^000000 a habilidade ^5533FFPer?cia em Esquiva^000000?";
 		next;
 		menu "20",sM1_1, "30",-, "40",sM1_1, "160",sM1_1;
 
@@ -79,9 +79,9 @@ L_Test1:
 		sM1_1:
 
 		mes "[Markie]";
-		mes "2) Escolha um monstro qu n�o pode detectar um personagem durante Esconderijo ou Furtividade?";
+		mes "2) Escolha um monstro qu n?o pode detectar um personagem durante Esconderijo ou Furtividade?";
 		next;
-		menu "M�mia",sM1_2, "Rabo-de-Verme",-, "Argos",sM1_2, "Esqueleto Soldado",sM1_2;
+		menu "M?mia",sM1_2, "Rabo-de-Verme",-, "Argos",sM1_2, "Esqueleto Soldado",sM1_2;
 
 			set @score, @score + 10;
 
@@ -97,7 +97,7 @@ L_Test1:
 		sM1_3:
 
 		mes "[Markie]";
-		mes "4) Em qual das seguintes cidades, � poss�vel se tornar um Gatuno?";
+		mes "4) Em qual das seguintes cidades, ? poss?vel se tornar um Gatuno?";
 		next;
 		menu "Comodo",sM1_4, "Lutie",sM1_4, "Alberta",sM1_4, "Morroc",-;
 
@@ -106,44 +106,44 @@ L_Test1:
 		sM1_4:
 
 		mes "[Markie]";
-		mes "5) Escolha a carta que ^FF3355n�o^000000 afeta o ^5533FFatributo DES^000000 de um personagem...";
+		mes "5) Escolha a carta que ^FF3355n?o^000000 afeta o ^5533FFatributo DES^000000 de um personagem...";
 		next;
-		menu "Carta Rocker",sM1_5, "Carta M�mia",-, "Carta Zerom",sM1_5, "Carta Drops",sM1_5;
+		menu "Carta Rocker",sM1_5, "Carta M?mia",-, "Carta Zerom",sM1_5, "Carta Drops",sM1_5;
 
 			set @score, @score + 10;
 
 		sM1_5:
 
 		mes "[Markie]";
-		mes "6) O que voc� acha legal em ser um Arruaceiro?";
+		mes "6) O que voc? acha legal em ser um Arruaceiro?";
 		next;
-		menu "Ser um vagabundo",sM1_6, "Ser um hip�crita",sM1_6, "Ser um sem vergonha",sM1_6, "Ter uma excelente for�a de ataque",-;
+		menu "Ser um vagabundo",sM1_6, "Ser um hip?crita",sM1_6, "Ser um sem vergonha",sM1_6, "Ter uma excelente for?a de ataque",-;
 
 			set @score, @score + 10;
 
 		sM1_6:
 
 		mes "[Markie]";
-		mes "7) Em qual n�vel de classe um Gatuno pode se tornar um Arruaceiro?";
+		mes "7) Em qual n?vel de classe um Gatuno pode se tornar um Arruaceiro?";
 		next;
-		menu "N�vel 30",sM1_7, "N�vel 35",sM1_7, "N�vel 40",-, "N�vel 50",-;
+		menu "N?vel 30",sM1_7, "N?vel 35",sM1_7, "N?vel 40",-, "N?vel 50",-;
 
 			set @score, @score + 10;
 
 		sM1_7:
 
 		mes "[Markie]";
-		mes "8) Se voc� quiser colorir seu cabelo de uma cor diferente, onde voc� deve ir para fazer isto?";
+		mes "8) Se voc? quiser colorir seu cabelo de uma cor diferente, onde voc? deve ir para fazer isto?";
 		next;
-		menu 	"Constru��o ao Sudoeste de Morroc",sM1_8, "Constru��o ao Sudoeste de  Prontera",-,
-			"Constru��o ao Sudeste de  Morroc",sM1_8, "Constru��o ao Nordeste de Prontera",sM1_8;
+		menu 	"Constru??o ao Sudoeste de Morroc",sM1_8, "Constru??o ao Sudoeste de  Prontera",-,
+			"Constru??o ao Sudeste de  Morroc",sM1_8, "Constru??o ao Nordeste de Prontera",sM1_8;
 
 			set @score, @score + 10;
 
 		sM1_8:
 
 		mes "[Markie]";
-		mes "9) Quais cogumelos voc� precisa furtar para se tornar um Gatuno?";
+		mes "9) Quais cogumelos voc? precisa furtar para se tornar um Gatuno?";
 		next;
 		menu "Cogumelos Borrachentos",-, "Cogumelos vermelhos",sM1_9, "Cogumelos Venenosos",-, "Cogumelos Pegajosos",sM1_9;
 
@@ -152,9 +152,9 @@ L_Test1:
 		sM1_9:
 
 		mes "[Markie]";
-		mes "10) Quais dessas cartas s�o ^FF3355in�teis^000000 para um Arruaceiro?";
+		mes "10) Quais dessas cartas s?o ^FF3355in?teis^000000 para um Arruaceiro?";
 		next;
-		menu "Carta Sussurro",sM1_10, "Carta Salgueiro Anci�o",-, "Carta Zerom",sM1_10, "Carta Matyr",sM1_10;
+		menu "Carta Sussurro",sM1_10, "Carta Salgueiro Anci?o",-, "Carta Zerom",sM1_10, "Carta Matyr",sM1_10;
 
 			set @score, @score + 10;
 
@@ -164,9 +164,9 @@ L_Test1:
 
 	L_QSet2:
 		mes "[Markie]";
-		mes "1) Qual habilidade voc� deve aprender antes de aprender ^5533FFT�nel de Fuga^000000?";
+		mes "1) Qual habilidade voc? deve aprender antes de aprender ^5533FFT?nel de Fuga^000000?";
 		next;
-		menu "Esconderijo",-, "Furto",sM2_1, "Per�cia em Esquiva",sM2_1, "Golpe Fulminante",sM2_1;
+		menu "Esconderijo",-, "Furto",sM2_1, "Per?cia em Esquiva",sM2_1, "Golpe Fulminante",sM2_1;
 
 			set @score, @score + 10;
 
@@ -182,7 +182,7 @@ L_Test1:
 		sM2_2:
 
 		mes "[Markie]";
-		mes "3) Qual � a descri��o correta da habilidade ^5533FFAfanar^000000?";
+		mes "3) Qual ? a descri??o correta da habilidade ^5533FFAfanar^000000?";
 		next;
 		menu "Furtar itens de jogadores",sM2_3, "Furtar itens de monstros",sM2_3, "Furtar Zeny de monstros",-, "Furtat Zeny de jogadores",sM2_3;
 
@@ -191,25 +191,25 @@ L_Test1:
 		sM2_3:
 
 		mes "[Markie]";
-		mes "4) Quantos Arruaceiros s�o necess�rios para ativar a habilidade ^5533FFMalandragem^000000?";
+		mes "4) Quantos Arruaceiros s?o necess?rios para ativar a habilidade ^5533FFMalandragem^000000?";
 		next;
-		menu "1 Arruacerio + 2 Mercen�rios",sM2_4, "2 Arruaceiros + 1 Gatuno",sM2_4, "4 Gatunos",sM2_4, "2 ou + Arruaceiros",-;
+		menu "1 Arruacerio + 2 Mercen?rios",sM2_4, "2 Arruaceiros + 1 Gatuno",sM2_4, "4 Gatunos",sM2_4, "2 ou + Arruaceiros",-;
 
 			set @score, @score + 10;
 
 		sM2_4:
 
 		mes "[Markie]";
-		mes "5) Depois de aumentar ^5533FFRemover Capacete^000000 para o n�vel 5, qual outra habilidade se tornar� poss�vel aprender?";
+		mes "5) Depois de aumentar ^5533FFRemover Capacete^000000 para o n?vel 5, qual outra habilidade se tornar? poss?vel aprender?";
 		next;
-		menu "Envenenar",sM2_5, "Strip Tease",sM2_5, "Explos�o Venenosa",sM2_5, "Remover Escudo",-;
+		menu "Envenenar",sM2_5, "Strip Tease",sM2_5, "Explos?o Venenosa",sM2_5, "Remover Escudo",-;
 
 			set @score, @score + 10;
 
 		sM2_5:
 
 		mes "[Markie]";
-		mes "6) Escolha a habilidade que deixa voc� mover enquanto voc� permanece oculto?";
+		mes "6) Escolha a habilidade que deixa voc? mover enquanto voc? permanece oculto?";
 		next;
 		menu "Esconderijo",sM2_6, "Recuar",sM2_6, "Tunel de Fuga",-, "Chutar Areia",sM2_6;
 
@@ -218,7 +218,7 @@ L_Test1:
 		sM2_6:
 
 		mes "[Markie]";
-		mes "7) Escolha a carta que aumenta a ^5533FFtaxa de preci�o^000000 ao seu dono?";
+		mes "7) Escolha a carta que aumenta a ^5533FFtaxa de preci?o^000000 ao seu dono?";
 		next;
 		menu "Andre",sM2_7, "Familiar",sM2_7, "Mumia",-, "Marina",sM2_7;
 
@@ -230,7 +230,7 @@ L_Test1:
 		mes "8) Escolha o monstro que recebe mais dano quando atacado com uma arma com Carta Vadon?";
 		mes "(Carta Vadon influencia 20% mais dano em monstro do elemento fogo)";
 		next;
-		menu 	"Vadon",sM2_8, "Deviruchi",sM2_8, "Salgueiro Anci�o",-, "Bafom�",sM2_8;
+		menu 	"Vadon",sM2_8, "Deviruchi",sM2_8, "Salgueiro Anci?o",-, "Bafom?",sM2_8;
 
 			set @score, @score + 10;
 
@@ -239,7 +239,7 @@ L_Test1:
 		mes "[Markie]";
 		mes "9) Quanto de SP o ^5533FFAtaque Duplo^000000 precisa quando usado com uma adaga?";
 		next;
-		menu "15 SP",sM2_9, "N�o precisa de SP",-, "10 SP",sM2_9, "54 SP",sM2_9;
+		menu "15 SP",sM2_9, "N?o precisa de SP",-, "10 SP",sM2_9, "54 SP",sM2_9;
 
 			set @score, @score + 10;
 
@@ -257,12 +257,12 @@ L_Test1:
 
 	L_Score:
 		mes "[Markie]";
-		mes "Tudo bem, essas foram todas as perguntas que eu precisava saber.  Agora n�o foi t�o ruim n�?";
+		mes "Tudo bem, essas foram todas as perguntas que eu precisava saber.  Agora n?o foi t?o ruim n??";
 		//mes "I hope you don't mind, but I've been grading your answers.";
 		next;
 		mes "[Markie]";
-		mes "Eu gosto de dar a pontua��o para as pessoas para elas saberem seus pontos.";
-		mes "Parece que voc� conseguiu ^FF3355" + @score +"^000000/100 pontos............";
+		mes "Eu gosto de dar a pontua??o para as pessoas para elas saberem seus pontos.";
+		mes "Parece que voc? conseguiu ^FF3355" + @score +"^000000/100 pontos............";
 		next;
 		mes "[Markie]";
 
@@ -270,15 +270,15 @@ L_Test1:
 		if(@score<100) goto sL_Passed;
 
 		sL_Perfect:
-			mes "Uma prova perfeita! Eu sabia que voc� tinha o que era preciso para ser um Arruaceiro.....";
-			mes "Mas n�o deixe que isso te suba a cabe�a, amor, por que ainda tem muitos testes te aguardando.....";
+			mes "Uma prova perfeita! Eu sabia que voc? tinha o que era preciso para ser um Arruaceiro.....";
+			mes "Mas n?o deixe que isso te suba a cabe?a, amor, por que ainda tem muitos testes te aguardando.....";
 			next;
 			mes "[Markie]";
 			set ROGUE_Q, 2;
 			goto L_Test2;
 
 		sL_Passed:
-			mes "Bom, muito bom. Voc� est� no trabalho certo, docinho. Mas ainda tem muitos testes pra voc� fazer ent�o n�o fique exitado ainda.....";
+			mes "Bom, muito bom. Voc? est? no trabalho certo, docinho. Mas ainda tem muitos testes pra voc? fazer ent?o n?o fique exitado ainda.....";
 			next;
 			mes "[Markie]";
 			set ROGUE_Q, 2;
@@ -286,71 +286,71 @@ L_Test1:
 			return;
 
 		sL_Failed:
-			mes "..... hum... bem. Este n�o � o tipo de ponto que eu estava esperando......";
-			mes "O que eu posso dizer, com um ponto como esse voc� definitivamente n�o pode ser um Arruaceiro..........";
+			mes "..... hum... bem. Este n?o ? o tipo de ponto que eu estava esperando......";
+			mes "O que eu posso dizer, com um ponto como esse voc? definitivamente n?o pode ser um Arruaceiro..........";
 			emotion e_swt;
 			next;
 			mes "[Markie]";
-			mes "Por que voc� n�o volta depois de treinar um pouco, amor..... voc� precisa..... ";
+			mes "Por que voc? n?o volta depois de treinar um pouco, amor..... voc? precisa..... ";
 			close;
 
 L_ReTest:
-	mes "Voc� de novo? Voc� tem certeza que est� pronto desta vez?...... Ok docinho, ent�o relaxe....";
+	mes "Voc? de novo? Voc? tem certeza que est? pronto desta vez?...... Ok docinho, ent?o relaxe....";
 	next;
 	goto L_Test1;
 
 L_Test2:
-	mes "Seu segundo teste lhe ser� aplicado pelo ^5533FFSr. Smith^000000.";
-	mes "Eu tenho que avisa-lo, Sr. Smith pode ser uma pessoa r�gida e dura de se lidar. Ent�o, seja cuidadosa com as suas a��es com ele.";
+	mes "Seu segundo teste lhe ser? aplicado pelo ^5533FFSr. Smith^000000.";
+	mes "Eu tenho que avisa-lo, Sr. Smith pode ser uma pessoa r?gida e dura de se lidar. Ent?o, seja cuidadosa com as suas a??es com ele.";
 	close;
 L_Test3:
-	mes "Eu sei que esses caras s�o dif�cies de se achar. tenha paci�ncia e continue procurando. Tenha ceteza que voc� tem todas as corretas senhas tamb�m..";
+	mes "Eu sei que esses caras s?o dif?cies de se achar. tenha paci?ncia e continue procurando. Tenha ceteza que voc? tem todas as corretas senhas tamb?m..";
 	close;
 L_Test4:
-	mes "O que voc� est� fazendo aqui? Eu espero que voc� naum esteja tentando fugir do �ltimo teste, voc� est�?.........";
+	mes "O que voc? est? fazendo aqui? Eu espero que voc? naum esteja tentando fugir do ?ltimo teste, voc? est??.........";
 	emotion e_what;
 	next;
 	mes "[Markie]";
-	mes "Voc� quase acabou todos, ent�o continue tentando. Eu sei que voc� consegue.";
+	mes "Voc? quase acabou todos, ent?o continue tentando. Eu sei que voc? consegue.";
 	close;
 
 
 //=======================================================================
 L_Change:
 //===========
-	mes "Oh, voc� voltou e ainda est� inteiro. Voc� aparentemente passou em todos os testes docinho.";
-	mes "Voc� provou que est� pronto para se tornar um Arruaceiro!";
+	mes "Oh, voc? voltou e ainda est? inteiro. Voc? aparentemente passou em todos os testes docinho.";
+	mes "Voc? provou que est? pronto para se tornar um Arruaceiro!";
 	emotion e_ic;
 	next;
 	if(SkillPoint != 0) goto L_SkillP;
 	mes "[Markie]";
-	mes "Ta-da! Meus parab�ns por se tornar um Arruaceiro. Voc� se mostrou muito capaz e est� � a sua recompensa por isso......";
+	mes "Ta-da! Meus parab?ns por se tornar um Arruaceiro. Voc? se mostrou muito capaz e est? ? a sua recompensa por isso......";
 	setlook 7,0;
 	callfunc "Job_Change",Job_Rogue;
 	emotion e_grat;
 	next;
 	mes "[Markie]";
-	mes "Agora que voc� voc� � um Arruaceiro, voc� est� pronto para cair no mundo e seguir viagem.";
+	mes "Agora que voc? voc? ? um Arruaceiro, voc? est? pronto para cair no mundo e seguir viagem.";
 	if(JBLVL != 50) {
-			additem 1219,1;		// 2 slott gladius
+			getitem 1219,1;		// 2 slott gladius
 		} else {
-			additem 1220,1;		// 3 slott gladius
+			getitem 1220,1;		// 3 slott gladius
 	}
 	callfunc "F_ClearJobVar";
 	next;
 	mes "[Markie]";
-	mes "S� tenha em mente que esta liberdade requer responsabilidade. Trate bem as pessoas que voc� encontrar bem e com respeito.";
+	mes "S? tenha em mente que esta liberdade requer responsabilidade. Trate bem as pessoas que voc? encontrar bem e com respeito.";
 	next;
 	mes "[Markie]";
-	mes "Divirta-se baby! Vejo voc� por a�!";
+	mes "Divirta-se baby! Vejo voc? por a?!";
 	close;
 
 //=======================================================================
 L_SkillP:
 //===========
 	mes "[Markie]";
-	mes "Oh! Bem... uma coisa mor... voc� ainda tem pontos de habilidade para distribuir!";
-	mes "Por favor, os distribua e depois volte aqui, est� bem?";
+	mes "Oh! Bem... uma coisa mor... voc? ainda tem pontos de habilidade para distribuir!";
+	mes "Por favor, os distribua e depois volte aqui, est? bem?";
 	close;
 }
 
@@ -372,13 +372,13 @@ L_Thief:
 	if(ROGUE_Q == 2) goto L_Test2;
 	if(ROGUE_Q == 3) goto L_Test3;
 	if(ROGUE_Q > 3) goto L_Done;
-	mes "Ok, ok.... Um... Dois.... Tr�s.... Onde voc� faz os seus neg�cios... onde �.... Morroc... Geffen.... Comodo??.......";
+	mes "Ok, ok.... Um... Dois.... Tr?s.... Onde voc? faz os seus neg?cios... onde ?.... Morroc... Geffen.... Comodo??.......";
 	next;
 	mes "[Mr. Smith]";
-	mes "Uhh..... isto est� me dando dor de cabe�a.......";
+	mes "Uhh..... isto est? me dando dor de cabe?a.......";
 	next;
 	mes "[Mr. Smith]";
-	mes "Huh? Quem � voc�? Se voc� quer se tornar um Arruaceiro, v� e fale com ^5533FFMarkie^000000....";
+	mes "Huh? Quem ? voc?? Se voc? quer se tornar um Arruaceiro, v? e fale com ^5533FFMarkie^000000....";
 	next;
 	mes "[Mr. Smith]";
 	mes "...... Droga! Eu esqueci o que eu estava contando!!";
@@ -389,18 +389,18 @@ L_Thief:
 L_Test2:
 //--------------
 	if(ROGUE_Q2 > 0) goto L_Check2;
-	mes "Ent�o voc� veio para o segundo teste.... bom.......";
+	mes "Ent?o voc? veio para o segundo teste.... bom.......";
 	next;
 	mes "[Mr. Smith]";
-	mes "Antes de come�armos, deixe me falar sobre o teste em si.";
-	mes "A nossa guild est� envolvidas em muitos 'negocios' e sempre n�s precisamos de fundos.";
+	mes "Antes de come?armos, deixe me falar sobre o teste em si.";
+	mes "A nossa guild est? envolvidas em muitos 'negocios' e sempre n?s precisamos de fundos.";
 	next;
 	mes "[Mr. Smith]";
-	mes "Por esse motivo, n�s precisamos de ^5533FF10,000 zeny^000000 a ser pago para voc� fazer o teste de Arruaceiro.";
-	mes "O pagamento ser� coletado quando voc� acabar esse segundo teste, ent�o n�o se preocupe se voc� n�o tem isso agora.";
+	mes "Por esse motivo, n?s precisamos de ^5533FF10,000 zeny^000000 a ser pago para voc? fazer o teste de Arruaceiro.";
+	mes "O pagamento ser? coletado quando voc? acabar esse segundo teste, ent?o n?o se preocupe se voc? n?o tem isso agora.";
 	next;
 	mes "[Mr. Smith]";
-	mes "Bem, agora o teste..... Voc� � necess�rio para coletar os seguintes itens:";
+	mes "Bem, agora o teste..... Voc? ? necess?rio para coletar os seguintes itens:";
 	next;
 	mes "[Mr. Smith]";
 	set ROGUE_Q2, rand(1,3);
@@ -409,14 +409,14 @@ L_Test2:
 	if(ROGUE_Q2 == 3) callsub sF2_R3;
 	next;
 	mes "[Mr. Smith]";
-	mes "Uma vez que voc� tenha TODOS os itens e os 10,000 zeny, venha me ver de novo, OK? Bom.";
+	mes "Uma vez que voc? tenha TODOS os itens e os 10,000 zeny, venha me ver de novo, OK? Bom.";
 	close;
 
 	sF2_R1:
 		mes "^5533FF6 Ervas Azu,";
 		mes "10 Ossos,";
 		mes "10 Unhas Apodrecidas,";
-		mes "10 Mand�bulas Horrendas^000000.";
+		mes "10 Mand?bulas Horrendas^000000.";
 		return;
 	sF2_R2:
 		mes "^5533FF10 Ervas Verde,";
@@ -463,27 +463,27 @@ L_Check2:
 		delitem 940,10;
 
 	L_Done2:
-		mes "Deixe me ver.... matricula.... checando..... itens....... checando...... Tudu bem, tudu parece em ordem.  Voc� passou no segundo teste.";
+		mes "Deixe me ver.... matricula.... checando..... itens....... checando...... Tudu bem, tudu parece em ordem.  Voc? passou no segundo teste.";
 		next;
 		mes "[Mr. Smith]";
-		mes "Quando voc� estiver pronto para o pr�ximo teste, me avise. OK?";
+		mes "Quando voc? estiver pronto para o pr?ximo teste, me avise. OK?";
 		set Zeny, Zeny - 10000;
 		set ROGUE_Q, 3;
 		set ROGUE_Q2, 0;
 		close;
 
 	L_NotEnuf:
-		mes ".... Mais que Inferno!?!? Voc� n�o tem todos os itens? Ent�o por que voc� voltou?? N�o me diga que voc� j� esqueceu o que era.....";
+		mes ".... Mais que Inferno!?!? Voc? n?o tem todos os itens? Ent?o por que voc? voltou?? N?o me diga que voc? j? esqueceu o que era.....";
 		emotion e_what;
 		next;
 		mes "[Mr. Smith]";
-		mes "Desta vez escreva! Voc� precisa de ^5533FF10,000^000000 zeny e:";
+		mes "Desta vez escreva! Voc? precisa de ^5533FF10,000^000000 zeny e:";
 		if(ROGUE_Q2 == 1) callsub sF2_R1;
 		if(ROGUE_Q2 == 2) callsub sF2_R2;
 		if(ROGUE_Q2 == 3) callsub sF2_R3;
 		next;
 		mes "[Mr. Smith]";
-		mes "Anotou? N�O VOLTE at� voc� ter tudu.........";
+		mes "Anotou? N?O VOLTE at? voc? ter tudu.........";
 		emotion e_pif;
 		close;
 
@@ -496,7 +496,7 @@ L_Test3:
 	emotion e_hmm;
 	next;
 	mes "[Mr. Smith]";
-	mes "Ah! Lembrei! Tudu bem, no teste anterior voc� tinha que encontrar algum itens. Neste teste voc� precisa encontrar uma pessoa espec�fica.";
+	mes "Ah! Lembrei! Tudu bem, no teste anterior voc? tinha que encontrar algum itens. Neste teste voc? precisa encontrar uma pessoa espec?fica.";
 	emotion e_ic;
 	next;
 	mes "[Mr. Smith]";
@@ -506,74 +506,74 @@ L_Test3:
 	if(ROGUE_Q2 == 3) callsub sF3_R3;
 	next;
 	mes "[Mr. Smith]";
-	mes "Boa sorte para voc�. Tente acabar o teste o mais rapido poss�vel. Obter coisas rapido � um dos desafios de um Arruaceiro.";
+	mes "Boa sorte para voc?. Tente acabar o teste o mais rapido poss?vel. Obter coisas rapido ? um dos desafios de um Arruaceiro.";
 	close;
 
 	sF3_R1:
-		mes "Voc� precisa encontrar ^5533FFAragham Junior^000000.";
+		mes "Voc? precisa encontrar ^5533FFAragham Junior^000000.";
 		next;
 		mes "[Mr. Smith]";
 		mes "Ele mora em uma pequena casa em algum lugar a ^5533FFSudoeste^000000 da Fortaleza de Sandarman.";
-		mes "Essa �rea � localizada ^5533FFum mapa a leste^000000 daqui e � no ^000000banco de terra ao sudoeste^000000.";
+		mes "Essa ?rea ? localizada ^5533FFum mapa a leste^000000 daqui e ? no ^000000banco de terra ao sudoeste^000000.";
 		next;
 		mes "[Mr. Smith]";
-		mes "Ele � uma pessoa muito boa que trabalha verdadeiramente duro, e ele � muito bom coletando dividas n�o pagas.";
-		mes "Infelizmente, pessoas aqui est�o tentando mata-lo pelo que o pai dele fez no pasado.";
+		mes "Ele ? uma pessoa muito boa que trabalha verdadeiramente duro, e ele ? muito bom coletando dividas n?o pagas.";
+		mes "Infelizmente, pessoas aqui est?o tentando mata-lo pelo que o pai dele fez no pasado.";
 		next;
 		mes "[Mr. Smith]";
-		mes "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu at� que a poeira baixasse por isso ele est� escondido.";
-		mes "Ningu�m sabe onde ele est�, somente n�s que somos da Guilda";
+		mes "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu at? que a poeira baixasse por isso ele est? escondido.";
+		mes "Ningu?m sabe onde ele est?, somente n?s que somos da Guilda";
 		next;
 		mes "[Mr. Smith]";
-		mes "Por isso que voc� precisa da senha para falar com ele.";
-		mes "A senha �: '^5533FFAragham nunca recebeu itens.^000000'";
+		mes "Por isso que voc? precisa da senha para falar com ele.";
+		mes "A senha ?: '^5533FFAragham nunca recebeu itens.^000000'";
 		return;
 	sF3_R2:
-		mes "Voc� precisa encontrar ^5533FFHollgrehen Junior^000000.";
+		mes "Voc? precisa encontrar ^5533FFHollgrehen Junior^000000.";
 		next;
 		mes "[Mr. Smith]";
 		mes "Ele mora em uma pequena casa em algum lugar a ^5533FFSudeste^000000 da Forteleza de Sandarman.";
-		mes "Essa �rea � localizada ^5533FFum mapa a leste^000000 daqui e ele est� em ^5533FFbanco de terra � leste^000000.";
+		mes "Essa ?rea ? localizada ^5533FFum mapa a leste^000000 daqui e ele est? em ^5533FFbanco de terra ? leste^000000.";
 		next;
 		mes "[Mr. Smith]";
-		mes "Ele � uma pessoa muito boa que trabalha verdadeiramente duro, e ele � muito bom coletando dividas n�o pagas.";
-		mes "Infelizmente, pessoas aqui est�o tentando mat�-lo pelo que o pai dele fez no pasado.";
+		mes "Ele ? uma pessoa muito boa que trabalha verdadeiramente duro, e ele ? muito bom coletando dividas n?o pagas.";
+		mes "Infelizmente, pessoas aqui est?o tentando mat?-lo pelo que o pai dele fez no pasado.";
 		next;
 		mes "[Mr. Smith]";
-		mes "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu at� que a poeira baixasse por isso ele est� escondido.";
-		mes "Ningu�m sabe onde ele est�, somente n�s que somos da Guilda.";
+		mes "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu at? que a poeira baixasse por isso ele est? escondido.";
+		mes "Ningu?m sabe onde ele est?, somente n?s que somos da Guilda.";
 		next;
 		mes "[Mr. Smith]";
-		mes "Por isso que voc� precisa da senha para falar com ele.";
-		mes "A senha �: '^5533FFMeu pai nunca recebeu itens.^000000'";
+		mes "Por isso que voc? precisa da senha para falar com ele.";
+		mes "A senha ?: '^5533FFMeu pai nunca recebeu itens.^000000'";
 		return;
 	sF3_R3:
-		mes "Voc� precisa ir e encontrar ^5533FFAntonio Junior.^000000.";
+		mes "Voc? precisa ir e encontrar ^5533FFAntonio Junior.^000000.";
 		next;
 		mes "[Mr. Smith]";
 		mes "Ele mora em uma pequena cabana em algum lugar de ^5533FFNo Leste, no fim da Praia de Comodo^000000.";
-		mes "Essa �rea est� localizada ^5533FF1 mapa ao Norte, e 1 mapa Oeste^000000 daqui.";
+		mes "Essa ?rea est? localizada ^5533FF1 mapa ao Norte, e 1 mapa Oeste^000000 daqui.";
 		next;
 		mes "[Mr. Smith]";
-		mes "Ele � uma pessoa muito boa que trabalha verdadeiramente duro, e ele � muito bom coletando dividas n�o pagas.";
-		mes "Infelizmente, pessoas aqui est�o tentando mata-lo pelo que o pai dele fez no pasado.";
+		mes "Ele ? uma pessoa muito boa que trabalha verdadeiramente duro, e ele ? muito bom coletando dividas n?o pagas.";
+		mes "Infelizmente, pessoas aqui est?o tentando mata-lo pelo que o pai dele fez no pasado.";
 		next;
 		mes "[Mr. Smith]";
-		mes "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu at� que a poeira baixasse.";
-		mes "Ningu�m sabe onde ele est�, somente n�s que somos da Guilda.";
+		mes "Quando ele se juntou a Guilda dos Arruaceiros, ele decidiu que ele ficaria escondidu at? que a poeira baixasse.";
+		mes "Ningu?m sabe onde ele est?, somente n?s que somos da Guilda.";
 		next;
 		mes "[Mr. Smith]";
-		mes "Por isso que voc� precisa da senha para falar com ele.";
-		mes "A senha �: '^5533FFAntonio n�o gosta de quebrar material refinado.^000000'";
+		mes "Por isso que voc? precisa da senha para falar com ele.";
+		mes "A senha ?: '^5533FFAntonio n?o gosta de quebrar material refinado.^000000'";
 		return;
 
 
 L_Check3:
-	mes "O que!?! Voc� esqueceu onde voc� tinha que ir?........";
+	mes "O que!?! Voc? esqueceu onde voc? tinha que ir?........";
 	emotion e_what;
 	next;
 	mes "[Mr. Smith]";
-	mes "GRRRR!!! Por isso que voc� tem que escrever as coisas que s�o importantes! Jees......";
+	mes "GRRRR!!! Por isso que voc? tem que escrever as coisas que s?o importantes! Jees......";
 	emotion e_an;
 	next;
 	mes "[Mr. Smith]";
@@ -585,22 +585,22 @@ L_Check3:
 //-------------------------------------------------------------------------------------------------
 L_Done:
 //----------------
-	mes "Eu n�o tenho mais nada para voc�.........";
+	mes "Eu n?o tenho mais nada para voc?.........";
 	close;
 }
 
 // Hermanthorn Jr.
 in_rogue,272,136,3	script	Hermanthorn Jr.	85,{
 	mes "[Hermanthorn Jr.]";
-	mes "Huh? O qu.... Quem � voc�?! Voc� n�o � da Guilda dos Arruaceiros!! Some da minha frente!";
+	mes "Huh? O qu.... Quem ? voc??! Voc? n?o ? da Guilda dos Arruaceiros!! Some da minha frente!";
 	emotion e_what;
 	next;
 	mes "[Hermanthorn Jr.]";
-	mes "Voc� �..... Entendo! Voc� � um deles!!! Voc� veio pra me matar, n�o �??!! N�o... N�O!! Eu n�o estou pronto pra morrer!";
+	mes "Voc? ?..... Entendo! Voc? ? um deles!!! Voc? veio pra me matar, n?o ???!! N?o... N?O!! Eu n?o estou pronto pra morrer!";
 	emotion e_gasp;
 	next;
 	mes "[Hermanthorn Jr.]";
-	mes "Aaaaaaaaaaaaaahhhh!! vai embora! Some daqui! Do contr�rio eu vou MATAR VOC�!!!";
+	mes "Aaaaaaaaaaaaaahhhh!! vai embora! Some daqui! Do contr?rio eu vou MATAR VOC?!!!";
 	emotion e_wah;
 	close;
 }
@@ -617,7 +617,7 @@ cmd_fild09,335,143,0	script	Hollgrehen Junior#01	45,1,1,{
 
 // ------------------------------------------------------------------------------
 cmd_fild04,304,179,0	script	Antonio Junior#01	45,1,1,{
-	callfunc "F_RogueTest3", 3, "Antonio", "n�o gosta", "de quebrar", "material refinado.", 165, 104;
+	callfunc "F_RogueTest3", 3, "Antonio", "n?o gosta", "de quebrar", "material refinado.", 165, 104;
 }
 
 // Function for Guildsman ===================================
@@ -625,10 +625,10 @@ function	script	F_RogueTest3	{
 
 	mes "[???]";
 	mes "Quem esta ai?!!!";
-	mes "Quem ousa entrar no meu territ�rio?";
-	if(god_megin_2 > 0 && getarg(1) == "Aragham") goto L_Pass;
+	mes "Quem ousa entrar no meu territ?rio?";
+	if(god_megin_2 > 0 && getarg(1) == "Aragham") goto L_pass;
 	if(BaseJob!=Job_Thief || ROGUE_Q<3 || ROGUE_Q2==0) close;
-L_Pass:
+L_pass:
 	deletearray @choice$[1], 4;
 	next;
 	menu "Meu pai",M_1a, "Aragham",M_1b, "Antonio",M_1c, "Legolas",M_1d;
@@ -647,13 +647,13 @@ L_Pass:
 
 	M_Menu2:
 	callsub sF_Password;
-	menu "n�o faz",M_2a, "n�o gosta",M_2b, "nunca",M_2c, "sempre",M_2d;
+	menu "n?o faz",M_2a, "n?o gosta",M_2b, "nunca",M_2c, "sempre",M_2d;
 
 	M_2a:
-		set @choice$[2], "n�o faz";
+		set @choice$[2], "n?o faz";
 		goto M_Menu3;
 	M_2b:
-		set @choice$[2], "n�o gosta";
+		set @choice$[2], "n?o gosta";
 		goto M_Menu3;
 	M_2c:
 		set @choice$[2], "nunca";
@@ -703,7 +703,7 @@ L_Check:
 L_Enter:
 //	if((@choice$[1] != getarg(1)) || (@choice$[2] != getarg(2)) || (@choice$[3] != getarg(3)) || (@choice$[4] != getarg(4))) goto L_Wrong;
 	mes "~ weeerk ~";
-	mes "Voc� ouve a porta come�ando a se abrir........";
+	mes "Voc? ouve a porta come?ando a se abrir........";
 	next;
 	deletearray @choice$[1], 4;
 	warp "in_rogue", getarg(5), getarg(6);
@@ -711,17 +711,17 @@ L_Enter:
 
 	L_Wrong:
 	mes "~ weeerk ~";
-	mes "Voc� ouve a porta come�ando a se abrir........";
+	mes "Voc? ouve a porta come?ando a se abrir........";
 	next;
 	deletearray @choice$[1], 4;
 	warp "in_rogue", getarg(5), getarg(6);
 	end;
 sF_Password:
 	mes "[^5533FF" + strcharinfo(0) + "^000000]";
-	show @choice$[1];
-	show @choice$[2];
-	show @choice$[3];
-	show @choice$[4];
+	mes @choice$[1];
+	mes @choice$[2];
+	mes @choice$[3];
+	mes @choice$[4];
 	next;
 	return;
 }
@@ -756,32 +756,32 @@ function	script	F_RogueTest4	{
 	if(BaseJob != Job_Thief || ROGUE_Q2 != getarg(0)) goto L_NoThief;
 	if(ROGUE_Q == 4) goto L_Restart;
 	mes "[" + getarg(1) + "]";
-	mes "Ol���... Voc� deve ser da Guilda dos Arruaceiros. Meu nome � " + getarg(0) + "...... Eu sou o Arruaceiro do Deserto..............";
+	mes "Ol???... Voc? deve ser da Guilda dos Arruaceiros. Meu nome ? " + getarg(0) + "...... Eu sou o Arruaceiro do Deserto..............";
 	next;
 	mes "[" + getarg(1) + "]";
-	mes "Aww a quem eu estou enganando...... Vamos cortar o papo furado.  Ent�o voc� quer se tornar um Arruaceiro?";
+	mes "Aww a quem eu estou enganando...... Vamos cortar o papo furado.  Ent?o voc? quer se tornar um Arruaceiro?";
 	emotion e_swt;
 	next;
 	mes "[" + getarg(1) + "]";
-	mes "Como voc� sabe, o mandamento dos Arruaceiros �...... ^5533FF'Escape dos fortes! Seja mal�sioso com os fracos!'^000000";
-	mes "Est� regra simples pode ser aplicada lutando com monstros tamb�m.";
+	mes "Como voc? sabe, o mandamento dos Arruaceiros ?...... ^5533FF'Escape dos fortes! Seja mal?sioso com os fracos!'^000000";
+	mes "Est? regra simples pode ser aplicada lutando com monstros tamb?m.";
 	next;
 	mes "[" + getarg(1) + "]";
-	mes "A �ltima coisa que voc� tem que fazer para se tornar um Arruaceiro, � andar atrav�s da pasagem subterr�nia at� a Guilda.";
+	mes "A ?ltima coisa que voc? tem que fazer para se tornar um Arruaceiro, ? andar atrav?s da pasagem subterr?nia at? a Guilda.";
 	next;
 	mes "[" + getarg(1) + "]";
-	mes "Parece facil n�? Bem, n�o �! Mas n�o se preocupe....";
-	mes "Se voc� se mantiver firme ao mandamento dos Arruaceiro, se esconder , e correr muito, voc� ficar� bem.";
+	mes "Parece facil n?? Bem, n?o ?! Mas n?o se preocupe....";
+	mes "Se voc? se mantiver firme ao mandamento dos Arruaceiro, se esconder , e correr muito, voc? ficar? bem.";
 
 	M_Menu:
 	next;
 	mes "[" + getarg(1) + "]";
-	mes "Ok, voc� est� pronto pra ir?";
+	mes "Ok, voc? est? pronto pra ir?";
 	next;
 	menu "Como nunca estive antes.",-, "Na verdade, Estou um pouco assustado...",M_End;
 
 		mes "[" + getarg(1) + "]";
-		mes "Boa sorte ent�o, voc� vai precizar....";
+		mes "Boa sorte ent?o, voc? vai precizar....";
 		next;
 		set ROGUE_Q, 4;
 		killmonsterall "in_rogue";
@@ -796,37 +796,37 @@ function	script	F_RogueTest4	{
 		mes ".....................";
 		next;
 		mes "[" + getarg(1) + "]";
-		mes "Bem, voc� tem todo o tempo do mundo...... Eu acho.......";
+		mes "Bem, voc? tem todo o tempo do mundo...... Eu acho.......";
 		close;
 
 L_Restart:
 	mes "[" + getarg(1) + "]";
-	mes "....... Parece que voc� foi pego.......";
+	mes "....... Parece que voc? foi pego.......";
 	emotion e_swt;
 	next;
 	mes "[" + getarg(1) + "]";
-	mes "Se voc� quizer, eu te mando de volta.  Uma falha � s� um dos caminhos errados do sucesso.... yada yada yada....";
+	mes "Se voc? quizer, eu te mando de volta.  Uma falha ? s? um dos caminhos errados do sucesso.... yada yada yada....";
 	percentheal 100,100;
 	goto M_Menu;
 
 L_NoThief:
 	mes "[" + getarg(1) +"]";
-	mes "Eu n�o sei como voc� conseguiu este";
+	mes "Eu n?o sei como voc? conseguiu este";
 		if(ROGUE_Q2)
 	{
-		mes "passe. Mas eu n�o posso";
-		mes "fazer anda por voc�.";
+		mes "passe. Mas eu n?o posso";
+		mes "fazer anda por voc?.";
 	}
 		else
 	{
 		mes "passe, mas olhando sua cara,";
-		mes "Eu suponho que voc� n�o estja aqui para o";
+		mes "Eu suponho que voc? n?o estja aqui para o";
 		mes "teste de Arruaceiro.";
 	}
 	next;
 	mes "[" + getarg(1) +"]";
 	mes "Por favor, se apresse e saia";
-	mes "deste lugar assim que voc� puder!";
+	mes "deste lugar assim que voc? puder!";
 	close;
 }
 
@@ -843,12 +843,12 @@ in_rogue,15,185,0	script	rogue_mob1	139,8,0,{
 	end;
 }
 in_rogue,15,245,0	script	rogue_mob2	139,8,0,{
-	monster "in_rogue",14,247,"M�mia",1041,1;
-	monster "in_rogue",15,247,"M�mia",1041,1;
-	monster "in_rogue",16,247,"M�mia",1041,1;
-	monster "in_rogue",14,248,"M�mia",1041,1;
-	monster "in_rogue",15,248,"M�mia",1041,1;
-	monster "in_rogue",16,248,"M�mia",1041,1;
+	monster "in_rogue",14,247,"M?mia",1041,1;
+	monster "in_rogue",15,247,"M?mia",1041,1;
+	monster "in_rogue",16,247,"M?mia",1041,1;
+	monster "in_rogue",14,248,"M?mia",1041,1;
+	monster "in_rogue",15,248,"M?mia",1041,1;
+	monster "in_rogue",16,248,"M?mia",1041,1;
 	end;
 }
 in_rogue,15,328,0	script	rogue_mob3	139,8,0,{
@@ -861,10 +861,10 @@ in_rogue,15,328,0	script	rogue_mob3	139,8,0,{
 	end;
 }
 in_rogue,35,342,0	script	rogue_mob4	139,0,8,{
-	monster "in_rogue",38,340,"M�mia",1041,1;
+	monster "in_rogue",38,340,"M?mia",1041,1;
 	monster "in_rogue",37,342,"Cavaleiro do Abismo",1219,1;
-	monster "in_rogue",39,342,"Carni�al",1036,1;
-	monster "in_rogue",38,344,"M�mia",1041,1;
+	monster "in_rogue",39,342,"Carni?al",1036,1;
+	monster "in_rogue",38,344,"M?mia",1041,1;
 	end;
 }
 in_rogue,57,306,0	script	rogue_mob5	139,4,0,{
@@ -892,14 +892,14 @@ in_rogue,62,302,0	script	rogue_mob9	139,0,4,{
 in_rogue,199,218,0	script	rogue_mob10	139,0,8,{
 	monster "in_rogue",157,218,"Zumbi",1015,10;
 	monster "in_rogue",157,218,"Cavaleiro do Abismo",1219,1;
-	monster "in_rogue",157,218,"Carni�al",1036,1;
+	monster "in_rogue",157,218,"Carni?al",1036,1;
 	monster "in_rogue",157,218,"Esqueleto Arqueiro",1016,1;
 	end;
 }
 in_rogue,86,187,0	script	rogue_mob11	139,0,8,{
-	monster "in_rogue",88,186,"M�mia",1041,1;
-	monster "in_rogue",88,187,"M�mia",1041,1;
-	monster "in_rogue",88,188,"M�mia",1041,1;
+	monster "in_rogue",88,186,"M?mia",1041,1;
+	monster "in_rogue",88,187,"M?mia",1041,1;
+	monster "in_rogue",88,188,"M?mia",1041,1;
 	end;
 }
 in_rogue,225,187,0	script	rogue_mob12	139,0,8,{
@@ -909,10 +909,10 @@ in_rogue,225,187,0	script	rogue_mob12	139,0,8,{
 	end;
 }
 in_rogue,252,320,0	script	rogue_mob13	139,0,8,{
-	monster "in_rogue",252,319,"M�mia",1041,1;
-	monster "in_rogue",252,321,"M�mia",1041,1;
-	monster "in_rogue",252,319,"Carni�al",1036,1;
-	monster "in_rogue",252,321,"Carni�al",1036,1;
+	monster "in_rogue",252,319,"M?mia",1041,1;
+	monster "in_rogue",252,321,"M?mia",1041,1;
+	monster "in_rogue",252,319,"Carni?al",1036,1;
+	monster "in_rogue",252,321,"Carni?al",1036,1;
 	monster "in_rogue",257,320,"Esqueleto Arqueiro",1016,1;
 	monster "in_rogue",248,320,"Esqueleto Arqueiro",1016,1;
 	end;

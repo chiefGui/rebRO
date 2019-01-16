@@ -1,7 +1,7 @@
 izlude_in,74,172,5	script	Espadachim Mestre	119,{
 	mes "[Espadachim Mestre]";
 	if(BaseJob == Job_Novice && job_sword_q == 2) goto L_Done;
-	mes "Bem vindo à Associação dos Espadachins! Mas.. O que o traz à nós??";
+	mes "Bem vindo ï¿½ Associaï¿½ï¿½o dos Espadachins! Mas.. O que o traz ï¿½ nï¿½s??";
 L_Menu:
 	next;
 	menu "Quero ser um Espadachim!",M_0,"Sobre Espadachins.",M_1,"Os Requerimentos.",M_2,"Cancelar.",M_End;
@@ -10,43 +10,43 @@ L_Menu:
 	M_0:
 		mes "[Espadachim Mestre]";
 		if(BaseJob == Job_Swordman){
-			mes "Muhahaha! Você so pode estar brincando comigo! Você já é um Espadachim.";
+			mes "Muhahaha! Vocï¿½ so pode estar brincando comigo! Vocï¿½ jï¿½ ï¿½ um Espadachim.";
 			emotion e_heh;
 			close;
 		}else
 		if(BaseJob != Job_Novice){
-			mes "Desculpe, mas você não pode aprender a ser um Espadachim, você já tem uma profissão... Assim terei de te recusar.";
+			mes "Desculpe, mas vocï¿½ nï¿½o pode aprender a ser um Espadachim, vocï¿½ jï¿½ tem uma profissï¿½o... Assim terei de te recusar.";
 			emotion e_heh;
 			close;
 		}
-		mes "Ah sim, você deseja se tornar um Espadachim neh... Hmmm uma boa escolha claro... Preencha esse formulário por favor.";
+		mes "Ah sim, vocï¿½ deseja se tornar um Espadachim neh... Hmmm uma boa escolha claro... Preencha esse formulï¿½rio por favor.";
 		next;
-		mes "..(você preenche o formulário e entregua a ele)..";
+		mes "..(vocï¿½ preenche o formulï¿½rio e entregua a ele)..";
 		next;
 		mes "[Espadachim Mestre]";
 		if(JobLevel < 10){
-			mes "Hmmmm hem...., você precisa aprender todas as 'Habilidades Básicas' para se tornar um Espadachim.  Por favor, cheque os requerimentos novamente.";
+			mes "Hmmmm hem...., vocï¿½ precisa aprender todas as 'Habilidades Bï¿½sicas' para se tornar um Espadachim.  Por favor, cheque os requerimentos novamente.";
 			close;
 		}
 			set job_sword_q,1;
 			savepoint "izlude_in",65,165;
-			mes "Ok.  Deixe-me ver uma informação......";
+			mes "Ok.  Deixe-me ver uma informaï¿½ï¿½o......";
 			next;
 			mes "[Espadachim Mestre]";
-			mes "Ah!! Vejo que você tem os requerimentos necessários.....";
+			mes "Ah!! Vejo que vocï¿½ tem os requerimentos necessï¿½rios.....";
 			next;
 			mes "[Espadachim Mestre]";
-			mes "Mas há uma última coisa que você precisa fazer antes de eu lhe fazer um 'Espadachim Ofical'.";
-			mes "Você provará seu valor fazendo o Teste para Espadachins de Izlude !!!";
+			mes "Mas hï¿½ uma ï¿½ltima coisa que vocï¿½ precisa fazer antes de eu lhe fazer um 'Espadachim Ofical'.";
+			mes "Vocï¿½ provarï¿½ seu valor fazendo o Teste para Espadachins de Izlude !!!";
 			next;
 			mes "[Espadachim Mestre]";
-			mes "Você está pronto para fazer isso?";
+			mes "Vocï¿½ estï¿½ pronto para fazer isso?";
 			next;
-			menu "Sim.",sM_0,"Não.",sM_1;
+			menu "Sim.",sM_0,"Nï¿½o.",sM_1;
 
 			sM_0:
 				mes "[Espadachim Mestre]";
-				mes "Muito Bom!!!  A sala de testes está a minha direita.";
+				mes "Muito Bom!!!  A sala de testes estï¿½ a minha direita.";
 				next;
 				mes "[Espadachim Mestre]";
 				mes "Boa sorte jovem Espadachim!!!";
@@ -54,60 +54,60 @@ L_Menu:
 
 			sM_1:
 				mes "[Espadachim Mestre]";
-				mes "Muito bem. Seu cadastro está completo. Quando você estiver pronto para fazer a prova, entre na sala de testes a minha direita.";
+				mes "Muito bem. Seu cadastro estï¿½ completo. Quando vocï¿½ estiver pronto para fazer a prova, entre na sala de testes a minha direita.";
 				close;
 
 	M_1:
 		mes "[Espadachim Mestre]";
-		mes "Então você deseja saber sobre a profissão de Espadachim... muito bom! Eu explicarei isto a você.";
+		mes "Entï¿½o vocï¿½ deseja saber sobre a profissï¿½o de Espadachim... muito bom! Eu explicarei isto a vocï¿½.";
 		next;
 		mes "[Espadachim Mestre]";
-		mes "A primeira vantagem de ser um Espadachim é que você ficará superior em pura força e combate corpaoral comparados com esses nas outras profissões.";
+		mes "A primeira vantagem de ser um Espadachim ï¿½ que vocï¿½ ficarï¿½ superior em pura forï¿½a e combate corpaoral comparados com esses nas outras profissï¿½es.";
 		next;
 		mes "[Espadachim Mestre]";
-		mes "Há 3 razões por que o Espadachim é superior em combates v.s. dos outros tipos de trabalho!";
+		mes "Hï¿½ 3 razï¿½es por que o Espadachim ï¿½ superior em combates v.s. dos outros tipos de trabalho!";
 		next;
 		mes "[Espadachim Mestre]";
-		mes " - 1º, o Espadachim tem uma habilidade que o dá uma excelente taxa de regeneração de hp.";
-		mes " - 2º, o Espadachim é capaz de usar mais tipos de armas que os outros tipos de trabalho.";
-		mes " - 3º, a maioria das habilidades do Espadachim aumenta ou incrementa o ataque fisico fazendo um guerreiro de elite.";
+		mes " - 1ï¿½, o Espadachim tem uma habilidade que o dï¿½ uma excelente taxa de regeneraï¿½ï¿½o de hp.";
+		mes " - 2ï¿½, o Espadachim ï¿½ capaz de usar mais tipos de armas que os outros tipos de trabalho.";
+		mes " - 3ï¿½, a maioria das habilidades do Espadachim aumenta ou incrementa o ataque fisico fazendo um guerreiro de elite.";
 		next;
 		mes "[Espadachim Mestre]";
-		mes "Uma simples mas eficaz explicação para um iniciante.";
+		mes "Uma simples mas eficaz explicaï¿½ï¿½o para um iniciante.";
 		next;
 		mes "[Espadachim Mestre]";
-		mes "Aparte disto, em minha opinião pessoal, ser um 'Espadachim' é maior trabalho em toda a terra!";
+		mes "Aparte disto, em minha opiniï¿½o pessoal, ser um 'Espadachim' ï¿½ maior trabalho em toda a terra!";
 		mes "Muhahahah!!!";
 		emotion e_heh;
 		goto L_Menu;
 
 	M_2:
 		mes "[Espadachim Mestre]";
-		mes "Você deseja se tornar um Espadachim....";
+		mes "Vocï¿½ deseja se tornar um Espadachim....";
 		next;
 		if(BaseJob == Job_Novice) goto O_2a;
 		if(BaseJob == Job_Swordman) {
 			mes "[Espadachim Mestre]";
-			mes "....mas você já é um Espadachim....????";
+			mes "....mas vocï¿½ jï¿½ ï¿½ um Espadachim....????";
 			emotion e_hmm;
 			close;
 		}
 		mes "[Espadachim Mestre]";
-		mes "Mas você já tem outro trabalho.... está muito tarde para você se tornar um Espadachim.";
+		mes "Mas vocï¿½ jï¿½ tem outro trabalho.... estï¿½ muito tarde para vocï¿½ se tornar um Espadachim.";
 		next;
 		mes "[Espadachim Mestre]";
-		mes "Ainda você busca conhecimento sobre a profissão de Espadachim?... muito bem então....";
+		mes "Ainda vocï¿½ busca conhecimento sobre a profissï¿½o de Espadachim?... muito bem entï¿½o....";
 		next;
 
 		O_2a:
 			mes "[Espadachim Mestre]";	
-			mes "Primeiro, Você tem que aprender todas as 9 Habilidades Básicas. Se você não puder satisfazer esta condição, você não poderá se tornar qualquer coisa.";
+			mes "Primeiro, Vocï¿½ tem que aprender todas as 9 Habilidades Bï¿½sicas. Se vocï¿½ nï¿½o puder satisfazer esta condiï¿½ï¿½o, vocï¿½ nï¿½o poderï¿½ se tornar qualquer coisa.";
 			next;
 			mes "[Espadachim Mestre]";
-	 		mes "Secundariamente você tem que passar no Teste para Espadachins de Izlude.";
+	 		mes "Secundariamente vocï¿½ tem que passar no Teste para Espadachins de Izlude.";
 			next;
 			mes "[Espadachim Mestre]";
-			mes "Quando você completar essas duas condiçoes, você se tornará um Espadachim.";
+			mes "Quando vocï¿½ completar essas duas condiï¿½oes, vocï¿½ se tornarï¿½ um Espadachim.";
 			goto L_Menu;
 			
 	M_End:
@@ -117,16 +117,16 @@ L_Menu:
 		close;
 
 L_Done:
-	mes "Me deixe ver aqui.... assim você passou no teste??....";
+	mes "Me deixe ver aqui.... assim vocï¿½ passou no teste??....";
 	next;
 	if(SkillPoint > 0) goto L_Skillpt;
 	mes "[Espadachim Mestre]";
-	mes "Parabéns! Agora você é qualificado completamente para se tornar um Espadachim! Eu o transformarei imediatamente!!";	
+	mes "Parabï¿½ns! Agora vocï¿½ ï¿½ qualificado completamente para se tornar um Espadachim! Eu o transformarei imediatamente!!";	
 	next;
 	callfunc "Job_Change",Job_Swordman;
 	callfunc "F_ClearJobVar";		// clears all job variables for the current player
 	mes "[Espadachim Mestre]";
-	mes "Como você parta em sua viagem eu esperarei que você represente A Associação de Espadachim de Izlude com grande honra e integridade.";
+	mes "Como vocï¿½ parta em sua viagem eu esperarei que vocï¿½ represente A Associaï¿½ï¿½o de Espadachim de Izlude com grande honra e integridade.";
 	next;
 	mes "[Espadachim Mestre]";
 	mes "Muhahahaha!!!";
@@ -134,7 +134,7 @@ L_Done:
 
 	L_Skillpt:
 		mes "[Espadachim Mestre]";
-		mes "Hmm... só um momento... parece que você ainda tem pontos de habilidade.";
+		mes "Hmm... sï¿½ um momento... parece que vocï¿½ ainda tem pontos de habilidade.";
 		mes "Por favor gaste-os para lhe tornar um Espadachim.";
 		close;
 }
@@ -162,11 +162,11 @@ OnStart:
 	if(BaseJob == Job_Novice) goto L_Novice;
 
 L_Other:
-	mes "Quem poderia ser você?! Esses que não são os novatos não são permitidos entrar! Por favor saia.";
+	mes "Quem poderia ser vocï¿½?! Esses que nï¿½o sï¿½o os novatos nï¿½o sï¿½o permitidos entrar! Por favor saia.";
 	emotion e_what;
 	close;
 L_Sword:
-	mes "Você já é um Espadachim!! Você não precisa fazer esta prova tola!";
+	mes "Vocï¿½ jï¿½ ï¿½ um Espadachim!! Vocï¿½ nï¿½o precisa fazer esta prova tola!";
 	emotion e_gasp;
 	close;
 
@@ -174,9 +174,9 @@ L_Novice:
 	if(job_sword_q == 1) goto L_Start;
 	if(job_sword_q == 2) goto L_Done;
 
-		mes "Pare! Você quer fazer o teste para Espadachim?";
-		mes "Nesse caso, por favor preencha a inscrição para Espadachins primeiro.";
-		mes "Fale com o 'Espadachim Mestre' para mais informações.";
+		mes "Pare! Vocï¿½ quer fazer o teste para Espadachim?";
+		mes "Nesse caso, por favor preencha a inscriï¿½ï¿½o para Espadachins primeiro.";
+		mes "Fale com o 'Espadachim Mestre' para mais informaï¿½ï¿½es.";
 		emotion e_gasp;
 		close;
 
@@ -192,28 +192,28 @@ L_Novice:
 // -- Guia de Teste --
 izlude_in,30,175,4	script	Guia de Teste	92,{
 	mes "[Guia de Teste]";
-	mes "Eu lhe contarei sobre o legendário Teste de Espadachim de Izlude! Escute MUITO CUIDADOSAMENTE porque eu não repetirei isto novamente!!";
+	mes "Eu lhe contarei sobre o legendï¿½rio Teste de Espadachim de Izlude! Escute MUITO CUIDADOSAMENTE porque eu nï¿½o repetirei isto novamente!!";
 	next;
 	mes "[Guia de Teste]";
-	mes "O propósito deste teste é decidir ou não se você se qualifica para se tornar um Espadachim."; 
-	mes "Como você sabe, um Espadachim precisa de Força física superior como também um testamento férreo!";
-	mes "Se você não possui nenhum destes atributos, você seguramente falhará neste teste.";
+	mes "O propï¿½sito deste teste ï¿½ decidir ou nï¿½o se vocï¿½ se qualifica para se tornar um Espadachim."; 
+	mes "Como vocï¿½ sabe, um Espadachim precisa de Forï¿½a fï¿½sica superior como tambï¿½m um testamento fï¿½rreo!";
+	mes "Se vocï¿½ nï¿½o possui nenhum destes atributos, vocï¿½ seguramente falharï¿½ neste teste.";
 	next;
 	mes "[Guia de Teste]";
-	mes "O objetivo do teste é simples!";
+	mes "O objetivo do teste ï¿½ simples!";
 	next;
 	mes "[Guia de Teste]";
-	mes "Você precisa fazer um percurso em ^FF00007 minutos^000000 para passar.";
+	mes "Vocï¿½ precisa fazer um percurso em ^FF00007 minutos^000000 para passar.";
 	next;
 	mes "[Guia de Teste]";
-	mes "O curso de obstáculos é composto de três partes e é coberto de lixo e armadilhas!";
-	mes "Algumas armadilhas reduzirão seu HP enquanto outros o teleportarão para uma caverna subterrânea fortuita que o fará recomeçar.";
+	mes "O curso de obstï¿½culos ï¿½ composto de trï¿½s partes e ï¿½ coberto de lixo e armadilhas!";
+	mes "Algumas armadilhas reduzirï¿½o seu HP enquanto outros o teleportarï¿½o para uma caverna subterrï¿½nea fortuita que o farï¿½ recomeï¿½ar.";
 	next;
 	mes "[Guia de Teste]";
-	mes "Se você abandona ou excede o prazo você falhará no teste.";
+	mes "Se vocï¿½ abandona ou excede o prazo vocï¿½ falharï¿½ no teste.";
 	next;
 	mes "[Guia de Teste]";
-	mes "Isso é tudo o que você precisa saber para fazer a prova.";
+	mes "Isso ï¿½ tudo o que vocï¿½ precisa saber para fazer a prova.";
 	mes "Boa sorte.";
 	close;
 }
@@ -226,10 +226,10 @@ izlude_in,30,163,5	script	Guerreiro	105,{
 	if(SWTEST >= 2) goto L_Option3;
 	set SWTEST, 0;
 
-	mes "    Assim você quer levar adiante o teste? Você parece confiante.. isso é bom.  Fique relaxado e faça seu melhor. Este não é um teste difícil.";
+	mes "    Assim vocï¿½ quer levar adiante o teste? Vocï¿½ parece confiante.. isso ï¿½ bom.  Fique relaxado e faï¿½a seu melhor. Este nï¿½o ï¿½ um teste difï¿½cil.";
 	next;
 	mes "[Guerreiro]";
-	mes "Está pronto?";
+	mes "Estï¿½ pronto?";
 	next;
 	menu "Deixe-me fazer o teste!!",M_yes,"Ah.. talvez depois..",M_no;
 	close;
@@ -248,36 +248,36 @@ izlude_in,30,163,5	script	Guerreiro	105,{
 		 close;
 
 L_Option2:
-	mes ".... Mantenha sua cabeça. Eu gosto desses que nunca cedem à um desafio! Agora leve isto e se anime!";
-	additem 512,3;//Items: Apple,
+	mes ".... Mantenha sua cabeï¿½a. Eu gosto desses que nunca cedem ï¿½ um desafio! Agora leve isto e se anime!";
+	getitem 512,3;//Items: Apple,
 	next;
 	goto M_yes;
 	end;
 L_Option3:
-	mes "Não se renda! Eu sei que você passará deste tempo!";
-	additem 512,5;//Items: Apple,
+	mes "Nï¿½o se renda! Eu sei que vocï¿½ passarï¿½ deste tempo!";
+	getitem 512,5;//Items: Apple,
 	next;
 	goto M_yes;
 	end;
 }
 sword_1-1,1,1,0	script	TimerSwrdmn	-1,{
 	OnTimer4000:
-		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Seus 7 minutos começaram agora!",0;
+		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Seus 7 minutos comeï¿½aram agora!",0;
 		end;
 	OnTimer184000:
-		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Você tem 4 minutos ainda!",0;
+		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Vocï¿½ tem 4 minutos ainda!",0;
 		end;
 	OnTimer304000:
-		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Você tem 2 minutos ainda!",0;
+		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Vocï¿½ tem 2 minutos ainda!",0;
 		end;
 	OnTimer364000:
-		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Você tem 1 minutos ainda!",0;
+		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Vocï¿½ tem 1 minutos ainda!",0;
 		end;
 	OnTimer394000:
-		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Você tem 30 segundos ainda, rápido!",0;
+		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Vocï¿½ tem 30 segundos ainda, rï¿½pido!",0;
 		end;
 	OnTimer424000:
-		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Seu tempo acabou!  Você falhou.",0;
+		areaannounce "sword_1-1", 0, 0, 400, 400, "[Guerreiro]: Seu tempo acabou!  Vocï¿½ falhou.",0;
 		end;
 	OnTimer428000:
 		stopnpctimer;
@@ -287,9 +287,9 @@ sword_1-1,1,1,0	script	TimerSwrdmn	-1,{
 
 
 // -- Medic 1 --
-sword_1-1,230,245,2	script	Médico#01	105,{
-	mes "[Médico]";
-	mes "Essa é a primeira parte! Você está bem!";
+sword_1-1,230,245,2	script	Mï¿½dico#01	105,{
+	mes "[Mï¿½dico]";
+	mes "Essa ï¿½ a primeira parte! Vocï¿½ estï¿½ bem!";
 	percentheal 100, 100;
 	close;
 }
@@ -297,23 +297,23 @@ sword_1-1,230,245,2	script	Médico#01	105,{
 // -- Test Hall Staff 2 --
 sword_1-1,230,242,2	script	Guerreiro#01	105,{
 	mes "[Guerreiro]";
-	mes "Você se rende?";
+	mes "Vocï¿½ se rende?";
 	next;
-	menu "Sim.",M_0,"Não.",M_1;
+	menu "Sim.",M_0,"Nï¿½o.",M_1;
 
 	M_0:
 		warp "izlude_in",65,165;
 		close;
 	M_1:
 		mes "[Guerreiro]";
-		mes "Bravo! Faço novamente isso!";
+		mes "Bravo! Faï¿½o novamente isso!";
    		close;
 }
 
 // -- Medic 2 --
-sword_1-1,230,207,2	script	Médico#02	105,{
-	mes "[Médico]";
-	mes "Este é a segunda parte! Mantenha-se assim!";
+sword_1-1,230,207,2	script	Mï¿½dico#02	105,{
+	mes "[Mï¿½dico]";
+	mes "Este ï¿½ a segunda parte! Mantenha-se assim!";
 	percentheal 100, 100;
 	close;
 }
@@ -321,24 +321,24 @@ sword_1-1,230,207,2	script	Médico#02	105,{
 // -- Test Hall Staff 3 --
 sword_1-1,230,204,2	script	Guerreiro#02	105,{
 	mes "[Guerreiro]";
-	mes "Você se rende?";
+	mes "Vocï¿½ se rende?";
 	next;
-	menu "Sim.",M_0,"Não.",M_1;
+	menu "Sim.",M_0,"Nï¿½o.",M_1;
 
 	M_0:
 		warp "izlude_in",65,165;
 		close;
 	M_1:
 		mes "[Guerreiro]";
-		mes "Bravo! Faço novamente isso!";
+		mes "Bravo! Faï¿½o novamente isso!";
    		close;
 }
 
 // -- Mae (Medic 3) --
 sword_1-1,223,167,2	script	Mae	92,{
 	mes "[Mae]";
-	mes "Eu sinceramente o parabenizo, você passou nos testes!";
-	mes "Já vou enviar o resultado ao 'Espadachim Mestre'.";
+	mes "Eu sinceramente o parabenizo, vocï¿½ passou nos testes!";
+	mes "Jï¿½ vou enviar o resultado ao 'Espadachim Mestre'.";
 	mes "Por favor fale com ele sobre os resultados. Obrigado";
 	next;
 	stopnpctimer "TimerSwrdmn";

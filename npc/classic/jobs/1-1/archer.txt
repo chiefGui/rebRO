@@ -5,21 +5,21 @@ opayon_in02,64,71,4	script	Arqueiro	85,{
 		if ((Class == Job_Novice_H) && ((job_karma == 5) || (job_karma == 12) || (job_karma == 13)))
 		{
 			mes "[Membro da Guilda dos Arqueiros]";
-			mes "Você não me é estranh"+(Sex?"o":"a")+"...";
-			mes "Você voltou a ser "+(Sex?"um arqueiro":"uma arqueira")+"?";
+			mes "Vocï¿½ nï¿½o me ï¿½ estranh"+(Sex?"o":"a")+"...";
+			mes "Vocï¿½ voltou a ser "+(Sex?"um arqueiro":"uma arqueira")+"?";
 			next;
 			if (getskilllv("NV_BASIC") < 9)
 			{
 				mes "[Membro da Guilda dos Arqueiros]";
-				mes "Como você já sabe, para ser "+(Sex?"um arqueiro":"uma arqueira")+" você precisa aprender";
-				mes "todas as habilidades básicas.";
+				mes "Como vocï¿½ jï¿½ sabe, para ser "+(Sex?"um arqueiro":"uma arqueira")+" vocï¿½ precisa aprender";
+				mes "todas as habilidades bï¿½sicas.";
 				next;
 				mes "[Membro da Guilda dos Arqueiros]";
 				mes "Certo, cuide-se.";
 				close;
 			}
 			mes "[Membro da Guilda dos Arqueiros]";
-			mes "Não preciso dizer muita coisa.";
+			mes "Nï¿½o preciso dizer muita coisa.";
 			mes "Basta mirar bem usando os seus sentidos.";
 			next;
 			skill 143, 0, 0;
@@ -27,46 +27,46 @@ opayon_in02,64,71,4	script	Arqueiro	85,{
 			skill 147, 1, 0;
 			skill 148, 1, 0;
 			mes "[Membro da Guilda dos Arqueiros]";
-			mes "Não temos nada aqui neste momento... ";
-			mes "Bem, isso não importa. Divirta-se.";
+			mes "Nï¿½o temos nada aqui neste momento... ";
+			mes "Bem, isso nï¿½o importa. Divirta-se.";
 			close;
 		}
 		mes "[Membro da Guilda dos Arqueiros]";
-		mes "O que você está olhando?";
-		mes "Apenas vá embora...";
+		mes "O que vocï¿½ estï¿½ olhando?";
+		mes "Apenas vï¿½ embora...";
 		mes "Eu sou bem orgulhoso...";
-		mes "Ôpa, não, não...!";
+		mes "ï¿½pa, nï¿½o, nï¿½o...!";
 		next;
 		mes "[Membro da Guilda dos Arqueiros]";
-		mes "Haha, você não ouviu nada do que eu disse.";
-		mes "Entendeu tudo errado. É por causa do que você está sentindo.";
+		mes "Haha, vocï¿½ nï¿½o ouviu nada do que eu disse.";
+		mes "Entendeu tudo errado. ï¿½ por causa do que vocï¿½ estï¿½ sentindo.";
 		close;
 	}
 */
 	mes "[Membro da Guilda dos Arqueiros]";
-	mes "Bom dia. Como posso ajudá-l"+(Sex?"o":"a")+"?";
+	mes "Bom dia. Como posso ajudï¿½-l"+(Sex?"o":"a")+"?";
 	next;
-	switch (select ("Eu quero ser "+(Sex?"um Arqueiro":"uma Arqueira")+".","O que é preciso para ser "+(Sex?"um Arqueiro":"uma Arqueira")+"?","Não preciso de ajuda."))
+	switch (select ("Eu quero ser "+(Sex?"um Arqueiro":"uma Arqueira")+".","O que ï¿½ preciso para ser "+(Sex?"um Arqueiro":"uma Arqueira")+"?","Nï¿½o preciso de ajuda."))
 	{
 		case 1:
 			if (BaseJob == Job_Archer)
 			{
 				mes "[Membro da Guilda dos Arqueiros]";
-				mes "Você já é "+(Sex?"um arqueiro":"uma arqueira")+".";
+				mes "Vocï¿½ jï¿½ ï¿½ "+(Sex?"um arqueiro":"uma arqueira")+".";
 				close;
 			}
 			else if (BaseJob != Job_Archer && BaseJob != Job_Novice)
 			{
 				mes "[Membro da Guilda dos Arqueiros]";
-				mes "Hmm... Você não parece ser um"+(Sex?"":"a")+" Aprendiz...";
-				mes "Seja lá o que você for, você não pode ser "+(Sex?"um arqueiro":"uma arqueira")+", porque já é de outra classe.";
+				mes "Hmm... Vocï¿½ nï¿½o parece ser um"+(Sex?"":"a")+" Aprendiz...";
+				mes "Seja lï¿½ o que vocï¿½ for, vocï¿½ nï¿½o pode ser "+(Sex?"um arqueiro":"uma arqueira")+", porque jï¿½ ï¿½ de outra classe.";
 				close;
 			}
 			if (job_archer_q == 0)
 			{
 				mes "[Membro da Guilda dos Arqueiros]";
-				mes "Você quer ser "+(Sex?"um arqueiro":"uma arqueira")+"?";
-				mes "Se você quer, preencha este formulário.";
+				mes "Vocï¿½ quer ser "+(Sex?"um arqueiro":"uma arqueira")+"?";
+				mes "Se vocï¿½ quer, preencha este formulï¿½rio.";
 				next;
 				switch (select ("Inscrever-se.","Cancelar."))
 				{
@@ -74,39 +74,39 @@ opayon_in02,64,71,4	script	Arqueiro	85,{
 						set job_archer_q, 1;
 						setquest 1004;
 						mes "[Membro da Guilda dos Arqueiros]";
-						mes "Ok, assine aqui... Certo... hmmm. Você será promovid"+(Sex?"o":"a")+" assim que cumprir certos pré-requisitos necessários.";
-						mes "Se você acha que está pronto, podemos começar agora.";
-						mes "Você está pronto?";
+						mes "Ok, assine aqui... Certo... hmmm. Vocï¿½ serï¿½ promovid"+(Sex?"o":"a")+" assim que cumprir certos prï¿½-requisitos necessï¿½rios.";
+						mes "Se vocï¿½ acha que estï¿½ pronto, podemos comeï¿½ar agora.";
+						mes "Vocï¿½ estï¿½ pronto?";
 						next;
-						switch (select ("Sim!","Não, não estou pront"+(Sex?"o":"a")+" ainda."))
+						switch (select ("Sim!","Nï¿½o, nï¿½o estou pront"+(Sex?"o":"a")+" ainda."))
 						{
 							case 1:
 								mes "[Membro da Guilda dos Arqueiros]";
-								mes "Vamos ver então.";
+								mes "Vamos ver entï¿½o.";
 								next;
 								break;
 								
 							case 2:
 								mes "[Membro da Guilda dos Arqueiros]";
 								mes "Eu entendo...";
-								mes "Se você quiser saber os pré-requisitos para ser Arqueir"+(Sex?"o":"a")+", é só falar comigo.";
+								mes "Se vocï¿½ quiser saber os prï¿½-requisitos para ser Arqueir"+(Sex?"o":"a")+", ï¿½ sï¿½ falar comigo.";
 								close;
 						}
 						break;
 							
 					case 2:
 						mes "[Membro da Guilda dos Arqueiros]";
-						mes "Até mais!";
+						mes "Atï¿½ mais!";
 						close;
 				}
 				mes "[Membro da Guilda dos Arqueiros]";
-				mes "Você se chama " + strcharinfo(0) + "?";
+				mes "Vocï¿½ se chama " + strcharinfo(0) + "?";
 				next;
 				if (getskilllv("NV_BASIC") < 9)
 				{
 					mes "[Membro da Guilda dos Arqueiros]";
-					mes "O seu nível como Aprendiz está abaixo do necessário... ";
-					mes "Você deve chegar ao nível de classe 10 para se tornar "+(Sex?"um arqueiro":"uma arqueira")+".";
+					mes "O seu nï¿½vel como Aprendiz estï¿½ abaixo do necessï¿½rio... ";
+					mes "Vocï¿½ deve chegar ao nï¿½vel de classe 10 para se tornar "+(Sex?"um arqueiro":"uma arqueira")+".";
 					close;
 				}
 			}
@@ -123,14 +123,14 @@ opayon_in02,64,71,4	script	Arqueiro	85,{
 			if (job_archer_q == 1)
 			{
 				mes "[Membro da Guilda dos Arqueiros]";
-				mes "Ótimo! Bom trabalho!";
-				mes "Agora vamos ver se você trouxe Troncos suficientes para fazermos um Arco.";
+				mes "ï¿½timo! Bom trabalho!";
+				mes "Agora vamos ver se vocï¿½ trouxe Troncos suficientes para fazermos um Arco.";
 				mes "...hmm...";
 				next;
 				if (!countitem(1066) && !countitem(1067) && !countitem(1068) && !countitem(1019))
 				{
 					mes "[Membro da Guilda dos Arqueiros]";
-					mes "Mas você não trouxe nada!";
+					mes "Mas vocï¿½ nï¿½o trouxe nada!";
 					close;
 				}
 				mes "[Membro da Guilda dos Arqueiros]";
@@ -154,12 +154,12 @@ opayon_in02,64,71,4	script	Arqueiro	85,{
 				next;
 				mes "[Membro da Guilda dos Arqueiros]";
 				if (.@total_archer > 40)
-					mes "Uau! Mais de 40! Fantástico! Meus parabéns!";
+					mes "Uau! Mais de 40! Fantï¿½stico! Meus parabï¿½ns!";
 				else if (.@total_archer > 30)
-					mes "Mais de 30! Ótimo! Parabéns.";
+					mes "Mais de 30! ï¿½timo! Parabï¿½ns.";
 				else if (.@total_archer > 25)
 					mes "Passou raspando.. mas tudo bem...";
-				mes "Vou mandar o material para o Departamento de Produção de Arcos.";
+				mes "Vou mandar o material para o Departamento de Produï¿½ï¿½o de Arcos.";
 				if (countitem(1066) != 0)
 					delitem 1066, .@arc_send_item1;
 				if (countitem(1067) != 0)
@@ -169,45 +169,45 @@ opayon_in02,64,71,4	script	Arqueiro	85,{
 				if (countitem(1019) != 0)
 					delitem 1019, .@arc_send_item4;
 			}
-			mes "Parabéns, você passou no teste! Vou nomeá-l"+(Sex?"o Arqueiro":"a Arqueira")+"!";
+			mes "Parabï¿½ns, vocï¿½ passou no teste! Vou nomeï¿½-l"+(Sex?"o Arqueiro":"a Arqueira")+"!";
 			next;
 			skill 143,0,0;
 			jobchange Job_Archer;
 			completequest 1004;
 			mes "[Membro da Guilda dos Arqueiros]";
-			mes "Parabéns! Nós esperamos que você contribua para a grandiosidade de nossa Guilda!";
-			mes "Ah! Seu Arco chegou do Departamento de Produção, aqui está ele.";
+			mes "Parabï¿½ns! Nï¿½s esperamos que vocï¿½ contribua para a grandiosidade de nossa Guilda!";
+			mes "Ah! Seu Arco chegou do Departamento de Produï¿½ï¿½o, aqui estï¿½ ele.";
 			getitem 1702, 1;
 			getitem 1750, .@total_archer2;
 			next;
 			mes "[Membro da Guilda dos Arqueiros]";
-			mes "Agora você é "+(Sex?"um Arqueiro":"uma Arqueira")+" legítimo, com arco, flecha e tudo mais!";
-			mes "Boa Sorte na sua jornada pelo mundo, espero que você se torne o melhor de todos os Arqueiros!";
+			mes "Agora vocï¿½ ï¿½ "+(Sex?"um Arqueiro":"uma Arqueira")+" legï¿½timo, com arco, flecha e tudo mais!";
+			mes "Boa Sorte na sua jornada pelo mundo, espero que vocï¿½ se torne o melhor de todos os Arqueiros!";
 			close;
 
 		case 2:
 			mes "[Membro da Guilda dos Arqueiros]";
-			mes "Eu vou explicar os pré-requisitos para se tornar Arqueir"+(Sex?"o":"a")+":";
+			mes "Eu vou explicar os prï¿½-requisitos para se tornar Arqueir"+(Sex?"o":"a")+":";
 			if (BaseJob != Job_Novice)
 			{
 				if (BaseJob == Job_Archer)
-					mes "Hmmm.. mas você já é "+(Sex?"um Arqueiro":"uma Arqueira")+"!";
+					mes "Hmmm.. mas vocï¿½ jï¿½ ï¿½ "+(Sex?"um Arqueiro":"uma Arqueira")+"!";
 				else
-					mes "Hmm.. você já pertence a uma classe...";
-				mes ".... E daí? Quem se importa?";
+					mes "Hmm.. vocï¿½ jï¿½ pertence a uma classe...";
+				mes ".... E daï¿½? Quem se importa?";
 			}
 			next;
 			mes "[Membro da Guilda dos Arqueiros]";
-			mes "Antes de tudo você deve alcançar nível de classe 10 como Aprendiz.";
-			mes "Arqueir"+(Sex?"os":"as")+" precisam ter muita concentração, devido a dificuldade de se mirar.. Não podemos aceitar pessoas que não se concentram bem.";
+			mes "Antes de tudo vocï¿½ deve alcanï¿½ar nï¿½vel de classe 10 como Aprendiz.";
+			mes "Arqueir"+(Sex?"os":"as")+" precisam ter muita concentraï¿½ï¿½o, devido a dificuldade de se mirar.. Nï¿½o podemos aceitar pessoas que nï¿½o se concentram bem.";
 			next;
 			mes "[Membro da Guilda dos Arqueiros]";
-			mes "Você vai precisar juntar quantos ^FF0000Troncos^000000 conseguir.";
-			mes "Há 4 tipos de Troncos, de diferentes qualidades de madeira, logo cada um tem uma pontuação diferente.";
-			mes "Você se tornará um Arqueiro se obtiver pelo menos ^0000FF25 ^000000 pontos num total de 40.";
+			mes "Vocï¿½ vai precisar juntar quantos ^FF0000Troncos^000000 conseguir.";
+			mes "Hï¿½ 4 tipos de Troncos, de diferentes qualidades de madeira, logo cada um tem uma pontuaï¿½ï¿½o diferente.";
+			mes "Vocï¿½ se tornarï¿½ um Arqueiro se obtiver pelo menos ^0000FF25 ^000000 pontos num total de 40.";
 			next;
 			mes "[Membro da Guilda dos Arqueiros]";
-			mes "Você pode conseguir Troncos dos 'Salgueiros'. Embora não sejam monstros perigosos, tenha cuidado.";
+			mes "Vocï¿½ pode conseguir Troncos dos 'Salgueiros'. Embora nï¿½o sejam monstros perigosos, tenha cuidado.";
 			close;
 
 		case 3:

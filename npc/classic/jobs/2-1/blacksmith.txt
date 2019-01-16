@@ -178,8 +178,8 @@ L_Change:
 	next;
 	mes "[Ferreiro Altiregen]";
 	mes "Aqui est� um presente! Parab�ns por ter passado!";
-	if(JBLVL != 50) additem 999,5;
-	if(JBLVL == 50) additem 999,10;
+	if(JBLVL != 50) getitem 999,5;
+	if(JBLVL == 50) getitem 999,10;
 	callfunc "F_ClearJobVar";		// clears all job variables for the current player
 	emotion 21;
 	close;
@@ -627,7 +627,7 @@ L_CheckTest2:
 		delitem 1610,1;
 		callsub sF_Make;
 		mes "Entregue isso ao Baisulist de Geffen e traga devolta o recibo.";
-		additem 1610,1;
+		getitem 1610,1;
 		next;
 		mes "[Geshupenschte]";
 		mes "O QUE!? Nada parece diferente?";
@@ -660,7 +660,7 @@ L_CheckTest2:
 		delitem 1219,1;
 		callsub sF_Make;
 		mes "Agora, leve isso ao Wickebine de Morroc";
-		additem 1219,1;
+		getitem 1219,1;
 		next;
 		mes "[Geshupenschte]";
 		mes "O QUE!? ISSO N�O PARECE DIFERENTE!?";
@@ -695,7 +695,7 @@ L_CheckTest2:
 		delitem 1119,1;
 		callsub sF_Make;
 		mes "D� isso ao Gromgast de Izlude e traga devolta o recibo.";
-		additem 1119,1;
+		getitem 1119,1;
 		next;
 		mes "[Geshupenschte]";
 		mes "O QUE!? NADA PARECE DIFERENTE!?";
@@ -730,7 +730,7 @@ L_CheckTest2:
 		delitem 1713,1;
 		callsub sF_Make;
 		mes "Entregue isso ao Tilpitz de Payon";
-		additem 1713,1;
+		getitem 1713,1;
 		next;
 		mes "[Geshupenschte]";
 		mes "O QUE!? NADA PARECE DIFERENTE!?";
@@ -761,7 +761,7 @@ L_CheckTest2:
 		delitem 1513,1;
 		callsub sF_Make;
 		mes "Entregue isso ao Bismarck em Comodo e traga-me devolta o recibo.";
-		additem 1513,1;
+		getitem 1513,1;
 		next;
 		mes "[Geshupenschte]";
 		mes "O QUE!? NADA PARECE DIFERENTE!?";
@@ -934,7 +934,7 @@ L_Start:
 	next;
 	mes "~Scribble, Scribble~ Rip ~";
 	next;
-	additem 1073,1;
+	getitem 1073,1;
 	mes "[Baisulitst]";
 	mes "Aqui est�! At� logo! Obrigado pela entrega!";
 	close;
@@ -994,7 +994,7 @@ L_Start:
 	next;
 	mes "(escrevendo alguma coisa)";
 	next;
-	additem 1073,1;
+	getitem 1073,1;
 	mes "[Wickebine]";
 	mes "Aqui est� o recibo e muito obrigado pela entrega.";
 
@@ -1053,7 +1053,7 @@ L_Start:
 	next;
 	mes "~scribble~rip~";
 	next;
-	additem 1073,1;
+	getitem 1073,1;
 	mes "[Gromgast]";
 	mes "Aqui est� o recibo! Muito obrigado.";
 	close;
@@ -1111,7 +1111,7 @@ L_Start:
 	next;
 	mes "scribble scribble rip";
 	next;
-	additem 1073,1;
+	getitem 1073,1;
 	mes "[Tilpitz]";
 	mes "Aqui est� o recibo! Muito obrigado denovo!!!!!";
 	close;
@@ -1178,7 +1178,7 @@ L_Start:
 	mes "[Bismarck]";
 	mes "bom, ele funciona direitinho..";
 	next;
-	additem 1073,1;
+	getitem 1073,1;
 	mes "[Bismarck]";
 	mes "Hmmm.... Aqui est� o recibo..... obrigado pela entrega! Eu acho que viverei mais......";
 	close;
@@ -1403,7 +1403,7 @@ L_Result:
 		next;
 		mes "[Mitmayer]";
 		mes "Voc� precisar� voltar a Guilda.  Aqui est� a prova de que voc� passou no teste.... o ^5533FFMartelo de "+callfunc("otclassname",10,"S","M")+"^000000.";
-		additem 1005,1;
+		getitem 1005,1;
 		set BSMITH_Q, 5;
 		set BSMITH_Q2, 0;
 		next;

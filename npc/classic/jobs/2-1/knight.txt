@@ -176,8 +176,8 @@ L_Check:
 		mes "^ff0000"+strcharinfo(0)+"^000000, em nome do Rei Tristam Terceiro, governante do reino de Rune-Midgard, com os poderes concedidos a mim, te consagro e lhe dou o titulo de Cavaleiro!";
 		next;
 		callfunc "Job_Change",Job_Knight;
-		if(JBLVL != 50) additem 656, 3;
-		if(JBLVL == 50) additem 656, 7;
+		if(JBLVL != 50) getitem 656, 3;
+		if(JBLVL == 50) getitem 656, 7;
 		callfunc "F_ClearJobVar";		// clears all job variables for the current player
 		mes "[Chefe dos Cavaleiros]";
 		mes "P�rabens!! Voc� agora � um Cavaleiro e protetor de Rune-Midgard! Agora v� e fa�a Rune-Midgard um lugar melhor para se viver!";
@@ -240,7 +240,7 @@ L_Test:
 
 	M_1:
 		mes "[Cavaleiro Dedicado]";
-		if (joblevel == 50) goto sL_Skip;
+		if (JobLevel == 50) goto sL_Skip;
 		mes "Para passar neste teste voc� deve apenas conseguir alguns itens:";
 		set KNIGHT_Q2, rand(1,2);
 		if(KNIGHT_Q2 == 1) callsub sF_R1;
@@ -348,7 +348,7 @@ L_Check:
 }
 
 
-//<------------------------- Sir Jashow Syracuse (2nd Test) -------------------------------------------->\\
+//<------------------------- Sir James Syracuse (2nd Test) -------------------------------------------->\\
 prt_in,71,91,6	script	Cavaleiro Honroso	65,{
 	mes "[Cavaleiro Honroso]";
 	if (BaseJob == Job_Knight) goto L_Knight;
@@ -1522,7 +1522,7 @@ L_Knight:
 		mes "Aqui est�! Uma maravilhosa arma com grande qualidade e for�a! Eu sei que vai us�-la bem.";
 		delitem 999, 1;
 		set Zeny, Zeny - 74000;
-		additem 1163, 1;
+		getitem 1163, 1;
 		close;
 
 		L_NotEnough:

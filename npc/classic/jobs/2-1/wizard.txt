@@ -2,44 +2,44 @@ gef_tower,107,35,5	script	Cachorro	81,{
 	mes "[Cachorro]";
 	if(BaseJob == Job_Mage) goto L_JobMage;	
 	if(baseClass == Job_Mage){
-		mes "Ah! Mago de um alto nivel, bem-vindo. � sempre bom ver pessoas de alto n�vel por aqui.";
-		mes "Na verdade, � bom v�-los em qualquer lugar! ~Woof!~";
+		mes "Ah! Mago de um alto nivel, bem-vindo. ? sempre bom ver pessoas de alto n?vel por aqui.";
+		mes "Na verdade, ? bom v?-los em qualquer lugar! ~Woof!~";
 		close;
 	}
 	if(baseClass == Job_Acolyte){
-		mes "Eeek! O que um santinho como voc� est� fazendo aqui em cima? Eu sei que o seu tipo n�o gosta de m�gica....";
+		mes "Eeek! O que um santinho como voc? est? fazendo aqui em cima? Eu sei que o seu tipo n?o gosta de m?gica....";
 		mes "Os tipos religiosos sempre chamam isso de 'artes negras'......... ooooh! Assustador!!!...... ~grrr!~WOOF!~";
 		close;
 	}
-	mes "Sheesh....... Por que iria algu�m que nem mesmo tem talento para fazer um �nico feiti�o vem praqui para cima???";
+	mes "Sheesh....... Por que iria algu?m que nem mesmo tem talento para fazer um ?nico feiti?o vem praqui para cima???";
 	next;
 	mes "[Cachorro]";
-	mes "Se voc� est� chateado, como uma palavra de consolo voc� pode subir e descer as escadarias do pr�dio, com isso voc� faria bastente aer�bica....";
+	mes "Se voc? est? chateado, como uma palavra de consolo voc? pode subir e descer as escadarias do pr?dio, com isso voc? faria bastente aer?bica....";
 	emotion e_pif;
 	next;
 	mes "[Cachorro]";
-	mes "~WOOF~ Vai embora! Eu n�o gosto do seu tipo aqui!!";
+	mes "~WOOF~ Vai embora! Eu n?o gosto do seu tipo aqui!!";
 	emotion e_go;
 	close;
 
 L_JobMage:
-	mes "Ah... Eu sei o que voc� est� para dizer.... Quer se tornar um Bruxo, certo?";
+	mes "Ah... Eu sei o que voc? est? para dizer.... Quer se tornar um Bruxo, certo?";
 	next;
 	mes "[Cachorro]";
 	mes "Fale com a Catherine. Ela vai te ajudar.";
 	next;
 	mes "[Cachorro]";
-	mes "Se voc� quiser saber mais sobre o processo da mudan�a de classe dos Bruxos, eu posso te ajudar.";
+	mes "Se voc? quiser saber mais sobre o processo da mudan?a de classe dos Bruxos, eu posso te ajudar.";
 	next;
-	menu "..................",M_0, "O cachorro est� falando comigo......",M_1;
+	menu "..................",M_0, "O cachorro est? falando comigo......",M_1;
 
 	M_0:
 		mes "[Cachorro]";
-		mes "Woof! O que � isso? Porque voc� est� me olhando desse jeito?? � a primeira vez que voc� ve um cachorro falando?";
+		mes "Woof! O que ? isso? Porque voc? est? me olhando desse jeito?? ? a primeira vez que voc? ve um cachorro falando?";
 		emotion e_what;
 		next;
 		mes "[Cachorro]";
-		mes "Woof! Eu suponho que voc� n�o tenha vindo aqui para ver um cachorro falar..... Woof! ..... �ee, � uma situa��o bem rara....";
+		mes "Woof! Eu suponho que voc? n?o tenha vindo aqui para ver um cachorro falar..... Woof! ..... ?ee, ? uma situa??o bem rara....";
 		next;
 		mes "[Cachorro]";
 		mes "GRRRR!!.... Hey! Pare com essa tolice!! WOOOF!!";
@@ -48,74 +48,74 @@ L_JobMage:
 
 		L_Cont:
 		mes "[Cachorro]";
-		mes "Meu nome � Maria Splodofska. Me chame de Maria. Sou assistente dos candidatos a classe dos Bruxos.";
+		mes "Meu nome ? Maria Splodofska. Me chame de Maria. Sou assistente dos candidatos a classe dos Bruxos.";
 		next;
 		mes "[Maria]";
-		mes "Woof! Veja bem, a raz�o para me transformar em um cachorro.... Eu estava ajudando meu namorado com a prepara��o de um experimento.";
-		mes "Ele est� estudando em um outro degrau m�gico. Bem, antes de perceber o que tinha acontecido, ele acidentalmente me transformou em um cachorro.....";
+		mes "Woof! Veja bem, a raz?o para me transformar em um cachorro.... Eu estava ajudando meu namorado com a prepara??o de um experimento.";
+		mes "Ele est? estudando em um outro degrau m?gico. Bem, antes de perceber o que tinha acontecido, ele acidentalmente me transformou em um cachorro.....";
 		next;
 		mes "[Maria]";
-		mes "~Grrrrr~ Em alguns meses, os elementos qu�micos devem perder seu efeito e eu voltarei ao normal. Teoricamente � o que achamos.";
+		mes "~Grrrrr~ Em alguns meses, os elementos qu?micos devem perder seu efeito e eu voltarei ao normal. Teoricamente ? o que achamos.";
 		next;
 		mes "[Maria]";
-		mes "Uh, pois bem..... onde n�s estavamos?";
+		mes "Uh, pois bem..... onde n?s estavamos?";
 		emotion e_hmm;
 		next;
 		mes "[Maria]";
-		mes "Como eu disse anteriormente, se voc� quiser se transformar em um Bruxo, deve primeiramente falar com a Catherine.";
-		mes "Ela recentemente se transformou numa bruxa, ent�o ela pode ser de grande ajuda.";
+		mes "Como eu disse anteriormente, se voc? quiser se transformar em um Bruxo, deve primeiramente falar com a Catherine.";
+		mes "Ela recentemente se transformou numa bruxa, ent?o ela pode ser de grande ajuda.";
 		next;
 		mes "[Maria]";
-		mes "Eu posso lhe contar mais sobre o processo de mudan�a de classe, mas eu n�o quero ocupar mais o seu tempo.";
-		mes "A menos que, voc� queira continuar falando sobre a hist�ria dos Bruxos.........";
+		mes "Eu posso lhe contar mais sobre o processo de mudan?a de classe, mas eu n?o quero ocupar mais o seu tempo.";
+		mes "A menos que, voc? queira continuar falando sobre a hist?ria dos Bruxos.........";
 		next;
-		menu "Sim, por favor continue.",sM_0, "N�o, t� tudo bem.",sM_1, "Um cachorro falante.....",sM_2;
+		menu "Sim, por favor continue.",sM_0, "N?o, t? tudo bem.",sM_1, "Um cachorro falante.....",sM_2;
 
 		sM_0:
 			mes "[Maria]";
-			mes "T� bom ent�o.  Deixe-me explicar o processo para se transformar em um Bruxo....";
+			mes "T? bom ent?o.  Deixe-me explicar o processo para se transformar em um Bruxo....";
 			next;
 			mes "[Maria]";
-			mes "Existem 3 testes na classe dos Bruxos.  O ^5555FFPrimeiro Teste^000000 ser� para voc� coletar os n�meros dos ^FF5555itens m�gicos^000000.";
+			mes "Existem 3 testes na classe dos Bruxos.  O ^5555FFPrimeiro Teste^000000 ser? para voc? coletar os n?meros dos ^FF5555itens m?gicos^000000.";
 			next;
 			mes "[Maria]";
-			mes "Catherine far� o teste. Ela pedir� para voc� coletar algumas variedades de ^5555FFGemas^000000, ou ^5555FFMin�rios Elementais^000000.";
+			mes "Catherine far? o teste. Ela pedir? para voc? coletar algumas variedades de ^5555FFGemas^000000, ou ^5555FFMin?rios Elementais^000000.";
 			next;
 			mes "[Maria]";
-			mes "O ^5555FFSegundo Teste^000000 ser� administrado pelo sombrio Raul, ali no canto.";
-			mes "� um exame de perguntas e respostas sobre os diferentes aspectos da magia.";
+			mes "O ^5555FFSegundo Teste^000000 ser? administrado pelo sombrio Raul, ali no canto.";
+			mes "? um exame de perguntas e respostas sobre os diferentes aspectos da magia.";
 			next;
 			mes "[Maria]";
-			mes "O teste consistir� em 10 perguntas. Se voc� falhar em alguma pergunta, falhar� no teste.";
+			mes "O teste consistir? em 10 perguntas. Se voc? falhar em alguma pergunta, falhar? no teste.";
 			next;
 			mes "[Maria]";
-			mes "Raul administrar� o ^5555FFTerceiro Teste^000000. � o ultimo teste e voc� vai precisar derrotar uma s�rie de monstros.";
-			mes "Haver� tr�s salas, cada uma cheia de monstros de determinados elementos.";
+			mes "Raul administrar? o ^5555FFTerceiro Teste^000000. ? o ultimo teste e voc? vai precisar derrotar uma s?rie de monstros.";
+			mes "Haver? tr?s salas, cada uma cheia de monstros de determinados elementos.";
 			next;
 			mes "[Maria]";
-			mes "� melhor voc� come�ar a imaginar quais as melhores magias a serem usadas nesses monstros.";
+			mes "? melhor voc? come?ar a imaginar quais as melhores magias a serem usadas nesses monstros.";
 			next;
 			mes "[Maria]";
-			mes "Bem, isso � tudo. Siga em frente e se inscreva.";
+			mes "Bem, isso ? tudo. Siga em frente e se inscreva.";
 			close;
 		sM_1:
 			mes "[Maria]";
-			mes "Ah, t�. Siga em frente e se inscreva.";
+			mes "Ah, t?. Siga em frente e se inscreva.";
 			close;
 		sM_2:
 			mes "[Maria]";
-			mes "EU N�O SOU UM CACHORRO!!! IIMMBBEECCIILLLL!!!!";
+			mes "EU N?O SOU UM CACHORRO!!! IIMMBBEECCIILLLL!!!!";
 			emotion e_an;
 			next;
 			mes "[Maria]";
-			mes "Droga! Espero que voc� FALHE!! Saia daqui, agora!";
+			mes "Droga! Espero que voc? FALHE!! Saia daqui, agora!";
 			emotion e_go;
 			next;
 			warp "gef_dun00",54,23;
 			end;
 	M_1:
 		mes "[Cachorro]";
-		mes "~WOOF~Woof~woof~ Voc� N�O precisa me dizer o �bvio! EU SEI que sou um cachorro!";
+		mes "~WOOF~Woof~woof~ Voc? N?O precisa me dizer o ?bvio! EU SEI que sou um cachorro!";
 		emotion e_pif;
 		next;
 		goto L_Cont;
@@ -130,30 +130,30 @@ gef_tower,111,37,4	script	Catherine Medichi	68,{
 	if(BaseJob == Job_Mage) goto L_Mage;
 
 	if(BaseJob == Job_Wizard){
-		mes "O que voc� veio fazer aqui Bruxo? Se nada, por favor v�...";
+		mes "O que voc? veio fazer aqui Bruxo? Se nada, por favor v?...";
 		next;
 		mes "[Catherine Medichi]";
 		if(sex){
-			mes "... Bem, � claro, se voc� veio aqui para me perguntar algo... (*fica envergonhado*)....";
+			mes "... Bem, ? claro, se voc? veio aqui para me perguntar algo... (*fica envergonhado*)....";
 		} else {
-			mes "Se voc� tiver um namorado, sinta-se livre para traze-lo aqui um dia, heheheh";
+			mes "Se voc? tiver um namorado, sinta-se livre para traze-lo aqui um dia, heheheh";
 		}
 		emotion e_lv;
 		close;
 	}
 	if(BaseJob == Job_Novice){
-		mes "Awwww, um pequeno Aprendiz! Que bonitinho! Mas este lugar � somente para Bruxos, t�.";
+		mes "Awwww, um pequeno Aprendiz! Que bonitinho! Mas este lugar ? somente para Bruxos, t?.";
 		emotion e_lv2;
 		next;
 		mes "[Catherine Medichi]";
-		mes "Se voc� est� enteressado em m�gica, a ^0000FFGuilda de Magos^000000 � um lugar para voc�.";
+		mes "Se voc? est? enteressado em m?gica, a ^0000FFGuilda de Magos^000000 ? um lugar para voc?.";
 		close;
 	}
-	mes "Huumm? O que traz voc� aqui em cima? Se n�o h� nada para voc� aqui, por favor sa�a.";
-	mes "Este lugar � somente para Bruxos. =P";
+	mes "Huumm? O que traz voc? aqui em cima? Se n?o h? nada para voc? aqui, por favor sa?a.";
+	mes "Este lugar ? somente para Bruxos. =P";
 	next;
 	mes "[Catherine Medichi]";
-	mes "Tente n�o cair no seu caminho de volta....";
+	mes "Tente n?o cair no seu caminho de volta....";
 	close;
 
 L_Mage:
@@ -162,41 +162,41 @@ L_Mage:
 	if(WIZ_Q == 4) goto L_Done;
 	if(WIZ_Q2 > 0) goto L_Test1;
 
-	mes "Meu nome � Catherine Medichi, e eu sou uma Bruxa. Relaxe, me chame de Catherine.";
+	mes "Meu nome ? Catherine Medichi, e eu sou uma Bruxa. Relaxe, me chame de Catherine.";
 	next;
 	mes "[Catherine Medichi]";
-	mes "O que o traz at� aqui? Voc� quer ser um Bruxo, certo?";
+	mes "O que o traz at? aqui? Voc? quer ser um Bruxo, certo?";
 	next;
-	menu "Claro!",M_0a, "Quais s�o os requesitos?",M_0b,"N�o tenho certeza",M_0End;
+	menu "Claro!",M_0a, "Quais s?o os requesitos?",M_0b,"N?o tenho certeza",M_0End;
 
 	M_0a:
 		mes "[Catherine Medichi]";
-		mes "Por favor, preencha este formul�rio.";
+		mes "Por favor, preencha este formul?rio.";
 		next;
-		mes "(formul�rio preenchido e devolvido)";
+		mes "(formul?rio preenchido e devolvido)";
 		next;
 		if(JobLevel < 40) goto sL_JobLvl;
 		if(JobLevel == 50) goto sL_Job50;
 
 		mes "[Catherine]";
-		mes "Pois bem ^ff0000"+strcharinfo(0)+"^000000, parece que est� tudo em ordem.";
+		mes "Pois bem ^ff0000"+strcharinfo(0)+"^000000, parece que est? tudo em ordem.";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Agora, deixe-me contar a respeito do teste. Ele � dividido em 3 partes.";
-		mes "- A primeira parte, envolve em coletar o n�mero dos itens m�gicos,";
+		mes "Agora, deixe-me contar a respeito do teste. Ele ? dividido em 3 partes.";
+		mes "- A primeira parte, envolve em coletar o n?mero dos itens m?gicos,";
 		mes "- A segunda parte, envolve perguntas e respostas,";
-		mes "- E a terceira parte do teste, minha favorita, � o teste de campo.";
+		mes "- E a terceira parte do teste, minha favorita, ? o teste de campo.";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Pessoas com n�vel de classe igual a 50, poder�o pular a primeira parte do teste. Eles trabalharam muito para isso.";
+		mes "Pessoas com n?vel de classe igual a 50, poder?o pular a primeira parte do teste. Eles trabalharam muito para isso.";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Agora, a primeira parte do teste. Requer o recolhimento de um n�mero nos itens m�gicos.";
+		mes "Agora, a primeira parte do teste. Requer o recolhimento de um n?mero nos itens m?gicos.";
 		next;
 		set WIZ_Q2, rand(1,2);
 
 		mes "[Catherine Medichi]";
-		mes "Os itens que voc� precisa trazer s�o:";
+		mes "Os itens que voc? precisa trazer s?o:";
 		if(WIZ_Q2 == 2) goto R_2;
 
 		R_1:
@@ -214,7 +214,7 @@ L_Mage:
 		L_Cont0:
 		next;
 		mes "[Catherine Medichi]";
-		mes "Este teste n�o � T�O dificil, ent�o vamos andando";
+		mes "Este teste n?o ? T?O dificil, ent?o vamos andando";
 		next;
 		mes "[Catherine Medichi]";
 		mes "Boa sorte! Estarei esperando!";
@@ -223,42 +223,42 @@ L_Mage:
 
 		sL_JobLvl:
 			mes "[Catherine Medichi]";
-			mes "Hei, Eu j� te disse. Voc� precisa ter, no m�nimo, n�vel 40 de classe.";
-			mes "Voc� n�o se lembra do que eu te disse?";
+			mes "Hei, Eu j? te disse. Voc? precisa ter, no m?nimo, n?vel 40 de classe.";
+			mes "Voc? n?o se lembra do que eu te disse?";
 			close;
 
 		sL_Job50:
 			mes "[Catherine Medichi]";
-			mes "Uau! Voc� est� no n�vel 50! Deve ter trabalhado bastante! Estou impressionada!";
+			mes "Uau! Voc? est? no n?vel 50! Deve ter trabalhado bastante! Estou impressionada!";
 			next;
 			mes "[Catherine Medichi]";
-			mes "Certo, me lembrarei que voc� tem n�vel 50 de classe. Voc� pode pular o primeiro teste, mas ainda restam 2 testes.";
+			mes "Certo, me lembrarei que voc? tem n?vel 50 de classe. Voc? pode pular o primeiro teste, mas ainda restam 2 testes.";
 			next;
 			mes "[Catherine Medichi]";
-			mes "Agora, converse com aquele homem l� no canto. � dif�cil, ent�o tenha cuidado.";
+			mes "Agora, converse com aquele homem l? no canto. ? dif?cil, ent?o tenha cuidado.";
 			set WIZ_Q, 2;
 			close;
 
 	M_0b:
 		mes "[Catherine Medichi]";
-		mes "Mesmo que muita gente queira se tornar um Bruxo, somente aqueles q tem n�vel 40 de classe se classificam.";
-		mes "Qualquer um com n�vel de classe inferior a isso, n�o tem poder m�gico suficiente para se tornar um Bruxo.";
+		mes "Mesmo que muita gente queira se tornar um Bruxo, somente aqueles q tem n?vel 40 de classe se classificam.";
+		mes "Qualquer um com n?vel de classe inferior a isso, n?o tem poder m?gico suficiente para se tornar um Bruxo.";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Isso � o que importa no teste dos Bruxos. O teste ser� feito em 3 etapas.";
+		mes "Isso ? o que importa no teste dos Bruxos. O teste ser? feito em 3 etapas.";
 		mes "Cada etapa tem como foco, diferentes aspectos dos Bruxos.";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Uma vez passando nos testes, voc� ser� um Bruxo que nem eu. Iai!";
+		mes "Uma vez passando nos testes, voc? ser? um Bruxo que nem eu. Iai!";
 		mes "Infelizmente, muitas pessoas tem dificuldade nos testes e nunca mais voltam a faze-los.";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Talvez voc� tenha uma melhor sorte.";
+		mes "Talvez voc? tenha uma melhor sorte.";
 		close;
 
 	M_0End:
 		mes "[Catherine Medichi]";
-		mes "O que? Voc� veio at� aqui para nada!?";
+		mes "O que? Voc? veio at? aqui para nada!?";
 		emotion e_what;
 		close;
 
@@ -272,7 +272,7 @@ L_Mage:
 
 		sL_Gems:
 			if (countitem(716)<10 || countitem(717)<10 || countitem(715)<10) goto ssL_NotDone;
-			mes "�timo! Voc� trouxe tudo! A Guilda usar� sabiamente.";
+			mes "?timo! Voc? trouxe tudo! A Guilda usar? sabiamente.";
 			next;
 			delitem 716, 10;
 			delitem 717, 10;
@@ -281,7 +281,7 @@ L_Mage:
 
 		sL_Ores:
 			if (countitem(991)<4 || countitem(993)<4 || countitem(990)<4 || countitem(992)<4) goto ssL_NotDone;
-			mes "�timo! Voc� trouxe tudo! A Guilda usar� sabiamente.";
+			mes "?timo! Voc? trouxe tudo! A Guilda usar? sabiamente.";
 			next;
 			delitem 991, 5;
 			delitem 993, 5;
@@ -290,47 +290,47 @@ L_Mage:
 
 			ssL_Done:
 				mes "[Catherine Medichi]";
-				mes "Parab�ns,voc� passou no primeiro teste.";
-				mes "N�o relaxe, voc� ainda tem 2 testes pela frente.";
+				mes "Parab?ns,voc? passou no primeiro teste.";
+				mes "N?o relaxe, voc? ainda tem 2 testes pela frente.";
 				emotion e_no1;
 				next;
 				mes "[Catherine Medichi]";
-				mes "Agora fale com o homem ali no canto a pr�xima etapa.";
-				mes "� um tanto dif�cil, ent�o tenha cuidado.";
+				mes "Agora fale com o homem ali no canto a pr?xima etapa.";
+				mes "? um tanto dif?cil, ent?o tenha cuidado.";
 				set WIZ_Q, 2;
 				set WIZ_Q2, 0;
 				close;
 
 			ssL_NotDone:
-				mes "Parece que voc� n�o trouxe tudo que pedi.";
+				mes "Parece que voc? n?o trouxe tudo que pedi.";
 				next;
 				mes "[Catherine Medichi]";
-				mes "� dif�cil chegar at� aqui. Ent�o tenha certeza de estar com todos os itens, t� bem?";
+				mes "? dif?cil chegar at? aqui. Ent?o tenha certeza de estar com todos os itens, t? bem?";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Voc� precisa:";
+				mes "Voc? precisa:";
 				if(WIZ_Q2 == 1) goto R_1;
 				if(WIZ_Q2 == 2) goto R_2;
 				close;
 
 	L_Test2:
 		if(WIZ_Q2 == 1)goto sL_Failed2;
-		mes "Hei, eu n�o disse para voc� falar com aquele homem? N�o? Voc� n�o vai se transformar em um Bruxo coletando s� itens.";
+		mes "Hei, eu n?o disse para voc? falar com aquele homem? N?o? Voc? n?o vai se transformar em um Bruxo coletando s? itens.";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Existem mais 2 etapas. Estarei esperando, ent�o v� terminar seu teste.";
+		mes "Existem mais 2 etapas. Estarei esperando, ent?o v? terminar seu teste.";
 		close;
 
 		sL_Failed2:
-			mes "Huh?? Voc� falhou no teste de perguntas e respostas!?";
+			mes "Huh?? Voc? falhou no teste de perguntas e respostas!?";
 			emotion e_what;
 			next;
 			mes "[Catherine Medichi]";
-			mes "Voc� quer ser um Bruxo, mas n�o consegue responder algumas perguntas??";
+			mes "Voc? quer ser um Bruxo, mas n?o consegue responder algumas perguntas??";
 			emotion e_swt;
 			next;
 			mes "[Catherine Medichi]";
-			mes "Bem, Eu posso te dar algumas dicas? Se voc� quiser, compre um ^009900Suco de Ma��^000000 para mim. Estou com sede.";
+			mes "Bem, Eu posso te dar algumas dicas? Se voc? quiser, compre um ^009900Suco de Ma??^000000 para mim. Estou com sede.";
 			next;
 			menu "Qual dica?",M_1a, "Eu passo por mim mesmo!",M_1b;
 
@@ -339,7 +339,7 @@ L_Mage:
 				delitem 531, 1;
 
 				mes "[Catherine Medichi]";
-				mes "Mmmmmmmmmmmmm, Suco de Ma��. ~gulp~gulp~";
+				mes "Mmmmmmmmmmmmm, Suco de Ma??. ~gulp~gulp~";
 				next;
 				mes "[Catherine Medichi]";
 				mes "Obrigada, vou te dar algumas dicas.";
@@ -354,86 +354,86 @@ L_Mage:
 				mes "Ele quem escolhe as perguntas.";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Sabe... se ele tiver um bom corte de cabelo e fizer a barba, pode at� ter um visual legal...";
-				mes "Mas �bvio que ele n�o vai fazer isso....";
+				mes "Sabe... se ele tiver um bom corte de cabelo e fizer a barba, pode at? ter um visual legal...";
+				mes "Mas ?bvio que ele n?o vai fazer isso....";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Emfim, a respeito das perguntas sobre as magias, obviamente que voc� aprendeu algumas magias.";
+				mes "Emfim, a respeito das perguntas sobre as magias, obviamente que voc? aprendeu algumas magias.";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Tamb�m tem perguntas sobre magias que, talvez, voc� N�O saiba, sendo assim v� pegar essas informa��es com algum Bruxo.";
+				mes "Tamb?m tem perguntas sobre magias que, talvez, voc? N?O saiba, sendo assim v? pegar essas informa??es com algum Bruxo.";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Existem v�rios lugares quem tem informa��es sobre magias, como por exemplo www.ragnarok.com.br.";
-				mes "Voc� pode procurar procurar em outros lugares tamb�m.";
+				mes "Existem v?rios lugares quem tem informa??es sobre magias, como por exemplo www.ragnarok.com.br.";
+				mes "Voc? pode procurar procurar em outros lugares tamb?m.";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Quanto as perguntas sobre monstros, voc� PODERIA lutar contra eles para aprender a respeito deles... OU...";
+				mes "Quanto as perguntas sobre monstros, voc? PODERIA lutar contra eles para aprender a respeito deles... OU...";
 				next;
 				mes "[Catherine Medichi]";
-				mes "... E se me lembro bem, existe uma livraria em Prontera que cont�m v�rias informa��es sobre monstros.";
-				mes "Voc� poderia apenas ir l�, e ler sobre eles.";
+				mes "... E se me lembro bem, existe uma livraria em Prontera que cont?m v?rias informa??es sobre monstros.";
+				mes "Voc? poderia apenas ir l?, e ler sobre eles.";
 				next;
 				mes "[Catherine Medichie]";
-				mes "Agora, as perguntas sobre os caster.... Voc� est� por si s�..";
-				mes "Por que? Porque VOC� � o caster!";
+				mes "Agora, as perguntas sobre os caster.... Voc? est? por si s?..";
+				mes "Por que? Porque VOC? ? o caster!";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Se voc� n�o sabe nada sobre voc� mesmo, como uma desconhecida como vou saber?";
+				mes "Se voc? n?o sabe nada sobre voc? mesmo, como uma desconhecida como vou saber?";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Bem, boa sorte! Mestre Examinador est� esperando!";
+				mes "Bem, boa sorte! Mestre Examinador est? esperando!";
 				close;
 
 				sL_NoJuice:
 					mes "[Catherine Medichi]";
-					mes "Bem, se voc� quiser algumas dicas, vou precisar de Suco de Ma��! Por outro lado, voc� est� sozinho.";
+					mes "Bem, se voc? quiser algumas dicas, vou precisar de Suco de Ma??! Por outro lado, voc? est? sozinho.";
 					close;
 
 			M_1b:
 				mes "[Catherine Medichi]";
-				mes "T� certo! Testes foram feitos para se fazer sozinho! Essa � exatamente a maneira como um Bruxo deve pensar!";
+				mes "T? certo! Testes foram feitos para se fazer sozinho! Essa ? exatamente a maneira como um Bruxo deve pensar!";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Boa sorte! Mestre Examinador est� esperando!";
+				mes "Boa sorte! Mestre Examinador est? esperando!";
 				close;
 
 	L_Test3:
 		if(WIZ_Q2 == 1) goto sL_Failed3;
-		mes "Hehe, N�o pude deixar de escuta-lo durante aquelas perguntas.";
+		mes "Hehe, N?o pude deixar de escuta-lo durante aquelas perguntas.";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Bom trabalho, falta s� mais um teste! Termine-o e voc� ser� um Bruxo!";
+		mes "Bom trabalho, falta s? mais um teste! Termine-o e voc? ser? um Bruxo!";
 		next;
 		mes "[Catherine Medichi]";
 		mes "Boa sorte! O examinador o espera!";
 		close;
 
 		sL_Failed3:
-			mes "Por que voc� saiu durante o teste? Nunca pensei que voc� fosse um fraco...";
+			mes "Por que voc? saiu durante o teste? Nunca pensei que voc? fosse um fraco...";
 			next;
 			if(sex==1) goto ssL_M3;
 			if(sex==0) goto ssL_F3;
 
 			ssL_M3:
 				mes "[Catherine Medichi]";
-				mes "Como pode, um Mago t�o poderoso como voc� ser derrotado t�o facilmente! Volte para l� e tente novamente.";
+				mes "Como pode, um Mago t?o poderoso como voc? ser derrotado t?o facilmente! Volte para l? e tente novamente.";
 				close;
 
 			ssL_F3:
 				mes "[Catherine Medichi]";
-				mes "Voc� n�o pode agir com fraqueza, justo porque voc� � uma garota! Se voc� quiser ser uma Bruxa, Volte e passe no teste!";
+				mes "Voc? n?o pode agir com fraqueza, justo porque voc? ? uma garota! Se voc? quiser ser uma Bruxa, Volte e passe no teste!";
 				next;
 				mes "[Catherine Medichi]";
-				mes "Eu sei que � dif�cil, mas n�o era o suficiente para me fazer parar! Voc�, �s vezes, precisa enfrentar seus medos!";
+				mes "Eu sei que ? dif?cil, mas n?o era o suficiente para me fazer parar! Voc?, ?s vezes, precisa enfrentar seus medos!";
 				close;
 
 
 	L_Done:
-		if(SkillPoint > 0) mes "Voc� precisa usar todos os seus pontos de habilidade, antes de se tornar um Bruxo.";
+		if(SkillPoint > 0) mes "Voc? precisa usar todos os seus pontos de habilidade, antes de se tornar um Bruxo.";
 		if(SkillPoint > 0) close;
 
-		mes "�timo! Voc� terminou todos os testes! Parab�ns, Parab�ns, Parab�ns!!";
+		mes "?timo! Voc? terminou todos os testes! Parab?ns, Parab?ns, Parab?ns!!";
 		emotion e_no1;
 		next;
 		mes "[Catherine Medichi]";
@@ -443,27 +443,27 @@ L_Mage:
 		callfunc "F_ClearJobVar";		// clears all job variables for the current player
 
 		mes "[Catherine Medichi]";
-		mes "Agora voc� � um Bruxo! Haja com responsabilidade!";
+		mes "Agora voc? ? um Bruxo! Haja com responsabilidade!";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Tenha certeza quando for gastar suas magias, voc� sabe exatamente o que pode acontecer!";
+		mes "Tenha certeza quando for gastar suas magias, voc? sabe exatamente o que pode acontecer!";
 		next;
 		mes "[Catherine Medichi]";
-		mes "N�o fa�a coisas est�pidas como gastar no meio das cidades!";
+		mes "N?o fa?a coisas est?pidas como gastar no meio das cidades!";
 		mes "Isso causa Lag e as magias foram feitas para serem usadas nos monstros!";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Torne-se mais poderoso fazendo grupos com outras pessoas! Ah sim, aqui est� um presente!";
+		mes "Torne-se mais poderoso fazendo grupos com outras pessoas! Ah sim, aqui est? um presente!";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Umas Po��es Azuis para voc� ficar feliz...";
+		mes "Umas Po??es Azuis para voc? ficar feliz...";
 		next;
-		additem 505, 6;
+		getitem 505, 6;
 		mes "[Catherine Medichi]";
-		mes "Use-o sabiamente. � um presente meu, ent�o � melhor voc� usar do que outras pessoas!";
+		mes "Use-o sabiamente. ? um presente meu, ent?o ? melhor voc? usar do que outras pessoas!";
 		next;
 		mes "[Catherine Medichi]";
-		mes "Bem, meu companheiro Bruxo, cuide-se e tenha uma �tima vida!";
+		mes "Bem, meu companheiro Bruxo, cuide-se e tenha uma ?tima vida!";
 		close;
 }
 
@@ -476,46 +476,46 @@ gef_tower,102,24,3	script	Raul Expagarus	735,{
 	if(baseClass == Job_Acolyte) goto L_Holy;
 	if(BaseJob == Job_Novice) goto L_Novice;
 L_Other:
-	mes "Ugh, N�o me sinto bem.... Sinto como se estivesse preso no gelo........";
+	mes "Ugh, N?o me sinto bem.... Sinto como se estivesse preso no gelo........";
 	next;
 	mes "[Raul Expagarus]";
-	mes "Quem � voc�?! Saia!";
+	mes "Quem ? voc??! Saia!";
 	emotion e_gasp;
 	close;
 L_Novice:
-	mes "O que uma crian�a como voc� faz aqui? Sai fora!!";
+	mes "O que uma crian?a como voc? faz aqui? Sai fora!!";
 	emotion e_gasp;
 	next;
 	warp "geffen",120,110;
 	close;
 L_Holy:
 	mes "Deixe o sagrado de lado!";
-	mes "M�gica � considerado ser um poder e n�o vem de Deus.......";
+	mes "M?gica ? considerado ser um poder e n?o vem de Deus.......";
 	next;
 	mes "[Raul Expagarus]";
-	mes "Al�m de que, eu n�o estou me sentindo muito bem. Ent�o saia!";
+	mes "Al?m de que, eu n?o estou me sentindo muito bem. Ent?o saia!";
 	close;
 L_Wizard:
-	mes "Cof Cof... O que eu posso fazer por voc�? Hmmm... voc� � um Mago tamb�m...";
+	mes "Cof Cof... O que eu posso fazer por voc?? Hmmm... voc? ? um Mago tamb?m...";
 	next;
 	mes "[Raul Expagarus]";
 	if(sex==1) goto L_M;
 	if(sex==0) goto L_F;
 
 	L_M:
-		mes "Se voc� n�o for respons�vel, voc� pode acidentalmente aprender magias in�teis.";
-		mes "Entenda isso, voc� pode querer focalizar na aprendizagem das magias que voc� estar� usando.";
+		mes "Se voc? n?o for respons?vel, voc? pode acidentalmente aprender magias in?teis.";
+		mes "Entenda isso, voc? pode querer focalizar na aprendizagem das magias que voc? estar? usando.";
 		next;
 		mes "[Raul Expagarus]";
-		mes "Em uma luta pelo amor, voc� pode ser mutilado hehe.";
+		mes "Em uma luta pelo amor, voc? pode ser mutilado hehe.";
 		close;
 
 	L_F:
-		mes "Se voc� n�o for respons�vel, voc� pode acidentalmente aprender magias in�teis.";
-		mes "Voc� deve aprender as magias com todo o seu cora��o ou n�o aprender� por completo.";
+		mes "Se voc? n?o for respons?vel, voc? pode acidentalmente aprender magias in?teis.";
+		mes "Voc? deve aprender as magias com todo o seu cora??o ou n?o aprender? por completo.";
 		next;
 		mes "[Raul Expagarus]";
-		mes "Se voc� n�o deseja estudar...... Heh, volte ent�o para sua vidinha.";
+		mes "Se voc? n?o deseja estudar...... Heh, volte ent?o para sua vidinha.";
 		close;
 
 L_Mage:
@@ -524,7 +524,7 @@ L_Mage:
 	if(WIZ_Q == 3) goto L_Test3;
 	if(WIZ_Q == 4) goto L_Done;
 
-		mes "Cof Cof... Eu n�o tenho tempo para conversar.";
+		mes "Cof Cof... Eu n?o tenho tempo para conversar.";
 		next;
 		mes "[Raul Expagarus]";
 		mes "Desculpe, mas por favor saia.";
@@ -534,65 +534,65 @@ L_Mage:
 		mes "Heh, um canditato a Bruxo?!";
 		next;
 		mes "[Raul Expagarus]";
-		mes "Voc� PODE continuar sendo um Mago e ter uma vida descente.....";
+		mes "Voc? PODE continuar sendo um Mago e ter uma vida descente.....";
 		next;
 		mes "[Raul Expagarus]";
-		mes "Ent�o, os Bruxos S�O uma classe muito mais elevada.....";
+		mes "Ent?o, os Bruxos S?O uma classe muito mais elevada.....";
 		close;
 
 	L_Done:
-		mes "Parab�ns por terminar o �ltimo teste! Voc� terminou todos os testes e est� pronto para se tornar um Bruxo!";
+		mes "Parab?ns por terminar o ?ltimo teste! Voc? terminou todos os testes e est? pronto para se tornar um Bruxo!";
 		emotion e_no1;
 		next;
 		mes "[Raul Expagarus]";
-		mes "V� falar com a Catherine para se tornar um Bruxo. Mas cuidado! A magia � uma for�a muito poderosa e pode facilmente destruir-lo!!";
+		mes "V? falar com a Catherine para se tornar um Bruxo. Mas cuidado! A magia ? uma for?a muito poderosa e pode facilmente destruir-lo!!";
 		close;
 
 	L_Test2:
 		if(WIZ_Q2 == 1) goto sL_ReTest2;
 
-		mes "Vejo que passou no primeiro teste. Meu nome � Raul Expagarus, e eu irei examinar o seu teste.";
+		mes "Vejo que passou no primeiro teste. Meu nome ? Raul Expagarus, e eu irei examinar o seu teste.";
 		next;
 		mes "[Raul Expagarus]";
-		mes "N�o � tarde demais! Voc� ainda pode voltar para sua vida pacata na cidade.";
+		mes "N?o ? tarde demais! Voc? ainda pode voltar para sua vida pacata na cidade.";
 		next;
 		mes "[Raul Expagarus]";
-		mes "Talvez voc� n�o saiba o qu�o perigoso seja usar o poder da magia.";
+		mes "Talvez voc? n?o saiba o qu?o perigoso seja usar o poder da magia.";
 		next;
-		menu "Voc� tem raz�o. Desisto.",M_0a, "Eu quero fazer o teste!",M_0b;
+		menu "Voc? tem raz?o. Desisto.",M_0a, "Eu quero fazer o teste!",M_0b;
 
 		sL_ReTest2:
 			mes "Hmmm, quer tentar denovo?";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Como voc� pode odiar tanto uma vida t�o calma?";
+			mes "Como voc? pode odiar tanto uma vida t?o calma?";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Que seja assim! Se voc� errar uma pergunta, falhou no teste! O que voc� me diz!?";
+			mes "Que seja assim! Se voc? errar uma pergunta, falhou no teste! O que voc? me diz!?";
 			emotion e_pif;
 			next;
 			menu "Eu quero morar em paz..........",M_0a, "Eu quero tentar denovo.",M_0b;
 
 		M_0a:
 			mes "[Raul Expagarus]";
-			mes "�tima escolha! Cough cough. Bom, Bruxo � uma classe muito dif�cil, a magia n�o pode ser usada por qualquer mortal.........";
+			mes "?tima escolha! Cough cough. Bom, Bruxo ? uma classe muito dif?cil, a magia n?o pode ser usada por qualquer mortal.........";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Saia fora e n�o olhe para tr�s. Use agora a magia que voc� tem e viva uma boa vida.";
+			mes "Saia fora e n?o olhe para tr?s. Use agora a magia que voc? tem e viva uma boa vida.";
 			close;
 
 		M_0b:
 			mes "[Raul Expagarus]";
-			mes "Hmmm, veremos o quanto BOM voc� �.";
+			mes "Hmmm, veremos o quanto BOM voc? ?.";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Vamos come�ar o teste! Se voc� errar uma pergunta, t� perdido! HA!";
+			mes "Vamos come?ar o teste! Se voc? errar uma pergunta, t? perdido! HA!";
 			emotion e_gg;
 			next;
 			mes "[Raul Expagarus]";
-			mes "10 perguntas, fa�a direito! Eu n�o vou avisar qual pergunta voc� acertou e qual pergunta voc� errou.";
+			mes "10 perguntas, fa?a direito! Eu n?o vou avisar qual pergunta voc? acertou e qual pergunta voc? errou.";
 			next;
-			set @SCORE,0;
+			set @score,0;
 			set @temp,rand(0,2);
 			if(@temp == 1) goto R_1;
 			if(@temp == 2) goto R_2;
@@ -600,105 +600,105 @@ L_Mage:
 			//Spell Quiz
 			R_0:
 				mes "[Raul Expagarus]";
-				mes "Cof Cof... Aqui est�o as perguntas!";
+				mes "Cof Cof... Aqui est?o as perguntas!";
 				next;
 				mes "[Raul Expagarus]";
-				mes "1. O que N�O � requisito para Barreira de Fogo?";
+				mes "1. O que N?O ? requisito para Barreira de Fogo?";
 				next;
-				menu "Lan�as de Fogo Nv 4",sM0_0b, "Bolas de Fogo Nv 5",sM0_0b, "Chama Reveladora Nv 1",sM0_0b, "Ataque Espiritual Nv 4",sM0_0a;
+				menu "Lan?as de Fogo Nv 4",sM0_0b, "Bolas de Fogo Nv 5",sM0_0b, "Chama Reveladora Nv 1",sM0_0b, "Ataque Espiritual Nv 4",sM0_0a;
 
 				sM0_0a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score, + 10;
 
 				sM0_0b:
 
 				mes "[Raul Expagarus]";
-				mes "2. O que acontece com o elemento de um monstro ap�s ser congelado pela Rajada Congelante?";
+				mes "2. O que acontece com o elemento de um monstro ap?s ser congelado pela Rajada Congelante?";
 				next;
-				menu "Muda para �gua",sM0_1a, "Muda para Terra",sM0_1b, "Muda para Fogo",sM0_1b, "Muda para Vento",sM0_1b;
+				menu "Muda para ?gua",sM0_1a, "Muda para Terra",sM0_1b, "Muda para Fogo",sM0_1b, "Muda para Vento",sM0_1b;
 
 				sM0_1a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score, + 10;
 
 				sM0_1b:
 
 				mes "[Raul Expagarus]";
-				mes "3. Quando voc� maximiza o Ataque Espiritual, quantas vezes o ataque m�gico dar� de dano?";
+				mes "3. Quando voc? maximiza o Ataque Espiritual, quantas vezes o ataque m?gico dar? de dano?";
 				next;
 				menu "1.6x",sM0_2b, "1.7x",sM0_2a, "2x",sM0_2b, "20x",sM0_2b;
 
 				sM0_2a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score, + 10;
 
 				sM0_2b:
 
 				mes "[Raul Expagarus]";
-				mes "4. Qual item � requisito para Petrificar?";
+				mes "4. Qual item ? requisito para Petrificar?";
 				next;
 				menu "Sangue Escarlate",sM0_3b, "Gema Azul",sM0_3b, "Gema Amarela",sM0_3b, "Gema Vermelha",sM0_3a;
 
 				sM0_3a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score, + 10;
 
 				sM0_3b:
 
 				mes "[Raul Expagarus]";
-				mes "5. Qual habilidade n�o � requisito para Escudo M�gico?";
+				mes "5. Qual habilidade n?o ? requisito para Escudo M?gico?";
 				next;
-				menu "Ataque Espiritual Nv 4",sM0_4b, "Esp�ritos Anci�es Nv 5",sM0_4b, "Aumentar Recupera��o de SP Nv 6",sM0_4b, "Barreira de Gelo Nv 7",sM0_4a;
+				menu "Ataque Espiritual Nv 4",sM0_4b, "Esp?ritos Anci?es Nv 5",sM0_4b, "Aumentar Recupera??o de SP Nv 6",sM0_4b, "Barreira de Gelo Nv 7",sM0_4a;
 
 				sM0_4a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score, + 10;
 
 				sM0_4b:
 
 				mes "[Raul Expagarus]";
-				mes "6. Quanto SP voc� ir� regenerar, a cada 10 segundos, com n�vel 7 de Aumentar Recupera��o de SP?";
+				mes "6. Quanto SP voc? ir? regenerar, a cada 10 segundos, com n?vel 7 de Aumentar Recupera??o de SP?";
 				next;
 				menu "14",sM0_5b, "21",sM0_5a, "28",sM0_5b, "35",sM0_5b;
 
 				sM0_5a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score, + 10;
 
 				sM0_5b:
 
 				mes "[Raul Expagarus]";
-				mes "7. Voc� tem 50% SP, quanto de dano a Prote��o Arcana ir� reduzir e quanto SP ser� usado?";
+				mes "7. Voc? tem 50% SP, quanto de dano a Prote??o Arcana ir? reduzir e quanto SP ser? usado?";
 				next;
 				menu "Dano 18%, SP 1.5%",sM0_6b, "Dano 18%, SP 2%",sM0_6a, "Dano 24%, SP 1.5%",sM0_6b, "Dano 24%, SP 2%",sM0_6b;
 
 				sM0_6a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score, + 10;
 
 				sM0_6b:
 
 				mes "[Raul Expagarus]";
-				mes "8. Qual o consumo de SP de Escudo M�gico no n�vel 6, e a quantidade de golpes absorvidos?";
+				mes "8. Qual o consumo de SP de Escudo M?gico no n?vel 6, e a quantidade de golpes absorvidos?";
 				next;
 				menu "SP 40, 6 golpes",sM0_7b, "SP 35, 6 golpes",sM0_7b, "SP 40, 7 golpes",sM0_7a, "SP 35, 7 golpes",sM0_7b;
 
 				sM0_7a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM0_7b:
 
 				mes "[Raul Expagarus]";
-				mes "9. Qual o consumo de SP do Tempestade de Raios no n�vel 10";
+				mes "9. Qual o consumo de SP do Tempestade de Raios no n?vel 10";
 				next;
 				menu "84",sM0_8b, "74",sM0_8a, "64",sM0_8b, "54",sM0_8b;
 
 				sM0_8a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM0_8b:
 
 				mes "[Raul Expagarus]";
-				mes "10. Qual � a mallhor magia a ser usada na caverna de Byalan?";
+				mes "10. Qual ? a mallhor magia a ser usada na caverna de Byalan?";
 				next;
-				menu "Rel�mpago",sM0_9a, "Lan�as de Fogo",sM0_9b, "Lan�a de Gelo",sM0_9b, "Chama Reveladora",sM0_9b;
+				menu "Rel?mpago",sM0_9a, "Lan?as de Fogo",sM0_9b, "Lan?a de Gelo",sM0_9b, "Chama Reveladora",sM0_9b;
 
 				sM0_9a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM0_9b:
 				goto L_Cont0;
@@ -708,100 +708,100 @@ L_Mage:
 				mes "[Raul Expagarus]";
 				mes "1. Quem solta escudo com slot?";
 				next;
-				menu "Besouro-Ladr�o",sM1_0b, "PecoPeco",sM1_0b, "Pupa",sM1_0a, "Cobold de Ma�a",sM1_0b;
+				menu "Besouro-Ladr?o",sM1_0b, "PecoPeco",sM1_0b, "Pupa",sM1_0a, "Cobold de Ma?a",sM1_0b;
 
 				sM1_0a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_0b:
 
 				mes "[Raul Expagarus]";
-				mes "2. Qual monstro � o mais f�cil para Magos?";
+				mes "2. Qual monstro ? o mais f?cil para Magos?";
 				next;
-				menu "Flora",sM1_1a, "Giearth",sM1_1b, "Golem",sM1_1b, "N�voa",sM1_1b;
+				menu "Flora",sM1_1a, "Giearth",sM1_1b, "Golem",sM1_1b, "N?voa",sM1_1b;
 
 				sM1_1a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_1b:
 
 				mes "[Raul Expagarus]";
-				mes "3. Qual monstro � totalmente imune a Petrificar?";
+				mes "3. Qual monstro ? totalmente imune a Petrificar?";
 				next;
-				menu "Salgueiro Anci�o",sM1_2b, "Druida Mal�gno",sM1_2a, "Salgueiro",sM1_2b, "Cavalo-Marinho",sM1_2b;
+				menu "Salgueiro Anci?o",sM1_2b, "Druida Mal?gno",sM1_2a, "Salgueiro",sM1_2b, "Cavalo-Marinho",sM1_2b;
 
 				sM1_2a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_2b:
 
 				mes "[Raul Expagarus]";
-				mes "4. Quanto de dano voc� causar� com uma magia de vento num monstro �gua 3?";
+				mes "4. Quanto de dano voc? causar? com uma magia de vento num monstro ?gua 3?";
 				next;
 				menu "125%",sM1_3b, "150%",sM1_3b, "175%",sM1_3b, "200%",sM1_3a;
 
 				sM1_3a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_3b:
 
 				mes "[Raul Expagarus]";
 				mes "5. Filhote de Lobo do Deserto vs Familiar, quem ganha?";
 				next;
-				menu "Filhote de Lobo do Deserto",sM1_4a, "Farmiliar",sM1_4b, "Empate",sM1_4b, "N�o sei",sM1_4b;
+				menu "Filhote de Lobo do Deserto",sM1_4a, "Farmiliar",sM1_4b, "Empate",sM1_4b, "N?o sei",sM1_4b;
 
 				sM1_4a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_4b:
 
 				mes "[Raul Expagarus]";
-				mes "6. Qual monstro n�o pode ser capturado como animal de estima��o?";
+				mes "6. Qual monstro n?o pode ser capturado como animal de estima??o?";
 				next;
 				menu "Poporing",sM1_5b, "Sapo de Rodda",sM1_5a, "Fumacento",sM1_5b, "Esporo Venenoso",sM1_5b;
 
 				sM1_5a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_5b:
 
 				mes "[Raul Expagarus]";
-				mes "7. Qual monstro � fraco contra o elemento fogo?.";
+				mes "7. Qual monstro ? fraco contra o elemento fogo?.";
 				next;
-				menu "Goblin de Punhal",sM1_6b, "Goblin de Ma�a",sM1_6b, "Cobold de Ma�a",sM1_6b, "Goblin de Martelo",sM1_6a;
+				menu "Goblin de Punhal",sM1_6b, "Goblin de Ma?a",sM1_6b, "Cobold de Ma?a",sM1_6b, "Goblin de Martelo",sM1_6a;
 
 				sM1_6a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_6b:
 
 				mes "[Raul Expagarus]";
-				mes "8. Qual monstro tem a maior defesa m�gica?";
+				mes "8. Qual monstro tem a maior defesa m?gica?";
 				next;
 				menu "Horong",sM1_7b, "ChonChon",sM1_7b, "Andre",sM1_7b, "Caramelo",sM1_7a;
 
 				sM1_7a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_7b:
 
 				mes "[Raul Expagarus]";
-				mes "9. Qual monstro n�o pertence a este grupo.";
+				mes "9. Qual monstro n?o pertence a este grupo.";
 				next;
 				menu "Poring",sM1_8b, "Mastering",sM1_8b, "Ghostring",sM1_8b, "Esporo",sM1_8a;
 
 				sM1_8a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_8b:
 
 				mes "[Raul Expagarus]";
-				mes "10. Qual monstro n�o � morto-vivo?";
+				mes "10. Qual monstro n?o ? morto-vivo?";
 				next;
 				menu "Drake",sM1_9b, "Megalodon",sM1_9b, "Deviace",sM1_9a, "Khalitzburg",sM1_9b;
 
 				sM1_9a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM1_9b:
 				goto L_Cont0;
@@ -814,151 +814,151 @@ L_Mage:
 				menu "INT",sM2_0a, "AGI",sM2_0b, "DES",sM2_0b, "VIT",sM2_0b;
 
 				sM2_0a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_0b:
 
 				mes "[Raul Expagarus]";
-				mes "2. Qual elemento n�o tem magias do tipo lan�as?";
+				mes "2. Qual elemento n?o tem magias do tipo lan?as?";
 				next;
-				menu "�gua",sM2_1b, "Terra",sM2_1a, "Fogo",sM2_1b, "Vento",sM2_1b;
+				menu "?gua",sM2_1b, "Terra",sM2_1a, "Fogo",sM2_1b, "Vento",sM2_1b;
 
 				sM2_1a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_1b:
 
 				mes "[Raul Expagarus]";
-				mes "3. N�o � caracteristica de um Bruxo?";
+				mes "3. N?o ? caracteristica de um Bruxo?";
 				next;
-				menu "Fracas habilidades f�sicas",sM2_2b, "Ataques a dist�ncia",sM2_2b, "Fazedor de dinheiro",sM2_2a, "Defesa m�gica alta",sM2_2b;
+				menu "Fracas habilidades f?sicas",sM2_2b, "Ataques a dist?ncia",sM2_2b, "Fazedor de dinheiro",sM2_2a, "Defesa m?gica alta",sM2_2b;
 
 				sM2_2a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_2b:
 
 				mes "[Raul Expagarus]";
-				mes "4. Qual � a cidade natal dos Bruxos?";
+				mes "4. Qual ? a cidade natal dos Bruxos?";
 				next;
 				menu "Prontera",sM2_3b, "Morroc",sM2_3b, "Alberta",sM2_3b, "Geffen",sM2_3a;
 
 				sM2_3a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_3b:
 
 				mes "[Raul Expagarus]";
-				mes "5. Qual carta tem nada a ver com o atributo Intelig�ncia?";
+				mes "5. Qual carta tem nada a ver com o atributo Intelig?ncia?";
 				next;
-				menu "Carta Andre",sM2_4b, "Carta Andre Soldado",sM2_4a, "Carta Filhote de Lobo do Deserto",sM2_4b, "Carta Salgueiro Anci�o",sM2_4b;
+				menu "Carta Andre",sM2_4b, "Carta Andre Soldado",sM2_4a, "Carta Filhote de Lobo do Deserto",sM2_4b, "Carta Salgueiro Anci?o",sM2_4b;
 
 				sM2_4a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_4b:
 
 				mes "[Raul Expagarus]";
 				mes "6. O que a classe dos Magos tem de superior sobre as outras classes?";
 				next;
-				menu "Combate corpo a corpo",sM2_5b, "Esquiva Alta",sM2_5b, "Habilidades para dan�ar",sM2_5b, "Poderes m�gicos",sM2_5a;
+				menu "Combate corpo a corpo",sM2_5b, "Esquiva Alta",sM2_5b, "Habilidades para dan?ar",sM2_5b, "Poderes m?gicos",sM2_5a;
 
 				sM2_5a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_5b:
 
 				mes "[Raul Expagarus]";
-				mes "7. Qual � o b�nus em intelig�ncia no n�vel 40 de classe?";
+				mes "7. Qual ? o b?nus em intelig?ncia no n?vel 40 de classe?";
 				next;
 				menu "8",sM2_6b, "7",sM2_6b, "6",sM2_6b, "5",sM2_6a;
 
 				sM2_6a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_6b:
 
 				mes "[Raul Expagarus]";
-				mes "8. Qual item n�o pode ser equipado por Magos?";
+				mes "8. Qual item n?o pode ser equipado por Magos?";
 				next;
-				menu "Faca",sM2_7b, "Bon�",sM2_7a, "Sand�lia",sM2_7b, "Cajado",sM2_7b;
+				menu "Faca",sM2_7b, "Bon?",sM2_7a, "Sand?lia",sM2_7b, "Cajado",sM2_7b;
 
 				sM2_7a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_7b:
 
 				mes "[Raul Expagarus]";
-				mes "9. Durante o teste de Mago, Qual pedra N�O � um catalisador?";
+				mes "9. Durante o teste de Mago, Qual pedra N?O ? um catalisador?";
 				next;
 				menu "Gema Amarela",sM2_8b, "Gema Vermelha",sM2_8b, "Gema Azul",sM2_8b, "Sangue Escarlate",sM2_8a;
 
 				sM2_8a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_8b:
 
 				mes "[Raul Expagarus]";
-				mes "10. Qual carta n�o tem nada a ver com m�gica?";
+				mes "10. Qual carta n?o tem nada a ver com m?gica?";
 				next;
-				menu "Carta Marduk",sM2_9b, "Carta �rvore Maldita",sM2_9a, "Carta Salgueiro",sM2_9b, "Carta Maya",sM2_9b;
+				menu "Carta Marduk",sM2_9b, "Carta ?rvore Maldita",sM2_9a, "Carta Salgueiro",sM2_9b, "Carta Maya",sM2_9b;
 
 				sM2_9a:
-					set @SCORE, @SCORE + 10;
+					set @score, @score + 10;
 
 				sM2_9b:
 
 
 			L_Cont0:
 			mes "[Raul Expagarus]";
-			mes "Bem, esse � o fim do teste. Enquanto voc� espera, v� pegar alguma coisa para comer, est� bem.";
+			mes "Bem, esse ? o fim do teste. Enquanto voc? espera, v? pegar alguma coisa para comer, est? bem.";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Enfim, aqui est� o seu resultado: ^ff0000"+@SCORE+"^000000 pontos.";
+			mes "Enfim, aqui est? o seu resultado: ^ff0000"+@score+"^000000 pontos.";
 			next;
 			mes "[Raul Expagarus]";
-			if(@SCORE == 100) goto sL_Pass100;
-			if(@SCORE == 90) goto sL_Pass90;
+			if(@score == 100) goto sL_Pass100;
+			if(@score == 90) goto sL_Pass90;
 
 			sL_Failed:
 				set WIZ_Q2, 1;
-				mes "Hmf... Voc� falhou, v� estudar mais um pouco.";
+				mes "Hmf... Voc? falhou, v? estudar mais um pouco.";
 				next;
 				mes "[Raul Expagarus]";
-				mes "Voc� est� no caminho errado. Com essa burrice toda. voc� n�o tem chances de sobreviver como Bruxo.";
+				mes "Voc? est? no caminho errado. Com essa burrice toda. voc? n?o tem chances de sobreviver como Bruxo.";
 				close;
 
 			sL_Pass90:
 				set WIZ_Q, 3;
 				set WIZ_Q2, 0;
-				mes "Hmm, voc� errou uma quest�o, mas eu vou deixa-lo passar.";
+				mes "Hmm, voc? errou uma quest?o, mas eu vou deixa-lo passar.";
 				next;
 				mes "[Raul Expagarus]";
-				mes "N�o relaxe! Ainda tem o terceiro teste. Enquanto n�s preparamos o pr�ximo teste, sente e descanse um pouco.";
+				mes "N?o relaxe! Ainda tem o terceiro teste. Enquanto n?s preparamos o pr?ximo teste, sente e descanse um pouco.";
 				close;
 
 			sL_Pass100:
 				set WIZ_Q, 3;
 				set WIZ_Q2, 0;
-				mes "Maravilha! Voc� passou no segundo teste.";
+				mes "Maravilha! Voc? passou no segundo teste.";
 				next;
 				mes "[Raul Expagarus]";
-				mes "N�o relaxe! Ainda tem o terceiro teste. Enquanto n�s preparamos o pr�ximo teste, sente e descanse um pouco.";
+				mes "N?o relaxe! Ainda tem o terceiro teste. Enquanto n?s preparamos o pr?ximo teste, sente e descanse um pouco.";
 				close;
 
 
 	L_Test3:
 		if(WIZ_Q2 == 1) goto sL_ReTest3;
-		mes "Descansou? Bom. Agora, vamos come�ar o �ltimo teste.";
+		mes "Descansou? Bom. Agora, vamos come?ar o ?ltimo teste.";
 		next;
 		mes "[Raul Expagarus]";
-		mes "Vou fazer uma breve explica��o sobre esse teste, quer escutar?";
+		mes "Vou fazer uma breve explica??o sobre esse teste, quer escutar?";
 		next;
-		menu "N�o, obrigado.",M_1a, "Por favor, continue",M_1b;
+		menu "N?o, obrigado.",M_1a, "Por favor, continue",M_1b;
 
 		M_1a:
 			mes "[Raul Expagarus]";
-			mes "Seu tolo! tudo bem, se quiser v� morrer! Seu corpo servir� de alimento para os monstros.";
+			mes "Seu tolo! tudo bem, se quiser v? morrer! Seu corpo servir? de alimento para os monstros.";
 			emotion e_omg;
 			next;
 			mes "[Raul Expagarus]";
@@ -973,27 +973,27 @@ L_Mage:
 			mes "Boa escolha. Escute cuidadosamente.";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Esse � um teste para testar as suas habilidades enfrentando os monstros de diferentes tipos elementares.";
-			mes "Existem 3 diferentes salas, cada sala cont�m monstros de diferentes propriedades elementais.";
+			mes "Esse ? um teste para testar as suas habilidades enfrentando os monstros de diferentes tipos elementares.";
+			mes "Existem 3 diferentes salas, cada sala cont?m monstros de diferentes propriedades elementais.";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Existe a Sala da �gua que ter� monstros da propriedade �gua, seguido pela ";
-			mes "Sala da Terra que ter� monstros da propriedade Terra, e finalmente a Sala de Fogo com monstros da propriedade Fogo.";
+			mes "Existe a Sala da ?gua que ter? monstros da propriedade ?gua, seguido pela ";
+			mes "Sala da Terra que ter? monstros da propriedade Terra, e finalmente a Sala de Fogo com monstros da propriedade Fogo.";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Voc� ter� 3 minutos para cada sala. Voc� deve matar todos os monstros dentro da sala para poder avan�ar a pr�xima sala.";
+			mes "Voc? ter? 3 minutos para cada sala. Voc? deve matar todos os monstros dentro da sala para poder avan?ar a pr?xima sala.";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Se voc� usar as habilidades certas voc� ser� capaz de terminar este teste facilmente. Isso � tudo.";
+			mes "Se voc? usar as habilidades certas voc? ser? capaz de terminar este teste facilmente. Isso ? tudo.";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Voc� parece com medo.... desista agora e volte para a sua cidade.....";
+			mes "Voc? parece com medo.... desista agora e volte para a sua cidade.....";
 			next;
-			menu "Eu n�o tenho medo! De-me o teste!",sM_a, "... muitooo assustadoorrr... deixe-me voltar pra casa!",sM_b;
+			menu "Eu n?o tenho medo! De-me o teste!",sM_a, "... muitooo assustadoorrr... deixe-me voltar pra casa!",sM_b;
 
 			sM_a:
 				mes "[Raul Expagarus]";
-				mes "Crian�a, voc� tem coragem. Vamos come�ar o teste agora!";
+				mes "Crian?a, voc? tem coragem. Vamos come?ar o teste agora!";
 				next;
 				set WIZ_Q2, 1;
 				savepoint "gef_tower",106,29;
@@ -1002,98 +1002,98 @@ L_Mage:
 
 			sM_b:
 				mes "[Raul Expagarus]";
-				mes "Boa escolha. Tenha uma vida calma e agrad�vel!";
+				mes "Boa escolha. Tenha uma vida calma e agrad?vel!";
 				warp "geffen",120,110;
 				end;
 
 		sL_ReTest3:
-			mes "Voc� quer fazer o teste DENOVO!? Voc� ama TANTO ASSIM a magia!?";
+			mes "Voc? quer fazer o teste DENOVO!? Voc? ama TANTO ASSIM a magia!?";
 			emotion e_what;
 			next;
 			mes "[Raul Expagarus]";
-			mes "Voc� falhou pela �ltima vez, ent�o t� na hora de mais perguntas! Se n�o quiser fazer o exame, MUITO MAU!.";
+			mes "Voc? falhou pela ?ltima vez, ent?o t? na hora de mais perguntas! Se n?o quiser fazer o exame, MUITO MAU!.";
 			next;
 			mes "[Raul Expagarus]";
-			mes "Vamos come�ar.";
+			mes "Vamos come?ar.";
 			next;
-			set @SCORE, 0;
+			set @score, 0;
 
 			mes "[Raul Expagarus]";
-			mes "1. Qual monstro n�o existe?";
+			mes "1. Qual monstro n?o existe?";
 			next;
 			menu "Louva-a-Deus",sM_0b, "Dente de Sabre",sM_0a, "Giearth",sM_0b, "Caramelo",sM_0b;
 
 			sM_0a:
-				set @SCORE, @SCORE + 20;
+				set @score, @score + 20;
 
 			sM_0b:
 
 			mes "[Raul Expagarus]";
-			mes "2. Qual monstro N�O � do tipo animal?";
+			mes "2. Qual monstro N?O ? do tipo animal?";
 			next;
 			menu "Yoyo",sM_1b, "Bigfoot",sM_1b, "Metaller",sM_1b, "Zerom",sM_1a;
 
 			sM_1a:
-				set @SCORE, @SCORE + 20;
+				set @score, @score + 20;
 
 			sM_1b:
 
 			mes "[Raul Expagarus]";
-			mes "3. Qual monstro n�o tem sensiblidade para cast?";
+			mes "3. Qual monstro n?o tem sensiblidade para cast?";
 			next;
-			menu "Marina",sM_2a, "Vitata",sM_2b, "Escorpi�o",sM_2b, "Giearth",sM_2b;
+			menu "Marina",sM_2a, "Vitata",sM_2b, "Escorpi?o",sM_2b, "Giearth",sM_2b;
 
 			sM_2a:
-				set @SCORE, @SCORE + 20;
+				set @score, @score + 20;
 
 			sM_2b:
 
 			mes "[Raul Expagarus]";
-			mes "4. Qual � a mellhor magia para se usar em umas Esferas Marinhas?";
+			mes "4. Qual ? a mellhor magia para se usar em umas Esferas Marinhas?";
 			next;
-			menu "Lan�as de Gelo",sM_3b, "Lan�as de Fogo",sM_3b, "Rel�mpago",sM_3a, "Petrificar",sM_3b;
+			menu "Lan?as de Gelo",sM_3b, "Lan?as de Fogo",sM_3b, "Rel?mpago",sM_3a, "Petrificar",sM_3b;
 
 			sM_3a:
-			set @SCORE, @SCORE + 20;
+			set @score, @score + 20;
 
 			sM_3b:
 
 			mes "[Raul Expagarus]";
 			mes "5. Qual monstro pode se mover?";
 			next;
-			menu "Hidra",sM_4b, "Mandragora",sM_4b, "Guardi�o da Floresta",sM_4b, "Frilldora",sM_4a;
+			menu "Hidra",sM_4b, "Mandragora",sM_4b, "Guardi?o da Floresta",sM_4b, "Frilldora",sM_4a;
 
 			sM_4a:
-				set @SCORE, @SCORE + 20;
+				set @score, @score + 20;
 
 			sM_4b:
 
 			mes "[Raul Expagarus]";
-			mes "Seu resultado foi ^ff0000" +@SCORE+ "^000000 pontos.";
+			mes "Seu resultado foi ^ff0000" +@score+ "^000000 pontos.";
 			next;
 			mes "[Raul Expagarus]";
-			if (@SCORE >= 80) goto sL_Passed3;
+			if (@score >= 80) goto sL_Passed3;
 
 			sL_Failed3:
-				mes "Voc� falhou! V� estudar mais um pouco!";
+				mes "Voc? falhou! V? estudar mais um pouco!";
 				next;
 				mes "[Raul Expagarus]";
-				mes "Voc� n�o � esperto para ser um Bruxo, porque voc� acha que falhou!?";
+				mes "Voc? n?o ? esperto para ser um Bruxo, porque voc? acha que falhou!?";
 				close;
 
 			sL_Passed3:
-				if (@SCORE == 100) mes "Se voc� � t�o esperto, porque n�o passou no teste de primeira?";
-				if (@SCORE == 80) mes "Hehe, Quase bom. Vou deixa-lo tentar denovo.";
+				if (@score == 100) mes "Se voc? ? t?o esperto, porque n?o passou no teste de primeira?";
+				if (@score == 80) mes "Hehe, Quase bom. Vou deixa-lo tentar denovo.";
 			next;
-			menu "Vamos come�ar!",M_2a, "Explique o teste denovo, por favor.",M_1b;
+			menu "Vamos come?ar!",M_2a, "Explique o teste denovo, por favor.",M_1b;
 
 			M_2a:
 				mes "[Raul Expagarus]";
-				mes "Eu n�o vou ajuda-lo toda vez que voc� morrer. N�o me venha com choro se falhar denovo.... hehe.";
+				mes "Eu n?o vou ajuda-lo toda vez que voc? morrer. N?o me venha com choro se falhar denovo.... hehe.";
 				next;
 				percentheal 100,100;
 				mes "[Raul Expagarus]";
-				mes "Vou manda-lo para a arena. Diverta-se gritando por sua prote��o!";
+				mes "Vou manda-lo para a arena. Diverta-se gritando por sua prote??o!";
 				next;
 				savepoint "gef_tower",106,29;
 				warp "job_wiz",55,156;
@@ -1111,12 +1111,12 @@ job_wiz,50,165,4	script	Guida do Teste::WzTG	123,{
 
 	M_0:
 		mes "[Guida do Teste]";
-		mes "Como foi dito, voc� ter� 3 minutos para terminar com cada sala.";
-		mes "Eu anunciarei periodicamente quanto tempo lhe resta em cada sala minuto � minuto.";
+		mes "Como foi dito, voc? ter? 3 minutos para terminar com cada sala.";
+		mes "Eu anunciarei periodicamente quanto tempo lhe resta em cada sala minuto ? minuto.";
 		next;
 		mes "[Guida do Teste]";
 		mes "Por favor, entre na 'Sala de Espera do Teste de Bruxo' quando estiver pronto para fazer o teste.";
-		mes "Quando a sala estiver pronta. voc� ser� automaticamente posicionado e o teste ter� inicio.";
+		mes "Quando a sala estiver pronta. voc? ser? automaticamente posicionado e o teste ter? inicio.";
 		next;
 		mes "[Guida do Teste]";
 		mes "Boa sorte!";
@@ -1185,7 +1185,7 @@ OnMyMobDead1:		//when a monster dies this portion of script is run
 
 OnTimer2000:
 	set $@WzMOB, 5;
-	areaannounce "job_wiz", 98, 154, 129, 185, "[Guida do Teste]: Voc� precisa derrotar os guardi�es do portal! R�pido!",8;
+	areaannounce "job_wiz", 98, 154, 129, 185, "[Guida do Teste]: Voc? precisa derrotar os guardi?es do portal! R?pido!",8;
 	monster "job_wiz",114,169,"Esfera Marinha",1142,1,"WaterRm::OnMyMobDead2";
 	monster "job_wiz",112,169,"Hidra",1068,1,"WaterRm::OnMyMobDead2";
 	monster "job_wiz",116,169,"Hidra",1068,1,"WaterRm::OnMyMobDead2";
@@ -1201,7 +1201,7 @@ OnMyMobDead2:
 
 	stopnpctimer "TimerWz";
 	set $@WzMOB, 0;
-	areaannounce "job_wiz", 98, 154, 129, 185, "[Guida do Teste]: Muito bem. Voc� completou a Sala de �gua. Prepare-se para a Sala da Terra.",8;
+	areaannounce "job_wiz", 98, 154, 129, 185, "[Guida do Teste]: Muito bem. Voc? completou a Sala de ?gua. Prepare-se para a Sala da Terra.",8;
 	percentheal 100,100;
 	enablenpc "waterwrp";
 	enablenpc "waterwarpW";
@@ -1223,7 +1223,7 @@ OnStart:
 	monster "job_wiz",120,102,"Hode",1127,1,"EarthRm::OnMyMobDead1";
 	monster "job_wiz",111,93,"Selvagem",1166,1,"EarthRm::OnMyMobDead1";
 	monster "job_wiz",120,93,"Giearth",1121,1,"EarthRm::OnMyMobDead1";
-	monster "job_wiz",107,98,"P�-Grande",1160,1,"EarthRm::OnMyMobDead1";
+	monster "job_wiz",107,98,"P?-Grande",1160,1,"EarthRm::OnMyMobDead1";
 	monster "job_wiz",124,98,"Guerreiro Orc",1023,1,"EarthRm::OnMyMobDead1";
 	monster "job_wiz",104,86,"Vitata",1176,1,"EarthRm::OnMyMobDead1";
 	monster "job_wiz",127,86,"Louva-a-Deus",1139,1,"EarthRm::OnMyMobDead1";
@@ -1241,7 +1241,7 @@ OnMyMobDead1:
 
 OnTimer2000:
 	set $@WzMOB, 7;
-	areaannounce "job_wiz", 100, 82, 131, 113, "[Guida do Teste]: Voc� precisa derrotar os guardi�es do portal! R�pido!",8;
+	areaannounce "job_wiz", 100, 82, 131, 113, "[Guida do Teste]: Voc? precisa derrotar os guardi?es do portal! R?pido!",8;
 	monster "job_wiz",116,97,"Flora",1118,1,"EarthRm::OnMyMobDead2";
 	monster "job_wiz",114,95,"Mandragora",1020,1,"EarthRm::OnMyMobDead2";
 	monster "job_wiz",118,95,"Mandragora",1020,1,"EarthRm::OnMyMobDead2";
@@ -1259,7 +1259,7 @@ OnMyMobDead2:
 
 	stopnpctimer "TimerWz";
 	set $@WzMOB, 0;
-	areaannounce "job_wiz", 100, 82, 131, 113, "[Guida do Teste]: Muito bem. Voc� completou a Sala da Terra. Prepare-se para a Sala do Fogo.",8;
+	areaannounce "job_wiz", 100, 82, 131, 113, "[Guida do Teste]: Muito bem. Voc? completou a Sala da Terra. Prepare-se para a Sala do Fogo.",8;
 	percentheal 100,100;
 	enablenpc "earthwrp";
 	enablenpc "earthwarpN";
@@ -1277,10 +1277,10 @@ OnStart:
 	set $@WzMOB, 7;
 	monster "job_wiz",58,110,"Zerom",1178,1,"FireRm::OnMyMobDead1";
 	monster "job_wiz",33,110,"Goblin",1123,1,"FireRm::OnMyMobDead1";
-	monster "job_wiz",40,103,"Escorpi�o",1001,1,"FireRm::OnMyMobDead1";
+	monster "job_wiz",40,103,"Escorpi?o",1001,1,"FireRm::OnMyMobDead1";
 	monster "job_wiz",51,103,"Frilldora",1119,1,"FireRm::OnMyMobDead1";
 	monster "job_wiz",40,92,"PecoPeco",1019,1,"FireRm::OnMyMobDead1";
-	monster "job_wiz",51,92,"Salgueiro Anci�o",1033,1,"FireRm::OnMyMobDead1";
+	monster "job_wiz",51,92,"Salgueiro Anci?o",1033,1,"FireRm::OnMyMobDead1";
 	monster "job_wiz",37,89,"Metaller",1058,1,"FireRm::OnMyMobDead1";
 	initnpctimer "TimerWz";
 	end;
@@ -1296,8 +1296,8 @@ OnMyMobDead1:
 
 OnTimer2000:
 	set $@WzMOB, 3;
-	areaannounce "job_wiz", 30, 82, 61, 113, "[Guida do Teste]: Voc� precisa derrotar os guardi�es do portal! R�pido!.",8;
-	monster "job_wiz",44,99,"Guardi�o da Floresta",1277,1,"FireRm::OnMyMobDead2";
+	areaannounce "job_wiz", 30, 82, 61, 113, "[Guida do Teste]: Voc? precisa derrotar os guardi?es do portal! R?pido!.",8;
+	monster "job_wiz",44,99,"Guardi?o da Floresta",1277,1,"FireRm::OnMyMobDead2";
 	monster "job_wiz",43,99,"Horong",1129,1,"FireRm::OnMyMobDead2";
 	monster "job_wiz",45,99,"Horong",1129,1,"FireRm::OnMyMobDead2";
 	setnpctimer 120000, "TimerWz";
@@ -1312,7 +1312,7 @@ OnMyMobDead2:
 	set $@WzMOB, 0;
 	set WIZ_Q, 4;
 	set WIZ_Q2, 0;
-	areaannounce "job_wiz", 30, 82, 61, 113, "[Guida do Teste]: Muito bem. Voc� completou a Sala do Fogo e o teste inteiro.",0;
+	areaannounce "job_wiz", 30, 82, 61, 113, "[Guida do Teste]: Muito bem. Voc? completou a Sala do Fogo e o teste inteiro.",0;
 	enablenpc "firewrp";
 	enablenpc "firewarpN";
 	enablenpc "firewarpW";
@@ -1326,37 +1326,37 @@ OnMyMobDead2:
 job_wiz,1,1,1	script	TimerWz	-1,{
 
 OnTimer1000:
-	if($@WzRm==1) areaannounce "job_wiz", 98, 154, 129, 185, "[Guida do Teste]: Sala da �gua, teste ter� in�cio.",8;
-	if($@WzRm==2) areaannounce "job_wiz", 100, 82, 131, 113, "[Guida do Teste]: Sala da Terra, teste ter� in�cio.",8;
-	if($@WzRm==3) areaannounce "job_wiz", 30, 82, 61, 113, "[Guida do Teste]: Sala do Fogo, teste ter� in�cio.",8;
+	if($@WzRm==1) areaannounce "job_wiz", 98, 154, 129, 185, "[Guida do Teste]: Sala da ?gua, teste ter? in?cio.",8;
+	if($@WzRm==2) areaannounce "job_wiz", 100, 82, 131, 113, "[Guida do Teste]: Sala da Terra, teste ter? in?cio.",8;
+	if($@WzRm==3) areaannounce "job_wiz", 30, 82, 61, 113, "[Guida do Teste]: Sala do Fogo, teste ter? in?cio.",8;
 	end;
 OnTimer4000:
-	set $@WzTime$, "Voc� tem 3 minutos para derrotar todos os monstros nessa sala, come�ando agora!";
+	set $@WzTime$, "Voc? tem 3 minutos para derrotar todos os monstros nessa sala, come?ando agora!";
 	donpcevent "WzTG::OnStart";		//checks to see if anyone is still in the room, in case of logout or KO
 	callsub AnnounceWz;
 OnTimer34000:
 	donpcevent "WzTG::OnStart";
 	end;
 OnTimer64000:
-	set $@WzTime$, "Voc� tem mais 2 minutos!";
+	set $@WzTime$, "Voc? tem mais 2 minutos!";
 	donpcevent "WzTG::OnStart";
 	callsub AnnounceWz;
 OnTimer94000:
 	donpcevent "WzTG::OnStart";
 	end;
 OnTimer124000:
-	set $@WzTime$, "Voc� tem mais 1 minuto!";
+	set $@WzTime$, "Voc? tem mais 1 minuto!";
 	donpcevent "WzTG::OnStart";
 	callsub AnnounceWz;
 OnTimer154000:
-	set $@WzTime$, "Voc� tem mais 30 segundos!";
+	set $@WzTime$, "Voc? tem mais 30 segundos!";
 	donpcevent "WzTG::OnStart";
 	callsub AnnounceWz;
 OnTimer174000:
-	set $@WzTime$, "Voc� tem mais 10 segundos!";
+	set $@WzTime$, "Voc? tem mais 10 segundos!";
 	callsub AnnounceWz;
 OnTimer184000:
-	set $@WzTime$, "Tempo acabou. Voc� falhou no teste.";
+	set $@WzTime$, "Tempo acabou. Voc? falhou no teste.";
 	callsub AnnounceWz;
 OnTimer188000:
 	stopnpctimer;

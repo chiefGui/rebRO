@@ -1526,19 +1526,19 @@ OnTouch:
 	L_HighLvl:
 		switch(select("Jur:Katar:Main Gauche:Gladius"))	{
 		case 1:
-			additem 1251,1;
+			getitem 1251,1;
 			goto L_Cont1;
 			break;
 		case 2:
-			additem 1253, 1;
+			getitem 1253, 1;
 			goto L_Cont1;
 			break;
 		case 3:
-			additem 1208, 1;
+			getitem 1208, 1;
 			goto L_Cont1;
 			break;
 		case 4:
-			additem 1220, 1;
+			getitem 1220, 1;
 			goto L_Cont1;
 			break;
 	}
@@ -1546,13 +1546,13 @@ OnTouch:
 	L_LowLvl:
 		switch(rand(1,3)) {
 		case 1:
-			additem 1250, 1;
+			getitem 1250, 1;
 			break;
 		case 2:
-			additem 1217, 1;
+			getitem 1217, 1;
 			break;
 		case 3:
-			additem 1252, 1;
+			getitem 1252, 1;
 			break;
 	}
 	L_Cont1:
@@ -1564,8 +1564,8 @@ OnTouch:
 	mes "� ele que ser� encarregado de promover voc� para a classe Mercen�rio.";
 	next;
 	mes "[Mestre da Guilda]";
-	show strcharinfo(0) + " escolheu o caminho do Mercen�rio.  Voc� pode aprender a resistir aos sofrimentos que todos os Mercen�rios devem enfrentar.";
-	additem 1008, 1;
+	mes strcharinfo(0) + " escolheu o caminho do Mercen�rio.  Voc� pode aprender a resistir aos sofrimentos que todos os Mercen�rios devem enfrentar.";
+	getitem 1008, 1;
 	next;
 	mes "[Mestre da Guilda]";
 	mes "Ok, todo mundo pode sair agora.  Eu irei mand�-lo devolta � entrada.  Vamos......";

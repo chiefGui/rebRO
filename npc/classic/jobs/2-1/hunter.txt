@@ -311,8 +311,8 @@ L_Change:
 	next;
 	mes "[Ca�adora Sharon]";
 	mes "Agora, por trabalhar muito, a guilda tem uma pequena recompensa pra voc�.";
-	if(JBLVL == 50) additem 1718, 1;
-	if(JBLVL != 50) additem 1710, 1;
+	if(JBLVL == 50) getitem 1718, 1;
+	if(JBLVL != 50) getitem 1710, 1;
 	callfunc "F_ClearJobVar";		// clears all job variables for the current player
 	next;
 	mes "[Ca�adora Sharon]";
@@ -571,7 +571,7 @@ L_Start:
 		next;
 		mes "[Mestre da Guilda]";
 		mes "Tenha certeza de que voc� se mune com cuidado.  L� ter� muitos monstros e voc� n�o quer atacar o errado.";
-		mes "Continuar perseguindo os noshow dos monstros ser� muito importante nesse teste.";
+		mes "Continuar perseguindo os nomes dos monstros ser� muito importante nesse teste.";
 		next;
 		mes "[Mestre da Guilda]";
 		mes "E SEMPRE olhe seus passos!  L� tem armadilhas pra todo lado!";
@@ -590,7 +590,7 @@ L_Start:
 		sF_GetArrows:
 			mes "[Mestre da Guilda]";
 			mes "Isso � o que o seu trabalho duro do segundo teste lhe concedeu.  Aqui est� algumas flechas, feitas com os items que voc� coletou.";
- 			additem 1751, 200;
+ 			getitem 1751, 200;
 			set @HNTR_QA,1;
 			next;
 			return;
@@ -609,7 +609,7 @@ L_Passed:
 	next;
 	mes "[Mestre da Guilda]";
 	mes "Aqui est�. Tenha certeza de que voc� mostre isso ao "+callfunc("otclassname",11,"S","M")+" Sharon ou se n�o voc� N�O poder� tornar-se um "+callfunc("otclassname",11,"S","M")+".";
-	additem 1007,1;
+	getitem 1007,1;
 	next;
 	mes "[Mestre da Guilda]";
 	mes "De qualquer jeito, Eu tenho mais alguns trabalhos restantes pra fazer ent�o eu te vejo mais tarde.";

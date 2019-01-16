@@ -1,7 +1,7 @@
 moc_prydb1,39,129,2	script	Guia de Gatuno	69,{
 	if (BaseJob == Job_Thief) {
 		mes "[Guia de Gatuno]";
-		mes "Se você tem um problema, sinta-se a vontade para falar comigo quando quiser, ok?";
+		mes "Se vocï¿½ tem um problema, sinta-se a vontade para falar comigo quando quiser, ok?";
 		close;
 	}
 	else if (BaseJob != Job_Novice && BaseJob != Job_Thief) {
@@ -10,41 +10,41 @@ moc_prydb1,39,129,2	script	Guia de Gatuno	69,{
 		switch(Class) {
 		case 1:
 			mes "Huh.";
-			mes "Agora, isso é";
+			mes "Agora, isso ï¿½";
 			mes "uma grande espada.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Então...";
+			mes "Entï¿½o...";
 			mes "Tentando ficar a";
 			mes "par de alguma coisa";
 			mes "...Amigo?";
 			break;
 		case 2:
-			mes "O que um Mago está fazendo aqui? Você não deveria estar fazendo truques com cartas em outro local? Oh bem, esse é um país livre...";
+			mes "O que um Mago estï¿½ fazendo aqui? Vocï¿½ nï¿½o deveria estar fazendo truques com cartas em outro local? Oh bem, esse ï¿½ um paï¿½s livre...";
 			next;
 			mes "[Guia de Gatuno]";
 			mes "Oh espere,";
-			mes "não é não...";
+			mes "nï¿½o ï¿½ nï¿½o...";
 			mes "Caia fora daqui!";
 			break;
 		case 3:
-			mes "Cara, vocês Arqueiros";
-			mes "não deveriam estar";
-			mes "caçando na floresta";
+			mes "Cara, vocï¿½s Arqueiros";
+			mes "nï¿½o deveriam estar";
+			mes "caï¿½ando na floresta";
 			mes "ou algo do tipo?";
 			break;
 		case 4:
-			mes "Você sabe que roubamos para viver, certo? O que você está fazendo nesse tipo de lugar, Noviço?";
+			mes "Vocï¿½ sabe que roubamos para viver, certo? O que vocï¿½ estï¿½ fazendo nesse tipo de lugar, Noviï¿½o?";
 			break;
 		case 5:
-			mes "Você é um Mercador,";
-			mes "certo? Por que você está";
+			mes "Vocï¿½ ï¿½ um Mercador,";
+			mes "certo? Por que vocï¿½ estï¿½";
 			mes "andando em um covil";
 			mes "de Gatunos?!";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Parece que você está nos tentando";
-			mes "para roubarmos você!";
+			mes "Parece que vocï¿½ estï¿½ nos tentando";
+			mes "para roubarmos vocï¿½!";
 			mes "Vamos, corra e";
 			mes "caia fora daqui~";
 			break;
@@ -53,24 +53,24 @@ moc_prydb1,39,129,2	script	Guia de Gatuno	69,{
 			mes "Eu estou morrendo?";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Por que mais um Sacerdote viria aqui? Eu acho que é melhor eu começar a confessar todos meus pecados.";
+			mes "Por que mais um Sacerdote viria aqui? Eu acho que ï¿½ melhor eu comeï¿½ar a confessar todos meus pecados.";
 			close;
 		case 12:
-			mes "Você não era um de nós?! Cara, você mudou. Você parece realmente perigoso agora...";
+			mes "Vocï¿½ nï¿½o era um de nï¿½s?! Cara, vocï¿½ mudou. Vocï¿½ parece realmente perigoso agora...";
 			close;
 		case 17:
-			mes "Cara, você ficou realmente frio de repente! Você deve ter algumas habilidades que eu sonho ter um dia!";
+			mes "Cara, vocï¿½ ficou realmente frio de repente! Vocï¿½ deve ter algumas habilidades que eu sonho ter um dia!";
 			close;
 		}
 		next;
 		mes "[Guia de Gatuno]";
-		mes "*Suspiro* Olha, não há realmente nenhuma necessidade para você estar neste tipo de lugar. Você deveria seguir seu caminho...";
+		mes "*Suspiro* Olha, nï¿½o hï¿½ realmente nenhuma necessidade para vocï¿½ estar neste tipo de lugar. Vocï¿½ deveria seguir seu caminho...";
 		close;
 	}
 	if (job_thief_q == 3 && countitem(1069) > 0 || countitem(1070) > 0) {
 		mes "[Guia de Gatuno]";
 		mes "Hmmm?";
-		mes "Você ajuntou os Cogumelos para";
+		mes "Vocï¿½ ajuntou os Cogumelos para";
 		mes "o Teste de Gatuno, certo?";
 		next;
 		mes "[Guia de Gatuno]";
@@ -79,54 +79,54 @@ moc_prydb1,39,129,2	script	Guia de Gatuno	69,{
 	}
 	else if (job_thief_q == 3) {
 		mes "[Guia de Gatuno]";
-		mes "Então como foi a";
-		mes "plantação de Cogumelos?";
+		mes "Entï¿½o como foi a";
+		mes "plantaï¿½ï¿½o de Cogumelos?";
 		mes "Foi divertido?";
 		next;
-		if (select("Sim, bem legal.:Aquilo foi horrível.") == 1) {
+		if (select("Sim, bem legal.:Aquilo foi horrï¿½vel.") == 1) {
 			mes "[Guia de Gatuno]";
-			mes "Heh heh! Boa atitude. Em nosso trabalho, você precisa curtir suas mãos ficando sujas, de uma forma ou outra.";
+			mes "Heh heh! Boa atitude. Em nosso trabalho, vocï¿½ precisa curtir suas mï¿½os ficando sujas, de uma forma ou outra.";
 			close;
 		}
 		mes "[Guia de Gatuno]";
-		mes "Sim? Eu estive lá também, então eu posso ver o porque daquele lugar não ser o copo de chá de ninguém. Ainda, ser um Gatuno não é uma vida de glamour e moda notura.";
+		mes "Sim? Eu estive lï¿½ tambï¿½m, entï¿½o eu posso ver o porque daquele lugar nï¿½o ser o copo de chï¿½ de ninguï¿½m. Ainda, ser um Gatuno nï¿½o ï¿½ uma vida de glamour e moda notura.";
 		close;
 	}
 	if (job_thief_q == 2) {
 		mes "[Guia de Gatuno]";
-		mes "Ei, o que você está fazendo aqui? Você não deveria estar pegando Cogumelos? Ou você precisa que eu explique tudo denovo?";
+		mes "Ei, o que vocï¿½ estï¿½ fazendo aqui? Vocï¿½ nï¿½o deveria estar pegando Cogumelos? Ou vocï¿½ precisa que eu explique tudo denovo?";
 		next;
-		if  (select("Sim.:Não, tudo bem.") == 1) {
+		if  (select("Sim.:Nï¿½o, tudo bem.") == 1) {
 			mes "[Guia de Gatuno]";
-			mes "*Suspiro* Bem, há sempre um no bando. Certo, escute cuidadosamente.";
+			mes "*Suspiro* Bem, hï¿½ sempre um no bando. Certo, escute cuidadosamente.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Vamos lá, para seu teste, você precisa roubar Cogumelos de uma plantação. Não se preocupe, o cara que é dono da fazenda merece ser roubado.";
+			mes "Vamos lï¿½, para seu teste, vocï¿½ precisa roubar Cogumelos de uma plantaï¿½ï¿½o. Nï¿½o se preocupe, o cara que ï¿½ dono da fazenda merece ser roubado.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Enfim, você tem que juntar dois tipos de Cogumelos: ^0000FFCogumelo Venenoso^000000 e ^0000FFCogumelo Borrachento^000000.";
+			mes "Enfim, vocï¿½ tem que juntar dois tipos de Cogumelos: ^0000FFCogumelo Venenoso^000000 e ^0000FFCogumelo Borrachento^000000.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Tenha cuidado, pois existem monstros na plantação que estão lá para proteger os Cogumelos. Então isso não será uma caminhada no parque.";
+			mes "Tenha cuidado, pois existem monstros na plantaï¿½ï¿½o que estï¿½o lï¿½ para proteger os Cogumelos. Entï¿½o isso nï¿½o serï¿½ uma caminhada no parque.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Quando você voltar aqui depois de juntar os Cogumelos, você será pontuado de acordo com os Cogumelos que coletou.";
+			mes "Quando vocï¿½ voltar aqui depois de juntar os Cogumelos, vocï¿½ serï¿½ pontuado de acordo com os Cogumelos que coletou.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Cada Cogumelo Venenoso vale 3 pontos, e você recebe 1 ponto por cada Cogumelo Borrachento. Você precisa de 25 pontos para passar no teste.";
+			mes "Cada Cogumelo Venenoso vale 3 pontos, e vocï¿½ recebe 1 ponto por cada Cogumelo Borrachento. Vocï¿½ precisa de 25 pontos para passar no teste.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Vá lá fora e continue indo até o campo oriental das Pirâmides. E você verá um de nossos camaradas entre duas colunas.";
+			mes "Vï¿½ lï¿½ fora e continue indo atï¿½ o campo oriental das Pirï¿½mides. E vocï¿½ verï¿½ um de nossos camaradas entre duas colunas.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Fale com aquele cara, e ele te levará para o plantação pela porta dos fundos.";
+			mes "Fale com aquele cara, e ele te levarï¿½ para o plantaï¿½ï¿½o pela porta dos fundos.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Naquele campo, eu acho que as coordenadas são '^FF0000141, 125^000000.' Apenas digite ^3355FF/where^000000 no canto direito da caixa de chat para checar suas coordenadas atuais.";
+			mes "Naquele campo, eu acho que as coordenadas sï¿½o '^FF0000141, 125^000000.' Apenas digite ^3355FF/where^000000 no canto direito da caixa de chat para checar suas coordenadas atuais.";
 			close;
 		}
 		mes "[Guia de Gatuno]";
-		mes "Huh. Por um segundo ali, Eu pensei que você tinha algo realmente importante para me dizer.";
+		mes "Huh. Por um segundo ali, Eu pensei que vocï¿½ tinha algo realmente importante para me dizer.";
 		close;
 	}
 	mes "[Guia de Gatuno]";
@@ -136,43 +136,43 @@ moc_prydb1,39,129,2	script	Guia de Gatuno	69,{
 	}
 	else {
 		mes "Ah...";
-		mes "Você voltou.";
-		mes "Você tem certeza que está";
+		mes "Vocï¿½ voltou.";
+		mes "Vocï¿½ tem certeza que estï¿½";
 		mes "pronto para tentar novamente?";
 	}
 	next;
-	if (select("Ei, eu voltei aqui para virar um Gatuno!:Não, estou apenas dando uma olhada.") == 1) {
+	if (select("Ei, eu voltei aqui para virar um Gatuno!:Nï¿½o, estou apenas dando uma olhada.") == 1) {
 		if (job_thief_q == 0) {
 			mes "[Guia de Gatuno]";
-			mes "Heh, eu gosto de sua confiança. Mesmo assim, você sabe que se tornar um Gatuno não é tudo o que é rachado até ser.";
+			mes "Heh, eu gosto de sua confianï¿½a. Mesmo assim, vocï¿½ sabe que se tornar um Gatuno nï¿½o ï¿½ tudo o que ï¿½ rachado atï¿½ ser.";
 			next;
 			mes "[Guia de Gatuno]";
 			mes "Ainda...";
-			mes "Você realmente";
+			mes "Vocï¿½ realmente";
 			mes "quer ser";
 			mes "um Gatuno?";
 			next;
-			switch(select("Sim.:Não, apenas gastando seu tempo.:Por que você virou um Gatuno?")) {
+			switch(select("Sim.:Nï¿½o, apenas gastando seu tempo.:Por que vocï¿½ virou um Gatuno?")) {
 			case 1:
 				mes "[Guia de Gatuno]";
 				mes "Realmente...";
 				break;
 			case 2:
 				mes "[Guia de Gatuno]";
-				mes "É...";
+				mes "ï¿½...";
 				mes "Eu vi.";
 				break;
 			case 3:
 				mes "[Guia de Gatuno]";
 				mes "Eu...?";
-				mes "Eu não tive escolha no momento. Era roubar ou passar fome. Mas eu não preciso te contar a história da minha vida.";
+				mes "Eu nï¿½o tive escolha no momento. Era roubar ou passar fome. Mas eu nï¿½o preciso te contar a histï¿½ria da minha vida.";
 				break;
 			}
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Então você quer";
+			mes "Entï¿½o vocï¿½ quer";
 			mes "se inscrever para ser";
-			mes "um Gatuno ou não?";
+			mes "um Gatuno ou nï¿½o?";
 			next;
 			switch(select("Sim, eu quero.:Eu estou com muito medo de virar um Gatuno!")) {
 			case 1:
@@ -182,29 +182,29 @@ moc_prydb1,39,129,2	script	Guia de Gatuno	69,{
 				next;
 				mes "[Guia de Gatuno]";
 				mes "" + strcharinfo(0) + "?";
-				mes "Que tipo de nome é " + strcharinfo(0) + "? De qualquer modo, espere um segundo.";
+				mes "Que tipo de nome ï¿½ " + strcharinfo(0) + "? De qualquer modo, espere um segundo.";
 				set job_thief_q,1;
 				next;
 				mes "[Guia de Gatuno]";
-				mes "Tudo certo, seu registro foi processado. Ok, você pode começar o teste se estiver pronto.";
+				mes "Tudo certo, seu registro foi processado. Ok, vocï¿½ pode comeï¿½ar o teste se estiver pronto.";
 				next;
-				switch(select("Sim, estou pronto.:Não, ainda não estou pronto.")) {
+				switch(select("Sim, estou pronto.:Nï¿½o, ainda nï¿½o estou pronto.")) {
 				case 1:
 					break;
 				case 2:
 					mes "[Guia de Gatuno]";
-					mes "Não está pronto?";
-					mes "Como você pode";
-					mes "não estar pronto?!";
+					mes "Nï¿½o estï¿½ pronto?";
+					mes "Como vocï¿½ pode";
+					mes "nï¿½o estar pronto?!";
 					close;
 				}
 				break;
 			case 2:
 				mes "[Guia de Gatuno]";
-				mes "Está com muito medo?!?";
+				mes "Estï¿½ com muito medo?!?";
 				mes "Hahahahahahah!";
 				mes "Oh, por favor...!";
-				mes "Isso é hilário!";
+				mes "Isso ï¿½ hilï¿½rio!";
 				close;
 			}
 		}
@@ -216,62 +216,62 @@ moc_prydb1,39,129,2	script	Guia de Gatuno	69,{
 			next;
 		}
 		mes "[Guia de Gatuno]";
-		mes "Seu nome é...";
-		mes "" + strcharinfo(0) + "? Hmm, aonde está isso? Ah, aqui está. Deixe-me ver...";
+		mes "Seu nome ï¿½...";
+		mes "" + strcharinfo(0) + "? Hmm, aonde estï¿½ isso? Ah, aqui estï¿½. Deixe-me ver...";
 		next;
 		mes "[Guia de Gatuno]";
 		if (getskilllv("NV_BASIC") < 9) {
-			mes "Não é bonitinho? Eu posso ver que você é ambicioso, mas você precisa aprender as Habilidades Básicas antes de se tornar um Gatuno.";
+			mes "Nï¿½o ï¿½ bonitinho? Eu posso ver que vocï¿½ ï¿½ ambicioso, mas vocï¿½ precisa aprender as Habilidades Bï¿½sicas antes de se tornar um Gatuno.";
 			close;
 		}
-		mes "Tudo certo. Eu olhei sua ficha criminal, e você parece ter uma história muito interessante. Você deve ter o que é preciso para ser um Gatuno.";
+		mes "Tudo certo. Eu olhei sua ficha criminal, e vocï¿½ parece ter uma histï¿½ria muito interessante. Vocï¿½ deve ter o que ï¿½ preciso para ser um Gatuno.";
 		next;
 		mes "[Guia de Gatuno]";
-		mes "Porque eu sinto isso, eu agora decreto que você passou nessa entrevista. Bom trabalho!";
+		mes "Porque eu sinto isso, eu agora decreto que vocï¿½ passou nessa entrevista. Bom trabalho!";
 		set job_thief_q,2;
 		next;
 		mes "[Guia de Gatuno]";
-		mes "Agora, suas habilidades atuais serão testadas. Você conheçe alguam coisa sobre o teste?";
+		mes "Agora, suas habilidades atuais serï¿½o testadas. Vocï¿½ conheï¿½e alguam coisa sobre o teste?";
 		next;
-		switch(select("Sim, eu conheço.:Desculpe, eu não conheço.")) {
+		switch(select("Sim, eu conheï¿½o.:Desculpe, eu nï¿½o conheï¿½o.")) {
 		case 1:
 			mes "[Guia de Gatuno]";
-			mes "É mesmo? Bem, isso tornará as coisas mais fáceis.";
+			mes "ï¿½ mesmo? Bem, isso tornarï¿½ as coisas mais fï¿½ceis.";
 			break;
 		case 2:
 			mes "[Guia de Gatuno]";
-			mes "Vamos lá, deixe-me te informar então. Escute cautelosamente. Esse teste decide se você é digno de virar um Gatuno.";
+			mes "Vamos lï¿½, deixe-me te informar entï¿½o. Escute cautelosamente. Esse teste decide se vocï¿½ ï¿½ digno de virar um Gatuno.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Você irá secretamente até a plantação do Shibu. Ele é o pior Mercador, em termos de caráter, em Morroc.";
+			mes "Vocï¿½ irï¿½ secretamente atï¿½ a plantaï¿½ï¿½o do Shibu. Ele ï¿½ o pior Mercador, em termos de carï¿½ter, em Morroc.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Vamos lá, para seu teste, você precisa roubar Cogumelos da plantação dele. Não se preocupe, ele merece ser roubado.";
+			mes "Vamos lï¿½, para seu teste, vocï¿½ precisa roubar Cogumelos da plantaï¿½ï¿½o dele. Nï¿½o se preocupe, ele merece ser roubado.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Enfim, você tem que juntar dois tipos de Cogumelos: ^0000FFCogumelo Venenoso^000000 e ^0000FFCogumelo Borrachento^000000.";
+			mes "Enfim, vocï¿½ tem que juntar dois tipos de Cogumelos: ^0000FFCogumelo Venenoso^000000 e ^0000FFCogumelo Borrachento^000000.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Tenha cuidado, pois existem monstros na plantação que estão lá para proteger os Cogumelos. Então isso não será uma caminhada no parque.";
+			mes "Tenha cuidado, pois existem monstros na plantaï¿½ï¿½o que estï¿½o lï¿½ para proteger os Cogumelos. Entï¿½o isso nï¿½o serï¿½ uma caminhada no parque.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Quando você voltar aqui depois de juntar os Cogumelos, você será pontuado de acordo com os Cogumelos que coletou.";
+			mes "Quando vocï¿½ voltar aqui depois de juntar os Cogumelos, vocï¿½ serï¿½ pontuado de acordo com os Cogumelos que coletou.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Cada Cogumelo Venenoso vale 3 pontos, e você recebe 1 ponto por cada Cogumelo Borrachento. Você precisa de 25 pontos para passar no teste.";
+			mes "Cada Cogumelo Venenoso vale 3 pontos, e vocï¿½ recebe 1 ponto por cada Cogumelo Borrachento. Vocï¿½ precisa de 25 pontos para passar no teste.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Vá lá fora e continue indo até o campo oriental das Pirâmides. E você verá um de nossos camaradas entre duas colunas.";
+			mes "Vï¿½ lï¿½ fora e continue indo atï¿½ o campo oriental das Pirï¿½mides. E vocï¿½ verï¿½ um de nossos camaradas entre duas colunas.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Fale com aquele cara, e ele te levará para o plantação pela porta dos fundos.";
+			mes "Fale com aquele cara, e ele te levarï¿½ para o plantaï¿½ï¿½o pela porta dos fundos.";
 			next;
 			mes "[Guia de Gatuno]";
-			mes "Naquele campo, eu acho que as coordenadas são '^FF0000141, 125^000000.' Apenas digite ^3355FF/where^000000 no canto direito da caixa de chat para checar suas coordenadas atuais.";
+			mes "Naquele campo, eu acho que as coordenadas sï¿½o '^FF0000141, 125^000000.' Apenas digite ^3355FF/where^000000 no canto direito da caixa de chat para checar suas coordenadas atuais.";
 		}
 		next;
 		mes "[Guia de Gatuno]";
-		mes "Não se esqueça de fazer planos e se preparar antes de entrar na plantação. Ande o mais rápido que conseguir e tente não ser morto, ok?";
+		mes "Nï¿½o se esqueï¿½a de fazer planos e se preparar antes de entrar na plantaï¿½ï¿½o. Ande o mais rï¿½pido que conseguir e tente nï¿½o ser morto, ok?";
 		close;
 	}
 	close;
@@ -281,39 +281,39 @@ moc_prydb1,42,133,2	script	Camarada	118,{
 	if (BaseJob == Job_Thief) {
 
 		mes "[Brad]";
-		mes "Nós não temos nenhum evento especial ainda. Venha outra hora quando tiver notícias, ok?";
+		mes "Nï¿½s nï¿½o temos nenhum evento especial ainda. Venha outra hora quando tiver notï¿½cias, ok?";
 		close;
 	}
 	else if (BaseJob != Job_Novice && BaseJob != Job_Thief) {
 		mes "[Camarada]";
 		mes "Um...";
-		mes "Você não se parece";
+		mes "Vocï¿½ nï¿½o se parece";
 		mes "com um Gatuno.";
 		next;
 		mes "[Camarada]";
-		mes "Que diabos você";
-		mes "está fazendo aqui afinal?";
+		mes "Que diabos vocï¿½";
+		mes "estï¿½ fazendo aqui afinal?";
 		close;
 	}
 	if (job_thief_q == 0 || job_thief_q == 1) {
 		mes "[Camarada]";
-		mes "Qual é o problema? Se você quer se tornar um Gatuno, fale com a garota ao meu lado.";
+		mes "Qual ï¿½ o problema? Se vocï¿½ quer se tornar um Gatuno, fale com a garota ao meu lado.";
 		close;
 	}
 	else if (job_thief_q == 2) {
 		mes "[Camarada]";
-		mes "Você não passou na entrevista?";
-		mes "Então o que está esperando?";
+		mes "Vocï¿½ nï¿½o passou na entrevista?";
+		mes "Entï¿½o o que estï¿½ esperando?";
 		close;
 	}
 	else if (job_thief_q == 3) {
 		mes "[Camarada]";
-		mes "Ah, o mentor me falou de você. Então, deixe-me verificar seus Cogumelos...";
+		mes "Ah, o mentor me falou de vocï¿½. Entï¿½o, deixe-me verificar seus Cogumelos...";
 		if (countitem(1069) == 0 && countitem(1070) == 0) {
 			next;
 			mes "[Camarada]";
 			mes "Que diabos...";
-			mes "Você não tem nenhum Cogumelo! Volte lá e pegue-os. Caso contrário, você não passará no teste e não se tornará um Gatuno!";
+			mes "Vocï¿½ nï¿½o tem nenhum Cogumelo! Volte lï¿½ e pegue-os. Caso contrï¿½rio, vocï¿½ nï¿½o passarï¿½ no teste e nï¿½o se tornarï¿½ um Gatuno!";
 			close;
 		}
 		next;
@@ -323,18 +323,18 @@ moc_prydb1,42,133,2	script	Camarada	118,{
 		set .@money_thief,((.@thief_item1 * 5) + (.@thief_item2 * 2)) + 200;
 		mes "[Comrade]";
 		if (countitem(1069) != 0) {
-			mes "Primeiro, deixe-me checar quantos Cogumelos Venenoso você pegou.";
+			mes "Primeiro, deixe-me checar quantos Cogumelos Venenoso vocï¿½ pegou.";
 			mes "Huh, " + countitem(1069) + " deles.";
 		}
 		if (countitem(1070) != 0)
-			mes "Agora vou checar seus Cogumelos Borrachento. Você pegou " + countitem(1070) + " deles.";
+			mes "Agora vou checar seus Cogumelos Borrachento. Vocï¿½ pegou " + countitem(1070) + " deles.";
 		next;
 		mes "[Camarada]";
-		mes "Então você trouxe";
+		mes "Entï¿½o vocï¿½ trouxe";
 		mes "um total de...";
 		next;
 		mes "[Camarada]";
-		mes "Hmmm. " + .@total_thief + " graus, multiplicados pela velocidade da luz, dividida pelo integral de pi vezes o peso extra do valor absoluto dos políticos...";
+		mes "Hmmm. " + .@total_thief + " graus, multiplicados pela velocidade da luz, dividida pelo integral de pi vezes o peso extra do valor absoluto dos polï¿½ticos...";
 		next;
 		mes "[Camarada]";
 		mes "Ok!";
@@ -342,38 +342,38 @@ moc_prydb1,42,133,2	script	Camarada	118,{
 		next;
 		mes "[Camarada]";
 		if (.@total_thief > 25) {
-			mes "Você conseguiu mais";
+			mes "Vocï¿½ conseguiu mais";
 			mes "que 25 pontos!";
 			mes "Impressionante!";
 		}
 		else if (.@total_thief == 25) {
 			mes "Exatamente 25 pontos!";
-			mes "Você conseguiu!";
+			mes "Vocï¿½ conseguiu!";
 		}
 		else {
-			mes "Definitivamente menos que os 25 pontos que você precisa para passar. Volte lá e pegue mais Cogumelos!";
+			mes "Definitivamente menos que os 25 pontos que vocï¿½ precisa para passar. Volte lï¿½ e pegue mais Cogumelos!";
 			close;
 		}
 		next;
 		mes "[Camarada]";
 		mes "" + strcharinfo(0) + "...";
-		mes "Você passou no teste oficial de Gatuno. Agora você é um de nós.";
+		mes "Vocï¿½ passou no teste oficial de Gatuno. Agora vocï¿½ ï¿½ um de nï¿½s.";
 		if (countitem(1069) != 0) delitem 1069,countitem(1069); //Mushroom_Of_Thief_1
 		if (countitem(1070) != 0) delitem 1070,countitem(1070); //Mushroom_Of_Thief_2
 		callfunc "Job_Change",Job_Thief;
 		callfunc "F_ClearJobVar";
 		next;
 		mes "[Camarada]";
-		mes "Parabéns por ter se tornado um Gatuno! Apartir de agora, seja um representante honorável do Clã de Gatunos.";
+		mes "Parabï¿½ns por ter se tornado um Gatuno! Apartir de agora, seja um representante honorï¿½vel do Clï¿½ de Gatunos.";
 		next;
 		mes "[Camarada]";
-		mes "Se você trouxer desgraça para nosso clã, você será assassinado. Eu espero que você traga orgulho para nós.";
+		mes "Se vocï¿½ trouxer desgraï¿½a para nosso clï¿½, vocï¿½ serï¿½ assassinado. Eu espero que vocï¿½ traga orgulho para nï¿½s.";
 		next;
 		mes "[Brad]";
-		mes "*Ahem* Bem-vindo ao Clã, camarada! Eu sou Brad, e sou encarregado dos recursos humanos aqui.";
+		mes "*Ahem* Bem-vindo ao Clï¿½, camarada! Eu sou Brad, e sou encarregado dos recursos humanos aqui.";
 		next;
 		mes "[Brad]";
-		mes "Aqui está uma pequena ajuda para um iniciante como você. Gaste com o que você quiser. Tudo certo então, vejo você por ai~";
+		mes "Aqui estï¿½ uma pequena ajuda para um iniciante como vocï¿½. Gaste com o que vocï¿½ quiser. Tudo certo entï¿½o, vejo vocï¿½ por ai~";
 		set zeny,zeny+.@money_thief;
 		close;
 	}
@@ -382,10 +382,10 @@ moc_prydb1,42,133,2	script	Camarada	118,{
 moc_ruins,141,125,3	script	Sr. Irrelevante	83,{
 	if (BaseJob == Job_Thief) {
 		mes "[Sr. Irrelevante]";
-		mes "Ah, eu vi que agora você é um Gatuno. Eu sempre soube que você iria se juntar a nós.";
+		mes "Ah, eu vi que agora vocï¿½ ï¿½ um Gatuno. Eu sempre soube que vocï¿½ iria se juntar a nï¿½s.";
 		next;
 		mes "[Sr. Irrelevante]";
-		mes "Roubar de uma plantação de cogumelos é muito fácil pra você agora. Você deve aumentar suas habilidades e aprender nossa profissão.";
+		mes "Roubar de uma plantaï¿½ï¿½o de cogumelos ï¿½ muito fï¿½cil pra vocï¿½ agora. Vocï¿½ deve aumentar suas habilidades e aprender nossa profissï¿½o.";
 		close;
 	}
 	else if (BaseJob != Job_Novice && BaseJob != Job_Thief) {
@@ -395,28 +395,28 @@ moc_ruins,141,125,3	script	Sr. Irrelevante	83,{
 			mes "Eu poderia beber uma boa bebida agora.";
 			close;
 		case 2:
-			mes "Me dê seu dinheiro.";
+			mes "Me dï¿½ seu dinheiro.";
 			next;
 			mes "[Sr. Irrelevante]";
-			mes "Brincadeira, estou fora do horário.";
+			mes "Brincadeira, estou fora do horï¿½rio.";
 			close;
 		case 3:
-			mes "QUEM VOCÊ ESTÁ CHAMANDO DE PSICOPATA?!?!";
+			mes "QUEM VOCï¿½ ESTï¿½ CHAMANDO DE PSICOPATA?!?!";
 			close;
 		case 4:
-			mes "Eu não tenho nada pra te dizer. Importa-se de me deixar sozinho?";
+			mes "Eu nï¿½o tenho nada pra te dizer. Importa-se de me deixar sozinho?";
 			close;
 		default:
-			mes "Hoje parece um bom dia para ir nas pirâmides e caçar com alguns amigos.";
+			mes "Hoje parece um bom dia para ir nas pirï¿½mides e caï¿½ar com alguns amigos.";
 			close;
 		}
 	}
 	if (job_thief_q == 3) {
 		mes "[Sr. Irrelevante]";
 		mes "Hahahahaha~!";
-		mes "Você não passou";
+		mes "Vocï¿½ nï¿½o passou";
 		mes "no teste ainda?";
-		mes "Ok, eu deixarei você entrar...";
+		mes "Ok, eu deixarei vocï¿½ entrar...";
 		close2;
 		switch(rand(5)) {
 		case 1: warp "job_thief1",228,106; end;
@@ -429,10 +429,10 @@ moc_ruins,141,125,3	script	Sr. Irrelevante	83,{
 	else if (job_thief_q == 2) {
 		mes "[Sr. Irrelevante]";
 		mes "Hmm...";
-		mes "Você veio aqui por causa do teste, certo? Eu posso ver nos seus olhos que você sabe alguma coisa.";
+		mes "Vocï¿½ veio aqui por causa do teste, certo? Eu posso ver nos seus olhos que vocï¿½ sabe alguma coisa.";
 		next;
 		mes "[Sr. Irrelevante]";
-		mes "Seu nome é " + strcharinfo(0) + "? Ah, está na lista. Tudo certo, eu deixarei você entrar na Plantação de Cogumelos, mas não posso garantir sua segurança...";
+		mes "Seu nome ï¿½ " + strcharinfo(0) + "? Ah, estï¿½ na lista. Tudo certo, eu deixarei vocï¿½ entrar na Plantaï¿½ï¿½o de Cogumelos, mas nï¿½o posso garantir sua seguranï¿½a...";
 		close2;
 		set job_thief_q,3;
 		switch(rand(5)) {
@@ -445,14 +445,14 @@ moc_ruins,141,125,3	script	Sr. Irrelevante	83,{
 	}
 	else if (job_thief_q == 1) {
 		mes "[Sr. Irrelevante]";
-		mes "Tem um cheiro estranho vindo de... Você. Agora, por que razão?";
+		mes "Tem um cheiro estranho vindo de... Vocï¿½. Agora, por que razï¿½o?";
 		close;
 	}
 	mes "[Sr. Irrelevante]";
-	mes "Ei Aprendiz! Por que você não junta-se do Clã dos Gatunos? Vocês iniciantes são sempre bem-vindos para juntar-se a nós e nossa causa egoísta.";
+	mes "Ei Aprendiz! Por que vocï¿½ nï¿½o junta-se do Clï¿½ dos Gatunos? Vocï¿½s iniciantes sï¿½o sempre bem-vindos para juntar-se a nï¿½s e nossa causa egoï¿½sta.";
 	next;
 	mes "[Sr. Irrelevante]";
-	mes "Você pode obter mais informações na sala do subsolo da Pirâmide 1 BF.";
+	mes "Vocï¿½ pode obter mais informaï¿½ï¿½es na sala do subsolo da Pirï¿½mide 1 BF.";
 	close;
 }
 

@@ -329,8 +329,8 @@ L_Change:
 	mes "[Padre Thomas]";
 	mes "Agora voc� � um Sacerdote. Como Sacerdote, voc� pode agora ajudar um monte de gente em nome de Deus.";
 	next;
-	if (JBLVL != 50) additem 1550, 1;
-	if (JBLVL == 50) additem 1551, 1;
+	if (JBLVL != 50) getitem 1550, 1;
+	if (JBLVL == 50) getitem 1551, 1;
 	callfunc "F_ClearJobVar";		// clears all job variables for the current player
 	mes "[Padre Thomas]";
 	mes "Aqui, pegue esse livro como recompensa por ter passado por todos os testes. Este livro o ajudar� a entender mais sobre Deus.";

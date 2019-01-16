@@ -212,9 +212,9 @@ L_Menu2_1:
 		mes "Muito massa, voc� n�o acha?";
 		mes "Voc� pode ficar com elas!";
 		next;
-		additem 991,1;
-		additem 993,1;
-		additem 992,1;
+		getitem 991,1;
+		getitem 993,1;
+		getitem 992,1;
 		mes "[Ebeshi]";
 		mes "Agora para sua pr�xima li��o, voc� precisa sintetizar unst tipos de flechas diferentes com estas pedras.";
 		next;
@@ -500,7 +500,7 @@ L_Menu2_1:
 		mes "......";
 		next;
 		set SAGE_Q,11;
-		additem 1550,1;
+		getitem 1550,1;
 		mes "[Ebeshi]";
 		mes "Beleza!";
 		mes "Voc� terminou! Parece muito bom!";
@@ -871,7 +871,7 @@ L_Menu5_2:
 	mes "......";
 	next;
 	set SAGE_Q,11;
-	additem 1550,1;
+	getitem 1550,1;
 	mes "[Lucias]";
 	mes "Isto esta muito bom!";
 	mes "Estou orgulhoso de voc�!";

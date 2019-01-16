@@ -70,7 +70,7 @@
 		mes "Bom, os jogadores Premium contam com vários NPCs parceiros, e alguns até mesmo exclusivos!";
 		mes "\n";
 		mes "Sobre qual você gostaria de saber mais?";
-		switch(select("Mestra das Classes", "Habilidades de Platina", "Estilista", "Anunciante", "Banqueiros", "Curandeiros", "Ah, deixa pra lá!")) {
+		switch(select("Mestra das Classes", "Habilidades de Platina", "Estilista", "Anunciante", "Banqueiros", "Curandeiras", "Ah, deixa pra lá!")) {
 			case 1:
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
@@ -152,7 +152,7 @@
 				mes "Às vezes, nem sempre temos um Noviço, Sacerdote ou Monge para nos curar. Portanto, para a sua conveniência, a Corporação Premium contratou uma equipe justamente só para isso!";
 				next;
 				mes callfunc("F_PremiumName", "Correspondente Premium");
-				mes callfunc("P_Orange", "Presentes em todas as cidades de Rune-Midgard") + ", os Curandeiros irão curar seu HP e SP completamente, sem qualquer custo.";
+				mes callfunc("P_Orange", "Presentes em todas as cidades de Rune-Midgard") + ", as Curandeiras irão curar seu HP e SP completamente, sem qualquer custo.";
 				mes "\n";
 				mes "Nós estamos sempre preocupados com o seu bem-estar!";
 				next;

@@ -1,24 +1,24 @@
-aldeba_in,152,166,4	script	Mercador#01	4_M_04,{
+aldeba_in,152,166,4	script	Mercador#ald	4_M_04,{
 	mes "[Mercador]";
-	mes "Quem é este homem misterioso?";
-	mes "Eu, o enigmático e charmoso 'Mercador?'";
+	mes "Quem ï¿½ este homem misterioso?";
+	mes "Eu, o enigmï¿½tico e charmoso 'Mercador?'";
 	next;
 	mes "[Mercador]";
-	mes "Viajando pelo continente de Rune-Midgard, com todos os seus chapéus maravilhosos? Ninguém sabe...";
+	mes "Viajando pelo continente de Rune-Midgard, com todos os seus chapï¿½us maravilhosos? Ninguï¿½m sabe...";
 	next;
 	mes "[Mercador]";
-	mes "Para que propósito posso colecionar e trocar esses chapéus de todo o mundo? Escolha um chapéu, vão desvendando o mistério...";
+	mes "Para que propï¿½sito posso colecionar e trocar esses chapï¿½us de todo o mundo? Escolha um chapï¿½u, vï¿½o desvendando o mistï¿½rio...";
 	next;
-	mes " (1) ^3355FFEspelho de Médico^000000:";
+	mes " (1) ^3355FFEspelho de Mï¿½dico^000000:";
 	mes "1 Faixa Marrom + 50 Ferros + 1 Diamante Rachado + 3.500 zenys";
-	mes " (2)^3355FFChapéu com Pluma^000000:";
-	mes "1 Chapéu Romântico + 300 Plumas de Aves + 500 zenys";
-	mes " (3) ^3355FFMáscara do Fantasma^000000:";
+	mes " (2)^3355FFChapï¿½u com Pluma^000000:";
+	mes "1 Chapï¿½u Romï¿½ntico + 300 Plumas de Aves + 500 zenys";
+	mes " (3) ^3355FFMï¿½scara do Fantasma^000000:";
 	mes "20 Ferro + 1 Planta da Melodia + 5.000 zenys";
-	mes " (4) ^3355FFChapéu Chinês^000000:";
+	mes " (4) ^3355FFChapï¿½u Chinï¿½s^000000:";
 	mes "120 Troncos + 10.000 zenys ";
 	next;
-	switch(select("Espelho de Médico.:Chapéu com Pluma.:Máscara do Fantasma.:Chapéu Chinês.")) {
+	switch(select("Espelho de Mï¿½dico.:Chapï¿½u com Pluma.:Mï¿½scara do Fantasma.:Chapï¿½u Chinï¿½s.")) {
 	case 1:
 		if ((countitem(2275) > 0) && (countitem(998) > 49) && (countitem(733) > 0) && (Zeny > 3499)) {
 			delitem 2275,1;  // Faixa Marrom
@@ -26,34 +26,34 @@ aldeba_in,152,166,4	script	Mercador#01	4_M_04,{
 			delitem 733,1;   // Diamante Rachado
 			set Zeny,Zeny-3500;
 			mes "[Mercador]";
-			mes "Hm! Você não tem uma licença médica, não é? Está tudo bem, eu ouvi sobre um Gatuno, o médico não licenciado que realizou milagres médicos! Mas... Isso pode ter sido uma história em quadrinhos.";
+			mes "Hm! Vocï¿½ nï¿½o tem uma licenï¿½a mï¿½dica, nï¿½o ï¿½? Estï¿½ tudo bem, eu ouvi sobre um Gatuno, o mï¿½dico nï¿½o licenciado que realizou milagres mï¿½dicos! Mas... Isso pode ter sido uma histï¿½ria em quadrinhos.";
 			next;
 			mes "[Mercador]";
-			mes "Que seja. Só não seja pego com isso.";
-			getitem 2273,1;  // Espelho de Médico
+			mes "Que seja. Sï¿½ nï¿½o seja pego com isso.";
+			getitem 2273,1;  // Espelho de Mï¿½dico
 			close;
 		}
 		else {
 			mes "[Mercador]";
-		  mes "Você cara!~";
+		  mes "Vocï¿½ cara!~";
 		  mes "Verifique os requisitos de novo.";
-		  mes "Você não parece idiota. Então... caia na real.";
+		  mes "Vocï¿½ nï¿½o parece idiota. Entï¿½o... caia na real.";
 			close;
 		}
 	case 2:
 		if ((countitem(2247) > 0) && (countitem(916) > 299) && (Zeny > 499)) {
-			delitem 2247,1;   // Chapéu Romântico
+			delitem 2247,1;   // Chapï¿½u Romï¿½ntico
 			delitem 916,300;  // Plumas
 			set Zeny,Zeny-500;
 			mes "[Mercador]";
-			mes "Ah! Você tem bom senso de moda. Eu sei que você teve um tempo difícil coletando esse material, mas este chapéu vale a pena. Pegue. Tudo que você precisa agora é de um casaco de pele e uma bengala!";
-			getitem 5018,1; // Chapéu com Pluma
+			mes "Ah! Vocï¿½ tem bom senso de moda. Eu sei que vocï¿½ teve um tempo difï¿½cil coletando esse material, mas este chapï¿½u vale a pena. Pegue. Tudo que vocï¿½ precisa agora ï¿½ de um casaco de pele e uma bengala!";
+			getitem 5018,1; // Chapï¿½u com Pluma
 			close;
 		}
 		else {
 			mes "[Mercador]";
 			mes "Ei cara~";
-			mes "Verifique os requisitos de novo. Você não parece idiota. Então... caia na real.";
+			mes "Verifique os requisitos de novo. Vocï¿½ nï¿½o parece idiota. Entï¿½o... caia na real.";
 			close;
 		}
 	case 3:
@@ -62,13 +62,13 @@ aldeba_in,152,166,4	script	Mercador#01	4_M_04,{
 			delitem 707,1;   // Planta da Melodia
 			set Zeny,Zeny-5000;
 			mes "[Mercador]";
-			mes "Isso aqui? É um pouco assustador, embora ele tenha algum tipo de aspecto romântico. O que você acha? Você gosta disso? Tudo bem, pegue, é seu!";
-			getitem 2281,1; // Máscara do Fantasma
+			mes "Isso aqui? ï¿½ um pouco assustador, embora ele tenha algum tipo de aspecto romï¿½ntico. O que vocï¿½ acha? Vocï¿½ gosta disso? Tudo bem, pegue, ï¿½ seu!";
+			getitem 2281,1; // Mï¿½scara do Fantasma
 			close;
 		}
 		else {
 			mes "[Mercador]";
-		  mes "Palhaço. Verifique os requisitos de novo. Não é fácil conseguir uma ^3355FFMáscara do Fantasma^000000. Então... caia na real.";
+		  mes "Palhaï¿½o. Verifique os requisitos de novo. Nï¿½o ï¿½ fï¿½cil conseguir uma ^3355FFMï¿½scara do Fantasma^000000. Entï¿½o... caia na real.";
 			close;
 		}
 	case 4:
@@ -76,16 +76,16 @@ aldeba_in,152,166,4	script	Mercador#01	4_M_04,{
 			delitem 1019,120; // Tronco
 			set Zeny,Zeny-10000;
 			mes "[Mercador]";
-      mes "Se você tiver a oportunidade de visitar a Vila Uplander, em Payon, visite e conheça o artesão do Chapéu Chinês.";
+      mes "Se vocï¿½ tiver a oportunidade de visitar a Vila Uplander, em Payon, visite e conheï¿½a o artesï¿½o do Chapï¿½u Chinï¿½s.";
 			next;
 			mes "[Mercador]";
-			mes "O Chapéu Chinês nunca foi vendido para comerciantes além de mim, já que apenas eu posso reconhecer a sua qualidade. Devido à sua raridade, o Chapéu Chinês se tornou um produto muito especial e excepcional. Tudo bem! Pegue, é seu!";
-			getitem 2280,1;  // Chapéu Chinês
+			mes "O Chapï¿½u Chinï¿½s nunca foi vendido para comerciantes alï¿½m de mim, jï¿½ que apenas eu posso reconhecer a sua qualidade. Devido ï¿½ sua raridade, o Chapï¿½u Chinï¿½s se tornou um produto muito especial e excepcional. Tudo bem! Pegue, ï¿½ seu!";
+			getitem 2280,1;  // Chapï¿½u Chinï¿½s
 			close;
 		}
 		else {
 			mes "[Mercador]";
-      mes "*Aiai*~ Verifique meus requisitos de novo. Então... Você não pareçe um idiota, caia na real.~";
+      mes "*Aiai*~ Verifique meus requisitos de novo. Entï¿½o... Vocï¿½ nï¿½o pareï¿½e um idiota, caia na real.~";
 			close;
 		}
 	}

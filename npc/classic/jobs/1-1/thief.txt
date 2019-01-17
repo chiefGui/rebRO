@@ -374,7 +374,7 @@ moc_prydb1,42,133,2	script	Camarada	118,{
 		next;
 		mes "[Brad]";
 		mes "Aqui est� uma pequena ajuda para um iniciante como voc�. Gaste com o que voc� quiser. Tudo certo ent�o, vejo voc� por ai~";
-		set zeny,zeny+.@money_thief;
+		set Zeny,Zeny+.@money_thief;
 		close;
 	}
 }

@@ -1,12 +1,12 @@
 gef_tower,107,35,5	script	Cachorro	81,{
 	mes "[Cachorro]";
 	if(BaseJob == Job_Mage) goto L_JobMage;	
-	if(baseClass == Job_Mage){
+	if(BaseClass == Job_Mage){
 		mes "Ah! Mago de um alto nivel, bem-vindo. ? sempre bom ver pessoas de alto n?vel por aqui.";
 		mes "Na verdade, ? bom v?-los em qualquer lugar! ~Woof!~";
 		close;
 	}
-	if(baseClass == Job_Acolyte){
+	if(BaseClass == Job_Acolyte){
 		mes "Eeek! O que um santinho como voc? est? fazendo aqui em cima? Eu sei que o seu tipo n?o gosta de m?gica....";
 		mes "Os tipos religiosos sempre chamam isso de 'artes negras'......... ooooh! Assustador!!!...... ~grrr!~WOOF!~";
 		close;
@@ -133,7 +133,7 @@ gef_tower,111,37,4	script	Catherine Medichi	68,{
 		mes "O que voc? veio fazer aqui Bruxo? Se nada, por favor v?...";
 		next;
 		mes "[Catherine Medichi]";
-		if(sex){
+		if(Sex){
 			mes "... Bem, ? claro, se voc? veio aqui para me perguntar algo... (*fica envergonhado*)....";
 		} else {
 			mes "Se voc? tiver um namorado, sinta-se livre para traze-lo aqui um dia, heheheh";
@@ -412,8 +412,8 @@ L_Mage:
 		sL_Failed3:
 			mes "Por que voc? saiu durante o teste? Nunca pensei que voc? fosse um fraco...";
 			next;
-			if(sex==1) goto ssL_M3;
-			if(sex==0) goto ssL_F3;
+			if(Sex==1) goto ssL_M3;
+			if(Sex==0) goto ssL_F3;
 
 			ssL_M3:
 				mes "[Catherine Medichi]";
@@ -473,7 +473,7 @@ gef_tower,102,24,3	script	Raul Expagarus	735,{
 	mes "[Raul Expagarus]";
 	if(BaseJob == Job_Mage) goto L_Mage;
 	if(BaseJob == Job_Wizard) goto L_Wizard;
-	if(baseClass == Job_Acolyte) goto L_Holy;
+	if(BaseClass == Job_Acolyte) goto L_Holy;
 	if(BaseJob == Job_Novice) goto L_Novice;
 L_Other:
 	mes "Ugh, N?o me sinto bem.... Sinto como se estivesse preso no gelo........";
@@ -499,8 +499,8 @@ L_Wizard:
 	mes "Cof Cof... O que eu posso fazer por voc?? Hmmm... voc? ? um Mago tamb?m...";
 	next;
 	mes "[Raul Expagarus]";
-	if(sex==1) goto L_M;
-	if(sex==0) goto L_F;
+	if(Sex==1) goto L_M;
+	if(Sex==0) goto L_F;
 
 	L_M:
 		mes "Se voc? n?o for respons?vel, voc? pode acidentalmente aprender magias in?teis.";
@@ -1031,12 +1031,12 @@ L_Mage:
 			mes "[Raul Expagarus]";
 			mes "2. Qual monstro N?O ? do tipo animal?";
 			next;
-			menu "Yoyo",sM_1b, "Bigfoot",sM_1b, "Metaller",sM_1b, "Zerom",sM_1a;
+			menu "Yoyo",sm_1b, "Bigfoot",sm_1b, "Metaller",sm_1b, "Zerom",sm_1a;
 
-			sM_1a:
+			sm_1a:
 				set @score, @score + 20;
 
-			sM_1b:
+			sm_1b:
 
 			mes "[Raul Expagarus]";
 			mes "3. Qual monstro n?o tem sensiblidade para cast?";

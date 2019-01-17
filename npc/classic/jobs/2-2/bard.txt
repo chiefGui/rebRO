@@ -5,13 +5,13 @@ comodo,211,155,5	script	Bardo Andarilho	741,{
 	if (BARD_Q == 3) goto L_SINGING;
 	if (BARD_Q == 4) goto L_BQ4;
 	if (BaseJob == Job_Bard) goto L_CLOSE;
-	if (BaseJob == Job_Archer && Sex == 1) goto L_ARCHER;
+	if (BaseJob == Job_Archer && Sex == 1) goto L_Archer;
 
 	mes "[Lalo]";
 	mes "? um belo dia para cantar, la la.";
 	close;
 
-L_ARCHER:
+L_Archer:
 	mes "[Lalo]";
 	mes "Ol?! Caro Arqueiro.";
 	mes "De que maneira uma pessoa errante como eu pode ajudar voc??";
@@ -359,7 +359,7 @@ L_GOODWORK:
 	next;
 	menu "Apenas mude minha classe.",-,"Eu ficarei agradecido com um presente.",M_PRESENTPLZ;
 	
-	if(skillpoint != 0) goto L_SKILLSLEFT;
+	if(SkillPoint != 0) goto L_SKILLSLEFT;
 	goto L_Change;
 
 M_PRESENTPLZ:
@@ -400,7 +400,7 @@ L_BQ4:
 	close;
 
 L_Change:
-	if(skillpoint != 0) goto L_SKILLSLEFT;
+	if(SkillPoint != 0) goto L_SKILLSLEFT;
 	callfunc "Job_Change",Job_Bard;
 	callfunc "F_ClearJobVar";
 

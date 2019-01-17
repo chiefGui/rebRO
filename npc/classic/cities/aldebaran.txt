@@ -1,118 +1,118 @@
 aldeba_in,24,245,4	script	 Kafra::Marianne#adb01	115,{
 	cutin "kafra_03",2;
 	mes "[Kafra Marianne]";
-	mes "Oi! Eu sou a Kafra número 1, Marianne. Bem vindo a Central Kafra em Al De Baran!";
+	mes "Oi! Eu sou a Kafra nï¿½mero 1, Marianne. Bem vindo a Central Kafra em Al De Baran!";
 	next;
 	mes "[Kafra Marianne]";
-	mes "Nós, a Central de Serviços Kafra, estaremos sempre com você! Nós somos a Central de Serviços Kafra e temos 5800 anos de história!";
+	mes "Nï¿½s, a Central de Serviï¿½os Kafra, estaremos sempre com vocï¿½! Nï¿½s somos a Central de Serviï¿½os Kafra e temos 5800 anos de histï¿½ria!";
 	mes "Da Daaaaan!";
 	next;
-	menu "5800 anos? Eu não acredito!",-, "Ok, ok, não exagere...",M_1, "Você tem namorado?",M_2;
+	menu "5800 anos? Eu nï¿½o acredito!",-, "Ok, ok, nï¿½o exagere...",M_1, "Vocï¿½ tem namorado?",M_2;
 	
 		mes "[Kafra Marianne]";
 		mes "Escute aqui! Eu passei uma semana";
 		mes "in-tei-ra decorando isso!";
-		mes "Eu não sou como as outras kafras...";
+		mes "Eu nï¿½o sou como as outras kafras...";
 		mes "Sou muito esquecida!";
-		mes "... ah... Do que mesmo estávamos";
+		mes "... ah... Do que mesmo estï¿½vamos";
 		mes "falando...? ...";
 		next;
 		mes "[Kafra Marianne]";
-		mes "*hihihi* Isso era só um mes... Sim! Era um mes... organizado por nós, para nossos clientes aqui na Central de Serviços Kafra! Um mes dos Sonhos! (...mas só é permitido um espectador de cada vez.)";
+		mes "*hihihi* Isso era sï¿½ um mes... Sim! Era um mes... organizado por nï¿½s, para nossos clientes aqui na Central de Serviï¿½os Kafra! Um mes dos Sonhos! (...mas sï¿½ ï¿½ permitido um espectador de cada vez.)";
 		close;
 	M_1:
 		mes "[Kafra Marianne]";
 		mes ". . . . .";
-		mes "Antes de me juntar à Central de Serviços Kafra, eu era parte da Brigada Kafra. Minha especialidade era socar! ...mas eu decidi que era melhor ser calma e pacífica... então, meu querido cliente... pare de me provocar, por favor...";
+		mes "Antes de me juntar ï¿½ Central de Serviï¿½os Kafra, eu era parte da Brigada Kafra. Minha especialidade era socar! ...mas eu decidi que era melhor ser calma e pacï¿½fica... entï¿½o, meu querido cliente... pare de me provocar, por favor...";
 		close;
 	M_2:
 		mes "[Kafra Marianne]";
-		mes "*ai ai* Nós, Kafras, não podemos ter namorados...";
-		mes "É uma regra muito ridícula!";
+		mes "*ai ai* Nï¿½s, Kafras, nï¿½o podemos ter namorados...";
+		mes "ï¿½ uma regra muito ridï¿½cula!";
 		mes ". . . . .";
 		mes ". . . . . . . . . .";
 		next;
-		mes "É só uma piada! Hahaha!";
+		mes "ï¿½ sï¿½ uma piada! Hahaha!";
 		close;
 }
 
 aldeba_in,79,161,6	script	Kafra#04	115,{
 	cutin "kafra_03",2;
 	mes "[Kafra Recepcionista]";
-	mes "Seja bem-vindo "+strcharinfo(0)+". Aqui você pode trocar seus pontos por itens!";
+	mes "Seja bem-vindo "+strcharinfo(0)+". Aqui vocï¿½ pode trocar seus pontos por itens!";
 	next;
 	mes "[Kafra Recepcionista]";
-	mes "Em cada janela haverá um limite de pontos que podem ser usados. Nesta janela você pode usar ^2222FFde 100p a 3000p^000000.";
+	mes "Em cada janela haverï¿½ um limite de pontos que podem ser usados. Nesta janela vocï¿½ pode usar ^2222FFde 100p a 3000p^000000.";
 	next;
 	mes "[Kafra Recepcionista]";
-	mes "Você tem ^FF0000"+RESRVPTS+"^000000 pontos. Por favor, selecione o que você gostaria de trocar.";
+	mes "Vocï¿½ tem ^FF0000"+RESRVPTS+"^000000 pontos. Por favor, selecione o que vocï¿½ gostaria de trocar.";
 M_Menu:
 	next;
 	menu 	"100p = 7 Batatas Doce",M_1a, "200p = 15 Batatas Doce 15",M_1b, "300p = 25 Batatas Doce",M_1c, "400p = 35 Batatas Doce",M_1d,
 		"500p = 50 Batatas Doce",M_1e, "600p = 60 Batatas Doce",M_1f, "700p = 75 Batatas Doce",M_1g, "800p = 85 Batatas Doce",M_1h,
-		"900p = 100 Batatas Doce",M_1i, "1000p = Loteria Prata!",M_1j, "Próximos Itens",M_2, "Cancelar",M_End;
+		"900p = 100 Batatas Doce",M_1i, "1000p = Loteria Prata!",M_1j, "Prï¿½ximos Itens",M_2, "Cancelar",M_End;
 
 	M_1a:
 		if(RESRVPTS < 100) goto sL_LowPts1;
 		mes "[Kafra Recepcionista]";
-		mes "Aqui está...";
-		additem 516, 7;
+		mes "Aqui estï¿½...";
+		getitem 516, 7;
 		set RESRVPTS, RESRVPTS - 100;
 		close;
 	M_1b:
 		if(RESRVPTS < 200) goto sL_LowPts1;
 		mes "[Kafra Recepcionista]";
-		mes "Aqui está...";
-		additem 516, 15;
+		mes "Aqui estï¿½...";
+		getitem 516, 15;
 		set RESRVPTS, RESRVPTS - 200;
 		close;
 	M_1c:
 		if(RESRVPTS < 300) goto sL_LowPts1;
 		mes "[Kafra Recepcionista]";
-		mes "Aqui está...";
-		additem 516, 25;
+		mes "Aqui estï¿½...";
+		getitem 516, 25;
 		set RESRVPTS, RESRVPTS - 300;
 		close;
 	M_1d:
 		if(RESRVPTS < 400) goto sL_LowPts1;
 		mes "[Kafra Recepcionista]";
-		mes "Aqui está...";
-		additem 516, 35;
+		mes "Aqui estï¿½...";
+		getitem 516, 35;
 		set RESRVPTS, RESRVPTS - 400;
 		close;
 	M_1e:
 		if(RESRVPTS < 500) goto sL_LowPts1;
 		mes "[Kafra Recepcionista]";
-		mes "Aqui está...";
-		additem 516, 50;
+		mes "Aqui estï¿½...";
+		getitem 516, 50;
 		set RESRVPTS, RESRVPTS - 500;
 		close;
 	M_1f:
 		if(RESRVPTS < 600) goto sL_LowPts1;
 		mes "[Kafra Recepcionista]";
-		mes "Aqui está...";
-		additem 516, 60;
+		mes "Aqui estï¿½...";
+		getitem 516, 60;
 		set RESRVPTS, RESRVPTS - 600;
 		close;
 	M_1g:
 		if(RESRVPTS < 700) goto sL_LowPts1;
 		mes "[Kafra Recepcionista]";
-		mes "Aqui está...";
-		additem 516, 75;
+		mes "Aqui estï¿½...";
+		getitem 516, 75;
 		set RESRVPTS, RESRVPTS - 700;
 		close;
 	M_1h:
 		if(RESRVPTS < 800) goto sL_LowPts1;
 		mes "[Kafra Recepcionista]";
-		mes "Aqui está...";
-		additem 516, 85;
+		mes "Aqui estï¿½...";
+		getitem 516, 85;
 		set RESRVPTS, RESRVPTS - 800;
 		close;
 	M_1i:
 		if(RESRVPTS < 900) goto sL_LowPts1;
 		mes "[Kafra Recepcionista]";
-		mes "Aqui está...";
-		additem 516, 100;
+		mes "Aqui estï¿½...";
+		getitem 516, 100;
 		set RESRVPTS, RESRVPTS - 900;
 		close;
 	M_1j:
@@ -127,76 +127,76 @@ M_Menu:
 
 	sL_LowPts1:
 		mes "[Kafra Recepcionista]";
-		mes "Você precisa de mais pontos para essa opção.";
+		mes "Vocï¿½ precisa de mais pontos para essa opï¿½ï¿½o.";
 		goto M_Menu;
 
 	M_2:
-		menu 	"1100p = 7 Poções Vermelhas",M_2a, "1300p = 15 Poções Vermelhas",M_2b, "1500p = 25 Poções Vermelhas",M_2c,
-			"1700p = 35 Poções Vermelhas",M_2d, "1900p = 50 Poções Vermelhas",M_2e, "2100p = 60 Poções Vermelhas",M_2f,
-			"2300p = 75 Poções Vermelhas",M_2g, "2500p = 85 Poções Vermelhas",M_2h, "2800p = 100 Poções Vermelhas",M_2i,
+		menu 	"1100p = 7 Poï¿½ï¿½es Vermelhas",M_2a, "1300p = 15 Poï¿½ï¿½es Vermelhas",M_2b, "1500p = 25 Poï¿½ï¿½es Vermelhas",M_2c,
+			"1700p = 35 Poï¿½ï¿½es Vermelhas",M_2d, "1900p = 50 Poï¿½ï¿½es Vermelhas",M_2e, "2100p = 60 Poï¿½ï¿½es Vermelhas",M_2f,
+			"2300p = 75 Poï¿½ï¿½es Vermelhas",M_2g, "2500p = 85 Poï¿½ï¿½es Vermelhas",M_2h, "2800p = 100 Poï¿½ï¿½es Vermelhas",M_2i,
 			"3000p = Loteria Ouro!",M_2j, "Cancelar",M_End;
 		
 		M_2a:
 			if(RESRVPTS < 1100) goto sL_LowPts2;
 			mes "[Kafra Recepcionista]";
-			mes "Aqui está...";
-			additem 501, 7;
+			mes "Aqui estï¿½...";
+			getitem 501, 7;
 			set RESRVPTS, RESRVPTS - 1100;
 			close;
 		M_2b:
 			if(RESRVPTS < 1300) goto sL_LowPts2;
 			mes "[Kafra Recepcionista]";
-			mes "Aqui está...";
-			additem 501, 15;
+			mes "Aqui estï¿½...";
+			getitem 501, 15;
 			set RESRVPTS, RESRVPTS - 1300;
 			close;
 		M_2c:
 			if(RESRVPTS < 1500) goto sL_LowPts2;
 			mes "[Kafra Recepcionista]";
-			mes "Aqui está...";
-			additem 501, 25;
+			mes "Aqui estï¿½...";
+			getitem 501, 25;
 			set RESRVPTS, RESRVPTS - 1500;
 			close;
 		M_2d:
 			if(RESRVPTS < 1700) goto sL_LowPts2;
 			mes "[Kafra Recepcionista]";
-			mes "Aqui está...";
-			additem 501, 35;
+			mes "Aqui estï¿½...";
+			getitem 501, 35;
 			set RESRVPTS, RESRVPTS - 1700;
 			close;
 		M_2e:
 			if(RESRVPTS < 1900) goto sL_LowPts2;
 			mes "[Kafra Recepcionista]";
-			mes "Aqui está...";
-			additem 501, 50;
+			mes "Aqui estï¿½...";
+			getitem 501, 50;
 			set RESRVPTS, RESRVPTS - 1900;
 			close;
 		M_2f:
 			if(RESRVPTS < 2100) goto sL_LowPts2;
 			mes "[Kafra Recepcionista]";
-			mes "Aqui está...";
-			additem 501, 60;
+			mes "Aqui estï¿½...";
+			getitem 501, 60;
 			set RESRVPTS, RESRVPTS - 2100;
 			close;
 		M_2g:
 			if(RESRVPTS < 2300) goto sL_LowPts2;
 			mes "[Kafra Recepcionista]";
-			mes "Aqui está...";
-			additem 501, 75;
+			mes "Aqui estï¿½...";
+			getitem 501, 75;
 			set RESRVPTS, RESRVPTS - 2300;
 			close;
 		M_2h:
 			if(RESRVPTS < 2500) goto sL_LowPts2;
 			mes "[Kafra Recepcionista]";
-			mes "Aqui está...";
-			additem 501, 85;
+			mes "Aqui estï¿½...";
+			getitem 501, 85;
 			set RESRVPTS, RESRVPTS - 2500;
 			close;
 		M_2i:
 			if(RESRVPTS < 2800) goto sL_LowPts2;
 			mes "[Kafra Recepcionista]";
-			mes "Aqui está...";
-			additem 501, 100;
+			mes "Aqui estï¿½...";
+			getitem 501, 100;
 			set RESRVPTS, RESRVPTS - 2800;
 			close;
 		M_2j:
@@ -211,13 +211,13 @@ M_Menu:
 
 		sL_LowPts2:
 			mes "[Kafra Recepcionista]";
-			mes "Você precisa de mais pontos para essa opção.";
+			mes "Vocï¿½ precisa de mais pontos para essa opï¿½ï¿½o.";
 			next;
 			goto M_2;
 
 	M_End:
 		mes "[Kafra Recepcionista]";
-		mes "Lembre-se: Sempre que você usa os serviços Kafra você ganha pontos! Obrigada por utilizar nossos serviços.";
+		mes "Lembre-se: Sempre que vocï¿½ usa os serviï¿½os Kafra vocï¿½ ganha pontos! Obrigada por utilizar nossos serviï¿½os.";
 		cutin "kafra_03",255;
 		close;
 }
@@ -225,22 +225,22 @@ M_Menu:
 aldeba_in,88,161,3	script	Kafra#05	115,{
 	cutin "kafra_03",2;
 	mes "[Kafra Recepcionista]";
-	mes "Bem-vindo à Central de Serviços Kafra, "+strcharinfo(0)+" nosso estimado cliente. Aqui valorizamos muito nossos clientes e, por isso, temos ofertas especiais para eles.";
+	mes "Bem-vindo ï¿½ Central de Serviï¿½os Kafra, "+strcharinfo(0)+" nosso estimado cliente. Aqui valorizamos muito nossos clientes e, por isso, temos ofertas especiais para eles.";
 	next;
 	mes "[Kafra Recepcionista]";
 	mes "Escolha um presente usando seus pontos acumulados nas ^FF5533Ofertas Especiais Kafra!^000000";
-	mes "^3355FFA Central de Serviços Kafra aumenta o número de presentes para estas ofertas.^000000!!";
+	mes "^3355FFA Central de Serviï¿½os Kafra aumenta o nï¿½mero de presentes para estas ofertas.^000000!!";
 	mes "Gostaria de usar seus pontos?";
 	next;
 	mes "[Kafra Recepcionista]";
-	mes "Você quer participar destas ofertas?";
+	mes "Vocï¿½ quer participar destas ofertas?";
 	next;
-	menu "Sim, eu quero!",-, "Não.",M_End;
+	menu "Sim, eu quero!",-, "Nï¿½o.",M_End;
 
 		mes "[Kafra Recepcionista]";
-		mes "Você possui ^5544FF"+RESRVPTS+"^000000 pontos de reserva acumulados. Por favor, escolha seu presenta na lista.";
+		mes "Vocï¿½ possui ^5544FF"+RESRVPTS+"^000000 pontos de reserva acumulados. Por favor, escolha seu presenta na lista.";
 		next;
-		menu "5000p = Nível 1!",sM_1st, "7000p = Nível 2!",sM_2nd, "10000p = Nível 3!",sM_3rd, "Cancelar",M_End; 
+		menu "5000p = Nï¿½vel 1!",sM_1st, "7000p = Nï¿½vel 2!",sM_2nd, "10000p = Nï¿½vel 3!",sM_3rd, "Cancelar",M_End; 
 
 		sM_1st:
 			if(RESRVPTS < 5000) goto sL_NotEnuf;
@@ -263,35 +263,35 @@ aldeba_in,88,161,3	script	Kafra#05	115,{
 
 			sL_NotEnuf:
 				mes "[Kafra Recepcionista]";
-				mes "Você precisa de mais pontos para essa opção.";
+				mes "Vocï¿½ precisa de mais pontos para essa opï¿½ï¿½o.";
 				cutin "kafra_03",255;
 				close;
 	M_End:
 		mes "[Kafra Recepcionista]";
-		mes "Sim... caro cliente... você pode. Por favor, junte mais pontos de reserva e visite-nos novamente.";
-		mes "Obrigada por utilizar nossos serviços.";
+		mes "Sim... caro cliente... vocï¿½ pode. Por favor, junte mais pontos de reserva e visite-nos novamente.";
+		mes "Obrigada por utilizar nossos serviï¿½os.";
 		cutin "kafra_03",255;
 		close;
 }
 
 function	script	F_Lottery	{
 	mes "[Kafra Recepcionista]";
-	mes "Este é o momento certo para tentar a sorte!!";
+	mes "Este ï¿½ o momento certo para tentar a sorte!!";
 	next;
 	mes "[Kafra Recepcionista]";
 	mes "Tudo certo! Querido cliente, se prepare!!";
 	next;
 	mes "'dum dum dum...'";
 	next;
-	digit @input;
+	input @input;
 	if(@input < 1 || @input > 5) set @input, rand(1,5); //Lupus's fix
 	callsub sF_Spin;
 	mes "[Kafra Recepcionista]";
-	mes "Vamos lá... Você está pronto?";
+	mes "Vamos lï¿½... Vocï¿½ estï¿½ pronto?";
 	mes "Vamos ver o resultado...";
 	next;
 	mes "[Kafra Recepcionista]";
-	mes "^FF0000Uau! É um...!!^000000";
+	mes "^FF0000Uau! ï¿½ um...!!^000000";
 	next;
 	if(@temp <  1) goto sL_Prize1;
 	if(@temp <  2) goto sL_Prize2;
@@ -301,71 +301,71 @@ function	script	F_Lottery	{
 
 	sL_Prize1:
 		mes "[Kafra Recepcionista]";
-		mes "1º lugar! 1º lugar!!";
-		mes "Você vai receber um presente pelo";
-		mes "2º lugar.";
-		if(@Lotto == 1) additem 2328,1;//Items: Wooden_Mail,
-		if(@Lotto == 2) additem 2307,1;//Items: Mantle,
-		if(@Lotto == 3) additem 657,10;//Items: Berserk_Potion,
+		mes "1ï¿½ lugar! 1ï¿½ lugar!!";
+		mes "Vocï¿½ vai receber um presente pelo";
+		mes "2ï¿½ lugar.";
+		if(@Lotto == 1) getitem 2328,1;//Items: Wooden_Mail,
+		if(@Lotto == 2) getitem 2307,1;//Items: Mantle,
+		if(@Lotto == 3) getitem 657,10;//Items: Berserk_Potion,
 		if(@Lotto == 4) {
-			additem 607,2;//Items: Yggdrasilberry,
-			additem 608,1;//Items: Yggdrasil_Seed,
+			getitem 607,2;//Items: Yggdrasilberry,
+			getitem 608,1;//Items: Yggdrasil_Seed,
 		}
-		if(@Lotto == 5) additem 607,3;//Items: Yggdrasilberry,
+		if(@Lotto == 5) getitem 607,3;//Items: Yggdrasilberry,
 		return;
 	sL_Prize2:
 		mes "[Kafra Recepcionista]";
-		mes "2º lugar! 2º lugar!!";
-		mes "Você vai receber um presente pelo";
-		mes "2º lugar.";
-		if(@Lotto == 1) additem 2403,1;//Items: Shoes,
-		if(@Lotto == 2) additem 2226,1;//Items: Cap,
-		if(@Lotto == 3) additem 2201,1;//Items: Sunglasses,
-		if(@Lotto == 4) additem 526,3;//Items: Royal_Jelly,
+		mes "2ï¿½ lugar! 2ï¿½ lugar!!";
+		mes "Vocï¿½ vai receber um presente pelo";
+		mes "2ï¿½ lugar.";
+		if(@Lotto == 1) getitem 2403,1;//Items: Shoes,
+		if(@Lotto == 2) getitem 2226,1;//Items: Cap,
+		if(@Lotto == 3) getitem 2201,1;//Items: Sunglasses,
+		if(@Lotto == 4) getitem 526,3;//Items: Royal_Jelly,
 		if(@Lotto == 5) {
-			additem 608,1;//Items: Yggdrasil_Seed,
-			additem 526,10;//Items: Royal_Jelly,
+			getitem 608,1;//Items: Yggdrasil_Seed,
+			getitem 526,10;//Items: Royal_Jelly,
 		}
 		return;
 	sL_Prize3:
 		mes "[Kafra Recepcionista]";
-		mes "3º lugar! 3º lugar!!";
-		mes "Você vai receber um presente pelo";
-		mes "3º lugar.";
-		if(@Lotto == 1) additem 602,4;//Items: Butterfly_Wing,
-		if(@Lotto == 2) additem 505,3;//Items: Blue_Potion,
-		if(@Lotto == 3) additem 2203,1;//Items: Glasses,
-		if(@Lotto == 4) additem 504,15;//Items: White_Potion,
-		if(@Lotto == 5) additem 504,30;//Items: White_Potion,
+		mes "3ï¿½ lugar! 3ï¿½ lugar!!";
+		mes "Vocï¿½ vai receber um presente pelo";
+		mes "3ï¿½ lugar.";
+		if(@Lotto == 1) getitem 602,4;//Items: Butterfly_Wing,
+		if(@Lotto == 2) getitem 505,3;//Items: Blue_Potion,
+		if(@Lotto == 3) getitem 2203,1;//Items: Glasses,
+		if(@Lotto == 4) getitem 504,15;//Items: White_Potion,
+		if(@Lotto == 5) getitem 504,30;//Items: White_Potion,
 		return;
 	sL_Prize4:
 		mes "[Kafra Recepcionista]";
-		mes "4º lugar! 4º lugar!!";
-		mes "Você vai receber um presente pelo";
-		mes "4º lugar.";
-		if(@Lotto == 1) additem 516,100;//Items: Sweet_Potato,
-		if(@Lotto == 2) additem 501,150;//Items: Red_Potion,
-		if(@Lotto == 3) additem 502,150;//Items: Orange_Potion,
-		if(@Lotto == 4) additem 505,5;//Items: Blue_Potion,
-		if(@Lotto == 5) additem 505,10;//Items: Blue_Potion,
+		mes "4ï¿½ lugar! 4ï¿½ lugar!!";
+		mes "Vocï¿½ vai receber um presente pelo";
+		mes "4ï¿½ lugar.";
+		if(@Lotto == 1) getitem 516,100;//Items: Sweet_Potato,
+		if(@Lotto == 2) getitem 501,150;//Items: Red_Potion,
+		if(@Lotto == 3) getitem 502,150;//Items: Orange_Potion,
+		if(@Lotto == 4) getitem 505,5;//Items: Blue_Potion,
+		if(@Lotto == 5) getitem 505,10;//Items: Blue_Potion,
 		return;
 	sL_Prize5:
 		mes "[Kafra Recepcionista]";
-		mes "5º lugar! 5º lugar!!";
-		mes "Você vai receber um presente pelo";
-		mes "5º lugar.";
-		if(@Lotto == 1) additem 516,50;//Items: Sweet_Potato,
-		if(@Lotto == 2) additem 501,100;//Items: Red_Potion,
-		if(@Lotto == 3) additem 501,200;//Items: Red_Potion,
-		if(@Lotto == 4) additem 501,250;//Items: Red_Potion,
-		if(@Lotto == 5) additem 501,300;//Items: Red_Potion,
+		mes "5ï¿½ lugar! 5ï¿½ lugar!!";
+		mes "Vocï¿½ vai receber um presente pelo";
+		mes "5ï¿½ lugar.";
+		if(@Lotto == 1) getitem 516,50;//Items: Sweet_Potato,
+		if(@Lotto == 2) getitem 501,100;//Items: Red_Potion,
+		if(@Lotto == 3) getitem 501,200;//Items: Red_Potion,
+		if(@Lotto == 4) getitem 501,250;//Items: Red_Potion,
+		if(@Lotto == 5) getitem 501,300;//Items: Red_Potion,
 		return;
 
 sF_Spin:
-	mes "[Máquina de Loteria]";
-	mes "Número de giros que você tem: "+@input;
+	mes "[Mï¿½quina de Loteria]";
+	mes "Nï¿½mero de giros que vocï¿½ tem: "+@input;
 	next;
-	mes "[Máquina de Loteria]";
+	mes "[Mï¿½quina de Loteria]";
 	mes "'dum dum dum...'";
 	next;
 	set @temp, rand(10);
@@ -378,41 +378,41 @@ sF_Spin:
 aldeba_in,81,166,4	script	Kafra::Denise	117,{
 	cutin "kafra_01",2;
 	mes "[Kafra Denise]";
-	mes "Bem vindo! Eu sou da primeira geração de Kafras da Central de Serviços Kafra, eu sou 'Denise'! Como vai você? Prazer em vê-lo!";
+	mes "Bem vindo! Eu sou da primeira geraï¿½ï¿½o de Kafras da Central de Serviï¿½os Kafra, eu sou 'Denise'! Como vai vocï¿½? Prazer em vï¿½-lo!";
 	next;
 	mes "[Kafra Denise]";
-	mes "Nós da Central de Serviços Kafra trabalhamos para ter nossos clientes sempre satisfeitos. Nós valorizamos os princípios da Honestidade, Confiança e Integridade... e trabalhamos duro com treinamento e gerenciamento completos!";
+	mes "Nï¿½s da Central de Serviï¿½os Kafra trabalhamos para ter nossos clientes sempre satisfeitos. Nï¿½s valorizamos os princï¿½pios da Honestidade, Confianï¿½a e Integridade... e trabalhamos duro com treinamento e gerenciamento completos!";
 	next;
 	mes "[Kafra Denise]";
-	mes "Oh! Mais uma coisa! Houveram algumas mudanças nos serviços Kafra. Nós não fornecemos mais Passes Kafra e, obviamente, também não os vendemos.";
+	mes "Oh! Mais uma coisa! Houveram algumas mudanï¿½as nos serviï¿½os Kafra. Nï¿½s nï¿½o fornecemos mais Passes Kafra e, obviamente, tambï¿½m nï¿½o os vendemos.";
 	next;
 	mes "[Kafra Denise]";
-	mes "Mas, não se preocupe! Nós oferecemos uma compensação para o caso de você ainda possuir um Passe Kafra. Reembolso total. Sem Prejuízo para você!!!";
+	mes "Mas, nï¿½o se preocupe! Nï¿½s oferecemos uma compensaï¿½ï¿½o para o caso de vocï¿½ ainda possuir um Passe Kafra. Reembolso total. Sem Prejuï¿½zo para vocï¿½!!!";
 	next;
 	menu "Preciso de reembolso.",-,"Sair.",M_BYE;
 
 		set usedKafPass,0; //clear unused global variable
 		mes "[Kafra Denise]";	
 		if(!countitem(1084)){
-			mes "O que? Você deve estar brincando! Você não tem nenhum Passe Kafra! Bem... EU entendo. Ninguém mais consegue um desses!";
+			mes "O que? Vocï¿½ deve estar brincando! Vocï¿½ nï¿½o tem nenhum Passe Kafra! Bem... EU entendo. Ninguï¿½m mais consegue um desses!";
 			close;
 		}
-		mes "Vejamos, vejamos... você tem " + countitem(1084) + " Passes Kafra.";
-		mes "Então você terá " + (countitem(1084)*2000) + " zeny.";
+		mes "Vejamos, vejamos... vocï¿½ tem " + countitem(1084) + " Passes Kafra.";
+		mes "Entï¿½o vocï¿½ terï¿½ " + (countitem(1084)*2000) + " zeny.";
 		next;
 		mes "[Kafra Denise]";
-		mes "Você quer vender os seus passes?";
+		mes "Vocï¿½ quer vender os seus passes?";
 		next;
-		if(select("Sim.:Não.")==1){
+		if(select("Sim.:Nï¿½o.")==1){
 			mes "[Kafra Denise]";
 			set @t,countitem(1084);
 			if(!@t){
-				mes "O que? Você deve estar brincando! Você não tem nenhum Passe Kafra! Bem... EU entendo. Ninguém mais consegue um desses!";
+				mes "O que? Vocï¿½ deve estar brincando! Vocï¿½ nï¿½o tem nenhum Passe Kafra! Bem... EU entendo. Ninguï¿½m mais consegue um desses!";
 				close;
 			}
 			delitem 1084,@t;
 			set Zeny,Zeny+@t*2000;
-			mes "Obrigado por usar os nossos serviços!";
+			mes "Obrigado por usar os nossos serviï¿½os!";
 		}
 		close;
 	M_BYE:
@@ -425,66 +425,66 @@ aldeba_in,81,166,4	script	Kafra::Denise	117,{
 aldeba_in,83,244,4	script	Kafra::Tatiana	116,{
 	cutin "kafra_02",2;
 	mes "[Kafra Tatiana]";
-	mes "...Denise é sempre assim! Ela é tão seletiva. Deveria haver uma diferença entre a Central e os outros escritórios... cada um deveria ter seu próprio estilo.";
+	mes "...Denise ï¿½ sempre assim! Ela ï¿½ tï¿½o seletiva. Deveria haver uma diferenï¿½a entre a Central e os outros escritï¿½rios... cada um deveria ter seu prï¿½prio estilo.";
 	next;
 	mes "[Kafra Tatiana]";
-	mes "Então! Bem vindo... Eu sou Tatiana! Por favor, volte sempre a nossa Central de Serviços Kafra! E não se esqueça de mim! Eu sou a Tatiana...";
+	mes "Entï¿½o! Bem vindo... Eu sou Tatiana! Por favor, volte sempre a nossa Central de Serviï¿½os Kafra! E nï¿½o se esqueï¿½a de mim! Eu sou a Tatiana...";
 	next;
-	menu "Você é linda, Tatiana!",-,"Hehehe...",M_1;
+	menu "Vocï¿½ ï¿½ linda, Tatiana!",-,"Hehehe...",M_1;
 
 		mes "[Kafra Tatiana]";
 		mes "Wow! Muito obrigada! Por favor, assine aqui...";
 		mes "[Kafra Tatiana]";
 		mes "- (assinando) -";
 		mes "[Kafra Tatiana]";
-		mes "Hehe... Sua letra é bonita. Não se preocupe com os itens no seu inventário! Eu vou cuidar deles como se fossem meus!";
+		mes "Hehe... Sua letra ï¿½ bonita. Nï¿½o se preocupe com os itens no seu inventï¿½rio! Eu vou cuidar deles como se fossem meus!";
 		close;
 	M_1:
 		mes "[Kafra Tatiana]";
-		mes "Quê?";
+		mes "Quï¿½?";
 		mes ". . . . .";
-		mes "É tudo que você tem a dizer?";
-		mes "Você deve estar meio entediado, não?";
+		mes "ï¿½ tudo que vocï¿½ tem a dizer?";
+		mes "Vocï¿½ deve estar meio entediado, nï¿½o?";
 		close;
 }
 
 aldeba_in,91,244,4	script	Kafra::Deborah	112,{
 	cutin "kafra_06",2;
 	mes "[Kafra Deborah]";
-	mes "Olá Olá!! Eu sou a mais linda e mais nova aqui na Central de Serviços Kafra! Meu nome é Deborah...";
+	mes "Olï¿½ Olï¿½!! Eu sou a mais linda e mais nova aqui na Central de Serviï¿½os Kafra! Meu nome ï¿½ Deborah...";
 	next;
 	mes "[Kafra Deborah]";
-	mes "Mas eu sou apenas uma funcionária nova. Ainda estou me esforçando muito para que você tenha o melhor serviço de todo o mundo! É muito bom conhecer você!";
+	mes "Mas eu sou apenas uma funcionï¿½ria nova. Ainda estou me esforï¿½ando muito para que vocï¿½ tenha o melhor serviï¿½o de todo o mundo! ï¿½ muito bom conhecer vocï¿½!";
 	next;
 	menu "Quantos anos?",-,"Sair.",M_End;
 	
 		mes "[Kafra Deborah]";
 		mes ". . . .";
 		mes "Hmmm";
-		mes "Não me trata como criança, táááááá?";
+		mes "Nï¿½o me trata como crianï¿½a, tï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?";
 		close;
 	M_End:
 		mes "[Kafra Deborah]";
-		mes "Nós da Central de Serviços Kafra oferecemos os melhores, mais cuidados e completos serviços! Obrigado por sua visita!";
+		mes "Nï¿½s da Central de Serviï¿½os Kafra oferecemos os melhores, mais cuidados e completos serviï¿½os! Obrigado por sua visita!";
 		close;
 }
 
 aldeba_in,148,244,4	script	Kafra::Bianca	114,{
 	cutin "kafra_04",2;
 	mes "[Kafra Bianca]";
-	mes "Bem vindo! Eu sou a Kafra Bianca! Eu vou te contar um super segredo das kafras que ninguém sabe!";
+	mes "Bem vindo! Eu sou a Kafra Bianca! Eu vou te contar um super segredo das kafras que ninguï¿½m sabe!";
 	next;
 	mes "[Kafra Bianca]";
-	mes "Na verdade... nossa Central de Serviços Kafra nem sempre foi chamada assim... Não se chamava Central de Serviços Kafra a um tempo atrás. Então... sabe como era?";
+	mes "Na verdade... nossa Central de Serviï¿½os Kafra nem sempre foi chamada assim... Nï¿½o se chamava Central de Serviï¿½os Kafra a um tempo atrï¿½s. Entï¿½o... sabe como era?";
 	next;
 	mes "[Kafra Bianca]";
-	mes "Da Daaaan! Está surpreso, não? Ka! P! (telefone tocando...) Ah, é o meu celular. Aguarde um momento!";
+	mes "Da Daaaan! Estï¿½ surpreso, nï¿½o? Ka! P! (telefone tocando...) Ah, ï¿½ o meu celular. Aguarde um momento!";
 	next;
 	mes "[Kafra Bianca]";
-	mes "Sim, é a Kafra Bianca. Ah, o Diretor! Sim! Sim... Sim! Quê?!";
+	mes "Sim, ï¿½ a Kafra Bianca. Ah, o Diretor! Sim! Sim... Sim! Quï¿½?!";
 	next;
 	mes "[Kafra Bianca]";
-	mes "Ah, não não! Ah... não é bem assim! Sim! Entendo perfeitamente!";
+	mes "Ah, nï¿½o nï¿½o! Ah... nï¿½o ï¿½ bem assim! Sim! Entendo perfeitamente!";
 	next;
 	mes "[Kafra Bianca]";
 	mes "*desliga*";
@@ -493,17 +493,17 @@ aldeba_in,148,244,4	script	Kafra::Bianca	114,{
 	next;
 	mes "[Kafra Bianca]";
 	mes "Erm... por favor...";
-	mes "Por favor, esqueça a nossa conversa anterior.";
-	mes "Por favor, esqueça o que eu...";
+	mes "Por favor, esqueï¿½a a nossa conversa anterior.";
+	mes "Por favor, esqueï¿½a o que eu...";
 	mes "Hehe...";
 	mes ". . . .";
 	cutin "",255;
 	close;
 }
 
-aldebaran,46,129,4	script	Panamá	97,{
-	mes "[Panamá]";
-	mes "Al De Baran é uma cidade";
+aldebaran,46,129,4	script	Panamï¿½	97,{
+	mes "[Panamï¿½]";
+	mes "Al De Baran ï¿½ uma cidade";
 	mes "conhecida...";
 	mes "Muito famosa em Rune-Midgard";
 	mes "principalmente pelos seus";
@@ -514,34 +514,34 @@ aldebaran,46,129,4	script	Panamá	97,{
 
 aldebaran,49,93,4	script	Miguel	83,{
 	mes "[Miguel]";
-	mes "Você sabia disso? Existem armas nível 4! E eu achava que o máximo era nível 3...!";
+	mes "Vocï¿½ sabia disso? Existem armas nï¿½vel 4! E eu achava que o mï¿½ximo era nï¿½vel 3...!";
 	next;
 	mes "[Miguel]";
-	mes "Mas existem armas raras que são nível 4 que não podem ser compradas em lojas. Elas só podem ser encontradas matando monstros muito fortes... é muito difícil conseguir... Mas elas realmente existem...";
+	mes "Mas existem armas raras que sï¿½o nï¿½vel 4 que nï¿½o podem ser compradas em lojas. Elas sï¿½ podem ser encontradas matando monstros muito fortes... ï¿½ muito difï¿½cil conseguir... Mas elas realmente existem...";
 	close;
 }
 
 
 aldebaran,60,70,4	script	Senhorita	69,{
 	mes "[Senhorita Sylvia]";
-	mes "Eu vim de Prontera até aqui em Al De Baran, porque eu ouvi dizer que a Central das Kafras, fica em algum lugar aqui em Al De Baran. Mas... mas... *sob*";
+	mes "Eu vim de Prontera atï¿½ aqui em Al De Baran, porque eu ouvi dizer que a Central das Kafras, fica em algum lugar aqui em Al De Baran. Mas... mas... *sob*";
 	next;
 	mes "[Senhorita Sylvia]";
-	mes "EU estou procurando pela Central das Kafras já fazem 5 horas... Não, mais que isso até... Onde fica... oh Deus... Eu... Eu pareço inteligente, mas na verdade sou péssima em geografia.";
+	mes "EU estou procurando pela Central das Kafras jï¿½ fazem 5 horas... Nï¿½o, mais que isso atï¿½... Onde fica... oh Deus... Eu... Eu pareï¿½o inteligente, mas na verdade sou pï¿½ssima em geografia.";
 	next;
 	mes "[Senhorita Sylvia]";
-	mes "Ah, mas eu sei de uma pequena informação que pode te ajudar. Quer ouvir?";
+	mes "Ah, mas eu sei de uma pequena informaï¿½ï¿½o que pode te ajudar. Quer ouvir?";
 	next;
 	menu "Sim sim, diga...",-,"Naaah...",M_End;
 	
 		mes "[Senhorita Sylvia]";
-		mes "Quando você consegue equipamentos matando monstros,";
+		mes "Quando vocï¿½ consegue equipamentos matando monstros,";
 		next;
 		mes "[Senhorita Sylvia]";
-		mes "apesar de você ver que é um equipamento, você não pode equipá-lo porque não está identificado. Nessas horas... existe uma coisa que você pode usar!!! E isso é uma ^0000FFLupa^000000.";
+		mes "apesar de vocï¿½ ver que ï¿½ um equipamento, vocï¿½ nï¿½o pode equipï¿½-lo porque nï¿½o estï¿½ identificado. Nessas horas... existe uma coisa que vocï¿½ pode usar!!! E isso ï¿½ uma ^0000FFLupa^000000.";
 		next;
 		mes "[Senhorita Sylvia]";
-		mes "Com esse item especial, você pode identificar itens facilmente, mesmo que você não tenha nenhum Ferreiro ou Mercador perto de você!";
+		mes "Com esse item especial, vocï¿½ pode identificar itens facilmente, mesmo que vocï¿½ nï¿½o tenha nenhum Ferreiro ou Mercador perto de vocï¿½!";
 		close;
 	M_End:
 		mes "[Senhorita Sylvia]";
@@ -556,62 +556,62 @@ aldebaran,64,104,4	script	Sr. Quattro	55,{
 	menu "Fala-me sobre esse ferreiro famoso.",-,"Encerrar conversa.",M_End;
 
 		mes "[Quattro]";
-		mes "Pelo que eu soube... O aumento no dano de uma arma proporcionado pelo aprimoramento, varia de maneira significativa... de acordo com o nível da própria arma...";
+		mes "Pelo que eu soube... O aumento no dano de uma arma proporcionado pelo aprimoramento, varia de maneira significativa... de acordo com o nï¿½vel da prï¿½pria arma...";
 		next;
 		mes "[Quattro]";
-		mes "Para armas nível 1, o aumento é de 2 por nível de refino.";
-		mes "Para armas nível 2, o aumento é de 3.";
-		mes "Nível 3, é de 5!";
-		mes "E para nível 4, chega a 7!!!";
+		mes "Para armas nï¿½vel 1, o aumento ï¿½ de 2 por nï¿½vel de refino.";
+		mes "Para armas nï¿½vel 2, o aumento ï¿½ de 3.";
+		mes "Nï¿½vel 3, ï¿½ de 5!";
+		mes "E para nï¿½vel 4, chega a 7!!!";
 		close;
 	
 	M_End:
 		mes "[Quattro]";
-		mes "A esposa dele está doente, de cama... Ela precisa tomar remédios diariamente... Feito de ervas que crescem perto de Al De Baran... O filho dele é muito diligente. Ajuda muito o pai no trabalho... Tenho certeza que ele vai crescer para se tornar um grande ferreiro!";
+		mes "A esposa dele estï¿½ doente, de cama... Ela precisa tomar remï¿½dios diariamente... Feito de ervas que crescem perto de Al De Baran... O filho dele ï¿½ muito diligente. Ajuda muito o pai no trabalho... Tenho certeza que ele vai crescer para se tornar um grande ferreiro!";
 		close;
 }
 
 aldebaran,67,154,4	script	Jovem Montanhista	98,{
 	mes "[Ricardo Berke]";
-	mes "Dois lugares conhecidos pelos terrenos acidentados são as Florestas de Payon e as Montanhas de Mjolnir.";
+	mes "Dois lugares conhecidos pelos terrenos acidentados sï¿½o as Florestas de Payon e as Montanhas de Mjolnir.";
 M_Menu:
 	next;
 	menu "Fale sobre as Montanhas de Mjolnir.",-,"Fale sobre as Florestas de Payon.",M_1,"Sair.",M_End;
 	
 		mes "[Ricardo Berke]";
-		mes "Ao sul de Al De Baran, existe uma grande região montanhosa... que é passagem obrigatória para todos os viajantes...";
-		mes "Essas são as Montanhas de Mjolnir!";
+		mes "Ao sul de Al De Baran, existe uma grande regiï¿½o montanhosa... que ï¿½ passagem obrigatï¿½ria para todos os viajantes...";
+		mes "Essas sï¿½o as Montanhas de Mjolnir!";
 		next;
 		mes "[Ricardo Berke]";
-		mes "Se você vem a Al De Baran da Guilda dos Cavaleiros, na capital do Reino de Rune-Midgard, Prontera ou de Geffen, a Cidade da Magia, conhecida por seus";
+		mes "Se vocï¿½ vem a Al De Baran da Guilda dos Cavaleiros, na capital do Reino de Rune-Midgard, Prontera ou de Geffen, a Cidade da Magia, conhecida por seus";
 		next;
 		mes "[Ricardo Berke]";
-		mes "magos e também, por seus ferreiros, você tem que atravessar as Montanhas de Mjolnir... e o caminho através delas é muito tortuoso...";
+		mes "magos e tambï¿½m, por seus ferreiros, vocï¿½ tem que atravessar as Montanhas de Mjolnir... e o caminho atravï¿½s delas ï¿½ muito tortuoso...";
 		next;
 		mes "[Ricardo Berke]";
-		mes "Os monstros das montanhas são muito agressivos e perigosos... Eles costumam atacar em emboscadas... Seu caminho até aqui deve ter sido difícil!";
+		mes "Os monstros das montanhas sï¿½o muito agressivos e perigosos... Eles costumam atacar em emboscadas... Seu caminho atï¿½ aqui deve ter sido difï¿½cil!";
 		next;
 		goto M_Menu;
 	M_1:
 		mes "[Ricardo Berke]";
-		mes "Se você deseja viajar para Alberta ou Payon a partir do deserto de Morroc. Você precisa atravessar a Floresta de Payon para chegar lá.";
+		mes "Se vocï¿½ deseja viajar para Alberta ou Payon a partir do deserto de Morroc. Vocï¿½ precisa atravessar a Floresta de Payon para chegar lï¿½.";
 		next;
 		mes "[Ricardo Berke]";
-		mes "Os caminhos através da floresta em Payon e Alberta são bastante confusos... como um labirinto... Então, é preciso bastante concentração, para não se perder...";
+		mes "Os caminhos atravï¿½s da floresta em Payon e Alberta sï¿½o bastante confusos... como um labirinto... Entï¿½o, ï¿½ preciso bastante concentraï¿½ï¿½o, para nï¿½o se perder...";
 		next;
 		mes "[Ricardo Berke]";
-		mes "A razão porque são chamadas de Florestas de Payon e não de Alberta é...";
+		mes "A razï¿½o porque sï¿½o chamadas de Florestas de Payon e nï¿½o de Alberta ï¿½...";
 		next;
 		mes "[Ricardo Berke]";
-		mes "Que a população de Payon mora afastada da cidade porque eles têm medo de invasões de outros países. Então, eles se mudaram para locais bastante ermos.";
+		mes "Que a populaï¿½ï¿½o de Payon mora afastada da cidade porque eles tï¿½m medo de invasï¿½es de outros paï¿½ses. Entï¿½o, eles se mudaram para locais bastante ermos.";
 		next;
 		mes "[Ricardo Berke]";
-		mes "Eu acho que é por essa razão, que as florestas recebem o nome de Payon... em vez de Alberta.";
+		mes "Eu acho que ï¿½ por essa razï¿½o, que as florestas recebem o nome de Payon... em vez de Alberta.";
 		next;
 		goto M_Menu;
 	M_End:
 		mes "[Ricardo Berke]";
-		mes "Essas grandes montanhas a sul desafiam muitos viajantes de todas as partes do mundo. Mas graças aos canais e a Alquimia, essa cidade tem essa agradável atmosfera mística... durante todo o ano.";
+		mes "Essas grandes montanhas a sul desafiam muitos viajantes de todas as partes do mundo. Mas graï¿½as aos canais e a Alquimia, essa cidade tem essa agradï¿½vel atmosfera mï¿½stica... durante todo o ano.";
 		close;
 }
 
@@ -622,214 +622,214 @@ aldebaran,81,61,4	script	Catadora de Mariscos	101,{
 	menu "Catar mariscos?",-,"Sair.",M_End;
 
 		mes "[Jose]";
-		mes "Se olhar na água empoçada a areia você vai ver vários buraquinhos que soltam bolhas. Se você cavar ali... você vai encontrar mariscos enterrados! Quase sempre é assim... Tente, que você vai ver!";
+		mes "Se olhar na ï¿½gua empoï¿½ada a areia vocï¿½ vai ver vï¿½rios buraquinhos que soltam bolhas. Se vocï¿½ cavar ali... vocï¿½ vai encontrar mariscos enterrados! Quase sempre ï¿½ assim... Tente, que vocï¿½ vai ver!";
 		next;
 		mes "[Jose]";
-		mes "Mas, cuidado... Existe uma espécie que tem conchas muito, muito duras... Eles são muito violentos... Você deve evitar de tocá-los... Eles não são agressivos, a não ser que você toque neles...!";
+		mes "Mas, cuidado... Existe uma espï¿½cie que tem conchas muito, muito duras... Eles sï¿½o muito violentos... Vocï¿½ deve evitar de tocï¿½-los... Eles nï¿½o sï¿½o agressivos, a nï¿½o ser que vocï¿½ toque neles...!";
 		next;
 		mes "[Jose]";
-		mes "Eles são chamados de Ambernites. Vivem na praia que fica ao sul de Prontera... Cuidado para não tocar neles... Eles são muito perigosos!";
+		mes "Eles sï¿½o chamados de Ambernites. Vivem na praia que fica ao sul de Prontera... Cuidado para nï¿½o tocar neles... Eles sï¿½o muito perigosos!";
 		next;
 		mes "[Jose]";
-		mes "São horríveis... Ick...";
+		mes "Sï¿½o horrï¿½veis... Ick...";
 		close;
 	M_End:
 		mes "[Jose]";
-		mes "Quem sabe, um dia, você vai conseguir provar os populares e deliciosos... mariscos das cavernas...! Eu sei que é um pouco perigoso... Mas você não acha que vale o risco...?";
+		mes "Quem sabe, um dia, vocï¿½ vai conseguir provar os populares e deliciosos... mariscos das cavernas...! Eu sei que ï¿½ um pouco perigoso... Mas vocï¿½ nï¿½o acha que vale o risco...?";
 		close;
 }
 
-aldebaran,86,228,4	script	Criança	62,{
+aldebaran,86,228,4	script	Crianï¿½a	62,{
 	mes "[Bebealles]";
-	mes "Outro dia eu levei meu Bebe, chamado 'Bibi piggy' para passar nas Montanhas de Mjolnir... O Bebe é um tipo de Selvagem pequeno. É muito fofinho, e tem pelo cor-de-rosa.";
+	mes "Outro dia eu levei meu Bebe, chamado 'Bibi piggy' para passar nas Montanhas de Mjolnir... O Bebe ï¿½ um tipo de Selvagem pequeno. ï¿½ muito fofinho, e tem pelo cor-de-rosa.";
 M_Menu:
 	next;
-	menu "Fale sobre o Bibi piggy.",-,"Como é lá nas Montanhas de Mjolnir?",M_1,"Sair.",M_End;
+	menu "Fale sobre o Bibi piggy.",-,"Como ï¿½ lï¿½ nas Montanhas de Mjolnir?",M_1,"Sair.",M_End;
 
 		mes "[Bebealles]";
-		mes "Nós estavamos andando pelas trilhas, e nós achamos um flor muito bonita. Mas a flor era um grande monstro planta, que tentou comer eu e meu Bibi piggy...";
+		mes "Nï¿½s estavamos andando pelas trilhas, e nï¿½s achamos um flor muito bonita. Mas a flor era um grande monstro planta, que tentou comer eu e meu Bibi piggy...";
 		next;
 		mes "[Bebealles]";
-		mes "Eu fiquei com medo e fiquei longe, então eu peguei uma pedra no chão, e joguei a pedra no monstro! (Mas eu tava com tanto medo.) Mas ele não sentiu nada!! QUe monstro forte!";
+		mes "Eu fiquei com medo e fiquei longe, entï¿½o eu peguei uma pedra no chï¿½o, e joguei a pedra no monstro! (Mas eu tava com tanto medo.) Mas ele nï¿½o sentiu nada!! QUe monstro forte!";
 		next;
 		mes "[Bebealles]";
-		mes "O que me deu mais susto é que o monstro tinha cara de gente! De verdade! Não chega perto dele não, senão ele morde você!";
+		mes "O que me deu mais susto ï¿½ que o monstro tinha cara de gente! De verdade! Nï¿½o chega perto dele nï¿½o, senï¿½o ele morde vocï¿½!";
 		close;
 
 	M_1:
 		mes "[Bebealles]";
-		mes "Eu achava que lá nas montanhas tinha todo o tipo de flor bonita, mas eu não sabia que tinha também... uns animais e insetões feios e assustadores. Flores... insetos... e abelhas e borboletas, tudo lá dá medo!";
+		mes "Eu achava que lï¿½ nas montanhas tinha todo o tipo de flor bonita, mas eu nï¿½o sabia que tinha tambï¿½m... uns animais e insetï¿½es feios e assustadores. Flores... insetos... e abelhas e borboletas, tudo lï¿½ dï¿½ medo!";
 		next;
 		mes "[Bebealles]";
-		mes "Mas eu vi que a maior parte dos animais e dos insetos não atacam a gente se a gente só passar e não incomodar eles.";
+		mes "Mas eu vi que a maior parte dos animais e dos insetos nï¿½o atacam a gente se a gente sï¿½ passar e nï¿½o incomodar eles.";
 		close;
 
 	M_End:
 		mes "[Bebealles]";
-		mes "Hmm... Ei! Cadê meu Bibi piggy...? Bibi piggy! Vem cá!";
+		mes "Hmm... Ei! Cadï¿½ meu Bibi piggy...? Bibi piggy! Vem cï¿½!";
 		close;
 }
 
 aldebaran,90,170,4	script	Edu	47,{
 	mes "[Edu]";
-	mes "Você sabia que as armas e outros itens têm vagas? E que as cartas que conseguimos quando matamos monstros se encaixam nessas vagas? Nessas fendas que existem nas armas?";
+	mes "Vocï¿½ sabia que as armas e outros itens tï¿½m vagas? E que as cartas que conseguimos quando matamos monstros se encaixam nessas vagas? Nessas fendas que existem nas armas?";
 	next;
 M_Menu:
 	menu "Fale mais sobre vagas.",-,"Como funcionam cartas e vagas?",M_1,"Sair.",M_End;
 
 		mes "[Edu]";
-		mes "Itens que conseguimos matando monstros... Têm mais vagas que os itens que compramos em lojas.";
+		mes "Itens que conseguimos matando monstros... Tï¿½m mais vagas que os itens que compramos em lojas.";
 		next;
 		mes "[Edu]";
-		mes "A coisa boa disso é que com mais vagas, é possível colocar mais cartas, assim a arma fica muito mais forte.";
+		mes "A coisa boa disso ï¿½ que com mais vagas, ï¿½ possï¿½vel colocar mais cartas, assim a arma fica muito mais forte.";
 		close;
 	M_1:
 		mes "[Edu]";
-		mes "Uma vez que cartas forem combinadas com itens... Não é possível removê-las. Não tem volta. Então, é preciso sempre pensar muito bem antes de fazer isso. Saber se isso mesmo que você quer. É importante ter absoluta certeza!";
+		mes "Uma vez que cartas forem combinadas com itens... Nï¿½o ï¿½ possï¿½vel removï¿½-las. Nï¿½o tem volta. Entï¿½o, ï¿½ preciso sempre pensar muito bem antes de fazer isso. Saber se isso mesmo que vocï¿½ quer. ï¿½ importante ter absoluta certeza!";
 		close;
 	M_End:
 		mes "[Edu]";
-		mes "Você tem aí alguma carta... que tenha caído de um monstro?";
+		mes "Vocï¿½ tem aï¿½ alguma carta... que tenha caï¿½do de um monstro?";
 		close;
 }
 
 aldebaran,113,70,2	script	Refinador	48,{
 	mes "[Matias]";
-	mes "Eu morava em Geffen. Me mudei para Al De Baran no último inverno. Para trabalhar aqui...";
+	mes "Eu morava em Geffen. Me mudei para Al De Baran no ï¿½ltimo inverno. Para trabalhar aqui...";
 	next;
 	menu "Fale-me sobre 'Refino'..",-,"Sair.",M_End;
 
 		mes "[Matias]";
-		mes "Meu pai foi um ferreiro muito famoso em Geffen, que é conhecida pelos seus excelentes ferreiros. Há pouco nos mudamos para cá, que é a cidade natal de minha mãe.";
-		mes "Eu aprendi muito sobre a chance de sucesso para refinar armas de níveis diferentes.";
+		mes "Meu pai foi um ferreiro muito famoso em Geffen, que ï¿½ conhecida pelos seus excelentes ferreiros. Hï¿½ pouco nos mudamos para cï¿½, que ï¿½ a cidade natal de minha mï¿½e.";
+		mes "Eu aprendi muito sobre a chance de sucesso para refinar armas de nï¿½veis diferentes.";
 		next;
 		mes "[Matias]";
-		mes "Eu costumo ajudar meu pai. Recentemente, tenho me dedicado a estudar as probabilidades de aprimorar com sucesso... levando em conta o nível das armas.";
+		mes "Eu costumo ajudar meu pai. Recentemente, tenho me dedicado a estudar as probabilidades de aprimorar com sucesso... levando em conta o nï¿½vel das armas.";
 		next;
 		mes "[Matias]";
-		mes "Armas nível 1";
+		mes "Armas nï¿½vel 1";
 		mes "podem ser aprimoradas com certeza de sucesso 7 vezes.";
-		mes "Armas nível 2 pode ser aprimoradas";
-		mes "com sucesso certo até 6 vezes.";
-		mes "Armas nível 3";
-		mes "têm certeza de sucesso até 5 vezes.";
-		mes "E, quanto a armas nível 4,";
+		mes "Armas nï¿½vel 2 pode ser aprimoradas";
+		mes "com sucesso certo atï¿½ 6 vezes.";
+		mes "Armas nï¿½vel 3";
+		mes "tï¿½m certeza de sucesso atï¿½ 5 vezes.";
+		mes "E, quanto a armas nï¿½vel 4,";
 		next;
 		mes "[Matias]";
-		mes "o sucesso é certo até aproximadamente 4 vezes. Para armaduras, a certeza de sucesso vai até 4 vezes também. Acima desses números, o estresse do metal é grande demais, assim como a chance de falha no processo de aprimoramento. E, em caso de falha, a peça simplesmente se quebra!!";
+		mes "o sucesso ï¿½ certo atï¿½ aproximadamente 4 vezes. Para armaduras, a certeza de sucesso vai atï¿½ 4 vezes tambï¿½m. Acima desses nï¿½meros, o estresse do metal ï¿½ grande demais, assim como a chance de falha no processo de aprimoramento. E, em caso de falha, a peï¿½a simplesmente se quebra!!";
 		close;
 	M_End:
 		mes "[Matias]";
-		mes "Eu sei que ainda não são muitos que sabem onde fica a refinaria do meu pai... Mas tenho esperança... que um dia... Meu pai vai ser muito famoso nessa cidade... Al De Baran.";
+		mes "Eu sei que ainda nï¿½o sï¿½o muitos que sabem onde fica a refinaria do meu pai... Mas tenho esperanï¿½a... que um dia... Meu pai vai ser muito famoso nessa cidade... Al De Baran.";
 		close;
 }
 
 aldebaran,121,231,4	script	Estudante de Alquimia	49,{
 	mes "[Samir]";
-	mes "Um Alquimista é um tipo de químico de Al De Baran antiga que fazia experiências para transformar substâncias comuns em diversos metais. Eles eram chamados de cientistas ou químicos.";
+	mes "Um Alquimista ï¿½ um tipo de quï¿½mico de Al De Baran antiga que fazia experiï¿½ncias para transformar substï¿½ncias comuns em diversos metais. Eles eram chamados de cientistas ou quï¿½micos.";
 M_Menu:
 	next;
-	menu "Não existe uma alquimia de Payon?",-,"Alquimista?",M_1,". . . . .",M_2,"Sair.",M_End;
+	menu "Nï¿½o existe uma alquimia de Payon?",-,"Alquimista?",M_1,". . . . .",M_2,"Sair.",M_End;
 
 		mes "[Samir]";
-		mes "Realmente, existe um tipo de remédio na tradição de Payon. Que permitiria a uma pessoa ficar sempre jovem e ascender para um mundo espiritual.";
+		mes "Realmente, existe um tipo de remï¿½dio na tradiï¿½ï¿½o de Payon. Que permitiria a uma pessoa ficar sempre jovem e ascender para um mundo espiritual.";
 		next;
 		mes "[Samir]";
-		mes "Esse remédio é originário de um método de extração de metais. A teoria alquímica de Payon é, na verdade, uma teoria que combina química e alquimia.";
+		mes "Esse remï¿½dio ï¿½ originï¿½rio de um mï¿½todo de extraï¿½ï¿½o de metais. A teoria alquï¿½mica de Payon ï¿½, na verdade, uma teoria que combina quï¿½mica e alquimia.";
 		next;
 		mes "[Samir]";
-		mes "Mas essa ciência não é muito avançadas na região de Payon, bem diferente de Al De Baran. Não só pelas condições ambientais, mas também porque os materiais necessários para a pesquisa alquímica não são abundantes por lá.";
+		mes "Mas essa ciï¿½ncia nï¿½o ï¿½ muito avanï¿½adas na regiï¿½o de Payon, bem diferente de Al De Baran. Nï¿½o sï¿½ pelas condiï¿½ï¿½es ambientais, mas tambï¿½m porque os materiais necessï¿½rios para a pesquisa alquï¿½mica nï¿½o sï¿½o abundantes por lï¿½.";
 		next;
 		mes "[Samir]";
-		mes "Desse modo, atualmente, nenhum outro lugar pode ser comparado a Al De Baran, quando o assunto é Alquimia.";
+		mes "Desse modo, atualmente, nenhum outro lugar pode ser comparado a Al De Baran, quando o assunto ï¿½ Alquimia.";
 		goto M_Menu;
 
 	M_1:
 		mes "[Samir]";
-		mes "Alquimistas utilizam seus conhecimentos de química, para misturar vários materiais e produzir substâncias com diversas propriedades úteis.";
+		mes "Alquimistas utilizam seus conhecimentos de quï¿½mica, para misturar vï¿½rios materiais e produzir substï¿½ncias com diversas propriedades ï¿½teis.";
 		goto M_Menu;
 	M_2:
 		mes "[Samir]";
-		mes "Você parece entediado. Que tal falarmos sobre a relação entre cartas de monstros e vagas de equipamento? Eu acredito que você já saiba que cada carta de monstro";
+		mes "Vocï¿½ parece entediado. Que tal falarmos sobre a relaï¿½ï¿½o entre cartas de monstros e vagas de equipamento? Eu acredito que vocï¿½ jï¿½ saiba que cada carta de monstro";
 		next;
 		mes "[Samir]";
-		mes "só pode ser combinada com um tipo específico de equipamento, isto é, num tipo exato de equipamento com vagas. Cada carta só poder inserida no equipamento correto para ser eficaz. Por exemplo, digamos que você tenha uma carta de Poring...";
+		mes "sï¿½ pode ser combinada com um tipo especï¿½fico de equipamento, isto ï¿½, num tipo exato de equipamento com vagas. Cada carta sï¿½ poder inserida no equipamento correto para ser eficaz. Por exemplo, digamos que vocï¿½ tenha uma carta de Poring...";
 		next;
 		mes "[Samir]";
-		mes "Na frente da carta de Poring nós lemos 'efeito: +1 de SOR' e só pode ser equipada em 'armaduras'. Bem...";
-		mes "Vamos dizer que você tenha uma carta poring...";
+		mes "Na frente da carta de Poring nï¿½s lemos 'efeito: +1 de SOR' e sï¿½ pode ser equipada em 'armaduras'. Bem...";
+		mes "Vamos dizer que vocï¿½ tenha uma carta poring...";
 		next;
 		mes "[Samir]";
-		mes "Isso significa que mesmo que você tente colocar à força na vaga de uma adaga, ela não vai entrar, porque essa carta deve ser colocada em uma vaga de 'armaduras'.";
+		mes "Isso significa que mesmo que vocï¿½ tente colocar ï¿½ forï¿½a na vaga de uma adaga, ela nï¿½o vai entrar, porque essa carta deve ser colocada em uma vaga de 'armaduras'.";
 		next;
 		mes "[Samir]";
-		mes "As armaduras que são vendidas em lojas não possuem nenhuma vaga. Somente itens conseguidos através de monstros têm vagas para cartas.";
+		mes "As armaduras que sï¿½o vendidas em lojas nï¿½o possuem nenhuma vaga. Somente itens conseguidos atravï¿½s de monstros tï¿½m vagas para cartas.";
 		next;
 		mes "[Samir]";
-		mes "Ah, sim! Para inserir uma carta em um equipamento, primeiro você tem que ter a carta e o equipamento em seu inventário. Então você faz um duplo clique na carta que você quer inserir.";
+		mes "Ah, sim! Para inserir uma carta em um equipamento, primeiro vocï¿½ tem que ter a carta e o equipamento em seu inventï¿½rio. Entï¿½o vocï¿½ faz um duplo clique na carta que vocï¿½ quer inserir.";
 		next;
 		mes "[Samir]";
-		mes "Vai aparecer uma lista dos equipamentos que você possui que podem ser combinados com aquela carta. Dessa maneira, é bem fácil combinar itens e cartas.";
+		mes "Vai aparecer uma lista dos equipamentos que vocï¿½ possui que podem ser combinados com aquela carta. Dessa maneira, ï¿½ bem fï¿½cil combinar itens e cartas.";
 		close;
 	M_End:
 		mes "[Samir]";
-		mes "O maior centro de pesquisas alquímica de todo esse reino... é a Guilda dos Alquimistas de Al De Baran!! Viva a Guilda dos Alquimistas!!!";
+		mes "O maior centro de pesquisas alquï¿½mica de todo esse reino... ï¿½ a Guilda dos Alquimistas de Al De Baran!! Viva a Guilda dos Alquimistas!!!";
 		close;
 
 }
 
 aldebaran,146,124,4	script	Menina	101,{
-	mes "[Kátia]";
-	mes "Eu ouvi dizer que existe um lugar chamado ^3355FF'Guilda dos Mercenários'^000000. E que lá eles ensinam as pessoas a matar sem serem descobertos. Um lugar desses...";
+	mes "[Kï¿½tia]";
+	mes "Eu ouvi dizer que existe um lugar chamado ^3355FF'Guilda dos Mercenï¿½rios'^000000. E que lï¿½ eles ensinam as pessoas a matar sem serem descobertos. Um lugar desses...";
 	next;
-	mes "[Kátia]";
-	mes "deveria ser ilegal, né?";
+	mes "[Kï¿½tia]";
+	mes "deveria ser ilegal, nï¿½?";
 	mes ". . . . .";
-	mes "Será que uma escola ilegal cobra mensalidades?";
+	mes "Serï¿½ que uma escola ilegal cobra mensalidades?";
 	next;
 	menu "Continuar conversa.",-,"Sair.",M_End;
-		mes "[Kátia]";
-		mes "Monstros que tem asas podem voar. A maior parte deles se movem e atacam muito rápido. Então é bem difícil para acertar eles.";
+		mes "[Kï¿½tia]";
+		mes "Monstros que tem asas podem voar. A maior parte deles se movem e atacam muito rï¿½pido. Entï¿½o ï¿½ bem difï¿½cil para acertar eles.";
 		next;
-		mes "[Kátia]";
-		mes "Então, quando lutamos contra esses monstros, é preciso ter uma destreza (DES) alta, não é??";
+		mes "[Kï¿½tia]";
+		mes "Entï¿½o, quando lutamos contra esses monstros, ï¿½ preciso ter uma destreza (DES) alta, nï¿½o ï¿½??";
 		close;
 	M_End:
-		mes "[Kátia]";
-		mes "Nada é de graça. É claro que não dá para ter ensinamentos de graça. Mas, toda regra tem sua excessão. Hmm...";
+		mes "[Kï¿½tia]";
+		mes "Nada ï¿½ de graï¿½a. ï¿½ claro que nï¿½o dï¿½ para ter ensinamentos de graï¿½a. Mas, toda regra tem sua excessï¿½o. Hmm...";
 		close;
 }
 
 aldebaran,159,242,4	script	Tio Inseto	119,{
 	mes "[Stellone]";
-	mes "Se você caminhar pelas Montanhas de Mjolnir... Você verá que os insetos podem ser classificados em vários tipos de acordo com seus hábitos e capacidades de sobrevivência. Você sabia disso?";
+	mes "Se vocï¿½ caminhar pelas Montanhas de Mjolnir... Vocï¿½ verï¿½ que os insetos podem ser classificados em vï¿½rios tipos de acordo com seus hï¿½bitos e capacidades de sobrevivï¿½ncia. Vocï¿½ sabia disso?";
 	next;
 	menu "Fale mais sobre insetos.",-,"Sair.",M_End;
 
 		mes "[Stellone]";
-		mes "Besouros e borboletas voam de flor em flor coletando mel carregando pólen em suas patas e espalhando o pólen. Eles ajudam as flores a se reproduzir... Não é simpático?";
+		mes "Besouros e borboletas voam de flor em flor coletando mel carregando pï¿½len em suas patas e espalhando o pï¿½len. Eles ajudam as flores a se reproduzir... Nï¿½o ï¿½ simpï¿½tico?";
 		next;
 		mes "[Stellone]";
-		mes "Oh! Mas você deve prestar atenção em uma coisa. Nunca os sbestime só porque eles são tão bonitos! Eles têm seus próprios meios de se proteger dos predadores.";
+		mes "Oh! Mas vocï¿½ deve prestar atenï¿½ï¿½o em uma coisa. Nunca os sbestime sï¿½ porque eles sï¿½o tï¿½o bonitos! Eles tï¿½m seus prï¿½prios meios de se proteger dos predadores.";
 		next;
 		mes "[Stellone]";
-		mes "Existem ainda tipos de insetos carnívoros que se alimentam de outros insetos. Estes são o Louva-a-Deus, o Argos, o Argiope... etc. Esses são os tipos mais comuns de insetos carnívoros.";
+		mes "Existem ainda tipos de insetos carnï¿½voros que se alimentam de outros insetos. Estes sï¿½o o Louva-a-Deus, o Argos, o Argiope... etc. Esses sï¿½o os tipos mais comuns de insetos carnï¿½voros.";
 		next;
 		mes "[Stellone]";
-		mes "Alguns insetos são, na verdade, monstros poderosos. Pode ser muito difícil enfrentar alguns, como o Argiope ou o Argos, ou outros ainda, desconhecidos!";
+		mes "Alguns insetos sï¿½o, na verdade, monstros poderosos. Pode ser muito difï¿½cil enfrentar alguns, como o Argiope ou o Argos, ou outros ainda, desconhecidos!";
 		next;
 		mes "[Stellone]";
-		mes "Tome muito cuidado! Não bobeie e mova-se rapidamente nas áreas onde esses monstros se encontram! Felizmente, esses insetos monstros como Argiope e Argos não possuem boa visão.";
+		mes "Tome muito cuidado! Nï¿½o bobeie e mova-se rapidamente nas ï¿½reas onde esses monstros se encontram! Felizmente, esses insetos monstros como Argiope e Argos nï¿½o possuem boa visï¿½o.";
 		next;
 		mes "[Stellone]";
-		mes "Então, se você fugir deles bem rápido, eles não vão conseguir te acompanhar!";
+		mes "Entï¿½o, se vocï¿½ fugir deles bem rï¿½pido, eles nï¿½o vï¿½o conseguir te acompanhar!";
 		next;
 		mes "[Stellone]";
-		mes "A beleza dos monstros não deve ser subestimada! Se você não tiver cuidado ao lidar com insetos bonitos, você pode ter uma surpresa desagradável.";
+		mes "A beleza dos monstros nï¿½o deve ser subestimada! Se vocï¿½ nï¿½o tiver cuidado ao lidar com insetos bonitos, vocï¿½ pode ter uma surpresa desagradï¿½vel.";
 		close;
 	M_End:
 		mes "[Stellone]";
-		mes "Se você não tiver cuidado ao lidar com insetos bonitos, você pode ter uma surpresa desagradável. Nunca subestime a Natureza das Montanhas de Mjolnir!";
+		mes "Se vocï¿½ nï¿½o tiver cuidado ao lidar com insetos bonitos, vocï¿½ pode ter uma surpresa desagradï¿½vel. Nunca subestime a Natureza das Montanhas de Mjolnir!";
 		close;
 }
 
@@ -837,40 +837,40 @@ aldebaran,180,46,4	script	Oriental	88,{
 	mes "[Hong Lee]";
 	mes "Eu sou um turista vindo de Payon, a";
 	mes "cidade da floresta.";
-	mes "Aqui... tem água por todos os";
+	mes "Aqui... tem ï¿½gua por todos os";
 	mes "lugares...";
-	mes "O clima fica tão fresco.";
+	mes "O clima fica tï¿½o fresco.";
 	next;
 	mes "[Hong Lee]";
-	mes "Mas... será que...";
-	mes "essa água é potável?";
-	mes "Na verdade... Eu já até";
+	mes "Mas... serï¿½ que...";
+	mes "essa ï¿½gua ï¿½ potï¿½vel?";
+	mes "Na verdade... Eu jï¿½ atï¿½";
 	mes "experimentei.";
 	next;
 	menu "Continuar conversa.",-,"Sair.",M_End;
 
 		mes "[Hong Lee]";
-		mes "Eu tenho viajado por vários lugares de Rune-Midgard. Eu ouvi isso de um Feiticeiro poderoso logo antes de chegar a Al De Baran:";
+		mes "Eu tenho viajado por vï¿½rios lugares de Rune-Midgard. Eu ouvi isso de um Feiticeiro poderoso logo antes de chegar a Al De Baran:";
 		next;
 		mes "[Hong Lee]";
-		mes "Se você lutar contra monstros do ^3355FFElemento Fantasma^000000 que não tem corpo físico, não é possível causar dano neles com armas ou magias normais, somente com ataques ou armas elementais.";
+		mes "Se vocï¿½ lutar contra monstros do ^3355FFElemento Fantasma^000000 que nï¿½o tem corpo fï¿½sico, nï¿½o ï¿½ possï¿½vel causar dano neles com armas ou magias normais, somente com ataques ou armas elementais.";
 		next;
 		mes "[Hong Lee]";
-		mes "Espero que essa informação tenha sido útil! Bom... então...";
+		mes "Espero que essa informaï¿½ï¿½o tenha sido ï¿½til! Bom... entï¿½o...";
 		close;
 	M_End:
 		mes "[Hong Lee]";
-		mes "Não sei se é porque o clima de Al De Baran é tão fresco... Mas a água tem um sabor tão agradável. Parece que podemos beber até a água pela qual os barcos passam...";
+		mes "Nï¿½o sei se ï¿½ porque o clima de Al De Baran ï¿½ tï¿½o fresco... Mas a ï¿½gua tem um sabor tï¿½o agradï¿½vel. Parece que podemos beber atï¿½ a ï¿½gua pela qual os barcos passam...";
 		close;
 }
 
-aldebaran,212,122,4	script	Cidadão de Al De Baran	97,{
+aldebaran,212,122,4	script	Cidadï¿½o de Al De Baran	97,{
 	mes "[Sandro]";
-	mes "Bem vindo! Esta é Al De Baran! Nós, cidadãos de Al De Baran agradecemos sua visita!";
+	mes "Bem vindo! Esta ï¿½ Al De Baran! Nï¿½s, cidadï¿½os de Al De Baran agradecemos sua visita!";
 	mes ". . . . .";
 	next;
 	mes "[Sandro]";
-	mes "Hã, você acha que eu sou alguém importante? Representante dos cidadãos... Hã?... Nada, eu só gosto de fazer isso! Falar em nome da cidade...";
+	mes "Hï¿½, vocï¿½ acha que eu sou alguï¿½m importante? Representante dos cidadï¿½os... Hï¿½?... Nada, eu sï¿½ gosto de fazer isso! Falar em nome da cidade...";
 	next;
 	mes "[Sandro]";
 	mes "Seja bem vindo!";
@@ -878,9 +878,9 @@ aldebaran,212,122,4	script	Cidadão de Al De Baran	97,{
 	menu "Continuar conversa.",-,"Sair.",M_End;
 
 		mes "[Sandro]";
-		mes "Ah, então você também viu uma dessas?";
-		mes "Dessas criaturas engraçadas?";
-		mes "Alguns dias atrás...";
+		mes "Ah, entï¿½o vocï¿½ tambï¿½m viu uma dessas?";
+		mes "Dessas criaturas engraï¿½adas?";
+		mes "Alguns dias atrï¿½s...";
 		mes "Na floresta das Montanhas de Mjolnir";
 		next;
 		mes "[Sandro]";
@@ -888,93 +888,93 @@ aldebaran,212,122,4	script	Cidadão de Al De Baran	97,{
 		mes "Eu juro!";
 		next;
 		mes "[Sandro]";
-		mes "Ele estava brincando com os outros Porings. Pulando com eles. Me disseram que se chama Angeling... O que será essa criatura...?";
+		mes "Ele estava brincando com os outros Porings. Pulando com eles. Me disseram que se chama Angeling... O que serï¿½ essa criatura...?";
 		close;
 	M_End:
 		mes "[Sandro]";
-		mes "Al De Baran é uma cidade com charme, limpa, e circundada pelas incríveis Montanhas de Mjolnir. Nós sinceramente lhe damos boas vindas na sua visita a Al De Baran.";
+		mes "Al De Baran ï¿½ uma cidade com charme, limpa, e circundada pelas incrï¿½veis Montanhas de Mjolnir. Nï¿½s sinceramente lhe damos boas vindas na sua visita a Al De Baran.";
 		close;
 }
 
 aldeba_in,156,179,4	script	Gerente do Bar	61,{
 	mes "[Gerente]";
-	mes "A Central das Kafras fica em Al De Baran. As meninas de lá às vezes vêm ao nosso bar. Elas são tão alegres e animadas.";
+	mes "A Central das Kafras fica em Al De Baran. As meninas de lï¿½ ï¿½s vezes vï¿½m ao nosso bar. Elas sï¿½o tï¿½o alegres e animadas.";
 	next;
 	mes "[Gerente]";
-	mes "Vamos fazer um joguinho, então! E o jogo é 'Escolha sua Kafra'! Nós vamos descobrir aqui como é seu parceiro ideal! Haha... Não importa se você é homem ou mulher.";
+	mes "Vamos fazer um joguinho, entï¿½o! E o jogo ï¿½ 'Escolha sua Kafra'! Nï¿½s vamos descobrir aqui como ï¿½ seu parceiro ideal! Haha... Nï¿½o importa se vocï¿½ ï¿½ homem ou mulher.";
 	next;
 	mes "[Gerente]";
-	mes "Basta escolher uma das Kafras que você ache gentil e charmosa!";
+	mes "Basta escolher uma das Kafras que vocï¿½ ache gentil e charmosa!";
 	next;
-	menu "Opa! Isso deve ser divertido!",-,"Naa... Não quero participar...",M_1;
+	menu "Opa! Isso deve ser divertido!",-,"Naa... Nï¿½o quero participar...",M_1;
 
 		mes "[Gerente]";
-		mes "Então vamos, escolha com cuidado! Qual é a sua favorita?";
+		mes "Entï¿½o vamos, escolha com cuidado! Qual ï¿½ a sua favorita?";
 		next;
 		mes "[Gerente]";
-		mes "Número (1) ^3355FF'Denise'^000000 !!";
-		mes "Ela é a nossa kafra original. Tem um lindo e clássico cabelo azul.";
-		mes "Número (2) ^9A01BA'Tatiana'^000000 !!";
-		mes "Ela é quieta e com cabelo com rabo-de-cavalo. Ela é a paixão dos adolescentes!";
-		mes "Número (3) ^0000FF'Marianne'^000000 !!";
+		mes "Nï¿½mero (1) ^3355FF'Denise'^000000 !!";
+		mes "Ela ï¿½ a nossa kafra original. Tem um lindo e clï¿½ssico cabelo azul.";
+		mes "Nï¿½mero (2) ^9A01BA'Tatiana'^000000 !!";
+		mes "Ela ï¿½ quieta e com cabelo com rabo-de-cavalo. Ela ï¿½ a paixï¿½o dos adolescentes!";
+		mes "Nï¿½mero (3) ^0000FF'Marianne'^000000 !!";
 		mes "Cabelos longos e lisos, muito gentil! Ela vem de Payon!";
 		next;
 		mes "[Gerente]";
-		mes "Número (4) ^FF8040'Bianca'^000000 !!";
-		mes "Ela tem sorriso largo, cabelo curto e é a mais animada de todas!";
-		mes "Número (5) ^7A0DF2'Gabi'^000000 !!";
-		mes "Calma e madura, ela é muito séria! Prefere homens mais velhos!";
-		mes "Número (6) ^EEC111'Deborah'^000000 !!";
-		mes "Olha essas tranças! Jeito de menina, mas uma mulher decidida!";
+		mes "Nï¿½mero (4) ^FF8040'Bianca'^000000 !!";
+		mes "Ela tem sorriso largo, cabelo curto e ï¿½ a mais animada de todas!";
+		mes "Nï¿½mero (5) ^7A0DF2'Gabi'^000000 !!";
+		mes "Calma e madura, ela ï¿½ muito sï¿½ria! Prefere homens mais velhos!";
+		mes "Nï¿½mero (6) ^EEC111'Deborah'^000000 !!";
+		mes "Olha essas tranï¿½as! Jeito de menina, mas uma mulher decidida!";
 		next;
 		mes "[Gerente]";
-		mes "Um oferecimento de: Central de Serviços Kafra...";
+		mes "Um oferecimento de: Central de Serviï¿½os Kafra...";
 		mes "...de Al De Baran.";
-		mes "Fim da apresentação!";
+		mes "Fim da apresentaï¿½ï¿½o!";
 		next;
 		menu "(1) Denise",-,"(2) Tatiana",M_01,"(3) Marianne",M_02,"(4) Bianca",M_03,"(5) Gabi",M_04,"(6) Deborah",M_05;
 
 			mes "[Gerente]";
-			mes "Uma saudosista! Não seja teimoso! Você deve experimentar coisas novas! Não adianta ficar preso ao passado!";
+			mes "Uma saudosista! Nï¿½o seja teimoso! Vocï¿½ deve experimentar coisas novas! Nï¿½o adianta ficar preso ao passado!";
 			close;
 		M_01:
 			mes "[Gerente]";
-			mes "Você não consegue ficar quieto? Se seu parceiro for assim como você, inquieto... Vocês vão incomodar todo mundo!";
+			mes "Vocï¿½ nï¿½o consegue ficar quieto? Se seu parceiro for assim como vocï¿½, inquieto... Vocï¿½s vï¿½o incomodar todo mundo!";
 			close;
 		M_02:
 			mes "[Gerente]";
-			mes "Alguém que vive tão despreocupadamente... acaba sendo chamado de preguiçoso. Você tem que traçar objetivos para sua vida, e trabalhar por eles!";
+			mes "Alguï¿½m que vive tï¿½o despreocupadamente... acaba sendo chamado de preguiï¿½oso. Vocï¿½ tem que traï¿½ar objetivos para sua vida, e trabalhar por eles!";
 			close;
 		M_03:
 			mes "[Gerente]";
-			mes "Quando você planeja parar de sonhar? Você quer procurar pela pessoa ideal somente sonhando? Encare a realidade!";
+			mes "Quando vocï¿½ planeja parar de sonhar? Vocï¿½ quer procurar pela pessoa ideal somente sonhando? Encare a realidade!";
 			close;
 		M_04:
 			mes "[Gerente]";
-			mes "Eu vou ser franco com você. Quando você vai abrir seu coração?! Desista de ser solitário!";
+			mes "Eu vou ser franco com vocï¿½. Quando vocï¿½ vai abrir seu coraï¿½ï¿½o?! Desista de ser solitï¿½rio!";
 			close;
 		M_05:
 			mes "[Gerente]";
-			mes "Oh~ohoh~!!! Você gosta de garotinhas! Seu criminoso!";
+			mes "Oh~ohoh~!!! Vocï¿½ gosta de garotinhas! Seu criminoso!";
 			close;
 	M_1:
 		mes "[Gerente]";
-		mes "Ah, dá um tempo!! Organizar isso dá trabalho! Nem é difícil jogar!! Que seja! Saia daqui e não volte!";
+		mes "Ah, dï¿½ um tempo!! Organizar isso dï¿½ trabalho! Nem ï¿½ difï¿½cil jogar!! Que seja! Saia daqui e nï¿½o volte!";
 		close;
 }
 
 aldeba_in,219,61,4	script	Homem Gentil	109,{
 	mes "[Homem Gentil]";
-	mes "Não pare para ouvir o que aquele homem louco aqui do lado diz... Ele é assim porque caiu de uma árvore e bateu a cabeça, enquanto tentava roubar frutas de uma árvore no campo de treinamento de mercenários...";
+	mes "Nï¿½o pare para ouvir o que aquele homem louco aqui do lado diz... Ele ï¿½ assim porque caiu de uma ï¿½rvore e bateu a cabeï¿½a, enquanto tentava roubar frutas de uma ï¿½rvore no campo de treinamento de mercenï¿½rios...";
 	next;
 	mes "[Homem Gentil]";
-	mes "Eu nem gosto de falar muito sobre isso... ai, Deus... que dor de cabeça!";
+	mes "Eu nem gosto de falar muito sobre isso... ai, Deus... que dor de cabeï¿½a!";
 	close;
 }
 
 aldeba_in,223,121,2	script	Homem Louco	63,{
 	mes "[Homem Louco]";
-	mes "Ei! Estranho... Como você entrou aqui? Palhaço... Como se atreve a falar assim comigo!?";
+	mes "Ei! Estranho... Como vocï¿½ entrou aqui? Palhaï¿½o... Como se atreve a falar assim comigo!?";
 	next;
 	mes "[Homem Louco]";
 	mes "Hehe... Imagino que eu deva soar estranho. Eu me sinto fora da realidade no momento.";
@@ -982,169 +982,169 @@ aldeba_in,223,121,2	script	Homem Louco	63,{
 	menu "Continuar a conversa.",-, "Sair (correndo).",M_1;
 	
 		mes "[Homem Louco]";
-		mes "Ei! Você! Não sei se você sabe disso! Existe um sistema de recrutamento no mundo. E, eu sou um dos recrutados.";
+		mes "Ei! Vocï¿½! Nï¿½o sei se vocï¿½ sabe disso! Existe um sistema de recrutamento no mundo. E, eu sou um dos recrutados.";
 		next;
 		mes "[Homem Louco]";
-		mes "É um sistema muito simples. Um sistema de recrutamento de mercenários. Como eles são soldados profissionais, eles custam muito dinheiro...";
+		mes "ï¿½ um sistema muito simples. Um sistema de recrutamento de mercenï¿½rios. Como eles sï¿½o soldados profissionais, eles custam muito dinheiro...";
 		next;
 		mes "[Homem Louco]";
 		mes "vamos para com o papo furado! Eu vou te contar como... como recrutar bons novatos.";
 		next;
 		mes "[Homem Louco]";
-		mes "Primeiro, deve-se olhar o nariz. Um bom soldado mercenário tem sempre um nariz úmido. Se estiver seco, então deve estar resfriado...";
+		mes "Primeiro, deve-se olhar o nariz. Um bom soldado mercenï¿½rio tem sempre um nariz ï¿½mido. Se estiver seco, entï¿½o deve estar resfriado...";
 		next;
 		mes "[Homem Louco]";
-		mes "E os tornozelos... devem ser finos! Como um mercenario, ele deve ter tornozelos finos e um pescoço branco e limp! Seria bom acrescentar um cabelo longo e macio, ou então algum dinheiro para uma escova.";
+		mes "E os tornozelos... devem ser finos! Como um mercenario, ele deve ter tornozelos finos e um pescoï¿½o branco e limp! Seria bom acrescentar um cabelo longo e macio, ou entï¿½o algum dinheiro para uma escova.";
 		next;
 		mes "[Homem Louco]";
-		mes "Finalmente, para ser um bom mercenário... Veja bem, é apenas um trabalho! Para deixar o empregador feliz, um mercenário de verdade sempre segue as ordens e pode dar bons conselhos! Sem esquecer, é claro, de uma toalhada oportuna!";
+		mes "Finalmente, para ser um bom mercenï¿½rio... Veja bem, ï¿½ apenas um trabalho! Para deixar o empregador feliz, um mercenï¿½rio de verdade sempre segue as ordens e pode dar bons conselhos! Sem esquecer, ï¿½ claro, de uma toalhada oportuna!";
 		close;
 	M_1:
 		mes "[Homem Louco]";
-		mes "Ainda aí? Se você for da polícia me mostre seu mandato! Se você é da família, me mostre sua marca de nascença!";
+		mes "Ainda aï¿½? Se vocï¿½ for da polï¿½cia me mostre seu mandato! Se vocï¿½ ï¿½ da famï¿½lia, me mostre sua marca de nascenï¿½a!";
 		close;
 }
 
-aldebaran,143,136,4	script	Guardião do Relógio	89,{
+aldebaran,143,136,4	script	Guardiï¿½o do Relï¿½gio	89,{
 	mes "[Benjamin Hall]";
 	mes "Eu sou o zelador da Torre do";
-	mes "Relógio de Al De Baran.";
-	mes "Você parece bem interessado na";
-	mes "Torre do Relógio! Quer que eu conte";
-	mes "histórias da Torre?";
+	mes "Relï¿½gio de Al De Baran.";
+	mes "Vocï¿½ parece bem interessado na";
+	mes "Torre do Relï¿½gio! Quer que eu conte";
+	mes "histï¿½rias da Torre?";
 	next;
-	menu "Sim, conte-me uma história.",-,"Sair.",M_End;
+	menu "Sim, conte-me uma histï¿½ria.",-,"Sair.",M_End;
 	
 		mes "[Benjamin Hall]";
-		mes "Vários relógios são interligados ao";
-		mes "relógio principal.";
-		mes "É o que chamamos de 'Sistema de";
-		mes "conexão por Teleporte'.";
+		mes "Vï¿½rios relï¿½gios sï¿½o interligados ao";
+		mes "relï¿½gio principal.";
+		mes "ï¿½ o que chamamos de 'Sistema de";
+		mes "conexï¿½o por Teleporte'.";
 		next;
 		mes "[Benjamin Hall]";
 		mes "Embora os pontos de teleporte da";
-		mes "Torre do Relógio sejam";
+		mes "Torre do Relï¿½gio sejam";
 		mes "interligados, existem alguns";
 		mes "'dispositivos de teleporte";
-		mes "aleatório'. Esses dispositivos";
-		mes "levam você a lugares";
+		mes "aleatï¿½rio'. Esses dispositivos";
+		mes "levam vocï¿½ a lugares";
 		mes "desconhecidos.";
 		next;
 		mes "[Benjamin Hall]";
-		mes "Então se você e seus amigos pretendem visitar a Torre do";
-		mes "Relógio, tenham cuidado extra com";
+		mes "Entï¿½o se vocï¿½ e seus amigos pretendem visitar a Torre do";
+		mes "Relï¿½gio, tenham cuidado extra com";
 		mes "esses dispositivos de teleporte";
-		mes "aleatório...";
+		mes "aleatï¿½rio...";
 		next;
 		mes "[Benjamin Hall]";
 		mes "Eu vou te dar uma dica. Os";
-		mes "dispositivos de teleporte aleatório";
+		mes "dispositivos de teleporte aleatï¿½rio";
 		mes "aparecem no seu mini-mapa como";
-		mes "pontos verdes. Então preste atenção";
+		mes "pontos verdes. Entï¿½o preste atenï¿½ï¿½o";
 		mes "ao seu mini-mapa e tenha cuidado.";
 		mes "Espero que passe bons momentos";
-		mes "visitando os relógios. Hahaha...";
+		mes "visitando os relï¿½gios. Hahaha...";
 		close;
 	M_End:
 		mes "[Benjamin Hall]";
-		mes "Tenha cuidado!! A Torre do Relógio";
-		mes "é um lugar terrível!";
-		mes "Nem eu sei como a Torre do Relógio";
+		mes "Tenha cuidado!! A Torre do Relï¿½gio";
+		mes "ï¿½ um lugar terrï¿½vel!";
+		mes "Nem eu sei como a Torre do Relï¿½gio";
 		mes "funciona hoje em dia...";
 		close;
 }
 
-c_tower3,10,249,4	script	Guardião do Portal#ct	84,{
+c_tower3,10,249,4	script	Guardiï¿½o do Portal#ct	84,{
 	//Key_Of_Clock_Tower
 	callfunc "F_ClockTowerGate","4",7026,"c_tower4",185,44; 
 }
 
-alde_dun03,264,16,4	script	Guardião do Portal#ct1	101,{
+alde_dun03,264,16,4	script	Guardiï¿½o do Portal#ct1	101,{
 	//Underground_Key
 	callfunc "F_ClockTowerGate","B4",7027,"alde_dun04",79,267; 
 }
 
 function	script	F_ClockTowerGate	{
-	mes "[Guardião do Portal]";
+	mes "[Guardiï¿½o do Portal]";
 	mes "Bem vindo a";
 	mes "Torre Azul Kinase - Gallino.";
-	mes "Uma das grandes atrações turísticas";
+	mes "Uma das grandes atraï¿½ï¿½es turï¿½sticas";
 	mes "de Al De Baran.";
-	mes "Contudo, não é permitida a entrada";
+	mes "Contudo, nï¿½o ï¿½ permitida a entrada";
 	mes "para "+getarg(0)+".";
 	next;
 	switch(select("Sobre a Torre.:Sobre o Andar "+getarg(0)+".:Entrar no Andar "+getarg(0)+".:Terminar conversa.")) {
 	case 1:
-		mes "[Guardião do Portal]";
+		mes "[Guardiï¿½o do Portal]";
 		mes "Terra Natal dos Alquimistas, Al De Baran!";
-		mes "Há muito tempo, existiam 3 lendários alquimistas. Seus nomes eram:";
+		mes "Hï¿½ muito tempo, existiam 3 lendï¿½rios alquimistas. Seus nomes eram:";
 		mes "Bruke Seimer,";
 		mes "Philip Warisez,";
 		mes "e...";
 		next;
-		mes "[Guardião do Portal]";
+		mes "[Guardiï¿½o do Portal]";
 		mes "Romero Specialre!";
-		mes "Essa magnifica construção é uma obra de arte deles.";
-		mes "Você não se sentirá bem enquanto anda nesse andar.";
-		mes "A torre consiste em uma porção de mágicas antigas e misteriosas.";
+		mes "Essa magnifica construï¿½ï¿½o ï¿½ uma obra de arte deles.";
+		mes "Vocï¿½ nï¿½o se sentirï¿½ bem enquanto anda nesse andar.";
+		mes "A torre consiste em uma porï¿½ï¿½o de mï¿½gicas antigas e misteriosas.";
 		next;
-		mes "[Guardião do Portal]";
-		mes "Bem, você irá se encontrar";
-		mes "monstros guardiãs.";
+		mes "[Guardiï¿½o do Portal]";
+		mes "Bem, vocï¿½ irï¿½ se encontrar";
+		mes "monstros guardiï¿½s.";
 		mes "Portanto, tenha cuidado!";
 		close;
 	case 2:
-		mes "[Guardião do Portal]";
+		mes "[Guardiï¿½o do Portal]";
 		mes "Os antigos alquimistas";
-		mes "selaram os portões do quarto andar usando invenções";
+		mes "selaram os portï¿½es do quarto andar usando invenï¿½ï¿½es";
 		mes "para proteger contra";
-		mes "monstros e humanóides.";
+		mes "monstros e humanï¿½ides.";
 		next;
-		mes "[Guardião do Portal]";
-		mes "Então, você precisa de uma chave.";
+		mes "[Guardiï¿½o do Portal]";
+		mes "Entï¿½o, vocï¿½ precisa de uma chave.";
 		mes "Dizem que monstros por aqui guardam essa chave.";
 		next;
-		mes "[Guardião do Portal]";
+		mes "[Guardiï¿½o do Portal]";
 		mes "Essa chave foi feita com a mais pura magia antiga da alquimia.";
 		mes "Quando for usada uma vez,";
-		mes "ela soltará sua magia e então";
-		mes "desaparecerá.";
+		mes "ela soltarï¿½ sua magia e entï¿½o";
+		mes "desaparecerï¿½.";
 		next;
-		mes "[Guardião do Portal]";
-		mes "Se você conseguir uma chave, por favor volte.";
-		mes "Aquele que possuir a chave da Torre do Relógio";
-		mes "terá acesso através deste portal!";
+		mes "[Guardiï¿½o do Portal]";
+		mes "Se vocï¿½ conseguir uma chave, por favor volte.";
+		mes "Aquele que possuir a chave da Torre do Relï¿½gio";
+		mes "terï¿½ acesso atravï¿½s deste portal!";
 		next;
-		mes "[Guardião do Portal]";
+		mes "[Guardiï¿½o do Portal]";
 		mes "Eu te darei uma chance.";
 		mes ". . . . .";
 		close;
 	case 3:
 		if (countitem(getarg(1)) > 0) {
-			mes "[Guardião do Portal]";
-			mes "Hmmm... eu sabia que você não é uma pessoa comum.";
-			mes "Por favor, você pode entrar!";
+			mes "[Guardiï¿½o do Portal]";
+			mes "Hmmm... eu sabia que vocï¿½ nï¿½o ï¿½ uma pessoa comum.";
+			mes "Por favor, vocï¿½ pode entrar!";
 			close2;
 			delitem getarg(1),1; 
 			warp getarg(2),getarg(3),getarg(4);
 			end;
 		}
 		else {
-			mes "[Guardião do Portal]";
+			mes "[Guardiï¿½o do Portal]";
 			mes ". . . . . .";
-			mes "Infelizmente você não tem permissão";
+			mes "Infelizmente vocï¿½ nï¿½o tem permissï¿½o";
 			mes "para entrar no portal.";
-			mes "Você não conseguirá";
+			mes "Vocï¿½ nï¿½o conseguirï¿½";
 			mes "enquanto os antigos alquimistas";
-			mes "não aprovarem!";
+			mes "nï¿½o aprovarem!";
 			close;
 		}
 	case 4:
-		mes "[Guardião do Portal]";
-		mes "Na Torre do Relógio";
+		mes "[Guardiï¿½o do Portal]";
+		mes "Na Torre do Relï¿½gio";
 		mes "viviam os 3 antigos alquimistas que";
-		mes "deixaram seus espíritos e habilidades.";
-		mes "Por favor, não danifique o interior.";
+		mes "deixaram seus espï¿½ritos e habilidades.";
+		mes "Por favor, nï¿½o danifique o interior.";
 		close;
 	}
 }

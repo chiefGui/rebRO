@@ -980,7 +980,7 @@ L_Menu3_1:
 	mes "Voc� tamb�m precisar� pagar a taxa de tutela para cobrir as aulas e materiais.";
 	next;
 	mes "[Mathias]";
-	mes "A tutoria � 70,000 zeny.";
+	mes "A tutoria � 70,000 Zeny.";
 	mes "Se voc� possuir um ^3051FDGrim�rio Antigo^000000 ou um ^3051FDColar da Sabedoria^000000,a taxa n�o ser� cobrada.";
 	next;
 	mes "[Mathias]";
@@ -993,7 +993,7 @@ L_Menu3_1:
 		menu "N�o existe outra maneira?",-,"Eu vou tentar mais tarde",L_Menu3_2;
 		set SAGE_Q,2;
 		mes "[Mathias]";
-		mes "Bom... talvez exista. Eu posso reduzir a taxa para 30,000 zeny se voc� puder nos trazer alguns materiais que nosso departamento de pesquisa precisa.";
+		mes "Bom... talvez exista. Eu posso reduzir a taxa para 30,000 Zeny se voc� puder nos trazer alguns materiais que nosso departamento de pesquisa precisa.";
 		next;
 		mes "[Mathias]";
 		mes "N�s precisamos especificamente de:";
@@ -1003,11 +1003,11 @@ L_Menu3_1:
 		mes "^3051FD50 Plumas^000000";
 		next;
 		mes "[Mathias]";
-		mes "Se voc� conseguir tudo isto. eu descontarei a taxa at� 30,000 zeny.";
+		mes "Se voc� conseguir tudo isto. eu descontarei a taxa at� 30,000 Zeny.";
 		mes "Por favor fa�a o melhor para colet�-los.";
 		next;
 		mes "[Mathias]";
-		mes "Claro, voc� tamb�m pode conseguir os 70,000 zeny ao inv�s de coletar os itens se voc� quiser.";
+		mes "Claro, voc� tamb�m pode conseguir os 70,000 Zeny ao inv�s de coletar os itens se voc� quiser.";
 		next;
 		mes "[Mathias]";
 		mes "Por favor fa�a o melhor para colet�-los.";
@@ -1096,7 +1096,7 @@ L_Menu5_1:
 		mes "^3051FD50 Plumas^000000";
 		next;
 		mes "[Mathias]";
-		mes "se voc� conseguir tudo isso, eu irei descontar sua taxa para 30,000 zeny";
+		mes "se voc� conseguir tudo isso, eu irei descontar sua taxa para 30,000 Zeny";
 		mes "Por favor fa�a o melhor para coletar os itens.";
 		close;
 	L_Menu5_3:
@@ -1109,7 +1109,7 @@ L_Menu5_1:
 		set Zeny,Zeny-30000;
 		set SAGE_Q,3;
 		mes "[Mathias]";
-		mes "Parece que voc� est� com os materiais que eu pedi e os 30,000 zeny.";
+		mes "Parece que voc� est� com os materiais que eu pedi e os 30,000 Zeny.";
 		mes "Parab�ns.";
 		mes "voc� agora est� inscrito na Academia.";
 		set SAGE_Q,3;

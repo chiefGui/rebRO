@@ -81,7 +81,7 @@ L_Check:
 	if (KNIGHT_Q == 3) mes "Par�bens em terminar seu segundo teste. O ^0000ffCavaleiro das Lutas^000000 vai supervisionar o ^ff0000terceiro teste^000000.";
 	if (KNIGHT_Q == 4) mes "Par�bens em terminar seu terceiro teste. A ^0000ffCavaleira Educada^000000 vai supervisionar o ^ff0000quarto teste^000000.";
 	if (KNIGHT_Q == 5) mes "Par�bens em terminar seu quarto teste. O ^0000ffCavaleiro Devotado^000000 vai supervisionar o ^ff0000quinto teste^000000.";
-	if (KNIGHT_Q == 6) mes "Par�bens em terminar seu quinto teste. O ^0000ffCavaleiro Modesto^000000 vai supervisionar o ^ff0000sexto teste^000000.";
+	if (KNIGHT_Q == 6) mes "Par�bens em terminar seu quinto teste. O ^0000ffCavaleiro Modesto^000000 vai supervisionar o ^ff0000Sexto teste^000000.";
 	if (KNIGHT_Q == 7) goto L_MakeKnight;
 	next;
 	mes "[Chefe dos Cavaleiros]";
@@ -159,8 +159,8 @@ L_Check:
 		mes "Embora outros pensem que a for�a de um Cavaleiro vive em sua espada, n�s Cavaleiros sabemos que a nossa verdadeira for�a, vem de nossos cora��es.";
 		next;
 		mes "[Cavaleiro Modesto]";
-		if(sex==1) mes "Depois de falar com ^ff0000"+strcharinfo(0)+"^000000, eu senti essa for�a nele.";
-		if(sex==0) mes "Depois de falar com ^ff0000"+strcharinfo(0)+"^000000, eu senti essa for�a nela.";
+		if(Sex==1) mes "Depois de falar com ^ff0000"+strcharinfo(0)+"^000000, eu senti essa for�a nele.";
+		if(Sex==0) mes "Depois de falar com ^ff0000"+strcharinfo(0)+"^000000, eu senti essa for�a nela.";
 		mes "Eu fico feliz em dar minha recomenda��o para ^ff0000"+strcharinfo(0)+"^000000 em se consagrar como um Cavaleiro!";
 		next;
 		mes "[Chefe dos Cavaleiros]";
@@ -213,7 +213,7 @@ L_Knight:
 	mes "Oh, voc� � um de n�s, como v�o as coisas?";
 	next;
 	mes "[Cavaleiro Dedicado]";
-	mes "� importante voc� estar com o equipamento certo. Isso permite que quando lutar com um monstro, mas claro, isso vai zeny.";
+	mes "� importante voc� estar com o equipamento certo. Isso permite que quando lutar com um monstro, mas claro, isso vai Zeny.";
 	next;
 	mes "[Cavaleiro Dedicado]";
 	mes "Lembre-se, voc� � forte, pois voc� � um Cavaleiro.";
@@ -439,9 +439,9 @@ L_Test:
 		mes "Muito bem, vou lhe perguntar sobre uma habilidade de Cavaleiro.";
 		mes "Quais destas, N�O � usada para atacar um oponente?";
 		next;
-		menu "Per�cia de Espada com Duas M�os Nv 5",sM_1a,"Instinto de Sobreviv�ncia Nv 3",sM_1b,"Vigor Nv 10",sM_1c,"Golpe Fulminante Nv 10",sM_1d;
+		menu "Per�cia de Espada com Duas M�os Nv 5",sm_1a,"Instinto de Sobreviv�ncia Nv 3",sm_1b,"Vigor Nv 10",sM_1c,"Golpe Fulminante Nv 10",sM_1d;
 
-		sM_1a:
+		sm_1a:
 			mes "[Cavaleiro Honroso]";
 			mes "^ff0000ERRADA^000000. Se voc� n�o saber isso, nunca ser� um mestre na arte da guerra!";
 			mes "Se quer se tornar um Cavaleiro, voc� precisa conhecer suas habilidades uma a uma.";
@@ -450,7 +450,7 @@ L_Test:
 			mes "Voc� precisa saber do b�sico, antes de se CONSAGRAR!";
 			close;
 
-		sM_1b:
+		sm_1b:
 			mes "[Cavaleiro Honroso]";
 			mes "^ff0000ERRADA^000000. Se voc� n�o saber isso, nunca ser� um mestre na arte da guerra";
 			mes "Se quer se tornar um Cavaleiro, voc� precisa conhecer suas habilidades uma a uma.";
@@ -1015,15 +1015,15 @@ L_Novice:
 	next;
 	mes "[Cavaleira Educada]";
 	mes "Voc� ir� se consagrar, um dia, como Cavaleiro?";
-	if(sex==0) mes "Espero que voc� se torne um ador�vel Cavaleiro.";
-	if(sex==1) mes "Eu aposto que se tornar� uma Cavaleira de valor.";
+	if(Sex==0) mes "Espero que voc� se torne um ador�vel Cavaleiro.";
+	if(Sex==1) mes "Eu aposto que se tornar� uma Cavaleira de valor.";
 	next;
 	mes "[Cavaleira Educada]";
-	if(sex==0) mes "Se voc� se tornar um Cavaleiro, volte e venha me ver. N�s, belas senhoritas Cavaleiras, adoramos companhias.";
-	if(sex==1) mes "Se voc� se tornar uma Cavaleira, volte e venha me ver, ok? Vamos falar sobre a moda... (*piscadinha*)";
+	if(Sex==0) mes "Se voc� se tornar um Cavaleiro, volte e venha me ver. N�s, belas senhoritas Cavaleiras, adoramos companhias.";
+	if(Sex==1) mes "Se voc� se tornar uma Cavaleira, volte e venha me ver, ok? Vamos falar sobre a moda... (*piscadinha*)";
 	close;
 L_Knight:
-	if(sex==1) goto L_Male;
+	if(Sex==1) goto L_Male;
 	
 	L_Female:
 		mes "Oh! N�o � apenas o Cavaleiro que � bonito. Eu adoro sua espada, pois combina com suas botas.";
@@ -1041,7 +1041,7 @@ L_Knight:
 		mes "[Cavaleira Educada]";
 		mes "Assim, voc� voltou para me ver, engra�ado...?";
 		next;
-		menu "VOC� APOSTOU!!!",M_Yes, "... um... Bem... err...",M_No;
+		menu "VOC� APOSTOU!!!",M_Yes, "... um... Bem... err...",M_no;
 
 		M_Yes:
 			mes "^FF0000(SLAPP!! SMACK!! BASH!!)^000000";
@@ -1052,12 +1052,12 @@ L_Knight:
 			mes "Eu te desafiei!! Que tipo de mulher voc� acha que eu sou, hein?";
 			next;
 			mes "[Cavaleira Educada]";
-			mes "Lembre-se que um Cavaleiro � um Cavaleiro, n�o importando seu sexo.";
+			mes "Lembre-se que um Cavaleiro � um Cavaleiro, n�o importando seu Sexo.";
 			mes "Todos devem se respeitar, e os homens devem respeitar as mulheres sempre!";
 			emotion e_pif;
 			close;
  
-		M_No:
+		M_no:
 			mes "[Cavaleira Educada]";
 			mes "Hehehe. Desculpe, eu estava apenas brincando com voc�. Como voc� j� deve ter percebido, eu N�O sou como as outras garotas.";
 			emotion e_heh;
@@ -1112,12 +1112,12 @@ M_Menu:
 		mes "[Cavaleira Educada]";
 		mes "Seu grupo chega at� o quarto andar, o que voc� faz agora?";
 		next;
-		menu "Escolto eles",sM_1a, "Luto s�zinho",sM_1b, "Fico na frente",sM_1c;
+		menu "Escolto eles",sm_1a, "Luto s�zinho",sm_1b, "Fico na frente",sM_1c;
 
-		sM_1a:
+		sm_1a:
 			set @score, @score + 10;
 
-		sM_1b:
+		sm_1b:
 			goto L_Cont2;
 
 		sM_1c:
@@ -1506,7 +1506,7 @@ L_Knight:
 		mes "Nossa cavalaria, fabrica essa lindas Claymore e merecemos alguma compensa��o por este trabalho.";
 		next;
 		mes "[Cavaleiro Modesto]";
-		mes "Por um pagamento de ^0000ff'74000 zeny'^000000 e ^0000ff'1 A�o'^000000, qualquer Cavaleiro pode ter sua pr�pria Claymore.";
+		mes "Por um pagamento de ^0000ff'74000 Zeny'^000000 e ^0000ff'1 A�o'^000000, qualquer Cavaleiro pode ter sua pr�pria Claymore.";
 		next;
 		mes "[Cavaleiro Modesto]";
 		mes "Eu estou no cargo, de venda desse item. Assim, quando quiser uma venha falar comigo, ok.";
@@ -1527,7 +1527,7 @@ L_Knight:
 
 		L_NotEnough:
 			mes "[Cavaleiro Modesto]";
-			mes "Eu sei que voc� quer uma Claymore mas voc� precisa de ^0000ff'74000 zeny'^000000 e ^0000ff'1 A�o'^000000.";
+			mes "Eu sei que voc� quer uma Claymore mas voc� precisa de ^0000ff'74000 Zeny'^000000 e ^0000ff'1 A�o'^000000.";
 			next;
 			mes "[Cavaleiro Modesto]";
 			mes "Quando conseguir isso, volte a me ver.";
@@ -1598,14 +1598,14 @@ M_Menu:
 			mes "[Cavaleiro Modesto]";
 			mes "Com a for�a de um Cavaleiro, como pretende ajudar a cidade?";
 			next;
-			menu "Como puder.",sM_1a, "Vou dar dinheiro.",sM_1b, "Proteger os moradores.",sM_1c;
+			menu "Como puder.",sm_1a, "Vou dar dinheiro.",sm_1b, "Proteger os moradores.",sM_1c;
 
-			sM_1a:
+			sm_1a:
 				mes "[Cavaleiro Modesto]";
 				mes "Bom. Um Cavaleiro deve ajudar sempre que puder, esse � seu destino.";
 				goto L_Cont1;
 
-			sM_1b:
+			sm_1b:
 				set @score, @score + 10;
 				mes "[Cavaleiro Modesto]";
 				mes "Uma cidade precisa de dinheiro para prosperar, mas apenas isso n�o � importante, e que uma cidade precisa.";
@@ -1708,8 +1708,8 @@ M_Menu:
 				mes "Oh to vendo! Voc� ir� se consagrar como um Cavaleiro por causa dessa pessoa?";
 				next;
 				mes "[Cavaleiro Modesto]";
-				if(sex == 1) mes "Eu espero que voc�, agora, possa proteger ela sempre que necessitar!";
-				if(sex == 0) mes "Eu espero que voc�, agora, possa proteger ele sempre que necessitar!";
+				if(Sex == 1) mes "Eu espero que voc�, agora, possa proteger ela sempre que necessitar!";
+				if(Sex == 0) mes "Eu espero que voc�, agora, possa proteger ele sempre que necessitar!";
 				next;
 				mes "[Cavaleiro Modesto]";
 				mes "Boa sorte para voc� e seu amor.";

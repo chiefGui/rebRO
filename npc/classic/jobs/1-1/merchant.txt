@@ -92,10 +92,10 @@ alberta_in,53,43,6	script	Merchant#mer	4_M_04,{
 				mes "[Chefe Mahnsoo]";
 				if (Zeny < 500) {
 					mes "Hmmm...";
-					mes "Acho que no momento voc� n�o tem zeny suficiente para a compra da licen�a.";
+					mes "Acho que no momento voc� n�o tem Zeny suficiente para a compra da licen�a.";
 					next;
 					mes "[Chefe Mahnsoo]";
-					mes "Volte aqui quando voc� estiver com os 500 zeny para se tornar um Mercador.";
+					mes "Volte aqui quando voc� estiver com os 500 Zeny para se tornar um Mercador.";
 					close;
 				}
 				Zeny -= 500;
@@ -106,7 +106,7 @@ alberta_in,53,43,6	script	Merchant#mer	4_M_04,{
 				break;
 			case 2:
 				mes "[Chefe Mahnsoo]";
-				mes "Eu suponho que voc� necessite de tempo para conseguir o zeny necess�rio. Por favor, ";
+				mes "Eu suponho que voc� necessite de tempo para conseguir o Zeny necess�rio. Por favor, ";
 				mes "volte quando estiver pronto.";
 				close;
 			}
@@ -290,10 +290,10 @@ alberta_in,53,43,6	script	Merchant#mer	4_M_04,{
 						job_merchant_q = 2;
 						Zeny -= 1000;
 						mes "Bom~";
-						mes "1,000 zeny.";
+						mes "1,000 Zeny.";
 						mes "Excelente, excelente.";
 					} else {
-						mes "Voc� n�o tem o zeny suficiente. Porque voc� n�o paga 500 zeny agora? Pense sobre isso.";
+						mes "Voc� n�o tem o Zeny suficiente. Porque voc� n�o paga 500 Zeny agora? Pense sobre isso.";
 						close;
 					}
 					break;
@@ -318,7 +318,7 @@ alberta_in,53,43,6	script	Merchant#mer	4_M_04,{
 				}
 			} else {
 				mes "[Chefe Mahnsoo]";
-				mes "Voc� n�o tem o zeny suficiente, certo? N�o tem problema, volte aqui quando voc� estiver,";
+				mes "Voc� n�o tem o Zeny suficiente, certo? N�o tem problema, volte aqui quando voc� estiver,";
 				mes "ok?";
 				close;
 			}
@@ -402,7 +402,7 @@ alberta_in,53,43,6	script	Merchant#mer	4_M_04,{
 			mes "de quando n�s somos for�ados a jogar nosso dinheiro fora para atacar.";
 			next;
 			mes "[Chefe Mahnsoo]";
-			mes "Jogando zeny fora dessa maneira";
+			mes "Jogando Zeny fora dessa maneira";
 			mes "faz com que qualquer Mercador fique com uma raiva mortal no cora��o!";
 			mes "S� de pensar nisso";
 			mes "faz meu sangue ferver!";
@@ -460,7 +460,7 @@ alberta_in,28,29,2	script	Merchant Guildsman#mer	4_M_01,{
 		close;
 	} else if (BaseJob != Job_Merchant && BaseJob != Job_Novice) {
 		mes "[Guarda Kay]";
-		mes "Ei voc�. N�s n�o temos nada para voc� no momento. Se voc� quer ganhar zeny, v� procurar noutro lugar.";
+		mes "Ei voc�. N�s n�o temos nada para voc� no momento. Se voc� quer ganhar Zeny, v� procurar noutro lugar.";
 		close;
 	} else if (job_merchant_q == 9) {
 		mes "[Guarda Kay]";
@@ -878,7 +878,7 @@ prontera,248,42,0	script	Kafra Employee#mer	4_F_KAFRA2,{
 			if (Zeny < 600) {
 				mes "[Funcion�ria Kafra]";
 				mes "Me desculpe, mas voc�";
-				mes "n�o tem zeny suficiente";
+				mes "n�o tem Zeny suficiente";
 				mes "para utilizar o Servi�o de Teletransporte.";
 				close2;
 				cutin "",255;

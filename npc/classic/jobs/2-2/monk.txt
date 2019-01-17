@@ -494,8 +494,8 @@ L_MONK_Q_8:
 L_MONK_Q_9:
 	mes "[Anci?o Wuhai]";
 	mes "Muito bem ent?o... N?s temos completado os juramentos.";
-	if (sex == 0) mes "Venha mais perto, agora voc? ? minha irm?!";
-	if (sex == 1) mes "Venha mais perto, agora voc? ? minha irm?o!";
+	if (Sex == 0) mes "Venha mais perto, agora voc? ? minha irm?!";
+	if (Sex == 1) mes "Venha mais perto, agora voc? ? minha irm?o!";
 	next;
 	mes "[Anci?o Wuhai]";
 	mes "Suas promessas foram transmitidas a todos os outros Monges atrav?s de nosso cora??es.";

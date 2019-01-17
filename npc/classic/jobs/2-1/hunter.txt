@@ -78,7 +78,7 @@ L_Start:
 		mes "(Voc� preenche o formul�rio e passe ele para tr�s)";
 		next;
 		mes "[Ca�adora Sharon]";
-		if(JobLevel < 40) goto sL_LowLvl;
+		if(JobLevel < 40) goto sL_Lowlvl;
 		if(JobLevel == 50) goto sL_HighLvl;
 		set JBLVL, 40;
 		mes "Parece bom.  Deixe-me come�ar me apresentando.  Meu nome � Sharon, prazer em te conhecer.";
@@ -91,7 +91,7 @@ L_Start:
 		next;
 		menu "Sim, vamos come�ar.",L_Test, "N�o, eu volto logo.",M_End;
 
-		sL_LowLvl:
+		sL_Lowlvl:
 			mes "Hmm... Parece que voc� precisa treinar mais.  Para se tornar um "+callfunc("otclassname",11,"S","M")+", voc� precisa ter uma grande quantidade de experi�ncia.";
 			next;
 			mes "[Ca�adora Sharon]";
@@ -292,7 +292,7 @@ L_Test3:
 	close;
 
 L_Change:
-	if(skillpoint > 0) goto sL_SkPoints;
+	if(SkillPoint > 0) goto sL_SkPoints;
 	if(countitem(1007) < 1) goto sL_NotRdy;
 	mes "O que? Voc� passou no teste?";
 	next;
@@ -381,7 +381,7 @@ L_Arc:
 L_Start:
 	mes "Ol�, Eu sou o examinador do teste, eles me chamam de Ca�ador de Dem�nios. ^5566FF"+strcharinfo(0)+"^000000 � seu nome?";
 	next;
-	menu "Sim",M_Yes, "Uhhh.... n�o",M_No;
+	menu "Sim",M_Yes, "Uhhh.... n�o",M_no;
 
 	M_Yes:
 		mes "[Ca�ador de Dem�nios]";
@@ -440,7 +440,7 @@ L_Start:
 		mes "Quando voc� conseguir todos os items retorne!";
 		close;
 
-	M_No:
+	M_no:
 		mes "[Ca�ador de Dem�nios]";
 		mes "Para de brincar por ai "+strcharinfo(0)+", esse � seu nome, certo?";
 		menu "Sim",M_Yes, "uhhh n�o",sM_End;
@@ -512,7 +512,7 @@ L_Done:
 
 
 //<=============================== Guild Master: Last Test =================================>\\
-opayon_in02.gat,21,31,1	script	Mestre da Guilda	59,{
+payon_in02.gat,21,31,1	script	Mestre da Guilda	59,{
 	if(BaseJob == Job_Archer) goto L_Archer;
 	if(BaseJob == Job_Hunter) goto L_Hnt;
 
@@ -583,7 +583,7 @@ L_Start:
 		next;
 		set HNTR_Q2, 1;
 		set @HNTR_QA,0;
-		savepoint "opayon_in02.gat", 16, 26;
+		savepoint "payon_in02.gat", 16, 26;
 		warp "job_hunte.gat", 176, 22;
 		end;
 
@@ -655,7 +655,7 @@ L_Start:
 	M_End:
 		mes "[Guia do Teste]";
 		mes "Ok, Eu irei mand�-lo de volta � Payon.  Espero te ver depois.  N�o se esque�a de salvar!";
-		warp "opayon_in02.gat", 16, 26;
+		warp "payon_in02.gat", 16, 26;
 		end;
 
 OnInit:
@@ -804,7 +804,7 @@ OnTimer193000:
 	end;
 OnTimer196000:
 	stopnpctimer;
-	areawarp "job_hunte.gat", 50, 64, 123, 143, "opayon_in02.gat", 16, 26;
+	areawarp "job_hunte.gat", 50, 64, 123, 143, "payon_in02.gat", 16, 26;
 	killmonsterall "job_hunte.gat";
 	donpcevent "HntTG::OnStart";
 	end;
@@ -823,7 +823,7 @@ job_hunte.gat,89,139,1	script	ExitHnt	45,2,2,{
 
 	deltimer "TimerHnt::OnTimer196000";
 	set HNTR_Q2, 2;
-	warp "opayon_in02.gat", 16, 26;
+	warp "payon_in02.gat", 16, 26;
 	killmonsterall "job_hunte.gat";
 	donpcevent "HntTG::OnStart";
 	end;
@@ -834,7 +834,7 @@ job_hunte.gat,89,139,1	script	ExitHnt	45,2,2,{
 
 job_hunte.gat,52,140,1	script	1-1::HntTrap	139,0,1,{
 	stopnpctimer "TimerHnt";
-	warp "opayon_in02.gat", 16, 26;
+	warp "payon_in02.gat", 16, 26;
 	killmonsterall "job_hunte.gat";
 	donpcevent "HntTG::OnStart";
 	end;

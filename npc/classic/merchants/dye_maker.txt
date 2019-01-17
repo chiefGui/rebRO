@@ -86,7 +86,7 @@ morocc_in,146,99,2	script	Java Dullihan	122,{
 				delitem 973,1;
 				delitem 713,1;
 				set Zeny, Zeny - 3000;
-				additem 975,1;
+				getitem 975,1;
 				close;
 
 		sM_Lemon:
@@ -106,7 +106,7 @@ morocc_in,146,99,2	script	Java Dullihan	122,{
 				delitem 973,1;
 				delitem 713,1;
 				set Zeny, Zeny - 3000;
-				additem 976,1;
+				getitem 976,1;
 				close;
 
 		sM_Cobaltblue:
@@ -128,7 +128,7 @@ morocc_in,146,99,2	script	Java Dullihan	122,{
 				delitem 973,1;
 				delitem 713,1;
 				set Zeny, Zeny - 3500;
-				additem 978,1;
+				getitem 978,1;
 				close;
 
 		sM_Darkgreen:
@@ -151,7 +151,7 @@ morocc_in,146,99,2	script	Java Dullihan	122,{
 				delitem 974,1;
 				delitem 713,1;
 				set Zeny, Zeny - 5000;
-				additem 979,1;
+				getitem 979,1;
 				close;
 
 		sM_Orange:
@@ -173,7 +173,7 @@ morocc_in,146,99,2	script	Java Dullihan	122,{
 				delitem 974,1;
 				delitem 713,1;
 				set Zeny, Zeny - 5000;
-				additem 980,1;
+				getitem 980,1;
 				close;
 
 		sM_Violet:
@@ -195,7 +195,7 @@ morocc_in,146,99,2	script	Java Dullihan	122,{
 				delitem 974,1;
 				delitem 713,1;
 				set Zeny, Zeny - 5000;
-				additem 981,1;
+				getitem 981,1;
 				close;
 
 		sM_White:
@@ -215,7 +215,7 @@ morocc_in,146,99,2	script	Java Dullihan	122,{
 				delitem 973,1;
 				delitem 713,1;
 				set Zeny, Zeny - 3000;
-				additem 982,1;
+				getitem 982,1;
 				close;
 
 		sM_Black:
@@ -239,7 +239,7 @@ morocc_in,146,99,2	script	Java Dullihan	122,{
 				delitem 974,1;
 				delitem 713,1;
 				set Zeny, Zeny - 7000;
-				additem 983,1;
+				getitem 983,1;
 				close;
 
 

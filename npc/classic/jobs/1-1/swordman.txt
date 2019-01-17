@@ -231,10 +231,10 @@ izlude_in,30,163,5	script	Guerreiro	105,{
 	mes "[Guerreiro]";
 	mes "Est� pronto?";
 	next;
-	menu "Deixe-me fazer o teste!!",M_yes,"Ah.. talvez depois..",M_no;
+	menu "Deixe-me fazer o teste!!",M_Yes,"Ah.. talvez depois..",M_no;
 	close;
 
-	M_yes:
+	M_Yes:
 		set SWTEST, SWTEST + 1;
 		savepoint "izlude_in",39,170;
 		stopnpctimer;
@@ -251,13 +251,13 @@ L_Option2:
 	mes ".... Mantenha sua cabe�a. Eu gosto desses que nunca cedem � um desafio! Agora leve isto e se anime!";
 	getitem 512,3;//Items: Apple,
 	next;
-	goto M_yes;
+	goto M_Yes;
 	end;
 L_Option3:
 	mes "N�o se renda! Eu sei que voc� passar� deste tempo!";
 	getitem 512,5;//Items: Apple,
 	next;
-	goto M_yes;
+	goto M_Yes;
 	end;
 }
 sword_1-1,1,1,0	script	TimerSwrdmn	-1,{
@@ -527,12 +527,12 @@ sword_1-1,173,165,1	duplicate(green)	6green_24	139,0,0
 // == Fall Warps ==
 
 sword_1-1,16,251,4	script	1_blank_1a#1::1_blank	139,0,1,{
-	set @TEMP,rand(5);
-	if (@TEMP==0) warp "sword_1-1",65,56;
-	if (@TEMP==1) warp "sword_1-1",29,26;
-	if (@TEMP==2) warp "sword_1-1",43,16;
-	if (@TEMP==3) warp "sword_1-1",23,112;
-	if (@TEMP==4) warp "sword_1-1",58,83;
+	set @temp,rand(5);
+	if (@temp==0) warp "sword_1-1",65,56;
+	if (@temp==1) warp "sword_1-1",29,26;
+	if (@temp==2) warp "sword_1-1",43,16;
+	if (@temp==3) warp "sword_1-1",23,112;
+	if (@temp==4) warp "sword_1-1",58,83;
 	end;
 }
 
@@ -590,12 +590,12 @@ sword_1-1,181,239,4	duplicate(1_blank)	1_blank_14_c	139,1,0
 
 
 sword_1-1,56,212,4	script	2_blank_1_a::2_blank	139,40,0,{
-	set @TEMP,rand(5);
-	if (@TEMP==0) warp "sword_1-1",162,120;
-	if (@TEMP==1) warp "sword_1-1",94,120;
-	if (@TEMP==2) warp "sword_1-1",94,85;
-	if (@TEMP==3) warp "sword_1-1",162,85;
-	if (@TEMP==4) warp "sword_1-1",130,47;
+	set @temp,rand(5);
+	if (@temp==0) warp "sword_1-1",162,120;
+	if (@temp==1) warp "sword_1-1",94,120;
+	if (@temp==2) warp "sword_1-1",94,85;
+	if (@temp==3) warp "sword_1-1",162,85;
+	if (@temp==4) warp "sword_1-1",130,47;
 	end;
 }
 
@@ -635,12 +635,12 @@ sword_1-1,155,201,4	duplicate(2_blank)	2_blank_9_a	139,40,0
 sword_1-1,181,201,4	duplicate(2_blank)	2_blank_9_b	139,2,0
 
 sword_1-1,17,174,4	script	3_blank_1_a::3_blank	139,2,0,{
-	set @TEMP,rand(5);
-	if (@TEMP==0) warp "sword_1-1",195,15;
-	if (@TEMP==1) warp "sword_1-1",195,38;
-	if (@TEMP==2) warp "sword_1-1",231,30;
-	if (@TEMP==3) warp "sword_1-1",198,65;
-	if (@TEMP==4) warp "sword_1-1",196,116;
+	set @temp,rand(5);
+	if (@temp==0) warp "sword_1-1",195,15;
+	if (@temp==1) warp "sword_1-1",195,38;
+	if (@temp==2) warp "sword_1-1",231,30;
+	if (@temp==3) warp "sword_1-1",198,65;
+	if (@temp==4) warp "sword_1-1",196,116;
 	end;
 }
 

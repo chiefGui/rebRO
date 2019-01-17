@@ -139,7 +139,7 @@ izlude_in,115,61,0	trader	Vendedor de Utilidades#iz	1_M_01,{
 		sellitem Arrow;
 	}
 
-izlude,105,99,0	trader	Açougueiro#iz	1_M_JOBGUIDER,{
+izlude,105,99,0	trader	Aï¿½ougueiro#iz	1_M_JOBGUIDER,{
 	OnInit:
 		sellitem Meat;
 	}
@@ -274,7 +274,7 @@ OnInit:
 	sellitem Banana;
 }
 
-prontera,64,125,0	trader	Açougueiro#prt	4_M_BARBER,{
+prontera,64,125,0	trader	Aï¿½ougueiro#prt	4_M_BARBER,{
 OnInit:
 	sellitem Meat;
 	sellitem Monsters_Feed;
@@ -460,7 +460,7 @@ OnInit:
 	sellitem Repeting_CrossBow;
 }
 
-yuno,163,187,5	trader	Vendedora Mágica#yuno	4_F_01,{
+yuno,163,187,5	trader	Vendedora Mï¿½gica#yuno	4_F_01,{
 OnInit:
 	sellitem Blue_Gemstone;
 	sellitem Rod;

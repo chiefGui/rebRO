@@ -9,12 +9,12 @@ in_moc_16,19,33,4	script	Guia de Mercen�rio	55,{
 		close;
 	}
 	mes "[Homem Raivoso]";
-	if(baseClass == Job_Novice){
+	if(BaseClass == Job_Novice){
 		mes "....HEI! Aprendiz!!! Some daqui, agora!! Eu n�o vo ser respons�vel por qualquer coisa de ruim que aconte�a com voc�.......";
 		emotion e_gasp;
 		close;
 	}
-	if(baseClass == Job_Swordman){
+	if(BaseClass == Job_Swordman){
 		mes "....O que voc� est� fazendo aqui? T� perdido??";
 		emotion e_what;
 		next;
@@ -23,12 +23,12 @@ in_moc_16,19,33,4	script	Guia de Mercen�rio	55,{
 		emotion e_pif;
 		close;
 	}
-	if(baseClass == Job_Mage){
+	if(BaseClass == Job_Mage){
 		mes "...O que um Mago como voc� est� fazendo aqui? Voc� deveria prestar mais aten��o no seu treino.....";
 		emotion e_hmm;
 		close;
 	}
-	if(baseClass == Job_Archer){
+	if(BaseClass == Job_Archer){
 		mes "hUmmh.... voc� � um desses que usa arco, n�? Me desculpe mas aqui n�o tem bichinhos fofinho pra voc� roubar... (KS).......";
 		emotion e_swt;
 		next;
@@ -37,18 +37,18 @@ in_moc_16,19,33,4	script	Guia de Mercen�rio	55,{
 		emotion e_gasp;
 		close;
 	}
-	if(baseClass == Job_Acolyte){
+	if(BaseClass == Job_Acolyte){
 		mes "...Oh! Um ajudante de Deus..... O que voc� est� fazendo aqui, num lugar t�o pecaminoso como esse?";
 		mes "Confie em mim, voc� n�o vai acha nenhuma salva��o aqui... nem ningu�m pra salvar..... Por que voc� n�o vai embora, ok?........";
 		emotion e_hmm;
 		close;
 	}
-	if(baseClass == Job_Merchant){
+	if(BaseClass == Job_Merchant){
 		mes ".... OQUE??? Voc� tem ideia de quem � voc�??...... PORCOS CHUVINISTAS como voc� n�o s�o bem vindos aqui!!!";
 		emotion e_gg;
 		close;
 	}
-	if(baseClass != Job_Thief || BaseJob == Job_Rogue){
+	if(BaseClass != Job_Thief || BaseJob == Job_Rogue){
 		mes ".... Humm.... j� que voc� n�o � um Mercen�rio ou Gatuno... Eu acho melhor voc� se contentar com aquilo que voc� �.";
 		close;
 	}
@@ -118,7 +118,7 @@ L_Failed2:
 	end;
 
 L_Change:
-	if (skillpoint > 0) goto L_SkPoints;
+	if (SkillPoint > 0) goto L_SkPoints;
 	if(countitem(1008) < 1) goto L_NoNecklace;
 	mes "Ah... o Colar do Obl�vio..... isso quer dizer que o Mestre da Guilda aceitou voc� no Cl� dos Mercen�rios.";
 	next;
@@ -203,7 +203,7 @@ OnTouch:
 	mes "[Mercen�rio Kai]";
 	mes "De qualquer jeito, bem vindo.  Ent�o, voc� quer se tornar um Mercen�rio, n�o �?";
 	next; 
-	menu "Sim. ",M_Yes, "...N�o.",M_No;
+	menu "Sim. ",M_Yes, "...N�o.",M_no;
 
 	M_Yes:
 		mes "[Mercen�rio Kai]";
@@ -237,7 +237,7 @@ OnTouch:
 			warp "in_moc_16", 19, 141;
 			end;
 
-	M_No:
+	M_no:
 		mes "[Mercen�rio Kai]";
 		mes "Huh?? Voc� n�o?........";
 		emotion e_what;
@@ -677,10 +677,10 @@ L_Test:
 		mes "[O Sem Nome]";
 		mes "1. O que aqui ^FF5533n�o �^000000 um pr�-requisito da habilidade Tocaia?";
 		next;
-		menu "Furtividade Lv 2",sM_1a, "Ataque S�nico Lv 5",sM_1a, "Esconder Lv 2",sM_1a, "Per�cia com M�o Esquerda Lv 2",-;
+		menu "Furtividade Lv 2",sm_1a, "Ataque S�nico Lv 5",sm_1a, "Esconder Lv 2",sm_1a, "Per�cia com M�o Esquerda Lv 2",-;
 
 			set @score, @score + 10;
-		sM_1a:
+		sm_1a:
 
 		mes "[O Sem Nome]";
 		mes "2. Envenenar Arma faz sua arma que elemento?";
@@ -759,10 +759,10 @@ L_Test:
 		mes "[O Sem Nome]";
 		mes "1. Qual monstro dropa Katar com slot?";
 		next;
-		menu "Besouro-Ladr�o Macho",sM_1b, "PecoPeco",sM_1b, "Lobo do Deserto",-, "Cobold",sM_1b;
+		menu "Besouro-Ladr�o Macho",sm_1b, "PecoPeco",sm_1b, "Lobo do Deserto",-, "Cobold",sm_1b;
 
 			set @score, @score + 10;
-		sM_1b:
+		sm_1b:
 
 		mes "[O Sem Nome]";
 		mes "2. Qual carta abaixo pode ser introduzida em uma Jur?";
@@ -1597,9 +1597,9 @@ sF_Questions1:
 		mes "[Mestre da Guilda]";
 		mes "Mas, por que voc� quer esse tipo de poder?";
 		next;
-		menu	"Para ter vingan�a � aqueles que me machucarem.",sM_1a, "Eu irei usar esse poder para me tornar rico.",sM_1b, "Para explorar novos lugares.",sM_1c;
+		menu	"Para ter vingan�a � aqueles que me machucarem.",sm_1a, "Eu irei usar esse poder para me tornar rico.",sm_1b, "Para explorar novos lugares.",sM_1c;
 
-		sM_1a:
+		sm_1a:
 			mes "[Mestre da Guilda]";
 			mes "Vingan�a hmm............ Parece que todo mundo tem tido inimigos nesses dias........";
 			next;
@@ -1614,7 +1614,7 @@ sF_Questions1:
 			mes "[Mestre da Guilda]";
 			mes "Se voc� quer se tornar um Mercen�rio, voc� precisa encontrar um meio de controlar suas emo��es.... e n�o suas emo��es controlarem voc�.";
 			return;
-		sM_1b:
+		sm_1b:
 			mes "[Mestre da Guilda]";
 			mes "Dinheiro � uma parte importante do mundo.... sendo que � sem sentido para um Mercen�rio.";
 			mes "A finalidade de um Mercen�rio � realizar a obscuridade, e os deveres desagrad�veis de que ningu�m mais � capaz.....";
@@ -1765,8 +1765,8 @@ sF_Questions2:
 			return;
 		sM_5c:
 			mes "[Mestre da Guilda]";
-			if(sex == 1) mes "Ah voc� tem uma namorada... ent�o se torne sua sombra e a proteja.";
-			if(sex == 0) mes "Ah voc� tem um namorado... ent�o se torne sua sombra e o proteja.";
+			if(Sex == 1) mes "Ah voc� tem uma namorada... ent�o se torne sua sombra e a proteja.";
+			if(Sex == 0) mes "Ah voc� tem um namorado... ent�o se torne sua sombra e o proteja.";
 			next;
 			mes "[Mestre da Guilda]";
 			mes "Como um Mercen�rio voc� achar� muito dif�cil de sempre encontrar algu�m, ent�o certifique-se do tesouro que voc� tem agora.";

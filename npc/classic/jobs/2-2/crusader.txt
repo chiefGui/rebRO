@@ -157,7 +157,7 @@ prt_castle,45,169,5	script	Templ?rio Mestre	752,{
 			close;
 		}
 		mes "[Michael Halig]";
-		if (sex) mes "Se voc? tamb?m ? um homem da espada, treine e se prepare constantemente. Ningu?m sabe quando a Guerra Santa ir? come?ar.";
+		if (Sex) mes "Se voc? tamb?m ? um homem da espada, treine e se prepare constantemente. Ningu?m sabe quando a Guerra Santa ir? come?ar.";
 		else mes "Como uma mulher da espada, voc? deve treinar constantemente e ser diligente. Esteja preparada, pois ningu?m sabe quando a Guerra Santa vir?.";
 		close;
 	}
@@ -235,7 +235,7 @@ prt_castle,45,169,5	script	Templ?rio Mestre	752,{
 		mes "[Michael Halig]";
 		mes "Agora voc? ?";
 		mes "um de n?s!";
-		if (sex) mes "...irm?o.";
+		if (Sex) mes "...irm?o.";
 		else mes "...irm?.";
 		next;
 		if(.@JobLevel != 50) getitem 504, 6;
@@ -286,7 +286,7 @@ prt_castle,164,32,1	script	Homem Angustiado	733,{
 	else if(CRUS_Q == 4) {
 		mes "O que ? isso...?";
 		mes "Voc? tem assuntos a tratar comigo";
-		if (sex) mes "homem da espada ?";
+		if (Sex) mes "homem da espada ?";
 		else mes "mulher da espada ?";
 		next;
 		if (select("Quer continuar meu teste de Templ?rio.:N?o, n?o ? nada.") == 1) {

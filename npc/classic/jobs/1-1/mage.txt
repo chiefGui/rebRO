@@ -536,7 +536,7 @@ geffen_in,164,112,4	script	M�quina de Mistura	111,{
 
 
 // -- Morroc Solution --
-moc_ruins,91,150,5	script	Ponka-Hontas	93,{
+moc_ruins,91,150,5	script	Ponka-Hontas#moc	93,{
 	mes "[Ponka-Hontas]";
 	mes "Voc� quer a Solu��o? Ent�o me d� 50 Zeny e pelo menos 1 Tubo de teste vazio.";
 	next;
@@ -576,7 +576,7 @@ moc_ruins,91,150,5	script	Ponka-Hontas	93,{
 
 
 // -- Payon Solution --
-pay_arche,122,100,5	script	Dollshoi	88,{
+pay_arche,122,100,5	script	Dollshoi#pay	88,{
 	mes "[Dollshoi]";
 	mes "Voc� quer a Solu��o? Ent�o me d� 50 Zeny e pelo menos 1 Tubo de teste vazio.";
 	next;

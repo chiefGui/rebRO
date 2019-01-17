@@ -396,7 +396,7 @@ L_Test2:
 	mes "A nossa guild est? envolvidas em muitos 'negocios' e sempre n?s precisamos de fundos.";
 	next;
 	mes "[Mr. Smith]";
-	mes "Por esse motivo, n?s precisamos de ^5533FF10,000 zeny^000000 a ser pago para voc? fazer o teste de Arruaceiro.";
+	mes "Por esse motivo, n?s precisamos de ^5533FF10,000 Zeny^000000 a ser pago para voc? fazer o teste de Arruaceiro.";
 	mes "O pagamento ser? coletado quando voc? acabar esse segundo teste, ent?o n?o se preocupe se voc? n?o tem isso agora.";
 	next;
 	mes "[Mr. Smith]";
@@ -409,7 +409,7 @@ L_Test2:
 	if(ROGUE_Q2 == 3) callsub sF2_R3;
 	next;
 	mes "[Mr. Smith]";
-	mes "Uma vez que voc? tenha TODOS os itens e os 10,000 zeny, venha me ver de novo, OK? Bom.";
+	mes "Uma vez que voc? tenha TODOS os itens e os 10,000 Zeny, venha me ver de novo, OK? Bom.";
 	close;
 
 	sF2_R1:
@@ -477,7 +477,7 @@ L_Check2:
 		emotion e_what;
 		next;
 		mes "[Mr. Smith]";
-		mes "Desta vez escreva! Voc? precisa de ^5533FF10,000^000000 zeny e:";
+		mes "Desta vez escreva! Voc? precisa de ^5533FF10,000^000000 Zeny e:";
 		if(ROGUE_Q2 == 1) callsub sF2_R1;
 		if(ROGUE_Q2 == 2) callsub sF2_R2;
 		if(ROGUE_Q2 == 3) callsub sF2_R3;

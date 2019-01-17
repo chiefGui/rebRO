@@ -221,7 +221,7 @@ new_1-1,53,114,4	script	Shion#nv1	727,{
 		mes "^666666*Suspiro...*^000000";
 		next;
 		mes "[Shion]";
-		mes "Ei, quando voc� entrar no Campo de Treinamento, voc� aprender� todo tipo de coisa que ajudaram voc� a jogar esse jogo. Voc� tamb�m ter� a chance de ganhar zeny e outras recompensas.";
+		mes "Ei, quando voc� entrar no Campo de Treinamento, voc� aprender� todo tipo de coisa que ajudaram voc� a jogar esse jogo. Voc� tamb�m ter� a chance de ganhar Zeny e outras recompensas.";
 		next;
 		mes "[Shion]";
 		mes "Voc� tamb�m pode ganhar";
@@ -1944,12 +1944,12 @@ new_1-2,184,172,1	script	Ass. de Habilidades#nv	47,{
 					next;
 					mes "[Leo Handerson]";
 					mes "A fim de trocar itens";
-					mes "ou zeny com outras pessoas,";
+					mes "ou Zeny com outras pessoas,";
 					mes "voc� deve aprender pelo menos a ^3355FFHabilidade B�sica N�vel 1^000000.";
 					next;
 					mes "[Leo Handerson]";
 					mes "Quando voc� trocar, voc� deve ficar";
-					mes "situado perto da pessoa com que voc� deseja trocar �tens ou zeny. Se n�o, o com�rcio n�o ir� funcionar se esta pessoa estiver � 2 celulas de voc�.";
+					mes "situado perto da pessoa com que voc� deseja trocar �tens ou Zeny. Se n�o, o com�rcio n�o ir� funcionar se esta pessoa estiver � 2 celulas de voc�.";
 					next;
 					mes "[Leo Handerson]";
 					mes "Clique com o bot�o direito na pessoa";
@@ -1969,7 +1969,7 @@ new_1-2,184,172,1	script	Ass. de Habilidades#nv	47,{
 					mes "se a outra pessoa est� negociando os itens que voc� aceitou na troca.";
 					next;
 					mes "[Leo Handerson]";
-					mes "Para negociar Zeny, voc� pode entrar com uma quantidade de Zeny que voc� quer negociar. Ap�s colocar itens ou zeny na Lista de Negocia��o, pressione o bot�o 'OK' na parte inferior para confirmar a negocia��o.";
+					mes "Para negociar Zeny, voc� pode entrar com uma quantidade de Zeny que voc� quer negociar. Ap�s colocar itens ou Zeny na Lista de Negocia��o, pressione o bot�o 'OK' na parte inferior para confirmar a negocia��o.";
 					next;
 					mes "[Leo Handerson]";
 					mes "Um vez que a negocioacao � confirmada,";
@@ -3278,7 +3278,7 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "^660000Lista de Suprimentos^000000";
 					mes "^0000335 Vale-Armaz�m^000000";
 					mes "^0000335 Vale-Teletransporte^000000";
-					////mes "^000099100 zeny^000000";
+					////mes "^000099100 Zeny^000000";
 					mes "^0000331 Alfanje^000000";
 					mes "^0000337 Fracon^000000";
 					next;
@@ -3345,7 +3345,7 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "^660000Lista de Suprimentos^000000";
 					mes "^0000335 Vale-Armaz�m^000000";
 					mes "^0000335 Vale-Teletransporte^000000";
-					////mes "^000099100 zeny^000000";
+					////mes "^000099100 Zeny^000000";
 					mes "^0000331 Bast�o^000000";
 					mes "^0000331 Punhal^000000";
 					mes "^0000337 Fracon^000000";
@@ -3419,7 +3419,7 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "^0000334 Vale-Armaz�m^000000";
 					mes "^0000334 Vale-Teletransporte^000000";
 					mes "^0000334 Vale-Carrinho^000000";
-					////mes "^000099100 zeny^000000";
+					////mes "^000099100 Zeny^000000";
 					mes "^0000331 Machado de Batalha^000000";
 					mes "^0000337 Fracon^000000";
 					next;

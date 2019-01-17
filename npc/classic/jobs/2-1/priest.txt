@@ -129,7 +129,7 @@ L_Start:
 		mes "(voc� preencheu o formul�rio e o devolveu)";
 		next;
 		mes "[Padre Thomas]";
-		if (JobLevel < 40) goto sL_LowLvl;
+		if (JobLevel < 40) goto sL_Lowlvl;
 		if (JobLevel == 50) goto sL_HighLvl;
 		mes "Ah, muito bom " + strcharinfo(0) + ". Deixe-me lhe contar agora sobre as tarefas que voc� ter� que completar para se tornar um Sacerdote.";
 		next;
@@ -147,7 +147,7 @@ L_Start:
 		set JBLVL, 40;
 		goto L_Test1;
 
-		sL_LowLvl:
+		sL_Lowlvl:
 			mes "Sinto muito, mas voc� ainda n�o pode se tornar um Sacerdote. Voc� precisa ter no minimo n�vel 40 de classe.";
 			next;
 			mes "[Padre Thomas]";
@@ -359,7 +359,7 @@ L_Test:
 	mes "Oque � isso? Voc� est� aqui por que quer servir a Deus com uma capacidade ainda maior?";
 	emotion e_what;
 	next;
-	menu "Sim, Eu acredito que o Sacerd�cio seja o caminho correto.",-, "N�o, na verdade n�o.... s� vim falar oi.",M_No;
+	menu "Sim, Eu acredito que o Sacerd�cio seja o caminho correto.",-, "N�o, na verdade n�o.... s� vim falar oi.",M_no;
 
 		mes "[Irm�o Sim�o]";
 		mes "Haha! Muito bom. N�s precisamos de mais pessoas como voc� para lutar contra o mal que persegue esse mundo.";
@@ -372,7 +372,7 @@ L_Test:
 		mes "Voc� pode encontr�-la no mapa a norte de Morroc. Tenha uma boa viagem e boa sorte ao se tornar um Sacerdote.";
 		set PRIEST_Q2, 2;
 		close;
-	M_No:
+	M_no:
 		mes "[Irm�o Sim�o]";
 		mes "Oh... bem... Ola para voc� tamb�m. De qualquer maneira � bom ver um servo de Deus como voc�. Estou um pouco ocupado agora, ent�o se voc� n�o se importa.....";
 		emotion e_swt;
@@ -715,7 +715,7 @@ L_Aco:
 		mes "[Deviruchi]";
 		mes "Voc� acha que pode encontrar uma carta igual a essa? Decida-se, n�o se arrependa depois...";
 		next;
-		menu "Eu aceito a carta.",-, "SAI FORA dem�nio!!",sM_1a;
+		menu "Eu aceito a carta.",-, "SAI FORA dem�nio!!",sm_1a;
 
 			mes "[Deviruchi]";
 			mes "Hahaha. Todos os humanos s�o assim, boa escolha! Certo, aqui est� a carta!";
@@ -726,7 +726,7 @@ L_Aco:
 			next;
 			warp "mjolnir_05", 200, 200;
 			end;
-		sM_1a:
+		sm_1a:
 			cutin "�̽�Ʈ����ī��.bmp",255;
 			mes "[Deviruchi]";
 			mes "Wow, voc� � um Novi�o bem resistente, se voc� continuar a negar melhor ter cuidado.";
@@ -791,7 +791,7 @@ L_Aco:
 		mes "Basta me dizer que voc� n�o quer ser um Sacerdote.";
 		mes "Se voc� fizer isso, vou poder te transformar em qualquer classe, por exemplo, quer ser um Espadachim como eu?";
 		next;
-		menu "Eu n�o quero ser um Sacerdote!",-, "SAI FORA dem�nio!",sM_1b;
+		menu "Eu n�o quero ser um Sacerdote!",-, "SAI FORA dem�nio!",sm_1b;
 
 			mes "[Doppelganger]";
 			mes "Muito bom, voc� n�o precisa mais voltar aqui.";
@@ -802,7 +802,7 @@ L_Aco:
 			next;
 			warp "gef_dun02", 210, 177;
 			end;
-		sM_1b:
+		sm_1b:
 			mes "[Doppelganger]";
 			mes "Tudo bem, te pouparei por hoje.";
 			next;
@@ -1146,8 +1146,8 @@ L_Nov:
 	close;
 
 L_Prst:
-	if(sex == 1) mes "Que Deus te aben�oe, Irm�o Sacerdote.";
-	if(sex == 0) mes "Que Deus te aben�oe, Irm� Sacerdotisa.";
+	if(Sex == 1) mes "Que Deus te aben�oe, Irm�o Sacerdote.";
+	if(Sex == 0) mes "Que Deus te aben�oe, Irm� Sacerdotisa.";
 	mes "Eu desejo a todos o melhor. Fortale�a a sua F� e lembre-se que Deus ama a todos, e deve ser assim.";
 	close;
 
@@ -1156,8 +1156,8 @@ L_Aco:
 	if(PRIEST_Q == 2) goto L_Test2;
 	if(PRIEST_Q == 3) goto L_Start;
 	if(PRIEST_Q == 4) goto L_Done;
-	if(sex == 1) mes "Que Deus te aben�oe, Irm�o.";
-	if(sex == 0) mes "Que Deus te aben�oe, Irm�.";
+	if(Sex == 1) mes "Que Deus te aben�oe, Irm�o.";
+	if(Sex == 0) mes "Que Deus te aben�oe, Irm�.";
 	mes "Por que voc� est� aqui?";
 	next;
 	menu "Eu quero ser um Sacerdote.",-, "Eu estava apenas olhando.",M_End1;
@@ -1190,8 +1190,8 @@ L_Start:
 	mes "Voc� agora est� bem perto de se tornar um Sacerdote.";
 	next;
 	mes "[Irm� Cecile]";
-	if(sex==1) mes "Se voc� quiser ser um Sacerdote, a �ltima etapa ser� responder as minhas perguntas honestamente.";
-	if(sex==0) mes "Se voc� quiser ser uma Sacerdotisa, a �ltima etapa ser� responder as minhas perguntas honestamente.";
+	if(Sex==1) mes "Se voc� quiser ser um Sacerdote, a �ltima etapa ser� responder as minhas perguntas honestamente.";
+	if(Sex==0) mes "Se voc� quiser ser uma Sacerdotisa, a �ltima etapa ser� responder as minhas perguntas honestamente.";
 	mes "Por favor, seja sincero e responda as minhas perguntas.";
 	next;
 	mes "[Irm� Cecile]";

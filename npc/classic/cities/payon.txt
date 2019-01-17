@@ -2,250 +2,250 @@
 pay_arche,77,131,6	script	Guilhermino	59,{
 	mes "[Guilhermino]";
 	mes "Payon! Mas que cidade maravilhosa!";
-	mes "Arcos íncríveis! Arqueiro habilidosos!";
-	mes "Ei, você! Conhece a fama da nossa cidade?";
+	mes "Arcos ï¿½ncrï¿½veis! Arqueiro habilidosos!";
+	mes "Ei, vocï¿½! Conhece a fama da nossa cidade?";
 	next;
 	menu "Claro que sim!",L0,"Que fama?",L1,"......",L2;
 
 	L0:
 		mes "[Guilhermino]";
-		mes "Rá! Então você é um dos meus!";
+		mes "Rï¿½! Entï¿½o vocï¿½ ï¿½ um dos meus!";
 		mes "Arqueiro de Payon! Cuidado com a gente, cara!";
-		mes "Nós nunca erramos um alvo! Podemos acertar um fio de cabelo com nossas flechas! E temos estilo!";
+		mes "Nï¿½s nunca erramos um alvo! Podemos acertar um fio de cabelo com nossas flechas! E temos estilo!";
 		next;
-		menu "Você gosta mesmo aqui, hein?",L00,"Haha...",L01;
+		menu "Vocï¿½ gosta mesmo aqui, hein?",L00,"Haha...",L01;
 
 		L00:
 			mes "[Guilhermino]";
-			mes "SIM! Eu amo esta cidade! É por isso que eu sei tudo sobre ela!";
-			mes "Se você tiver qualquer pergunta pra me fazer, vá em frente, pergunte!!";
+			mes "SIM! Eu amo esta cidade! ï¿½ por isso que eu sei tudo sobre ela!";
+			mes "Se vocï¿½ tiver qualquer pergunta pra me fazer, vï¿½ em frente, pergunte!!";
 			next;
-			menu "O pessoal daqui usa umas roupas bem estranhas.",L00a,"Que construção estranha é aquela no meio da cidade?",L00b,"Quem é aquele cara bebendo no bar lá da cidade?",L00c," Agente se fala depois.",L00d;
+			menu "O pessoal daqui usa umas roupas bem estranhas.",L00a,"Que construï¿½ï¿½o estranha ï¿½ aquela no meio da cidade?",L00b,"Quem ï¿½ aquele cara bebendo no bar lï¿½ da cidade?",L00c," Agente se fala depois.",L00d;
 
 			L00a:
 				mes "[Guilhermino]";
-				mes "Sim, é verdade!";
-				mes "Você deve saber que até algum tempo atrás, Payon era completamente isolada do resto do reino de Midgard. Por isso as pessoas daqui criaram um cultura própria, diferente das de outras cidades.";
-				mes "Por isso essas roupas estranhas, elas são um costume local! Aliás se quiser experimentar, vá em frente, são muito confortáveis!";
+				mes "Sim, ï¿½ verdade!";
+				mes "Vocï¿½ deve saber que atï¿½ algum tempo atrï¿½s, Payon era completamente isolada do resto do reino de Midgard. Por isso as pessoas daqui criaram um cultura prï¿½pria, diferente das de outras cidades.";
+				mes "Por isso essas roupas estranhas, elas sï¿½o um costume local! Aliï¿½s se quiser experimentar, vï¿½ em frente, sï¿½o muito confortï¿½veis!";
 				close;
 			L00b:
 				mes "[Guilhermino]";
-				mes "É o palácio de Payon. Estrangeiros não são muito bem-vindos por lá. Eu mesmo nunca entrei lá.";
-				mes "Dizem que a Realeza local, seus amigos e empregados moram lá dentro.";
-				mes "Eu gostaria de visitar o palácio algum dia. Parece um lugar muito misterioso e interessante.";
+				mes "ï¿½ o palï¿½cio de Payon. Estrangeiros nï¿½o sï¿½o muito bem-vindos por lï¿½. Eu mesmo nunca entrei lï¿½.";
+				mes "Dizem que a Realeza local, seus amigos e empregados moram lï¿½ dentro.";
+				mes "Eu gostaria de visitar o palï¿½cio algum dia. Parece um lugar muito misterioso e interessante.";
 				close;
 			L00c:
 				mes "[Guilhermino]";
-				mes "Ah! O Bêbado? Ele é famoso na cidade! Não lhe pague bebidas pra não jogar seu dinheiro fora!";
+				mes "Ah! O Bï¿½bado? Ele ï¿½ famoso na cidade! Nï¿½o lhe pague bebidas pra nï¿½o jogar seu dinheiro fora!";
 				close;
 			L00d:
 				mes "[Guilhermino]";
-				mes "Ok! Te vejo por aí! Até mais!";
+				mes "Ok! Te vejo por aï¿½! Atï¿½ mais!";
 				close;
 		L01:
 			close;
 	L1:
 		mes "[Guilhermino]";
-		mes "Não é possível que você não saiba nada dos Arqueiro de Payon!";
-		mes "Quando você aprender alguma coisa sobre Payon, venha falar comigo.Eu adoro falar sobre essa cidade.";
-		mes "Payon é o máximo!";
+		mes "Nï¿½o ï¿½ possï¿½vel que vocï¿½ nï¿½o saiba nada dos Arqueiro de Payon!";
+		mes "Quando vocï¿½ aprender alguma coisa sobre Payon, venha falar comigo.Eu adoro falar sobre essa cidade.";
+		mes "Payon ï¿½ o mï¿½ximo!";
 		close;
 	L2:
 		mes "[Guilhermino]";
-		mes "Que foi? Gato comeu sua língua?";
-		mes "Ei, não precisa ter vergonha de mim! Eu sou o Guilhermino, todo o mundo me conhece por aqui!";
+		mes "Que foi? Gato comeu sua lï¿½ngua?";
+		mes "Ei, nï¿½o precisa ter vergonha de mim! Eu sou o Guilhermino, todo o mundo me conhece por aqui!";
 		close;
 }
 
 
 
-payon_in,69,90,4	script	Chefe da Guarda#pay01	105,2,2,{
+payon_in01,69,90,4	script	Chefe da Guarda#pay01	105,2,2,{
 	OnTouch:
 		mes "[Chefe da Guarda]";
 		mes "O que traz aqui?";
 		next;
 		mes "[Chefe da Guarda]";
-		mes "Seu lugar não é aqui. Sugiro que comporte-se com respeito dentro do palácio.";
+		mes "Seu lugar nï¿½o ï¿½ aqui. Sugiro que comporte-se com respeito dentro do palï¿½cio.";
 		next;
 		mes "[Chefe da Guarda]";
-		mes "Você será desarmado agora em nome da segurança deste lugar. Por favor, coopere.";
+		mes "Vocï¿½ serï¿½ desarmado agora em nome da seguranï¿½a deste lugar. Por favor, coopere.";
 		unequip 0;
 		close;
 }
 payon,93,162,4	script	Guarda#pay02	105,2,2,{
 	OnTouch:
 		mes "[Guarda]";
-		mes "Este é o Palácio de Payon.";
-		mes "Mesmo sendo este um lugar aberto à visitas do público, exigimos que os visitantes sejam respeitosos e não causem transtornos.";
+		mes "Este ï¿½ o Palï¿½cio de Payon.";
+		mes "Mesmo sendo este um lugar aberto ï¿½ visitas do pï¿½blico, exigimos que os visitantes sejam respeitosos e nï¿½o causem transtornos.";
 		next;
 		mes "[Guarda]";
-		mes "Portanto é necessário que você, ao entrar no palácio, desarme-se de seus equipamentos. Obrigado por sua cooperação";
+		mes "Portanto ï¿½ necessï¿½rio que vocï¿½, ao entrar no palï¿½cio, desarme-se de seus equipamentos. Obrigado por sua cooperaï¿½ï¿½o";
 		unequip 0;
 		close;
 }
 
-payon_in,95,179,5	script	Vikram, o Arqueiro	88,{
+payon_in01,95,179,5	script	Vikram, o Arqueiro	88,{
 	mes "[Vikram, o Arqueiro]";
-	mes "Cara, vou te dizer. Eu tenho um amigo que só sabe falar besteira.";
-	mes "Quer dizer, ele é um expert em Arqueiro e tudo mais, mas eu me encho do falatório dele...";
-	mes "Até nosso Chefe já se encheu dele, o cara é mesmo um mala!";
+	mes "Cara, vou te dizer. Eu tenho um amigo que sï¿½ sabe falar besteira.";
+	mes "Quer dizer, ele ï¿½ um expert em Arqueiro e tudo mais, mas eu me encho do falatï¿½rio dele...";
+	mes "Atï¿½ nosso Chefe jï¿½ se encheu dele, o cara ï¿½ mesmo um mala!";
 	next;
-	menu "Hã... quem é esse cara?",M0,"Que Chefe é esse?",M1,"Como assim 'fala besteira'?",M2;
+	menu "Hï¿½... quem ï¿½ esse cara?",M0,"Que Chefe ï¿½ esse?",M1,"Como assim 'fala besteira'?",M2;
 
 	M0:
 		mes "[Vikram, o Arqueiro]";
-		mes "Ah, claro, que besteira a minha. É um sujeito que mora no andar superior desse bar, ele tem a mesma roupa que eu.";
-		mes "Ele ensina Arqueiro novatos os conceitos básicos da nossa classe.";
-		mes "Bem... Se tiver interesse, vá falar com ele.";
+		mes "Ah, claro, que besteira a minha. ï¿½ um sujeito que mora no andar superior desse bar, ele tem a mesma roupa que eu.";
+		mes "Ele ensina Arqueiro novatos os conceitos bï¿½sicos da nossa classe.";
+		mes "Bem... Se tiver interesse, vï¿½ falar com ele.";
 		close;
 	M1:
 		mes "[Vikram, o Arqueiro]";
-		mes "O Chefe da Cidade vive no Palácio de Payon, lá no centro. Ele é o líder espiritual daqui.";
-		mes "Ele costumava a caçar pela floresta com seu arco lendário, a Gakkung.";
-		mes "Eu me lembro de vê-lo em ação quando era criança. Nunca vi flechas disparadas com tamanha rapidez.";
-		mes "Ele pode parecer apenas um velho agora... Mas está nos seus olhos...";
-		mes "São olhos capazes de mirar um pássaro em movimento... Realmente, ele foi o melhor Arqueiro desta cidade.";
+		mes "O Chefe da Cidade vive no Palï¿½cio de Payon, lï¿½ no centro. Ele ï¿½ o lï¿½der espiritual daqui.";
+		mes "Ele costumava a caï¿½ar pela floresta com seu arco lendï¿½rio, a Gakkung.";
+		mes "Eu me lembro de vï¿½-lo em aï¿½ï¿½o quando era crianï¿½a. Nunca vi flechas disparadas com tamanha rapidez.";
+		mes "Ele pode parecer apenas um velho agora... Mas estï¿½ nos seus olhos...";
+		mes "Sï¿½o olhos capazes de mirar um pï¿½ssaro em movimento... Realmente, ele foi o melhor Arqueiro desta cidade.";
 		next;
 		mes "[Vikram, o Arqueiro]";
-		mes "Eu admiro como o herói que ele é e sempre será.";
+		mes "Eu admiro como o herï¿½i que ele ï¿½ e sempre serï¿½.";
 		close;
 	M2:
 		mes "[Vikram, o Arqueiro]";
-		mes "Fala besteira, oras! Sabe daquelas pessoas que não param de falar e acham que sabem tudo?";
-		mes "Ele é uma delas. Tem vezes que, eu admito, mesmo sendo amigo dele dá vontade de mandar ele calar a boca.";
-		mes "Ele é famoso na cidade por falar tanto. Cara, ele pode ser muito irritante às vezes... Achando que sabe tudo e bancando o genial...";
-		mes "Mas certamente, pelo menos em matéria de falação, ele é o número um.";
+		mes "Fala besteira, oras! Sabe daquelas pessoas que nï¿½o param de falar e acham que sabem tudo?";
+		mes "Ele ï¿½ uma delas. Tem vezes que, eu admito, mesmo sendo amigo dele dï¿½ vontade de mandar ele calar a boca.";
+		mes "Ele ï¿½ famoso na cidade por falar tanto. Cara, ele pode ser muito irritante ï¿½s vezes... Achando que sabe tudo e bancando o genial...";
+		mes "Mas certamente, pelo menos em matï¿½ria de falaï¿½ï¿½o, ele ï¿½ o nï¿½mero um.";
 		next;
 		mes "[Vikram, o Arqueiro]";
-		mes "Payon é uma cidade muito quieta, então gente como ele não é muito comum por aqui.";
-		mes "A maioria das pessoas por aqui fala pouco, sabe? Ninguém acha que falar resolve nada. Somos pessoas de ação.";
-		mes "Pelo jeito, você deve ter amigos assim, não é? Eu acho que a verdadeira bravura está nas ações, concorda?";
+		mes "Payon ï¿½ uma cidade muito quieta, entï¿½o gente como ele nï¿½o ï¿½ muito comum por aqui.";
+		mes "A maioria das pessoas por aqui fala pouco, sabe? Ninguï¿½m acha que falar resolve nada. Somos pessoas de aï¿½ï¿½o.";
+		mes "Pelo jeito, vocï¿½ deve ter amigos assim, nï¿½o ï¿½? Eu acho que a verdadeira bravura estï¿½ nas aï¿½ï¿½es, concorda?";
 		mes "Pessoas de poucas palavras...";
 		next;
 		mes "[Vikram, o Arqueiro]";
-		mes "Enfim, meu amigo Markiv? Como eu disse, ele mora no segundo andar da estalagem, é só subir as escadas no outro quarto.";
-		mes "Acho que ele deve estar por lá, agora. Por que você não vai visitá-lo pra ver do que eu estou falando? O cara é um chato.";
+		mes "Enfim, meu amigo Markiv? Como eu disse, ele mora no segundo andar da estalagem, ï¿½ sï¿½ subir as escadas no outro quarto.";
+		mes "Acho que ele deve estar por lï¿½, agora. Por que vocï¿½ nï¿½o vai visitï¿½-lo pra ver do que eu estou falando? O cara ï¿½ um chato.";
 		close;
 }
 
-payon_in,95,181,1	script	Bêbado	120,{
-	mes "[Bêbado]";
-	if(Class == Job_Archer) mes "Ei, um Arqueiro... Anda matando muito monstro?! Haha... Você não deve nem matar uma barata... Quáquáquá!";
-	if(Class != Job_Archer) mes "Ei!... Ei! Sabe nu quiqueeu tava pensando? Se um desses Arqueiros idiotas consegue mirar depois de beber uma cachaça!? Quáquáquá!";
-	mes "Ei... Hã... Você pode me pagar uma rodada?";	
+payon_in01,95,181,1	script	Bï¿½bado	120,{
+	mes "[Bï¿½bado]";
+	if(Class == Job_Archer) mes "Ei, um Arqueiro... Anda matando muito monstro?! Haha... Vocï¿½ nï¿½o deve nem matar uma barata... Quï¿½quï¿½quï¿½!";
+	if(Class != Job_Archer) mes "Ei!... Ei! Sabe nu quiqueeu tava pensando? Se um desses Arqueiros idiotas consegue mirar depois de beber uma cachaï¿½a!? Quï¿½quï¿½quï¿½!";
+	mes "Ei... Hï¿½... Vocï¿½ pode me pagar uma rodada?";	
 		next;
-		menu "Só se você não beber demais.",M0," Não obrigado, amigão.",M1,"Nem pensar, cara!",M2;
+		menu "Sï¿½ se vocï¿½ nï¿½o beber demais.",M0," Nï¿½o obrigado, amigï¿½o.",M1,"Nem pensar, cara!",M2;
 
 	M0:
-		set Zeny,zeny-100;
-		mes "[Bêbado]";
-		mes "Opa! valeu, amigão! O Pessoal daqui já não é mais legal assim comigo ...sniff... Esses arqueirinhos aí, tudo mão de vaca, sacumé?!";
-		mes "Quáquáquá! ...Olha, eu não era assim na minha época, não!";
-		mes "Ra-paz! Eu era o terros das menininhas! Tem uma vovó daqui da cidade que era uma gatona, meu irmão! Eu e ela, ó! A gente era assim, assim! Quáquáquá!";
-		mes "Ela ainda acha que é novinha e tudo mais... Fica passando produto de pele e num sei que lá na cara, sabe? Essa gente que não sabe envelhecer com dignidade!";
+		set Zeny,Zeny-100;
+		mes "[Bï¿½bado]";
+		mes "Opa! valeu, amigï¿½o! O Pessoal daqui jï¿½ nï¿½o ï¿½ mais legal assim comigo ...sniff... Esses arqueirinhos aï¿½, tudo mï¿½o de vaca, sacumï¿½?!";
+		mes "Quï¿½quï¿½quï¿½! ...Olha, eu nï¿½o era assim na minha ï¿½poca, nï¿½o!";
+		mes "Ra-paz! Eu era o terros das menininhas! Tem uma vovï¿½ daqui da cidade que era uma gatona, meu irmï¿½o! Eu e ela, ï¿½! A gente era assim, assim! Quï¿½quï¿½quï¿½!";
+		mes "Ela ainda acha que ï¿½ novinha e tudo mais... Fica passando produto de pele e num sei que lï¿½ na cara, sabe? Essa gente que nï¿½o sabe envelhecer com dignidade!";
 		next;
-		mes "[Bêbado]";
-		mes "Glug, Glug... Rapaz! Essa bebida tá Ótchima! Valeu, culega! Brigadão, hein? Quáquáquá!";
+		mes "[Bï¿½bado]";
+		mes "Glug, Glug... Rapaz! Essa bebida tï¿½ ï¿½tchima! Valeu, culega! Brigadï¿½o, hein? Quï¿½quï¿½quï¿½!";
 		close;
 	M1:
-		mes "[Bêbado]";
-		mes "BÁ! Essa mulecada não tem respeito pelos mais velhos!";
-		mes "Então tá, cara! Não vou ficar implorando também, tá legal?!...";
+		mes "[Bï¿½bado]";
+		mes "Bï¿½! Essa mulecada nï¿½o tem respeito pelos mais velhos!";
+		mes "Entï¿½o tï¿½, cara! Nï¿½o vou ficar implorando tambï¿½m, tï¿½ legal?!...";
 		mes "(Droga).";
 		close;
 	M2:
-		mes "[Bêbado]";
-		mes "Hmmm, Tchudo bem, então. Eu não queria mesmo...";
+		mes "[Bï¿½bado]";
+		mes "Hmmm, Tchudo bem, entï¿½o. Eu nï¿½o queria mesmo...";
 		close;
 }
 
-payon_in,104,182,2	script	Garçonete	90,{
-	mes "[Moça do bar]";
-	mes "As pessoas por aqui estão sempre indo e vindo. Tornam-se Arqueiro, saem pelo mundo... E eu continuo aqui nesse barzinho sem graça...";
-	mes "Não consigo deixar de me sentir solitária... ou mesmo deprimida às vezes.";
+payon_in01,104,182,2	script	Garï¿½onete	90,{
+	mes "[Moï¿½a do bar]";
+	mes "As pessoas por aqui estï¿½o sempre indo e vindo. Tornam-se Arqueiro, saem pelo mundo... E eu continuo aqui nesse barzinho sem graï¿½a...";
+	mes "Nï¿½o consigo deixar de me sentir solitï¿½ria... ou mesmo deprimida ï¿½s vezes.";
  	next;
-	mes "[Moça do bar]";
-	mes "Todo santo dia, fazendo a mesma sopa de macarrão nojenta... E o cheiro disso não sai, fica impregnado no cabelo, nas roupas.";
-	mes "Entre isso e todo o serviço de limpeza e arrumação que eu tenho que fazer, pode apostar que eu já estou farta desse trabalho...";
+	mes "[Moï¿½a do bar]";
+	mes "Todo santo dia, fazendo a mesma sopa de macarrï¿½o nojenta... E o cheiro disso nï¿½o sai, fica impregnado no cabelo, nas roupas.";
+	mes "Entre isso e todo o serviï¿½o de limpeza e arrumaï¿½ï¿½o que eu tenho que fazer, pode apostar que eu jï¿½ estou farta desse trabalho...";
 	next;
-	mes "[Moça do bar]";
-	mes "Onde, meu Deus? Onde está um homem bonitão e rico pra me levar embora desse lugar?";
+	mes "[Moï¿½a do bar]";
+	mes "Onde, meu Deus? Onde estï¿½ um homem bonitï¿½o e rico pra me levar embora desse lugar?";
 	mes "(pisca um olho)";
 	next;
-	mes "[Moça do bar]";
-	mes "Minha avó, que é uma cartomante, me disse que eu me daria muito bem na vida, que eu ia ter uma sorte incrível!";
-	mes "Mas olhe pra mim, qual é o problema comigo afinal? Viver essa vidinha medíocre não vai me levar a lugar nenhum...";
-	mes "Ah droga... Que pessoa mas sem graça que eu sou.";
+	mes "[Moï¿½a do bar]";
+	mes "Minha avï¿½, que ï¿½ uma cartomante, me disse que eu me daria muito bem na vida, que eu ia ter uma sorte incrï¿½vel!";
+	mes "Mas olhe pra mim, qual ï¿½ o problema comigo afinal? Viver essa vidinha medï¿½ocre nï¿½o vai me levar a lugar nenhum...";
+	mes "Ah droga... Que pessoa mas sem graï¿½a que eu sou.";
 	next;
-	mes "[Moça do bar]";
-	mes "Mas, me desculpe, eu não devia ficar te incomodando com isso. Não vai resolver nada ficar reclamando.";
-	mes "Acho que eu só precisava desabafar um pouco, não é?";
+	mes "[Moï¿½a do bar]";
+	mes "Mas, me desculpe, eu nï¿½o devia ficar te incomodando com isso. Nï¿½o vai resolver nada ficar reclamando.";
+	mes "Acho que eu sï¿½ precisava desabafar um pouco, nï¿½o ï¿½?";
 	next;
-	mes "[Moça do bar]";
-	mes "Mas então, o que eu posso fazer por você?";
-	menu "Você já ouviu falar de zumbis?",L0,"Eu gostaria que sua vó lesse minha sorte.",L1,"Queo uma cerveja!",LEnd;
+	mes "[Moï¿½a do bar]";
+	mes "Mas entï¿½o, o que eu posso fazer por vocï¿½?";
+	menu "Vocï¿½ jï¿½ ouviu falar de zumbis?",L0,"Eu gostaria que sua vï¿½ lesse minha sorte.",L1,"Queo uma cerveja!",LEnd;
 
 	L0:
-		mes "[Moça do bar]";
-		mes "Bem, Zumbis são os mortos-vivos, criaturas Malditas que não fizeram a passagem para o outro mundo. Ouvi dizer que existem alguns aqui em Payon, na parte norte da Vila.";
-		mes "Ao que parece, que eles temem ataques Sagrados como magias dos Padres e flechas de prata. Portanto é bom lembrar disso se você tiver de enfrentar mortos-vivos.";
+		mes "[Moï¿½a do bar]";
+		mes "Bem, Zumbis sï¿½o os mortos-vivos, criaturas Malditas que nï¿½o fizeram a passagem para o outro mundo. Ouvi dizer que existem alguns aqui em Payon, na parte norte da Vila.";
+		mes "Ao que parece, que eles temem ataques Sagrados como magias dos Padres e flechas de prata. Portanto ï¿½ bom lembrar disso se vocï¿½ tiver de enfrentar mortos-vivos.";
 		next;
-		mes "[Moça do bar]";
-		mes "Uma lenda diz que o líder da aldeia matou seus próprios filhos com flechas de prata após terem se transforados em zumbis. Assim ele salvou suas almas e deixou que descansassem em paz.";
-		mes "É uma história forte eu sei... Mas é justo que os mortos-vivos possam descnsar afinal... Mesmo que seja dessa maneira.";
+		mes "[Moï¿½a do bar]";
+		mes "Uma lenda diz que o lï¿½der da aldeia matou seus prï¿½prios filhos com flechas de prata apï¿½s terem se transforados em zumbis. Assim ele salvou suas almas e deixou que descansassem em paz.";
+		mes "ï¿½ uma histï¿½ria forte eu sei... Mas ï¿½ justo que os mortos-vivos possam descnsar afinal... Mesmo que seja dessa maneira.";
 		next;
-		mes "[Moça do bar]";
-		mes "As nossas tradições sempre rezaram pelo respeito aos mortos... A falta de cuidado que tivemos por nossos cerimoniais mortuários no passado causou tudo isso...";
+		mes "[Moï¿½a do bar]";
+		mes "As nossas tradiï¿½ï¿½es sempre rezaram pelo respeito aos mortos... A falta de cuidado que tivemos por nossos cerimoniais mortuï¿½rios no passado causou tudo isso...";
 		next;
-		mes "[Moça do bar]";
-		mes "Os Zumbis pagam o preço pela negligência que tivemos com nossas tradições, fadados a caminhar nessa semi-morte... É muito triste...";
+		mes "[Moï¿½a do bar]";
+		mes "Os Zumbis pagam o preï¿½o pela negligï¿½ncia que tivemos com nossas tradiï¿½ï¿½es, fadados a caminhar nessa semi-morte... ï¿½ muito triste...";
 		goto qMes;
 	L1:
-		mes "[Moça do bar]";
-		mes "Ah! A vovó é mesmo uma pessoa extraordinária! Ela ia gostar de te conhecer. Infelizmente, ela não tem andado muito por aqui...";
+		mes "[Moï¿½a do bar]";
+		mes "Ah! A vovï¿½ ï¿½ mesmo uma pessoa extraordinï¿½ria! Ela ia gostar de te conhecer. Infelizmente, ela nï¿½o tem andado muito por aqui...";
 		next;
-		mes "[Moça do bar]";
-		mes "Antes ela ficava por aqui e lia a sorte dos visitantes e clientes. Só que depois que o chefe da cidade reconheceu o talento dela pra previsões ela fica no palácio no centro da cidade.";
-		mes "Se quiser, procure ela por lá.";
+		mes "[Moï¿½a do bar]";
+		mes "Antes ela ficava por aqui e lia a sorte dos visitantes e clientes. Sï¿½ que depois que o chefe da cidade reconheceu o talento dela pra previsï¿½es ela fica no palï¿½cio no centro da cidade.";
+		mes "Se quiser, procure ela por lï¿½.";
 		goto qMes;
 	L2:
-		mes "[Moça do bar]";
-		mes "Hehehehe. Me desculpe mas não temos mais cerveja, e ultimamente está difícil fazer bebidas alcóolicas por aqui.";
+		mes "[Moï¿½a do bar]";
+		mes "Hehehehe. Me desculpe mas nï¿½o temos mais cerveja, e ultimamente estï¿½ difï¿½cil fazer bebidas alcï¿½olicas por aqui.";
 		mes "Estamos com escassez de ingredientes deviado aos monstros agressivos em volta da cidade.";
 		next;
-		mes "[Moça do bar]";
-		mes "Então passe aqui um outro dia e quem sabe estaremos melhor estabelecidos.";
+		mes "[Moï¿½a do bar]";
+		mes "Entï¿½o passe aqui um outro dia e quem sabe estaremos melhor estabelecidos.";
 		next;
-		mes "[Moça do bar]";
+		mes "[Moï¿½a do bar]";
 		mes "Desculpe pelo incoveniente.";
 		goto qMes;
 
 		qMes:
 			next;
-			mes "[Moça do bar]";
+			mes "[Moï¿½a do bar]";
 			mes "Tenha um bom dia.";
 			mes "... Aah... Eu preciso mudar de vida...";
 			close;
 }
 
-payon_in,129,140,4	script	Guarda#pay03	105,{
+payon_in01,129,140,4	script	Guarda#pay03	105,{
 	mes "[Guarda]";
 	if (BaseLevel <= 30)
 	{
-		mes "Eieieiei! Você não pode entrar!";
-		mes "Já pra fora";
+		mes "Eieieiei! Vocï¿½ nï¿½o pode entrar!";
+		mes "Jï¿½ pra fora";
 	}
 	else
 	{
-		mes "Desculpe, mas sua entrada não é permitida.";
-		mes "Por favor, vá embora.";
+		mes "Desculpe, mas sua entrada nï¿½o ï¿½ permitida.";
+		mes "Por favor, vï¿½ embora.";
 	}
 	close;
 }
 
-payon_in,136,147,2	script	Chefe	120,1,1,{
+payon_in01,136,147,2	script	Chefe	120,1,1,{
 	OnTouch:
-	if(baselevel>30) goto OkLvl;
+	if(BaseLevel>30) goto OkLvl;
 	mes "[Guarda]";
 	mes "Eieieiei! Mostre seu respeito ao Chefe!";
 	close;
@@ -256,47 +256,47 @@ payon_in,136,147,2	script	Chefe	120,1,1,{
 			mes " Ei! Eu disse...";
 			next;
 			mes "[Chefe]";
-			mes "Tudo bem, não precisa fazer alarde guarda. Faz muito tempo desde que eu não converso com um desses jovens. Está tudo bem.";
+			mes "Tudo bem, nï¿½o precisa fazer alarde guarda. Faz muito tempo desde que eu nï¿½o converso com um desses jovens. Estï¿½ tudo bem.";
 			next;
-			menu "Por favor, conte-me sobre Payon.",Payon,"De onde vêm estes guardas?",Guards,"Por favor, conte-me sobre a caverna.",Cave,"Gostaria de saber mais sobre os Arqueiro.",Archer,"Gostaria de saber mais sobre os "+callfunc("otclassname",11,"P","M")+".",Hunter;
+			menu "Por favor, conte-me sobre Payon.",Payon,"De onde vï¿½m estes guardas?",Guards,"Por favor, conte-me sobre a caverna.",Cave,"Gostaria de saber mais sobre os Arqueiro.",Archer,"Gostaria de saber mais sobre os "+callfunc("otclassname",11,"P","M")+".",Hunter;
 		
 			Payon:
 				mes "[Chefe]";
-				mes "Payon é a cidade dos Arqueiro, e pela bravura e determinação de nosso povo, somos auto-suficientes e independentes de outras cidades.";
-				mes "Embora nossos ancestrais não levassem o intercâmbio cultural com outras cidades tão a sério, e nem aproveitassem os benefícios que isso poderia trazer, eles aprenderam a viver em independência econômica.";
-				mes "A força de nosso povo nos ensionou a viver com uma relação direta com a natureza, tirando dela apenas o necessário para viver e criar nossos filhos.";
-				mes "Nós somos um povo de homens e mulheres que aprenderam a caçar por necessidade. Os Arqueiro são a força dessa cidade, pois são a personificação dessa luta e vontade de sobreviver.";
+				mes "Payon ï¿½ a cidade dos Arqueiro, e pela bravura e determinaï¿½ï¿½o de nosso povo, somos auto-suficientes e independentes de outras cidades.";
+				mes "Embora nossos ancestrais nï¿½o levassem o intercï¿½mbio cultural com outras cidades tï¿½o a sï¿½rio, e nem aproveitassem os benefï¿½cios que isso poderia trazer, eles aprenderam a viver em independï¿½ncia econï¿½mica.";
+				mes "A forï¿½a de nosso povo nos ensionou a viver com uma relaï¿½ï¿½o direta com a natureza, tirando dela apenas o necessï¿½rio para viver e criar nossos filhos.";
+				mes "Nï¿½s somos um povo de homens e mulheres que aprenderam a caï¿½ar por necessidade. Os Arqueiro sï¿½o a forï¿½a dessa cidade, pois sï¿½o a personificaï¿½ï¿½o dessa luta e vontade de sobreviver.";
 				next;
 				mes "[Chefe]";
-				mes "Eu ouço jovens como você dizer que temem os campos ao redor da aldeia, ou as cavernas, por causa dos monstros que habitam esses lugares.";
-				mes "Para nós, combater essas criaturas é parte de nossas vidas e o que nos faz um povo unido e forte.";
-				mes "Penso que o nosso papel no reino de Midgard seja passar estes ensinamentos aos outros povos daqui. Ajudar a treinar fileiras de lutadores contra as criaturas que ameaçam nossa existência.";
-				mes "Nosso espírito de perseverança é algo que todos os homens deveriam entender e compartilhar.";
+				mes "Eu ouï¿½o jovens como vocï¿½ dizer que temem os campos ao redor da aldeia, ou as cavernas, por causa dos monstros que habitam esses lugares.";
+				mes "Para nï¿½s, combater essas criaturas ï¿½ parte de nossas vidas e o que nos faz um povo unido e forte.";
+				mes "Penso que o nosso papel no reino de Midgard seja passar estes ensinamentos aos outros povos daqui. Ajudar a treinar fileiras de lutadores contra as criaturas que ameaï¿½am nossa existï¿½ncia.";
+				mes "Nosso espï¿½rito de perseveranï¿½a ï¿½ algo que todos os homens deveriam entender e compartilhar.";
 				next;
 				goto Cansa;
-			Guard:
+			Guards:
 				mes "[Chefe]";
-				mes "Nos meus tempos de juventude, Prontera começou a mandar para cá diferentes oficiais e funcionários do reino de forma a estreitar as relações entre nós e o resto de Midgard";
-				mes "Tropas reais, moças da companhia Kafra, Guardas e oficiais... De início houve controvérsias e desentedimentos devido aos costumes diferentes e às exigências da metrópole.";
-				mes "No entando, é inegável que esse relacionamento ajudou muito no comércio com outras cidades e estimulou um grande crescimento em Payon. A vila tornou-se uma cidade de verdade.";
+				mes "Nos meus tempos de juventude, Prontera comeï¿½ou a mandar para cï¿½ diferentes oficiais e funcionï¿½rios do reino de forma a estreitar as relaï¿½ï¿½es entre nï¿½s e o resto de Midgard";
+				mes "Tropas reais, moï¿½as da companhia Kafra, Guardas e oficiais... De inï¿½cio houve controvï¿½rsias e desentedimentos devido aos costumes diferentes e ï¿½s exigï¿½ncias da metrï¿½pole.";
+				mes "No entando, ï¿½ inegï¿½vel que esse relacionamento ajudou muito no comï¿½rcio com outras cidades e estimulou um grande crescimento em Payon. A vila tornou-se uma cidade de verdade.";
 				next;
 				mes "[Chefe]";
-				mes "E agora vemos jovens vindos de fora encontrar seu lar aqui em Payon e abraçar nossos costumes e tradições... Nunca imaginei que isso pudesse acontecer. Hehe...";
-				mes "É algo que me deixa muito feliz...";
-				mes "Que pessoas de fora possam amar nossa pequena cidade assim como nós.";
+				mes "E agora vemos jovens vindos de fora encontrar seu lar aqui em Payon e abraï¿½ar nossos costumes e tradiï¿½ï¿½es... Nunca imaginei que isso pudesse acontecer. Hehe...";
+				mes "ï¿½ algo que me deixa muito feliz...";
+				mes "Que pessoas de fora possam amar nossa pequena cidade assim como nï¿½s.";
 				next;
 				goto Cansa;
 			Cave:
 				mes "[Chefe]";
-				mes "A caverna ao Norte foi um dos lugares onde passei minha juventude. Eu passava semanas lá dentro, treinando e treinando, disposto a me fortalecer e me tornar um grande herói.";
-				mes "Era um lugar mais ameaçador antigamente, na verdade. As criaturas eram mais ferozes e atacavam sem descanso.";
-				mes "Os monstros hoje são... diferentes daqueles de antigamente.";
+				mes "A caverna ao Norte foi um dos lugares onde passei minha juventude. Eu passava semanas lï¿½ dentro, treinando e treinando, disposto a me fortalecer e me tornar um grande herï¿½i.";
+				mes "Era um lugar mais ameaï¿½ador antigamente, na verdade. As criaturas eram mais ferozes e atacavam sem descanso.";
+				mes "Os monstros hoje sï¿½o... diferentes daqueles de antigamente.";
 				next;
 				mes "[Chefe]";
-				mes "Você já ouviu? Lamentos de rancor saindo de dentro da caverna... dos mortos em batalha... pessoas que entraram lá pra proteger a cidade e não saíram.";
+				mes "Vocï¿½ jï¿½ ouviu? Lamentos de rancor saindo de dentro da caverna... dos mortos em batalha... pessoas que entraram lï¿½ pra proteger a cidade e nï¿½o saï¿½ram.";
 				next;
 				mes "[Chefe]";
-				mes "Os mortos-vivos ainda fazem vítimas lá dentro... Mesmo crianças como você... ah... Estou velho demais para suportar essa dor... Velho demais...";
+				mes "Os mortos-vivos ainda fazem vï¿½timas lï¿½ dentro... Mesmo crianï¿½as como vocï¿½... ah... Estou velho demais para suportar essa dor... Velho demais...";
 				next;
 				mes "[Chefe]";
 				mes "Eu jurei que faria de tudo para deter os mortos... Tudo...";
@@ -305,41 +305,41 @@ payon_in,136,147,2	script	Chefe	120,1,1,{
 			Archer:
 				mes "[Chefe]";
 				mes "Das florestas em torno da cidade, podemos extrair bastante madeira.";
-				mes "Evidentemente, é um benefício natural à nossa classe de Arqueiro, tanto na fabricação de armas quanto no treinamento deles.";
+				mes "Evidentemente, ï¿½ um benefï¿½cio natural ï¿½ nossa classe de Arqueiro, tanto na fabricaï¿½ï¿½o de armas quanto no treinamento deles.";
 				next;
 				mes "[Chefe]";
 				mes "A floresta ajuda o Arqueiro a se esconder e se camuflar, e a atacar o alvo sem ser visto e sem se aproximar dele.";
-				mes "Os Arqueiro são fortes em Destreza, de forma a atacar seus inimigos incautos de uma longa distância e com força total.";
+				mes "Os Arqueiro sï¿½o fortes em Destreza, de forma a atacar seus inimigos incautos de uma longa distï¿½ncia e com forï¿½a total.";
 				next;
 				mes "[Chefe]";
-				mes "Aém disso, existe um benefício de caçar estes monstros da floresta... a maioria deles costuma deixar cair flechas quando mortos, que usamos contra eles próprios. Quando jovem, isso me salvou muitas vezes!";
+				mes "Aï¿½m disso, existe um benefï¿½cio de caï¿½ar estes monstros da floresta... a maioria deles costuma deixar cair flechas quando mortos, que usamos contra eles prï¿½prios. Quando jovem, isso me salvou muitas vezes!";
 				mes "Hahahahaha!";
 				next;
 				goto Cansa;
 			Hunter:
 				mes "[Chefe]";
-				mes "Com a abertura de Payon, para as outras culturas, nosso estilo de batalha sofreu algumas mudanças.";
-				mes "Certas tecnologias, como explosivos e outros mecanismos, foram introduzidas e adaptadas pelos mais jovens às técnicas de arco e flecha tradicionais, tornando-as mais letais e estratégicas.";
+				mes "Com a abertura de Payon, para as outras culturas, nosso estilo de batalha sofreu algumas mudanï¿½as.";
+				mes "Certas tecnologias, como explosivos e outros mecanismos, foram introduzidas e adaptadas pelos mais jovens ï¿½s tï¿½cnicas de arco e flecha tradicionais, tornando-as mais letais e estratï¿½gicas.";
 				next;
 				mes "[Chefe]";
-				mes "Armadilhas e outras habilidades, como o treinamento de falcões de ataque, facilitavam muito a caça dos monstros. Por isso, o antigo Chefe determinou a criação de uma nova classe para quem as utilizasse: os "+callfunc("otclassname",11,"P","M")+".";
-				mes "Por serem habilidades difíceis de serem aprendidas e também perigosas, espera-se que os jovens alcancem um certo n;ivel de habilidade antes de tornarem-se "+callfunc("otclassname",11,"P","M")+".";
+				mes "Armadilhas e outras habilidades, como o treinamento de falcï¿½es de ataque, facilitavam muito a caï¿½a dos monstros. Por isso, o antigo Chefe determinou a criaï¿½ï¿½o de uma nova classe para quem as utilizasse: os "+callfunc("otclassname",11,"P","M")+".";
+				mes "Por serem habilidades difï¿½ceis de serem aprendidas e tambï¿½m perigosas, espera-se que os jovens alcancem um certo n;ivel de habilidade antes de tornarem-se "+callfunc("otclassname",11,"P","M")+".";
 				next;
 				mes "[Chefe]";
-				mes "A classe dos "+callfunc("otclassname",11,"P","M")+" é a nata de nossos guerreiros e exigimos muito dos que desejam tornar-se um deles.";
+				mes "A classe dos "+callfunc("otclassname",11,"P","M")+" ï¿½ a nata de nossos guerreiros e exigimos muito dos que desejam tornar-se um deles.";
 				next;
 				goto Cansa;
 			Cansa:
 				mes "[Chefe]";
-				mes "Me desculpe... Estou cansado... É melhor que eu descanse um pouco.";
-				mes "Desejo o melhor para você.";
+				mes "Me desculpe... Estou cansado... ï¿½ melhor que eu descanse um pouco.";
+				mes "Desejo o melhor para vocï¿½.";
 				close;
 }
 
-payon_in,164,165,2	script	Lucien	98,{
+payon_in01,164,165,2	script	Lucien	98,{
 	mes "[Lucien]";
-	mes "Prazer em conhecê-lo, eu me chamo Lucien e sou o Organizador de Pesquisas de Monstros de Midgard.";
-	mes "Você gostaria de alguma informação?";
+	mes "Prazer em conhecï¿½-lo, eu me chamo Lucien e sou o Organizador de Pesquisas de Monstros de Midgard.";
+	mes "Vocï¿½ gostaria de alguma informaï¿½ï¿½o?";
 	next;
 	menu "Sobre Payon.",L0,"Sobre Monstros Malditos.",L1,"Sobre Pesquisas de Monstros.",L2;
 
@@ -349,47 +349,47 @@ payon_in,164,165,2	script	Lucien	98,{
 		mes "Isso pode dificultar muito a chegada da ajuda externa, no caso de um ataque a cidade.";
 		next;
 		mes "[Lucien]";
-		mes "Mas a cidade tem uma própria ameaça interna, que é a sua ao norte.";
-		mes "Nesta caverna existem vários tipos de monstros, todos muito interessantes para nós pesquisadores.";
+		mes "Mas a cidade tem uma prï¿½pria ameaï¿½a interna, que ï¿½ a sua ao norte.";
+		mes "Nesta caverna existem vï¿½rios tipos de monstros, todos muito interessantes para nï¿½s pesquisadores.";
 		close;
 	L1:
 		mes "[Lucien]";
-		mes "Os monstros do tipo Maldito são extremamente interessantes.";
-		mes "A maior parte dos que se encontram nesta cidade já foram algum dia habitantes da mesma.";
-		mes "De alguma maneira trágica, eles perderam suas vidas, e não conseguem encontrar o caminho para o Além.";
+		mes "Os monstros do tipo Maldito sï¿½o extremamente interessantes.";
+		mes "A maior parte dos que se encontram nesta cidade jï¿½ foram algum dia habitantes da mesma.";
+		mes "De alguma maneira trï¿½gica, eles perderam suas vidas, e nï¿½o conseguem encontrar o caminho para o Alï¿½m.";
 		next;
 		mes "[Lucien]";
 		mes "Exatamente por terem sido pessoas vivas eles despertam tanto interesse em nosso Rei.";
-		mes "Não é incrível que ele tenha um cuidado até mesmo com os súditos mortos?";
-		mes "Mas esse é o nosso Rei, sempre preocupado com o seu povo.";
+		mes "Nï¿½o ï¿½ incrï¿½vel que ele tenha um cuidado atï¿½ mesmo com os sï¿½ditos mortos?";
+		mes "Mas esse ï¿½ o nosso Rei, sempre preocupado com o seu povo.";
 		next;
 		mes "[Lucien]";
-		mes "É claro que estamos tentando descobrir como 'eliminar' estes mortos-vivos.";
-		mes "E poe 'eliminar' eu quero dizer, ajudá-los e encontrar o caminho para o Além.";
+		mes "ï¿½ claro que estamos tentando descobrir como 'eliminar' estes mortos-vivos.";
+		mes "E poe 'eliminar' eu quero dizer, ajudï¿½-los e encontrar o caminho para o Alï¿½m.";
 		next;
 		mes "[Lucien]";
 		mes "Eu espero algum dia descobrir como...";
 		close;
 	L2:
 		mes "[Lucien]";
-		mes "A Organização de Pesquisa de Monstros foi formada para descobrir um meio de nós livrarmos deles.";
+		mes "A Organizaï¿½ï¿½o de Pesquisa de Monstros foi formada para descobrir um meio de nï¿½s livrarmos deles.";
 		mes "Mentes brilhantes de todo o reino foram reunidas para este fim.";
 		next;
 		mes "[Lucien]";
-		mes "Não é tão fácil quanto parece, apesar de dedicarmos nossas vidas aos estudos, ainda não achamos uma solução.";
+		mes "Nï¿½o ï¿½ tï¿½o fï¿½cil quanto parece, apesar de dedicarmos nossas vidas aos estudos, ainda nï¿½o achamos uma soluï¿½ï¿½o.";
 		next;
 		mes "[Lucien]";
-		mes "Mas nunca nós damos por vencidos, pessoas demais já morreram por  causa desses monstros.";
-		mes "Não podemos permitir que isso continue!";
+		mes "Mas nunca nï¿½s damos por vencidos, pessoas demais jï¿½ morreram por  causa desses monstros.";
+		mes "Nï¿½o podemos permitir que isso continue!";
 		next;
 		mes "[Lucien";
 		mes "Oh, desculpe se levantei a minha voz...";
 		mes "Este assunto me emociona muito, me deixo levar facilmente.";
-		mes "Todos nós precisamos fazer algo pelo bem de nosso mundo.";
+		mes "Todos nï¿½s precisamos fazer algo pelo bem de nosso mundo.";
 		close;
 }
 
-payon_in,174,113,2	script	Marxhansen	86,{
+payon_in01,174,113,2	script	Marxhansen	86,{
 	if(MARIANNE==1) goto FJL0;
 	mes "[Marxhansen, o Mercador]";
 	mes "bem-vindo.";
@@ -398,30 +398,30 @@ payon_in,174,113,2	script	Marxhansen	86,{
 		
 	L0:
 		mes "[Marxhansen, o Mercador]";
-		mes "Quando os humanos ainda eram nômades, eles dependiam das frutas que achavam.";
+		mes "Quando os humanos ainda eram nï¿½mades, eles dependiam das frutas que achavam.";
 		mes "E com o tempo eles aprenderam a fazer sucos com elas, para mante-las por mais tempo.";
 		next;
 		mes "[Marxhansen, o Mercador]";
-		mes "Agora, temos garndes hortas, e podemos ter todas as frutas que gostaríamos.";
-		mes "Mas os sucos continuam a ser muito importantes, por conterem apenas o que é bom da fruta.";
-		mes "Nos sucos, você pode aproveitar um sabor muito mais concentrado.";
+		mes "Agora, temos garndes hortas, e podemos ter todas as frutas que gostarï¿½amos.";
+		mes "Mas os sucos continuam a ser muito importantes, por conterem apenas o que ï¿½ bom da fruta.";
+		mes "Nos sucos, vocï¿½ pode aproveitar um sabor muito mais concentrado.";
 		close;
 	L1:
 		mes "[Marxhansen, o Mercador]";
-		mes "Você veio até aqui por nada?";
+		mes "Vocï¿½ veio atï¿½ aqui por nada?";
 		close;
 
 	FJL0:
 		mes "[Marxhansen, o Mercador]";
-		mes "Bem vindo à minha loja. Você veio aqui preparar suco de frutas?";
+		mes "Bem vindo ï¿½ minha loja. Vocï¿½ veio aqui preparar suco de frutas?";
 		next;
-		menu "Sim.",FJL00,"Por favor, diga-me os requerimentos.",FJL01,"Não, eu não.",FJL02;
+		menu "Sim.",FJL00,"Por favor, diga-me os requerimentos.",FJL01,"Nï¿½o, eu nï¿½o.",FJL02;
 		
 		FJL00:
 			mes "[Marxhansen, o Mercador]";
 			mes "Qual tipo de suco de fruta deseja preparar?";
 			next;
-			menu "Suco de Maçã",L00,"Suco de Banana",L01,"Suco de Cenoura",L02,"Suco de Uva",L03,"Nenhum, obrigado.",LEnd;
+			menu "Suco de Maï¿½ï¿½",L00,"Suco de Banana",L01,"Suco de Cenoura",L02,"Suco de Uva",L03,"Nenhum, obrigado.",LEnd;
 
 			L00:
 				set @fruit,512;
@@ -450,39 +450,39 @@ payon_in,174,113,2	script	Marxhansen	86,{
 
 							noL00:
 								mes "[Marxhansen, o Mercador]";
-								mes "Ahh, como póde?! Você não tem todos os itens necessários...";
-								mes "Para fazer um Suco de Maçã você precisa de 1 Maçã e 1 Garrafa Vazia!";
-								mes "Não esqueça dos meus 3 zeny, o preço para um copo de Suco de Maçã.";
-								mes "Quando você tiver os ingredientes necessários, irei atende-lo melhor.";
+								mes "Ahh, como pï¿½de?! Vocï¿½ nï¿½o tem todos os itens necessï¿½rios...";
+								mes "Para fazer um Suco de Maï¿½ï¿½ vocï¿½ precisa de 1 Maï¿½ï¿½ e 1 Garrafa Vazia!";
+								mes "Nï¿½o esqueï¿½a dos meus 3 Zeny, o preï¿½o para um copo de Suco de Maï¿½ï¿½.";
+								mes "Quando vocï¿½ tiver os ingredientes necessï¿½rios, irei atende-lo melhor.";
 								close;
 							noL01:
 								mes "[Marxhansen, o Mercador]";
-								mes "Ahh, como póde?! Você não tem todos os itens necessários...";
-								mes "Para fazer um Suco de Banana você precisa de 1 Banana e 1 Garrafa Vazia!";
-								mes "Não esqueça dos meus 3 zeny, o preço para um copo de Suco de Banana.";
-								mes "Quando você tiver os ingredientes necessários, irei atende-lo melhor.";
+								mes "Ahh, como pï¿½de?! Vocï¿½ nï¿½o tem todos os itens necessï¿½rios...";
+								mes "Para fazer um Suco de Banana vocï¿½ precisa de 1 Banana e 1 Garrafa Vazia!";
+								mes "Nï¿½o esqueï¿½a dos meus 3 Zeny, o preï¿½o para um copo de Suco de Banana.";
+								mes "Quando vocï¿½ tiver os ingredientes necessï¿½rios, irei atende-lo melhor.";
 								close;
 							noL02:
 								mes "[Marxhansen, o Mercador]";
-								mes "Ahh, como póde?! Você não tem todos os itens necessários...";
-								mes "Para fazer um Suco de Cenoura você precisa de 1 Cenoura e 1 Garrafa Vazia!";
-								mes "Não esqueça dos meus 3 zeny, o preço para um copo de Suco de Cenoura.";
-								mes "Quando você tiver os ingredientes necessários, irei atende-lo melhor.";
+								mes "Ahh, como pï¿½de?! Vocï¿½ nï¿½o tem todos os itens necessï¿½rios...";
+								mes "Para fazer um Suco de Cenoura vocï¿½ precisa de 1 Cenoura e 1 Garrafa Vazia!";
+								mes "Nï¿½o esqueï¿½a dos meus 3 Zeny, o preï¿½o para um copo de Suco de Cenoura.";
+								mes "Quando vocï¿½ tiver os ingredientes necessï¿½rios, irei atende-lo melhor.";
 								close;
 							noL03:
 								mes "[Marxhansen, o Mercador]";
-								mes "Ahh, como póde?! Você não tem todos os itens necessários...";
-								mes "Para fazer um Suco de Uva você precisa de 1 Uva e 1 Garrafa Vazia!";
-								mes "Não esqueça dos meus 3 zeny, o preço para um copo de Suco de Uva.";
-								mes "Quando você tiver os ingredientes necessários, irei atende-lo melhor.";
+								mes "Ahh, como pï¿½de?! Vocï¿½ nï¿½o tem todos os itens necessï¿½rios...";
+								mes "Para fazer um Suco de Uva vocï¿½ precisa de 1 Uva e 1 Garrafa Vazia!";
+								mes "Nï¿½o esqueï¿½a dos meus 3 Zeny, o preï¿½o para um copo de Suco de Uva.";
+								mes "Quando vocï¿½ tiver os ingredientes necessï¿½rios, irei atende-lo melhor.";
 								close;
 				L000z:
 				mes "[Marxhansen, o Mercador]";
-				mes "Quantos? Você precisa...";
+				mes "Quantos? Vocï¿½ precisa...";
 				next;
-				menu "Hmm, deixe-me colocar a quantidade",Lget,"Argh, esqueça!",L00c;
+				menu "Hmm, deixe-me colocar a quantidade",Lget,"Argh, esqueï¿½a!",L00c;
 				Lget:
-					digit @input;
+					input @input;
 					if(@input > 0) goto Linp;
 					mes "[Marxhansen, o Mercador]";
 					mes "Deal canceled.";
@@ -492,14 +492,14 @@ payon_in,174,113,2	script	Marxhansen	86,{
 						if((countitem(@fruit)<@input) || (countitem(713)<@input) || (Zeny<3*@input)) goto Ltomuch;
 						delitem @fruit,@input;
 						delitem 713,@input;
-						set Zeny,zeny-3*@input;
+						set Zeny,Zeny-3*@input;
 						getitem @juice,@input;
 						goto GotMsg;
 						
 
 						Ltomuch:
 							mes "[Marxhansen, o Mercador]";
-							mes "Você não tem as garrafas necessárias ou as frutas para fazer o suco.";
+							mes "Vocï¿½ nï¿½o tem as garrafas necessï¿½rias ou as frutas para fazer o suco.";
 							close;
 						GotMsg:
 							mes "[Marxhansen, o Mercador]";
@@ -511,100 +511,100 @@ payon_in,174,113,2	script	Marxhansen	86,{
 			LEnd:
 				mes "[Marxhansen, o Mercador]";
 				mes "Ohh! Mas porque isso rapaz?";
-				mes "Sucos são ótimos! Fazem um bem danado.";
-				mes "Mas não vou obrigá-lo a tomar, vejo você quando tiver juízo...";
+				mes "Sucos sï¿½o ï¿½timos! Fazem um bem danado.";
+				mes "Mas nï¿½o vou obrigï¿½-lo a tomar, vejo vocï¿½ quando tiver juï¿½zo...";
 				close;
 		FJL01:
 			mes "[Marxhansen, o Mercador]";
-			mes "Quando os humanos ainda eram nômades, eles dependiam das frutas que achavam.";
+			mes "Quando os humanos ainda eram nï¿½mades, eles dependiam das frutas que achavam.";
 			mes "E com o tempo eles aprenderam a fazer sucos com elas, para mante-las por mais tempo.";
 			next;
 			mes "[Marxhansen, o Mercador]";
-			mes "Agora, temos garndes hortas, e podemos ter todas as frutas que gostaríamos.";
-			mes "Mas os sucos continuam a ser muito importantes, por conterem apenas o que é bom da fruta.";
-			mes "Nos sucos, você pode aproveitar um sabor muito mais concentrado.";
+			mes "Agora, temos garndes hortas, e podemos ter todas as frutas que gostarï¿½amos.";
+			mes "Mas os sucos continuam a ser muito importantes, por conterem apenas o que ï¿½ bom da fruta.";
+			mes "Nos sucos, vocï¿½ pode aproveitar um sabor muito mais concentrado.";
 			next;
-			mes "# Informações para fazer um Suco de Fruta #";
-			mes "Suco de Maçã - Maçã x 1, Garrafa Vazia x 1, 3 zeny.";
-			mes "Suco de Banana - Banana x 1, Garrafa Vazia x 1, 3 zeny.";
-			mes "Suco de Cenoura - Cenoura x 1, Garrafa Vazia x 1, 3 zeny.";
-			mes "Suco de Uva - Uva x 1, Garrafa Vazia x 1, 3 zeny.";
+			mes "# Informaï¿½ï¿½es para fazer um Suco de Fruta #";
+			mes "Suco de Maï¿½ï¿½ - Maï¿½ï¿½ x 1, Garrafa Vazia x 1, 3 Zeny.";
+			mes "Suco de Banana - Banana x 1, Garrafa Vazia x 1, 3 Zeny.";
+			mes "Suco de Cenoura - Cenoura x 1, Garrafa Vazia x 1, 3 Zeny.";
+			mes "Suco de Uva - Uva x 1, Garrafa Vazia x 1, 3 Zeny.";
 			close;
 		FJL02:
 			close;
 }
 
-payon_in,176,176,2	script	Markiv, o Arqueiro	88,{
+payon_in01,176,176,2	script	Markiv, o Arqueiro	88,{
 	mes "[Markiv, o Arqueiro]";
-	mes "Um Arqueiro deve sempre praticar, praticar e praticar! É a única maneira de se tornar um campeão!";
-	mes "Você é novo por aqui? Olá!";
+	mes "Um Arqueiro deve sempre praticar, praticar e praticar! ï¿½ a ï¿½nica maneira de se tornar um campeï¿½o!";
+	mes "Vocï¿½ ï¿½ novo por aqui? Olï¿½!";
 	next;
 	mes "[Markiv, o Arqueiro]";
-	mes "Eu sou Markiv, o Arqueiro. Pode me chamar só de Markiv.";
-	mes "Eu sei que é uma pergunta meio nada a ver, mas você é preguiçoso?";
+	mes "Eu sou Markiv, o Arqueiro. Pode me chamar sï¿½ de Markiv.";
+	mes "Eu sei que ï¿½ uma pergunta meio nada a ver, mas vocï¿½ ï¿½ preguiï¿½oso?";
 	next;
-	menu "Claro que não.",L0,"Acho que sim.",L1;
+	menu "Claro que nï¿½o.",L0,"Acho que sim.",L1;
 
 	L0:
 		mes "[Markiv, o Arqueiro]";
-		mes "Hmm... Não? Então você nasceu para ser um Arqueiro.";
-		mes "Nós Arqueiros não devemos nunca ser preguiçosos e deixar de praticar.";
-		mes "Por isso, costumamos não gostar de gente que não se esforça na vida.";
+		mes "Hmm... Nï¿½o? Entï¿½o vocï¿½ nasceu para ser um Arqueiro.";
+		mes "Nï¿½s Arqueiros nï¿½o devemos nunca ser preguiï¿½osos e deixar de praticar.";
+		mes "Por isso, costumamos nï¿½o gostar de gente que nï¿½o se esforï¿½a na vida.";
 		next;
 		mes "[Markiv, o Arqueiro]";
-		mes "Como nós treinamos? Bem, por aqui não ficamos praticando com bonecos ou outras frescuras. Não senhor!";
-		mes "'Treinar' aqui em Payon significa lutar! Batalhas reais! Arco e flecha na mão e mãos à obra!";
-		mes "É assim que é aqui, cara!";
+		mes "Como nï¿½s treinamos? Bem, por aqui nï¿½o ficamos praticando com bonecos ou outras frescuras. Nï¿½o senhor!";
+		mes "'Treinar' aqui em Payon significa lutar! Batalhas reais! Arco e flecha na mï¿½o e mï¿½os ï¿½ obra!";
+		mes "ï¿½ assim que ï¿½ aqui, cara!";
 		next;
-		menu "Você deve precisar de um bom arco pra isso.",L00,"Bem, eu não sou muito de praticar...",L01;
+		menu "Vocï¿½ deve precisar de um bom arco pra isso.",L00,"Bem, eu nï¿½o sou muito de praticar...",L01;
 
 		L00:
 			mes "[Markiv, o Arqueiro]";
-			mes "Claro que sim! O arco é a essência de nossa classe, oras!";
-			mes "Os arcos de Payon são os melhores do reino! Leves e esguios, feitos das melhores madeiras desta floresta!";
-			mes "Evidentemente, a qualidade da madeira determina a qualidade do arco. Essa belezinha aqui é feita de mandeira de castanheira, feita pra durar por anos a fio, sem perder a força ou a tensão da corda.";
-			mes "Além disso é decorado em ébano, dando aquele estilo que faz a diferença!";
+			mes "Claro que sim! O arco ï¿½ a essï¿½ncia de nossa classe, oras!";
+			mes "Os arcos de Payon sï¿½o os melhores do reino! Leves e esguios, feitos das melhores madeiras desta floresta!";
+			mes "Evidentemente, a qualidade da madeira determina a qualidade do arco. Essa belezinha aqui ï¿½ feita de mandeira de castanheira, feita pra durar por anos a fio, sem perder a forï¿½a ou a tensï¿½o da corda.";
+			mes "Alï¿½m disso ï¿½ decorado em ï¿½bano, dando aquele estilo que faz a diferenï¿½a!";
 			next;
 			mes "[Markiv, o Arqueiro]";
-			mes "A floresta de Payon é famosa pela qualidade de suas madeiras. Mesmo agora que algumas árvores transformaram-se em monstros horríveis...";
-			mes "...Árvores que costumavam ser tão bela e imponentes...";
-			mes "... Mesmo agora, nesta forma amaldiçoada, elas ainda nos dão madeira de ótima qualidade! Dos itens que caem delas, podemos fazer ótimos arcos!";
+			mes "A floresta de Payon ï¿½ famosa pela qualidade de suas madeiras. Mesmo agora que algumas ï¿½rvores transformaram-se em monstros horrï¿½veis...";
+			mes "...ï¿½rvores que costumavam ser tï¿½o bela e imponentes...";
+			mes "... Mesmo agora, nesta forma amaldiï¿½oada, elas ainda nos dï¿½o madeira de ï¿½tima qualidade! Dos itens que caem delas, podemos fazer ï¿½timos arcos!";
 			next;
-			menu "Então as coisas vão bem por aqui, heim?",L000,"",L001;
+			menu "Entï¿½o as coisas vï¿½o bem por aqui, heim?",L000,"",L001;
 
 			L000:
 				mes "[Markiv, o Arqueiro]";
-				mes "Não exatamente, porque não é só nas florestas que existem monstros. Ou você não sabe que dentro da cidade temos monstros também?";
-				mes "Indo para o Norte, você encontrará uma caverna. Dentro dela, existem monstros assustadores que aparecem do chão, sem avisos! Zumbis e todo o tipo de criaturas Amaldiçoadas!";
-				mes "Estamos aqui em nome da vila e de nosso Chefe, protegendo nosso território destes demônios.";
+				mes "Nï¿½o exatamente, porque nï¿½o ï¿½ sï¿½ nas florestas que existem monstros. Ou vocï¿½ nï¿½o sabe que dentro da cidade temos monstros tambï¿½m?";
+				mes "Indo para o Norte, vocï¿½ encontrarï¿½ uma caverna. Dentro dela, existem monstros assustadores que aparecem do chï¿½o, sem avisos! Zumbis e todo o tipo de criaturas Amaldiï¿½oadas!";
+				mes "Estamos aqui em nome da vila e de nosso Chefe, protegendo nosso territï¿½rio destes demï¿½nios.";
 				next;
 				menu "Ca-caverna?!",L000a,"Chefe?",L000b,"Cara, eu odeio esta cidade...",L000c;
 
 				L000a:
 					mes "[Markiv, o Arqueiro]";
-					mes "Indo para o Norte até o próximo mapa você verá a caverna de que falei.";
-					mes "Lá dentro existem monstros de todo o tipo, Morcegos, Zumbis e até Esqueletos Arqueiro!";
-					mes "Se ninguém os enfrentar e deixá-los à solta, eles logo invadirão a cidade. Por isso freqüentemente, aventureiros vão à caverna 'controlar' o número de monstros.";
+					mes "Indo para o Norte atï¿½ o prï¿½ximo mapa vocï¿½ verï¿½ a caverna de que falei.";
+					mes "Lï¿½ dentro existem monstros de todo o tipo, Morcegos, Zumbis e atï¿½ Esqueletos Arqueiro!";
+					mes "Se ninguï¿½m os enfrentar e deixï¿½-los ï¿½ solta, eles logo invadirï¿½o a cidade. Por isso freqï¿½entemente, aventureiros vï¿½o ï¿½ caverna 'controlar' o nï¿½mero de monstros.";
 					mes "Hehehe.";
 					next;
 					mes "[Markiv, o Arqueiro]";
-					mes "Ainda assim, eles se reproduzem sem para, como que saídos do chão!";
+					mes "Ainda assim, eles se reproduzem sem para, como que saï¿½dos do chï¿½o!";
 					mes "Parece uma pedra de tempo e talvez seja, mas precisamos impedir que nossa cidade seja prejudicada.";
-					mes "Bom, já chega, vamos parar de falar besteira. Até eu não aguento mais falar!";
-					mes "Até mais, tenho mais o que fazer.";
+					mes "Bom, jï¿½ chega, vamos parar de falar besteira. Atï¿½ eu nï¿½o aguento mais falar!";
+					mes "Atï¿½ mais, tenho mais o que fazer.";
 					close;
 
 				L000b:
 					mes "[Markiv, o Arqueiro]";
-					mes "O Chefe da Cidade? Ah, ele é um cara extraordinário. Bem, é verdade que ele me enche o saco por eu 'falar demais' e não sei mais o quê, mas...";
-					mes "Ele sempre leva em conta o bem-estar de nosso povo, muito embora hoje ele raramente saia de seu palácio.";
-					mes "É reconfortante saber que um grande homem como ele zela por nosso bem-estar.";
+					mes "O Chefe da Cidade? Ah, ele ï¿½ um cara extraordinï¿½rio. Bem, ï¿½ verdade que ele me enche o saco por eu 'falar demais' e nï¿½o sei mais o quï¿½, mas...";
+					mes "Ele sempre leva em conta o bem-estar de nosso povo, muito embora hoje ele raramente saia de seu palï¿½cio.";
+					mes "ï¿½ reconfortante saber que um grande homem como ele zela por nosso bem-estar.";
 					next;
 					mes "[Markiv, o Arqueiro]";
 					mes "Heheheh. Eu vou me encrencar se ele souber que eu disse isso a um estranho...";
-					mes "Como agora eu já falei, tanto faz não é mesmo?!";
+					mes "Como agora eu jï¿½ falei, tanto faz nï¿½o ï¿½ mesmo?!";
 					mes "Hmmm... Eu e minha boca grande...";
-					mes "Bem, até mais, cara!";
+					mes "Bem, atï¿½ mais, cara!";
 					close;
 				
 				L000c:
@@ -612,62 +612,62 @@ payon_in,176,176,2	script	Markiv, o Arqueiro	88,{
 
 			L001:
 				mes "[Markiv, o Arqueiro]";
-				mes "Hmmm... Não? Você deveria, viu?";
-				mes "Nós, Arqueiro, temos orgulho de sempre praticar e praticar.";
-				mes "Por isso, não gostamos de gente que não se esforça.";
+				mes "Hmmm... Nï¿½o? Vocï¿½ deveria, viu?";
+				mes "Nï¿½s, Arqueiro, temos orgulho de sempre praticar e praticar.";
+				mes "Por isso, nï¿½o gostamos de gente que nï¿½o se esforï¿½a.";
 				next;
 				mes "[Markiv, o Arqueiro]";
-				mes "Aposto que você já se cansou de me ouvir repetir isso, né?";
-				mes "Confie em mim, praticar é tudo!";
-				mes "É a vida de um Arqueiro!";
+				mes "Aposto que vocï¿½ jï¿½ se cansou de me ouvir repetir isso, nï¿½?";
+				mes "Confie em mim, praticar ï¿½ tudo!";
+				mes "ï¿½ a vida de um Arqueiro!";
 				close;
 		L01:
 			mes "[Markiv, o Arqueiro]";
-			mes "Hmmm... às vezes é bom descansar um pouco, eu acho.";
-			mes "Se divertir é sempre bom, não é mesmo?";
+			mes "Hmmm... ï¿½s vezes ï¿½ bom descansar um pouco, eu acho.";
+			mes "Se divertir ï¿½ sempre bom, nï¿½o ï¿½ mesmo?";
 			next;
-			menu "Como assim, 'é bom descancar'?",L010,"Mas e o treinamento?",L011,"...Ah, a gente se vê por aí...",L012;
+			menu "Como assim, 'ï¿½ bom descancar'?",L010,"Mas e o treinamento?",L011,"...Ah, a gente se vï¿½ por aï¿½...",L012;
 
 			L010:
 				mes "[Markiv, o Arqueiro]";
-				mes "Ei, peraí! É bom se você não deixar de praticar, entendeu? Nosso Chefe te diria a mesma coisa, ele passava semanas matando monstros sem parar... Afinal, sem treino você vai acabar virando um cara como o Bêbado lá embaixo!. Hahaha!";
+				mes "Ei, peraï¿½! ï¿½ bom se vocï¿½ nï¿½o deixar de praticar, entendeu? Nosso Chefe te diria a mesma coisa, ele passava semanas matando monstros sem parar... Afinal, sem treino vocï¿½ vai acabar virando um cara como o Bï¿½bado lï¿½ embaixo!. Hahaha!";
 				next;
-				menu "Chefe?",L010a,"Bêbado?",L010b,"Não tem graça.",L010c;
+				menu "Chefe?",L010a,"Bï¿½bado?",L010b,"Nï¿½o tem graï¿½a.",L010c;
 			
 				L010a:
 					mes "[Markiv, o Arqueiro]";
-					mes "O Chefe da Cidade? Ah, ele é um cara extraordinário. Bem, é verdade que ele me enche o saco por eu 'falar demais' e não sei mais o quê, mas...";
-					mes "Ele sempre leva em conta o bem-estar de nosso povo, muito embora hoje ele raramente saia de seu palácio.";
-					mes "É reconfortante saber que um grande homem como ele zela por nosso bem-estar.";
+					mes "O Chefe da Cidade? Ah, ele ï¿½ um cara extraordinï¿½rio. Bem, ï¿½ verdade que ele me enche o saco por eu 'falar demais' e nï¿½o sei mais o quï¿½, mas...";
+					mes "Ele sempre leva em conta o bem-estar de nosso povo, muito embora hoje ele raramente saia de seu palï¿½cio.";
+					mes "ï¿½ reconfortante saber que um grande homem como ele zela por nosso bem-estar.";
 					next;
 					mes "[Markiv, o Arqueiro]";
 					mes "Heheheh. Eu vou me encrencar se ele souber que eu disse isso a um estranho...";
-					mes "Como agora eu já falei, tanto faz não é mesmo?!";
+					mes "Como agora eu jï¿½ falei, tanto faz nï¿½o ï¿½ mesmo?!";
 					mes "Hmmm... Eu e minha boca grande...";
-					mes "Bem, até mais, cara!";
+					mes "Bem, atï¿½ mais, cara!";
 					close;
 				L010b:
 					mes "[Markiv, o Arqueiro]";
-					mes "Você sabe, aquele cara no bar alí embaixo. Quando eu tenho uma grana sobrando eu compro algo pra ele beber, embora eu me preocupe com o problema de bebida dele.";
-					mes "Afinal, ele é um dos meus vizinhos da aldeia, não gostaria de vê-lo morrer de cirrose, certo?";
+					mes "Vocï¿½ sabe, aquele cara no bar alï¿½ embaixo. Quando eu tenho uma grana sobrando eu compro algo pra ele beber, embora eu me preocupe com o problema de bebida dele.";
+					mes "Afinal, ele ï¿½ um dos meus vizinhos da aldeia, nï¿½o gostaria de vï¿½-lo morrer de cirrose, certo?";
 					mes "Hmm... Isso me lembra uma cervejinha...";
-					mes "Acho que vou descer até o bar! Até mais, cara!";
+					mes "Acho que vou descer atï¿½ o bar! Atï¿½ mais, cara!";
 					close;
 				L010c:
 					mes "[Markiv, o Arqueiro]";
-					mes "Ah, você não tem mesmo senso de humor.";
+					mes "Ah, vocï¿½ nï¿½o tem mesmo senso de humor.";
 					close;
 
 			L011:
 				mes "[Markiv, o Arqueiro]";
-				mes "Treinar é o que é mais importante na vida, cara!";
-				mes "Nós, Arqueiro, temos orgulho de sempre praticar e praticar.";
-				mes "Por isso nao gostamos de pessoas que não se esforçam.";
+				mes "Treinar ï¿½ o que ï¿½ mais importante na vida, cara!";
+				mes "Nï¿½s, Arqueiro, temos orgulho de sempre praticar e praticar.";
+				mes "Por isso nao gostamos de pessoas que nï¿½o se esforï¿½am.";
 				next;
 				mes "[Markiv, o Arqueiro]";
-				mes "É impressionante que até um cara folgado como eu possa se motivar e ser um Arqueiro!";
-				mes "A vida é demais mesmo, não é?";
-				mes "Então aproveite-a ao máximo, cara!";			
+				mes "ï¿½ impressionante que atï¿½ um cara folgado como eu possa se motivar e ser um Arqueiro!";
+				mes "A vida ï¿½ demais mesmo, nï¿½o ï¿½?";
+				mes "Entï¿½o aproveite-a ao mï¿½ximo, cara!";			
 				close;
 			
 			L012:
@@ -678,107 +678,107 @@ payon_in,176,176,2	script	Markiv, o Arqueiro	88,{
 
 payon,29,116,6	script	Um Jovem	88,{
 	mes "[Um Jovem]";
-	mes "Eu ainda lembro da história que meu avô, que os Deuses o tenham.";
+	mes "Eu ainda lembro da histï¿½ria que meu avï¿½, que os Deuses o tenham.";
 	mes "Ele dizia que existe um amuleto com o poder de dar vida nova aos mortos";
-	mes "Se é verdade ou não, isso eu não posso lhe dizer. Mas eu gostaria de saber o que aconteceria se eu o usasse para tirar meu avô do mundo dos mortos...";
+	mes "Se ï¿½ verdade ou nï¿½o, isso eu nï¿½o posso lhe dizer. Mas eu gostaria de saber o que aconteceria se eu o usasse para tirar meu avï¿½ do mundo dos mortos...";
 	close;
 }
 
 payon,163,139,6	script	Mocinha	90,{
 	mes "[Mocinha]";
 	emotion 0;
-	mes "A muito tempo atrás, quando essa cidade foi fundada, foi muito dificil de se estabelecer aqui.";
-	mes "Por isso nossos ancestrais não tinham recursos para enterrar os mortos de acordo com os rituais sagrados ou fazer-lhes oferendas na morte."; 
+	mes "A muito tempo atrï¿½s, quando essa cidade foi fundada, foi muito dificil de se estabelecer aqui.";
+	mes "Por isso nossos ancestrais nï¿½o tinham recursos para enterrar os mortos de acordo com os rituais sagrados ou fazer-lhes oferendas na morte."; 
 	mes "As pessoas jogavam os corpos de seus familiares na caverna que atualmente fica perto da vila.";
-	mes "Não sei se foi o desrespeito aos mortos e aos rituais sagrados ou alguma maldição daquelas cavernas, mas hoje estes mortos que não acharam seu caminho para Nifl-heim continuam caminhando lá dentro...";
+	mes "Nï¿½o sei se foi o desrespeito aos mortos e aos rituais sagrados ou alguma maldiï¿½ï¿½o daquelas cavernas, mas hoje estes mortos que nï¿½o acharam seu caminho para Nifl-heim continuam caminhando lï¿½ dentro...";
 	next;
 	mes "[Mocinha]";
 	mes "Zumbis comedores de carne humana...";
-	mes "Assustador, não é?";
+	mes "Assustador, nï¿½o ï¿½?";
 	close;
 }
 
 payon,163,142,5	script	Mulher#pay01	66,{
-	mes "[Mãe do João]";
-	mes "Ai meu Deus... Não dê ouvidos a ela, ok? Essa aí é fofoqueira de mão cheia, viu?";
-	mes "E por favor, não pense que todo mundo na vila é que nem ela, tá?";
-	mes "Quer dizer, seria uma péssima impressão da nossa cidade achar que todo mundo é tonto e acredita em cartomantes, né?";
-	mes "mas olha só pra você, acho que nunca te vi por aqui antes, hein?";
+	mes "[Mï¿½e do Joï¿½o]";
+	mes "Ai meu Deus... Nï¿½o dï¿½ ouvidos a ela, ok? Essa aï¿½ ï¿½ fofoqueira de mï¿½o cheia, viu?";
+	mes "E por favor, nï¿½o pense que todo mundo na vila ï¿½ que nem ela, tï¿½?";
+	mes "Quer dizer, seria uma pï¿½ssima impressï¿½o da nossa cidade achar que todo mundo ï¿½ tonto e acredita em cartomantes, nï¿½?";
+	mes "mas olha sï¿½ pra vocï¿½, acho que nunca te vi por aqui antes, hein?";
 	next;
-	mes "[Mãe do João]";
-	mes "Oh, mas você tem ou não os ombros mais largos que eu já vi, rapaz?";
+	mes "[Mï¿½e do Joï¿½o]";
+	mes "Oh, mas vocï¿½ tem ou nï¿½o os ombros mais largos que eu jï¿½ vi, rapaz?";
 	mes "Hohoho! Quer sair comigo?";
-	mes "Aposto que você me deixaria te pagar um belo jantar, hein?";
+	mes "Aposto que vocï¿½ me deixaria te pagar um belo jantar, hein?";
 	next;
-	menu "Que Cartomantes?",L0,"...Hã...Tchau.",L1;
+	menu "Que Cartomantes?",L0,"...Hï¿½...Tchau.",L1;
 
 	L0:
-		mes "[Mãe do João]";
-		mes "Cartomantes, ué? Nunca ouviu falar?";
-		mes "Tem uma íncrivel no palácio da cidade, sabe?";
-		mes "Quanto mais você pagar pra ela, mais precisa vai ser a previsão";
+		mes "[Mï¿½e do Joï¿½o]";
+		mes "Cartomantes, uï¿½? Nunca ouviu falar?";
+		mes "Tem uma ï¿½ncrivel no palï¿½cio da cidade, sabe?";
+		mes "Quanto mais vocï¿½ pagar pra ela, mais precisa vai ser a previsï¿½o";
 		next;
-		mes "[Mãe do João]";
-		mes "Olha, ela me disse que eu ia encontrar um rapagão lindo de fora da cidade, sabe?... Que tal, hein?";
+		mes "[Mï¿½e do Joï¿½o]";
+		mes "Olha, ela me disse que eu ia encontrar um rapagï¿½o lindo de fora da cidade, sabe?... Que tal, hein?";
 		mes "Hohohohoho!";
 		close;
 	L1:
-		mes "[Mãe do João]";
-		mes "Hmmm. Porque você não fica mais um pouco e joga conversa fora comigo, hein?";
+		mes "[Mï¿½e do Joï¿½o]";
+		mes "Hmmm. Porque vocï¿½ nï¿½o fica mais um pouco e joga conversa fora comigo, hein?";
 		close;
 }
 
 
 payon,166,140,3	script	Mulher#pay02	66,{
 	mes "[Mulher]";
-	mes "Bem-vindo à Payon. acho que deve ter sido difícil cruzar a floresta para chegar aqui, hein? Como foi sua viagem?";
-	mes "O número de visitantes diminui a cada ano, por cauda dos monstros que andam pelas florestas. A cidade vai ficando cada vez mais queta e vazia com o tempo.";
-	mes "Logo não tem muito o que fazer por aqui, a gente acaba passando o dia jogando conversa fora. Hehehe.";
+	mes "Bem-vindo ï¿½ Payon. acho que deve ter sido difï¿½cil cruzar a floresta para chegar aqui, hein? Como foi sua viagem?";
+	mes "O nï¿½mero de visitantes diminui a cada ano, por cauda dos monstros que andam pelas florestas. A cidade vai ficando cada vez mais queta e vazia com o tempo.";
+	mes "Logo nï¿½o tem muito o que fazer por aqui, a gente acaba passando o dia jogando conversa fora. Hehehe.";
 	next;
 	mes "[Mulher]";
-	mes "Mas pra falar a verdade, esse negócio dos monstros não é brincadeira...";
-	if(sex==1) mes "Moço, você parece forte como um Roqueiro! Quantos monstros você já matou?";
-	if(sex==0) mes "Senhorita, você é linda e parece ter muita garra! Quantos monstros você ja matou?";	
-	mes "Quer uma dica de um bom lugar para caçar?";
+	mes "Mas pra falar a verdade, esse negï¿½cio dos monstros nï¿½o ï¿½ brincadeira...";
+	if(Sex==1) mes "Moï¿½o, vocï¿½ parece forte como um Roqueiro! Quantos monstros vocï¿½ jï¿½ matou?";
+	if(Sex==0) mes "Senhorita, vocï¿½ ï¿½ linda e parece ter muita garra! Quantos monstros vocï¿½ ja matou?";	
+	mes "Quer uma dica de um bom lugar para caï¿½ar?";
 	next;
-	menu "Não sei, parece perigoso.",L0,"Acho que é bom eu me preparar melhor.",L1,"Dona, que bela roupa essa sua!",L2;
+	menu "Nï¿½o sei, parece perigoso.",L0,"Acho que ï¿½ bom eu me preparar melhor.",L1,"Dona, que bela roupa essa sua!",L2;
 
 	L0:
 		mes "[Mulher]";
-		mes "Ah, seu covardão! É só uma caverna idiota cheia de monstros comuns!";
-		mes "É tão segura que até construímos uma vila em volta! Hohohoho!";
+		mes "Ah, seu covardï¿½o! ï¿½ sï¿½ uma caverna idiota cheia de monstros comuns!";
+		mes "ï¿½ tï¿½o segura que atï¿½ construï¿½mos uma vila em volta! Hohohoho!";
 		close;
 	L1:
 		mes "[Mulher]";
-		mes "Não ouviu o que eu disse? Não precisa se preocupar em levar coisas, tem uma loja de ferramentas por ali, dá pra comprar de tudo lá";
-		mes "Na verdade, o dono é meu marido...";
-		mes "Então compre bastante que eu agradeço! Hohohoho!";
+		mes "Nï¿½o ouviu o que eu disse? Nï¿½o precisa se preocupar em levar coisas, tem uma loja de ferramentas por ali, dï¿½ pra comprar de tudo lï¿½";
+		mes "Na verdade, o dono ï¿½ meu marido...";
+		mes "Entï¿½o compre bastante que eu agradeï¿½o! Hohohoho!";
 		close;
 	L2:
 		mes "[Mulher]";
-		mes "Hohohoho! Você reparou? É a última moda em Prontera, viu?";
-		mes "As mulheres dessa cidade não sabem NADA de moda! Meu marido gastou os olhos da cara nessa roupa, mas é claro que eu não ia me contentar com qualquer trapo, né?";
+		mes "Hohohoho! Vocï¿½ reparou? ï¿½ a ï¿½ltima moda em Prontera, viu?";
+		mes "As mulheres dessa cidade nï¿½o sabem NADA de moda! Meu marido gastou os olhos da cara nessa roupa, mas ï¿½ claro que eu nï¿½o ia me contentar com qualquer trapo, nï¿½?";
 		mes "Hohohoho...";
 		close;
 }
 
-payon_in,69,90,4	script	Guarda do Chefe#pay	708,{}
-payon_in,69,91,4	script	Guarda do Chefe#pay2	139,3,2,{
+payon_in01,69,90,4	script	Guarda do Chefe#pay	708,{}
+payon_in01,69,91,4	script	Guarda do Chefe#pay2	139,3,2,{
 	mes "[Guarda do Chefe]";
-	mes "O que trás";
-	mes "você aqui?";
+	mes "O que trï¿½s";
+	mes "vocï¿½ aqui?";
 	next;
 	mes "[Guarda do Chefe]";
-	mes "Eu posso ver que você não é daqui de Payon. Eu só quero lhe lembrar para que se comporte. Lembre-se, você é um convidado aqui.";
+	mes "Eu posso ver que vocï¿½ nï¿½o ï¿½ daqui de Payon. Eu sï¿½ quero lhe lembrar para que se comporte. Lembre-se, vocï¿½ ï¿½ um convidado aqui.";
 	next;
 	nude;
 //	setbase Class;
 	mes "[Guarda do Chefe]";
-	mes "Para que se proteja esse local público, eu vou retirar os seus equipamentos. Obrigado pela sua cooperação.";
+	mes "Para que se proteja esse local pï¿½blico, eu vou retirar os seus equipamentos. Obrigado pela sua cooperaï¿½ï¿½o.";
 	close;
 }
 
-payon_in,136,147,4	script	Chefe#pay	120,1,1,{
+payon_in01,136,147,4	script	Chefe#pay	120,1,1,{
 	end;
 	OnTouch:
 	if(BaseLevel > 30) goto T_LEVEL;
@@ -791,62 +791,62 @@ payon_in,136,147,4	script	Chefe#pay	120,1,1,{
 T_LEVEL:
 	mes "[Chefe]";
 	next;
-	menu "Por favor me fale sobre Payon.",L_Menu1,"De onde os guardas vieram?",L_Menu2,"Por favor me conte sobre a caverna.",L_Menu3,"Eu estava imaginando o que um arqueiro faz.",L_Menu4,"Eu estava imaginando o que um caçador faz.",L_Menu5;
+	menu "Por favor me fale sobre Payon.",L_Menu1,"De onde os guardas vieram?",L_Menu2,"Por favor me conte sobre a caverna.",L_Menu3,"Eu estava imaginando o que um arqueiro faz.",L_Menu4,"Eu estava imaginando o que um caï¿½ador faz.",L_Menu5;
 L_Menu1:
 	mes "[Chefe]";
-	mes "Payon é uma cidade de soldados, que são auto-suficientes.";
-	mes "Embora nossos antepassados não tivessem tido os benefícios culturais dos fazendeiros ou cidadãos, eles souberam como sobreviver sem ajuda.";
-	mes "O poder de ação dos jovens os motivou a sobreviver as forças da natureza. Nós, pessoas de Payon, incluindo as mulheres, aprendemos a caçar e a nos proteger do perigo.";
+	mes "Payon ï¿½ uma cidade de soldados, que sï¿½o auto-suficientes.";
+	mes "Embora nossos antepassados nï¿½o tivessem tido os benefï¿½cios culturais dos fazendeiros ou cidadï¿½os, eles souberam como sobreviver sem ajuda.";
+	mes "O poder de aï¿½ï¿½o dos jovens os motivou a sobreviver as forï¿½as da natureza. Nï¿½s, pessoas de Payon, incluindo as mulheres, aprendemos a caï¿½ar e a nos proteger do perigo.";
 	next;
 	mes "[Chefe]";
-	mes "Já ouvi falar de jovens fracos que temem os campos ou os calabouços cheios de monstros. Mas, para nós, lutar contra monstros, faz parte das nossas vidas.";
-	mes "É por isso que Sua Majestade Tristram III espera que ensinemmos aos jovens como lugar bravamente e de forma eficiente contra criaturas do mal.";
+	mes "Jï¿½ ouvi falar de jovens fracos que temem os campos ou os calabouï¿½os cheios de monstros. Mas, para nï¿½s, lutar contra monstros, faz parte das nossas vidas.";
+	mes "ï¿½ por isso que Sua Majestade Tristram III espera que ensinemmos aos jovens como lugar bravamente e de forma eficiente contra criaturas do mal.";
 	close;
 L_Menu2:
 	mes "[Chefe]";
 	mes "Prontera nos enviou servos civis para Payon quando eu era jovem.";
-	mes "Tropas reais, damas Kafra, servidores... no início, discutíamos muito, por causa dos costumes diferentes.";
-	mes "Contudo, não posso negar que eles ajudaram um pouco a ativar os negócios com outros países.";
+	mes "Tropas reais, damas Kafra, servidores... no inï¿½cio, discutï¿½amos muito, por causa dos costumes diferentes.";
+	mes "Contudo, nï¿½o posso negar que eles ajudaram um pouco a ativar os negï¿½cios com outros paï¿½ses.";
 	next;
 	mes "[Chefe]";
-	mes "Agora, jovens de fora de Payon se dizem cidadãos de Payon... Eu nunca conseguiria imagina isso quando era jovem. Hh huh...";
-	mes "Fico muito satisfeito em vê-los. mesmo vindo de outros lugares, eles amam Payon.";
+	mes "Agora, jovens de fora de Payon se dizem cidadï¿½os de Payon... Eu nunca conseguiria imagina isso quando era jovem. Hh huh...";
+	mes "Fico muito satisfeito em vï¿½-los. mesmo vindo de outros lugares, eles amam Payon.";
 	close;
 L_Menu3:
 	mes "[Chefe]";
-	mes "A caverna no norte é o lugar aonde eu costumava ir às vezes.";
-	mes "Era mais perigoso naquela época que hoje, ciatura malignas que eu nunca tinha visto desovavam sem limite.";
-	mes "Os monstros de hoje são...diferentes daqueles com os quais lutávamos.";
+	mes "A caverna no norte ï¿½ o lugar aonde eu costumava ir ï¿½s vezes.";
+	mes "Era mais perigoso naquela ï¿½poca que hoje, ciatura malignas que eu nunca tinha visto desovavam sem limite.";
+	mes "Os monstros de hoje sï¿½o...diferentes daqueles com os quais lutï¿½vamos.";
 	next;
 	mes "[Chefe]";
-	mes "Você já teve a oportunidade de ver? Alguns que sobreviveram saem da caverna... isso foi causado pelos mortos que nunca voltaram depois de entrarem na caverna pra proteger a vila.";
+	mes "Vocï¿½ jï¿½ teve a oportunidade de ver? Alguns que sobreviveram saem da caverna... isso foi causado pelos mortos que nunca voltaram depois de entrarem na caverna pra proteger a vila.";
 	next;
 	mes "[Chefe]";
-	mes "Aqueles zumbis fazem outra vítima...ah...Eu estou muito velho para aguentar tamanha dor...Estou muito velho...";
+	mes "Aqueles zumbis fazem outra vï¿½tima...ah...Eu estou muito velho para aguentar tamanha dor...Estou muito velho...";
 	next;
 	mes "[Chefe]";
 	mes "Eu poderia fazer qualquer coisa para parar os mortos.....Eu faria qualquer coisa....";
 	close;
 L_Menu4:
 	mes "[Chefe]";
-	mes "Nós juntamos madeira suficiente da enorme floresta que fica ao redor de Payon.";
-	mes "Então, nada mais natural que termos os melhores Arqueiros. Você pode achar que os Arqueiros da Floresta welcomes estão praticando, mas eles estão do lado oposto de você.";
+	mes "Nï¿½s juntamos madeira suficiente da enorme floresta que fica ao redor de Payon.";
+	mes "Entï¿½o, nada mais natural que termos os melhores Arqueiros. Vocï¿½ pode achar que os Arqueiros da Floresta welcomes estï¿½o praticando, mas eles estï¿½o do lado oposto de vocï¿½.";
 	next;
 	mes "[Chefe]";
 	mes "A floresta o ajuda a se esconder, bloqueando inimigos que possam se aproximar para atacar.";
-	mes "Arqueiros são destrosos para atacar inimigos simples a longa distância.";
+	mes "Arqueiros sï¿½o destrosos para atacar inimigos simples a longa distï¿½ncia.";
 	next;
 	mes "[Chefe]";
-	mes "Além disso...há um mérito esperado em se estar dentro da floresta. Quando eu era jovem, eu acabei ficando sem flechas enquanto lutava contra monstros na floresta, mas flechas deixadas pelos monstros me salvaram deles. Muhahahaha!";
+	mes "Alï¿½m disso...hï¿½ um mï¿½rito esperado em se estar dentro da floresta. Quando eu era jovem, eu acabei ficando sem flechas enquanto lutava contra monstros na floresta, mas flechas deixadas pelos monstros me salvaram deles. Muhahahaha!";
 	close;
 L_Menu5:
 	mes "[Chefe]";
 	mes "Como culturas estrangeiras foram introduzidas em Payon, nosso estilo de combate acabou mudando.";
-	mes "Compostos explosivos especiais e tecnologia afetaram enormemente a vida das pessoas. Parece que não estavam satisfeitas em ter apenas arcos e flechas para lutar.";
+	mes "Compostos explosivos especiais e tecnologia afetaram enormemente a vida das pessoas. Parece que nï¿½o estavam satisfeitas em ter apenas arcos e flechas para lutar.";
 	next;
 	mes "[Chefe]";
-	mes "Habilidades de criar armadilhas, que permitem caçar monstros mais facilmente foram inventadas, então o Chefe anterior os deu o nome de caçadores.";
-	mes "Embora tenha feito muito sucesso no início, fazer armadilhas é uma habilidade perigosa, normalmente nao aprovamos que nossos jovens se tornem caçadores.";
+	mes "Habilidades de criar armadilhas, que permitem caï¿½ar monstros mais facilmente foram inventadas, entï¿½o o Chefe anterior os deu o nome de caï¿½adores.";
+	mes "Embora tenha feito muito sucesso no inï¿½cio, fazer armadilhas ï¿½ uma habilidade perigosa, normalmente nao aprovamos que nossos jovens se tornem caï¿½adores.";
 	next;
 	mes "[Chefe]";
 	mes "Pessoas que tenham muita responsabilidade em si, podem desafiar a classe.";
@@ -862,37 +862,37 @@ payon,82,129,0	script	Quadro de Mensagem#pay	111,{
 
 payon,82,116,4	script	Guia#1::Pay_Guide	105,{
 	mes "[Guia de Payon]";
-	mes "Bem vindo à Payon, a cidade das montanhas.";
+	mes "Bem vindo ï¿½ Payon, a cidade das montanhas.";
 	next;
 	mes "[Guia de Payon]";
-	mes "Nós estamos aqui para ajudar os visitantes da cidade.  Se você tem alguma dúvida, consulte-nos.";
-	mes "Se esta é a sua primeira vez utilizando um guia, por favor selecione 'Tutorial'.";
+	mes "Nï¿½s estamos aqui para ajudar os visitantes da cidade.  Se vocï¿½ tem alguma dï¿½vida, consulte-nos.";
+	mes "Se esta ï¿½ a sua primeira vez utilizando um guia, por favor selecione 'Tutorial'.";
 M_Menu:
 	next;
 	menu "Tutorial",M_2, "Cancelar.",M_End;
 	M_2:
 		mes "[Guia de Payon]";
-		mes "Nós fomos exaustivamente treinados para serví-lo da melhor possivel e sem falhas. Assim você tem a garantia das melhores indicações possíveis.";
+		mes "Nï¿½s fomos exaustivamente treinados para servï¿½-lo da melhor possivel e sem falhas. Assim vocï¿½ tem a garantia das melhores indicaï¿½ï¿½es possï¿½veis.";
 		next;
 		mes "[Guia de Payon]";
-		mes "As indicações que lhe daremos podem ser marcadas no seu mini-mapa	.";
-		mes "Para visualizar o seu mini-mapa, aperte 'ctrl+tab' ou clique no botão 'mapa' no menu principal.";
-		mes "Controle o seu 'zoom' no mini-mapa por meio dos símbolos '+' e '-'.";
+		mes "As indicaï¿½ï¿½es que lhe daremos podem ser marcadas no seu mini-mapa	.";
+		mes "Para visualizar o seu mini-mapa, aperte 'ctrl+tab' ou clique no botï¿½o 'mapa' no menu principal.";
+		mes "Controle o seu 'zoom' no mini-mapa por meio dos sï¿½mbolos '+' e '-'.";
 		goto M_Menu;
 
 	M_End:
 		mes "[Guia de Payon]";
-		mes "Espero que você tenha uma viagem segura e aproveite sua estadia.";
+		mes "Espero que vocï¿½ tenha uma viagem segura e aproveite sua estadia.";
 		close;
 }
 
 pay_arche,85,30,2	script	Guia#pay02	105,{
 	mes "[Guia de Payon]";
-	mes "Bem vindo à Payon, a cidade das montanhas.";
+	mes "Bem vindo ï¿½ Payon, a cidade das montanhas.";
 	next;
 	mes "[Guia de Payon]";
-	mes "Nós estamos aqui para ajudar os visitantes da cidade.  Se você tem alguma dúvida, consulte-nos.";
-	mes "Se esta é a sua primeira vez utilizando um guia, por favor selecione 'Tutorial'.";
+	mes "Nï¿½s estamos aqui para ajudar os visitantes da cidade.  Se vocï¿½ tem alguma dï¿½vida, consulte-nos.";
+	mes "Se esta ï¿½ a sua primeira vez utilizando um guia, por favor selecione 'Tutorial'.";
 
 M_Menu:
 	next;
@@ -900,27 +900,27 @@ M_Menu:
 
 	M_2:
 		mes "[Guia de Payon]";
-		mes "Nós fomos exaustivamente treinados para serví-lo da melhor possivel e sem falhas. Assim você tem a garantia das melhores indicações possíveis.";
+		mes "Nï¿½s fomos exaustivamente treinados para servï¿½-lo da melhor possivel e sem falhas. Assim vocï¿½ tem a garantia das melhores indicaï¿½ï¿½es possï¿½veis.";
 		next;
 		mes "[Guia de Payon]";
-		mes "As indicações que lhe daremos podem ser marcadas no seu mini-mapa	.";
-		mes "Para visualizar o seu mini-mapa, aperte 'ctrl+tab' ou clique no botão 'mapa' no menu principal.";
-		mes "Controle o seu 'zoom' no mini-mapa por meio dos símbolos '+' e '-'.";
+		mes "As indicaï¿½ï¿½es que lhe daremos podem ser marcadas no seu mini-mapa	.";
+		mes "Para visualizar o seu mini-mapa, aperte 'ctrl+tab' ou clique no botï¿½o 'mapa' no menu principal.";
+		mes "Controle o seu 'zoom' no mini-mapa por meio dos sï¿½mbolos '+' e '-'.";
 		goto M_Menu;
 
 	M_End:
 		mes "[Guia de Payon]";
-		mes "Espero que você tenha uma viagem segura e aproveite sua estadia.";
+		mes "Espero que vocï¿½ tenha uma viagem segura e aproveite sua estadia.";
 		close;
 }
 
 payon,99,137,5	script	Jade#pay	4_M_SAGE_A,{
 	mes "[Jade]";
 	if (checkweight(1201,1) == 0) {
-		mes "^3355FFEspere um pouco! Nesse momento, existem muitos itens com você. Por favor retorne após colocar alguns itens no Armazém da Kafra.^000000";
+		mes "^3355FFEspere um pouco! Nesse momento, existem muitos itens com vocï¿½. Por favor retorne apï¿½s colocar alguns itens no Armazï¿½m da Kafra.^000000";
 		close;
 	}
-	mes "Traga para mim 2 Gemas da mesma cor, e eu vou trocá-las por Gemas de cores diferentes.";
+	mes "Traga para mim 2 Gemas da mesma cor, e eu vou trocï¿½-las por Gemas de cores diferentes.";
 	next;
 	switch(select("Gemas Azuis para Vermelhas!:Gemas Vermelhas para Amarelas!:Gemas Amarelas para Azuis!")) {
 	case 1: callsub S_TradeGems,717,716;
@@ -932,35 +932,35 @@ S_TradeGems:
 	mes "[Jade]";
 	if (countitem(getarg(0)) < 2) {
 		mes "Haha...!";
-		mes "Você está de brincadeira comigo, certo?";
-		mes "Eu não poderei fazer este serviço se você não me trouxer as 2 "+getitemname(getarg(0))+"s!";
+		mes "Vocï¿½ estï¿½ de brincadeira comigo, certo?";
+		mes "Eu nï¿½o poderei fazer este serviï¿½o se vocï¿½ nï¿½o me trouxer as 2 "+getitemname(getarg(0))+"s!";
 		close;
 	}
 		set .@gems,countitem(getarg(0))/2;
-		mes "Acredito que posso criar um total de " + .@gems + " " + getitemname(getarg(1)) + "s usando as "+getitemname(getarg(0))+"s que você tem no momento.";
+		mes "Acredito que posso criar um total de " + .@gems + " " + getitemname(getarg(1)) + "s usando as "+getitemname(getarg(0))+"s que vocï¿½ tem no momento.";
 		mes "O que gostaria de fazer?";
 		next;
-		switch(select("Me dê quantas puder.:Quero digitar quantas preciso.:Deixa pra lá.")) {
+		switch(select("Me dï¿½ quantas puder.:Quero digitar quantas preciso.:Deixa pra lï¿½.")) {
 		case 1:
 			delitem getarg(0),.@gems * 2;
 			getitem getarg(1),.@gems;
 			mes "[Jade]";
-			mes "Então aqui está!";
+			mes "Entï¿½o aqui estï¿½!";
 			mes "Sinta-se livre para voltar quando quiser.";
-			mes "Hm, o que você está olhando?";
+			mes "Hm, o que vocï¿½ estï¿½ olhando?";
 			mes "Tem algo no meu rosto!?!?";
 			close;
 		case 2:
 			mes "[Jade]";
-			mes "Então quantas gemas vai querer?";
-			mes "O máximo que você poderá escolher é 100.";
+			mes "Entï¿½o quantas gemas vai querer?";
+			mes "O mï¿½ximo que vocï¿½ poderï¿½ escolher ï¿½ 100.";
 			next;
 			while(1) {
 				input .@input;
 				if (.@input == 0) || (.@input > 100){
 					mes "[Jade]";
 					mes "Nenhuma!?";
-					mes "Acho que você precisa mudar de ideia...";
+					mes "Acho que vocï¿½ precisa mudar de ideia...";
 					close;
 				}
 				else {
@@ -972,9 +972,9 @@ S_TradeGems:
 				delitem getarg(0),.@input * 2;
 				getitem getarg(1),.@input;
 				mes "[Jade]";
-				mes "Então aqui está!";
+				mes "Entï¿½o aqui estï¿½!";
 				mes "Sinta-se livre para voltar quando quiser.";
-				mes "Hm, o que você está olhando?";
+				mes "Hm, o que vocï¿½ estï¿½ olhando?";
 				mes "Tem algo no meu rosto!?!?";
 			}
 			close;

@@ -1,55 +1,28 @@
-//    ________________________________________________________
-//   /                                                        \
-//   |       _           _   _   _                            |
-//   |      | |__  _ __ / \ | |_| |__   ___ _ __   __ _       |
-//   |      | '_ \| '__/ _ \| __| '_ \ / _ \ '_ \ / _` |      |
-//   |      | |_) | | / ___ \ |_| | | |  __/ | | | (_| |      |
-//   |      |_.__/|_|/_/   \_\__|_| |_|\___|_| |_|\__,_|      |
-//   |                                                        |
-//   |                    brAthena Script                     |
-//   |--------------------------------------------------------|
-//   | Nome do Script: juno.txt                               |
-//   |--------------------------------------------------------|
-//   | Criado por: eA/rA/brA Dev. Team                        |
-//   |--------------------------------------------------------|
-//   | Versões eA/rA/brA: 1.4/1.4/1.3                         |
-//   |--------------------------------------------------------|
-//   | Descrição: NPCs da Cidade de Juno.                     |
-//   |--------------------------------------------------------|
-//   | Changelog:                                             |
-//   | 1.0 Criado Cabeçalho [Megasantos]                      |
-//   | 1.1 Tradução PT-BR [cleyton]                           |
-//   | 1.2 Otimização [Holy & Hold]                           |
-//   | 1.3 Formatação nos Diálogos [Holy & lututuiBR]         |
-//   |--------------------------------------------------------|
-//   | - Anotações                                            |
-//   \________________________________________________________/
-
 // Juno
 //============================================================
 yuno,184,173,4	script	Freidrich#juno	4_F_NOVICE,{
 	if (rand(1,5) == 1) {
 		mes "[Freidrich]";
-		mes "^3355FFJuno^000000 é mantida no ar por uma força anciã misteriosa.";
+		mes "^3355FFJuno^000000 ï¿½ mantida no ar por uma forï¿½a anciï¿½ misteriosa.";
 		next;
 		mes "[Freidrich]";
-		mes "Dizem que este poder vem de uma relíquia de uma antiga civilização chamada ^3355FFJuperos^000000 que existia aqui muito antes de Juno.";
+		mes "Dizem que este poder vem de uma relï¿½quia de uma antiga civilizaï¿½ï¿½o chamada ^3355FFJuperos^000000 que existia aqui muito antes de Juno.";
 		next;
 		mes "[Freidrich]";
-		mes "Uma investigação revelou que o poder de Juno vem dos ^3355FFPedaços do Coração de Ymir^000000. Ouvi dizer que esta fonte de poder é encontrada onde Juperos existia.";
+		mes "Uma investigaï¿½ï¿½o revelou que o poder de Juno vem dos ^3355FFPedaï¿½os do Coraï¿½ï¿½o de Ymir^000000. Ouvi dizer que esta fonte de poder ï¿½ encontrada onde Juperos existia.";
 		next;
 		mes "[Freidrich]";
-		mes "Desde que muitos estudiosos vieram a Juno para estudar e investigar esta fonte de poder, nossa cidade é basicamente uma capital dos estudiosos.";
+		mes "Desde que muitos estudiosos vieram a Juno para estudar e investigar esta fonte de poder, nossa cidade ï¿½ basicamente uma capital dos estudiosos.";
 		close;
 	} else {
 		mes "[Freidrich]";
-		mes "A cidade dos sábios, ^3355FFJuno,^000000 é constituída por três ilhas.";
+		mes "A cidade dos sï¿½bios, ^3355FFJuno,^000000 ï¿½ constituï¿½da por trï¿½s ilhas.";
 		next;
 		mes "[Freidrich]";
-		mes "São elas Solomon que é ilha da Honra, Mineta que é a ilha da Prosperidade, e Snotora que é a ilha do conhecimento.";
+		mes "Sï¿½o elas Solomon que ï¿½ ilha da Honra, Mineta que ï¿½ a ilha da Prosperidade, e Snotora que ï¿½ a ilha do conhecimento.";
 		next;
 		mes "[Freidrich]";
-		mes "Os locais destas ilhas são:";
+		mes "Os locais destas ilhas sï¿½o:";
 		mes "Noroeste : Solomon";
 		mes "Nordeste : Snotora";
 		mes "Sul: Mineta.";
@@ -57,36 +30,36 @@ yuno,184,173,4	script	Freidrich#juno	4_F_NOVICE,{
 	}
 }
 
-yuno,337,227,4	script	Avó de Juno#juno	8_F_GRANDMOTHER,{
-	mes "[Avó]";
+yuno,337,227,4	script	Avï¿½ de Juno#juno	8_F_GRANDMOTHER,{
+	mes "[Avï¿½]";
 	if (rand(1,50) == 1) {
 		if (Zeny > 999) {
-			mes "Então, você gosta de doce?";
+			mes "Entï¿½o, vocï¿½ gosta de doce?";
 			next;
-			mes "^3355FFA avó vai te da alguns doces^000000.";
+			mes "^3355FFA avï¿½ vai te da alguns doces^000000.";
 			next;
-			mes "[Avó]";
-			mes "Você já escolheu. Não importa se você queria ou não pegar estes doces. E não interessa pra ninguém. Você têm que entender porque isso aconteceu.";
+			mes "[Avï¿½]";
+			mes "Vocï¿½ jï¿½ escolheu. Nï¿½o importa se vocï¿½ queria ou nï¿½o pegar estes doces. E nï¿½o interessa pra ninguï¿½m. Vocï¿½ tï¿½m que entender porque isso aconteceu.";
 			next;
-			mes "[Avó]";
-			mes "Aqui está ^3355FF1,000 zeny^000000.";
-			mes "Você aceita?";
+			mes "[Avï¿½]";
+			mes "Aqui estï¿½ ^3355FF1,000 zeny^000000.";
+			mes "Vocï¿½ aceita?";
 			next;
-			if (select("Aceito:Não aceito") == 1) {
-				mes "[Avó]";
+			if (select("Aceito:Nï¿½o aceito") == 1) {
+				mes "[Avï¿½]";
 				mes "Hi hi hi";
-				mes "Lá vai você~";
+				mes "Lï¿½ vai vocï¿½~";
 				set Zeny, Zeny-1000;
 				getitem 529,1; // Bala
 				next;
-				mes "[Avó]";
+				mes "[Avï¿½]";
 				mes "Hihihi";
 				mes "Pois bem...";
-				mes "Até mais ~";
+				mes "Atï¿½ mais ~";
 				close;
 			}
-			mes "[Avó]";
-			mes "Sim, esta certo. Agora você tem que perguntar a si mesmo porquer não aceitou o doce que eu ofereci.";
+			mes "[Avï¿½]";
+			mes "Sim, esta certo. Agora vocï¿½ tem que perguntar a si mesmo porquer nï¿½o aceitou o doce que eu ofereci.";
 			close;
 		} 
 			mes "*Risos risos*";
@@ -94,38 +67,38 @@ yuno,337,227,4	script	Avó de Juno#juno	8_F_GRANDMOTHER,{
 			mes "Pois bem...";
 			close;
 	} 
-		mes "Sou a Sábia Avó que tudo prevê...";
+		mes "Sou a Sï¿½bia Avï¿½ que tudo prevï¿½...";
 		next;
-		mes "[Avó]";
-		mes "Você soube que existe um monstro chefe que está a muito tempo pelos arredores de Juno? Ele é chamado de ^FF3355Senhor da Morte^000000.";
+		mes "[Avï¿½]";
+		mes "Vocï¿½ soube que existe um monstro chefe que estï¿½ a muito tempo pelos arredores de Juno? Ele ï¿½ chamado de ^FF3355Senhor da Morte^000000.";
 		next;
-		mes "[Avó]";
-		mes "Há rumores de que ele veio do mundo dos mortos. Ele traz vários monstros morto-vivos consigo, pretendendo liderar criaturas vivas em seu frio e gelado reino.";
+		mes "[Avï¿½]";
+		mes "Hï¿½ rumores de que ele veio do mundo dos mortos. Ele traz vï¿½rios monstros morto-vivos consigo, pretendendo liderar criaturas vivas em seu frio e gelado reino.";
 		next;
-		mes "[Avó]";
-		mes "Você já deve ter escolhido se vai enfrentar ou não o Senhor da Morte. Tudo que precisa fazer agora é saber porque você tomou essa decisão.";
+		mes "[Avï¿½]";
+		mes "Vocï¿½ jï¿½ deve ter escolhido se vai enfrentar ou nï¿½o o Senhor da Morte. Tudo que precisa fazer agora ï¿½ saber porque vocï¿½ tomou essa decisï¿½o.";
 		close;
 }
 
 yuno,328,239,4	script	Lutador de Juno#juno	4_M_JOB_HUNTER,{
 	mes "[Sergiof]";
-	mes "Meu nome é Sergiof, o lutador que serve a Avó de Juno.";
+	mes "Meu nome ï¿½ Sergiof, o lutador que serve a Avï¿½ de Juno.";
 	next;
 	mes "[Sergiof]";
-	mes "Vou te falar sobre o ^3355FFGrande Peco^000000 que é um Peco Peco de level alto. O Grande Peco é mais rápido que o Peco Peco e é bastante agressivo.";
+	mes "Vou te falar sobre o ^3355FFGrande Peco^000000 que ï¿½ um Peco Peco de level alto. O Grande Peco ï¿½ mais rï¿½pido que o Peco Peco e ï¿½ bastante agressivo.";
 	next;
 	mes "[Sergiof]";
-	mes "Ele ataca usando seu resistente bico e muitos Peco Peco o seguem. Há uma grande diferença entre o poder de um Peco Peco e do Grande Peco.";
+	mes "Ele ataca usando seu resistente bico e muitos Peco Peco o seguem. Hï¿½ uma grande diferenï¿½a entre o poder de um Peco Peco e do Grande Peco.";
 	close;
 }
 
 yuno,343,68,4	script	Ninno#juno	4_M_JOB_ASSASSIN,{
 	mes "[Ninno]";
 	if (rand(1,1000) == 1) {
-		mes "Você tem muita sorte de ouvir o que vou te dizer. A chance é de ^FF33551 a cada 1,000 ^000000.";
+		mes "Vocï¿½ tem muita sorte de ouvir o que vou te dizer. A chance ï¿½ de ^FF33551 a cada 1,000 ^000000.";
 		next;
 		mes "[Ninno]";
-		mes "O mundo que você esta vivendo atualmente é manipulado! É hora de você enxergar a realidade do jeito que ela é!";
+		mes "O mundo que vocï¿½ esta vivendo atualmente ï¿½ manipulado! ï¿½ hora de vocï¿½ enxergar a realidade do jeito que ela ï¿½!";
 		next;
 		mes "[Ninno]";
 		mes "Abra os olhos! Pare de ser manipulado pela realidade virtual!";
@@ -133,34 +106,34 @@ yuno,343,68,4	script	Ninno#juno	4_M_JOB_ASSASSIN,{
 		warp "prontera",182,206;
 		end;
 	}
-	mes "Já ouviu falar em um rei Egípcio que acredita-se que é filho de um Deus? Seu nome é ^3355FFFaraó^000000.";
+	mes "Jï¿½ ouviu falar em um rei Egï¿½pcio que acredita-se que ï¿½ filho de um Deus? Seu nome ï¿½ ^3355FFFaraï¿½^000000.";
 	next;
 	mes "[Ninno]";
-	mes "Há rumores de que ele é um grande feiticeiro que amaldiçoou inocentes. Dizem que ele ainda esta por aí, amaldiçoando pessoas.";
+	mes "Hï¿½ rumores de que ele ï¿½ um grande feiticeiro que amaldiï¿½oou inocentes. Dizem que ele ainda esta por aï¿½, amaldiï¿½oando pessoas.";
 	next;
 	mes "[Ninno]";
-	mes "Como aventureiro, é possível que você o veja em suas viagens. Tenha cuidado...";
+	mes "Como aventureiro, ï¿½ possï¿½vel que vocï¿½ o veja em suas viagens. Tenha cuidado...";
 	close;
 }
 
-yuno,165,111,4	script	Sábio de Juno#juno	2_F_MAGICMASTER,,{
+yuno,165,111,4	script	Sï¿½bio de Juno#juno	2_F_MAGICMASTER,,{
 	mes "[Le Morpheus]";
 	if (rand(1,50) == 25) {
 		if (Zeny > 4999) {
-			mes "Observe minhas mãos. Estou segurando dois tipos diferentes de ervas.";
+			mes "Observe minhas mï¿½os. Estou segurando dois tipos diferentes de ervas.";
 			next;
 			mes "[Le Morpheus]";
-			mes "Uma é a ^3355FFErva Azul^000000 que faz você esquecer da realidade e ter alucinações^000000.";
+			mes "Uma ï¿½ a ^3355FFErva Azul^000000 que faz vocï¿½ esquecer da realidade e ter alucinaï¿½ï¿½es^000000.";
 			next;
 			mes "[Le Morpheus]";
-			mes "A outra é a ^FF3355Erva Vermelha^000000 que revela a você o que é verdadeiro e real.";
+			mes "A outra ï¿½ a ^FF3355Erva Vermelha^000000 que revela a vocï¿½ o que ï¿½ verdadeiro e real.";
 			next;
 			mes "[Le Morpheus]";
-			mes "Qualquer uma que escolher, você vai gastar ^3355FF5,000 zeny^000000. Agora, escolha uma.";
+			mes "Qualquer uma que escolher, vocï¿½ vai gastar ^3355FF5,000 zeny^000000. Agora, escolha uma.";
 			next;
 			if (select("Escolher ^FF3355Erva Vermelha^000000:Escolher ^3355FFErva Azul^000000.") == 1) {
 				mes "[Le Morpheus]";
-				mes "A que você escolheu, vai te desligar de tudo e te mostrar alucinações.";
+				mes "A que vocï¿½ escolheu, vai te desligar de tudo e te mostrar alucinaï¿½ï¿½es.";
 				set Zeny, Zeny-5000;
 				getitem 507,1; // Erva Vermelha
 				close2;
@@ -168,106 +141,106 @@ yuno,165,111,4	script	Sábio de Juno#juno	2_F_MAGICMASTER,,{
 				end;
 			}
 			mes "[Le Morpheus]";
-			mes "Você verá a verdade.";
+			mes "Vocï¿½ verï¿½ a verdade.";
 			set Zeny, Zeny-5000;
 			getitem 510,1; // Erva Verde
 			close2;
 			warp "pay_dun03",200,222;
 			end;
 		}
-			mes "Hmm. Desculpe dizer que você perdeu uma chance de ouro. No entando, preciso lhe contar que você não têm dinheiro para levar esta maravilha.";
+			mes "Hmm. Desculpe dizer que vocï¿½ perdeu uma chance de ouro. No entando, preciso lhe contar que vocï¿½ nï¿½o tï¿½m dinheiro para levar esta maravilha.";
 			close;
 	} 
 		mes "^3355FFApocalipse^000000...";
-		mes "É o nome do androide que costumava proteger Juno há muito tempo.";
+		mes "ï¿½ o nome do androide que costumava proteger Juno hï¿½ muito tempo.";
 		next;
 		mes "[Le Morpheus]";
-		mes "Devido sua inteligêngia artificial ter se corrompido com o passar do tempo, ele não pode mais distinguir inimigos de aliados. Infelizmente, este andróide não passa de um monstro estúpido agora.";
+		mes "Devido sua inteligï¿½ngia artificial ter se corrompido com o passar do tempo, ele nï¿½o pode mais distinguir inimigos de aliados. Infelizmente, este andrï¿½ide nï¿½o passa de um monstro estï¿½pido agora.";
 		close;
 }
 
-yuno,157,205,4	script	Artesão de Juno#juno	1_M_JOBGUIDER,{
-	mes "[Artesão]";
+yuno,157,205,4	script	Artesï¿½o de Juno#juno	1_M_JOBGUIDER,{
+	mes "[Artesï¿½o]";
 	mes "*Resmungos...*";
 	next;
-	mes "[Artesão]";
-	mes "Oh, como vai. Deixe me apresentar. Eu sou um artesão que está tentando continuar as tradições e os deveres dos artesões mestres daqui de Juno.";
+	mes "[Artesï¿½o]";
+	mes "Oh, como vai. Deixe me apresentar. Eu sou um artesï¿½o que estï¿½ tentando continuar as tradiï¿½ï¿½es e os deveres dos artesï¿½es mestres daqui de Juno.";
 	next;
-	switch(select("Sobre Equipamentos Poderosos:Sobre Itens Únicos:Sobre Comidas Tradicionais:Finalizar Conversa")) {
+	switch(select("Sobre Equipamentos Poderosos:Sobre Itens ï¿½nicos:Sobre Comidas Tradicionais:Finalizar Conversa")) {
 	case 1:
-		mes "[Artesão]";
-		mes "Deixe-me sugerir o ^3355FFArauto Divino^000000 e a ^3355FFVingadora Sagrada^000000 que são itens especiais para Templários.";
+		mes "[Artesï¿½o]";
+		mes "Deixe-me sugerir o ^3355FFArauto Divino^000000 e a ^3355FFVingadora Sagrada^000000 que sï¿½o itens especiais para Templï¿½rios.";
 		next;
-		mes "[Artesão]";
-		mes "Estes equipamentos são bem leves e têm muito potencial. Eles te fazem possuir o poder divino.";
+		mes "[Artesï¿½o]";
+		mes "Estes equipamentos sï¿½o bem leves e tï¿½m muito potencial. Eles te fazem possuir o poder divino.";
 		next;
-		mes "[Artesão]";
-		mes "Portanto, este equipamento é mais forte sobre alguns tipos de monstros, como fantasmas ou mortos-vivos.";
+		mes "[Artesï¿½o]";
+		mes "Portanto, este equipamento ï¿½ mais forte sobre alguns tipos de monstros, como fantasmas ou mortos-vivos.";
 		next;
-		mes "[Artesão]";
-		mes "Entretanto, há rumores de que só alguns Templários escolhidos estão aptos a obter estes itens, devido a suas raridades.";
+		mes "[Artesï¿½o]";
+		mes "Entretanto, hï¿½ rumores de que sï¿½ alguns Templï¿½rios escolhidos estï¿½o aptos a obter estes itens, devido a suas raridades.";
 		close;
 	case 2:
-		mes "[Artesão]";
-		mes "Parece que um pergaminho marcado com um pentagrama. Entretanto o ^FF3355Pergaminho Antigo^000000 é muito antigo, é procurado por muitos Sábios para fins de investigação.";
+		mes "[Artesï¿½o]";
+		mes "Parece que um pergaminho marcado com um pentagrama. Entretanto o ^FF3355Pergaminho Antigo^000000 ï¿½ muito antigo, ï¿½ procurado por muitos Sï¿½bios para fins de investigaï¿½ï¿½o.";
 		next;
-		mes "[Artesão]";
-		mes "Parece que você pode usar este item quando conjurar uma magia de alto nível.";
+		mes "[Artesï¿½o]";
+		mes "Parece que vocï¿½ pode usar este item quando conjurar uma magia de alto nï¿½vel.";
 		close;
 	case 3:
-		mes "[Artesão]";
-		mes "^3355FFBolinho de Arroz^000000! Sim, é uma comida tradicional fornecida por várias pessoas. Há um monte de lembranças nostálgicas de antigos mercadores referente ao Bolinho de Arroz.";
+		mes "[Artesï¿½o]";
+		mes "^3355FFBolinho de Arroz^000000! Sim, ï¿½ uma comida tradicional fornecida por vï¿½rias pessoas. Hï¿½ um monte de lembranï¿½as nostï¿½lgicas de antigos mercadores referente ao Bolinho de Arroz.";
 		next;
-		mes "[Artesão]";
+		mes "[Artesï¿½o]";
 		mes "Ahhh~";
 		mes "Eu queria poder comer um Bolinho de Arroz agora.";
 		close;
 	case 4:
-		mes "[Artesão]";
-		mes "Embora Juno seja conhecida como cidade dos sábios,espero que entenda que pessoas comuns vivem aqui também. Por favor, aproveite a atmosfera única que Juno tem a oferecer.";
+		mes "[Artesï¿½o]";
+		mes "Embora Juno seja conhecida como cidade dos sï¿½bios,espero que entenda que pessoas comuns vivem aqui tambï¿½m. Por favor, aproveite a atmosfera ï¿½nica que Juno tem a oferecer.";
 		close;
 	}
 }
 
 -	script	::SoldadoJuno1	-1,{
 	mes "[Soldado de Juno]";
-	mes "Bem-Vindo a Juno, a cidade da elevação de espírito.";
+	mes "Bem-Vindo a Juno, a cidade da elevaï¿½ï¿½o de espï¿½rito.";
 	next;
 	mes "[Soldado de Juno]";
 	if ( strnpcinfo(0) == "Soldado de Juno#juno")
-	mes "Existe aqui perto um monstro chamado de Golem de Lava. Este Golem é feito de um coração de pedra cuja potência foi amplificada por magia.";
+	mes "Existe aqui perto um monstro chamado de Golem de Lava. Este Golem ï¿½ feito de um coraï¿½ï¿½o de pedra cuja potï¿½ncia foi amplificada por magia.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#2juno")
-	mes "Planta Carnívora... Este monstro parece uma flor brotando do chão.";
+	mes "Planta Carnï¿½vora... Este monstro parece uma flor brotando do chï¿½o.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#3juno")
-	mes "Próximo a Juno, existe um falso anjo chamado 'Anjo Fajuto'. Ele finge ser inocente, parecendo abençoar aventureiros e então ele os ataca pelas costas, sem qualquer aviso.";
+	mes "Prï¿½ximo a Juno, existe um falso anjo chamado 'Anjo Fajuto'. Ele finge ser inocente, parecendo abenï¿½oar aventureiros e entï¿½o ele os ataca pelas costas, sem qualquer aviso.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#4juno")
-	mes "'Bode' é um monstro que foi um antílope e vive em montanhas altas, agora não passa de um monstro qualquer.";
+	mes "'Bode' ï¿½ um monstro que foi um antï¿½lope e vive em montanhas altas, agora nï¿½o passa de um monstro qualquer.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#5juno")
-	mes "Você já viu um Jellopy Tamanho Família? Elas são enooormes!";
+	mes "Vocï¿½ jï¿½ viu um Jellopy Tamanho Famï¿½lia? Elas sï¿½o enooormes!";
 	else if ( strnpcinfo(0) == "Soldado de Juno#6juno")
-	mes "Entre as armas dos Sábios, existe a 'Adaga Certeira'.";
+	mes "Entre as armas dos Sï¿½bios, existe a 'Adaga Certeira'.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#7juno")
-	mes "Aqui tem um escudo sagrado chamado 'Spiritus Sancti' e só pode ser usado por Templários.";
+	mes "Aqui tem um escudo sagrado chamado 'Spiritus Sancti' e sï¿½ pode ser usado por Templï¿½rios.";
 	next;
 	mes "[Soldado de Juno]";
 	if ( strnpcinfo(0) == "Soldado de Juno#juno")
-	mes "A lava que fica escorrendo de seu corpo é tão quente que pode derreter as armaduras e armas feitas de aço de alta qualidade.";
+	mes "A lava que fica escorrendo de seu corpo ï¿½ tï¿½o quente que pode derreter as armaduras e armas feitas de aï¿½o de alta qualidade.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#2juno")
-	mes "Estranhamente, ela pode estender seu corpo a longas distâncias. Mesmo se você estiver de longe, ela pode ser uma ameaça.";
+	mes "Estranhamente, ela pode estender seu corpo a longas distï¿½ncias. Mesmo se vocï¿½ estiver de longe, ela pode ser uma ameaï¿½a.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#3juno")
-	mes "Não se engane pelas aparências ou você vai ter sérios problemas.";
+	mes "Nï¿½o se engane pelas aparï¿½ncias ou vocï¿½ vai ter sï¿½rios problemas.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#4juno")
-	mes "Mesmo se você conseguir esquivar-se de seus chifres, ainda precisa tomar cuidado com suas poderosas pernas.";
+	mes "Mesmo se vocï¿½ conseguir esquivar-se de seus chifres, ainda precisa tomar cuidado com suas poderosas pernas.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#5juno")
-	mes "É difícil de acreditar mais é o maior e mais brilhante jellopy que existe!";
+	mes "ï¿½ difï¿½cil de acreditar mais ï¿½ o maior e mais brilhante jellopy que existe!";
 	else if ( strnpcinfo(0) == "Soldado de Juno#6juno")
-	mes "Seu uso é restrito a Sábios, e aumenta a chance de inflingir ataques críticos. Assim, para os Sábios, esta adaga pode ser muito útil, bem como dar mais estilo a eles em batalhas.";
+	mes "Seu uso ï¿½ restrito a Sï¿½bios, e aumenta a chance de inflingir ataques crï¿½ticos. Assim, para os Sï¿½bios, esta adaga pode ser muito ï¿½til, bem como dar mais estilo a eles em batalhas.";
 	else if ( strnpcinfo(0) == "Soldado de Juno#7juno")
-	mes "É um longo e estreito escudo com asas de anjo gravadas no centro da frente. é especialmente poderoso contra Demônios e Mortos-Vivos.";
+	mes "ï¿½ um longo e estreito escudo com asas de anjo gravadas no centro da frente. ï¿½ especialmente poderoso contra Demï¿½nios e Mortos-Vivos.";
 	if ( strnpcinfo(0) == "Soldado de Juno#juno" || strnpcinfo(0) == "Soldado de Juno#2juno") {
 	next;
 	mes "[Soldado de Juno]";
-	mes ""+((strnpcinfo(0) == "Soldado de Juno#juno") ? "É melhor você tomar cuidado quando encontrar este monstro. Destruirá seus equipamentos em um piscar de olhos.":"O nome deste monstro, originou-se da história de um pobre geógrafo, que infelizmente, foi devorado por este monstro enquanto ele estava concentrado nos estudos.")+"";
+	mes ""+((strnpcinfo(0) == "Soldado de Juno#juno") ? "ï¿½ melhor vocï¿½ tomar cuidado quando encontrar este monstro. Destruirï¿½ seus equipamentos em um piscar de olhos.":"O nome deste monstro, originou-se da histï¿½ria de um pobre geï¿½grafo, que infelizmente, foi devorado por este monstro enquanto ele estava concentrado nos estudos.")+"";
 	}
 	close;
 }
@@ -288,28 +261,28 @@ yuno,150,228,4	duplicatv(SoldadoJuno1)	Soldado de Juno#5juno	8W_SOLDIER
 yuno,334,182,4	duplicatv(SoldadoJuno1)	Soldado de Juno#6juno	8W_SOLDIER
 yuno,263,320,4	duplicatv(SoldadoJuno1)	Soldado de Juno#7juno	8W_SOLDIER,{}
 
-yuno,142,183,5	script	Representante do Dirigível	4W_SAILOR,{
-	mes "[Representante do Dirigível]";
-	mes "Olá, estou aqui para informá-lo sobre o Dirigível de Juno, o qual pretendemos operar em um futuro próximo.";
+yuno,142,183,5	script	Representante do Dirigï¿½vel	4W_SAILOR,{
+	mes "[Representante do Dirigï¿½vel]";
+	mes "Olï¿½, estou aqui para informï¿½-lo sobre o Dirigï¿½vel de Juno, o qual pretendemos operar em um futuro prï¿½ximo.";
 	next;
-	mes "[Representante do Dirigível]";
-	mes "Infelizmente, ele ainda está em construção e temos ainda, que completar os testes. No entanto, sentimos a necessidade de informar nossos clientes sobre o progresso.";
+	mes "[Representante do Dirigï¿½vel]";
+	mes "Infelizmente, ele ainda estï¿½ em construï¿½ï¿½o e temos ainda, que completar os testes. No entanto, sentimos a necessidade de informar nossos clientes sobre o progresso.";
 	next;
-	mes "[Representante do Dirigível]";
-	mes "A aeronave que estamos desenvolvendo irá fornecer-lhe a conveniência de viajar para qualquer cidade. Você também pode admirar a paisagem enquanto flutua no céu. Produtos únicos de cada área também serão fornecidos.";
+	mes "[Representante do Dirigï¿½vel]";
+	mes "A aeronave que estamos desenvolvendo irï¿½ fornecer-lhe a conveniï¿½ncia de viajar para qualquer cidade. Vocï¿½ tambï¿½m pode admirar a paisagem enquanto flutua no cï¿½u. Produtos ï¿½nicos de cada ï¿½rea tambï¿½m serï¿½o fornecidos.";
 	next;
-	mes "[Representante do Dirigível]";
-	mes "Nós prometemos a nossos clientes uma experiência de viagem incrível uma vez que a aeronave estiver em operação. Entretanto, estamos prestanto um serviço de teletransporte especial.";
+	mes "[Representante do Dirigï¿½vel]";
+	mes "Nï¿½s prometemos a nossos clientes uma experiï¿½ncia de viagem incrï¿½vel uma vez que a aeronave estiver em operaï¿½ï¿½o. Entretanto, estamos prestanto um serviï¿½o de teletransporte especial.";
 	next;
-	mes "[Representante do Dirigível]";
-	mes "A taxa de teletransporte é 1,800 zeny, independente de onde queira ir, por favor, diga-me o local desejado.";
+	mes "[Representante do Dirigï¿½vel]";
+	mes "A taxa de teletransporte ï¿½ 1,800 zeny, independente de onde queira ir, por favor, diga-me o local desejado.";
 	next;
 	switch(select("Prontera:Izlude:Geffen:Morroc:Payon:Alberta:Comodo:Cancelar")) {
 		case 1: callsub S_Portal,"prontera",116,72;
-		case 2: if (checkversion(0) == 1) callsub S_Portal,"izlude",128,98; else callsub S_Portal,"izlude",94,103;
+		case 2: if (RENEWAL) callsub S_Portal,"izlude",128,98; else callsub S_Portal,"izlude",94,103;
 		case 3: callsub S_Portal,"geffen",120,39;
 		case 4: callsub S_Portal,"morocc",156,46;
-		case 5: if (checkversion(0) == 1) callsub S_Portal,"payon",162,59; else callsub S_Portal,"payon",69,100;
+		case 5: if (RENEWAL) callsub S_Portal,"payon",162,59; else callsub S_Portal,"payon",69,100;
 		case 6: callsub S_Portal,"alberta",117,56;
 		case 7: callsub S_Portal,"comodo",209,143;
 		case 8: close;
@@ -322,9 +295,9 @@ S_Portal:
 		warp getarg(0),getarg(1),getarg(2);
 		end;
 	} else {
-		mes "[Representante do Dirigível]";
-		mes "Lamento dizer que você não tem zeny sufciente consigo.";
-		mes "Por favor, verifique quantos zeny você tem.";
+		mes "[Representante do Dirigï¿½vel]";
+		mes "Lamento dizer que vocï¿½ nï¿½o tem zeny sufciente consigo.";
+		mes "Por favor, verifique quantos zeny vocï¿½ tem.";
 		close;
 	}
 }

@@ -12,8 +12,8 @@ function	script	Bla_check_	{
 	close;
 
 L_Nov:
-	if(sex==0) mes "...Ol� senhorita! Se voc� deseja se tornar uma "+callfunc("otclassname",10,"S","F")+", deve ser uma "+callfunc("otclassname",5,"S","F")+" primeiro";
-	if(sex==1) mes "Hmmm, vejo no seu olhar a vontade de ser um "+callfunc("otclassname",10,"S","M")+"! Desculpe, mas s� "+callfunc("otclassname",5,"P","M")+" podem se tornar "+callfunc("otclassname",10,"P","M")+"!.";
+	if(Sex==0) mes "...Ol� senhorita! Se voc� deseja se tornar uma "+callfunc("otclassname",10,"S","F")+", deve ser uma "+callfunc("otclassname",5,"S","F")+" primeiro";
+	if(Sex==1) mes "Hmmm, vejo no seu olhar a vontade de ser um "+callfunc("otclassname",10,"S","M")+"! Desculpe, mas s� "+callfunc("otclassname",5,"P","M")+" podem se tornar "+callfunc("otclassname",10,"P","M")+"!.";
 	close;
 L_Sword:	
 	mes "Eae! Veio forjar uma espada? Desculpe, mas estou muito ocupado, pe�a a outra pessoa.";
@@ -956,7 +956,7 @@ L_Start:
 }
 
 // Wickebine --------------------------------------------------------------------
-omorocc,27,112,4	script	Wickebine	725,{
+morocc,27,112,4	script	Wickebine	725,{
 	if (BSMITH_Q == 3) goto L_Start;
 
 	mes "[Wickebine]";
@@ -1074,7 +1074,7 @@ L_Start:
 }
 
 // Tilpitz --------------------------------------------------------------------
-opayon,151,41,4	script	Tilpitz	59,{
+payon,151,41,4	script	Tilpitz	59,{
 	if (BSMITH_Q == 3) goto L_Start;
 
 	mes "[Tilpitz]";
@@ -1202,7 +1202,7 @@ L_Start:
 
 
 //<===================================================== Mitehmaeeuh: Last Test ===================================================>\\
-omorocc,94,133,4	script	Mitmayer	726,{
+morocc,94,133,4	script	Mitmayer	726,{
 	if (BSMITH_Q == 4) goto L_Start;
 	if (BSMITH_Q == 5) goto L_Done;
 	mes "[Mitmayer]";
@@ -1259,21 +1259,21 @@ L_Start:
 		mes "[Mitmayer]";
 		mes "1. Que skill � necess�rio para se pegar Disconto?";
 		next;
-		menu "Puxar Carrinho Lv 3",sM_1a,"Identificar Item",sM_1a,"Mammonita Lv 10",sM_1a,"Aumentar Capacida de Peso Lv 3",-;
+		menu "Puxar Carrinho Lv 3",sm_1a,"Identificar Item",sm_1a,"Mammonita Lv 10",sm_1a,"Aumentar Capacida de Peso Lv 3",-;
 
 			set @score,@score+20;
-		sM_1a:
+		sm_1a:
 
 		mes "[Mittmayer]";
 		mes "2. Que efeito o Martelo-Extremo tem?";
 		next;
-		menu "Paralizia",-,"Cegueira",sM_1b,"Confus�o",sM_1b,"Veneno",sM_1b;
+		menu "Paralizia",-,"Cegueira",sm_1b,"Confus�o",sm_1b,"Veneno",sm_1b;
 
 			set @score,@score+20;
-		sM_1b:
+		sm_1b:
 
 		mes "[Mitmayer]";
-		mes "3. Quanto zeny � pego quando voc� usa Mammonita Lv 10?";
+		mes "3. Quanto Zeny � pego quando voc� usa Mammonita Lv 10?";
 		next;
 		menu "900z",sM_1c,"1,000z",-,"2,000z",sM_1c,"1,000,000z",sM_1c;
 
@@ -1295,7 +1295,7 @@ L_Start:
 
 			set @score,@score+20;
 		sM_1e:
-		goto L_Result;
+		goto L_result;
 
 	R_Set2:
 		mes "[Mittmayer]";
@@ -1337,7 +1337,7 @@ L_Start:
 
 			set @score,@score+20;
 		sM_2e:
-		goto L_Result;
+		goto L_result;
 
 	R_Set3:
 		mes "[Mitmayer]";
@@ -1380,7 +1380,7 @@ L_Start:
 			set @score,@score+20;
 		sM_3e:
 
-L_Result:
+L_result:
 	mes "[Mitmayer]";
 	mes "�timo trabalho!";
 	next;
@@ -1388,7 +1388,7 @@ L_Result:
 	mes "Vamos ver... sua contagem foi ^5533FF"+@contagem+"^000000 pontos!";
 	next;
 	mes "[Mitmayer]";
-	if (@score > 70) goto L_Pass;
+	if (@score > 70) goto L_pass;
 
 		mes "Falhou, v� estudar mais!!";
 		next;
@@ -1397,7 +1397,7 @@ L_Result:
 		mes "Por favor retorne depois de ter estudado mais.";
 		close;
 
-	L_Pass:
+	L_pass:
 		mes "�timo! Parab�ns! Voc� passou!";
 		emotion 21;
 		next;

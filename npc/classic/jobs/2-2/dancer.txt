@@ -194,7 +194,7 @@ job_duncer,43,93,4	script	Aile#da	4_F_07,{
 		mes "[Aire]";
 		mes "Nem todos os Arqueiros";
 		mes "podem se tornar Odaliscas.";
-		mes "Pelo menos, n�o sem uma troca de sexo...";
+		mes "Pelo menos, n�o sem uma troca de Sexo...";
 		close2;
 		cutin "",255;
 		end;

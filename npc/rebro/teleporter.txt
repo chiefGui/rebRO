@@ -6,51 +6,41 @@
 
 	mes .NPCName$;
 	mes "Oi, " + callfunc("P_Cyan", strcharinfo(0)) + "! Para onde você gostaria de ir?";
+	.@destination = select("Alberta", "Al De Baran", "Comodo", "Geffen", "Izlude", "Juno", "Lutie", "Morroc", "Prontera", callfunc("P_LightGray", "Nenhum lugar."));
 
-	.@destination$ = select("Alberta", "Al De Baran", "Comodo", "Geffen", "Izlude", "Juno", "Lutie", "Morroc", "Prontera", callfunc("P_LightGray", "Nenhum lugar."));
+	if (.@destination == 10) {
+		goto M_Leave;
+	}
 
 	if (!.isPremium) {
 		next;
 		mes .NPCName$;
 		mes "Como você não é Premium, vou lhe cobrar " + callfunc("P_Red", .nonPremiumCostMessage$) + " por teleporte. Tudo bem?";
-		switch(select("Sim. Pode me teleportar.", callfunc("P_LightGray", "Deixa pra lá..."))) {
-			case 1:
-				goto M_Teleport;
-				break;
-			case 2:
-				goto M_Leave;
-				break;
+		menu "Sim. Pode me teleportar.", -,  callfunc("P_LightGray", "Deixa pra lá..."), M_Leave;
+
+		if (.nonPremiumCost > Zeny) {
+			next;
+			mes .NPCName$;
+			mes "Sinto muito, mas você não tem Zeny suficiente.";
+			close;
 		}
-		return;
+
+		set Zeny, Zeny - .nonPremiumCost;
 	}
 
-	goto M_Teleport;
+	switch(.@destination) {
+		case 1: warp "alberta", 20, 233; end;
+		case 2: warp "aldebaran", 140, 131; end;
+		case 3: warp "comodo", 209, 143; end;
+		case 4: warp "geffen", 118, 40; end;
+		case 5: warp "izlude", 128, 114; end;
+		case 6: warp "yuno", 157, 176; end;
+		case 7: warp "xmas", 147, 134; end;
+		case 8: warp "morocc_mem", 156, 93; end;
+		case 9: warp "prontera", 156, 191; end;
+		case 10: goto M_Leave;
+	}
 
-	M_Teleport:
-		if (!.isPremium) {
-			if (Zeny < .nonPremiumCost) {
-				next;
-				mes .NPCName$;
-				mes "Sinto muito, mas você não tem Zeny suficiente.";
-				close;
-			}
-
-			set Zeny, Zeny - .nonPremiumCost;
-		}
-
-		switch(.@destination$) {
-			case 1: warp "alberta", 20, 233; end;
-			case 2: warp "aldebaran", 140, 131; end;
-			case 3: warp "comodo", 209, 143; end;
-			case 4: warp "geffen", 118, 40; end;
-			case 5: warp "izlude", 128, 114; end;
-			case 6: warp "yuno", 157, 176; end;
-			case 7: warp "xmas", 147, 134; end;
-			case 8: warp "morocc_mem", 156, 93; end;
-			case 9: warp "prontera", 156, 191; end;
-			case 10: goto M_Leave;
-		}
-	
 	M_Leave:
 		next;
 		mes .NPCName$;

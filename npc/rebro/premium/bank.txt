@@ -1,0 +1,320 @@
+-	script	Bancário::Bankman	4_F_ACOLYTE,{
+	.NPCName$ = callfunc("P_Purple", "[Car, o Bancário]");
+	.isPremium = callfunc("F_IsPremium");
+
+	function RenderBalance;
+	function RenderZeny;
+	function RenderOperationsMenu;
+	function AskWithdraw;
+	function AskDeposit;
+	function Withdraw;
+	function Deposit;
+	function RenderOperationMode;
+
+	if (!.isPremium) {
+		if (callfunc("F_BankGetBalance") > 0) {
+			mes .NPCName$;
+			mes "Sinto muito, mas por você não ser mais Premium, estou lhe fazendo um saque forçado com o restante que estava depositado em sua conta.";
+			mes "\n";
+			mes "- Montante: " + RenderBalance();
+			Withdraw(callfunc("F_BankGetBalance"));
+			next;
+			mes .NPCName$;
+			mes "Tenha um ótimo dia!";
+			close;
+		}
+
+		mes .NPCName$;
+		mes "Me desculpe, mas os serviços do Banco Premium são só para aventureiros Premium.";
+		close;
+	}
+
+	mes .NPCName$;
+	mes "Olá, " + callfunc("P_Premium", strcharinfo(0)) + "! Sou gerente de contas do Banco Premium.";
+	mes "\n";
+	mes "Atualmente, seu saldo é de " + RenderBalance() + ".";
+	RenderOperationsMenu();
+
+	function	RenderBalance	{
+		.@balance = callfunc("F_BankGetBalance");
+		.@suffix$ = " Zenys";
+
+		if (.@balance == 0) {
+			return callfunc("P_LightGray", "0" + .@suffix$);
+		} else {
+			return callfunc("P_Green", callfunc("F_FormatZeny", .@balance) + .@suffix$);
+		}
+	}
+
+	function	RenderOperationsMenu	{
+		switch(select("- Sacar", "- Depositar", callfunc("P_LightGray", "Sair"))) {
+			case 1:
+				Withdraw(AskWithdraw());
+			case 2:
+				Deposit(AskDeposit());
+			case 3:
+				close;
+		}
+	}
+	
+	function	RenderZeny	{
+		.@quantity = getarg(0);
+		.@isGreen = getarg(1) == 0;
+		.@isRed = getarg(1) == 1;
+		.@suffix$ = " Zenys";
+
+		if (.@isGreen) {
+			.@color$ = "P_Green";
+		} else if (.@isRed) {
+			.@color$ = "P_Red";
+		} else {
+			.@color$ = "P_LightGray";
+		}
+
+		if (.@quantity == 0) {
+			return callfunc("P_LightGray", "0" + .@suffix$);
+		} else {
+			return callfunc(.@color$, callfunc("F_FormatZeny", .@quantity) + .@suffix$);
+		}
+	}
+
+	function	AskWithdraw	{
+		input .withdrawAmount;
+
+		if (callfunc("F_BankGetBalance") == 0) {
+			next;
+			mes .NPCName$;
+			mes "Sinto muito, mas você não tem nada para sacar.";
+			next;
+			mes .NPCName$;
+			mes "- Saldo bancário: " + RenderBalance();
+			RenderOperationsMenu();
+		}
+
+		if (.withdrawAmount == 0) {
+			next;
+			mes .NPCName$;
+			mes "Zero não é um valor válido para saque.";
+			mes "\n";
+			mes "- Saldo bancário: " + RenderBalance();
+
+			switch(select("- Tentar novamente", callfunc("P_LightGray", "Cancelar operação"))) {
+				case 1:
+					.withdrawAmount = AskWithdraw();
+					break;
+				case 2:
+					next;
+					mes .NPCName$;
+					mes "- Saldo bancário: " + RenderBalance();
+					RenderOperationsMenu();
+					break;
+			}
+		}
+
+		if (.withdrawAmount > callfunc("F_BankGetBalance")) {
+			next;
+			mes .NPCName$;
+			mes "Você está tentando sacar mais do que possui.";
+			mes "\n";
+			mes "- Tentativa de saque: " + RenderZeny(.withdrawAmount, 1);
+			mes "- Saldo bancário: " + RenderBalance();
+			
+			next;
+			mes .NPCName$;
+			mes "O que posso fazer é sacar tudo da sua conta de uma vez (" + RenderBalance() + "). Interessa?";
+			switch(select("- Sim", callfunc("P_LightGray", "Tentar outro valor"))) {
+				case 1:
+					.withdrawAmount = callfunc("F_BankGetBalance");
+					break;
+				case 2:
+					next;
+					mes .NPCName$;
+					mes "- Saldo bancário: " + RenderBalance();
+					RenderOperationsMenu();
+					break;
+			}
+		}
+
+		return .withdrawAmount;
+	}
+
+	function	AskDeposit	{
+		input .@depositAmount;
+
+		if (Zeny == 0) {
+			next;
+			mes .NPCName$;
+			mes "Sinto muito, mas você não parece ter nada para depositar.";
+			close;
+		}
+
+		if (.@depositAmount == 0) {
+			next;
+			mes .NPCName$;
+			mes "Zero não é um valor válido para depósito.";
+			mes "\n";
+			mes "- Saldo bancário: " + RenderBalance();
+
+			switch(select("- Tentar novamente", callfunc("P_LightGray", "Cancelar operação"))) {
+				case 1:
+					.@depositAmount = AskDeposit();
+					break;
+				case 2:
+					next;
+					mes .NPCName$;
+					mes "- Saldo bancário: " + RenderBalance();
+					RenderOperationsMenu();
+					break;
+			}
+		}
+
+		if (.@depositAmount > Zeny) {
+			next;
+			mes .NPCName$;
+			mes "Você está tentando depositar mais do que possui.";
+			mes "\n";
+			mes "- Tentativa de depósito: " + RenderZeny(.@depositAmount, 1);
+			mes "- Zeny atual: " + RenderZeny(Zeny, 0);
+			
+			next;
+			mes .NPCName$;
+			mes "O que posso fazer é depositar tudo o que você tem de uma só vez (" + RenderZeny(Zeny, 0) + "). Interessa?";
+			switch(select("- Sim", callfunc("P_LightGray", "Tentar outro valor"))) {
+				case 1:
+					.@depositAmount = Zeny;
+					break;
+				case 2:
+					next;
+					mes .NPCName$;
+					mes "- Saldo bancário: " + RenderBalance();
+					RenderOperationsMenu();
+					break;
+			}
+		}
+
+		return .@depositAmount;
+	}
+
+	function	Withdraw	{
+		.@amountToWithdraw = getarg(0);
+
+		RenderOperationMode("Saque", .@amountToWithdraw, 1);
+		switch(select("- Confirma", callfunc("P_LightGray", "- Terminar"))) {
+			case 1:
+				.@newZenys = callfunc("F_BankWithdraw", .@amountToWithdraw);
+				set Zeny, Zeny + .@newZenys;
+				break;
+			case 2:
+				if (.isPremium) {
+					next;
+					mes .NPCName$;
+					mes "- Saldo bancário: " + RenderBalance();
+					RenderOperationsMenu();
+				}
+				
+				break;
+		}
+
+		close;
+	}
+
+	function	Deposit	{
+		.@amountToDeposit = getarg(0);
+
+		RenderOperationMode("Depósito", .@amountToDeposit, 0);
+		switch(select("- Prosseguir", callfunc("P_LightGray", "- Terminar"))) {
+			case 1:
+				callfunc("F_BankDeposit", .@amountToDeposit);
+				set Zeny, Zeny - .@amountToDeposit;
+				break;
+			case 2:
+				next;
+				mes .NPCName$;
+				mes "- Saldo bancário: " + RenderBalance();
+				RenderOperationsMenu();
+				break;
+		}
+
+		close;
+	}
+
+	function	RenderOperationMode	{
+		.@name$ = getarg(0);
+		.@value = getarg(1);
+
+		// 0 = green
+		// 1 = red
+		.@zenyColor = getarg(2);
+
+		next;
+		mes "Revisando";
+		mes callfunc("P_LightGray", "---------------");
+		mes "- Operação: " + callfunc("P_Blue", .@name$);
+		mes "- Valor: " + RenderZeny(.@value, .@zenyColor);
+		mes "- Saldo bancário: " + RenderBalance();
+		mes "- Zeny atual: " + RenderZeny(Zeny, 2);
+	}
+}
+
+function	script	F_BankGetBalance	{
+	query_sql("SELECT `bank_zenys` FROM `login` WHERE `account_id` = '" + getcharid(3) + "';",  .amount);
+
+	return .amount;
+}
+
+function	script	F_BankDeposit	{
+	.@amountToDeposit = getarg(0);
+
+	if (.@amountToDeposit > Zeny) {
+		close;
+		return;
+	}
+
+	.@currentBalance = callfunc("F_BankGetBalance");
+	.@newBalance = .@amountToDeposit + .@currentBalance;
+
+	query_sql("UPDATE `login` SET `bank_zenys` = '" + .@newBalance + "' WHERE `account_id` = '" + getcharid(3) + "';");
+
+	return .@amountToDeposit;
+}
+
+function	script	F_BankWithdraw	{
+	.@amountToWithdraw = getarg(0);
+	.@currentBalance = callfunc("F_BankGetBalance");
+
+	if (.@amountToWithdraw > .@currentBalance) {
+		close;
+		return;
+	}
+	
+	.@newBalance = .@currentBalance - .@amountToWithdraw;
+
+	if (.@newBalance > .@currentBalance) {
+		close;
+		return;
+	}
+
+	query_sql("UPDATE `login` SET `bank_zenys` = '" + .@newBalance + "' WHERE `account_id` = '" + getcharid(3) + "';");
+
+	return .@amountToWithdraw;
+}
+
+function	script	F_FormatZeny	{
+	set .@int,  getarg(0);
+	set .@sep$, getarg(1,",");
+	set .@str$, "";
+	if ( .@int < 0 ) {
+	 set .@int, -.@int;
+	 set .@neg, 1;
+	}
+	set .@len, getstrlen(.@int+"") - .@neg;
+	
+	for ( set .@i,0; .@i<.@len; set .@i,.@i+1 )
+	 set .@str$, ( .@i % 3 == 2 && .@i < .@len-1 ? .@sep$ : "" ) + ( .@int / (10 **  	.@i) ) % 10 + .@str$;
+	return ( .@neg ? "-" : "" ) + .@str$;
+}
+
+prontera,152,185,6	duplicate(Bankman)	Bancário#prt	4_F_ACOLYTE
+morocc_mem,158,97,4	duplicate(Bankman)	Bancário#mor	4_F_ACOLYTE
+alberta,25,238,5	duplicate(Bankman)	Bancário#alb	4_F_ACOLYTE
+aldebaran,136,108,5	duplicate(Bankman)	Bancário#ald	4_F_ACOLYTE
